@@ -2,6 +2,8 @@
 
 import tensorflow as tf
 
+# Instantiating matrices and tensors
+
 Scalar = tf.constant([2])
 Vector = tf.constant([5,6,2])
 Matrix = tf.constant([[1,2,3],[2,3,4],[3,4,5]])
@@ -21,6 +23,8 @@ with tf.Session() as session:
     result = session.run(Tensor)
     print "Tensor (3x3x3 entries) :\n %s \n" % result
 
+# Tensor operations
+
 Matrix_one = tf.constant([[1,2,3],[2,3,4],[3,4,5]])
 Matrix_two = tf.constant([[2,2,2],[2,2,2],[2,2,2]])
 
@@ -39,3 +43,17 @@ with tf.Session() as session:
     arraysAreEqualResult = session.run(arraysAreEqual)
 
     print("Are these two arrays the same?", arraysAreEqualResult)
+
+# Matrix product
+
+Matrix_one = tf.constant([[2,3],[3,4]])
+Matrix_two = tf.constant([[2,3],[3,4]])
+
+product = tf.matmul(Matrix_one, Matrix_two)
+
+with tf.Session() as session:
+    productResult = session.run(product)
+    print("Matrix product:") 
+    print(session.run(Matrix_one))
+    print(session.run(Matrix_two)) 
+    print(productResult)
