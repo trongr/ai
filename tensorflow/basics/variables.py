@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-
 import tensorflow as tf
 
 sum = tf.Variable(0)
