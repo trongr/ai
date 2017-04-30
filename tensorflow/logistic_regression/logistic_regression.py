@@ -69,31 +69,32 @@ bias = tf.Variable(tf.random_normal([1, numLabels],
                                     stddev=0.01,
                                     name="bias"))
 
-apply_weights_OP = tf.matmul(X, weights, name="apply_weights")
-add_bias_OP = tf.add(apply_weights_OP, bias, name="add_bias")
-activation_OP = tf.nn.sigmoid(add_bias_OP, name="activation")
+apply_weights_op = tf.matmul(X, weights, name="apply_weights")
+add_bias_op = tf.add(apply_weights_op, bias, name="add_bias")
+activation_op = tf.nn.sigmoid(add_bias_op, name="activation")
 
-cost_OP = tf.nn.l2_loss(activation_OP - y, name="squared_error_cost")
+cost_op = tf.nn.l2_loss(activation_op - y, name="squared_error_cost")
 learningRate = tf.train.exponential_decay(learning_rate=0.0008,
                                           global_step=1,
                                           decay_steps=trainX.shape[0],
                                           decay_rate=0.95,
                                           staircase=True)
-training_OP = tf.train.GradientDescentOptimizer(learningRate).minimize(cost_OP)
-init_OP = tf.global_variables_initializer()
+training_op = tf.train.GradientDescentOptimizer(learningRate).minimize(cost_op)
+init_op = tf.global_variables_initializer()
 
-# argmax(activation_OP, 1) returns the label with the most probability
+# argmax(activation_op, 1) returns the label with the most probability
 # argmax(y, 1) is the correct label
-correct_predictions_OP = tf.equal(
-    tf.argmax(activation_OP, 1), tf.argmax(y, 1))
+predictions_op = tf.argmax(activation_op, 1)  # argmax along axis 1 (columns)
+ground_truth_op = tf.argmax(y, 1)
+correct_predictions_op = tf.equal(predictions_op, ground_truth_op)
 
 # If every false prediction is 0 and every true prediction is 1, the average
 # returns us the accuracy (percentage of accurate predictions)
-accuracy_OP = tf.reduce_mean(tf.cast(correct_predictions_OP, "float"))
-activation_summary_OP = tf.summary.histogram("output", activation_OP)
-accuracy_summary_OP = tf.summary.scalar("accuracy", accuracy_OP)
-cost_summary_OP = tf.summary.scalar("cost", cost_OP)
-tf.summary.merge([activation_summary_OP, accuracy_summary_OP, cost_summary_OP])
+accuracy_op = tf.reduce_mean(tf.cast(correct_predictions_op, "float"))
+activation_summary_op = tf.summary.histogram("output", activation_op)
+accuracy_summary_op = tf.summary.scalar("accuracy", accuracy_op)
+cost_summary_op = tf.summary.scalar("cost", cost_op)
+tf.summary.merge([activation_summary_op, accuracy_summary_op, cost_summary_op])
 
 cost = 0
 diff = 1
@@ -102,26 +103,34 @@ accuracy_values = []
 cost_values = []
 
 with tf.Session() as sess:
-    sess.run(init_OP)
+    sess.run(init_op)
     for i in range(700):
         if i > 1 and diff < .0001:
             print("change in cost %g; convergence." % diff)
             break
         else:
-            step = sess.run(training_OP, feed_dict={X: trainX, y: trainY})
+            step = sess.run(training_op, feed_dict={X: trainX, y: trainY})
         if i % 10 == 0:
             epoch_values.append(i)
-            train_accuracy, newCost = sess.run(
-                [accuracy_OP, cost_OP], feed_dict={X: trainX, y: trainY})
+            train_accuracy, newCost, correct_predictions, predictions, ground_truth, \
+                activation = sess.run([accuracy_op, cost_op, correct_predictions_op,
+                                       predictions_op, ground_truth_op, activation_op],
+                                      feed_dict={X: trainX, y: trainY})
             accuracy_values.append(train_accuracy)
             cost_values.append(newCost)
             diff = abs(newCost - cost)
             cost = newCost
-            print("step %d, training accuracy %g, cost %g, change in cost %g" %
+
+            print("\nstep %d, training accuracy %g, cost %g, change in cost %g\n" %
                   (i, train_accuracy, newCost, diff))
 
+            print "activation", activation[:10]
+            print "ground_truth", ground_truth[:10]
+            print "predictions", predictions[:10]
+            print "correct_predictions", correct_predictions[:10]
+
     print("final accuracy on test set: %s" %
-          str(sess.run(accuracy_OP, feed_dict={X: testX, y: testY})))
+          str(sess.run(accuracy_op, feed_dict={X: testX, y: testY})))
 
     writer = tf.summary.FileWriter("summary_logs", sess.graph)
 
