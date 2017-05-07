@@ -18,6 +18,10 @@ Architecture:
 
 import tensorflow as tf
 from tensorflow.examples.tutorials.mnist import input_data
+from utils import tile_raster_images
+import matplotlib.pyplot as plt
+from PIL import Image
+
 mnist = input_data.read_data_sets('MNIST_data', one_hot=True)
 
 width = 28  # width of the image in pixels
@@ -87,7 +91,9 @@ accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 
 with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
-    for i in range(1000):  # Load 50 training examples for each training iteration
+    # 10000 iterations gives about 96.03% accuracy. takes a long time though
+    iterations = 10000
+    for i in range(iterations):  # Load 50 training examples for each training iteration
         batch = mnist.train.next_batch(50)  # batch = (images, labels)
         _, loss = sess.run([train_step, cross_entropy], feed_dict={
                            x: batch[0], y_: batch[1], keep_prob: 1.0})
@@ -97,3 +103,45 @@ with tf.Session() as sess:
     acc = accuracy.eval(
         feed_dict={x: mnist.test.images, y_: mnist.test.labels, keep_prob: 0.5}) * 100
     print("Final accuracy: {}% ".format(acc))
+
+    # Visualize filters in first layer
+    kernels = sess.run(tf.reshape(tf.transpose(
+        W_conv1, perm=[2, 3, 0, 1]), [32, -1]))
+    image = Image.fromarray(tile_raster_images(
+        kernels, img_shape=(5, 5), tile_shape=(4, 8), tile_spacing=(1, 1)))
+    plt.rcParams['figure.figsize'] = (18.0, 18.0)
+    imgplot = plt.imshow(image)
+    imgplot.set_cmap('gray')
+    plt.show()
+
+    # Visualize activations in first conv layer
+
+    plt.rcParams['figure.figsize'] = (5.0, 5.0)
+    sampleimage = mnist.test.images[1]
+    plt.imshow(np.reshape(sampleimage, [28, 28]), cmap="gray")
+
+    ActivatedUnits = sess.run(convolve1, feed_dict={x: np.reshape(
+        sampleimage, [1, 784], order='F'), keep_prob: 1.0})
+    filters = ActivatedUnits.shape[3]
+    plt.figure(1, figsize=(20, 20))
+    n_columns = 6
+    n_rows = np.math.ceil(filters / n_columns) + 1
+
+    for i in range(filters):
+        plt.subplot(n_rows, n_columns, i + 1)
+        plt.title('Filter ' + str(i))
+        plt.imshow(ActivatedUnits[0, :, :, i],
+                   interpolation="nearest", cmap="gray")
+
+    # Visualizing second layer activations
+    ActivatedUnits = sess.run(convolve2, feed_dict={x: np.reshape(
+        sampleimage, [1, 784], order='F'), keep_prob: 1.0})
+    filters = ActivatedUnits.shape[3]
+    plt.figure(1, figsize=(20, 20))
+    n_columns = 8
+    n_rows = np.math.ceil(filters / n_columns) + 1
+    for i in range(filters):
+        plt.subplot(n_rows, n_columns, i + 1)
+        plt.title('Filter ' + str(i))
+        plt.imshow(ActivatedUnits[0, :, :, i],
+                   interpolation="nearest", cmap="gray")
