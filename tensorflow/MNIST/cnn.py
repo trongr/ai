@@ -16,6 +16,7 @@ Architecture:
     [fully connected layer 4] -> [BATCH_SIZE, 10]
 '''
 
+import numpy as np
 import tensorflow as tf
 from tensorflow.examples.tutorials.mnist import input_data
 from utils import tile_raster_images
@@ -92,7 +93,7 @@ accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
     # 10000 iterations gives about 96.03% accuracy. takes a long time though
-    iterations = 10000
+    iterations = 100
     for i in range(iterations):  # Load 50 training examples for each training iteration
         batch = mnist.train.next_batch(50)  # batch = (images, labels)
         _, loss = sess.run([train_step, cross_entropy], feed_dict={
@@ -119,6 +120,7 @@ with tf.Session() as sess:
     plt.rcParams['figure.figsize'] = (5.0, 5.0)
     sampleimage = mnist.test.images[1]
     plt.imshow(np.reshape(sampleimage, [28, 28]), cmap="gray")
+    plt.show()
 
     ActivatedUnits = sess.run(convolve1, feed_dict={x: np.reshape(
         sampleimage, [1, 784], order='F'), keep_prob: 1.0})
@@ -132,6 +134,7 @@ with tf.Session() as sess:
         plt.title('Filter ' + str(i))
         plt.imshow(ActivatedUnits[0, :, :, i],
                    interpolation="nearest", cmap="gray")
+    plt.show()
 
     # Visualizing second layer activations
     ActivatedUnits = sess.run(convolve2, feed_dict={x: np.reshape(
@@ -145,3 +148,4 @@ with tf.Session() as sess:
         plt.title('Filter ' + str(i))
         plt.imshow(ActivatedUnits[0, :, :, i],
                    interpolation="nearest", cmap="gray")
+    plt.show()
