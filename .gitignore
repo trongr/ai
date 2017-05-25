@@ -1,5 +1,7 @@
 .DS_Store
+.vscode
 summary_logs
 test
 tmp
 MNIST_data
+npm-debug.log
