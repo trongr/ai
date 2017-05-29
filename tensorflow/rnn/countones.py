@@ -5,14 +5,16 @@ import tensorflow as tf
 
 """
 dataX = [
-    '11010101111010001010', 
-    '11001111110010001111', 
-    '11101011111110110010', 
+    '11010101111010001010',
+    '11001111110010001111',
+    '11101011111110110010',
     ...
 ]
 dataX.shape == (None,)
 """
-seq_length = 14
+BATCH_SIZE = 100
+seq_length = 12
+NUM_LSTM_CELLS = 3
 num_classes = seq_length + 1
 max_int = 2 ** seq_length
 # create all binary strings of length seq_length
@@ -87,11 +89,9 @@ Y = tf.placeholder(tf.float32, [None, num_classes])
 
 """
 BUILDING THE NETWORK
-BUILDING THE NETWORK
-BUILDING THE NETWORK
 
-Output has shape (100, seq_length, num_hidden). Each array output[i]
-(seq_length, num_hidden) contains the activations for a training case. Each
+Output has shape (100, seq_length, NUM_CELL_UNITS). Each array output[i]
+(seq_length, NUM_CELL_UNITS) contains the activations for a training case. Each
 vector output[i][j] contains the activations after digit j has been read.
 output[i][seq_length - 1] contains the activations after all digits in this
 training case has been read. At this point, we have all the information required
@@ -100,8 +100,10 @@ to class scores via a fully connected layer given by weights W and biases b.
 
 TODO. Something to try: instead of using only the last set of activations, use
 them all. We'd have to flatten output[i] into a vector of dimension seq_length *
-num_hidden, and make W a matrix of dimension (seq_length * num_hidden,
+NUM_CELL_UNITS, and make W a matrix of dimension (seq_length * NUM_CELL_UNITS,
 num_classes), and b a vector of dimension (num_classes,).
+
+TODO. Then add more MultiRNNCell Layers before passing output to FC layer.
 
 output = [
     [
@@ -159,17 +161,18 @@ output = [
          -0.02891051 -0.03040569 -0.08838133  0.0036166   0.00064357  0.01075725]
 
         This guy..........:
-        [ 0.08605256 -0.00889792  0.00817091 -0.06322533  0.07654381  0.09033494 
+        [ 0.08605256 -0.00889792  0.00817091 -0.06322533  0.07654381  0.09033494
           0.09588683  0.00063931 -0.04009559  0.14324142  0.0537244   0.00085435
           0.05107512 -0.04807122  0.04262343 -0.0199828   0.08169425  0.10309532
-         -0.06975457  0.01188309 -0.13608685 -0.01317484  0.03166328  0.01513525]     
+         -0.06975457  0.01188309 -0.13608685 -0.01317484  0.03166328  0.01513525]
 
     ],
     ...
 ]
 
-Last has shape (100, num_hidden) last = [
+Last has shape (100, NUM_CELL_UNITS)
 
+last = [
     ..........is this guy:
     [ 0.08605256 -0.00889792  0.00817091 ..., -0.01317484  0.03166328  0.01513525],
 
@@ -177,15 +180,22 @@ Last has shape (100, num_hidden) last = [
     ...
 ]
 """
-num_hidden = 24  # poij. Adjust hyperparam
-Cell = tf.contrib.rnn.BasicLSTMCell(num_hidden, state_is_tuple=True)
-Output, State = tf.nn.dynamic_rnn(Cell, X, dtype=tf.float32)
+NUM_CELL_UNITS = 25  # poij. Adjust hyperparam
+Cell = tf.contrib.rnn.BasicLSTMCell(NUM_CELL_UNITS, state_is_tuple=True)
+Cells = tf.contrib.rnn.MultiRNNCell([Cell] * NUM_LSTM_CELLS)
+
+"""
+State is a tuple of (NUM_LSTM_CELLS) cell states, one state for each cell. E.g.
+State = ((c, h), (c, h), (c, h)), where c is the cell state and h is the cell's
+hidden state. Also State[-1].h == Output[:, -1, :] == Last.
+"""
+Output, State = tf.nn.dynamic_rnn(Cells, X, dtype=tf.float32)
 Last = tf.gather(tf.transpose(Output, [1, 0, 2]), seq_length - 1)
 
 """
 Fully connected layer mapping RNN output to classes
 """
-W = tf.Variable(tf.truncated_normal([num_hidden, num_classes]))
+W = tf.Variable(tf.truncated_normal([NUM_CELL_UNITS, num_classes]))
 b = tf.Variable(tf.constant(0.1, shape=[num_classes]))
 scores = tf.matmul(Last, W) + b
 
@@ -204,18 +214,24 @@ sess.run(tf.global_variables_initializer())
 """
 Training
 """
-batch_size = 100
-num_batches = int(len(trainX) / batch_size)
-# epoch = 100
-epoch = 10
-for i in range(epoch):
+num_batches = int(len(trainX) / BATCH_SIZE)
+# epochs = 100
+# epochs = 50
+epochs = 10
+for i in range(epochs):
     print "Epoch:", i
     ptr = 0
     for j in range(num_batches):
-        batchX = trainX[ptr:ptr + batch_size]
-        batchY = trainY[ptr:ptr + batch_size]
-        sess.run(Minimize, {X: batchX, Y: batchY})
-        ptr += batch_size
+        batchX = trainX[ptr:ptr + BATCH_SIZE]
+        batchY = trainY[ptr:ptr + BATCH_SIZE]
+        minimize, last, output, state = sess.run(
+            [Minimize, Last, Output, State], {X: batchX, Y: batchY})
+        print "last.shape", last
+        # print "output.shape", output
+        print "state[2].c.shape", state[2].c
+        print "state[2].h.shape", state[2].h
+
+        ptr += BATCH_SIZE
 
         if j % 10 == 0:
             accuracy = sess.run(Accuracy, {X: batchX, Y: batchY})
@@ -228,14 +244,9 @@ Testing
 accuracy = sess.run(Accuracy, {X: testX, Y: testY})
 print('Accuracy on test set: {:3.1f} %'.format(100 * accuracy))
 
-testX = [
-    [
-        [1], [0], [0], [0], [1], [0], [1], [0], [1], [1], [1], [0], [1], [0]
-    ]
-]
 # Don't need to pass Y in here because Pred doesn't need it:
 pred = sess.run(Pred, {X: testX})
-print 'Test case:', testX
-print 'Prediction:', pred
+print 'Test case:', testX[:1]
+print 'Prediction:', pred[:1]
 
 sess.close()
