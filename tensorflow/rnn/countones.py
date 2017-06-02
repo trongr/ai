@@ -13,28 +13,29 @@ dataX = [
 dataX.shape == (None,)
 """
 BATCH_SIZE = 100
-seq_length = 12
+SEQ_LENGTH = 12
 NUM_LSTM_CELLS = 3
-num_classes = seq_length + 1
-max_int = 2 ** seq_length
-# create all binary strings of length seq_length
-dataX = ['{0:b}'.format(i).zfill(seq_length)
-         for i in range(max_int)]
+NUM_CLASSES = SEQ_LENGTH + 1
+MAX_INT = 2 ** SEQ_LENGTH
+
+# create all binary strings of length SEQ_LENGTH
+dataX = ['{0:b}'.format(i).zfill(SEQ_LENGTH) for i in range(MAX_INT)]
 shuffle(dataX)
-print "dataX", max_int, len(dataX), dataX[0:10]
+# print "dataX", MAX_INT, len(dataX), dataX[0:10]
+
 # Convert each string i into a list of binary digits
 dataX = [map(int, i) for i in dataX]
-print "dataX", dataX[0:10]
+# print "dataX", dataX[0:10]
 
 """
-Convert training input into an array of shape (None, seq_length, 1):
+Convert training input into an array of shape (None, SEQ_LENGTH, 1):
 dataX = [
-    [[1], [0], [1], [1],...], # each row has length seq_length
+    [[1], [0], [1], [1],...], # each row has length SEQ_LENGTH
     [[0], [0], [0], [1],...],
     [[1], [1], [1], [1],...],
     ...
 ]
-dataX.shape == (None, seq_length, 1)
+dataX.shape == (None, SEQ_LENGTH, 1)
 """
 ti = []
 for i in dataX:
@@ -43,12 +44,12 @@ for i in dataX:
         temp_list.append([j])
     ti.append(np.array(temp_list))
 dataX = ti
-print "dataX", dataX[0:10]
+# print "dataX", dataX[0:10]
 
 """
 Create training targets: count number of ones in each training case. Each row is
 a one-hot representation of the number (possible values 0 to
-seq_length) of ones in the corresponding dataX row.
+SEQ_LENGTH) of ones in the corresponding dataX row.
 
 dataY = [
     [0,..., 0, 1, 0,..., 0],
@@ -56,7 +57,7 @@ dataY = [
     [0,..., 0, 0, 0,..., 1],
     ...
 ]
-dataY.shape == (None, num_classes)
+dataY.shape == (None, NUM_CLASSES)
 """
 dataY = []
 for i in dataX:
@@ -64,46 +65,39 @@ for i in dataX:
     for j in i:
         if j[0] == 1:
             count += 1
-    temp_list = ([0] * num_classes)
+    temp_list = ([0] * NUM_CLASSES)
     temp_list[count] = 1
     dataY.append(temp_list)
-print "dataY", dataY[0:10]
+# print "dataY", dataY[0:10]
 
 """
 Separating training and test data.
 """
-NUM_EXAMPLES = int(0.9 * max_int)
+NUM_EXAMPLES = int(0.9 * MAX_INT)
 trainX = dataX[:NUM_EXAMPLES]
 trainY = dataY[:NUM_EXAMPLES]
 testX = dataX[NUM_EXAMPLES:]
 testY = dataY[NUM_EXAMPLES:]
-print "max_int", max_int, "NUM_EXAMPLES", NUM_EXAMPLES
-print "num_train", len(trainX)
-print "num_test", len(testX)
+# print "MAX_INT", MAX_INT, "NUM_EXAMPLES", NUM_EXAMPLES
+# print "num_train", len(trainX)
+# print "num_test", len(testX)
 
 """
 Placeholders for minibatch input and output data
 """
-X = tf.placeholder(tf.float32, [None, seq_length, 1])
-Y = tf.placeholder(tf.float32, [None, num_classes])
+X = tf.placeholder(tf.float32, [None, SEQ_LENGTH, 1])
+Y = tf.placeholder(tf.float32, [None, NUM_CLASSES])
 
 """
 BUILDING THE NETWORK
 
-Output has shape (100, seq_length, NUM_CELL_UNITS). Each array output[i]
-(seq_length, NUM_CELL_UNITS) contains the activations for a training case. Each
+Output has shape (100, SEQ_LENGTH, NUM_CELL_UNITS). Each array output[i]
+(SEQ_LENGTH, NUM_CELL_UNITS) contains the activations for a training case. Each
 vector output[i][j] contains the activations after digit j has been read.
-output[i][seq_length - 1] contains the activations after all digits in this
+output[i][SEQ_LENGTH - 1] contains the activations after all digits in this
 training case has been read. At this point, we have all the information required
 to count the number of digits, so we take these final activations and map them
 to class scores via a fully connected layer given by weights W and biases b.
-
-TODO. Something to try: instead of using only the last set of activations, use
-them all. We'd have to flatten output[i] into a vector of dimension seq_length *
-NUM_CELL_UNITS, and make W a matrix of dimension (seq_length * NUM_CELL_UNITS,
-num_classes), and b a vector of dimension (num_classes,).
-
-TODO. Then add more MultiRNNCell Layers before passing output to FC layer.
 
 output = [
     [
@@ -159,24 +153,11 @@ output = [
           0.07929311 -0.01300863  0.00920017  0.08240612  0.08364873  0.03860225
           0.01875561 -0.01363288  0.05033172  0.01604049  0.02792072  0.07597382
          -0.02891051 -0.03040569 -0.08838133  0.0036166   0.00064357  0.01075725]
-
-        This guy..........:
         [ 0.08605256 -0.00889792  0.00817091 -0.06322533  0.07654381  0.09033494
           0.09588683  0.00063931 -0.04009559  0.14324142  0.0537244   0.00085435
           0.05107512 -0.04807122  0.04262343 -0.0199828   0.08169425  0.10309532
          -0.06975457  0.01188309 -0.13608685 -0.01317484  0.03166328  0.01513525]
-
     ],
-    ...
-]
-
-Last has shape (100, NUM_CELL_UNITS)
-
-last = [
-    ..........is this guy:
-    [ 0.08605256 -0.00889792  0.00817091 ..., -0.01317484  0.03166328  0.01513525],
-
-    [ 0.1116072  -0.02729212  0.00313157 ..., -0.03601985  0.03126968  0.02789689],
     ...
 ]
 """
@@ -190,19 +171,20 @@ State = ((c, h), (c, h), (c, h)), where c is the cell state and h is the cell's
 hidden state. Also State[-1].h == Output[:, -1, :] == Last.
 """
 Output, State = tf.nn.dynamic_rnn(Cells, X, dtype=tf.float32)
-Last = tf.gather(tf.transpose(Output, [1, 0, 2]), seq_length - 1)
+Output = tf.reshape(Output, [tf.shape(Output)[0], -1])
 
 """
 Fully connected layer mapping RNN output to classes
 """
-W = tf.Variable(tf.truncated_normal([NUM_CELL_UNITS, num_classes]))
-b = tf.Variable(tf.constant(0.1, shape=[num_classes]))
-scores = tf.matmul(Last, W) + b
+W = tf.Variable(tf.truncated_normal(
+    [SEQ_LENGTH * NUM_CELL_UNITS, NUM_CLASSES]))
+b = tf.Variable(tf.constant(0.1, shape=[NUM_CLASSES]))
+Scores = tf.matmul(Output, W) + b
 
 """
 Loss and optimization
 """
-Pred = tf.nn.softmax(scores)
+Pred = tf.nn.softmax(Scores)
 Loss = - tf.reduce_mean(tf.reduce_sum(Y * tf.log(Pred)))  # cross entropy
 Minimize = tf.train.AdamOptimizer().minimize(Loss)
 Corrects = tf.equal(tf.argmax(Y, axis=1), tf.argmax(Pred, axis=1))
@@ -216,20 +198,16 @@ Training
 """
 num_batches = int(len(trainX) / BATCH_SIZE)
 # epochs = 100
-# epochs = 50
-epochs = 10
+epochs = 50
+# epochs = 10
 for i in range(epochs):
     print "Epoch:", i
     ptr = 0
     for j in range(num_batches):
         batchX = trainX[ptr:ptr + BATCH_SIZE]
         batchY = trainY[ptr:ptr + BATCH_SIZE]
-        minimize, last, output, state = sess.run(
-            [Minimize, Last, Output, State], {X: batchX, Y: batchY})
-        print "last.shape", last
-        # print "output.shape", output
-        print "state[2].c.shape", state[2].c
-        print "state[2].h.shape", state[2].h
+        minimize, output, state = sess.run(
+            [Minimize, Output, State], {X: batchX, Y: batchY})
 
         ptr += BATCH_SIZE
 
