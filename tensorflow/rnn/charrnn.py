@@ -9,20 +9,20 @@ import tensorflow as tf
 
 FILENAME = sys.argv[1]
 DATA = open(FILENAME, 'r').read()
-DATA = DATA[:100000]  # poij toggle truncate data
+DATA = DATA[:10000]  # poij toggle truncate data
 CHARS = list(set(DATA))
 DATA_SIZE, VOCAB_SIZE = len(DATA), len(CHARS)
 CHAR_TO_IX = {ch: i for i, ch in enumerate(CHARS)}
 IX_TO_CHAR = {i: ch for i, ch in enumerate(CHARS)}
 
 # print "DATA", DATA
-# print 'DATA has %d characters, %d unique.' % (DATA_SIZE, VOCAB_SIZE)
-# print "CHARS", CHARS
-# print "CHAR_TO_IX", CHAR_TO_IX
-# print "IX_TO_CHAR", IX_TO_CHAR
+print 'DATA has %d characters, %d unique.' % (DATA_SIZE, VOCAB_SIZE)
+print "CHARS", CHARS
+print "CHAR_TO_IX", CHAR_TO_IX
+print "IX_TO_CHAR", IX_TO_CHAR
 
 BATCH_SIZE = 100
-SEQ_LENGTH = 20
+SEQ_LENGTH = 15
 NUM_LSTM_CELLS = 3
 NUM_CLASSES = len(CHARS)
 
@@ -98,7 +98,7 @@ BUILDING THE GRAPH
 """
 RNN layer
 """
-NUM_CELL_UNITS = 25  # poij. Adjust hyperparam
+NUM_CELL_UNITS = 25  # TODO Adjust hyperparam
 Cell = tf.contrib.rnn.BasicLSTMCell(NUM_CELL_UNITS, state_is_tuple=True)
 Cells = tf.contrib.rnn.MultiRNNCell([Cell] * NUM_LSTM_CELLS)
 Output, State = tf.nn.dynamic_rnn(Cells, X, dtype=tf.float32)
@@ -121,6 +121,35 @@ Minimize = tf.train.AdamOptimizer().minimize(Loss)
 Corrects = tf.equal(tf.argmax(Y, axis=1), tf.argmax(Pred, axis=1))
 Accuracy = tf.reduce_mean(tf.cast(Corrects, tf.float32))
 
+
+def sample():
+    pass
+
+
+def ixes_to_string(ixes):
+    """
+    Convert a list of indices to a string
+    """
+    return "".join([IX_TO_CHAR[i] for i in ixes])
+
+
+def char_distr_to_char(pred):
+    """
+    Prediction distribution for a single char, i.e. the argument with the max
+    value is the predicted char.
+    """
+    return IX_TO_CHAR[np.argmax(pred)]
+
+
+def print_test_results(testX, pred):
+    LENGTH = len(testX)
+    for i in xrange(LENGTH):
+        test_str = testX[i].reshape(-1)
+        char_distr = pred[i].reshape(-1)
+        predicted_char = char_distr_to_char(char_distr)
+        print ixes_to_string(test_str), "\t", predicted_char
+
+
 """
 TRAINING
 """
@@ -135,13 +164,13 @@ for i in range(EPOCHS):
     for j in range(NUM_BATCHES):
         batchX = trainX[ptr:ptr + BATCH_SIZE]
         batchY = trainY[ptr:ptr + BATCH_SIZE]
-        minimize, output, state = sess.run(
-            [Minimize, Output, State], {X: batchX, Y: batchY})
+        minimize, loss, output, state = sess.run(
+            [Minimize, Loss, Output, State], {X: batchX, Y: batchY})
 
         if j % 10 == 0:
             accuracy = sess.run(Accuracy, {X: batchX, Y: batchY})
-            print('Batch: {:2d}, accuracy: {:3.1f} %'.format(
-                j, 100 * accuracy))
+            print('Batch: {:2d}, loss: {:.4f}, accuracy: {:3.1f} %'.format(
+                j, loss, 100 * accuracy))
 
         ptr += BATCH_SIZE
 
@@ -153,7 +182,6 @@ print('Accuracy on test set: {:3.1f} %'.format(100 * accuracy))
 
 # Don't need to pass testY in here because Pred doesn't need it:
 pred = sess.run(Pred, {X: testX})
-print 'Test case:', testX[:1]
-print 'Prediction:', pred[:1]
+print_test_results(testX, pred)
 
 sess.close()
