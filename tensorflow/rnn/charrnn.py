@@ -23,7 +23,7 @@ print "CHAR_TO_IX", CHAR_TO_IX
 print "IX_TO_CHAR", IX_TO_CHAR
 
 BATCH_SIZE = 100
-SEQ_LENGTH = 100
+SEQ_LENGTH = 25
 NUM_CELL_UNITS = 256
 NUM_LSTM_CELLS = 2
 NUM_CLASSES = len(CHARS)
@@ -33,18 +33,16 @@ Generate training batches
 """
 SIZE_DATA = len(DATA) - SEQ_LENGTH - 1 # - SEQ_LENGTH - 1 to avoid clipping (short strings) near the end
 NUM_TRAIN = int(0.8 * SIZE_DATA) # 80-20 train-test split
-batch_ptr = 0 # pointer to start char in DATA for current batch
 
 def nextTrainBatch():
-    global batch_ptr
     batchX = []
     batchY = []
+    ptr = random.randint(0, NUM_TRAIN)       
     for i in xrange(BATCH_SIZE):
-        x = [CHAR_TO_IX[ch] for ch in list(DATA[batch_ptr:batch_ptr + SEQ_LENGTH])]
-        y = CHAR_TO_IX[DATA[batch_ptr + SEQ_LENGTH]] 
+        x = [CHAR_TO_IX[ch] for ch in list(DATA[ptr + i:ptr + SEQ_LENGTH + i])]
+        y = CHAR_TO_IX[DATA[ptr + SEQ_LENGTH + i]] 
         batchX.append(x)
         batchY.append(y)
-        batch_ptr = (batch_ptr + 1) % NUM_TRAIN # loop around for further training
     batchX = np.array(batchX)
     batchY = np.array(batchY)
     return batchX, batchY
@@ -149,6 +147,9 @@ TRAINING
 sess = tf.Session()
 sess.run(tf.global_variables_initializer())
 
+Saver = tf.train.Saver(max_to_keep=100, keep_checkpoint_every_n_hours=1) 
+Saver.restore(sess, tf.train.latest_checkpoint('./save/'))
+
 batchX, _ = nextTrainBatch()
 state = sess.run(InitState, {X: batchX})
 
@@ -160,11 +161,15 @@ while True:
     ], {
         X: batchX, Y: batchY, InitState: state
     })
-    if i % 50 == 0:
+
+    if i % 100 == 0:
         accuracy = sess.run(Accuracy, {X: batchX, Y: batchY})
         print('Batch: {:2d}, loss: {:.4f}, accuracy: {:3.1f} %'
             .format(i, loss, 100 * accuracy))
         sample([batchX[0]])
+
+    if i % 1000 == 0:
+        Saver.save(sess, "./save/charrnn", global_step=i)
 
     i += 1
 
