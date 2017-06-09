@@ -51,16 +51,23 @@ def genTestXFromString(s):
     ixes = [[CHAR_TO_IX[ch] for ch in s]]
     return ixes
 
-def sample(testX):
+# seed text. generated text will be one continuous stream from this starter text
+s = "To be, or not to be- that is the question: \
+    Whether 'tis nobler in the mind to suffer \
+    The slings and arrows of outrageous fortune \
+    Or to take arms against a sea of troubles, \
+    And by opposing end them."
+def sample():
+    global s 
+    s = s[-SEQ_LENGTH:]
     output = []    
-    s = ixes_to_string(testX[0])
-    GEN_STR_LEN = 300
 
     print "TRAINING"
     print "--------"
-    print ixes_to_string(testX[0])
+    print s
     print "--------"
-
+    
+    GEN_STR_LEN = 300    
     for i in xrange(GEN_STR_LEN):
         testX = genTestXFromString(s)
         predictions = sess.run(Predictions, {X: testX})
@@ -140,6 +147,7 @@ LearningRate = tf.train.exponential_decay(learning_rate=1e-1,
     global_step=1, decay_steps=NUM_TRAIN, decay_rate=0.95,
     staircase=True)
 Minimize = tf.train.GradientDescentOptimizer(LearningRate).minimize(Loss)
+# Minimize = tf.train.AdamOptimizer().minimize(Loss)
 
 """
 TRAINING
@@ -166,7 +174,7 @@ while True:
         accuracy = sess.run(Accuracy, {X: batchX, Y: batchY})
         print('Batch: {:2d}, loss: {:.4f}, accuracy: {:3.1f} %'
             .format(i, loss, 100 * accuracy))
-        sample([batchX[0]])
+        sample()
 
     if i % 1000 == 0:
         Saver.save(sess, "./save/charrnn", global_step=i)
