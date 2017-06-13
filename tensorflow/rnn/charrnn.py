@@ -27,6 +27,7 @@ SEQ_LENGTH = 25
 NUM_CELL_UNITS = 256
 NUM_LSTM_CELLS = 2
 NUM_CLASSES = len(CHARS)
+DROPOUT_KEEP_PROB = 0.5
 
 """
 Generate training batches
@@ -123,7 +124,8 @@ BUILDING THE GRAPH
 
 # RNN layer
 Cell = tf.contrib.rnn.BasicLSTMCell(NUM_CELL_UNITS, state_is_tuple=True)
-Cells = tf.contrib.rnn.MultiRNNCell([Cell] * NUM_LSTM_CELLS)
+Dropout = tf.contrib.rnn.DropoutWrapper(Cell, input_keep_prob=DROPOUT_KEEP_PROB)
+Cells = tf.contrib.rnn.MultiRNNCell([Dropout] * NUM_LSTM_CELLS)
 InitState = Cells.zero_state(tf.shape(X)[0], tf.float32)
 Output, State = tf.nn.dynamic_rnn(Cells, X_onehot, initial_state=InitState, dtype=tf.float32)
 
