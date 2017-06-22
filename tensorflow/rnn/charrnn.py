@@ -3,6 +3,7 @@ python charrnn.py shakespeare.txt
 """
 
 import sys
+import glob
 import numpy as np
 import random
 import string
@@ -23,7 +24,7 @@ print "CHAR_TO_IX", CHAR_TO_IX
 print "IX_TO_CHAR", IX_TO_CHAR
 
 BATCH_SIZE = 100
-SEQ_LENGTH = 25
+SEQ_LENGTH = 20
 NUM_CELL_UNITS = 256
 NUM_LSTM_CELLS = 2
 NUM_CLASSES = len(CHARS)
@@ -124,8 +125,9 @@ BUILDING THE GRAPH
 
 # RNN layer
 Cell = tf.contrib.rnn.BasicLSTMCell(NUM_CELL_UNITS, state_is_tuple=True)
-Dropout = tf.contrib.rnn.DropoutWrapper(Cell, input_keep_prob=DROPOUT_KEEP_PROB)
-Cells = tf.contrib.rnn.MultiRNNCell([Dropout] * NUM_LSTM_CELLS)
+# Dropout = tf.contrib.rnn.DropoutWrapper(Cell, input_keep_prob=DROPOUT_KEEP_PROB)
+# Cells = tf.contrib.rnn.MultiRNNCell([Dropout] * NUM_LSTM_CELLS)
+Cells = tf.contrib.rnn.MultiRNNCell([Cell] * NUM_LSTM_CELLS)
 InitState = Cells.zero_state(tf.shape(X)[0], tf.float32)
 Output, State = tf.nn.dynamic_rnn(Cells, X_onehot, initial_state=InitState, dtype=tf.float32)
 
@@ -158,7 +160,9 @@ sess = tf.Session()
 sess.run(tf.global_variables_initializer())
 
 Saver = tf.train.Saver(max_to_keep=100, keep_checkpoint_every_n_hours=1) 
-Saver.restore(sess, tf.train.latest_checkpoint('./save/'))
+save_files = glob.glob('./save/*')
+if save_files:
+    Saver.restore(sess, tf.train.latest_checkpoint('./save/'))
 
 batchX, _ = nextTrainBatch()
 state = sess.run(InitState, {X: batchX})
