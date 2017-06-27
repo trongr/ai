@@ -25,8 +25,8 @@ print "IX_TO_CHAR", IX_TO_CHAR
 
 BATCH_SIZE = 100
 SEQ_LENGTH = 20
-NUM_CELL_UNITS = 256
-NUM_LSTM_CELLS = 2
+NUM_CELL_UNITS = 64
+NUM_LSTM_CELLS = 3
 NUM_CLASSES = len(CHARS)
 DROPOUT_KEEP_PROB = 0.5
 
@@ -35,16 +35,17 @@ Generate training batches
 """
 SIZE_DATA = len(DATA) - SEQ_LENGTH - 1 # - SEQ_LENGTH - 1 to avoid clipping (short strings) near the end
 NUM_TRAIN = int(0.8 * SIZE_DATA) # 80-20 train-test split
-
+batch_ptr = random.randint(0, NUM_TRAIN) # start training at a random place, then go to the end and loop around
 def nextTrainBatch():
+    global batch_ptr
     batchX = []
     batchY = []
-    ptr = random.randint(0, NUM_TRAIN)       
     for i in xrange(BATCH_SIZE):
-        x = [CHAR_TO_IX[ch] for ch in list(DATA[ptr + i:ptr + SEQ_LENGTH + i])]
-        y = CHAR_TO_IX[DATA[ptr + SEQ_LENGTH + i]] 
+        x = [CHAR_TO_IX[ch] for ch in list(DATA[batch_ptr + i:batch_ptr + SEQ_LENGTH + i])]
+        y = CHAR_TO_IX[DATA[batch_ptr + SEQ_LENGTH + i]] 
         batchX.append(x)
         batchY.append(y)
+        batch_ptr = (batch_ptr + 1) % NUM_TRAIN
     batchX = np.array(batchX)
     batchY = np.array(batchY)
     return batchX, batchY
@@ -147,11 +148,7 @@ Loss and optimization
 """
 Losses = tf.nn.sparse_softmax_cross_entropy_with_logits(labels=Y, logits=Logits)
 Loss = tf.reduce_mean(Losses)
-LearningRate = tf.train.exponential_decay(learning_rate=1e-1,
-    global_step=1, decay_steps=NUM_TRAIN, decay_rate=0.95,
-    staircase=True)
-Minimize = tf.train.GradientDescentOptimizer(LearningRate).minimize(Loss)
-# Minimize = tf.train.AdamOptimizer().minimize(Loss)
+Minimize = tf.train.AdamOptimizer().minimize(Loss)
 
 """
 TRAINING
