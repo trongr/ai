@@ -2,6 +2,7 @@
 python charrnn.py shakespeare.txt
 """
 
+import time
 import sys
 import glob
 import numpy as np
@@ -25,8 +26,8 @@ print "IX_TO_CHAR", IX_TO_CHAR
 
 BATCH_SIZE = 100
 SEQ_LENGTH = 20
-NUM_CELL_UNITS = 64
-NUM_LSTM_CELLS = 3
+NUM_CELL_UNITS = 32
+NUM_LSTM_CELLS = 4
 NUM_CLASSES = len(CHARS)
 DROPOUT_KEEP_PROB = 0.5
 
@@ -65,10 +66,10 @@ def sample():
     s = s[-SEQ_LENGTH:]
     output = []    
 
-    print "TRAINING"
-    print "--------"
+    print "SEED"
+    print "----"
     print s
-    print "--------"
+    print "----"
     
     GEN_STR_LEN = 300    
     for i in xrange(GEN_STR_LEN):
@@ -78,10 +79,10 @@ def sample():
         output.append(char)
         s = (s + char)[-SEQ_LENGTH:]
 
-    print "SAMPLE"
-    print "======"
+    print "GENERATED"
+    print "========="
     print "".join(output)
-    print "======"
+    print "========="
 
 def ixes_to_string(ixes):
     """
@@ -164,6 +165,7 @@ if save_files:
 batchX, _ = nextTrainBatch()
 state = sess.run(InitState, {X: batchX})
 
+t = time.time()
 i = 0
 while True: 
     batchX, batchY = nextTrainBatch()
@@ -175,9 +177,19 @@ while True:
 
     if i % 100 == 0:
         accuracy = sess.run(Accuracy, {X: batchX, Y: batchY})
-        print('Batch: {:2d}, loss: {:.4f}, accuracy: {:3.1f} %'
-            .format(i, loss, 100 * accuracy))
+
+        print "TRAINING"
+        print "--------"
+        print ixes_to_string(batchX[0])
+        print "--------"
+
         sample()
+
+        print 
+        print('Batch: {:2d}, elapsed: {:.4f}, loss: {:.4f}, accuracy: {:3.1f} %'
+            .format(i, time.time() - t, loss, 100 * accuracy))
+        print 
+        t = time.time()
 
     if i % 1000 == 0:
         Saver.save(sess, "./save/charrnn", global_step=i)
