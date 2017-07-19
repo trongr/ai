@@ -7,3 +7,5 @@ MNIST_data
 npm-debug.log
 text8.zip
 save/
+wav/
+*.pyc
