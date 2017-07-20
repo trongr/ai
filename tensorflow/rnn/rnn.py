@@ -23,7 +23,7 @@ class RNN(object):
         self.SIZE_DATA = len(self.DATA) - self.SEQ_LENGTH - 1 # - SEQ_LENGTH - 1 to avoid clipping (short strings) near the end
         self.NUM_TRAIN = int(0.8 * self.SIZE_DATA) # 80-20 train-test split
         self.batch_ptr = random.randint(0, self.NUM_TRAIN) # start training at a random place, then go to the end and loop around
-        self.running_sample = self.DATA[100000:100000 + 1000]
+        self.running_sample = list(self.DATA[100000:100000 + 1000])
         self.running_sample = self.running_sample[-self.SEQ_LENGTH:]
         self.sess = sess
 
@@ -68,7 +68,6 @@ class RNN(object):
         self.Minimize = tf.train.AdamOptimizer().minimize(self.Loss)
 
         self.sess.run(tf.global_variables_initializer())
-
         batchX, _ = self.nextTrainBatch()
         self.state = self.sess.run(self.InitState, {self.X: batchX})
 
@@ -80,8 +79,9 @@ class RNN(object):
             self.X: self.batchX, self.Y: self.batchY, self.InitState: self.state
         })
 
-    def sample(self, GEN_STR_LEN):
+    def sample(self, GEN_STR_LEN, show_every=None):
         output = []    
+        t = time.time()
         for i in xrange(GEN_STR_LEN):
             batchX = [self.running_sample]
             predictions = self.sess.run(self.Predictions, {self.X: batchX})
@@ -89,6 +89,9 @@ class RNN(object):
             output.append(class_ix)
             self.running_sample.append(class_ix)
             self.running_sample = self.running_sample[-self.SEQ_LENGTH:]
+            if show_every and i % show_every == 0:
+                print('Sample progress: {:.2f} %, elapsed: {:.4f}'.format(100.0 * i / GEN_STR_LEN, time.time() - t))
+                t = time.time()
         return output
 
     def nextTrainBatch(self):

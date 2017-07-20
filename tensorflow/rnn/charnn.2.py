@@ -56,8 +56,8 @@ while True:
     if i % 100 == 0:
         accuracy = model.get_accuracy()
         loss = model.get_loss()
-        print('Batch: {:2d}, elapsed: {:.4f}, loss: {:.4f}, accuracy: {:3.1f} %'
-            .format(i, time.time() - t, loss, 100 * accuracy))
+        print('Batch: {:2d}, elapsed: {:.4f}, loss: {:.4f}, accuracy: {:3.1f} %'.format(i, time.time() - t, loss, 100 * accuracy))
+        t = time.time()
 
     if i % 100 == 0:    
         sample = model.sample(300)
