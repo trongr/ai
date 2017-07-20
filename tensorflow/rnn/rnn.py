@@ -8,21 +8,23 @@ import tensorflow as tf
 
 class RNN(object):
 
-    def __init__(self, sess, DATA, NUM_CLASSES):
+    def __init__(self, sess, DATA, opts):
         """
         X is a list of integers from 0 to NUM_CLASSES - 1 inclusive, where NUM_CLASSES is the number
         of classes.
         """
+        self.DATA = DATA        
         self.BATCH_SIZE = 100
-        self.SEQ_LENGTH = 100
-        self.NUM_CELL_UNITS = 64
-        self.NUM_LSTM_CELLS = 5
-        self.DATA = DATA
-        self.NUM_CLASSES = NUM_CLASSES
+        self.SEQ_LENGTH = opts["SEQ_LENGTH"]
+        self.NUM_CELL_UNITS = opts["NUM_CELL_UNITS"]
+        self.NUM_LSTM_CELLS = opts["NUM_LSTM_CELLS"]
+        self.NUM_CLASSES = opts["NUM_CLASSES"]
+
         self.SIZE_DATA = len(self.DATA) - self.SEQ_LENGTH - 1 # - SEQ_LENGTH - 1 to avoid clipping (short strings) near the end
         self.NUM_TRAIN = int(0.8 * self.SIZE_DATA) # 80-20 train-test split
         self.batch_ptr = random.randint(0, self.NUM_TRAIN) # start training at a random place, then go to the end and loop around
-        self.seed_seq = self.DATA[100000:100000 + 1000]
+        self.running_sample = self.DATA[100000:100000 + 1000]
+        self.running_sample = self.running_sample[-self.SEQ_LENGTH:]
         self.sess = sess
 
         """
@@ -54,8 +56,8 @@ class RNN(object):
         Logits = tf.matmul(Last, W) + b
 
         # Results
-        Predictions = tf.nn.softmax(Logits)
-        Corrects = tf.equal(tf.argmax(Y_onehot, axis=1), tf.argmax(Predictions, axis=1))
+        self.Predictions = tf.nn.softmax(Logits)
+        Corrects = tf.equal(tf.argmax(Y_onehot, axis=1), tf.argmax(self.Predictions, axis=1))
         self.Accuracy = tf.reduce_mean(tf.cast(Corrects, tf.float32))
 
         """
@@ -78,27 +80,16 @@ class RNN(object):
             self.X: self.batchX, self.Y: self.batchY, self.InitState: self.state
         })
 
-    def sample(self):
-        self.seed_seq = self.seed_seq[-self.SEQ_LENGTH:]
+    def sample(self, GEN_STR_LEN):
         output = []    
-
-        print "SEED"
-        print "----"
-        print self.seed_seq
-        print "----"
-        
-        GEN_STR_LEN = 300    
         for i in xrange(GEN_STR_LEN):
-            testX = genTestXFromString(self.seed_seq)
-            predictions = self.sess.run(Predictions, {X: testX})
-            char = char_distr_to_char(predictions)
-            output.append(char)
-            self.seed_seq = (self.seed_seq + char)[-self.SEQ_LENGTH:]
-
-        print "GENERATED"
-        print "========="
-        print "".join(output)
-        print "========="
+            batchX = [self.running_sample]
+            predictions = self.sess.run(self.Predictions, {self.X: batchX})
+            class_ix = self.class_distr_to_class_ix(predictions)
+            output.append(class_ix)
+            self.running_sample.append(class_ix)
+            self.running_sample = self.running_sample[-self.SEQ_LENGTH:]
+        return output
 
     def nextTrainBatch(self):
         """
@@ -116,31 +107,16 @@ class RNN(object):
         batchY = np.array(batchY)
         return batchX, batchY
 
-    def genTestXFromString(s):
-        ixes = [[CHAR_TO_IX[ch] for ch in s]]
-        return ixes
-
-    def ixes_to_string(ixes):   
+    def class_distr_to_class_ix(self, predictions):
         """
-        Convert a list of indices to a string
-        """
-        pass
-        # return "".join([IX_TO_CHAR[i] for i in ixes])
-
-    def char_distr_to_char_ix(predictions):
-        """
-        Prediction distributions for a single char, i.e. the probability of a
-        character being correct is given by the corresponding probability in
-        predictions. NOTE. The correct char is not the one with the highest
-        probability: np.argmax(predictions) is not the character you're looking for.
-        Instead we choose a char index out of range(self.NUM_CLASSES) based on
+        Prediction distributions for a single class, i.e. the probability of a
+        class being correct is given by the corresponding probability in
+        predictions. NOTE. The correct class is not the one with the highest
+        probability: np.argmax(predictions) is not the class you're looking for.
+        Instead we choose a class index out of range(self.NUM_CLASSES) based on
         probabilities given by predictions.
         """
         return np.random.choice(range(self.NUM_CLASSES), p=predictions.ravel())
-
-    def char_distr_to_char(predictions):
-        pass
-        # return IX_TO_CHAR[char_distr_to_char_ix(predictions)]
 
     def get_accuracy(self):
         return self.sess.run(self.Accuracy, {self.X: self.batchX, self.Y: self.batchY})
