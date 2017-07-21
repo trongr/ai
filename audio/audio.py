@@ -1,7 +1,6 @@
 """
-Prepare input audio files with:
+Convert a wav file to one channel, 8 bit, 8KHz wav:
 ffmpeg -i pingpong.wav -vn -ac 1 -c:a pcm_u8 -ar 8000 pingpong8bit8khz.wav
-which converts a wav file to one channel, 8 bit, 8KHz wav.
 """
 
 import sys
@@ -22,9 +21,6 @@ from rnn import RNN
 WAV_IN = "wav/pingpong.wav"
 WAV_IN = "wav/pingpong8bit8khz.wav"
 rate, data = audio_utils.read_wav(WAV_IN)
-
-# WAV_OUT = "wav/pingpongout.wav"
-# audio_utils.write_wav(WAV_OUT, rate, data)
 
 sess = tf.Session()
 model = RNN(sess, data, {
@@ -55,18 +51,17 @@ while True:
         t = time.time()
 
     # if i != 0 and i % 1000 == 0:
-    if i % 1000 == 0:    
+    if i % 10000 == 0:    
         bitrate = 8000
-        duration_in_seconds = 1 # TODO. change to 30 seconds
+        duration_in_seconds = 30
         show_every = 50
         sample = model.sample(bitrate * duration_in_seconds, show_every) 
-
-        print "SAMPLE"
-        print "======"
-        print sample 
-        print "======"
         print('Batch: {:2d}, elapsed: {:.4f}'.format(i, time.time() - t))
-        t = time.time()        
+        t = time.time()                
+        
+        WAV_OUT = "samples/pingpong_" + str(i) + ".wav"
+        audio_utils.write_wav(WAV_OUT, rate, sample)
+        print "Generating", WAV_OUT
 
     if i % 1000 == 0:
         Saver.save(sess, "./save/audio", global_step=i)
