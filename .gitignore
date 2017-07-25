@@ -8,7 +8,7 @@ npm-debug.log
 text8.zip
 save/
 audio/midi/
-audio/midi_csv/
 audio/wav/
+audio/csv/
 audio/samples/
 *.pyc
