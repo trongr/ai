@@ -1,4 +1,20 @@
+"""
+Generate MIDI csv training data by running:
+
+    cd ~/ai/audio
+    bash bin/gen_master_csv.sh
+
+This will convert all the MIDI files in midi/ into their text/csv versions, and
+concatenate them into a single csv/master.csv file.
+
+Then run this file to train and generate audio:
+
+    python audio_midi.py csv/master.csv
+
+"""
+
 import sys
+sys.path.append("../tensorflow/rnn/")
 import time
 import sys
 import glob
@@ -7,6 +23,7 @@ import string
 import numpy as np
 # np.set_printoptions(threshold=np.nan) # lets you print full numpy arrays
 import tensorflow as tf
+import audio_utils
 from rnn import RNN
 
 def ixes_to_string(ixes):   
@@ -27,15 +44,15 @@ data = [CHAR_TO_IX[ch] for ch in DATA]
 sess = tf.Session()
 model = RNN(sess, data, {
     "SEQ_LENGTH": 100,
-    "NUM_CELL_UNITS": 64,
+    "NUM_CELL_UNITS": 256,
     "NUM_LSTM_CELLS": 3,
     "NUM_CLASSES": VOCAB_SIZE,
 })
 
 Saver = tf.train.Saver(max_to_keep=100, keep_checkpoint_every_n_hours=1) 
-save_files = glob.glob('./save/*')
+save_files = glob.glob('./save_midi/*')
 if save_files:
-    Saver.restore(sess, tf.train.latest_checkpoint('./save/'))
+    Saver.restore(sess, tf.train.latest_checkpoint('./save_midi/'))
 
 t = time.time()
 i = 0
@@ -64,8 +81,8 @@ while True:
         print('Batch: {:2d}, elapsed: {:.4f}'.format(i, time.time() - t))
         t = time.time()        
 
-    if i % 1000 == 0:
-        Saver.save(sess, "./save/char", global_step=i)
+    if i % 500 == 0:
+        Saver.save(sess, "./save_midi/char", global_step=i)
 
     i += 1
 

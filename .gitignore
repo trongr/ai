@@ -11,4 +11,5 @@ audio/midi/
 audio/wav/
 audio/csv/
 audio/samples/
+audio/save_midi/
 *.pyc
