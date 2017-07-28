@@ -54,10 +54,11 @@ save_files = glob.glob('./save_midi/*')
 if save_files:
     Saver.restore(sess, tf.train.latest_checkpoint('./save_midi/'))
 
+output_csv = open("csv/output.csv", "w")
 t = time.time()
 i = 0
 while True: 
-    model.train_batch()
+    batchX, batchY = model.train_batch()
 
     if i % 10 == 0:
         print('Batch: {:2d}, elapsed: {:.4f}'.format(i, time.time() - t))
@@ -73,10 +74,19 @@ while True:
         sample = model.sample(300)
         sample = ixes_to_string(sample)
 
+        print "TRAINING"
+        print "========"
+        print ixes_to_string(batchX[0])
+        print "========"
+
         print "SAMPLE"
         print "======"
         print sample 
         print "======"
+
+        output_csv.write(sample)
+        output_csv.write("\n")
+        output_csv.flush()
 
         print('Batch: {:2d}, elapsed: {:.4f}'.format(i, time.time() - t))
         t = time.time()        

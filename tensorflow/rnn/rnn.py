@@ -78,6 +78,7 @@ class RNN(object):
         ], {
             self.X: self.batchX, self.Y: self.batchY, self.InitState: self.state
         })
+        return self.batchX, self.batchY
 
     def sample(self, GEN_STR_LEN, show_every=None):
         output = []    
@@ -105,7 +106,7 @@ class RNN(object):
             y = self.DATA[self.batch_ptr + self.SEQ_LENGTH + i]
             batchX.append(x)
             batchY.append(y)
-            self.batch_ptr = (self.batch_ptr + 1) % self.NUM_TRAIN
+        self.batch_ptr = (self.batch_ptr + self.BATCH_SIZE) % self.NUM_TRAIN
         batchX = np.array(batchX)
         batchY = np.array(batchY)
         return batchX, batchY
