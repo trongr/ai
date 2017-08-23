@@ -7,6 +7,7 @@ MNIST_data
 npm-debug.log
 text8.zip
 save/
+tensorflow/rnn/opus/
 audio/midi/
 audio/wav/
 audio/csv/
