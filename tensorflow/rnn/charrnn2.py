@@ -57,15 +57,15 @@ while True:
         sample = model.sample(300)
         sample = ixes_to_string(sample)
 
-        print "TRAINING"
-        print "========"
-        print ixes_to_string(batchX[0])
-        print "========"
+        print("TRAINING")
+        print("========")
+        print(ixes_to_string(batchX[0]))
+        print("========")
         
-        print "SAMPLE"
-        print "======"
-        print sample 
-        print "======"
+        print("SAMPLE")
+        print("======")
+        print(sample)
+        print("======")
 
         output_file.write(sample)
         output_file.flush()

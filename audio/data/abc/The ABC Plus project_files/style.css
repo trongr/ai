@@ -1,0 +1,78 @@
+<-- style.css -->
+
+body {
+  font-family: serif;
+  background: white;
+  color: black;
+}
+
+div.body {
+  background: white;
+  color: black;
+  margin: 30 60 60 60;
+  padding: 15;
+  width: 70%;
+  font-family: serif;
+  font-size: 14;
+  line-height: 1.4em;
+  border-width: 1 1 1 1;
+  border-style: solid;
+  border-color: black;
+  margin: 0 auto;
+}
+
+div.note {
+    background: azure;
+    color: black;
+    margin: 15 10 15 10;
+    padding: 5;
+    font-family: sans-serif;
+    font-size: 1.1em;
+    line-height: 1.2em;
+    border-width: 1 1 1 1px;
+    border-style: solid;
+    border-color: blue;
+}
+
+p {
+  text-indent: 20;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: navy;
+  text-align: left;
+  font-family: sans-serif;
+  padding-top: 15;
+}
+
+h1 { font-size: 32; }
+h2 { font-size: 28; }
+h3 { font-size: 24; }
+h4 { font-size: 20; }
+
+A:link    { color: darkgreen; }
+A:visited { color: purple; }
+A:hover   { color: darkgreen; background: lightgray; }
+
+ul {
+  padding-top: 15;
+  padding-bottom: 15;
+}
+
+ol {
+  padding-top: 15;
+  padding-bottom: 15;
+}
+
+li {
+  background-color: #f0f0f0;
+  color: navy;
+  padding-bottom: 10;
+}
+
+table {
+  font-family: serif;
+  font-size: 14;
+  line-height: 1.4em; 
+  border-collapse: collapse;
+}

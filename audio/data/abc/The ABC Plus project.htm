@@ -1,0 +1,1381 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+  <title>The ABC Plus project</title>
+  <link rel="stylesheet" type="text/css" href="The%20ABC%20Plus%20project_files/style.css">
+</head>
+
+<body bgcolor="LightGrey">
+<div class="body">
+
+<!--  -->
+
+<!-- <p> -->
+<!-- <hr> -->
+<!-- <img src="./chile.gif" alt="Chile" width="100" height=66> -->
+<!-- 11 Septiembre 1973 -->
+
+<!-- <img src="./usa.gif" alt="U.S.A." width="100" height=66> -->
+<!-- September 11, 2001 -->
+
+<!-- <hr> -->
+
+<p>
+</p><center>
+<table cellspacing="15" border="0">
+  <tbody>
+  
+  <tr>
+    <th>
+      <font color="DarkBlue" size="+4" face="SansSerif">
+      <i>The ABC Plus Project</i>
+      </font> 
+    </th>
+  </tr>
+  
+  <tr>
+    <th><img src="The%20ABC%20Plus%20project_files/Scherzando.png" alt="Scherzando" align="middle" width="700">
+    </th>
+  </tr>
+  
+  </tbody>
+  </table>
+
+</center>
+
+<!-- ----- -->
+
+<table cellspacing="1" cellpadding="0" border="0">
+
+<tbody>
+  <tr align="top">
+  <td width="25%">
+  
+  <p>
+    <a href="http://abcplus.sourceforge.net/index.it.html">Versione italiana</a>&nbsp;&nbsp;
+    <img src="The%20ABC%20Plus%20project_files/it-flag.png" alt="Versione italiana" border="0">
+
+
+    </p><ul>
+      <li> <a href="#ABCGuide"> Making Music with ABC 2 </a>
+      </li><li> <a href="#choralmusic"> Some ABC 2 choral music </a>
+      </li><li> <a href="#abclatex"> An ABC package for LaTeX </a> 
+      </li><li> <!-- <img src="./new.jpg" alt="new!"> -->
+           <a href="#abctools"> ABC command line tools bundles </a> 
+      </li><li> <a href="#abcm2ps"> abcm2ps binaries </a>
+      </li><li> <a href="#abcm2psext"> abcm2ps extensions </a>
+      </li><li> <a href="#abcmidi"> abcmidi binaries </a>
+      </li><li> <a href="#EasyABC"> EasyABC </a>
+      </li><li> <a href="#JedABC"> JedABC </a>
+      </li><li> <a href="#abcpp"> abcpp </a>
+      </li><li> <a href="#abc2prt"> abc2prt </a>
+    </li></ul>
+  </td>
+  
+  <td width="20">
+  </td>
+
+  <td>
+  
+    <h2><a name="Introduction"></a>Introduction</h2>
+    <p>
+    One of my hobbies is music: I play folk and early music on the
+    whistle, flute, bagpipe, recorder, and clarinet. I find that the
+    <a href="http://abcnotation.com/"> ABC music notation language</a>
+    is a wonderful tool to typeset sheet music. ABC is one of the best
+    designed, easy to use, well-thought out, and nicely implemented
+    notation formats I've ever seen: IMHO, it surpasses other good
+    notation languages like <a href="http://www.gnu.org/software/lilypond/lilypond.html"> GNU
+    Lilypond</a> or <a href="http://icking-music-archive.org/software/indexmt6.html">
+    MusiXTeX</a>. (<a href="http://people.ds.cam.ac.uk/ph10/pmw.html">Philip's Music
+    Writer</a> is a serious contender though.) You can write music in
+    a very simple ASCII format and convert it to MIDI, or typeset it
+    to make professional-looking scores.
+    </p>
+    
+    <p>
+    ABC was originally designed for simple melodies, but there have
+    been efforts to extend the notation. The <a href="http://abcnotation.com/wiki/abc:standard:v2.1"> ABC Music
+    Standard</a> is now at version 2.1, which is unfortunately not
+    fully implemented by major programs.
+    
+    </p><p>
+    Some ABC applications implement most of the the ABC language; 
+    low-level details (formatting and MIDI effects) are supported too.
+    The purpose of the ABC Plus project is to provide software and
+    documentation for this extended ABC. <a title="magnificat.png" href="javascript:void(0);" onclick="newWindow=window.open('./magnificat.png','magnificat.png',
+    'scrollbars=no,width=570,height=750,resizable=yes');
+    newWindow.focus();">This</a> is an example of classical music
+    written in ABC Plus; it sounds <a href="http://abcplus.sourceforge.net/magnificat.mid">like
+    this</a>. What I informally call ABC Plus is, in practice, the
+    current implementation of ABC 2.*.
+    </p>
+    
+    <p>
+    All RPMs and .deb packages available on this site were built on a
+    Mint GNU/Linux 17.3 system. I built the RPM packages first, then I
+    made the .deb package using the <a href="http://kitenet.net/%7Ejoey/code/alien/">alien</a> converter.
+    
+    <!-- I'll do sth better one day -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+  </p></td>
+  </tr>
+
+</tbody>
+</table>
+
+<br>
+
+<div class="note">
+<p>
+A couple of notes.
+
+</p><p>
+First of all: please note that <b>I am not the author of abcm2ps,
+abcmidi, and EasyABC.</b> I wish I were such a great
+programmer! I just provide the packages or the links. Please refer to
+the authors for any questions.
+
+</p><p>
+Secondly: please refer to <a href="http://abcnotation.com/software">The ABC Notation software
+page</a> for a full and quite long list of ABC software.
+
+</p><p>
+Finally: please, <em>please</em>, don't write to me asking how to do
+this or that. I've run out of time. I recommend that you join the <a href="https://groups.yahoo.com/neo/groups/abcusers/info">abcusers</a>
+mailing list, and ask questions there. Thanks!
+
+</p></div>
+
+<!-- ----- -->
+
+<hr>
+
+<h2>
+  <a name="ABCGuide"></a>Making Music with ABC 2
+</h2>
+
+<p>
+I have written a manual that explains how to write music using ABC
+2. It focuses on using <tt>abcm2ps</tt> and <tt>abcmidi</tt>, but
+most of the information it contains can be applied (at least to some
+extent) to all ABC applications. Many thanks to Norman Schmidt who
+helped me translate parts of the manual.
+
+</p><p>
+I release this manual under the GNU Free Documentation License 1.3.
+This basically means that it's free and that you can freely modify it,
+as long as you make your modifications publicly available.
+
+</p><p>
+Latest release (please report errors and omissions!):
+<!-- <img src="./new.jpg" alt="new!"> -->
+
+</p><ul>
+
+  <li> <a href="https://sourceforge.net/projects/abcplus/files/Abcplus/abcplus_en-2017-04-15.zip">
+  abcplus_en-2017-04-15.zip</a>
+  New release, covering abcm2ps-8.13.8 and abcMIDI-2017.04.12
+  
+  </li><li> <a href="https://sourceforge.net/projects/abcplus/files/Abcplus/abcplus_en-2017-04-15.tar.gz">
+  abcplus_en-2017-04-15.tar.gz</a>
+  LaTeX sources
+  
+  </li><li> <a href="https://sourceforge.net/projects/abcplus/files/Abcplus/abcplus_it-2017-04-15.zip">
+  abcplus_it-2017-04-15.zip</a>
+  Italian version
+  
+  </li><li> <a href="https://sourceforge.net/projects/abcplus/files/Abcplus/abcplus_it-2017-04-15.tar.gz">
+  abcplus_it-2017-04-15.tar.gz</a>
+  LaTeX sources
+  
+</li></ul>
+
+<p>
+Previous versions:
+
+</p><ul>
+
+  <li>
+  <a href="https://sourceforge.net/projects/abcplus/files/Abcplus/abcplus_it-1.0.4.zip">
+  abcplus_it-1.0.4.zip </a>,
+  Italian version
+
+  </li><li>
+  <a href="https://sourceforge.net/projects/abcplus/files/Abcplus/abcplus_fr-1.0.4.zip">
+  abcplus_fr-1.0.4.zip</a>,
+  French version, kindly provided by Amaury Forgeot d'Arc
+
+</li></ul>
+
+<p>
+I rely on your feedback to fix errors and omissions, and in general to
+make this manual more useful. Please feel free to make translations!
+
+</p><p>
+<a href="#Introduction">
+<font color="red">
+Back to top
+</font>
+</a>
+
+<!-- ----- -->
+
+</p><hr>
+
+<h2>
+  <a name="choralmusic"></a>Some ABC Plus choral music
+</h2>
+
+<p>
+As a demonstration of the capabilities of ABC Plus, I have prepared a
+few examples of choral sheet music. They're free to use and share.
+
+</p><p>
+All scores use this <a href="http://abcplus.sourceforge.net/Choral/choral.fmt"> choral.fmt </a>
+format file.
+
+</p><p>
+<table cellpadding="1" border="1" bgcolor="lavender">
+
+<thead>
+<tr>
+<th align="center" valign="top"> Description </th>
+<th align="center" valign="top"> ABC </th>
+<th align="center" valign="top"> PDF </th>
+<th align="center" valign="top"> MIDI </th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>
+"Ave Maria"
+<br>
+Jacob Arcadelt (c. 1514-1557)
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Ave_Maria_Arcadelt.abc"> Ave_Maria_Arcadelt.abc </a>
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Ave_Maria_Arcadelt.pdf"> Ave_Maria_Arcadelt.pdf </a>
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Ave_Maria_Arcadelt.mid"> Ave_Maria_Arcadelt.mid </a>
+</td>
+</tr>
+
+<tr>
+<td>
+"Ave Maria"
+<br>
+Nicolas Gombert (c. 1490-1560)
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Ave_Maria_Gombert.abc"> Ave_Maria_Gombert.abc </a>
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Ave_Maria_Gombert.pdf"> Ave_Maria_Gombert.pdf </a>
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Ave_Maria_Gombert.mid"> Ave_Maria_Gombert.mid </a>
+</td>
+</tr>
+
+<tr>
+<td>
+"Ave Maria"
+<br>
+Giovanni Pierluigi da Palestrina (1525-1594)
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Ave_Maria_Palestrina.abc"> Ave_Maria_Palestrina.abc</a>
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Ave_Maria_Palestrina.pdf"> Ave_Maria_Palestrina.pdf </a>
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Ave_Maria_Palestrina.mid"> Ave_Maria_Palestrina.mid </a>
+</td>
+</tr>
+
+<tr>
+<td>
+"Ave Regina Coelorum"
+<br>
+Guillaume Dufay (c. 1400-1474)
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Ave_Regina_Coelorum.abc"> Ave_Regina_Coelorum.abc </a>
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Ave_Regina_Coelorum.pdf"> Ave_Regina_Coelorum.pdf </a>
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Ave_Regina_Coelorum.mid"> Ave_Regina_Coelorum.mid </a>
+</td>
+</tr>
+
+<tr>
+<td>
+"Ave Verum"
+<br>
+Wolfgang Amadeus Mozart (1756-1791)
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Ave_Verum.abc"> Ave_Verum.abc </a>
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Ave_Verum.pdf"> Ave_Verum.pdf </a>
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Ave_Verum.mid"> Ave_Verum.mid </a>
+</td>
+</tr>
+
+<tr>
+<td>
+"Il bianco e dolce cigno"
+<br>
+Jacob Arcadelt (c. 1514-1557)
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Bianco_Dolce_Cigno.abc"> Bianco_Dolce_Cigno.abc </a>
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Bianco_Dolce_Cigno.pdf"> Bianco_Dolce_Cigno.pdf </a>
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Bianco_Dolce_Cigno.mid"> Bianco_Dolce_Cigno.mid </a>
+</td>
+</tr>
+
+<tr>
+<td>
+"Canzonetta a tre voci"
+<br>
+Claudio Monteverdi (1567-1643)
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Canzonetta.abc"> Canzonetta.abc </a>
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Canzonetta.pdf"> Canzonetta.pdf </a>
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Canzonetta.mid"> Canzonetta.mid </a>
+</td>
+</tr>
+
+<tr>
+<td>
+"Coro della notte"
+<br>
+Pietro Alessandro Yon (1866-1943)
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Coro_Della_Notte.abc"> Coro_Della_Notte.abc </a>
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Coro_Della_Notte.pdf"> Coro_Della_Notte.pdf </a>
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Coro_Della_Notte.mid"> Coro_Della_Notte.mid </a>
+</td>
+</tr>
+
+<tr>
+<td>
+"Gaudeamus igitur"
+<br>
+traditional; music by Johannes Brahms (1833-1897)
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Gaudeamus_Igitur.abc"> Gaudeamus_Igitur.abc </a>
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Gaudeamus_Igitur.pdf"> Gaudeamus_Igitur.pdf </a>
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Gaudeamus_Igitur.mid"> Gaudeamus_Igitur.mid </a>
+</td>
+</tr>
+
+<tr>
+<td>
+"Halleluia"
+<br>
+Philipp Heinrich Erlebach (1657-1714)
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Halleluja_Erlebach.abc"> Halleluja_Erlebach.abc </a>
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Halleluja_Erlebach.pdf"> Halleluja_Erlebach.pdf </a>
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Halleluja_Erlebach.mid"> Halleluja_Erlebach.mid </a>
+</td>
+</tr>
+<tr>
+<td>
+"O sacrum convivium"
+<br>
+Andrea Gabrieli (c. 1510-1586)
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/O_Sacrum_Convivium.abc">
+  O_Sacrum_Convivium_Gabrieli.abc </a>
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/O_Sacrum_Convivium.pdf">
+  O_Sacrum_Convivium_Gabrieli.pdf </a>
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/O_Sacrum_Convivium.mid">
+  O_Sacrum_Convivium_Gabrieli.mid </a>
+</td>
+</tr>
+
+<tr>
+<td>
+"O vos omnes"
+<br>
+Carlo Gesualdo (c. 1561 - 1613)
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/O_Vos_Omnes.abc"> O_Vos_Omnes.abc </a>
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/O_Vos_Omnes.pdf"> O_Vos_Omnes.pdf </a>
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/O_Vos_Omnes.mid"> O_Vos_Omnes.mid </a>
+</td>
+</tr>
+
+<tr>
+<td>
+"Otche nash" (Pater Noster)
+<br>
+Nikolai Kedrov Sr. (1871-1954)
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Otche_Nash.abc"> Otche_Nash.abc </a>
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Otche_Nash.pdf"> Otche_Nash.pdf </a>
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Otche_Nash.mid"> Otche_Nash.mid </a>
+</td>
+</tr>
+
+<tr>
+<td>
+"Pater Noster"
+<br>
+Igor F. Stravinskij (1882-1971)
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Pater_Noster.abc"> Pater_Noster.abc </a>
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Pater_Noster.pdf"> Pater_Noster.pdf </a>
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Pater_Noster.mid"> Pater_Noster.mid </a>
+</td>
+</tr>
+
+<tr>
+<td>
+"Selig sind die Toten"
+<br>
+Heinrich Schutz (1585-1672)
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Selig_Sind_Die_Toten.abc"> Selig_Sind_Die_Toten.abc </a>
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Selig_Sind_Die_Toten.pdf"> Selig_Sind_Die_Toten.pdf </a>
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Selig_Sind_Die_Toten.mid"> Selig_Sind_Die_Toten.mid </a>
+</td>
+</tr>
+
+<tr>
+<td>
+"Tourdion"
+<br>
+Pierre Attaignant (c.1494 - c.1551)
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Tourdion.abc"> Tourdion.abc </a>
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Tourdion.pdf"> Tourdion.pdf </a>
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Tourdion.mid"> Tourdion.mid </a>
+</td>
+</tr>
+
+<tr>
+<td>
+"Unendliche Freude"
+<br>
+Franz Schubert (1797-1828)
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Unendliche_Freude.abc"> Unendliche_Freude.abc </a>
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Unendliche_Freude.pdf"> Unendliche_Freude.pdf </a>
+</td>
+<td>
+<a href="http://abcplus.sourceforge.net/Choral/Unendliche_Freude.mid"> Unendliche_Freude.mid </a>
+</td>
+</tr>
+
+</tbody>
+
+</table>
+
+<!-- ----- -->
+
+</p><p>
+<a href="#Introduction">
+<font color="red">
+Back to top
+</font>
+</a>
+
+<!-- ----- -->
+
+</p><hr>
+
+<h2>
+  <a name="abclatex"></a>An ABC package for LaTeX
+</h2>
+
+<p>
+Prof. Enrico Gregorio (University of Verona, Italy) has written a
+LaTeX package for including ABC/ABC Plus music in LaTeX documents.
+Thanks a lot!
+
+</p><p>
+The package is available from all CTAN mirrors, e.g. <a href="http://www.ctan.org/tex-archive/macros/latex/contrib/abc/">
+http://www.ctan.org/tex-archive/macros/latex/contrib/abc/</a>. Here's
+a local copy.
+
+</p><ul>
+  
+  <li> <a href="http://abcplus.sourceforge.net/abc.zip">abc.zip</a>. Version 2.0b. Documentation is
+  included.
+  
+  </li><li> <!-- <img src="./new.jpg" alt="new!"> -->
+  <a href="http://abcplus.sourceforge.net/tunebook-sample.pdf">tunebook-sample.pdf</a> Sample tunebook
+  written in LaTeX and <tt>abc.sty</tt>.
+
+  </li><li>
+  <a href="http://abcplus.sourceforge.net/tunebook-sample.tex">tunebook-sample.tex</a> LaTeX source.
+  
+</li></ul>
+
+<!-- ----- -->
+
+<hr>
+
+<h2>
+  <a name="abctools"></a>ABC command line tools bundles
+</h2>
+
+<p>
+The following archives contain the latest <tt>abcm2ps</tt>,
+<tt>abcmidi</tt>, <tt>beep.exe</tt>, <tt>abcpp</tt>, and
+<tt>abc2prt</tt> binaries for ARM Android, Windows, and OS X:
+
+</p><ul>
+
+  <li>
+  <a href="https://sourceforge.net/projects/abcplus/files/Abctools/abctools-arm-android-20170912.zip">
+  abctools-arm-android-20170912.zip</a>
+  
+  </li><li>
+  <a href="https://sourceforge.net/projects/abcplus/files/Abctools/abctools-win-20170912.zip">
+  abctools-win-20170912.zip</a>
+
+  </li><li>
+  <a href="https://sourceforge.net/projects/abcplus/files/Abctools/abctools-osx-20170912.zip">
+  abctools-osx-20170912.zip</a>
+  
+</li></ul>
+
+<p>
+Installing on Android is possible even on non-rooted devices; please
+refer to the included INSTALL.txt file.
+
+</p><p>
+Only SVG output is usable, since Ghostscript is not (yet) available on
+Android; so you'll want to typeset your ABC music using a command
+like:
+
+</p><pre>$ abcm2ps -X -O= music.abc
+</pre>
+
+<p>
+and display the resulting <tt>music.xhtml</tt> file with Firefox or
+other browsers.
+
+<!-- ----- -->
+
+</p><hr>
+
+<h2>
+  <a name="abcm2ps"></a><tt>abcm2ps</tt> binaries 
+</h2>
+
+<p>
+One of the best implementations of ABC is surely Jean-François
+Moine's <a href="http://moinejf.free.fr/"><tt>abcm2ps</tt></a>, an
+adaptation of Michael Methfessel's <tt>abc2ps</tt> that can handle
+multiple voices per staff and many other extensions. In my view,
+<tt>abcm2ps</tt> is ABC done right - in addition to folk music, it can
+do a lot of classical music quite well! It's amazing to see how this
+little program can make professional-looking scores.
+
+</p><p>
+<tt>abcm2ps</tt>' author provides the software in source-only form.
+Here you can download binaries for Windows and Linux:
+
+</p><p>
+
+<table cellpadding="5" border="1" bgcolor="lavender">
+  <tbody>
+  
+  <tr>
+    <td> &nbsp; </td> 
+    <td> <b>New stable release</b> </td>
+  </tr>
+  
+  <tr>
+    <td> <a href="https://sourceforge.net/projects/abcplus/files/abcm2ps/abcm2ps-8.13.15-win32.zip">
+    abcm2ps-8.13.15-win32.zip</a>
+    </td>
+    <td> binary for Windows <b>without</b> Pango support.</td>
+  </tr>
+  
+  <tr>
+    <td>
+    <a href="https://sourceforge.net/projects/abcplus/files/abcm2ps/abcm2ps-8.13.12-pango-win32.zip">
+    abcm2ps-8.13.12-pango-win32.zip</a>
+    </td>
+    <td> binary for Windows with Pango support (thanks to
+    Oliver Pfeiffer)</td>
+  </tr>
+
+  <tr>
+    <td>
+    <a href="https://sourceforge.net/projects/abcplus/files/abcm2ps/abcm2ps-8.13.15">
+    abcm2ps-8.13.15</a>
+    </td>
+    <td> static GNU/Linux binary, <b>without</b> Pango support. </td>
+  </tr>
+
+  <tr>
+    <td>
+    <a href="https://sourceforge.net/projects/abcplus/files/abcm2ps/abcm2ps_8.13.15-1_amd64.deb">
+    abcm2ps_8.13.15-1_amd64.deb</a>
+    </td>
+    <td> binary for Debian </td>
+  </tr>
+  
+  <tr>
+    <td>
+    <a href="https://sourceforge.net/projects/abcplus/files/abcm2ps/abcm2ps-8.13.15-1.x86_64.rpm">
+    abcm2ps-8.13.15-1.x86_64.rpm</a>
+    </td>
+    <td> binary RPM </td>
+  </tr>
+  
+  <tr>
+    <td>
+    <a href="https://sourceforge.net/projects/abcplus/files/abcm2ps/abcm2ps-8.13.15-1.src.rpm">
+    abcm2ps-8.13.15-1.src.rpm</a>
+    </td>
+    <td> source RPM </td>
+  </tr>
+  
+  <tr>
+    <td>
+    <a href="https://sourceforge.net/projects/abcplus/files/abcm2ps/abcm2ps-8.13.15-osx.zip">
+    abcm2ps-8.13.15-osx.zip</a>
+    </td>
+    <td>  
+    Mac OSX x86_64 binary
+    </td>
+  </tr>
+
+  <!-- <tr> -->
+  <!--   <td> -->
+  <!--   <a href="https://sourceforge.net/projects/abcplus/files/abcm2ps/abcm2ps-8.13.1-osx.zip"> -->
+  <!--   abcm2ps-8.13.1-osx.zip</a> -->
+  <!--   </td> -->
+  <!--   <td>   -->
+  <!--   Mac OS universal binary, thanks to Fr&eacute;d&eacute;ric -->
+  <!--   Aup&eacute;pin and Chuck Boody -->
+  <!--   </td> -->
+  <!-- </tr> -->
+
+  <!-- ----- -->
+  
+  </tbody>
+</table>
+
+</p><p>
+Binaries for Sun Solaris are available 
+<a href="http://www.opencsw.org/packages/abcm2ps/">here.</a>
+
+</p><p>
+<tt>abcm2ps</tt> can include graphics in the score, but only in EPS
+format (the <tt>%%EPS</tt> command). An excellent program for turning
+JPG, PNG and other bitmaps into compact EPS files is <a href="http://www.ctan.org/tex-archive/support/bmeps/">bmeps</a>. For
+convenience, the static Windows command-line executable is here: <a href="http://abcplus.sourceforge.net/bmeps.exe">bmeps.exe</a>
+
+</p><p>
+<a href="#Introduction">
+<font color="red">
+Back to top
+</font>
+</a>
+
+<!-- ----- -->
+
+</p><hr>
+
+<h2>
+  <a name="abcm2psext"></a><tt>abcm2ps</tt> extensions 
+</h2>
+
+<p>
+An exciting feature of <tt>abcm2ps</tt> is the possibility of writing
+extensions as PostScript code. Some of the ABC files included in the
+<tt>abcm2ps</tt> distribution show examples of such extensions.
+
+</p><p>
+I have gathered some code and written a few <tt>.fmt</tt> files. I
+remind you that to use the code in external <tt>.fmt</tt> files one
+has to write this command line:
+
+</p><pre>abcm2ps file.abc -F formatfile
+</pre>
+
+<p>
+where <tt>formatfile</tt> refers to the file <tt>formatfile.fmt</tt>.
+
+</p><p>
+There you are a list of my <tt>.fmt</tt> files, which will grow as I
+finish writing and testing them. They all work on both the stable and
+development <tt>abcm2ps</tt> releases. Kudos to Jean-François
+Moine for writing the original code!
+
+</p><p>
+<table cellpadding="5" border="1" bgcolor="lavender">
+
+<tbody>
+
+<tr>
+
+  <td> 
+    <a href="http://abcplus.sourceforge.net/itachords.fmt">itachords.fmt</a>
+    <p>
+    <a href="http://abcplus.sourceforge.net/itachords-caps.fmt">itachords-caps.fmt</a>
+  </p></td>
+  
+  <td> guitar chords using Italian notes (for abcm2ps 8.13.1 and later
+  versions). <br>
+  Written by Jean-François Moine. </td>
+  
+  <td>
+    <a href="http://abcplus.sourceforge.net/test-itachords.pdf"> test-itachords.pdf</a>
+    <p>
+    <a href="http://abcplus.sourceforge.net/test-itachords.abc"> test-itachords.abc</a>
+  </p></td>
+
+</tr>
+<tr>
+
+  <td> <a href="http://abcplus.sourceforge.net/deco-guitar.fmt">deco-guitar.fmt</a></td>
+  
+  <td> guitar chords diagrams </td>
+  
+  <td> <a href="http://abcplus.sourceforge.net/demo-guitar.pdf">demo-guitar.pdf</a></td>
+  
+</tr>
+<tr>
+  
+  <td> <a href="http://abcplus.sourceforge.net/deco-marks.fmt">deco-marks.fmt</a></td>
+  
+  <td> position marks </td>
+  
+  <td> <a href="http://abcplus.sourceforge.net/demo-marks.pdf">demo-marks.pdf</a></td>
+  
+</tr>
+
+<tr>
+  
+  <td> <a href="http://abcplus.sourceforge.net/renaissance.fmt">renaissance.fmt</a></td>
+  
+  <td> Format file for Renaissance music, by
+  <a href="http://anamnese.online.fr/site2/index.php?page=abc_renaissance">
+  Eric Forgeot</a> </td>
+  
+  <td> <a href="http://abcplus.sourceforge.net/charlotte.pdf">charlotte.pdf</a> </td>
+
+</tr><tr>
+  
+  <td> <a href="http://abcplus.sourceforge.net/thinlines.fmt">
+  thinlines.fmt</a></td>
+  
+  <td> draw thinner lines </td>
+  
+  <td> n/a </td>
+  
+</tr>
+
+<tr>
+  
+  <td> <a href="http://abcplus.sourceforge.net/ps.zip">ps.zip</a></td>
+  
+  <td>
+  Lots of new decorations and symbols, by David Lacroix
+  
+  </td><td>
+  <a href="http://abcplus.sourceforge.net/Symbols.pdf">Symbols.pdf</a>
+  <br>
+  <a href="http://abcplus.sourceforge.net/SpecialHeadsAndMarks.pdf">SpecialHeadsAndMarks.pdf</a>
+  </td>
+  
+</tr>
+
+<tr>
+  
+  <td> <a href="http://abcplus.sourceforge.net/col.fmt">col.fmt</a></td>
+  
+  <td>
+  Note and symbols in colour, by David Lacroix
+  
+  </td><td>
+  <a href="http://abcplus.sourceforge.net/colors.pdf">colors.pdf</a>
+  <br>
+  <a href="http://abcplus.sourceforge.net/colors.abc">colors.abc</a>
+  </td>
+  
+</tr>
+
+<tr>
+  
+  <td> <a href="https://github.com/jcowgar/easynotes">Easy Notes</a>
+  
+  </td><td> 
+  Easy notes: note heads including the note name. By Jeremy Cowgar.
+  
+  </td><td>
+  <a href="http://abcplus.sourceforge.net/easynotes.png">easynotes.png</a>
+  </td>
+  
+</tr>
+
+</tbody>
+</table>
+
+</p><p>
+<a href="#Introduction">
+<font color="red">
+Back to top
+</font>
+</a>
+
+<!-- ----- -->
+
+</p><hr>
+
+<h2>
+  <a name="abcmidi"></a><tt>abcmidi</tt> binaries
+</h2>
+
+<p>
+I provide Win32, Linux, and Mac OS X binaries for this very important
+piece of software, whose original home page is <a href="http://abc.sourceforge.net/abcMIDI">
+http://abc.sourceforge.net/abcMIDI/</a>. The latest version is
+available as source from <a href="http://ifdo.ca/%7Eseymour/runabc/top.html">
+      http://ifdo.ca/~seymour/runabc/top.html</a>.
+
+</p><p>
+<table cellpadding="5" border="1" bgcolor="lavender">
+  <tbody>
+  
+  <tr>
+    <td> <a href="https://sourceforge.net/projects/abcplus/files/abcMIDI/abcmidi-20170912-win32.zip">
+    abcmidi-20170912-win32.zip</a> </td>
+    <td> Windows binaries </td>
+  </tr>
+  
+  <tr>
+    <td> <a href="https://sourceforge.net/projects/abcplus/files/abcMIDI/abcmidi_20170912-1_amd64.deb">
+    abcmidi_20170912-1_amd64.deb</a> </td>
+    <td> binary for Debian </td>
+  </tr>
+
+  <tr>
+    <td>
+    <a href="https://sourceforge.net/projects/abcplus/files/abcMIDI/abcmidi-20170912-1.x86_64.rpm">
+    abcmidi-20170912-1.x86_64.rpm </a></td>
+    <td> binary RPM </td>
+  </tr>
+  
+  <tr>
+    <td>
+    <a href="https://sourceforge.net/projects/abcplus/files/abcMIDI/abcmidi-20170912-1.src.rpm">
+    abcmidi-20170912-1.src.rpm</a> </td>
+    <td> source RPM </td>
+  </tr>
+  
+  <tr>
+    <td>
+    <a href="https://sourceforge.net/projects/abcplus/files/abcMIDI/abcmidi-20170912-osx.zip">
+    abcmidi-20170912-osx.zip</a>
+    </td>
+    <td> Mac OS X binaries </td>
+  </tr>
+
+  <!-- <tr> -->
+  <!--   <td> -->
+  <!--   <a href="https://sourceforge.net/projects/abcplus/files/abcMIDI/abcmidi-20170202-osx.zip"> -->
+  <!--   abcmidi-20170202-osx.zip</a> -->
+  <!--   </td> -->
+  <!--   <td> Mac OS X universal binaries (thanks to Fr&eacute;d&eacute;ric -->
+  <!--   Aup&eacute;pin and Chuck Boody) </td> -->
+  <!-- </tr> -->
+  
+  </tbody>
+</table>
+
+</p><p>
+<a href="#Introduction">
+<font color="red">
+Back to top
+</font>
+</a>
+
+<!-- <p> -->
+<!-- <a href="#Donation"> -->
+<!-- <font color="green"> -->
+<!-- Please consider making a small donation -->
+<!-- </font> -->
+<!-- </a> -->
+
+<!-- ----- -->
+
+<!-- <hr> -->
+
+<!-- <h2> -->
+<!--   <a name="tclabc"></a><tt>tclabc</tt> binaries  -->
+<!-- </h2> -->
+
+<!-- <p> -->
+<!-- Jean-Fran&ccedil;ois' other fine piece of software. <tt>tclabc</tt> is -->
+<!-- a graphical ABC editor written in tcl/tk. -->
+
+<!-- <p> -->
+<!-- <table border=1 cellpadding=5 bgcolor=lavender> -->
+<!--   <tbody> -->
+  
+<!--   <tr> -->
+<!--     <td> -->
+<!--     <a href="https://sourceforge.net/projects/abcplus/files/tclabc/tclabc_1.3.7-1_i386.deb"> -->
+<!--     tclabc_1.3.7-1_i386.deb</a> -->
+<!--     </td> -->
+<!--     <td> binary for Debian </td> -->
+<!--   </tr> -->
+  
+<!--   <tbody> -->
+<!--   <tr> -->
+<!--     <td> -->
+<!--     <a href="https://sourceforge.net/projects/abcplus/files/tclabc/tclabc-1.3.7-1.i386.rpm"> -->
+<!--     tclabc-1.3.7-1.i386.rpm</a> -->
+<!--     </td> -->
+<!--     <td> latest release for RPM-based distributions </td> -->
+<!--   </tr> -->
+  
+<!--   <tr> -->
+<!--     <td> -->
+<!--     <a href="https://sourceforge.net/projects/abcplus/files/tclabc/tclabc-1.3.7-1.src.rpm"> -->
+<!--     tclabc-1.3.7-1.src.rpm</a> -->
+<!--     </td> -->
+<!--     <td> source RPM </td> -->
+<!--   </tr> -->
+  
+<!--   </tbody> -->
+<!-- </table> -->
+
+<!-- <p> -->
+<!-- <a href="#Introduction"> -->
+<!-- <font color="red"> -->
+<!-- Back to top -->
+<!-- </font> -->
+<!-- </a> -->
+
+<!-- <!-- ----- --> --&gt;
+
+</p><hr>
+
+<h2>
+  <a name="EasyABC"></a>EasyABC
+</h2>
+
+<p>
+<table cellpadding="5" border="0" bgcolor="lavender">
+<tbody>
+
+  <tr>
+    <td> 
+      <a href="http://abcplus.sourceforge.net/easyabc.png"><img src="The%20ABC%20Plus%20project_files/easyabc_thumb.png" alt="screenshot"> 
+      </a>
+    </td>
+    <td> EasyABC loading an ABC collection. Click to enlarge.</td>
+  </tr>
+
+</tbody>
+</table>
+
+</p><p>
+EasyABC is an open source ABC editor for Windows, OSX and Linux. It
+uses abcm2ps and abc2midi, and it has a rich feature list. Most
+notably, it can import MusicXML files and export tunes in SVG format.
+
+</p><p>
+Kudos to Nils Liberg, original author, and to Seymour Shlien, current
+maintainer!
+
+</p><p>
+EasyABC sources and binaries for Windows and OS X can be downloaded
+from this page: <a href="http://sourceforge.net/projects/easyabc/files/">
+http://sourceforge.net/projects/easyabc/files/</a>
+
+</p><p>
+<table cellpadding="5" border="1" bgcolor="lavender">
+  <tbody>
+  
+  <tr>
+    <td>
+    <a href="https://sourceforge.net/projects/abcplus/files/EasyABC/easyabc_1.3.7.7-1_all.deb">
+    easyabc_1.3.7.7-1_all.deb</a>
+    </td>
+    <td> binary for Debian. You'll also need python-wxgtk2.8,
+    python-pygame, and python-pyparsing. </td>
+  </tr>
+  
+  </tbody><tbody>
+  <tr>
+    <td>
+    <a href="https://sourceforge.net/projects/abcplus/files/EasyABC/easyabc-1.3.7.7-1.noarch.rpm">
+    easyabc-1.3.7.7-1.noarch.rpm</a>
+    </td>
+    <td> latest release for RPM-based distributions </td>
+  </tr>
+  
+  <tr>
+    <td>
+    <a href="https://sourceforge.net/projects/abcplus/files/EasyABC/easyabc-1.3.7.7-1.src.rpm">
+    easyabc-1.3.7.7-1.src.rpm</a>
+    </td>
+    <td> source RPM </td>
+  </tr>
+
+  </tbody>
+</table>
+
+</p><p>
+<a href="#Introduction">
+<font color="red">
+Back to top
+</font>
+</a>
+
+<!-- ----- -->
+
+</p><hr>
+
+<h2>
+  <a name="JedABC"></a>JedABC
+</h2>
+
+<p>
+<table cellpadding="5" border="0" bgcolor="lavender">
+  <tbody>
+  
+  <tr>
+    <td> 
+      <a href="http://abcplus.sourceforge.net/jedabc.png"><img src="The%20ABC%20Plus%20project_files/jedabc_thumb.png" alt="screenshot"> 
+      </a>
+    </td>
+    <td> A.k.a. ABC mode for Jed. Click to enlarge.</td>
+  </tr>
+  <tr>
+    <td> 
+      <a href="http://abcplus.sourceforge.net/jedabc_index.png">
+      <img src="The%20ABC%20Plus%20project_files/jedabc_index_thumb.png" alt="screenshot"> 
+      </a>
+    </td>
+    <td> JedABC in index mode. Click to enlarge.</td>
+  </tr>
+  
+  </tbody>
+</table>
+
+</p><p>
+JedABC is an extension to the
+<a href="http://www.jedsoft.org/jed">Jed editor</a>
+that turns it into a powerful and easy to use IDE (Integrated Development
+Environment) for ABC files, with full integration with preprocessors,
+converters, players and previewers. It's similar in concept to <a href="http://www.barfly.dial.pipex.com/">BarFly</a> or <a href="http://ifdo.pugmarks.com/%7Eseymour/runabc/runabc.html">runabc</a>,
+with several advantages.
+
+</p><p>
+<b>Warning</b>: JedABC is meant for geeks, that is for people who are
+computer proficient and are comfortable editing files by hand.
+
+</p><p>
+To use JedABC, install <a href="http://www.jedsoft.org/jed"> the Jed
+editor</a> first. Packages should exist for your platform or Linux
+distribution. Also, make sure you have GhostView and a MIDI player
+installed. Then download JedABC:
+
+</p><ul>
+  <li> <a href="http://abcplus.sourceforge.net/abc.sl">abc.sl 1.18.1</a>
+  </li><li> <a href="http://abcplus.sourceforge.net/abc-latin1.sl">abc-latin1.sl</a>
+  </li><li> <a href="http://abcplus.sourceforge.net/abc-utf8.sl">abc-utf8.sl</a>
+  </li><li> <a href="http://abcplus.sourceforge.net/jedabc.html">jedabc.html</a> online documentation
+  </li><li> <a href="http://abcplus.sourceforge.net/jedabc.txt">jedabc.txt</a> help file
+  </li><li> <a href="http://abcplus.sourceforge.net/jedabc-it.txt">jedabc-it.txt</a> Italian help file
+  </li><li> <a href="http://abcplus.sourceforge.net/beep.exe">beep.exe</a> (for Windows users)
+  </li><li> <a href="http://abcplus.sourceforge.net/beep.bas">beep.bas</a> beep source (compile with <a href="http://www.freebasic.net/">FreeBASIC</a>)
+</li></ul>
+
+<p>
+Put <tt>abc.sl</tt> and <tt>jedabc.txt</tt> where all the other
+<tt>.sl</tt> files reside (usually <tt>/usr/share/jed/lib</tt>), then edit
+the system-wide <tt>jed.rc</tt> (<tt>/etc/jed.d/05jed-common.sl</tt> on
+Debian) or <tt>.jedrc</tt> in your home directory to add these lines:
+
+</p><pre>variable abc_encoding="utf8";
+% Italian users only
+define variable abc_language = "it";
+autoload ("abc_mode", "abc");
+add_mode_for_extension ("abc", "abc"); % plain ABC
+add_mode_for_extension ("abc", "abp"); % ABC with abcpp macros
+</pre>
+
+<p>
+<a href="#Introduction">
+<font color="red">
+Back to top
+</font>
+</a>
+
+<!-- ----- -->
+
+</p><hr>
+
+<h2>
+  <a name="abcpp"></a><tt>abcpp</tt>
+</h2>
+
+<p>
+<tt>abcpp</tt> is a simple yet powerful preprocessor designed for, but
+not limited to, ABC music files. It provides conditional output,
+macros, symbol renaming, and file inclusion. I wrote it for two
+reasons: first, I wanted to overcome incompatibilities between ABC
+packages; secondly, I wanted to be able to write portable and more
+readable ABC files.
+
+</p><p>
+Inspired by the C and S-Lang (<a href="http://www.s-lang.org/">
+http://www.s-lang.org</a>) preprocessor, <tt>abcpp</tt> supports some
+directives that allow you to play a few tricks. You write your ABC music
+files with directives lines like <tt>#define</tt> or <tt>#ifdef</tt>,
+defining macros or excluding portions of text according to specific
+conditions. Then you preprocess your file with abcpp, producing an output
+file suitable for each ABC application or voice. Interestingly,
+<tt>abcpp</tt> is actively used with <a href="http://icking-music-archive.org/">MusiXTeX</a>-related programs.
+
+</p><p>
+In a nutshell, have your ABC cake and eat it too!
+
+</p><h3>Download <tt>abcpp</tt></h3>
+
+<ul>
+
+  <li> <a href="https://sourceforge.net/projects/abcplus/files/abcpp/abcpp-1.4.5.tar.gz"> <tt>abcpp-1.4.5.tar.gz</tt></a>
+  - source. 
+   
+  </li><li> <a href="https://sourceforge.net/projects/abcplus/files/abcpp/abcpp-1.4.5-1.x86_64.rpm">
+  <tt>abcpp-1.4.5-1.x86_64.rpm</tt></a> - binary RPM
+   
+  </li><li> <a href="https://sourceforge.net/projects/abcplus/files/abcpp/abcpp-1.4.5-1.src.rpm"> <tt>abcpp-1.4.5-1.src.rpm</tt></a>
+  - source RPM
+  
+  </li><li> <a href="https://sourceforge.net/projects/abcplus/files/abcpp/abcpp_1.4.5-1_amd64.deb">
+  <tt>abcpp_1.4.5-1_amd64.deb</tt></a> - binary for Debian
+  
+  </li><li> <a href="https://sourceforge.net/projects/abcplus/files/abcpp/abcpp-1.4.5-win32.zip">
+  <tt>abcpp-1.4.5-win32.zip</tt></a> - binary for Windows
+  
+  </li><li> <a href="https://sourceforge.net/projects/abcplus/files/abcpp/abcpp-1.4.5-osx.zip"> <tt>abcpp-1.4.5-osx.zip</tt></a> -
+  binary + sources and documentation
+  
+</li></ul>
+
+<p>
+The archive also contains the documentation. Many thanks to the
+developers who sent me patches!
+
+</p><p>
+<a href="#Introduction">
+<font color="red">
+Back to top
+</font>
+</a>
+
+<!-- <p> -->
+<!-- <a href="#Donation"> -->
+<!-- <font color="green"> -->
+<!-- Please consider making a small donation -->
+<!-- </font> -->
+<!-- </a> -->
+
+<!-- ----- -->
+
+</p><hr>
+
+<h2>
+  <a name="abc2prt"></a><tt>abc2prt</tt>
+</h2>
+
+<p>
+<tt>abc2prt</tt> is a simple tool to extract parts from multivoice ABC
+music files.
+
+</p><p>
+I wrote it because it's often desirable to give singers their own part
+in addition to the complete score. I know that Perl scripts exist that
+do the trick, and Unix users will be happy with them. However,
+installing Perl on a Windows machine only for running a script is
+quite an overkill.
+
+</p><p>
+<tt>abc2prt</tt> is a command line tool. Usage is
+
+</p><pre>$ abc2prt -v voicename [inputfile] [outputfile]
+</pre>
+
+<p>
+If <tt>inputfile</tt> and <tt>outputfile</tt> are not specified,
+<tt>abc2prt</tt> will use standard input and standard output. An example
+is
+
+</p><pre>$ abc2prt -v TII music.abc music-tii.abc
+</pre>
+
+<p>
+which will output the whole header and all the lines that belong to
+the voice defined as <tt>V:TII</tt>, including <tt>w:</tt> lines. At
+most five <tt>-v</tt> fields are allowed.
+
+</p><p>
+If there's enough request, I'll write a graphical version. The
+multivoice extensions were written by Matthew K. Junker, junker at
+alum dot mit dot edu. Many thanks, Matthew!
+
+</p><h3>Download <tt>abc2prt</tt></h3>
+
+<ul>
+
+  <li> <a href="https://sourceforge.net/projects/abcplus/files/abc2prt/abc2prt-1.0.2.tar.gz">
+  <tt>abc2prt-1.0.2.tar.gz</tt></a> - source
+  
+  </li><li> <a href="https://sourceforge.net/projects/abcplus/files/abc2prt/abc2prt-1.0.2-1.x86_64.rpm">
+  <tt>abc2prt-1.0.2-1.x86_64.rpm</tt></a> - binary RPM
+   
+  </li><li> <a href="https://sourceforge.net/projects/abcplus/files/abc2prt/abc2prt-1.0.2-1.src.rpm"> 
+  <tt>abc2prt-1.0.2-1.src.rpm</tt></a> - source RPM
+  
+  </li><li> <a href="https://sourceforge.net/projects/abcplus/files/abc2prt/abc2prt_1.0.2-1_amd64.deb">
+  <tt>abc2prt_1.0.2-1_amd64.deb</tt></a> - binary for Debian
+  
+  </li><li> <a href="https://sourceforge.net/projects/abcplus/files/abc2prt/abc2prt.exe">
+  <tt>abc2prt.exe</tt></a>
+  - binary for Windows
+  
+  </li><li> <a href="https://sourceforge.net/projects/abcplus/files/abc2prt/abc2prt-1.0.2-osx.zip">
+  <tt>abc2prt-1.0.2-osx.zip</tt></a>  - binary for Mac OS X (thanks to
+  Chuck Boody)
+   
+</li></ul>
+
+<p>
+<a href="#Introduction">
+<font color="red">
+Back to top
+</font>
+</a>
+
+<!-- ----- -->
+
+</p><hr>
+
+<center>
+
+<p>
+This site is maintained by Guido Gonzato, Ph.D.
+
+</p><p>
+For information, suggestions, etc, please drop me a line:
+<tt>guido.gonzato at gmail.com</tt>
+</p></center>
+
+<hr>
+<center>
+
+    <center>
+    <a href="http://www.tibet.com/">
+    <img src="The%20ABC%20Plus%20project_files/tibet.png" alt="Free Tibet!" width="200">
+    </a>
+    <p>
+    My deeply felt sympathy to the Tibetan people
+    </p></center>
+
+
+  <a href="http://www.jedsoft.org/jed">
+  <img src="The%20ABC%20Plus%20project_files/jed5.jpg" alt="Made with Jed"></a>
+  
+  <a href="http://sourceforge.net/projects/abcplus">
+  <img src="The%20ABC%20Plus%20project_files/sflogo.gif" alt="Abcplus at SourceForge.net" border="0" width="120" height="30"></a>  
+
+</center>
+
+</div> <!-- body -->
+
+
+
+</body></html>

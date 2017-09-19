@@ -1,0 +1,2114 @@
+
+X: 0
+T: Apollo's Banquet
+O: Playford 1687
+Z: 2015 John Chambers <jc:trillian.mit.edu>
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+N: From the John Glen collection, via Lady Dorothea Ruggles-Brise
+K:
+%%center Apollo's Banquet:
+%%center CONTAINING
+%%center Instructions, and Variety of New Tunes, Ayres,
+%%center Jiggs, and several New Scotch Tunes
+%%center FOR THE
+%%center TREBLE-VIOLIN
+%%center TO WHICH IS ADDED
+%%center The Tunes of the newest French Dances, now used at Court and in Danching Schools.
+%%center
+%%center ----------------------------------------------------------------------
+%%begintext align
+%% Transcription notes:
+%%
+%% There are no page numbers.
+%% The tunes are are numbered sequentially in each of the 3 "parts".
+%% the part number (1-3) and the 3-digit tune number (001-121) are
+%% used at the start of the file names to preserve the publication order.
+%% The rest of the file name is the tune's title, minus punctuation,
+%% with underscores instead of spaces, plus the ".abc" suffix.
+%%endtext
+%%begintext align
+%% This book uses the common practice of :||: repeat symbols between the
+%% strains, but usually just a plain double bar at the end.
+%% These have been transcribed as-is, which may cause problems and/or error
+%% messages from some ABC software.
+%% Since there are no dances in this collection,
+%% there is no way of guessing what repeat patterns were intended.
+%% Readers will have to decide which repeats work for the intended audience
+%% For use in dancing, you'll have to discuss this with the dance leader(s) to decide
+%% what fits each dance best.
+%%endtext
+%%begintext align
+%% There's an odd symbol  in a couple of tunes,
+%% which has a similarity to the ":S:" segno symbol in some other collections of the time,
+%% and is used the same way, so it has been transcribed as !segno!.
+%%endtext
+%%begintext align
+%% Many tunes have "incorrect" rhythms at repeats and/or between strains,
+%% due to unequal "pickup" notes in different strains.
+%% In a few cases, this can easily be fixed by adding a few rests, which I've done.
+%% In other cases, no simple fix is possible, so I just transcribed the boundaries as-is.
+%%endtext
+
+%%newpage
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2042
+T: La Katherine.
+%R: _
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+Q: "[Play every Strain twice.]"
+N: The last bars are missing a couple of 1/4 notes.
+M: 3/2
+L: 1/8
+K: Gm
+% - - - - - - - - - -
+|:\
+g3de2 d2c3d | B3AG2 d3=ef2 | =e2f3g ^f3=ed2 :: a3gfe c2f4 | d3cBA G2c2F2 | B3cde
+c2B2f2 | d3dg2 =e3ea2 | ^f3=ed2 b3ag2 | a2^f3g  g6 :: B2cBAG d2d2g2 | =e2e^fg2 ^fg^f=edc |
+B2cBAG d2d2g2 | =e2efg2 ^f6 :: g2c2c2 f2B2B2 | e2fedc dedcB2 | b2g2g2 a2d2d2 | g2a2^f2
+g2def2 | c2cde2 B2Bcd2 | cBA3G G6- :: G2def2 c2cde2 | B2Bc d2cB | A3G G4 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2043
+T: New la Monsieur.
+%R: _
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 3/2
+L: 1/8
+K: D
+% - - - - - - - - - -
+a |\
+a3gf2 g2e3d | c3BA2 d2e3f | g3ab2 a2g3f | e6- e4 :: e | e3fg2 a2f3g | a3gfe
+d2c3d | B3fe2 d2d3c | d6- d4 ::[M:C|] a | f3g e3d | | a3f g3a | f6 A2 | B3c d3B | c3d B3A | A6 :: A2 |
+B3c d3B | c3d A3f | e4 A3a | b3(a/g/) f3d | A3f e3d | d8 ::[M:3/2] f2f2d2 a2a2f2 | g2e2a2 (fe)(fg)f2 |
+f2f2d2 a2a2f2 | g2e2a2 f6 :: f2f2g2 (ed)(ef)e2 | d2d2B2 (cB)(cd)c2 | dcde(fg) a3gf2 | g2e3d d6 |]
+% - - - - - - - - - -
+
+W: The Lady:
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2044
+T: Corant la Lorain
+%R: courante
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+N: Initial rest added to fix the rhythms of repeats.
+M: 3/2
+L: 1/8
+K: Gm
+% - - - - - - - - - -
+zG |\
+G3AB2 AGg3d | e6 d2c3d |\
+B3AB2 c2c3B | A6 a2b3a |\
+g2fef2 gac3d | e2A2f3 ee3d |\
+d6- d4 :|
+|: [M:3/4]\
+g2a2b2 | f3ed2 |\
+g3cf2 | c4B2 |\
+b2f3g | a3ef2 |\
+c3a=e2 | =e4d2 ::\
+g3ab2 | a2g2a2 |
+f4d2 | g3fe2 |\
+d2c2g2 | B6 |\
+f3ed2 | e2f2g2 |\
+e4(dc) | f2g2a2 | b2a2b2 |[M:C|]\
+^f6 d2 | B2G2 d2g2 |
+f2 d4 ba | g2d2 e3f |\
+c2 B4 :: f2 | f2ed c3d |\
+e2 e4 f=e/f/ | g2c2 c3B |\
+c2 c4 Bc | A2 F4 BA |
+G2 G4 gc | f2Bc c3B |\
+B2 B4 !segno!y b>b | b2a2 a2g>f |\
+g2 g4 ae | f2 f4 dA |\
+B2c2 A3G | G2 HG4 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2045
+T: La Beauford
+%R: _
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 3/2
+L: 1/8
+K: Gm
+% - - - - - - - - - -
+[|\
+d2g3_a f2f3g | e2e3f d2B3d |\
+c>BA3c B>AG3B | A>G^F3F G2G4 |\
+d2g3_a f2B3g | e2e3d d3B2(c/G/) |
+_A2A3G G2c3G | (=AB)B3A B2B4 |\
+d2=e3e f2^f4 | (gA)A3G ^F2D4 |\
+d2e3f =B2c3d | (ef)d3B c2c3d |
+e2e4 d2d4 | g2g3_a ^f2d4 |\
+A2B3c ^F2G3A | (Bc)A2(G^F) G2G3A |\
+B2c3d ^F2d3c | (BA)A3G G2G4 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2046
+T: La Princess.
+%R: _
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+N: The 1st strain has only 7 bars.
+M: 3/2
+L: 1/8
+K: G
+% - - - - - - - - - -
+G |\
+G3AB2 G2d3d | d3dg2 f2e3a |\
+f6 g2a3b | b3ag2 f2e3e |\
+=f6 e2e2=f2 | ^c3cd2 e2e3d | d8- d3 :|
+|: a |\
+a3ab2 agf3e | ^d6 e2f2g2 |\
+B3cd2 edc3B | c2A4d2 e3f |\
+g6 fea3a | a3be2 f2d3g |\
+f6 gaa3g | g8- g3 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2047
+T: La Princess Ann.
+%R: _
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: C|
+L: 1/8
+K: Gm
+% - - - - - - - - - -
+G |\
+d3e c3(B/c/) | d4 B3(A/G/) | c3B A3d | B3A G3g |\
+d3=e f3a | a4 =e3f | ^c3f =e3d | d6 :|
+|: [M:3/4]\
+f2f2f2 | d3(c/d/)e2 | c2c2f2 | d3cB2 |\
+b2a2g2 | a2g2f2 | f4=e2 | f6 |\
+a2a2b2 | g2gab2 |
+a2bag2 | a2d2g2 |\
+=e2efg2 | ^f2g2a2 | a4g2 | g6 ::\
+[M:C|]\
+d2 |\
+g2a2 b2ag | agab a2d2 |\
+g2a2 b2ag | a6 :|
+|:\
+d2 |\
+g2gf e2dc | f2fe d2ef | gabf (gf)(ed) | c4 B2f2 |\
+b2ba g2=e2 | a2ag ^f3(=e/f/) | g3a a3g | g6 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2048
+T: Minuet
+%R: minuet
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 3/2
+L: 1/8
+K: Dm
+% - - - - - - - - - -
+|:\
+d2f2d2 a4f2 | g2a4 f3(e/f/)d2 |\
+d2f2d2 a4e2 | f2f3e e6 ::\
+e2f2d2 g4e2 | ^c2d3e e4 A2 |\
+e2f2d2 g2e2^c2 | (de)e3d d6 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2049
+T: The New Provo
+%R: _
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 3/2
+L: 1/8
+K: G
+% - - - - - - - - - -
+GA |\
+B3cd2 e3fg2 | a3ba2 f3ed2 | g3Bc2 A3d^c2 | d6- d3AB2 |\
+c3de2 e3fg2 | a6- a4bf | f3ed2 g3af2 | g6- g4dc |
+B3cA2 G3ga2 | f3ga2 d3ef2 | g2f3e |[M:C|] e8 |\
+g3f e2d2 | c>dB>c A2G2 | FGA2 Bcd2 | e3e e3f |\
+g2a2 d3d | d8 |
+e3f g3a | g3f e3d | c3c c3B | A3A A3G |\
+F3F G3A | B8 | c4 ^c4 | d3e f3g |\
+a4 a3a | a4 e3f | g3g g3f | g6 :|
+|: GA |\
+B3B B3c | A6 zF | G3F E3F | F4 G3A |\
+B3c d3e | ^c3d e3g | f3e e3d | d6 ::\
+[M:3/2] A2c3d e2e4 | a2g3a f3ed2 |
+b2g3a a3gf2 | g2f3e ^d2B4 | A2c3d e2e4 | a2g3a f3ed2 |\
+b2g2a2 a3gf2 | g2g3f g4d2 |[M:3/2] g4f2 g4a2 | d4c2 c4B2 |\
+B6- B4B2 |
+e4d2 c4B2 | A4G2 G4F2 | G6- G4gf |\
+[M:C|]\
+g2d2 g2a2 | b2f2 g2^d2 | e2d2 c2B2 | A2^G2 A2ae |\
+f2g2 g3f | g6 |]
+[M:3/2]\
+B2c2d2 G2G2A2 | B2cBAG A2A2d2 | B2Bcd2 G2G2A2 | B2cBAG F6 ::\
+B2c2d2 e2e2f2 | g2agfe agabag | f2g2a2 ^d2e2f2 | f4e2 e4e2 |
+d2B2c2 A2A2d2 | G2G2g2 g2e2e2 | d2B2c2 A2A2d2 | d3ec2 d3ef2 |\
+g2d2g2 agaba2 | b2e2a2 fgfed2 | g2d2g2 agaba2 | b2e2f2 g6 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2050
+T: Corant la Grand-Britain
+%R: courante
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 3/2
+L: 1/8
+K: Gm
+% - - - - - - - - - -
+|:\
+B2BA G2d2 g3a | ^f3g a2b2 agfe | d3d ^f2g2 c3c | c6 zcf3f |\
+B6 zBe3e | AABc d3A B3c | A2 ^F4 a2a3a |
+=e6 =f2f3g | ^c3c d2=e e3d | d6- d4 ::\
+[M:3/2]\
+a2g2a2 d2g2a2 | b2g2f2 =e2d2c2 | f6 e6 | z2c2B2 A2G2F2 |\
+B2c2d2 e2c2e2 | d2c2B2 f2c2e2 |
+d2=e2f2 =e2^f2g2 | ^f2g3(f/g/) a4 |\
+[M:C|]\
+A3A B3B | =B3B c3d | e4 e4 | A3A B3c |\
+^F3F G3A | A4 G4 | A3A B3B |
+=B3B c3d |\
+e4 e4 | =e3e f3e | ^f3b g3^f | g8- |\
+[M:3/2]\
+g3ga2 |\
+b3ag2 a3bg2 | ^f3ga2 d3cd2 | e6 c3de2 |\
+f3gf2 d3cd2 |
+e3fd2 c3dB2 | A6 G3ga2 | b3ag2 a3bg2 | ^f3ga2 d3cd2 |\
+e6 =e6 | ^f3ga2 d3ga2 | b3ag2 g3a^f2 | g6- g4 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2051
+T: La Bell Cavalier
+%R: _
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: C|
+L: 1/8
+K: F
+% - - - - - - - - - -
+|:\
+f4 c2fe | d2(gf) e2(dc) |\
+d4 c2(BA) | B2(cB) A2(GF) |\
+f4 c2(fe) | d2(gf) e2(dc) |\
+d2c2 c3B | c6 !segno!A2 |
+(Bc)(de) f3f | (ga)(ba) g3g |\
+(de)f2 f3e | f6 ::[M:3/4] c2 |\
+A2F2c2 | f3ge2 | f2c2B2 | A3Ad2 |\
+B3AB2 | G2c2B2 | A2F2F2 | F4 :: c2 |
+f3fg2 | a2f2a2 | g2e2g2 | e3dc2 |\
+a2f2a2 | g2e3c | f4 !segno!A2 |\
+B3Bc2 | d4c2 | d3ef2 | e3dc2 |\
+f3ga2 | d2g2f2 | _e2c2f2 | Hf4 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2052
+T: New la Dolphin
+%R: _
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 3/2
+L: 1/8
+K: G
+% - - - - - - - - - -
+zg |\
+g6 a2a3(g/a/) | b3ag2 fea3g |\
+f3(e/f/) g2B2 c3d | e3fe2 d2c3B |\
+A6 G>FG3A | F3GA2 d>Be3B |\
+c3de2 fee3d |
+[1 d6- d4 :|[2 d6 |][M:C|] AB |\
+c2e2 (=fe)(dc) | Bcd2 G2ef |\
+g2fg a>ba>g | f4 d2ef |\
+g2fg a2b2 | B2Bc d2e2 |
+A2cB AGF2 | [1 G6 B2 :|[2 B6 |][M:3/2]\
+g2d2g2 e3fg2 | a3bag f3ed2 |\
+g2d2g2 e3fg2 | a2g3f e4d2 |\
+c2c3d B3cd2 |  e2c3B A4A2 |
+c2c3d B3cd2 | e2c3B A4G2 ::\
+B2B2G2 c6 | B2cBAG Hd6 |\
+f3ga2 e3fg2 | d2B2e2 ^c3BA2 |
+a3gf2 b2agfe | fge3d d6 |\
+=f2f3g e3e^f2 | g2f3g a4d2 |\
+^f2f3g e3ef2 | gaa3g g6 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2053
+T: La Prince
+%R: _
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: C|
+L: 1/8
+K: G
+% - - - - - - - - - -
+G2 |\
+d2B2 e2dc | B2 G4 A2 |\
+B2c2 d2ef | g2 f4 z :: g |\
+a3b g3f | e4 a3g |\
+fefg e3d | d4 zdef |
+g4 zefg | a2 f4 a2 |\
+bag2 g2g>f | g6 z :: G |\
+d4 B3(A/B/) | c3B A3c |\
+B4 G3G | d4 B3(A/B/) |\
+e3=f ^c3d | d6 z :|
+|: d |\
+a4 f3(e/f/) | g3a b3f |\
+f4 e3a | f3(e/d/) g3B |\
+e3A A3G | G8 |][M:3/2] \
+B3AB2 G3AB2 | A3Bc2 B3AG2 |
+B3AB2 c3de2 | ^c3B^c2 d6 ::\
+a3ga2 f3gf2 | e3fd2 g3fe2 |\
+d3cB2 e3dc2 | A3GF2 G6 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2054
+T: New la Duchess
+%R: _
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+N: The rhythms between strains are a bit odd.
+M: 3/2
+L: 1/8
+K: Gm
+% - - - - - - - - - -
+g2 |\
+g6 a2f3e | d6 c2c3d |\
+B3AB2 AGe3d | c3de2 d2g3a |\
+b6 =e2e3f | ^c2g4 f=e=e3d |
+[1 d6 d4 :|[2 d4 |] !segno!d2 |\
+d2c2d2 =B2B2c2 | ABcdec d2d2 :: g2 |\
+=e2^f2g2 | ^f4 g4 a3(g/a/) |\
+b2ag^f2 g2a2^f2 | g6 :: [M:C|] d2 |
+g2a2 b2ag | a2 d4 c2 |\
+c2d2 A2Bc | B2 G4 :: "_Slow."d2 |\
+d2e2 c3c | c4 f3e |\
+dcBc c3B | B4 zfga |\
+b4 zabg |
+a2 a4 d2 |\
+g2e2 ^e^fg2 | ^f6 |[M:3/2]\
+!segno!g2d3f e2e3f | g2=B3B c2A3B | AG^F3F GAA3G | G2 |] G8- G3 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2055
+T: Bore le Reyne.
+%R: bourr\'ee
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: C|
+L: 1/8
+K: G
+% - - - - - - - - - -
+d>d |\
+d2(cB) c3d | B2 G4 e>f |\
+d2g2 e3a | f4 f2 :: a>a |\
+a2b2 g3f | g2B2 (ef)(ef) |\
+g3f f3e | e3d d3c |\
+c2BA A3G | G6 :|
+|:[M:3/2] "_Brisk."\
+d>cB2 c2d4 | e4d2 c3dB2 |\
+A2G2B2 d3cB2 | c2d3(c/d/) e4=f2 |\
+^c3Bc2 d6 :: "_Slow."\
+f2g2a2 a6 | b2g3f e4d2 |
+g2B2c2 d3e=f2 | e2c3B A4G2 |\
+d3cB2 e3dc2 | B2A3(B/c/) B3ABA |\
+dedcdB e3fg2 | AA3G HG6 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2056
+T: La Buckan.
+%R: _
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 3/2
+L: 1/8
+K: Gm
+% - - - - - - - - - -
+G |\
+G3edc B2A3(G/A/) | B2G2Bc d2B3f |\
+f2d2g3 aa3g | g3ga2 gf=e3d |\
+d3ef2 d2g4 | f3gf2 e2d3c |
+c6 f3gfe | d3cB2 c2c3B |\
+B8- B3 :: f | f2d2g2 ^f3ga2 |\
+g6- g4zf | f6 g2=e3a |
+a3gf2 g2=e3d | d3=ef2 d2g4 |\
+f3gf2 d2e3c | d6 =e3^fg2 |\
+^f2d2g3 aa3g | g8- g3 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2057
+T: La Doncaster.
+%R: _
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+N: In bars 9-12 there are some missing counts; not fixed because it's not obvious how to do it right.
+M: 3/2
+L: 1/8
+K: G
+% - - - - - - - - - -
+zB |\
+B6 AG d3d | d6 g2 a2b2 |\
+g3f e2a2 a3g | f6 g2 a2e2 |\
+=f3e d2e2 e3d | ^c6 d2 _B3A |\
+_B6 e2 e3=f |
+^c3c d3e e3d | d6- d4 ::\
+A2B2c2 B2B2e2 | d2e2f2 g4g2 |\
+e2B2c2 c2d2 | e2c3B A4A2 |\
+a2e2f3 ga2 | d2g2a2 b6 |
+e6 f3ga2 | d2g2a2 b6 |\
+e6 f3ga2 | g2g3f g4g2 |\
+B2B2e2 d2G2c2 | B2A3G F3ABc |\
+d3cB2 e4B2 | c2A3G G6 |
+[M:C|]\
+d2d2 ABc2 | B2 G4 g2 | e2a2 f3g | a6 gf |\
+g2 B4 ^c>d | ^c2 A4 e>e | =f2ed d3^c | d6 cB |\
+c3d e2d2 |
+c3B c2A2 | d2G2 E2A2 | F6 dc |\
+B2 B4 cd | e2 e4 af | g2Bc A3G | G8 |\
+[M:3/2]\
+B2c2d2 d3cB2 | e2f2g2 f3ed2 |
+g3de=f e2e4 | a3efg f3ga2 |\
+gfe3d d6 | A2B2c2 B3cd2 |\
+e2c3B A3GF2 | dedcdB e3ef2 |\
+g2g3f g6 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2058
+T: New Bore Paspe.
+%R: bour\ee, passepied
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: C|
+L: 1/8
+K: F
+% - - - - - - - - - -
+f>c |\
+d2d2 c>AB>c | A2F2 F2f>e |\
+d2g>a g>ef>g | e2c2 c2 :: g>a |\
+g2c2 a>ba>g | f2d2 d2b>a |
+g>fe>d c>fe>g | f2-f2- f2- ::[M:3/2]\
+f4 f2c2 def2 | e3f g2a2 g2f2 |\
+e2(dc) gedc BA | G2AB c=B
+cd efec | f2f2 gefg abag |\
+f2d2 g2e2 agfe | f3e d2e2 d2c2 |\
+c4 :: g2cd efga | g2e2 c2ag abag |
+f2f2 f2ga bagf | e2f2 def2 g2e2 |\
+c4 f4 d3a | g4 b4 c'3b |\
+a2gf efed c2f2 | Hf4 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2059
+T: La Dolphin
+%R: _
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 3/2
+L: 1/8
+K: Gm
+% - - - - - - - - - -
+zG |\
+G3d c2d2 e3f | d3g  ^f2g2 a3b |\
+a2d2 c2B2 A3c | B2 G4 (cd) B3A |\
+A3d ^c2d2 e3f | g2 f4 (=ef) =e3d | d6- d4 :|
+|: zb |\
+a3g ^f2d2 g3f | =e3d c2f2 f3e |\
+d2G2 A2B2 B3A | B3B f2d2 e3f |\
+d3d g2e2 f3g | =e3e a2b2 a3g |\
+^f2d2 b3a a3g | g6- g4 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2060
+T: La Monmouth
+%R: _
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 3/2
+L: 1/4
+K: Bb
+% - - - - - - - - - -
+d |\
+ef2 B2b | ag2 f2b |\
+def ged/>c/ | c2B B2 :: f |\
+bag def | fg_a g2c' |
+ga2 =eca | g2f f2b |\
+fg2 d2e | fB2 A2f |\
+dgf gab | b2a b2 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2061
+T: Corant de la Force
+%R: courante
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+N: The 2nd strain ends with a dotted half-note; making it a dotted 8th-note fixes the rhythms in both strains.
+M: 3/2
+L: 1/8
+K: Dm
+% - - - - - - - - - -
+zd |\
+d3a gfe2 f3g | a6 g2 g3g |\
+g3g a2g2 f3e | f2e3 fed c3B |\
+A3d d2g2 e3f | f6- f4 :: d2 |
+g2g2 a2f2 f2e2 | f2d2 a2g2 fga2 |\
+gfe2 f2d3 de2 | cBA3 G AA3 ::[M:C|] A2 |\
+d2de fed2 | b2ag a2ge |\
+f2ed ^c3d |
+e6 :: a2 |\
+a2gf e3f | g2 g4 fg |\
+a2a2 d2(ed) | c3B A2(ag) |\
+f2f2 f2a2 | (df)(ef) g2(fe) |\
+f2(ed) d3^c | Hd6 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2062
+T: A Scotch Tune
+%R: minuet, triple hornpipe
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+N: Missing 8th-note in bar 5; fixed to be the same as bars 1,3.
+N: Bar 23 should perhaps be the same as bars 21,25.
+N:
+M: 3/2
+L: 1/8
+K: D
+% - - - - - - - - - -
+|:\
+(Bc)d2 d2D2 d4 | c2 e4 c2 B2A2 |\
+(Bc)d2 d2D2 d4 | f2 d4 f2 e2(dc) |\
+(Bc)d2 d2D2 d4 | c2 e4 c2 (ef)g2 |\
+a3f d2a2 (ba)(gf) | d2 f4 d2 (ef)g2 |
+(ag)a2 (ba)g2 (ag)f2 | e2 c4 g2 (ef)g2 |\
+(ag)a2 (ba)g2 (ag)f2 | d2 f4 d2 (ef)g2 |\
+(ag)a2 (ba)g2 (ag)f2 | e2 c4 e2 c2(Bc) |
+(dc)(BA) (BA)(GF) (GF)(ED) | E2 C4 E2 C2(Bc) |\
+(dc)(BA) (BA)(GF) (GF)(ED) | D2 d4 B2 c2(Bc) |\
+(dc)(BA) (BA)(GF) (GF)(ED) | E2 C4 E2 C4 |
+(DE)(FD) (EF)(GE) (DE)(FE) | D2 A,4 D2 C4 |\
+(DE)(FD) (EF)(GG) (DE)(FD) | E2 C4 E2 C4 |\
+(DE)(FD) (EF)(GE) (DE)(FE) | D2 A,4 D2 HC4 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2063
+T: A Scotch Tune
+T: Be constant ay
+N: 2nd title handwritten above the tune.
+%R: minuet, waltz
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 3/2
+L: 1/4
+K: Dm
+% - - - - - - - - - -
+|:\
+B2 D2 E2 | G3 A G2 |\
+(Bd) (ed) B2 | (AB) AG E2 |\
+B2 D2 E2 | G3 A Bd |\
+(ed) (BG) AA | G3 A G2 :|
+|:\
+B>c d2 (ef) | d3 e d2 |\
+e>f g2 f2 | e4 d2 |\
+B>c d2 (ef) | d3 e d2 |\
+e>f g2 f2 | e4 d2 |
+e>f gf e2 | (de) (ge) d2 |\
+B>e ed B2 | (AB) (AG) E2 |\
+(ge) (ge) (dB) | (AG) (Bd) (eg) |\
+d>e (dB) (AG) | G3 A G2 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2064
+T: A Scotch Tune
+%R: march, reel
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: C|
+L: 1/8
+K: Gm
+% - - - - - - - - - -
+|:\
+D2G2 G2(FG) | A2G2- G2c2 |\
+c3d (cA)(GF) | F3G A2(GF) |\
+D2G2- G2FG | A2G2- G2f2 |\
+d3(c/d/) (fd)(cA) | G4 B4 :|
+|:\
+(d=e)(fg) (f=e)(dc) | (Bc)(d=e) f3d |\
+A2f2 (cA)(GF) | F3G A2(GF) |\
+D2G2- G2(FG) |  A2G2 f3g |\
+(ag)(fd) (cd)(cA) | G4 B4 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2065
+T: A Scotch Tune
+%R: minuet, triple hornpipe
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 3/2
+L: 1/8
+K: Dm
+% - - - - - - - - - -
+|:\
+A4 F3E (DE)(FD) | E2 G4 C2 (DE)(FG) |\
+A3=B c2(BA) (de)f2 | g2 e4 (d^c) d4 ::\
+a4 f3e (de)(fd) | f2 g4 a2 b4 |
+^c3d e2(fe) f2g2 | g6 f2 f4 |\
+A3=B ^c2(d^c) d2A2 | B2 G4 A2 F2E2 |\
+c2(dc) (BA)(GF) (BA)GE | F2 D4 C2 D4 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2066
+T: A Scotch Tune
+%R: reel
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+N: The 3rd strain has only 7 bars.
+N: Note at end: These Scotch Tunes were omitted in the First Part of this Book, and are to follow 121.
+M: C|
+L: 1/8
+K: Am
+% - - - - - - - - - -
+zc |\
+A3c (Ac)(AG) | F2 c4 (BA) |\
+(GF)(GA) (BG)(AF) | D2 d4 (de) |\
+f^g(ag) (ag)(fd) | (fd)(cA) f3F |\
+(GF)(GA) (BG)(AF) | D2d2- d2 :|
+|: zc |\
+(AG)(Ac) (Ac)(AG) | (FG)(AB) c2(BA) |\
+(GF)(GA) (cG)(AF) | D2d2- d2ae |\
+(fF)(fg) (ag)(fd) | (cA)(cd) f3F |\
+(FG)(AB) (cA)(GF) | D2d2- d2 :|
+|: zc |\
+(AG)(Ac) (Ac)(AG) | F2 f4 (ef) |\
+(gf)(ga) (ga)(gf) |\
+(dc)(df) (ga)(gd) | (fc)(dA) (fg)(fF) |\
+(GF)(GA) (cG)(AF) | D2d2- d2 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2067
+T: A Scotch Tune
+%R: _
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+N: The 1st strain has 8.5 measures; the 2nd has 7.5
+M: 3/2
+L: 1/8
+K: G
+% - - - - - - - - - -
+D2 |\
+G4A2 A3GA2 | (A2B2)(GE) E4D2 |\
+(G2B2)d2 e4(e/f/g) | a4(fg) f3ed2 |\
+g4(fg) e3dc2 | d2B2(B/c/d) e6 |\
+e4(B/c/d) B4(A/B/c) | A3GF2 G6 |
+B4 :: A2 |\
+F4G2 A3BA2 | (d2A2)B2 (A2F2)A2 |\
+G3FE2 g3(agf) | e4d2 d4g2 |\
+d2(B2c2) A3Bc2 | (G2E2)F2 G3AB2 |\
+c3BA2 A4E2 | HG4 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2068
+T: A Scotch Tune
+%R: _
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 3/2
+L: 1/8
+K: Bb
+% - - - - - - - - - -
+B,2 |\
+(DF3)B2 (c2d2)c2 | B6 G6 | (FG)F2D2 C4B,2 |\
+C2D4 B,4B,2 | (DF3) (B2c2) (d2c2) |\
+B6 g6 | (fg)f2d2 c4B2 | G6 B4 :|
+|:g2 |\
+(fg)d2d2 cdc2B2 | (G_A)G2F2 e4e2 |\
+(d2f2)A2 G4F2 | D6- D4B2 |\
+(AB)c2D2 C4B2 | ABc2F2 G4G2 |\
+(FG)F2D2 C4B,2 | B,6 HD4 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2069
+T: Saranade.
+%R: _
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 3/2
+L: 1/8
+K: Dm
+% - - - - - - - - - -
+c2 c3B |\
+A2 A4 G2 G3F | E2 C4 F2 F3E |\
+D2DE F3G E3E | F2 F4 c2 c3B |\
+A2A=B c2 f2 d3(^c/d/) | e2c2 g2a2 d3c |
+=B2G2 A=Bcd =B3c | c6 :: g2 g3f |\
+e2e2 a4 gfed | ^c2 A4 a2 g3a |\
+^c2 A2 =B^cd2 d3^c |
+d2 d4 =B2 G4 |\
+c2 A4 d2 B4 | g2 e4 a2 g3a |\
+e2c2 def2 f3e | f2 F4 d2 B3c |\
+E2C2 DEFG G3F | HF6 |]
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2070
+T: The Brauls
+%R: branle; gavotte
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+N: The bar lines are a bit odd at the start of the 3rd strain (bar 23,24).
+M: C|
+L: 1/8
+K: Bb
+% - - - - - - - - - -
+zB |\
+B2f2 d3c | B6 zb | a2b2 ^f3(=e/^f/) | g6 _a>d |\
+=e2f2 f3=e | f6 zf | b2f2 f3e | d4 g3c |\
+d2e2 c3B | A2B2 GBcd |
+e2(dc) c3B | B6 :: zf |\
+d2b2 a3f | ^f6 (gf/g/) | a2d2 =e3f | =e2(dc) g2(gf/g/) |\
+a2b2 g3f | f4 zgfe | d3d e3f | g4 zf |
+e2d2 c3f | d2g2 a3(g/a/) | b2(fg) c3B | B4 :: B3f |\
+f2g2 f3e | d3ba2 b2g3f | f3gf2 e2d3c |
+=B3cd2 e2d3c | c3ff2 g2f3e | d3ba2 b2g3f |\
+f3gf2 e2d3c | c3de2 f2c3B | B6 |]\
+"_Leading Braul."\
+f2b2f2 g2d2e2 | f2c3B A2(BA/B/)c2 |
+d2d3c c6 | f2b2f2 g2d2e2 |\
+f2c3d e2(dc)_a2 | (gf)f3=e f6 !segno!|\
+f2A3B c3dB2 | G2e3d c2g2_a2 |\
+(gf)f3e e6 |
+(d=e/f/) =e3e f3gaa |\
+b2a3f g2c2f2 | (Bc)c3B B6 ::\
+[M:C|] "_Gavot."\
+B2f2 d2g2 | f3b a2b2 |\
+d3e f2g2 | c3B B4 :|
+|:\
+b3d =e2f2 | ^f3g a2b2 | c'3=e ^f2ga | a3g g4 |\
+=e3e f2ed | e3d c2d2 | G3c A2(Bc) | c3B B4 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2071
+T: The New Brauls
+%R: branle,march
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+N: The repeat notation is very ambiguous.
+N: The 2nd and 3rd strains' last bars have very odd bar lengths and ties.
+N: Deleted bar line in 1st measure of "The leading Braul", to match the other measures.
+M: C|
+L: 1/8
+K: D
+% - - - - - - - - - -
+d |\
+d3e f2g2 | e2 a4 ba | g2fg g3f | e3f g2B2 |\
+c2de e3d | c6 d>c | B2A2 g3a | b2 b4 ag |\
+f2(f/g/a) g3f | e3f ^g2a2 |
+d2c>B B3A | A6 z :: e |\
+e3f edcd | c4 f3c | d2e2 c3B | B3f g2ag |\
+f2g2 e3^d | e4 zfga | b2ag f3g | a3b agf2 |
+g2fg e3d | c2a2 g3f | g2fe e3d | d6- [M:3/2] || d3 ||\
+"_second Braul."\
+ef2 g2 a3b | g4 f2g2 e3d | c3c d2e2 f3g |\
+B3e d2c2 B3A | A3B c2d2 e3f |
+g3a f2b2 ^g3(f/g/) |\
+a3f e2d2 c3d | B3c d2e2 f3c | d3- || d6 ||\
+[M:3/4] "_The leading Braul."\
+d2 a2 b2 g3 f g2 | fg g3 f e2 c4 | d2 B2 e2 c4 A2 |
+d2 e3 f g3 a f2 | b2 g3 f e3 f ^g2 | a2 a3^g a6 :|\
+|:\
+e2f2c2 d3ec2 | B2f2ga b3fg2 | (fe)e3^d e3fed |
+c2d2cB A3GF2 | GAB2e>d c3dec | d2d3c Hd6 |]\
+[M:C|] "_Gavot."\
+d3d d2c>d | e3e e2fg | a3a a2gf | e2d2 c4 :|
+|:\
+e3e f2c2 | d3e c2B2 | g3a bfg2 | g3f e4 |\
+a3g f2(dc) | c3d B2A2 | d3B e>cd2 | d3c Hd4 |]
+% y8 y8 y8 y8 y8 y8 y8 y8
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2072
+T: The Brauls.
+C: by Monsieur Peasable.
+%R: branle
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: C
+L: 1/8
+K: C
+% - - - - - - - - - -
+c |\
+c3d d3(c/d/) | e4 zdcB | A2d2 d3c | B2G2 c3d |\
+e2(fg) e3d | d4 zdef | g2e2 f3g | a4 f3e |\
+d2g2 c3d | B2G2 g3g |
+f3e d3c | c6 |[| G2 |\
+c3_B _B3A | A6 fe | d2 e2 ^c3d | f2A2 a3a |\
+g3f e3d | d6 AB | c3d e3f | g4 e3e |
+a2g2 f3e | d2B2 c3d | e2fg d3c | c6 |]|\
+[M:3/4]"_Leading Braul."\
+c3 c d2 | e2 d3c | B3 B c2 | d2 e3f |\
+d3 d e2 | f2 ^f3 (e/f/) |
+g3 B c2 | BA A3 G |\
+G3 c d2 | e2 d3 c | B3 B c2 | d2 e3 f |\
+d3 d e2 | (fg) g3 (f/g/) | a3 A B2 | c2 c3 B | c6 |]
+[|\
+G2 c2 d2 | B3 c d2 | e2 f3 e | d2 c2 e2 |\
+ef f3 (e/f/) | g6 | G2 c2 d2 | B3 c d2 |\
+e2 f3 e | d2 e2 AB | c2 c3 B | c6 |
+!segno!|\
+e2 B2 d2 | c3 B A2 | f2 e3 d | ^c3 c d2 |\
+e2 e3 d | d6 | d2 g3 f | e3 d cB |\
+A2 d3 c | B2 G2 c2 | d2 d3 c | Hc6 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2073
+T: Gavot.
+%R: gavotte
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: C|
+L: 1/8
+K: C
+% - - - - - - - - - -
+|:\
+g2g2 efg2 | f3e d2c2 |\
+e3f g2a2 | f3e d4 ::\
+d3e f2fg | e3f g2d2 |
+e2ed c2B2 | A3d B2G2 !segno!|\
+d3e f2fg | e3f g2a2 |\
+d2g2 f2(fd) | d3c c4 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2074
+T: Corant.
+%R: courante
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+N: Fixed incorrect rhythm by adding rest to bar 5.
+M: 3/2
+L: 1/8
+K: C
+% - - - - - - - - - -
+c |\
+c3d efg2 g3f/g/ | a3g f2e2 f3d |\
+d4 c2e2 f3e | d3d e2ef ^f3(^e/^f/) |\
+g6- g4 z :: d | d3c BAG2 c3B |
+A4 f4 e3d |\
+^c3(B/c/) d2e2 e3d | d6 d2 g3f |\
+e3d c2_BA _B3c | A4 d3e B3(A/B/) |\
+c3d e2f2 d3c | c6- c4 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2075
+T: Bore
+%R: bourr\'ee
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: C|
+L: 1/8
+K: C
+% - - - - - - - - - -
+G2 |\
+c2d2 e2 (fe/f/) | (gf)(ga) g2G2 |\
+c2d2 e2 (fe/f/) | g6 :: (de) |\
+f2e2 G2e2 | c3B A2d2 |
+G2c2 B2 (EB/c/) | (dc)(de) d2(de) |\
+f2e2 d2e2 | c3B A2d2 |\
+G2c2 c3B | c6 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2076
+T: Saraband
+%R: saraband, waltz
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/8
+K: Dm
+% - - - - - - - - - -
+|:\
+f2 e3 d | ^c3 =B A2 | d2 e3 f | f4 e2 |\
+f3 g ab | g2 c2 f2 | (fg) g3 f | f6 :|
+|:\
+e2 A2 d2 |^c3 d e2 | fe d3 c |\
+=B4 A2 | f3 e fd | (ed) d3 ^c | d6 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2077
+T: Minway
+%R: minuet, waltz
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/8
+K: Dm
+% - - - - - - - - - -
+|:\
+d2 ^c2 d2 | e4 f2 | g2 e2 f2 | (d^c) (de) d2 |\
+d2 ^c2 d2 | e4 f2 | g2 e2 f2 | d6 :|
+|:\
+d2 e2 f2 | g4 g2 | a2 g2 f2 | e4 e2 |\
+(fe) (fg) f2 | (gf) (ga) g2 | a2 g2 f2 | e6 |]
+% - - - - - - - - - -
+
+%%center F I N I S.
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3000
+T: The Third Part of Apollo's Banquet
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+K:
+%%center containing new Tunes of Dances for the Treble-Violin
+%%center and Flute, Performed at Court, and in Dancing-Schools.
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3001
+T: A New Ayre
+%R: air, minuet, waltz
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/8
+K: Am
+% - - - - - - - - - -
+a2 |\
+e2 (fe) (dc) | d2 B2 e2 | c2 A2 Bc | (dc) (dB) eA |\
+^G4 a2 | e2 (fe) (dc) | d2 B2 e2 | c>B B3 A | A4 :|
+|: ef |\
+g2 (gf) (ge) | f2 d2 g2 | e2 c2 c'2 | a2 (bc') (ba) |\
+^g4 e2 | (ag) (ae) (dc) | (gf) (ge) (dB) | (cd) B3 A | A4 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3002
+T: Hampton Court.
+%R: minuet, waltz
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/8
+K: G
+% - - - - - - - - - -
+|:\
+B4 (B/c/d) | B3 (A G2) |\
+A4 (ed)  | A3 B c2 |\
+B4 (gd) | B3 A G2 |\
+A2 F2 (FG) | G6 ::\
+f4 (f/g/a) | f3 e d2 |
+g4 (g/a/b) | a3 g f2 |\
+e2 e2 f2 | g2 G2 A2 |\
+B2 b2 a2 | (g2 f2) g2 |\
+e4 ^d2 | e2 B2 f2 |\
+g2 (ag) (fe) | d2 A2 B2 |\
+c2 (dc) (BA) | B2 G2 d2 |
+(ed) (ef) (ge) | (fe) (fg) (af) |\
+g6 | (ga) (ba) (gf) |\
+(ef) (gf) (ed) | (Be) (dB) (AG) |\
+G4 (AB) | HG6 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3003
+T: Long cold Nights.
+%R: minuet, waltz
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/8
+K: G
+% - - - - - - - - - -
+[|\
+G3 A B2 | d4 (eg) | d4 (eg) | (d B3) (AG) |\
+A3 c d2 | e4 g2 | (g/a/b3) (ag) | e4 g2 |\
+G3 A B2 | d4 (eg) |
+d4 (eg) | (d B3) g2 |\
+a4 g>e | g4 (dB) | A4 G2 | e4 d2 |\
+g2 G2 A>B | g2 G2 AB | g3 d gd | B4 (AG) |\
+a2 A2 B2 |
+a2 A2 g2 | (g/a/b3) a>g | e4 g2 |\
+G3 A B2 | d4 (eg) | d4 (eg) | (dB3) g2 |\
+(g/a/b3) (ag) | e4 (dB) | A4 G2 | e4 Hd2 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3004
+T: The Second Part of Bread of God.
+%R: reel
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: C|
+L: 1/8
+K: G
+% - - - - - - - - - -
+|:\
+g3e (dB)(AG) | A3B E3F | (GF)(GA) (BA)(BG) | B2 d4 c>B |\
+c3d (ed)(ef) | gf (g/a/b) e3f | (gf)(ed) (ae)(fg) | f2 d4 :|
+|: fg |\
+a3f (gf)(ga) | b3e^d3B | (ef)(ga) (ba)(fa) | g2 e4 g>d |\
+B3e (d/B/)(A/G/) AB | c>B (c/d/e) A2 d>B | e3d g3d | B2 HG4 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3005
+T: A Scotch tune in fashion
+T: Peggy I must love ye
+N: The 2nd title was handwritten above the tune.
+%R: march
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: C|
+L: 1/8
+K: G
+% - - - - - - - - - -
+D |\
+E2G2 G3B | (AB)(AF) E3D |\
+E2G2 (GA)(BG) | A4 G3 :: c |\
+B2d2 d3e | (de)(dB) A3 G |
+B2d2 d3e | =f2 (e/=f/g) e3d |\
+d2 (e/f/g) d3B | A2=f2 A3B |\
+D3E (GA)(BG) | A4 HG2 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3006
+T: R. Dyer's Scotch Tune.
+%R: reel
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/8
+K: G
+% - - - - - - - - - -
+[|\
+G4 d2 | d3 c B2 | A4 e2 | e4 g2 |\
+G4 d2 | d3 B/c/ d2 | G4 d2 | d3 B/c/ d2 |\
+e3 f e2 | d3 c B2 | A4 e2 | e4 g2 |\
+G4 g2 | g2 e2 g2 | e4 g2 | g4 d2 |
+G4 g2 | g2 e2 g2 | f4 a2 | a4 g2 |\
+g2 G2 g2 | g4 a2 | g2 d2 e2 | d3 c B2 |\
+cB cd ef | g2 d2 B2 | A4 e2 | e4 g2 |\
+G4 d2 | d4 e2 | d4 e2 | d3 c Hd2 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3007
+T: A New Scotch Tune.
+%R: reel
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: C|
+L: 1/8
+K: F
+% - - - - - - - - - -
+|:\
+(fc)(dA) (BA)(BA) | G2F2 c3c |\
+(de)(fd) (ec)(ec) | (e/f/g) g2 g3g |\
+(ab) (c'a) (ba) (gf) |
+(gd) (d/e/f) e2c2 |\
+(fc)(dA) (BA)(GF) | g2e2 f4 ::\
+(A/B/c) (dc) (BA)(GF) | (d/e/f) (gf) e2(dc) |
+(e/f/g) (ag) (fe)(dc) | (dG)=B2 c3c |\
+(GA)(BG) (AB)(cA) | (d/e/f) (gf) e2(dc) |\
+(a/b/c') (ba) (ba) (gf) | (cd) =e2 Hf4  |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3008
+T: A New Scotch Tune.
+%R: minuet, waltz
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/8
+K: Bb
+% - - - - - - - - - -
+F2 |\
+(GB) (cd) cB | G3 gfd | B3 d (fdcB) | (cd) F2 F2 |\
+(GB) (B/c/d) cB | f3 gfd | f3 gbd | c4 :|
+|: g2 |\
+f2 (ga) (be) | d3 d g2 | (cd) (ed) cB | (f3 g) F2 |\
+(BA2) FDB, | (dc3) (bg) | (fd) (Bd) cB | B4 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3009
+T: Northern Lass
+%R: march
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: C|
+L: 1/8
+K: Gm
+% - - - - - - - - - -
+A2 |\
+B3A G2B2 | A3G ^F2A2 | B2c2 d2e2 | c3B A2c2 |\
+B3A G2B2 | A3G ^F2A2 | B2c2 d2=ef | g6 :|
+|: a2 |\
+b2(gf) f2(ed) | c3B A2g2 | (fg)(fd) c2B2 | A3G ^F2a2 |\
+b2(ag) f2(ed) | c3B (AB)c2 | B2(AG) A2^F2 | G6 :|
+|: A2 |\
+B3A B2c2 | d2e2 c2B2 | A3G A2B2 | c2d2 B2A2 |\
+B3A B2c2 | d2e2 c2(BA) | B2(AG) A2(G^F) | G6 :|
+|: A2 |\
+B2(AG) A2(G^F) | G2B2 A2c2 | B2(AG) A2(G^F) | G2B2 A2c2 |\
+B2(AG) A2(G^F) | G2B2 A2c2 | B2(AG) A2(G^F) | HG6 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3010
+T: The Banditti; a Round O.
+%R: march
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: C|
+L: 1/8
+K: Bb
+% - - - - - - - - - -
+g2 |\
+^f2 d4 c2 | =B4 d4 | e2 c4 de | f4 g2ab |\
+^f2 d4 c2 | =B4 d4 | d2 g4 ^f2 | g6 :: ga |\
+b2ag f3e | d4 def2 |
+e2d2 c3B/c/ | d2 B4 f2 |\
+b4 (g3f/g/) | a2=e2 (ef)g2 | f2(=ed) =e2(d^c) | d6 g2 |\
+^f2 d4 c2 | =B4 d4 | e2 c4 de | f4 g2ab |
+^f2 d4 c2 | =B4 d4 | d2 g4 ^f2 | g8 |\
+G2 B4 c2 | d3e f4 | A2 c4 d2 | e4 d4 |\
+g4 f3e | d3e f2g2 | c2de c3B | HB6 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3011
+T: Jigg.
+%R: jig
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 6/4
+L: 1/8
+K: F
+% - - - - - - - - - -
+c2 |\
+A3GF2 c3dc2 | f6 d3ef2 | e3dc2 (fc3)d2 | G6- G4c2 |\
+A3GF2 c3BA2 | (dg3)f2 e3dc2 | (fc3)f2 f4e2 | f6- f4 :|
+|: g2 |\
+a3ba2 (gd3)g2 | e6 c3de2 | (fc3)d2 B4A2 | G6- G4A2 |\
+B3AB2 (Gc3)B2 | (Af3)e2 (db3)a2 | g4f2 g2e4 | f6- f2 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3012
+T: Mr. Purcell's Jigg.
+%R: jig
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 6/4
+L: 1/8
+K: Amix
+% - - - - - - - - - -
+A2 |\
+(ce3)E2 A4B2 | (cB3)c2 d4c2 |\
+(BF3)^G2 A3BA2 | ^G6 E4A2 |\
+(ce3)E2 A3BcA | d3e(fe) (gf3)(ed) |
+(cA3)E2 (AF3)A2 | (B^G3)E2 A4 :: e2 |\
+(af3)e2 (ec3)A2 | (cde2)f2 (efg2)g2 |\
+(fd3)f2 (fe3)(dc) |
+(dc3)(BA) (BE3)B2 |\
+(GB3)e2 (cA3)e2 | (fd3)f2 (ec3)e2 |\
+(fga2)f2 (ec3)(BA) | (^GAB2)E2 HA4 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3013
+T: London Ladies.
+%R: minuet, waltz (or jig)
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+N: There's a 1/4 note missing at the end of each strain; fixed with a dot.
+M: 3/2
+L: 1/4
+K: Bb
+% - - - - - - - - - -
+|:\
+Bcdcde | dcBf2d | efgfde | c3c2d |\
+Bcdedc | dcBb2a | gaf=efg | g3f3 ::
+fgab2a | gfed2b | abgfga | a3g3 |\
+fgbbdg | fgdc2d | BBffdg | c3HB3 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3014
+T: In a Desert in Greenland.
+%R: minuet, waltz
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/8
+K: D
+% - - - - - - - - - -
+de |\
+f2 f2 (ed) | e2 e2 fe |\
+d2 d2 ef | A4 dc |\
+B2 A2 FG | A2 B2 =c2 |\
+B3 B fe | e4 :: ef |\
+g2 g2 (fe) |
+f2 ef (AB) |\
+d2 ef ed | e3 d B2 |\
+dd AB AF | A3 B A2 |\
+d2 df ed | f2 (e/f/g) fe |\
+f2 fg ed | Hd4 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3015
+T: New Entry.
+%R: march
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: C|
+L: 1/8
+K: G
+% - - - - - - - - - -
+G>AB>G |\
+A3d c>Bc>d | B2G2 d>de>=f |\
+e3d e>fg>a | f2d2 :: a>fg>a |\
+b3a g>ag>f | e3e a>gf>e |
+d2d2 d2cB | c3B B3A |\
+A3B c>Bc>d | e3f e>de>f |\
+g2G>A B>cd>e | d2B2 e2e>B |\
+c2de A3G | HG4 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3016
+T: New Bore.
+%R: bourr\'ee
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: C|
+L: 1/8
+K: G
+% - - - - - - - - - -
+d2 |\
+B2A2 c3d | B4 B2d2 | e2d2 c3B | A6 d2 |\
+d2d2 e2fg | f4 f2d2 | gfed ^c3d | d6 :|
+|: ff |\
+f2g2 e3f | ^d4 ^d2ee | f2g2 f3e | e2B2 B3c |\
+d3d | A3B | c4 cdef |
+g2B2 A3G |\
+G2 !segno!yg>g g2=f>e | =f2ff f2ed | e3d c2cB | A4 A2d2 |\
+d2cB A3G | (G2 !segno!:: G6) |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2017
+T: Farewell.
+%R: _
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 3/2
+L: 1/8
+K: D
+% - - - - - - - - - -
+F2 |\
+G2 F4 E4 F2 | G2 E4 C4 F2 |\
+G2 F4 E3 F G2 | (AB) E4 D4 :: c2 |\
+d2 c4 B3 c d2 | (cB) (cd) (eB) c3 B A2 |\
+(ab) (ag) (fb) ^g3 f g2 |
+a2 a3 ^g a3 b (a>g) |\
+(f>g) (f>e) (d>c) B3 c d2 | (c>B) (c>d) (e>A) c3 B A2 |\
+(ab) (ag) (fb) (g3 f/g/) a>c | de fd Hd6 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3018
+T: Minuet
+%R: minuet, waltz
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+N: Initial "pickup" rest added to fix the rhythm of repeats.
+M: 3/4
+L: 1/8
+K: F
+% - - - - - - - - - -
+|:\
+f3 g e2 | f2 fg a2 | g2 a2 f2 | gf ed c2 |\
+f3 g e2 | f2 fg a2 | g2 ba gf | e6 ::\
+f3 e f2 | d2 de f2 | c2 d2 B2 | cB AG F2 |
+AB c2 c2 | c2 A2 A2 | dc de fg | ef ed c2 |\
+f3 e f2 | d2 de f2 | c2 d2 B2 | cB AG F2 |\
+AB c2 c2 | c2 A2 d2 | c2 f2 f2 | Hf6 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 2019
+T: Paspe.
+%R: passepied, waltz
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/8
+K: C
+% - - - - - - - - - -
+|:\
+g2 g2 g2 | d2 d2 d2 | e2 fe de | c2 e2 e2 |\
+e2 fe de | c2 cd ec | f2 fg fe | d6 :|
+|:\
+d2 d2 e2 | c2 f2 f2 | d2 c2 d2 | G4 G2 |\
+dc de d2 | d2 cd ef | ga gf ed | c6 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3020
+T: The Ann.
+%R: minuet, waltz
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/8
+K: Dm
+% - - - - - - - - - -
+|:\
+f2 e3 d | ^c3 =B A2 | d2 e3 f | f4 e2 |\
+f3 g ab | g2 c2 f2 | fg g3 f | f6 ::\
+e2 A2 d2 | ^c3 d e2 | fe d3 c | B4 A2 |
+f3 e fd | g2 e2 f2 | ed d3 ^c | d6 ::\
+[M:C|] a2 |\
+f2d2 e2^c2 | d4 e3d/e/ | f2c2 d2cB | A3G F2A2 |\
+B2A2 d2e2 | ^c3d (d3^c/d/) |
+e2f2 f3e | e6 :: e2 |\
+f2g2 a2b2 | g3f e2c2 | f2ef d2cd | B4 A2!segno!yA2 |\
+=B2^c2 d2e2 | ^c3d efga | f3e e3d | Hd6 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3021
+T: Courant
+%R: courant
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+N: There's an unrecognizable squiggle before the high a in bar 12. (flat? segno? smudge?)
+M: 3/2
+L: 1/8
+K: Bb
+% - - - - - - - - - -
+B |\
+B3f b2ag f3e | d3c BFBc c3B/c/ |\
+d2(cB) f2(ed) e3f | g3f eded c3B |\
+A2(GF) c2 cd d3c | c8- c3 :: A |
+A3B cGB2 B3A | G6 g2 f3d |\
+e2(dc) =e2fg g3f/g/ | a2 f4 f2 b3a |\
+g3f/e/ d2e2 c3B | c2 F4 f2 a3g |\
+f3e/d/ c2de c3B | B8- HB3 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3022
+T: Bore
+%R: bourr\'ee
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: C|
+L: 1/8
+K: Bb
+% - - - - - - - - - -
+b2 |\
+f2g2 f3e | d2e2 c2(BA) |\
+B2c2 F2B2 | B3A B2 :: c2 |\
+A3A f2ed | c2d2 e3f |
+d2gf edcB | A3G G2f2 |\
+b3a g2(fe) | def2 A2(GF) |\
+e3e e2dc | c3B HB2 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3023
+T: The Princess
+%R: _
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: C|
+L: 1/8
+K: Gm
+% - - - - - - - - - -
+d2 |\
+B3G d3d | g3a a3g |\
+^f4 d3d/e/ | f3e/d/ e3f |\
+B3c c3B | B6 zB |\
+d3e f3e/d/ | e3f d3g |\
+^f4 d3a | b3a/g/ a3d |
+g3a ^f3g | g6 ::[M:C|] dc |\
+B2d2 G2ga | ^f2a2 d2ba |\
+gab2 b2ag | a2d=e f2d2 |\
+a2gf =e3d | d6 :|
+|: de |\
+f2ed c2cd | e2Bc defg |\
+f2d2 gfed | c4 B2de |\
+f2d2 g2=e2 | a2f2 b2ag |\
+^f2ga a3g | g8 :|
+|:[M:3/4]\
+d2 A3 B | B3 A G2 |\
+e3 f ed | c4 B2 |\
+f2 c3 d | e3 f d2 |\
+d3 e c2 | d6 ::\
+a3 g a2 | d3 =e f2 |\
+g3 a gf | =e3 d c2 |
+f3 e d2 | e3 f g2 |\
+c3 d e2 | d3 c B2 !segno!|\
+f3 e f2 | d3 =e f2 |\
+g3 a gf | =e3 f g2 |\
+a3 b ag | f2 d2 g2 |\
+g3 a ^f2 | g6 H|]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3024
+T: Minuet
+%R: minuet, waltz
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/4
+K: Gm
+% - - - - - - - - - -
+|:\
+g d b | a> a b | g g> a | ^f> =e d |\
+e c f | d> =e  ^f | g a ^f | g3 ::\
+d d =e | f f f | d> d e | c2 f |
+f g a | b f d | e c> B | B2 B |\
+f f ^f | g g a | b b a | g g f |\
+e e d | c d B | c A> G | HG3 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3025
+T: Tricatrees
+%R: _
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: C|
+L: 1/8
+K: Dm
+% - - - - - - - - - -
+|:\
+d2e2 f2ef | (gf)(ed) e2A2 |\
+d2e2 f2ef | gfed e4 ::\
+f2g2 a2b2 | g3f g2c2 |
+f2g2 a2b2 | g3f g2(fe) |\
+!segno!\
+f4 e4 | d2ed ^c2(=BA) |\
+f4 e2a2 | d2^c2 Hd4 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3026
+T: Minuet
+%R: minuet, waltz
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+N: Initial "pickup" rest added to fix the rhythm of repeats.
+M: 3/4
+L: 1/8
+K: C
+% - - - - - - - - - -
+|:\
+c2 c2 c2 | g2 g2 f2 | e2 c2 f2 | ef gf ed |\
+c2 c2 c2 | g2 g3  f | e2 cd ef | g6 :|
+|:\
+d2 d2 d2 | Bc d2 G2 | e2 c2 e2 | f2 e2 d2 |\
+ef g2 c2 | f2 f2 e2 | d2 g2 B2 | Hc6 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3027
+T: New French Dance
+%R: _
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 3/2
+L: 1/8
+K: C
+% - - - - - - - - - -
+c e3f |\
+d4 g3c A3d | B4 G3c e3f |\
+d3e c3B A3G | G6 z ::[M:C|] d2 |\
+d2cB c2d2 | e2c2 f2fg |
+a2gf e3f | f6 ef |\
+g2c2 A2d2 | B2G2 c3d |\
+e3d d3c | c6 ::\
+cde2 def2 | e2c2 g2fe |\
+defg e3d |
+c2B2 AB cd |\
+B2d2 edcB | A3G G4 ::[M:3/4]\
+d2 d2 B2 | e2 ed c2 |\
+f2 e2 f2 | dc de d2 |\
+g2g2e2 | a2f2 ^f2 |
+g2 a2 ^f2 | g6 !segno!|\
+d2 d2 B2 | e2 ed c2 |\
+f2 e2 f2 | dc de d2 !segno!|\
+g2 g2 e2 | a2 e2 f2 |\
+d3  c B2 | Hc6 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3028
+T: New French Dance
+%R: minuet, waltz + bourr\'ee
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/8
+K: C
+% - - - - - - - - - -
+|:\
+c2 G4 | c2 d2 e2 | f2 d2 e2 | A2 d4 |\
+B2 c2 G2 | c2 d2 e2 | f2 d2 e2 | A2 d4 |\
+B2 c2 G2 | A2 d2 A2 | B2 g2 c2 | d2 d4 |
+c2 c2 G2 | A2 d2 A2 | B2 g2 c2 | d2 d4 |\
+c2 e2 f2 | d2 d2 g2 | ^f2 d2 ed | (cB) A3 G |\
+G2 g2 d2 | e2 f2 g2 | a2 A2 B2 | c2 c3 B |
+c2 e2 f2 | d2 d2 g2 | f2 d2 ed | cB A3 G |\
+G2 g2 d2 | e2 f2 g2 | a2 A2 B2 | c2 c3 B |\
+[M:C|]\
+c6 c2 | g2g2 g2fe | f2f2 f2ed |
+e2A2 dedc | BcBA G2c2 | g2g2 g2fe | f2f2 f2ed |\
+e2A2 dedc | B6 :: "_Bore."G2 | c2c2 c2Bc | A2A2 A2d2 |
+B2G2 c2de | e4 d2 !segno!yg2 | g2fe f2f2 | f2ed efed | cBcd d4 | Hc6 |]\
+y8 y8 y8 y8 y8 y8
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3029
+T: Minuet
+%R: minuet, waltz
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+N: Initial "pickup" rest added to fix the rhythm of repeats.
+M: 3/4
+L: 1/8
+K: G
+% - - - - - - - - - -
+z2 |\
+GA B2 B2 | Bc d2 d2 | g2 g2 e2 | d2 B2 B2 |\
+ed ef ef | d2 B2 B2 | Bc dc BA | G4 :: G2 |\
+B2 B2 B2 | B2 GA Bc | d2 ed cB | A4 A2 |
+BA Bc B2 | B2 GA Bc | d2 ed cB | A4 A2 |\
+B2 B2 B2 | B2 GA Bc | d2 ed cB | A3 e fg |\
+e2 de dc | B2 GA B2 | cB AB A^F | HG4 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3030
+T: Minuet
+%R: minuet, waltz
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+N: Initial "pickup" rest added to fix the rhythm of repeats.
+M: 3/4
+L: 1/8
+K: Am
+% - - - - - - - - - -
+z2 |\
+A^G AB  A2 | B2  B2  E2 | A2 ^G2 A2 | B4 B2 |\
+cB  cd  c2 | B2  B2  E2 | A2 B2 ^G2 | A4 :: e2 |\
+d2 (cB) e2 | c2 (BA) B2 | c2 (d3c/d/) | He4 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3031
+T: Minuet
+%R: minuet, waltz
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/8
+K: Dm
+% - - - - - - - - - -
+|:\
+f2 e2 d2 | ^c2 d2 e2 | f2 gf ef | d^c de d2 |\
+f2 e2 d2 | ^c2 d2 e2 | f2 gf ef | d6 ::\
+f2 e2 d2 |  ed ef e2 | f2 e2 d2 | He6 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3032
+T: Rigadoon
+%R: rigadoon
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: C|
+L: 1/8
+K: C
+% - - - - - - - - - -
+c e2 (fe/f/) | g3a aaag/f/ |\
+gggg aaag/f/ | gagf e2d2 |\
+c3 :: c d2e2 | d3c defe |\
+dedc B2A2 |
+G3c d2e2 |\
+d3c defd | gfed cdd>c |\
+c3 :: g edec | d2dg edec |
+d3 :: d BGcd | e/d/e/f/ ea ^fga^f |\
+g3g fedc | d/c/B/A/ Gg cd d>c |\
+Hc3 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3033
+T: Entry
+%R: march
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: C|
+L: 1/8
+K: Dm
+% - - - - - - - - - -
+|:\
+d4 e4 | f6 z/f/e/d/ | c3c c3B | A4 a3a |\
+d4 g3g | f3d f3e | d3e e3d | ^c8 ::
+e3e e3e |  f4 ^f3f | g3g a3a | b4 g3g |\
+c'3b agfe | d3d b3b | b2ag g3f | f4 c3c |
+c3B B3A | A2 z/A/B/c/ d3d | =B3B f3g | ^c2A2 a3a |\
+^f3f g3a | b3a g3a/e/ | f3f e3d | Hd8 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3034
+T: Minuet
+%R: minuet, waltz
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/8
+K: Dm
+% - - - - - - - - - -
+a2 g2 |\
+f2 g2 a2 | d2 e2 f2 | e2 ^c2 (=B^c) | d2 e2 f2 |\
+e2 f2 g2 | c2 f2 g2 | a2 g4 | f2 :: A2 B2 |\
+c2 A2 d2 | B2 G2 c2 | A2 d4 | ^c3 d e2 |
+fe dc =BA | e3 f d2 | c2 =B4 | A2 !segno!y a2 e2 |\
+f2 (^f3e/^f/) | g2 a2 b2 | a2 gf ed | ^c2 d2 e2 |\
+f2 g2 a2 | (g3 f/g/) a2 | d2 e2 ^c2 | Hd2 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3035
+T: Minuet
+%R: minuet, waltz
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/8
+K: Dm
+% - - - - - - - - - -
+|:\
+f2 e2 d2 | a4 b2 | g2 f2 a2 | f3 e d2 |\
+f2 e2 d2 | a4 A2 | d2 e2 f2 | ^c6 ::\
+e2 a2 e2 | f3 e d2 | cd cB AB |
+B3 A G2 |\
+c2 B2 A2 | d6 | e2 d2 c2 | f4 d2 |\
+g2 f2 e2 | a2 ^c2 d2 | e2 e4 | Hd6 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3036
+T: Paspe
+%R: _
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 3/2
+L: 1/8
+K: Dm
+% - - - - - - - - - -
+f2e2 d2^c2 |\
+d3e f2e2 f2g2 | f2e2 f4 (g3f/g/) |\
+a2ba gaf2 f3e | f4 :: a2f2 efg2 |\
+f3e d2f2 e2d2 |
+e2A2 d4 (=B3A/=B/) |\
+c3d e2B2 B4 | A4 A2d2 ^c2d2 |\
+e3f g2a2 efg2 | f2e2 f4 (^f3e/f/) |\
+g3a (ba)(gf) e4 | d4 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3037
+T: Bore
+%R: bourr\'ee
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: C|
+L: 1/8
+K: C
+% - - - - - - - - - -
+gf |\
+e2f2 d2g2 | e2c2 c2fg |\
+a2gf e3f | g2gf edcB |\
+A2(fe) e3d| d6 :: dc |\
+B2c2 A2d2 | B2G2 G2c2 |
+d2e2 f3g | e2c2 f3f |\
+g2a2 g3f | f2(fg) a2a2 |\
+e2(ef) g2g2 | d2g2 g2g2 |\
+c2A2 d2dc | B2G2 ge fg |\
+agfe d3c | c6 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3038
+T: Minuet
+%R: minuet, waltz
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/8
+K: C
+% - - - - - - - - - -
+|:\
+g3 f e2 | f2 d3 c/d/ | e2 c2 g2 | a2 f4 |\
+ed ef ef | g3 f e2 | g2 d3 c/d/ | e2 c2 g2 |\
+a2 f4 | e6 ::
+e3 f g2 | d2 e4 | c2 A2 d2 | B2 G2 c2 |\
+d2 e3 f | e4 d2 | e3 f g2 | d2 e4 |\
+c2 A2 d2 | B2 G2 c2 | d2 d3 c | c6 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3039
+T: Minuet
+%R: minuet, waltz
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/4
+K: Dm
+% - - - - - - - - - -
+A |\
+d e f | e f g | f e d | a a A |\
+d e f | e f g | f e d | ^c2 :: a |\
+fe f g | ^f d d | g> a g/f/ | e c c |
+f c _e | d e f | f>g e | f2 A |\
+d A c | =B> c d | e> f e/d/ | ^c f a |\
+e e ^f | g> a f- | f/e/ e> d | d4 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3040
+T: Entry
+%R: march
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: C|
+L: 1/8
+K: Gm
+% - - - - - - - - - -
+[|\
+g3g f3e | d4 c3c | c3d/c/ B3A | B2G2 d3f |\
+f3f c3d | e4 d3d | g3a a3g | ^f8 ::
+d3d c3d/A/ | B2G2 e3e | c3c f3f | d3d e3f |\
+g3f edcB | A2F2 B3B | c2d2 c3B | B4 d3d |
+=B3B c3d | e4 =e3e | f3f ^f3g | a2d2 b3b |\
+b3a a3b | (^f3 =e/f/) g3f | edcB A3G | G8 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3041
+T: Minuet
+%R: minuet, waltz
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/8
+K: Bb
+% - - - - - - - - - -
+|:\
+B3 c d2 | G2 g4 | (^f3 =e/f/) g2 | d3 e f2 |\
+g2 c3 B | B6 ::\
+f3 e d2 | c2 d4 |
+B4 A2 | d3 c B2 |\
+A2 B2 (AG) | ^F6 | G3 A B2 | c2 d2 e2 |\
+d2 =e2 (^f=e/f/) | g3 d c2 | B2 A3 G | G6 |]
+% - - - - - - - - - -
+
+%%sep 1 1 500
+%%sep 1 1 500
+
+X: 3042
+T: A New Italian Ground
+%R: waltz
+B: Henry Playford "Apollo's Banquet", London 1687 (5th Edition)
+F: https://archive.org/details/apollosbanquetco01rugg
+Z: 2017 John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/8
+K: G
+% - - - - - - - - - -
+|:\
+G2 B2 c2 | A3 B G>F | (GF) (GB) (AG) | F4 F2 |\
+G2 G2 (GD) | E3 F G2 | A2 G2 B2 | G6 ::
+B2 c3 d | d3 c BA | B2 (cB) (AG) | A6 |\
+d2 e2 d2 | c2 (BA) (GA) | A3 G A2 | B6 |
+E2 F2 G2 | c2 B2 (cA) | B2 (cB) (AG) | F6 |\
+G2 A2 B2 | G4 (BA) | F3 E F2 | HG6 |]
+% - - - - - - - - - -
+P: The Ground Bass.
+K: G clef=bass middle=d
+[| g6 | f6 | e6 | d6 | B6 | c6 | d6 | G6 |]\
+   y6   y6   y6   y6   y6   y6   y6   y6
+% - - - - - - - - - -

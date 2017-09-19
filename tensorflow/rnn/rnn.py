@@ -42,10 +42,10 @@ class RNN(object):
         """
 
         # RNN layer
-        Cell = tf.contrib.rnn.BasicLSTMCell(self.NUM_CELL_UNITS, state_is_tuple=True)
         # Dropout = tf.contrib.rnn.DropoutWrapper(Cell, input_keep_prob=DROPOUT_KEEP_PROB)
         # Cells = tf.contrib.rnn.MultiRNNCell([Dropout] * self.NUM_LSTM_CELLS)
-        Cells = tf.contrib.rnn.MultiRNNCell([Cell] * self.NUM_LSTM_CELLS)
+        # Cells = tf.contrib.rnn.MultiRNNCell([Cell] * self.NUM_LSTM_CELLS)
+        Cells = tf.contrib.rnn.MultiRNNCell([RNN.lstm_cell(self.NUM_CELL_UNITS) for _ in range(self.NUM_LSTM_CELLS)])
         self.InitState = Cells.zero_state(tf.shape(self.X)[0], tf.float32)
         Output, self.State = tf.nn.dynamic_rnn(Cells, X_onehot, initial_state=self.InitState, dtype=tf.float32)
 
@@ -71,6 +71,10 @@ class RNN(object):
         batchX, _ = self.nextTrainBatch()
         self.state = self.sess.run(self.InitState, {self.X: batchX})
 
+    @staticmethod
+    def lstm_cell(NUM_CELL_UNITS):
+        return tf.contrib.rnn.BasicLSTMCell(NUM_CELL_UNITS, state_is_tuple=True)
+
     def train_batch(self):
         self.batchX, self.batchY = self.nextTrainBatch()
         minimize, self.loss, self.state = self.sess.run([
@@ -83,7 +87,7 @@ class RNN(object):
     def sample(self, GEN_STR_LEN, show_every=None):
         output = []    
         t = time.time()
-        for i in xrange(GEN_STR_LEN):
+        for i in range(GEN_STR_LEN):
             batchX = [self.running_sample]
             predictions = self.sess.run(self.Predictions, {self.X: batchX})
             class_ix = self.class_distr_to_class_ix(predictions)
@@ -101,7 +105,7 @@ class RNN(object):
         """
         batchX = []
         batchY = []
-        for i in xrange(self.BATCH_SIZE):
+        for i in range(self.BATCH_SIZE):
             x = [p for p in self.DATA[self.batch_ptr + i:self.batch_ptr + self.SEQ_LENGTH + i]]
             y = self.DATA[self.batch_ptr + self.SEQ_LENGTH + i]
             batchX.append(x)
