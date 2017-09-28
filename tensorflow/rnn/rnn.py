@@ -19,6 +19,7 @@ class RNN(object):
         self.NUM_CELL_UNITS = opts["NUM_CELL_UNITS"]
         self.NUM_LSTM_CELLS = opts["NUM_LSTM_CELLS"]
         self.NUM_CLASSES = opts["NUM_CLASSES"]
+        self.SAVE_DST = opts["SAVE_DST"] # this must end in "/"
 
         self.SIZE_DATA = len(self.DATA) - self.SEQ_LENGTH - 1 # - SEQ_LENGTH - 1 to avoid clipping (short strings) near the end
         self.NUM_TRAIN = int(0.8 * self.SIZE_DATA) # 80-20 train-test split
@@ -66,14 +67,22 @@ class RNN(object):
         Losses = tf.nn.sparse_softmax_cross_entropy_with_logits(labels=self.Y, logits=Logits)
         self.Loss = tf.reduce_mean(Losses)
         self.Minimize = tf.train.AdamOptimizer().minimize(self.Loss)
-
+            
         self.sess.run(tf.global_variables_initializer())
+
         batchX, _ = self.nextTrainBatch()
         self.state = self.sess.run(self.InitState, {self.X: batchX})
+
+        self.Saver = tf.train.Saver(max_to_keep=100, keep_checkpoint_every_n_hours=1) 
+        if glob.glob(self.SAVE_DST + "*"):
+            self.Saver.restore(self.sess, tf.train.latest_checkpoint(self.SAVE_DST))
 
     @staticmethod
     def lstm_cell(NUM_CELL_UNITS):
         return tf.contrib.rnn.BasicLSTMCell(NUM_CELL_UNITS, state_is_tuple=True)
+
+    def save(self, i):
+        self.Saver.save(self.sess, self.SAVE_DST + "char", global_step=i)
 
     def train_batch(self):
         self.batchX, self.batchY = self.nextTrainBatch()

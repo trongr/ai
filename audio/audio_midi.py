@@ -47,12 +47,8 @@ model = RNN(sess, data, {
     "NUM_CELL_UNITS": 256,
     "NUM_LSTM_CELLS": 3,
     "NUM_CLASSES": VOCAB_SIZE,
+    "SAVE_DST": "./save_midi/",
 })
-
-Saver = tf.train.Saver(max_to_keep=100, keep_checkpoint_every_n_hours=1) 
-save_files = glob.glob('./save_midi/*')
-if save_files:
-    Saver.restore(sess, tf.train.latest_checkpoint('./save_midi/'))
 
 output_csv = open("csv/output.csv", "w")
 t = time.time()
@@ -92,7 +88,7 @@ while True:
         t = time.time()        
 
     if i % 500 == 0:
-        Saver.save(sess, "./save_midi/char", global_step=i)
+        model.save("./save_midi/audio", i)
 
     i += 1
 

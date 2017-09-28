@@ -43,16 +43,12 @@ data = [CHAR_TO_IX[ch] for ch in DATA]
 sess = tf.Session()
 
 model = RNN(sess, data, {
-    "SEQ_LENGTH": 100,
-    "NUM_CELL_UNITS": 1024,
+    "SEQ_LENGTH": 50,
+    "NUM_CELL_UNITS": 256,
     "NUM_LSTM_CELLS": 3,
     "NUM_CLASSES": VOCAB_SIZE,
+    "SAVE_DST": "./save_abc/",
 })
-
-Saver = tf.train.Saver(max_to_keep=100, keep_checkpoint_every_n_hours=1) 
-save_files = glob.glob('./save_abc/*')
-if save_files:
-    Saver.restore(sess, tf.train.latest_checkpoint('./save_abc/'))
 
 output_file = open("output/output.abc", "w")
 t = time.time()
@@ -60,18 +56,19 @@ i = 0
 while True: 
     batchX, batchY = model.train_batch()
 
-    if i % 10 == 0:
+    if i % 1 == 0:
         print('Batch: {:2d}, elapsed: {:.4f}'.format(i, time.time() - t))
         t = time.time()
 
-    if i % 100 == 0:
+    if i % 10 == 0:
         accuracy = model.get_accuracy()
         loss = model.get_loss()
         print('Batch: {:2d}, elapsed: {:.4f}, loss: {:.4f}, accuracy: {:3.1f} %'.format(i, time.time() - t, loss, 100 * accuracy))
         t = time.time()
 
-    if i % 100 == 0:    
-        sample = model.sample(300)
+    # if i % 500 == 0:    
+    if i % 50 == 0 and i != 0:    
+        sample = model.sample(100)
         sample = ixes_to_string(sample)
 
         print("TRAINING")
@@ -91,8 +88,8 @@ while True:
         print('Batch: {:2d}, elapsed: {:.4f}'.format(i, time.time() - t))
         t = time.time()        
 
-    if i % 500 == 0:
-        Saver.save(sess, "./save_abc/char", global_step=i)
+    if i % 50 == 0 and i != 0:
+        model.save(i)
 
     i += 1
 

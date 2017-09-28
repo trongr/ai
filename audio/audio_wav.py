@@ -28,12 +28,8 @@ model = RNN(sess, data, {
     "NUM_CELL_UNITS": 64,
     "NUM_LSTM_CELLS": 3,
     "NUM_CLASSES": 256, # 8 bit audio
+    "SAVE_DST": "./save/",
 })
-
-Saver = tf.train.Saver(max_to_keep=100, keep_checkpoint_every_n_hours=1) 
-save_files = glob.glob('./save/*')
-if save_files:
-    Saver.restore(sess, tf.train.latest_checkpoint('./save/'))
 
 t = time.time()
 i = 0
@@ -64,7 +60,7 @@ while True:
         print "Generating", WAV_OUT
 
     if i % 1000 == 0:
-        Saver.save(sess, "./save/audio", global_step=i)
+        model.save("./save/audio", i)
 
     i += 1
 
