@@ -1,0 +1,2 @@
+Print out all training batches in real time as it trains.
+Train audio network on smaller training data.
