@@ -1,0 +1,11 @@
+How to install these programs
+=============================
+
+Assuming that you know how to use the Windows command prompt (cmd),
+you will have to copy these programs to a Windows directory included
+in the PATH. Unless you want to expand the PATH to include one or more
+directories of your choosing, just do:
+
+C:\Users\Username\abctools-win-VER> copy *.exe %SystemRoot%
+
+Replace VER with the actual version number.
