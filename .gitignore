@@ -15,4 +15,5 @@ audio/output/
 audio/samples/
 audio/save_midi/
 audio/save_abc/
+audio/data/abc/master_processed.abc
 *.pyc

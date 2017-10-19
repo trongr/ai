@@ -24,12 +24,7 @@ import numpy as np
 import tensorflow as tf
 # import audio_utils
 from rnn import RNN
-
-def ixes_to_string(ixes):   
-    """
-    Convert a list of indices to a string
-    """
-    return "".join([IX_TO_CHAR[i] for i in ixes])
+from lib import utils
 
 FILENAME = sys.argv[1]
 DATA = open(FILENAME, 'r').read()
@@ -66,14 +61,14 @@ while True:
         print('Batch: {:2d}, elapsed: {:.4f}, loss: {:.4f}, accuracy: {:3.1f} %'.format(i, time.time() - t, loss, 100 * accuracy))
         t = time.time()
 
-    # if i % 500 == 0:    
-    if i % 50 == 0 and i != 0:    
+    if i % 500 == 0:    
+    # if i % 50 == 0 and i != 0:    
         sample = model.sample(100)
-        sample = ixes_to_string(sample)
+        sample = utils.ixes_to_string(IX_TO_CHAR, sample)
 
         print("TRAINING")
         print("========")
-        print(ixes_to_string(batchX[0]))
+        print(utils.batchX_to_str(IX_TO_CHAR, batchX))
         print("========")
 
         print("SAMPLE")
