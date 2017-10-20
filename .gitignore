@@ -1,10 +1,14 @@
 .DS_Store
 .vscode
+__pycache__
+*.pyc
+
+npm-debug.log
+
 summary_logs
 test
 tmp
 MNIST_data
-npm-debug.log
 text8.zip
 save/
 tensorflow/rnn/opus/
@@ -16,4 +20,3 @@ audio/samples/
 audio/save_midi/
 audio/save_abc/
 audio/data/abc/master_processed.abc
-*.pyc
