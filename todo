@@ -1,7 +1,0 @@
-Script to parse network ABC output, possibly clean up, and 
-convert to MIDI files.
-
-17-10-18
-
-Print out all training batches in real time as it trains.
-Train audio network on smaller training data.

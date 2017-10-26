@@ -18,11 +18,11 @@ DATA_SIZE, VOCAB_SIZE = len(DATA), len(CHARS)
 CHAR_TO_IX = {ch: i for i, ch in enumerate(CHARS)}
 IX_TO_CHAR = {i: ch for i, ch in enumerate(CHARS)}
 
-# print "DATA", DATA
-print 'DATA has %d characters, %d unique.' % (DATA_SIZE, VOCAB_SIZE)
-print "CHARS", CHARS
-print "CHAR_TO_IX", CHAR_TO_IX
-print "IX_TO_CHAR", IX_TO_CHAR
+# print("DATA", DATA)
+print('DATA has %d characters, %d unique.' % (DATA_SIZE, VOCAB_SIZE))
+print("CHARS", CHARS)
+print("CHAR_TO_IX", CHAR_TO_IX)
+print("IX_TO_CHAR", IX_TO_CHAR)
 
 BATCH_SIZE = 100
 SEQ_LENGTH = 20
@@ -41,7 +41,7 @@ def nextTrainBatch():
     global batch_ptr
     batchX = []
     batchY = []
-    for i in xrange(BATCH_SIZE):
+    for i in range(BATCH_SIZE):
         x = [CHAR_TO_IX[ch] for ch in list(DATA[batch_ptr + i:batch_ptr + SEQ_LENGTH + i])]
         y = CHAR_TO_IX[DATA[batch_ptr + SEQ_LENGTH + i]] 
         batchX.append(x)
@@ -66,23 +66,23 @@ def sample():
     s = s[-SEQ_LENGTH:]
     output = []    
 
-    print "SEED"
-    print "----"
-    print s
-    print "----"
+    print("SEED")
+    print("----")
+    print(s)
+    print("----")
     
     GEN_STR_LEN = 300    
-    for i in xrange(GEN_STR_LEN):
+    for i in range(GEN_STR_LEN):
         testX = genTestXFromString(s)
         predictions = sess.run(Predictions, {X: testX})
         char = char_distr_to_char(predictions)
         output.append(char)
         s = (s + char)[-SEQ_LENGTH:]
 
-    print "GENERATED"
-    print "========="
-    print "".join(output)
-    print "========="
+    print("GENERATED")
+    print("=========")
+    print("".join(output))
+    print("=========")
 
 def ixes_to_string(ixes):
     """
@@ -105,11 +105,14 @@ def char_distr_to_char(predictions):
     return IX_TO_CHAR[char_distr_to_char_ix(predictions)]
 
 def print_test_results(testX, predictions):
-    for i in xrange(len(testX)):
+    for i in range(len(testX)):
         test_str = testX[i].reshape(-1)
         char_distr = predictions[i].reshape(-1)
         predicted_char = char_distr_to_char(char_distr)
-        print ixes_to_string(test_str), "\t", predicted_char
+        print(ixes_to_string(test_str), "\t", predicted_char)
+
+def lstm_cell(NUM_CELL_UNITS):
+    return tf.contrib.rnn.BasicLSTMCell(NUM_CELL_UNITS, state_is_tuple=True)
 
 """
 Placeholders for minibatch input and output data
@@ -124,12 +127,11 @@ BUILDING THE GRAPH
 BUILDING THE GRAPH
 BUILDING THE GRAPH
 """
-
 # RNN layer
 Cell = tf.contrib.rnn.BasicLSTMCell(NUM_CELL_UNITS, state_is_tuple=True)
 # Dropout = tf.contrib.rnn.DropoutWrapper(Cell, input_keep_prob=DROPOUT_KEEP_PROB)
 # Cells = tf.contrib.rnn.MultiRNNCell([Dropout] * NUM_LSTM_CELLS)
-Cells = tf.contrib.rnn.MultiRNNCell([Cell] * NUM_LSTM_CELLS)
+Cells = tf.contrib.rnn.MultiRNNCell([lstm_cell(NUM_CELL_UNITS) for _ in range(NUM_LSTM_CELLS)])
 InitState = Cells.zero_state(tf.shape(X)[0], tf.float32)
 Output, State = tf.nn.dynamic_rnn(Cells, X_onehot, initial_state=InitState, dtype=tf.float32)
 
@@ -178,17 +180,17 @@ while True:
     if i % 100 == 0:
         accuracy = sess.run(Accuracy, {X: batchX, Y: batchY})
 
-        print "TRAINING"
-        print "--------"
-        print ixes_to_string(batchX[0])
-        print "--------"
+        print("TRAINING")
+        print("--------")
+        print(ixes_to_string(batchX[0]))
+        print("--------")
 
         sample()
 
-        print 
+        print()
         print('Batch: {:2d}, elapsed: {:.4f}, loss: {:.4f}, accuracy: {:3.1f} %'
             .format(i, time.time() - t, loss, 100 * accuracy))
-        print 
+        print()
         t = time.time()
 
     if i % 1000 == 0:

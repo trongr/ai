@@ -70,12 +70,12 @@ class RNN(object):
             
         self.sess.run(tf.global_variables_initializer())
 
-        batchX, _ = self.nextTrainBatch()
-        self.state = self.sess.run(self.InitState, {self.X: batchX})
-
         self.Saver = tf.train.Saver(max_to_keep=100, keep_checkpoint_every_n_hours=1) 
         if glob.glob(self.SAVE_DST + "*"):
             self.Saver.restore(self.sess, tf.train.latest_checkpoint(self.SAVE_DST))
+
+        batchX, _ = self.nextTrainBatch()
+        self.state = self.sess.run(self.InitState, {self.X: batchX})
 
     @staticmethod
     def lstm_cell(NUM_CELL_UNITS):
