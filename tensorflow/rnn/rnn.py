@@ -46,6 +46,12 @@ class RNN(object):
         # Dropout = tf.contrib.rnn.DropoutWrapper(Cell, input_keep_prob=DROPOUT_KEEP_PROB)
         # Cells = tf.contrib.rnn.MultiRNNCell([Dropout] * self.NUM_LSTM_CELLS)
         # Cells = tf.contrib.rnn.MultiRNNCell([Cell] * self.NUM_LSTM_CELLS)
+
+        '''
+        TODO. I think building a MultiRNNCell using a for loop like this is 
+        causing the model (specifically these cells) not to be saved properly.
+        Then when it's reloaded, the cells are re-initialized to zero.
+        '''
         Cells = tf.contrib.rnn.MultiRNNCell([RNN.lstm_cell(self.NUM_CELL_UNITS) for _ in range(self.NUM_LSTM_CELLS)])
         self.InitState = Cells.zero_state(tf.shape(self.X)[0], tf.float32)
         Output, self.State = tf.nn.dynamic_rnn(Cells, X_onehot, initial_state=self.InitState, dtype=tf.float32)
