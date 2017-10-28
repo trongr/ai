@@ -15,7 +15,7 @@ tensorflow/rnn/opus/
 audio/midi/
 audio/wav/
 audio/csv/
-audio/output/
+# audio/output/
 audio/samples/
 audio/save_midi/
 audio/save_abc/

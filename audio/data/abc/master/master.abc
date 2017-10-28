@@ -1,0 +1,3193 @@
+X: 1
+T: Inventio 11
+T: BWV 782
+C: Johann Sebastian Bach
+Z: 2004 John Chambers <jc@trillian.mit.edu>
+M: C
+L: 1/16
+V: 1 clef=treble staves=2 brace=2
+V: 2 clef=bass   middle=d
+K: Gm
+V: 1
+[| zD=E^F GABG      AGFE      DcBA   | GF=ED    CBAG     dcBd    cBAc     \
+|  BAGA   Bcd=e     =f2d2     z2d2   | _edcd    e2=e2    fede    f2^f2    \
+|  g2dc   d_e=fd    edcB      Agfe   | dcd=e    fgaf     gfed    ^cbag    \
+|  f4-    fgab      ^cd=ed    c2=c2  | =Bcdc    B2_B2    A2d4    ^c2      \
+|  A2f4   e2        A2a4      g2-    | g2f=e    fde^c    d3e     e3d      \
+|  d2=cB  ABcA      BAGF      =EdcB  | AGA=B    c4-      cABc    d4-      \
+|  dG=A=B cdec      dcBA      Gfed   | c_B_AG   Fedc     gfeg    fedf     \
+|  edcd   efg_a     =B2d2     z2F2   | E2c2     D2=B2    cGcd    e4-      \
+|  ecde   f4-       f2ed      g3f    | edcB     AG^FA    ED=EF   GABG     \
+|  AG_F=E DcBA      G=FED     CBAG   | dcBd     cBAc     BAGB    AG^FA    \
+|  GABc   d=e^fg    afga      d4-    | dc_ed    cBAc     ^FABA   G=FEG    \
+|  ^CGAB  DAG^F     G8        |]
+V: 2
+[| G4     z2g2      ^fgag     f2=f2  | =efgf    e2_e2    d2g4    ^f2      \
+|  gd=e^f gabg      ag=fe     dc'ba  | gf_ed    cbag     d'c'bd' c'bac'   |
+|  baga   bc'd'b    c'2e2     f2F2   | B2b2     a2d'2    b2g2    a2A2     \
+|  DA=B^c d=efd     edcB      Agfe   | dc=BA    Gf=ed    agfa    gfeg     \
+|  f=edf  ed^ce     defd      gabg   | ^c'a=bc' d'fga    _b=efg  a2A2     \
+|  d4     zd=ef     gabg      c'2c2  | f2_ed    efge     fedc    =B_agf   \
+|  edcd   efg_a     =B2G2     z2G2   | _AGFG    A2=A2    _BAGA   B2=B2    \
+|  cGA=B  cdec      dcB=A     Gfed   | c_B_AG   FEFG     CBef    g_a_bg   \
+|  _agfe  dc'ba     gfg=a     bc'd'b | cbag     ^fe'd'c' b4-     bc'd'_e' \
+|  ^fgag  f2=f2     =efgf     e2_e2  | d2g4     ^f2      d2b4    a2       \
+|  d2d'4  c'2-      c'_e'd'c' bagb   | e4-      edce     A2d2-   d2c2     \
+|  B2AG   d2D2      G8        |]
+X: 1
+T: Inventio 11
+T: BWV 782
+C: Johann Sebastian Bach
+Z: 2004 John Chambers <jc@trillian.mit.edu>
+M: C
+L: 1/16
+V: 1 clef=treble staves=2 brace=2
+V: 2 clef=bass   middle=d
+K: Gm
+V: 1
+[| zD=E^F   GABG     AGFE      DcBA     \
+|  GF=ED    CBAG     dcBd      cBAc     \
+|  BAGA     Bcd=e    =f2d2     z2d2     |
+|  _edcd    e2=e2    fede      f2^f2    \
+|  g2dc     d_e=fd   edcB      Agfe     \
+|  dcd=e    fgaf     gfed      ^cbag    |
+|  f4-      fgab     ^cd=ed    c2=c2    \
+|  =Bcdc    B2_B2    A2d4      ^c2      \
+|  A2f4     e2       A2a4      g2-      |
+|  g2f=e    fde^c    d3e       e3d      \
+|  d2=cB    ABcA     BAGF      =EdcB    \
+|  AGA=B    c4-      cABc      d4-      |
+|  dG=A=B   cdec     dcBA      Gfed     \
+|  c_B_AG   Fedc     gfeg      fedf     \
+|  edcd     efg_a    =B2d2     z2F2     |
+|  E2c2     D2=B2    cGcd      e4-      \
+|  ecde     f4-      f2ed      g3f      \
+|  edcB     AG^FA    ED=EF     GABG     |
+|  AG_F=E   DcBA     G=FED     CBAG     \
+|  dcBd     cBAc     BAGB      AG^FA    \
+|  GABc     d=e^fg   afga      d4-      |
+|  dc_ed    cBAc     ^FABA     G=FEG    \
+|  ^CGAB    DAG^F    G8        |] \
+   x8 x8 x8 x8 x8 x8 x8
+V: 2
+[| G4       z2g2     ^fgag     f2=f2    \
+|  =efgf    e2_e2    d2g4      ^f2      \
+|  gd=e^f   gabg     ag=fe     dc'ba    |
+|  gf_ed    cbag     d'c'bd'   c'bac'   \
+|  baga     bc'd'b   c'2e2     f2F2     \
+|  B2b2     a2d'2    b2g2      a2A2     |
+|  DA=B^c   d=efd    edcB      Agfe     \
+|  dc=BA    Gf=ed    agfa      gfeg     \
+|  f=edf    ed^ce    defd      gabg     |
+|  ^c'a=bc' d'fga    _b=efg    a2A2     \
+|  d4       zd=ef    gabg      c'2c2    \
+|  f2_ed    efge     fedc      =B_agf   |
+|  edcd     efg_a    =B2G2     z2G2     \
+|  _AGFG    A2=A2    _BAGA     B2=B2    \
+|  cGA=B    cdec     dcB=A     Gfed     |
+|  c_B_AG   FEFG     CBef      g_a_bg   \
+|  _agfe    dc'ba    gfg=a     bc'd'b   \
+|  cbag     ^fe'd'c' b4-       bc'd'_e' |
+|  ^fgag    f2=f2    =efgf     e2_e2    \
+|  d2g4     ^f2      d2b4      a2       \
+|  d2d'4    c'2-     c'_e'd'c' bagb     |
+|  e4-      edce     A2d2-     d2c2     \
+|  B2AG     d2D2     G8        |] \
+   x8 x8 x8 x8 x8 x8 x8
+X:27
+T:Prelude BWV 931
+C:Johann Sebastian Bach
+Z:Frank Nordberg <frnordbe@online.no>
+V:1 % up
+V:2 % merge down
+V:3 clef=bass % up
+V:4 clef=bass % merge down
+M:C
+L:1/8
+K:Am
+V:1
+[c4e4]d2f/ed/|x2e2xA/4B/4c/f2|B2[G2B2]c2zB|
+V:2
+A4B2B2|McMd z^G AA MB>A|^G2[E2G2]A2zG|
+V:3
+A,,2x2x4|x2 zE,F,4|x4x2E,E,,|
+V:4
+x2A,4^G,2|A,2x2z2D,2|E,2zE, C,MB,,/A,,/ x2|
+%
+V:1
+(Bc) (BA) B2zA|(AB) (AG) GA G^F|G2ABc2de|
+V:2
+^GA =G^FG2z^F|^FG FE EF E^D|E2^F^GA2B^c|
+V:3
+A,,2zD, B,,MA,,/G,,/ D,D,,|G,,2x2x4|x2C,B,,x4|
+V:4
+x8|x2zC A,G,/^F,/ B,B,,|E,D, x2 A,,=G, M=F,E,|
+%
+V:1
+f2^GA Bc d/cB/|c/4B/4A/B/c/ B>A[E4A4]|]
+V:2
+d2E^FG2A2-|A2^G2^C4|]
+V:3
+zD2 C,B,,2A,,2|E,4-E,E,A,2|]
+V:4
+D,3xx4|z2E,,2A,,4|]
+X: 1
+T: Sonata in Bb
+T: f\"ur 2 Alt-Blockfl\"oten und Basso Continuo
+T: BWV 1039
+C: J.S.Bach (1685-1750)
+N: Also published as a sonata for viola da gambo and cembalo.
+N: Voice 2 is the gamba part.
+M: 12/8
+L: 1/16
+%%staffsep 60
+K: Bb
+P: Adagio
+V: 1
+[|f24- |
+  f12- f2 e6 d4- |
+  d2c4- c2f2A2 B6- Bdc=efc |
+  AdcBAG A2F2GA/B/ A2cBAG AFc2d=e/f/ |
+  =e2fedc f2c2cd/=e/ d2edcB c2f2AB/c/ |
+  {c}B2cBAG AGFGAB cBdcBA G2g4- |
+  gfagf=e f2!+!g2a2- agfefd e6- |
+  =edfeg^f {a}!+!^g6 =gba=fg=e !+!f6 |
+  =edd^ccd de!+!c3d d4z2 agf=ed2 |
+  z4dc BAG2z2 z4z2 gf=edc2 |
+  z4cB AGF2z2 fedcBA {A}B3gf=e |
+  dcbagf =effgg2- gef4- fgc2!+!e2 |
+  A2cBAG A2F2cd/_e/ d2fedc dBf2ga/b/ |
+  {b}a2bagf b2f2fg/_a/ {a}g2agfe f2b2de/f/ |
+  {f}e2fedc dcBcde fegfed cBAGF2 |
+  f24- |
+  f12- f2 e6 d4- |
+  d2c4- c2f2!+!A2 B2b4- bac'bag |
+  ^f2!+!g2a2- ag=f_efd =e2!+!^f2g2- gfagba |
+  c'2b2a2 gba^fgb e'6- e'd'd'^c'c'd' |
+  d'3=c'c'b e'd'c'b!+!ag g2dcBA G2d2de/f/ |
+  e2d2c2- c2edcB {B}A2cBAG F2c2cd/e/ |
+  d2!+!c2B2- B2d'c'b_a gfed{d}e2- ec'b"(=)"agf |
+  edcBg2- g2f2e2 def2c2 dcedcd |
+  B24- |
+  B2_dcBA B2G2AB/c/ {c}B2_dcBA B=de_g_cB |
+  =A4z2 z6 !+!B12 |
+  A24 |]
+V: 2
+[|d2fedc d2B2cd/e/ {e}d2fedc dBf2ga/b/ |
+  {b}a2bagf b2f2fg/_a/ {a}g2agfe f2b2de/f/ |
+  {f}e2fedc dcBcde fegfed cBAGF2 |
+  c'24- |
+  c'12- c'2 b6 a4- |
+  a2g4- g2c'2!+!=e2 f6- fegfed |
+  ^c2d2=e2- ed=c_BcA =B2!+!^c2d2- dcedfe |
+  g2f2=e2 dfe^cdf b6- baa^gga |
+  a3=gg=f bagf!+!=ed d2agfe d2a2ab/c'/ |
+  b2!+!a2g2- g2bagf {f}=e2gfed c2g2ga/b/ |
+  a2!+!g2f2- f2agf_e dcBA {A}B2- Bgf=edc |
+  bagfd'2- d'2c'2b2 abc'2g2 agbaga |
+  f24- |
+  f12- f2e6 d4-|
+  d2c4- c2f2!+!A2 B6- Bdcedc |
+  dgfedc d2B2cd/e/ {e}d2fedc dBf2ga/b/ |
+  {b}a2bagf b2f2fg/_a/ {a}g2agfe f2b2de/f/ |
+  {f}e2fedc dcBcde fegfed c2c'4- |
+  c'bd'c'ba b2!+!c'2d'2- d'c'babg a6- |
+  agbac'=b {d'}!+!^c'6- =c'e'd'_bc'a !+!b6 |
+  agg^ffg ga!+!f3g g4z2 dcBAG2 |
+  z4gf _edc2z2 z6 cBAGF2 |
+  z4fe dcB2z2 b_agfed {d}e3c'b=a |
+  gfedcB ABBcc2- cAB4- BcF2!+!A2 |
+  Bdfedc d2B2cd/e/ {e}d2fedc dBcedf |
+  =e12 _e12 |
+  e4z2 z6 !+!_d12  |
+  c24 |]
+V: 3 clef=bass
+[|B2d2f2 b2d'2f'2 b2d2f2 B2d2B2 |
+  f2f'2e'2 c'2c'2b2 e'2c'2g2 a2b2g2 |
+  c2a2f2 b2d'2c'2 d'2e'2g2 f'4z2 |
+  F2A2c2 f2a2c'2 f2A2c2 F2A2F2 |
+  c2c'2b2 a2g2f2 b2g2d2 =e2f2d2 |
+  g2=e2c2 f2a2g2 a2b2f2 c'4b2 |
+  a2=b2^c'2 d2=e2^f2 g4z2 ^g4z2 |
+  a4z2 =b4z2 ^c'4z2 d'2c'2=b2 |
+  ^c'2a2_b2 g2a2A2 d4ag f=ed2^f2 |
+  g2d'c'ba g2G2B2 c4gf =edc2e2 |
+  f2c'bag f2F2a2 b2c'2d'2 g2a2b2 |
+  =e2f2g2 c2d2e2 f2A2B2 c2B2c2 |
+  F2A2c2 f2a2f2 b2d2f2 B2d2B2 |
+  f2f'2e'2 d'2c'2b2 e'2c'2g2 =a2b2g2 |
+  c'2a2f2 b2d'2c'2 d'2e'2c'2 f'4z2 |
+  B2d2f2 b2d'2f'2 b2d2f2 B2d2B2 |
+  f2f'2e'2 d'2c'2b2 e'2c'2g2 =a2b2g2 |
+  c'2a2f2 B2d2c2 d2e2c2 f4e2 |
+  d2=e2^f2 g2a2=b2 c'4z2 ^c'4z2 |
+  d'4z2 =e4z2 ^f4z2 g2f2e2 |
+  ^f2d2_e2 c2d2D2 G4d'c' bag2=b2 |
+  c'2gfed c2c'2e'2 f'4c'b agf2a2 |
+  B2fedc B2c2d2 e2f2g2 c2d2e2 |
+  A2B2c2 F2G2A2 B2d2e2 f2e2f2 |
+  B4z2 z6 _A4z2 z6 |
+  G4z2 z6 _A4z2 z6 |
+  G4z2 z6 =E12 |
+  F24 |]
+%
+T: II
+P: Allegro ma non tanto
+M: 3/4
+L: 1/16
+%%measurefirst
+V: 1
+[|z4 z2F2 Bcd2 |
+  !+!d2c2 c2AB cde2 |
+  !+!e2d2 d2f2 edcB |
+  g2ba g2f2 edcB |
+  cBAG F4 z2f2- |
+  fd=ef gab2 c2!+!e2 |
+  fcd=e fgab c2a2 |
+  f2d2 gabc d'2d2 |
+  =e2c2 fgab c'_edc |
+  df=ef dfcf BfAf |
+  Bdcd BdAd GdFd |
+  =e12- |
+  ecd=e fefg !+!e3f |
+  fFGA Bcd=e fga2 |
+  !+!a2g2 g2=ef gab2 |
+  !+!b2a2 a2c'2 bagf |
+  _e2gf e2c'b agfe |
+  dcBA Bcde fBb2- |
+  bgab c'd'e'2 f2!+!a2 |
+  b4 z4 z4 |
+  d'12- |
+  d'd'c'=b c'd'e'c' f4- |
+  fc'_ba bc'd'b e4- |
+  ebag abc'a dgfe |
+  fgaf Bedc defd |
+  GAB2- Bdc2- cde2- |
+  egf2- fag2- gba2 |
+  b2ag fedc Bcd2 |
+  !+!d2c2 c2AB cde2 |
+  !+!e2d2 d2f2 edcB |
+  g2ba g2f2 edcB |
+  agfb {e}d3c !+!c3B |
+  B4 z2b2 fed2 |
+  d2e2 e2gf edc2 |
+  c2d2 d4 g4- |
+  g2^fg a2f2 g2a2 | e2d2 d^fga b2g2 |
+  =edcd egab c'2a2 |
+  {g}^f2=ed g8- |
+  g8- g2G2 |
+  c4- cedc BAGA |
+  Bcd=e ^fdg2 g/a/bag |
+  gbab gb=fb =ebdb |
+  =egfg egdg ^cgdg |
+  ^c6 d2 =e2f2 |
+  g12- |
+  g^cd=e fgab !+!e3d |
+  d4 z4 z4 |
+  z12 |
+  z4 z2f2 cBA2 |
+  A2B2 B2dc BAG2 |
+  G2A2 Acd=e fgaf |
+  d4 z2g2 f=edc |
+  {c}f4 z2f=e dcBA |
+  B4 z4 z4 |
+  z4 z4 c'4- |
+  c'c'ba bc'd'b =eagf |
+  gabg cf=ed efge |
+  A4 z4 z2f2- |
+  fd=ef gab2 c2!+!e2 |
+  fcd=e fgab c'2a2 |
+  f2d2 gabc' d'c'ba |
+  gbag f=efg !+!e3f |
+  f12- |
+  f12- |
+  f4- fFGA Bcd2 |
+  !+!d2c2 c2AB cde2 |
+  !+!e2d2 dcBc defd |
+  B2dc d8- |
+  dGAB cBAB cd_ec |
+  A2cB c8- |
+  cedc =BAGA BcdB |
+  G2_BA B8- |
+  BdcB AGFG ABcA |
+  F2_AG A8- |
+  _A2GF G=ABc defg |
+V: 2
+[|z12 |
+  z12 |
+  z12 |
+  z12 |
+  z4 z2c2 fga2 |
+  !+!a2g2 g2=ef gab2 |
+  !+!b2a2 a2c'2 bagf |
+  d'2f'=e' d'2c'2 bagf |
+  gf=ed c4 f4 |
+  f12- |
+  f8 b4- |
+  bbab gbfb =ebdb |
+  c2b2 agab !+!g3f |
+  f8 z2f2- |
+  fd=ef gab2 c2!+!e2 |
+  f4 z4 z4 |
+  !+!a12 |
+  b4 z2F2 Bcd2 |
+  !+!d2c2 c2AB cde2 |
+  !+!e2d2 d2f2 edcB |
+  _A2cB A2fe dcBA |
+  G4 z2c'2 bagf |
+  {f}b4 z2ba gfed |
+  e4 z4 z4 |
+  z4 z4 f4- |
+  ffed efge AdcB |
+  cdec FBAG ABcA |
+  d2G2 z4 z2B2- |
+  BGAB cde2 F2!+!A2 |
+  BFGA Bcde f2d2 |
+  B2G2 cdef gfed |
+  cedc BABc !+!A3B |
+  B4 z4 z4 |
+  z12 |
+  z4 z2g2 dcB2 |
+  B2c2 c2_ed cBA2 |
+  A2B2 B4 z2d2 |
+  g2ab c'd'c'b ag^f=e |
+  d4 zg=fg _egdg |
+  cede ceBe AeGe |
+  ^F2A2 d4- dcBA |
+  GABc dcde A2!+!^f2 |
+  g12- |
+  g12- |
+  gbab gbfb =ebdb |
+  =egfg egdg ^cgeg |
+  A4- Af=ed !+!c3d |
+  d4 z2b2 fed2 |
+  d2e2 e2gf edc2 |
+  c2d2 d8- |
+  d4 !+!=e8 |
+  f4 z4 a4- |
+  aag^f gabg c4- | cg=f=e fgaf B4- |
+  Bf=ed efge AdcB |
+  cd=ed FBAG ABcA |
+  d=ef2- fag2- gab2- |
+  bd'c'2- c'=e'd'2- d'f'e'2 |
+  f'2=e'd' c'bag fga2 |
+  !+!a2g2 g2=ef gab2 |
+  !+!b2a2 a2c'2 bagf |
+  d'2f'=e' d'2c'2 bagf |
+  =edcf {B}A3G !+!G3F |
+  FGAB cd_ef gab2 |
+  !+!b2a2 a2fg abc'2 |
+  !+!c'2b2 b8- |
+  b4 a4- abc'a |
+  f2_ag a8- |
+  agfe fede fg_af |
+  =e2g^f g8- |
+  gbag ^f=ede fgaf |
+  d2=f=e f8- |
+  fagf =edcd efge |
+  c2_ed e8- |
+  egfe dcBc defd |
+V: 3
+[|B4 d4 B4 |
+  f4 a4 f4 |
+  b4 z2d'2 b2d'2 |
+  e'2d'2 e'2f'2 g'2g2 |
+  f2c'b a2g2 a2f2 |
+  c'2ba g2c2 =e2c2 |
+  f4 z4 F4 |
+  B4 z4 G4 |
+  c2B2 A2G2 A2F2 |
+  B4 b2a2 g2f2 |
+  g4 g2a2 b2g2 |
+  c'2d'2 =e'2d'2 c'2b2 |
+  a2g2 f2b2 c'2c2 |
+  f4 z2=e2 d2c2 |
+  B2G2 c2c'b a2g2 |
+  f4 z2ag f2a2 |
+  c'2e'd' c'bag fedc |
+  B4 z2bc' d'2b2 |
+  f'4 z2fg a2f2 |
+  b4 z2dc B2d2 |
+  f2_ag fedc B_AGF |
+  E2e'd' e'2e'2 e'2e'2 |
+  e'2d'c' d'2d'2 d'2d'2 |
+  d'2c'b c'2f2 b2c'2 |
+  d'2d2 g2a2 b2B2 |
+  e2d2 c2e2 f2g2 |
+  a2f2 d2e2 f2d2 |
+  g2a2 b2a2 g2f2 |
+  e2c2 f2e2 d2c2 |
+  B4 z4 B4 |
+  e4 z4 c4 |
+  f2d2 g2e2 f2F2 |
+  B2d'c' b2a2 g2=b2 |
+  c'd'c'_b a2f2 g2a2 |
+  bc'ba g2f2 =e2g2 |
+  abag ^f2d2 =e2f2 |
+  g2G2 zd=e^f gab2 |
+  b2a2 a2^fg abc'2 |
+  c'2b2 b2d'2 c'bag |
+  e'2g'f' e'2d'2 c'bag |
+  ag^f_e d2f2 g2=f2 |
+  _e2d2 c2Bc d2D2 |
+  G4 z2d2 =e2f2 |
+  g4 z2g2 a2b2 |
+  a12- |
+  a2d'2 ^c'2=b2 a2g2 |
+  f2=e2 d2g2 a2A2 |
+  d2d'=c' b2g2 a2=b2 |
+  c'd'c'_b a2f2 g2a2 |
+  b4 zabc' d'2d2 |
+  g2ab c'2b2 c'2c2 |
+  f2ag f2=e2 d2c2 |
+  B2ba b2b2 b2b2 |
+  b2ag a2a2 a2a2 |
+  a2gf g2c2 f2g2 |
+  a2A2 d2=e2 f2F2 |
+  B2A2 G2B2 c2d2 |
+  =e2c2 A2B2 c2A2 |
+  d2=e2 f2e2 d2c2 |
+  B2G2 c2B2 A2G2 |
+  F4 z4 f4 |
+  b4 z4 g4 |
+  c'2a2 d'2b2 c'2c2 |
+  F4 z2f2 bc'd'2 |
+  d'2c'2 c'2ab c'd'e'2 |
+  e'2d'2 d'2ba g2f2 |
+  e2dc f2e2 d2c2 |
+  B4 z4 B4 |
+  e4 z4 =B4 |
+  c4 z4 A4 |
+  d4 z4 d4 |
+  g4 z4 G4 |
+  c4 z4 c4 |
+  f4 z4 F4 |
+  B4 z4 B4 |
+X: 1
+T: Sonata in G for two flutes and continuo
+T: BWV 1039
+C: J.S.Bach
+N: Also published as a sonata for viola da gambo and cembalo.
+N: Voice 2 is the gamba part.
+Q: "Adagio"
+M: 12/8
+L: 1/16
+K: G
+V: 1
+[| d24- | d12- d2 c6 B4- |
+| B2A4- A2d2F2 G6- GBA^cdA | FBAGFE F2D2EF/G/ F2AGFE FDA2B^c/d/ |
+| ^c2dcBA d2A2AB/=c/ B2cBAG A2d2FG/A/ | G2AGFE FEDEFG AGBAGF E4e2- |
+V: 2
+[| B2dcBA B2G2AB/c/ {c}B2dcBA BGd2ef/g/ | f2gfed g2d2de/=f/ {f}e2fedc d2a2Bc/d/ |
+| {d}c2dcBA BAGABc dcedcB AGFED2 | a24- |
+| a12- a2 g6 f4- | f2e4- e2a2T^c2 d6- dcedcB |
+
+X:2720
+T:Fuga
+C:Johann Christoph Friedrich Bach
+O:Germany
+Z:Transcribed by Frank Nordberg - http://www.musicaviva.com abcusers 2001-8-31
+V:1 Program 1 6 up %Harpsichord
+V:2 Program 1 6 merge down %Harpsichord
+V:3 Program 1 6 bass up %Harpsichord
+V:4 Program 1 6 bass merge down %Harpsichord
+M:C|
+L:1/4
+Q:1/4=134
+K:C
+V:1
+z4|z4|z4|z4|z4|
+V:2
+z4|z4|z4|^F2G2|C2=F2-|
+V:3
+B,2C2|F,2_B,2-|_B,A,C=B,|A,C_B,2-|_B,A,C=B,|
+V:4
+z4|z4|z4|z4|z4|
+%
+V:1
+z4|B2c2|F2_B2-|_BAc=B|cd_B2-|
+V:2
+FEG^F|G^FE2|_EDF=E|F2ED|D2EF|
+V:3
+C2A,2|G,2C_B,|A,2G,2|F,2G,2|A,2_B,2|
+V:4
+z4|z4|z4|z4|^F,2G,2|
+%
+V:1
+_BcA2|=Bc2c|cBd^c|d4-|d2c2-|
+V:2
+E2F2|G3A|G4-|GAGF|GFAG|
+V:3
+C2CD-|DCE_E|=EDFE|FB,=CD|EDFE|
+V:4
+C,2F,2-|F,E,G,^F,|G,4-|G,4-|G,4-|
+%
+V:1
+c2B2|c2F2|_B4|A4|c2=B2|Hc4|]
+V:2
+FEGF|E2F2-|FDFE|FEG^F|=FEGF|HG4|]
+V:3
+DCED|C_B,A,2|G,2C2-|C2D2|DCED|HE4|]
+V:4
+G,4|C,4|C,4-|C,4-|C,4-|HC,4|]
+W:
+W:
+W:  From Musica Viva - http://www.musicaviva.com
+W:  the Internet center for free sheet music downloads.
+%%pagewidth 8.5in
+%%pageheight 14in
+% %%pageheight 11in
+%%stretchlast yes
+%%scale 0.68
+% %%scale 0.56
+% %%vocalfont Times-BoldItalic 13.0
+%%gchordfont Times-Bold 18
+X:1
+T:Little Fugue in G Minor
+M:4/4
+C:J. S. Bach
+C:transcribed by Jeff Bigler
+Z:Jeff Bigler
+Q:1/4=72
+L:1/16
+K:Gm
+% %abc2mtex: yes
+%%staves [1 2]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V:1     clef=alto octave=-1   nm="Viola I"            snm=""  %%
+%%MIDI channel 1                                              %%
+%%MIDI control 7 100	% volume = 100                        %%
+%%MIDI program 42       % General MIDI viola                  %%
+%%MIDI transpose 0                                            %%
+%%MIDI gchordoff                                              %%
+V:2     clef=alto octave=-1   nm="Viola II"           snm=""  %%
+%%MIDI channel 2                                              %%
+%%MIDI control 7 100	% volume = 100                        %%
+%%MIDI program 42       % General MIDI Viola                  %%
+%%MIDI transpose 0                                            %%
+%%MIDI gchordoff                                              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V:1     % Viola I
+%%%%%%%%%% bar 1 %%%%%%%%%%
+!f! G4 d4 B6 A2 |\
+G2B2A2G2 (^F2A2) D4 |\
+G2D2A2D2 B2AG A2D2 |\
+G2DG A2DA B2AG ADdc |
+BAGB AG^FA GDGA Bcd=e |\
+!mf! =f=edf ed^ce d2A2d2e2 |\
+(vfg)ufvg (uTg3f/2g/2) agab agf=e |\
+faga ^caga daga caga |\
+fd^cd gdcd adcd gdcd |\
+%%%%%%%%%% bar10 %%%%%%%%%%
+!mp! A2f2G2=e2 F2A2d2f2 |\
+!p! _e2a2 z2 e2 d2g2 z2 d2 |\
+!mf! "A"cBcd caga Bg^fg Af=ef |\
+g2D2G2A2 (vBc)uBvc (uTc3B/2c/2) |\
+dcd_e dcBA Bdcd ^Fdcd |\
+Gdcd ^Fdcd BGFG cGFG |\
+dG^FG cGFG D2B2C2A2 |\
+B2d2 gabg \
+!f! d4 a4 |\
+f6 =e2 d2f2e2d2 |\
+(^c2=e2) A4 d2A2e2A2 |\
+%%%%%%%%%% bar 20 %%%%%%%%%%
+f2=ed e2A2 d2Ad e2Ae |\
+f2=ed e2A2 vd2vG2 uA4 |\
+D2\
+!p!A2d2c2 B2d2g2f2 |\
+_e2G2c2B2 A2c2f2e2 |\
+!crescendo(! d4- !crescendo)! !mf!dg^fg c4- cBAc |\
+"B"!mf! BAGB AG^FA GD=EF GDGA |\
+BGBc dAdc !crescendo(! B6 !crescendo)! !f! A2 |\
+G2B2A2G2 (^F2A2) D4 |\
+G2D2A2D2 B2AG A2D2 |\
+G2DG A2DA B2AG ADdc |\
+%%%%%%%%%% bar 30 %%%%%%%%%%
+BAGB AG^FA !mf!GBcd eBAG |\
+^FABc dAG=F EGAB cGFE |\
+DFGA BdcB \
+!mf! Acde fgfe |\
+"C"dfed cBAc BFGA BcBc |\
+(vd=e)udve (uTe3d/2e/2) f_efg fedc |\
+dfef Afef Bfef Afef |\
+dBAB eBAB fBAB eBAB |\
+BcdB edce dcde dcBd |\
+cBcd cBAc BABc BAGB |\
+!p! A2f2 z2 _A2 G2e2 z2 G2 |\
+%%%%%%%%%% bar 40 %%%%%%%%%%
+F2d2 z2 !mp! F2 \
+EGcB =AGFE |\
+"D"DEFG ABcA BFGA BcBc |\
+(!mf! vd=e)udve (uTe3d/2e/2) fefg fgf_e |\
+% FGFG TG3F/2G/2 AGAB AGF_E |\ % alternate for bar 42
+dfef Afef Bfef Afef |\
+dbab ebab fbab ebab |\
+fefg c3a babc' bagf |\
+edef edcB agab agfe |\
+dcde dcBA gfg_a gfed |\
+c=Bcd cdec fedc =B_agf |\
+e8- ecde fg_af "E"|\
+%%%%%%%%%% bar 50 %%%%%%%%%%
+=BcdB G2 z2 \
+!f! c4 g4 |\
+e6 d2 c2e2d2c2 |\
+(=B2d2) G4 c2G2d2G2 |\
+e2dc d2G2 c2Gc d2Gd |\
+e2dc dGgf edce dc=Bd |\
+cg_eg ceG_B AcAc FACE |\
+Dfdf BdFA GBGB EGBd |\
+cece Ac=EG ^FAFA DFAc "F"|\
+!p! B2g2A2^f2 g2d'2^f2d'2 |\
+!crescendo(!GBAG dADc BdcB =fc=Fe |\
+%%%%%%%%%% bar 60 %%%%%%%%%%
+dfed gdGf =egfe aeA!crescendo)!g |\
+!f! ^f_edc BdAd G_ag=f gf_ed |\
+e4 =a4- [a4d4] g4- |\
+[g4c4] ^f4 \
+!f! GBdg ^fg=ef |\
+g6 ^f2 g4 ua2ud2 |\
+dg^f=e dcBA \
+!mf! Bdcd ^Fdcd |\
+Gdcd ^Fdcd !crescendo(! BGFG cGFG |\
+dG^FG cGF!crescendo)!G \
+!f! B2g2A2^f2 |\
+[D16=B16g16] |]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V:2     % Viola II
+%%%%%%%%%% bar 1 %%%%%%%%%%
+z16 |\
+z16 |\
+z16 |\
+z16 |\
+z16 |\
+!f! d4 a4 f6 =e2 |\
+d2f2=e2d2 (^c2e2) A4 |\
+d2A2=e2A2 f2ed e2A2 |\
+d2Ad =e2Ae f2ed eAag |\
+%%%%%%%%%% bar 10 %%%%%%%%%%
+f=edf ed^ce dAde fga=b |\
+!mf! c'_bc'd' c'bac' babc' bagb |\
+a2g2^f2d2 \
+!f! G4 d4 |\
+B6 A2 G2B2A2G2 |\
+(^F2A2) D4 G2D2A2D2 |\
+B2AG A2D2 G2DG A2DA |\
+B2AG ADdc BAGB AG^FA |\
+GDGA Bcd=e \
+!mf! =fedf ed^ce |\
+d2A2d2=e2 (vfg)ufvg (uTg3f/2g/2) |\
+agab agf=e faga ^caga |\
+%%%%%%%%%% bar 20 %%%%%%%%%%
+daga ^caga fdcd gdcd |\
+ad^cd gdcd f2=ed (uT^c3d) |\
+d=cd=e dcBA GFG=A GF_ED |\
+cBcd cBAG FEFG FEDC |\
+BBcd e4- eABc d4 |\
+!f! uG4 vd4 uB6 uA2 |\
+GBAG ^FG=EF \
+!mf! GDEF GDGA |\
+(vBc)uBvc (uTc3B/2c/2) dcd_e dcBA |\
+Bdcd ^Fdcd Gdcd Fdcd |\
+BG^FG cGFG dGFG cGFG |\
+%%%%%%%%%% bar 30 %%%%%%%%%%
+!mp! G2B2 cBAc B4- BdcB |\
+A4- AcBA G4- GBAG |\
+F6 =E2 !crescendo(!F2_e2d2!crescendo)!c2 |\
+!f! B4 f4 d6 c2 |\
+B2d2c2B2 (A2c2) F4 |\
+B2F2c2F2 d2cB c2F2 |\
+B2FB c2Fc d2cB cFfe |\
+dcBd cBAc B2g2 z2 \
+!p! G2 |\
+A2f2 z2 F2 G2f2c2=e2 |\
+!mf! f_efg fedf edef edce |\
+%%%%%%%%%% bar 40 %%%%%%%%%%
+dcde dcBd cBcd cBAc |\
+!f! B4 f4 d6 c2 |\
+B2d2c2B2 (A2c2) F4 |\
+B2F2c2F2 d2cB c2F2 |\
+B2FB c2Fc d2cB c2F2 |\
+d2e2f2F2 B2\
+!p!f2b2a2 |\
+g2G2c2B2 A2c2a2g2 |\
+f2F2B2A2 G2B2g2f2 |\
+e2E2_A2G2 F4 G4- |\
+!mf! GG=A=B cdec \
+!p! _A2c2_a2f2- |\
+%%%%%%%%%% bar 50 %%%%%%%%%%
+f4- \
+!mf! ffed edce dc=Bd |\
+cGcd efef gecg _afga |\
+dedc =Bgfg egfg =Bgfg |\
+cgfg =Bgfg ec'=bc' fc'bc' |\
+gc'=bc' gbab \
+!p! c2e2f2g2 |\
+c2g2e2c2 f2c'2a2f2 |\
+b2f2d2B2 b2b2g2e2 |\
+a2e2c2A2 a2a2^f2d2 |\
+!mp!G!crescendo(!BAG dADc gbag d'ad!crescendo)!c' |\
+b4 !mp!
+^f4!crescendo(! g4 a4 |\
+%%%%%%%%%% bar 60 %%%%%%%%%%
+b4 =b4 c'4 ^c'4 |\
+!crescendo)!
+!f! d'4 =e2^f2 g4 =a2b2 |\
+c'g=f_e c'afa Bfed bgeg |\
+Aedc a^fdf
+!f! G4 d4 |\
+B6 A2 G2B2A2G2 |\
+(^F2A2) D4 G2D2A2D2 |\
+B2AG A2D2 G2DG A2DA |\
+B2AG A2D2 G2e2c2d2 |\
+[G16d16=b16] |]
+W:playing time: approximately 4 minutes
+W:
+W:Copyright © 2003 by Jeff Bigler.  Permission is hereby granted to copy, distribute, modify, and/or perform this
+W:music in any form as long as this copyright notice is included.
+%%pagewidth 8.5in
+%%pageheight 14in
+% %%pageheight 11in
+%%stretchlast yes
+%%scale 0.68
+% %%scale 0.56
+% %%vocalfont Times-BoldItalic 13.0
+%%gchordfont Times-Bold 18
+X:1
+T:Little Fugue in G Minor
+M:4/4
+C:J. S. Bach
+C:transcribed by Jeff Bigler
+Z:Jeff Bigler
+Q:1/4=72
+L:1/16
+K:Gm
+% %abc2mtex: yes
+%%staves [1 2]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V:1     clef=alto octave=-1   nm="Viola"              snm=""  %%
+%%MIDI channel 1                                              %%
+%%MIDI control 7 100	% volume = 100                        %%
+%%MIDI program 42       % General MIDI viola                  %%
+%%MIDI transpose 0                                            %%
+%%MIDI gchordoff                                              %%
+V:2     clef=bass octave=-2   nm="Cello"              snm=""  %%
+%%MIDI channel 2                                              %%
+%%MIDI control 7 100	% volume = 100                        %%
+%%MIDI program 43       % General MIDI cello                  %%
+%%MIDI transpose 0                                            %%
+%%MIDI gchordoff                                              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V:1     % Viola
+%%%%%%%%%% bar 1 %%%%%%%%%%
+!f! G4 d4 B6 A2 |\
+G2B2A2G2 (^F2A2) D4 |\
+G2D2A2D2 B2AG A2D2 |\
+G2DG A2DA B2AG ADdc |
+BAGB AG^FA GDGA Bcd=e |\
+!mf! =f=edf ed^ce d2A2d2e2 |\
+(vfg)ufvg (uTg3f/2g/2) agab agf=e |\
+faga ^caga daga caga |\
+fd^cd gdcd adcd gdcd |\
+%%%%%%%%%% bar10 %%%%%%%%%%
+!mp! A2f2G2=e2 F2A2d2f2 |\
+!p! _e2a2 z2 e2 d2g2 z2 d2 |\
+!mf! "A"cBcd caga Bg^fg Af=ef |\
+g2D2G2A2 (vBc)uBvc (uTc3B/2c/2) |\
+dcd_e dcBA Bdcd ^Fdcd |\
+Gdcd ^Fdcd BGFG cGFG |\
+dG^FG cGFG D2B2C2A2 |\
+B2d2 gabg \
+!f! d4 a4 |\
+f6 =e2 d2f2e2d2 |\
+(^c2=e2) A4 d2A2e2A2 |\
+%%%%%%%%%% bar 20 %%%%%%%%%%
+f2=ed e2A2 d2Ad e2Ae |\
+f2=ed e2A2 vd2vG2 uA4 |\
+D2\
+!p!A2d2c2 B2d2g2f2 |\
+_e2G2c2B2 A2c2f2e2 |\
+!crescendo(! d4- !crescendo)! !mf!dg^fg c4- cBAc |\
+"B"!mf! BAGB AG^FA GD=EF GDGA |\
+BGBc dAdc !crescendo(! B6 !crescendo)! !f! A2 |\
+G2B2A2G2 (^F2A2) D4 |\
+G2D2A2D2 B2AG A2D2 |\
+G2DG A2DA B2AG ADdc |\
+%%%%%%%%%% bar 30 %%%%%%%%%%
+BAGB AG^FA !mf!GBcd eBAG |\
+^FABc dAG=F EGAB cGFE |\
+DFGA BdcB \
+!mf! Acde fgfe |\
+"C"dfed cBAc BFGA BcBc |\
+(vd=e)udve (uTe3d/2e/2) f_efg fedc |\
+dfef Afef Bfef Afef |\
+dBAB eBAB fBAB eBAB |\
+BcdB edce dcde dcBd |\
+cBcd cBAc BABc BAGB |\
+!p! A2f2 z2 _A2 G2e2 z2 G2 |\
+%%%%%%%%%% bar 40 %%%%%%%%%%
+F2d2 z2 !mp! F2 \
+EGcB =AGFE |\
+"D"DEFG ABcA BFGA BcBc |\
+(!mf! vd=e)udve (uTe3d/2e/2) fefg fgf_e |\
+% FGFG TG3F/2G/2 AGAB AGF_E |\ % alternate for bar 42
+dfef Afef Bfef Afef |\
+dbab ebab fbab ebab |\
+fefg c3a babc' bagf |\
+edef edcB agab agfe |\
+dcde dcBA gfg_a gfed |\
+c=Bcd cdec fedc =B_agf |\
+e8- ecde fg_af "E"|\
+%%%%%%%%%% bar 50 %%%%%%%%%%
+=BcdB G2 z2 \
+!f! c4 g4 |\
+e6 d2 c2e2d2c2 |\
+(=B2d2) G4 c2G2d2G2 |\
+e2dc d2G2 c2Gc d2Gd |\
+e2dc dGgf edce dc=Bd |\
+cg_eg ceG_B AcAc FACE |\
+Dfdf BdFA GBGB EGBd |\
+cece Ac=EG ^FAFA DFAc "F"|\
+!p! B2g2A2^f2 g2d'2^f2d'2 |\
+!crescendo(!GBAG dADc BdcB =fc=Fe |\
+%%%%%%%%%% bar 60 %%%%%%%%%%
+dfed gdGf =egfe aeA!crescendo)!g |\
+!f! ^f_edc BdAd G_ag=f gf_ed |\
+e4 =a4- [a4d4] g4- |\
+[g4c4] ^f4 \
+!f! GBdg ^fg=ef |\
+g6 ^f2 g4 ua2ud2 |\
+dg^f=e dcBA \
+!mf! Bdcd ^Fdcd |\
+Gdcd ^Fdcd !crescendo(! BGFG cGFG |\
+dG^FG cGF!crescendo)!G \
+!f! B2g2A2^f2 |\
+[D16=B16g16] |]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V:2     % Cello
+%%%%%%%%%% bar 1 %%%%%%%%%%
+z16 |\
+z16 |\
+z16 |\
+z16 |\
+z16 |\
+!f! d4 a4 f6 =e2 |\
+d2f2=e2d2 (^c2e2) A4 |\
+d2A2=e2A2 f2ed e2A2 |\
+d2Ad =e2Ae f2ed eAag |\
+%%%%%%%%%% bar 10 %%%%%%%%%%
+f=edf ed^ce dAde fga=b |\
+!mf! c'_bc'd' c'bac' babc' bagb |\
+a2g2^f2d2 \
+!f! G4 d4 |\
+B6 A2 G2B2A2G2 |\
+(^F2A2) D4 G2D2A2D2 |\
+B2AG A2D2 G2DG A2DA |\
+B2AG ADdc BAGB AG^FA |\
+GDGA Bcd=e \
+!mf! =fedf ed^ce |\
+d2A2d2=e2 (vfg)ufvg (uTg3f/2g/2) |\
+agab agf=e faga ^caga |\
+%%%%%%%%%% bar 20 %%%%%%%%%%
+daga ^caga fdcd gdcd |\
+ad^cd gdcd f2=ed (uT^c3d) |\
+d=cd=e dcBA GFG=A GF_ED |\
+cBcd cBAG FEFG FEDC |\
+BBcd e4- eABc d4 |\
+!f! uG4 vd4 uB6 uA2 |\
+GBAG ^FG=EF \
+!mf! GDEF GDGA |\
+(vBc)uBvc (uTc3B/2c/2) dcd_e dcBA |\
+Bdcd ^Fdcd Gdcd Fdcd |\
+BG^FG cGFG dGFG cGFG |\
+%%%%%%%%%% bar 30 %%%%%%%%%%
+!mp! G2B2 cBAc B4- BdcB |\
+A4- AcBA G4- GBAG |\
+F6 =E2 !crescendo(!F2_e2d2!crescendo)!c2 |\
+!f! B4 f4 d6 c2 |\
+B2d2c2B2 (A2c2) F4 |\
+B2F2c2F2 d2cB c2F2 |\
+B2FB c2Fc d2cB cFfe |\
+dcBd cBAc B2g2 z2 \
+!p! G2 |\
+A2f2 z2 F2 G2f2c2=e2 |\
+!mf! f_efg fedf edef edce |\
+%%%%%%%%%% bar 40 %%%%%%%%%%
+dcde dcBd cBcd cBAc |\
+!f! B4 f4 d6 c2 |\
+B2d2c2B2 (A2c2) F4 |\
+B2F2c2F2 d2cB c2F2 |\
+B2FB c2Fc d2cB c2F2 |\
+d2e2f2F2 B2\
+!p!f2b2a2 |\
+g2G2c2B2 A2c2a2g2 |\
+f2F2B2A2 G2B2g2f2 |\
+e2E2_A2G2 F4 G4- |\
+!mf! GG=A=B cdec \
+!p! _A2c2_a2f2- |\
+%%%%%%%%%% bar 50 %%%%%%%%%%
+f4- \
+!mf! ffed edce dc=Bd |\
+cGcd efef gecg _afga |\
+dedc =Bgfg egfg =Bgfg |\
+cgfg =Bgfg ec'=bc' fc'bc' |\
+gc'=bc' gbab \
+!p! c2e2f2g2 |\
+c2g2e2c2 f2c'2a2f2 |\
+b2f2d2B2 b2b2g2e2 |\
+a2e2c2A2 a2a2^f2d2 |\
+!mp!G!crescendo(!BAG dADc gbag d'ad!crescendo)!c' |\
+b4 !mp!
+^f4!crescendo(! g4 a4 |\
+%%%%%%%%%% bar 60 %%%%%%%%%%
+b4 =b4 c'4 ^c'4 |\
+!crescendo)!
+!f! d'4 =e2^f2 g4 =a2b2 |\
+c'g=f_e c'afa Bfed bgeg |\
+Aedc a^fdf
+!f! G4 d4 |\
+B6 A2 G2B2A2G2 |\
+(^F2A2) D4 G2D2A2D2 |\
+B2AG A2D2 G2DG A2DA |\
+B2AG A2D2 G2e2c2d2 |\
+[G16d16=b16] |]
+W:playing time: approximately 4 minutes
+W:
+W:Copyright © 2003 by Jeff Bigler.  Permission is hereby granted to copy, distribute, modify, and/or perform this
+W:music in any form as long as this copyright notice is included.
+%%pagewidth 8.5in
+%%pageheight 14in
+% %%pageheight 11in
+%%stretchlast yes
+%%scale 0.68
+% %%scale 0.55
+% %%vocalfont Times-BoldItalic 13.0
+%%gchordfont Times-BoldRoman 18
+X:1
+T:Little Fugue in G Minor
+M:4/4
+C:J. S. Bach
+C:transcribed by Jeff Bigler
+Z:Jeff Bigler
+Q:1/4=72
+L:1/16
+K:Gm
+% %abc2mtex: yes
+%%staves [1 2]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V:1                           nm="Violin"             snm=""  %%
+%%MIDI channel 1                                              %%
+%%MIDI control 7 100	% volume = 100                        %%
+%%MIDI program 41       % General MIDI violin                 %%
+%%MIDI transpose 0                                            %%
+%%MIDI gchordoff                                              %%
+V:2     clef=bass octave=-2   nm="Cello"              snm=""  %%
+%%MIDI channel 2                                              %%
+%%MIDI control 7 100	% volume = 100                        %%
+%%MIDI program 43       % General MIDI cello                  %%
+%%MIDI transpose 0                                            %%
+%%MIDI gchordoff                                              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V:1     % Violin
+%%%%%%%%%% bar 1 %%%%%%%%%%
+!f! G4 d4 B6 A2 |\
+G2B2A2G2 (^F2A2) D4 |\
+G2D2A2D2 B2AG A2D2 |\
+G2DG A2DA B2AG ADdc |
+BAGB AG^FA GDGA Bcd=e |\
+!mf! =f=edf ed^ce d2A2d2e2 |\
+(vfg)ufvg (uTg3f/2g/2) agab agf=e |\
+faga ^caga daga caga |\
+fd^cd gdcd adcd gdcd |\
+%%%%%%%%%% bar10 %%%%%%%%%%
+!mp! A2f2G2=e2 F2A2d2f2 |\
+!p! _e2a2 z2 e2 d2g2 z2 d2 "A"|\
+!mf! cBcd caga Bg^fg Af=ef |\
+g2D2G2A2 (vBc)uBvc (uTc3B/2c/2) |\
+dcd_e dcBA Bdcd ^Fdcd |\
+Gdcd ^Fdcd BGFG cGFG |\
+dG^FG cGFG D2B2C2A2 |\
+B,2D2 GABG \
+!f! D4 A4 |\
+F6 =E2 D2F2E2D2 |\
+(^C2=E2) A,4 D2A,2E2A,2 |\
+%%%%%%%%%% bar 20 %%%%%%%%%%
+F2=ED E2A,2 D2A,D E2A,E |\
+F2=ED E2A,2 vD2vG,2 uA,4 |\
+D2\
+!p!A2d2c2 B2d2g2f2 |\
+_e2G2c2B2 A2c2f2e2 |\
+!crescendo(! d4- !crescendo)! !mf!dg^fg c4- cBAc |\
+"B"!mf! BAGB AG^FA GD=EF GDGA |\
+BGBc dAdc !crescendo(! B6 !crescendo)! !f! A2 |\
+G2B2A2G2 (^F2A2) D4 |\
+G2D2A2D2 B2AG A2D2 |\
+G2DG A2DA B2AG ADdc |\
+%%%%%%%%%% bar 30 %%%%%%%%%%
+BAGB AG^FA !mf!GBcd eBAG |\
+^FABc dAG=F EGAB cGFE |\
+DFGA BdcB \
+!mf! Acde fgfe |\
+"C"dfed cBAc BFGA BcBc |\
+(vd=e)udve (uTe3d/2e/2) f_efg fedc |\
+dfef Afef Bfef Afef |\
+dBAB eBAB fBAB eBAB |\
+BcdB edce dcde dcBd |\
+cBcd cBAc BABc BAGB |\
+!p! A2f2 z2 _A2 G2e2 z2 G2 |\
+%%%%%%%%%% bar 40 %%%%%%%%%%
+F2d2 z2 !mp! F2 \
+EGcB =AGFE |\
+"D"DEFG ABcA BFGA BcBc |\
+(!mf! vd=e)udve (uTe3d/2e/2) fefg fgf_e |\
+% FGFG TG3F/2G/2 AGAB AGF_E |\ % alternate for bar 42
+dfef Afef Bfef Afef |\
+dbab ebab fbab ebab |\
+fefg c3a babc' bagf |\
+edef edcB agab agfe |\
+dcde dcBA gfg_a gfed |\
+c=Bcd cdec fedc =B_agf |\
+e8- ecde fg_af "E"|\
+%%%%%%%%%% bar 50 %%%%%%%%%%
+=BcdB G2 z2 \
+!f! c4 g4 |\
+e6 d2 c2e2d2c2 |\
+(=B2d2) G4 c2G2d2G2 |\
+e2dc d2G2 c2Gc d2Gd |\
+e2dc dGgf edce dc=Bd |\
+cg_eg ceG_B AcAc FACE |\
+Dfdf BdFA GBGB EGB,D |\
+Cece Ac=EG ^FAFA DFA,C "F"|\
+!p! B,2G2A,2^F2 G2d2^F2d2 |\
+!crescendo(!GBAG dADc BdcB =fc=Fe |\
+%%%%%%%%%% bar 60 %%%%%%%%%%
+dfed gdGf =egfe aeA!crescendo)!g |\
+!f! ^f_edc BdAd G_ag=f gf_ed |\
+e4 =a4- [a4d4] g4- |\
+[g4c4] ^f4 \
+!f! G,B,DG ^FG=EF |\
+G6 ^F2 G4 uA2uD2 |\
+Dg^f=e dcBA \
+!mf! Bdcd ^Fdcd |\
+Gdcd ^Fdcd !crescendo(! BGFG cGFG |\
+dG^FG cGF!crescendo)!G \
+!f! B2g2A2^f2 |\
+[G,16D16=B16g16] |]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V:2     % Viola
+%%%%%%%%%% bar 1 %%%%%%%%%%
+z16 |\
+z16 |\
+z16 |\
+z16 |\
+z16 |\
+!f! d4 a4 f6 =e2 |\
+d2f2=e2d2 (^c2e2) A4 |\
+d2A2=e2A2 f2ed e2A2 |\
+d2Ad =e2Ae f2ed eAag |\
+%%%%%%%%%% bar 10 %%%%%%%%%%
+f=edf ed^ce dAde fga=b |\
+!mf! c'_bc'd' c'bac' babc' bagb |\
+a2g2^f2d2 \
+!f! G4 d4 |\
+B6 A2 G2B2A2G2 |\
+(^F2A2) D4 G2D2A2D2 |\
+B2AG A2D2 G2DG A2DA |\
+B2AG ADdc BAGB AG^FA |\
+GDGA Bcd=e \
+!mf! =fedf ed^ce |\
+d2A2d2=e2 (vfg)ufvg (uTg3f/2g/2) |\
+agab agf=e faga ^caga |\
+%%%%%%%%%% bar 20 %%%%%%%%%%
+daga ^caga fdcd gdcd |\
+ad^cd gdcd f2=ed (uT^c3d) |\
+d=cd=e dcBA GFG=A GF_ED |\
+cBcd cBAG FEFG FEDC |\
+BBcd e4- eABc d4 |\
+!f! uG4 vd4 uB6 uA2 |\
+GBAG ^FG=EF \
+!mf! GDEF GDGA |\
+(vBc)uBvc (uTc3B/2c/2) dcd_e dcBA |\
+Bdcd ^Fdcd Gdcd Fdcd |\
+BG^FG cGFG dGFG cGFG |\
+%%%%%%%%%% bar 30 %%%%%%%%%%
+!mp! G2B2 cBAc B4- BdcB |\
+A4- AcBA G4- GBAG |\
+F6 =E2 !crescendo(!F2_e2d2!crescendo)!c2 |\
+!f! B4 f4 d6 c2 |\
+B2d2c2B2 (A2c2) F4 |\
+B2F2c2F2 d2cB c2F2 |\
+B2FB c2Fc d2cB cFfe |\
+dcBd cBAc B2g2 z2 \
+!p! G2 |\
+A2f2 z2 F2 G2f2c2=e2 |\
+!mf! f_efg fedf edef edce |\
+%%%%%%%%%% bar 40 %%%%%%%%%%
+dcde dcBd cBcd cBAc |\
+!f! B4 f4 d6 c2 |\
+B2d2c2B2 (A2c2) F4 |\
+B2F2c2F2 d2cB c2F2 |\
+B2FB c2Fc d2cB c2F2 |\
+d2e2f2F2 B2\
+!p!f2b2a2 |\
+g2G2c2B2 A2c2a2g2 |\
+f2F2B2A2 G2B2g2f2 |\
+e2E2_A2G2 F4 G4- |\
+!mf! GG=A=B cdec \
+!p! _A2c2_a2f2- |\
+%%%%%%%%%% bar 50 %%%%%%%%%%
+f4- \
+!mf! ffed edce dc=Bd |\
+cGcd efef gecg _afga |\
+dedc =Bgfg egfg =Bgfg |\
+cgfg =Bgfg ec'=bc' fc'bc' |\
+gc'=bc' gbab \
+!p! c2e2f2g2 |\
+c2g2e2c2 f2c'2a2f2 |\
+b2f2d2B2 b2b2g2e2 |\
+a2e2c2A2 a2a2^f2d2 |\
+!mp!G!crescendo(!BAG dADc gbag d'ad!crescendo)!c' |\
+b4 !mp!
+^f4!crescendo(! g4 a4 |\
+%%%%%%%%%% bar 60 %%%%%%%%%%
+b4 =b4 c'4 ^c'4 |\
+!crescendo)!
+!f! d'4 =e2^f2 g4 =a2b2 |\
+c'g=f_e c'afa Bfed bgeg |\
+Aedc a^fdf
+!f! G4 d4 |\
+B6 A2 G2B2A2G2 |\
+(^F2A2) D4 G2D2A2D2 |\
+B2AG A2D2 G2DG A2DA |\
+B2AG A2D2 G2e2c2d2 |\
+[G16d16=b16] |]
+W:playing time: approximately 4 minutes
+W:
+W:Copyright © 2003 by Jeff Bigler.  Permission is hereby granted to copy, distribute, modify, and/or perform this
+W:music in any form as long as this copyright notice is included.
+%%pagewidth 8.5in
+%%pageheight 14in
+% %%pageheight 11in
+%%stretchlast yes
+%%scale 0.67
+% %%scale 0.56
+% %%vocalfont Times-BoldItalic 13.0
+%%gchordfont Times-BoldRoman 18
+X:1
+T:Little Fugue in G Minor
+M:4/4
+C:J. S. Bach
+C:transcribed by Jeff Bigler
+Z:Jeff Bigler
+Q:1/4=72
+L:1/16
+K:Gm
+% %abc2mtex: yes
+%%staves [1 2]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V:1                           nm="Violin"             snm=""  %%
+%%MIDI channel 1                                              %%
+%%MIDI control 7 100	% volume = 100                        %%
+%%MIDI program 41       % General MIDI violin                 %%
+%%MIDI transpose 0                                            %%
+%%MIDI gchordoff                                              %%
+V:2     clef=alto octave=-1   nm="Viola"              snm=""  %%
+%%MIDI channel 2                                              %%
+%%MIDI control 7 100	% volume = 100                        %%
+%%MIDI program 42       % General MIDI Viola                  %%
+%%MIDI transpose 0                                            %%
+%%MIDI gchordoff                                              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V:1     % Violin
+%%%%%%%%%% bar 1 %%%%%%%%%%
+!f! G4 d4 B6 A2 |\
+G2B2A2G2 (^F2A2) D4 |\
+G2D2A2D2 B2AG A2D2 |\
+G2DG A2DA B2AG ADdc |
+BAGB AG^FA GDGA Bcd=e |\
+!mf! =f=edf ed^ce d2A2d2e2 |\
+(vfg)ufvg (uTg3f/2g/2) agab agf=e |\
+faga ^caga daga caga |\
+fd^cd gdcd adcd gdcd |\
+%%%%%%%%%% bar10 %%%%%%%%%%
+!mp! A2f2G2=e2 F2A2d2f2 |\
+!p! _e2a2 z2 e2 d2g2 z2 d2 |\
+!mf! "A"cBcd caga Bg^fg Af=ef |\
+g2D2G2A2 (vBc)uBvc (uTc3B/2c/2) |\
+dcd_e dcBA Bdcd ^Fdcd |\
+Gdcd ^Fdcd BGFG cGFG |\
+dG^FG cGFG D2B2C2A2 |\
+B,2D2 GABG \
+!f! D4 A4 |\
+F6 =E2 D2F2E2D2 |\
+(^C2=E2) A,4 D2A,2E2A,2 |\
+%%%%%%%%%% bar 20 %%%%%%%%%%
+F2=ED E2A,2 D2A,D E2A,E |\
+F2=ED E2A,2 vD2vG,2 uA,4 |\
+D2\
+!p!A2d2c2 B2d2g2f2 |\
+_e2G2c2B2 A2c2f2e2 |\
+!crescendo(! d4- !crescendo)! !mf!dg^fg c4- cBAc |\
+"B"!mf! BAGB AG^FA GD=EF GDGA |\
+BGBc dAdc !crescendo(! B6 !crescendo)! !f! A2 |\
+G2B2A2G2 (^F2A2) D4 |\
+G2D2A2D2 B2AG A2D2 |\
+G2DG A2DA B2AG ADdc |\
+%%%%%%%%%% bar 30 %%%%%%%%%%
+BAGB AG^FA !mf!GBcd eBAG |\
+^FABc dAG=F EGAB cGFE |\
+DFGA BdcB \
+!mf! Acde fgfe |\
+"C"dfed cBAc BFGA BcBc |\
+(vd=e)udve (uTe3d/2e/2) f_efg fedc |\
+dfef Afef Bfef Afef |\
+dBAB eBAB fBAB eBAB |\
+BcdB edce dcde dcBd |\
+cBcd cBAc BABc BAGB |\
+!p! A2f2 z2 _A2 G2e2 z2 G2 |\
+%%%%%%%%%% bar 40 %%%%%%%%%%
+F2d2 z2 !mp! F2 \
+EGcB =AGFE |\
+"D"DEFG ABcA BFGA BcBc |\
+(!mf! vd=e)udve (uTe3d/2e/2) fefg fgf_e |\
+% FGFG TG3F/2G/2 AGAB AGF_E |\ % alternate for bar 42
+dfef Afef Bfef Afef |\
+dbab ebab fbab ebab |\
+fefg c3a babc' bagf |\
+edef edcB agab agfe |\
+dcde dcBA gfg_a gfed |\
+c=Bcd cdec fedc =B_agf |\
+e8- ecde fg_af "E"|\
+%%%%%%%%%% bar 50 %%%%%%%%%%
+=BcdB G2 z2 \
+!f! c4 g4 |\
+e6 d2 c2e2d2c2 |\
+(=B2d2) G4 c2G2d2G2 |\
+e2dc d2G2 c2Gc d2Gd |\
+e2dc dGgf edce dc=Bd |\
+cg_eg ceG_B AcAc FACE |\
+Dfdf BdFA GBGB EGB,D |\
+Cece Ac=EG ^FAFA DFA,C "F"|\
+!p! B,2G2A,2^F2 G2d2^F2d2 |\
+!crescendo(!GBAG dADc BdcB =fc=Fe |\
+%%%%%%%%%% bar 60 %%%%%%%%%%
+dfed gdGf =egfe aeA!crescendo)!g |\
+!f! ^f_edc BdAd G_ag=f gf_ed |\
+e4 =a4- [a4d4] g4- |\
+[g4c4] ^f4 \
+!f! G,B,DG ^FG=EF |\
+G6 ^F2 G4 uA2uD2 |\
+Dg^f=e dcBA \
+!mf! Bdcd ^Fdcd |\
+Gdcd ^Fdcd !crescendo(! BGFG cGFG |\
+dG^FG cGF!crescendo)!G \
+!f! B2g2A2^f2 |\
+[G,16D16=B16g16] |]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V:2     % Viola
+%%%%%%%%%% bar 1 %%%%%%%%%%
+z16 |\
+z16 |\
+z16 |\
+z16 |\
+z16 |\
+!f! d4 a4 f6 =e2 |\
+d2f2=e2d2 (^c2e2) A4 |\
+d2A2=e2A2 f2ed e2A2 |\
+d2Ad =e2Ae f2ed eAag |\
+%%%%%%%%%% bar 10 %%%%%%%%%%
+f=edf ed^ce dAde fga=b |\
+!mf! c'_bc'd' c'bac' babc' bagb |\
+a2g2^f2d2 \
+!f! G4 d4 |\
+B6 A2 G2B2A2G2 |\
+(^F2A2) D4 G2D2A2D2 |\
+B2AG A2D2 G2DG A2DA |\
+B2AG ADdc BAGB AG^FA |\
+GDGA Bcd=e \
+!mf! =fedf ed^ce |\
+d2A2d2=e2 (vfg)ufvg (uTg3f/2g/2) |\
+agab agf=e faga ^caga |\
+%%%%%%%%%% bar 20 %%%%%%%%%%
+daga ^caga fdcd gdcd |\
+ad^cd gdcd f2=ed (uT^c3d) |\
+d=cd=e dcBA GFG=A GF_ED |\
+cBcd cBAG FEFG FEDC |\
+BBcd e4- eABc d4 |\
+!f! uG4 vd4 uB6 uA2 |\
+GBAG ^FG=EF \
+!mf! GDEF GDGA |\
+(vBc)uBvc (uTc3B/2c/2) dcd_e dcBA |\
+Bdcd ^Fdcd Gdcd Fdcd |\
+BG^FG cGFG dGFG cGFG |\
+%%%%%%%%%% bar 30 %%%%%%%%%%
+!mp! G2B2 cBAc B4- BdcB |\
+A4- AcBA G4- GBAG |\
+F6 =E2 !crescendo(!F2_e2d2!crescendo)!c2 |\
+!f! B4 f4 d6 c2 |\
+B2d2c2B2 (A2c2) F4 |\
+B2F2c2F2 d2cB c2F2 |\
+B2FB c2Fc d2cB cFfe |\
+dcBd cBAc B2g2 z2 \
+!p! G2 |\
+A2f2 z2 F2 G2f2c2=e2 |\
+!mf! f_efg fedf edef edce |\
+%%%%%%%%%% bar 40 %%%%%%%%%%
+dcde dcBd cBcd cBAc |\
+!f! B4 f4 d6 c2 |\
+B2d2c2B2 (A2c2) F4 |\
+B2F2c2F2 d2cB c2F2 |\
+B2FB c2Fc d2cB c2F2 |\
+d2e2f2F2 B2\
+!p!f2b2a2 |\
+g2G2c2B2 A2c2a2g2 |\
+f2F2B2A2 G2B2g2f2 |\
+e2E2_A2G2 F4 G4- |\
+!mf! GG=A=B cdec \
+!p! _A2c2_a2f2- |\
+%%%%%%%%%% bar 50 %%%%%%%%%%
+f4- \
+!mf! ffed edce dc=Bd |\
+cGcd efef gecg _afga |\
+dedc =Bgfg egfg =Bgfg |\
+cgfg =Bgfg ec'=bc' fc'bc' |\
+gc'=bc' gbab \
+!p! c2e2f2g2 |\
+c2g2e2c2 f2c'2a2f2 |\
+b2f2d2B2 b2b2g2e2 |\
+a2e2c2A2 a2a2^f2d2 |\
+!mp!G!crescendo(!BAG dADc gbag d'ad!crescendo)!c' |\
+b4 !mp!
+^f4!crescendo(! g4 a4 |\
+%%%%%%%%%% bar 60 %%%%%%%%%%
+b4 =b4 c'4 ^c'4 |\
+!crescendo)!
+!f! d'4 =e2^f2 g4 =a2b2 |\
+c'g=f_e c'afa Bfed bgeg |\
+Aedc a^fdf
+!f! G4 d4 |\
+B6 A2 G2B2A2G2 |\
+(^F2A2) D4 G2D2A2D2 |\
+B2AG A2D2 G2DG A2DA |\
+B2AG A2D2 G2e2c2d2 |\
+[G16d16=b16] |]
+W:playing time: approximately 4 minutes
+W:
+W:Copyright © 2003 by Jeff Bigler.  Permission is hereby granted to copy, distribute, modify, and/or perform this
+W:music in any form as long as this copyright notice is included.
+X:1
+T:Little Fugue in G Minor
+M:4/4
+C:J. S. Bach
+C:transcribed by Jeff Bigler
+Z:Jeff Bigler
+L:1/16
+K:Gm
+%abc2mtex: yes
+%%staves [(1 2)]
+%%topmargin 15
+%%topspace 0
+%%scale 0.65
+%%slurgraces 1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V:1                 nm="Violin"             snm=""
+V:2     clef=alto   nm="Viola"              snm=""
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V:1     % Violin
+%%MIDI channel 1
+%%MIDI program 73       % General MIDI Flute
+%%MIDI transpose 0
+% page 1
+K:Gm
+%%%%%%%%%% bar 1 %%%%%%%%%%
+G4 d4 B6 A2 |\
+G2B2A2G2 (^F2A2) D4 |\
+G2D2A2D2 B2AG A2D2 |\
+G2DG A2DA B2AG ADdc |\
+BAGB AG^FA GDGA Bcd=e |
+=f=edf ed^ce d2A2d2e2 |\
+(vfg)ufvg (uTg3f/2g/2) agab agf=e |\
+faga ^caga daga caga |\
+fd^cd gdcd adcd gdcd |\
+%%%%%%%%%% bar10 %%%%%%%%%%
+A2f2G2=e2 F2A2d2f2 |\
+_e2a2 z2 e2 d2g2 z2 d2 "A"|\
+cBcd caga Bg^fg Af=ef |\
+g2D2G2A2 (vBc)uBvc (uTc3B/2c/2) |\
+dcd_e dcBA Bdcd ^Fdcd |\
+Gdcd ^Fdcd BGFG cGFG |\
+dG^FG cGFG D2B2C2A2 |\
+B,2D2 GABG D4 A4 |\
+F6 =E2 D2F2E2D2 |\
+(^C2=E2) A,4 D2A,2E2A,2 |\
+%%%%%%%%%% bar 20 %%%%%%%%%%
+F2=ED E2A,2 D2A,D E2A,E |\
+F2=ED E2A,2 vD2vG,2 uA,4 |\
+D2A2d2c2 B2d2g2f2 |\
+_e2G2c2B2 A2c2f2e2 |\
+d4- dg^fg c4- cBAc "B"|\
+BAGB AG^FA GD=EF GDGA |\
+BGBc dAdc B6 A2 |\
+G2B2A2G2 (^F2A2) D4 |\
+G2D2A2D2 B2AG A2D2 |\
+G2DG A2DA B2AG ADdc |\
+%%%%%%%%%% bar 30 %%%%%%%%%%
+BAGB AG^FA GBcd eBAG |\
+^FABc dAG=F EGAB cGFE |\
+DFGA BdcB Acde fgfe "C"|\
+dfed cBAc BFGA BcBc |\
+(vd=e)udve (uTe3d/2e/2) f_efg fedc |\
+dfef Afef Bfef Afef |\
+dBAB eBAB fBAB eBAB |\
+BcdB edce dcde dcBd |\
+cBcd cBAc BABc BAGB |\
+A2f2 z2 _A2 G2e2 z2 G2 |\
+%%%%%%%%%% bar 40 %%%%%%%%%%
+F2d2 z2 F2 EGcB =AGFE "D"|\
+DEFG ABcA BFGA BcBc |\
+% DCDB, CDEC DCB,C DEDE |\ % alternate for bar 41
+(vd=e)udve (uTe3d/2e/2) fefg fgf_e |\
+% FGFG TG3F/2G/2 AGAB AGF_E |\ % alternate for bar 42
+dfef Afef Bfef Afef |\
+dbab ebab fbab ebab |\
+fefg c3a babc' bagf |\
+edef edcB agab agfe |\
+dcde dcBA gfg_a gfed |\
+c=Bcd cdec fedc =B_agf |\
+e8- ecde fg_af "E"|\
+%%%%%%%%%% bar 50 %%%%%%%%%%
+=BcdB G2 z2 c4 g4 |\
+e6 d2 c2e2d2c2 |\
+(=B2d2) G4 c2G2d2G2 |\
+e2dc d2G2 c2Gc d2Gd |\
+e2dc dGgf edce dc=Bd |\
+cg_eg ceG_B AcAc FACE |\
+Dfdf BdFA GBGB EGB,D |\
+Cece Ac=EG ^FAFA DFA,C "F"|\
+B,2G2A,2^F2 G2d2^F2d2 |\
+GBAG dADc BdcB =fc=Fe |\
+%%%%%%%%%% bar 60 %%%%%%%%%%
+dfed gdGf =egfe aeAg |\
+^f_edc BdAd G_ag=f gf_ed |\
+e4 =a4- [a4d4] g4- |\
+[g4c2] ^f4 G,B,DG ^FG=EF |\
+G6 ^F2 G4 uA2uD2 |\
+Dg^f=e dcBA Bdcd ^Fdcd |\
+Gdcd ^Fdcd BGFG cGFG |\
+dG^FG cGFG B2g2A2^f2 |\
+[G,16D16=B16g16] |]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V:2     % Viola
+%%MIDI channel 1
+%%MIDI program 73       % General MIDI Flute
+%%MIDI transpose 0
+% page 1
+K:Gm
+%%%%%%%%%% bar 1 %%%%%%%%%%
+z16 |\
+z16 |\
+z16 |\
+z16 |\
+z16 |\
+d4 a4 f6 =e2 |\
+d2f2=e2d2 (^c2e2) A4 |\
+d2A2=e2A2 f2ed e2A2 |\
+d2Ad =e2Ae f2ed eAag |\
+%%%%%%%%%% bar 10 %%%%%%%%%%
+f=edf ed^ce dAde fga=b |\
+c'_bc'd' c'bac' babc' bagb |\
+a2g2^f2d2 G4 d4 |\
+B6 A2 G2B2A2G2 |\
+(^F2A2) D4 G2D2A2D2 |\
+B2AG A2D2 G2DG A2DA |\
+B2AG ADdc BAGB AG^FA |\
+GDGA Bcd=e =fedf ed^ce |\
+d2A2d2=e2 (vfg)ufvg (uTg3f/2g/2) |\
+agab agf=e faga ^caga |\
+%%%%%%%%%% bar 20 %%%%%%%%%%
+daga ^caga fdcd gdcd |\
+ad^cd gdcd f2=ed (uT^c3d) |\
+d=cd=e dcBA GFG=A GF_ED |\
+cBcd cBAG FEFG FEDC |\
+BBcd e4- eABc d4 |\
+uG4 vd4 uB6 uA2 |\
+GBAG ^FG=EF GDEF GDGA |\
+(vBc)uBvc (uTc3B/2c/2) dcd_e dcBA |\
+Bdcd ^Fdcd Gdcd Fdcd |\
+BG^FG cGFG dGFG cGFG |
+%%%%%%%%%% bar 30 %%%%%%%%%%
+G2B2 cBAc B4- BdcB |\
+A4- AcBA G4- GBAG |\
+F6 =E2 F2_e2d2c2 |\
+B4 f4 d6 c2 |\
+B2d2c2B2 (A2c2) F4 |\
+B2F2c2F2 d2cB c2F2 |\
+B2FB c2Fc d2cB cFfe |\
+dcBd cBAc B2g2 z2 G2 |\
+A2f2 z2 F2 G2f2c2=e2 |\
+f_efg fedf edef edce |\
+%%%%%%%%%% bar 40 %%%%%%%%%%
+dcde dcBd cBcd cBAc |
+B4 f4 d6 c2 |\
+B2d2c2B2 (A2c2) F4 |\
+B2F2c2F2 d2cB c2F2 |\
+B2FB c2Fc d2cB c2F2 |\
+d2e2f2F2 B2f2b2a2 |\
+g2G2c2B2 A2c2a2g2 |\
+f2F2B2A2 G2B2g2f2 |\
+e2E2_A2G2 F4 G4- |\
+GG=A=B cdec _A2c2_a2f2- |\
+%%%%%%%%%% bar 50 %%%%%%%%%%
+f4-ffed edce dc=Bd |\
+cGcd efef gecg _afga |\
+dedc =Bgfg egfg =Bgfg |\
+cgfg =Bgfg ec'=bc' fc'bc' |\
+gc'=bc' gbab c2e2f2g2 |\
+c2g2e2c2 f2c'2a2f2 |\
+b2f2d2B2 b2b2g2e2 |\
+a2e2c2A2 a2a2^f2d2 |\
+GBAG dADc gbag d'adc' |\
+b4 ^f4 g4 a4 |\
+%%%%%%%%%% bar 60 %%%%%%%%%%
+b4 =b4 c'4 ^c'4 |\
+d'4 =e2^f2 g4 =a2b2 |\
+c'g=f_e c'afa Bfed bgeg |\
+Aedc a^fdf G4 d4 |\
+B6 A2 G2B2A2G2 |\
+(^F2A2) D4 G2D2A2D2 |\
+B2AG A2D2 G2DG A2DA |\
+B2AG A2D2 G2e2c2d2 |\
+[G16d16=b16] |]
+%%pagewidth 8.5in
+%%pageheight 14in
+%%pageheight 11in
+%%stretchlast yes
+%%scale 0.67
+% %%scale 0.57
+% %%vocalfont Times-BoldItalic 13.0
+%%gchordfont Times-BoldRoman 18
+X:1
+T:Little Fugue in G Minor
+M:4/4
+C:J. S. Bach
+C:transcribed by Jeff Bigler
+Z:Jeff Bigler
+Q:1/4=72
+L:1/16
+K:Gm
+% %abc2mtex: yes
+%%staves [1 2]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V:1                           nm="Violin 1"           snm=""  %%
+%%MIDI channel 1                                              %%
+%%MIDI control 7 100	% volume = 100                        %%
+%%MIDI program 41       % General MIDI violin                 %%
+%%MIDI transpose 0                                            %%
+%%MIDI gchordoff                                              %%
+V:2                           nm="Violin 2"           snm=""  %%
+%%MIDI channel 2                                              %%
+%%MIDI control 7 100	% volume = 100                        %%
+%%MIDI program 41       % General MIDI Violin                 %%
+%%MIDI transpose 0                                            %%
+%%MIDI gchordoff                                              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V:1     % Violin 1
+%%%%%%%%%% bar 1 %%%%%%%%%%
+!f! G4 d4 B6 A2 |\
+G2B2A2G2 (^F2A2) D4 |\
+G2D2A2D2 B2AG A2D2 |\
+G2DG A2DA B2AG ADdc |
+BAGB AG^FA GDGA Bcd=e |\
+!mf! =f=edf ed^ce d2A2d2e2 |\
+(vfg)ufvg (uTg3f/2g/2) agab agf=e |\
+faga ^caga daga caga |\
+fd^cd gdcd adcd gdcd |\
+%%%%%%%%%% bar10 %%%%%%%%%%
+!mp! A2f2G2=e2 F2A2d2f2 |\
+!p! _e2a2 z2 e2 d2g2 z2 d2 "A"|\
+!mf! cBcd caga Bg^fg Af=ef |\
+g2D2G2A2 (vBc)uBvc (uTc3B/2c/2) |\
+dcd_e dcBA Bdcd ^Fdcd |\
+Gdcd ^Fdcd BGFG cGFG |\
+dG^FG cGFG D2B2C2A2 |\
+B,2D2 GABG \
+!f! D4 A4 |\
+F6 =E2 D2F2E2D2 |\
+(^C2=E2) A,4 D2A,2E2A,2 |\
+%%%%%%%%%% bar 20 %%%%%%%%%%
+F2=ED E2A,2 D2A,D E2A,E |\
+F2=ED E2A,2 vD2vG,2 uA,4 |\
+D2\
+!p!A2d2c2 B2d2g2f2 |\
+_e2G2c2B2 A2c2f2e2 |\
+!crescendo(! d4- !crescendo)! !mf!dg^fg c4- cBAc |\
+"B"!mf! BAGB AG^FA GD=EF GDGA |\
+BGBc dAdc !crescendo(! B6 !crescendo)! !f! A2 |\
+G2B2A2G2 (^F2A2) D4 |\
+G2D2A2D2 B2AG A2D2 |\
+G2DG A2DA B2AG ADdc |\
+%%%%%%%%%% bar 30 %%%%%%%%%%
+BAGB AG^FA !mf!GBcd eBAG |\
+^FABc dAG=F EGAB cGFE |\
+DFGA BdcB \
+!mf! Acde fgfe |\
+"C"dfed cBAc BFGA BcBc |\
+(vd=e)udve (uTe3d/2e/2) f_efg fedc |\
+dfef Afef Bfef Afef |\
+dBAB eBAB fBAB eBAB |\
+BcdB edce dcde dcBd |\
+cBcd cBAc BABc BAGB |\
+!p! A2f2 z2 _A2 G2e2 z2 G2 |\
+%%%%%%%%%% bar 40 %%%%%%%%%%
+F2d2 z2 !mp! F2 \
+EGcB =AGFE |\
+"D"DEFG ABcA BFGA BcBc |\
+(!mf! vd=e)udve (uTe3d/2e/2) fefg fgf_e |\
+% FGFG TG3F/2G/2 AGAB AGF_E |\ % alternate for bar 42
+dfef Afef Bfef Afef |\
+dbab ebab fbab ebab |\
+fefg c3a babc' bagf |\
+edef edcB agab agfe |\
+dcde dcBA gfg_a gfed |\
+c=Bcd cdec fedc =B_agf |\
+e8- ecde fg_af "E"|\
+%%%%%%%%%% bar 50 %%%%%%%%%%
+=BcdB G2 z2 \
+!f! c4 g4 |\
+e6 d2 c2e2d2c2 |\
+(=B2d2) G4 c2G2d2G2 |\
+e2dc d2G2 c2Gc d2Gd |\
+e2dc dGgf edce dc=Bd |\
+cg_eg ceG_B AcAc FACE |\
+Dfdf BdFA GBGB EGB,D |\
+Cece Ac=EG ^FAFA DFA,C "F"|\
+!p! B,2G2A,2^F2 G2d2^F2d2 |\
+!crescendo(!GBAG dADc BdcB =fc=Fe |\
+%%%%%%%%%% bar 60 %%%%%%%%%%
+dfed gdGf =egfe aeA!crescendo)!g |\
+!f! ^f_edc BdAd G_ag=f gf_ed |\
+e4 =a4- [a4d4] g4- |\
+[g4c4] ^f4 \
+!f! G,B,DG ^FG=EF |\
+G6 ^F2 G4 uA2uD2 |\
+Dg^f=e dcBA \
+!mf! Bdcd ^Fdcd |\
+Gdcd ^Fdcd !crescendo(! BGFG cGFG |\
+dG^FG cGF!crescendo)!G \
+!f! B2g2A2^f2 |\
+[G,16D16=B16g16] |]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V:2     % Violin 2
+%%%%%%%%%% bar 1 %%%%%%%%%%
+z16 |\
+z16 |\
+z16 |\
+z16 |\
+z16 |\
+!f! D4 A4 F6 =E2 |\
+D2F2=E2D2 (^C2E2) A,4 |\
+D2A,2=E2A,2 F2ED E2A,2 |\
+D2A,D =E2A,E F2ED EA,AG |\
+%%%%%%%%%% bar 10 %%%%%%%%%%
+F=EDF ED^CE DA,DE FGA=B |\
+!mf! c_Bcd cBAc BABc BAGB |\
+A2G2^F2D2 \
+!f! G4 d4 |\
+B6 A2 G2B2A2G2 |\
+(^F2A2) D4 G2D2A2D2 |\
+B2AG A2D2 G2DG A2DA |\
+B2AG ADdc BAGB AG^FA |\
+GDGA Bcd=e \
+!mf! =fedf ed^ce |\
+d2A2d2=e2 (vfg)ufvg (uTg3f/2g/2) |\
+agab agf=e faga ^caga |\
+%%%%%%%%%% bar 20 %%%%%%%%%%
+daga ^caga fdcd gdcd |\
+ad^cd gdcd f2=ed (uT^c3d) |\
+d=cd=e dcBA GFG=A GF_ED |\
+cBcd cBAG FEFG FEDC |\
+B,Bcd e4- eABc d4 |\
+!f! uG4 vd4 uB6 uA2 |\
+GBAG ^FG=EF \
+!mf! GDEF GDGA |\
+(vBc)uBvc (uTc3B/2c/2) dcd_e dcBA |\
+Bdcd ^Fdcd Gdcd Fdcd |\
+BG^FG cGFG dGFG cGFG |\
+%%%%%%%%%% bar 30 %%%%%%%%%%
+!mp! G2B2 cBAc B4- BdcB |\
+A4- AcBA G4- GBAG |\
+F6 =E2 !crescendo(!F2_E2D2!crescendo)!C2 |\
+!f! B,4 F4 D6 C2 |\
+B,2D2C2B,2 (A,2C2) F4 |\
+B2F2c2F2 d2cB c2F2 |\
+B2FB c2Fc d2cB cFfe |\
+dcBd cBAc B2g2 z2 \
+!p! G2 |\
+A2f2 z2 F2 G2f2c2=e2 |\
+!mf! f_efg fedf edef edce |\
+%%%%%%%%%% bar 40 %%%%%%%%%%
+dcde dcBd cBcd cBAc |\
+!f! B4 f4 d6 c2 |\
+B2d2c2B2 (A2c2) F4 |\
+B2F2c2F2 d2cB c2F2 |\
+B2FB c2Fc d2cB c2F2 |\
+d2e2f2F2 B2\
+!p!f2b2a2 |\
+g2G2c2B2 A2c2a2g2 |\
+f2F2B2A2 G2B2g2f2 |\
+e2E2_A2G2 F4 G4- |\
+!mf! GG=A=B cdec \
+!p! _A2c2_a2f2- |\
+%%%%%%%%%% bar 50 %%%%%%%%%%
+f4- \
+!mf! ffed edce dc=Bd |\
+cGcd efef gecg _afga |\
+dedc =BGFG EGFG =B,GFG |\
+CGFG =B,GFG Ec=Bc FcBc |\
+Gc=Bc GBAB \
+!p! C2E2F2G2 |\
+C2G2E2C2 F2c2A2F2 |\
+B2F2D2B,2 B2B2G2E2 |\
+A2E2C2A,2 A2A2^F2D2 |\
+!mp!G,!crescendo(!B,A,G, DA,DC GBAG dAD!crescendo)!c |\
+B4 !mp!
+^F4!crescendo(! G4 A4 |\
+%%%%%%%%%% bar 60 %%%%%%%%%%
+B4 =B4 c4 ^c4 |\
+!crescendo)!
+!f! d4 =E2^F2 G4 =A2B2 |\
+cG=F_E cAFA B,FED BGEG |\
+A,EDC A^FDF
+!f! G4 d4 |\
+B6 A2 G2B2A2G2 |\
+(^F2A2) D4 G2D2A2D2 |\
+B2AG A2D2 G2DG A2DA |\
+B2AG A2D2 G2E2C2D2 |\
+[G,16D16=B16] |]
+W:playing time: approximately 4 minutes
+W:
+W:Copyright © 2003 by Jeff Bigler.  Permission is hereby granted to copy, distribute, modify, and/or perform this
+W:music in any form as long as this copyright notice is included.
+%%pagewidth 8.5in
+%%pageheight 14in
+% %%pageheight 11in
+%%stretchlast yes
+%%scale 0.68
+% %%scale 0.56
+% %%vocalfont Times-BoldItalic 13.0
+%%gchordfont Times-Bold 18
+X:1
+T:Little Fugue in G Minor
+M:4/4
+C:J. S. Bach
+C:transcribed by Jeff Bigler
+Z:Jeff Bigler
+Q:1/4=72
+L:1/16
+K:Gm
+% %abc2mtex: yes
+%%staves [1 2]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V:1     clef=alto octave=-1   nm="Viola I"            snm=""  %%
+%%MIDI channel 1                                              %%
+%%MIDI control 7 100	% volume = 100                        %%
+%%MIDI program 42       % General MIDI viola                  %%
+%%MIDI transpose 0                                            %%
+%%MIDI gchordoff                                              %%
+V:2     clef=alto octave=-1   nm="Viola II"           snm=""  %%
+%%MIDI channel 2                                              %%
+%%MIDI control 7 100	% volume = 100                        %%
+%%MIDI program 42       % General MIDI Viola                  %%
+%%MIDI transpose 0                                            %%
+%%MIDI gchordoff                                              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V:1     % Viola I
+%%%%%%%%%% bar 1 %%%%%%%%%%
+!f! G4 d4 B6 A2 |\
+G2B2A2G2 (^F2A2) D4 |\
+G2D2A2D2 B2AG A2D2 |\
+G2DG A2DA B2AG ADdc |
+BAGB AG^FA GDGA Bcd=e |\
+!mf! =f=edf ed^ce d2A2d2e2 |\
+(vfg)ufvg (uTg3f/2g/2) agab agf=e |\
+faga ^caga daga caga |\
+fd^cd gdcd adcd gdcd |\
+%%%%%%%%%% bar10 %%%%%%%%%%
+!mp! A2f2G2=e2 F2A2d2f2 |\
+!p! _e2a2 z2 e2 d2g2 z2 d2 |\
+!mf! "A"cBcd caga Bg^fg Af=ef |\
+g2D2G2A2 (vBc)uBvc (uTc3B/2c/2) |\
+dcd_e dcBA Bdcd ^Fdcd |\
+Gdcd ^Fdcd BGFG cGFG |\
+dG^FG cGFG D2B2C2A2 |\
+B2d2 gabg \
+!f! d4 a4 |\
+f6 =e2 d2f2e2d2 |\
+(^c2=e2) A4 d2A2e2A2 |\
+%%%%%%%%%% bar 20 %%%%%%%%%%
+f2=ed e2A2 d2Ad e2Ae |\
+f2=ed e2A2 vd2vG2 uA4 |\
+D2\
+!p!A2d2c2 B2d2g2f2 |\
+_e2G2c2B2 A2c2f2e2 |\
+!crescendo(! d4- !crescendo)! !mf!dg^fg c4- cBAc |\
+"B"!mf! BAGB AG^FA GD=EF GDGA |\
+BGBc dAdc !crescendo(! B6 !crescendo)! !f! A2 |\
+G2B2A2G2 (^F2A2) D4 |\
+G2D2A2D2 B2AG A2D2 |\
+G2DG A2DA B2AG ADdc |\
+%%%%%%%%%% bar 30 %%%%%%%%%%
+BAGB AG^FA !mf!GBcd eBAG |\
+^FABc dAG=F EGAB cGFE |\
+DFGA BdcB \
+!mf! Acde fgfe |\
+"C"dfed cBAc BFGA BcBc |\
+(vd=e)udve (uTe3d/2e/2) f_efg fedc |\
+dfef Afef Bfef Afef |\
+dBAB eBAB fBAB eBAB |\
+BcdB edce dcde dcBd |\
+cBcd cBAc BABc BAGB |\
+!p! A2f2 z2 _A2 G2e2 z2 G2 |\
+%%%%%%%%%% bar 40 %%%%%%%%%%
+F2d2 z2 !mp! F2 \
+EGcB =AGFE |\
+"D"DEFG ABcA BFGA BcBc |\
+(!mf! vd=e)udve (uTe3d/2e/2) fefg fgf_e |\
+% FGFG TG3F/2G/2 AGAB AGF_E |\ % alternate for bar 42
+dfef Afef Bfef Afef |\
+dbab ebab fbab ebab |\
+fefg c3a babc' bagf |\
+edef edcB agab agfe |\
+dcde dcBA gfg_a gfed |\
+c=Bcd cdec fedc =B_agf |\
+e8- ecde fg_af "E"|\
+%%%%%%%%%% bar 50 %%%%%%%%%%
+=BcdB G2 z2 \
+!f! c4 g4 |\
+e6 d2 c2e2d2c2 |\
+(=B2d2) G4 c2G2d2G2 |\
+e2dc d2G2 c2Gc d2Gd |\
+e2dc dGgf edce dc=Bd |\
+cg_eg ceG_B AcAc FACE |\
+Dfdf BdFA GBGB EGBd |\
+cece Ac=EG ^FAFA DFAc "F"|\
+!p! B2g2A2^f2 g2d'2^f2d'2 |\
+!crescendo(!GBAG dADc BdcB =fc=Fe |\
+%%%%%%%%%% bar 60 %%%%%%%%%%
+dfed gdGf =egfe aeA!crescendo)!g |\
+!f! ^f_edc BdAd G_ag=f gf_ed |\
+e4 =a4- [a4d4] g4- |\
+[g4c4] ^f4 \
+!f! GBdg ^fg=ef |\
+g6 ^f2 g4 ua2ud2 |\
+dg^f=e dcBA \
+!mf! Bdcd ^Fdcd |\
+Gdcd ^Fdcd !crescendo(! BGFG cGFG |\
+dG^FG cGF!crescendo)!G \
+!f! B2g2A2^f2 |\
+[D16=B16g16] |]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V:2     % Viola II
+%%%%%%%%%% bar 1 %%%%%%%%%%
+z16 |\
+z16 |\
+z16 |\
+z16 |\
+z16 |\
+!f! d4 a4 f6 =e2 |\
+d2f2=e2d2 (^c2e2) A4 |\
+d2A2=e2A2 f2ed e2A2 |\
+d2Ad =e2Ae f2ed eAag |\
+%%%%%%%%%% bar 10 %%%%%%%%%%
+f=edf ed^ce dAde fga=b |\
+!mf! c'_bc'd' c'bac' babc' bagb |\
+a2g2^f2d2 \
+!f! G4 d4 |\
+B6 A2 G2B2A2G2 |\
+(^F2A2) D4 G2D2A2D2 |\
+B2AG A2D2 G2DG A2DA |\
+B2AG ADdc BAGB AG^FA |\
+GDGA Bcd=e \
+!mf! =fedf ed^ce |\
+d2A2d2=e2 (vfg)ufvg (uTg3f/2g/2) |\
+agab agf=e faga ^caga |\
+%%%%%%%%%% bar 20 %%%%%%%%%%
+daga ^caga fdcd gdcd |\
+ad^cd gdcd f2=ed (uT^c3d) |\
+d=cd=e dcBA GFG=A GF_ED |\
+cBcd cBAG FEFG FEDC |\
+BBcd e4- eABc d4 |\
+!f! uG4 vd4 uB6 uA2 |\
+GBAG ^FG=EF \
+!mf! GDEF GDGA |\
+(vBc)uBvc (uTc3B/2c/2) dcd_e dcBA |\
+Bdcd ^Fdcd Gdcd Fdcd |\
+BG^FG cGFG dGFG cGFG |\
+%%%%%%%%%% bar 30 %%%%%%%%%%
+!mp! G2B2 cBAc B4- BdcB |\
+A4- AcBA G4- GBAG |\
+F6 =E2 !crescendo(!F2_e2d2!crescendo)!c2 |\
+!f! B4 f4 d6 c2 |\
+B2d2c2B2 (A2c2) F4 |\
+B2F2c2F2 d2cB c2F2 |\
+B2FB c2Fc d2cB cFfe |\
+dcBd cBAc B2g2 z2 \
+!p! G2 |\
+A2f2 z2 F2 G2f2c2=e2 |\
+!mf! f_efg fedf edef edce |\
+%%%%%%%%%% bar 40 %%%%%%%%%%
+dcde dcBd cBcd cBAc |\
+!f! B4 f4 d6 c2 |\
+B2d2c2B2 (A2c2) F4 |\
+B2F2c2F2 d2cB c2F2 |\
+B2FB c2Fc d2cB c2F2 |\
+d2e2f2F2 B2\
+!p!f2b2a2 |\
+g2G2c2B2 A2c2a2g2 |\
+f2F2B2A2 G2B2g2f2 |\
+e2E2_A2G2 F4 G4- |\
+!mf! GG=A=B cdec \
+!p! _A2c2_a2f2- |\
+%%%%%%%%%% bar 50 %%%%%%%%%%
+f4- \
+!mf! ffed edce dc=Bd |\
+cGcd efef gecg _afga |\
+dedc =Bgfg egfg =Bgfg |\
+cgfg =Bgfg ec'=bc' fc'bc' |\
+gc'=bc' gbab \
+!p! c2e2f2g2 |\
+c2g2e2c2 f2c'2a2f2 |\
+b2f2d2B2 b2b2g2e2 |\
+a2e2c2A2 a2a2^f2d2 |\
+!mp!G!crescendo(!BAG dADc gbag d'ad!crescendo)!c' |\
+b4 !mp!
+^f4!crescendo(! g4 a4 |\
+%%%%%%%%%% bar 60 %%%%%%%%%%
+b4 =b4 c'4 ^c'4 |\
+!crescendo)!
+!f! d'4 =e2^f2 g4 =a2b2 |\
+c'g=f_e c'afa Bfed bgeg |\
+Aedc a^fdf
+!f! G4 d4 |\
+B6 A2 G2B2A2G2 |\
+(^F2A2) D4 G2D2A2D2 |\
+B2AG A2D2 G2DG A2DA |\
+B2AG A2D2 G2e2c2d2 |\
+[G16d16=b16] |]
+W:playing time: approximately 4 minutes
+W:
+W:Copyright © 2003 by Jeff Bigler.  Permission is hereby granted to copy, distribute, modify, and/or perform this
+W:music in any form as long as this copyright notice is included.
+%%pagewidth 8.5in
+%%pageheight 14in
+% %%pageheight 11in
+%%stretchlast yes
+%%scale 0.68
+% %%scale 0.56
+% %%vocalfont Times-BoldItalic 13.0
+%%gchordfont Times-Bold 18
+X:1
+T:Little Fugue in G Minor
+M:4/4
+C:J. S. Bach
+C:transcribed by Jeff Bigler
+Z:Jeff Bigler
+Q:1/4=72
+L:1/16
+K:Gm
+% %abc2mtex: yes
+%%staves [1 2]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V:1     clef=alto octave=-1   nm="Viola"              snm=""  %%
+%%MIDI channel 1                                              %%
+%%MIDI control 7 100	% volume = 100                        %%
+%%MIDI program 42       % General MIDI viola                  %%
+%%MIDI transpose 0                                            %%
+%%MIDI gchordoff                                              %%
+V:2     clef=bass octave=-2   nm="Cello"              snm=""  %%
+%%MIDI channel 2                                              %%
+%%MIDI control 7 100	% volume = 100                        %%
+%%MIDI program 43       % General MIDI cello                  %%
+%%MIDI transpose 0                                            %%
+%%MIDI gchordoff                                              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V:1     % Viola
+%%%%%%%%%% bar 1 %%%%%%%%%%
+!f! G4 d4 B6 A2 |\
+G2B2A2G2 (^F2A2) D4 |\
+G2D2A2D2 B2AG A2D2 |\
+G2DG A2DA B2AG ADdc |
+BAGB AG^FA GDGA Bcd=e |\
+!mf! =f=edf ed^ce d2A2d2e2 |\
+(vfg)ufvg (uTg3f/2g/2) agab agf=e |\
+faga ^caga daga caga |\
+fd^cd gdcd adcd gdcd |\
+%%%%%%%%%% bar10 %%%%%%%%%%
+!mp! A2f2G2=e2 F2A2d2f2 |\
+!p! _e2a2 z2 e2 d2g2 z2 d2 |\
+!mf! "A"cBcd caga Bg^fg Af=ef |\
+g2D2G2A2 (vBc)uBvc (uTc3B/2c/2) |\
+dcd_e dcBA Bdcd ^Fdcd |\
+Gdcd ^Fdcd BGFG cGFG |\
+dG^FG cGFG D2B2C2A2 |\
+B2d2 gabg \
+!f! d4 a4 |\
+f6 =e2 d2f2e2d2 |\
+(^c2=e2) A4 d2A2e2A2 |\
+%%%%%%%%%% bar 20 %%%%%%%%%%
+f2=ed e2A2 d2Ad e2Ae |\
+f2=ed e2A2 vd2vG2 uA4 |\
+D2\
+!p!A2d2c2 B2d2g2f2 |\
+_e2G2c2B2 A2c2f2e2 |\
+!crescendo(! d4- !crescendo)! !mf!dg^fg c4- cBAc |\
+"B"!mf! BAGB AG^FA GD=EF GDGA |\
+BGBc dAdc !crescendo(! B6 !crescendo)! !f! A2 |\
+G2B2A2G2 (^F2A2) D4 |\
+G2D2A2D2 B2AG A2D2 |\
+G2DG A2DA B2AG ADdc |\
+%%%%%%%%%% bar 30 %%%%%%%%%%
+BAGB AG^FA !mf!GBcd eBAG |\
+^FABc dAG=F EGAB cGFE |\
+DFGA BdcB \
+!mf! Acde fgfe |\
+"C"dfed cBAc BFGA BcBc |\
+(vd=e)udve (uTe3d/2e/2) f_efg fedc |\
+dfef Afef Bfef Afef |\
+dBAB eBAB fBAB eBAB |\
+BcdB edce dcde dcBd |\
+cBcd cBAc BABc BAGB |\
+!p! A2f2 z2 _A2 G2e2 z2 G2 |\
+%%%%%%%%%% bar 40 %%%%%%%%%%
+F2d2 z2 !mp! F2 \
+EGcB =AGFE |\
+"D"DEFG ABcA BFGA BcBc |\
+(!mf! vd=e)udve (uTe3d/2e/2) fefg fgf_e |\
+% FGFG TG3F/2G/2 AGAB AGF_E |\ % alternate for bar 42
+dfef Afef Bfef Afef |\
+dbab ebab fbab ebab |\
+fefg c3a babc' bagf |\
+edef edcB agab agfe |\
+dcde dcBA gfg_a gfed |\
+c=Bcd cdec fedc =B_agf |\
+e8- ecde fg_af "E"|\
+%%%%%%%%%% bar 50 %%%%%%%%%%
+=BcdB G2 z2 \
+!f! c4 g4 |\
+e6 d2 c2e2d2c2 |\
+(=B2d2) G4 c2G2d2G2 |\
+e2dc d2G2 c2Gc d2Gd |\
+e2dc dGgf edce dc=Bd |\
+cg_eg ceG_B AcAc FACE |\
+Dfdf BdFA GBGB EGBd |\
+cece Ac=EG ^FAFA DFAc "F"|\
+!p! B2g2A2^f2 g2d'2^f2d'2 |\
+!crescendo(!GBAG dADc BdcB =fc=Fe |\
+%%%%%%%%%% bar 60 %%%%%%%%%%
+dfed gdGf =egfe aeA!crescendo)!g |\
+!f! ^f_edc BdAd G_ag=f gf_ed |\
+e4 =a4- [a4d4] g4- |\
+[g4c4] ^f4 \
+!f! GBdg ^fg=ef |\
+g6 ^f2 g4 ua2ud2 |\
+dg^f=e dcBA \
+!mf! Bdcd ^Fdcd |\
+Gdcd ^Fdcd !crescendo(! BGFG cGFG |\
+dG^FG cGF!crescendo)!G \
+!f! B2g2A2^f2 |\
+[D16=B16g16] |]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V:2     % Cello
+%%%%%%%%%% bar 1 %%%%%%%%%%
+z16 |\
+z16 |\
+z16 |\
+z16 |\
+z16 |\
+!f! d4 a4 f6 =e2 |\
+d2f2=e2d2 (^c2e2) A4 |\
+d2A2=e2A2 f2ed e2A2 |\
+d2Ad =e2Ae f2ed eAag |\
+%%%%%%%%%% bar 10 %%%%%%%%%%
+f=edf ed^ce dAde fga=b |\
+!mf! c'_bc'd' c'bac' babc' bagb |\
+a2g2^f2d2 \
+!f! G4 d4 |\
+B6 A2 G2B2A2G2 |\
+(^F2A2) D4 G2D2A2D2 |\
+B2AG A2D2 G2DG A2DA |\
+B2AG ADdc BAGB AG^FA |\
+GDGA Bcd=e \
+!mf! =fedf ed^ce |\
+d2A2d2=e2 (vfg)ufvg (uTg3f/2g/2) |\
+agab agf=e faga ^caga |\
+%%%%%%%%%% bar 20 %%%%%%%%%%
+daga ^caga fdcd gdcd |\
+ad^cd gdcd f2=ed (uT^c3d) |\
+d=cd=e dcBA GFG=A GF_ED |\
+cBcd cBAG FEFG FEDC |\
+BBcd e4- eABc d4 |\
+!f! uG4 vd4 uB6 uA2 |\
+GBAG ^FG=EF \
+!mf! GDEF GDGA |\
+(vBc)uBvc (uTc3B/2c/2) dcd_e dcBA |\
+Bdcd ^Fdcd Gdcd Fdcd |\
+BG^FG cGFG dGFG cGFG |\
+%%%%%%%%%% bar 30 %%%%%%%%%%
+!mp! G2B2 cBAc B4- BdcB |\
+A4- AcBA G4- GBAG |\
+F6 =E2 !crescendo(!F2_e2d2!crescendo)!c2 |\
+!f! B4 f4 d6 c2 |\
+B2d2c2B2 (A2c2) F4 |\
+B2F2c2F2 d2cB c2F2 |\
+B2FB c2Fc d2cB cFfe |\
+dcBd cBAc B2g2 z2 \
+!p! G2 |\
+A2f2 z2 F2 G2f2c2=e2 |\
+!mf! f_efg fedf edef edce |\
+%%%%%%%%%% bar 40 %%%%%%%%%%
+dcde dcBd cBcd cBAc |\
+!f! B4 f4 d6 c2 |\
+B2d2c2B2 (A2c2) F4 |\
+B2F2c2F2 d2cB c2F2 |\
+B2FB c2Fc d2cB c2F2 |\
+d2e2f2F2 B2\
+!p!f2b2a2 |\
+g2G2c2B2 A2c2a2g2 |\
+f2F2B2A2 G2B2g2f2 |\
+e2E2_A2G2 F4 G4- |\
+!mf! GG=A=B cdec \
+!p! _A2c2_a2f2- |\
+%%%%%%%%%% bar 50 %%%%%%%%%%
+f4- \
+!mf! ffed edce dc=Bd |\
+cGcd efef gecg _afga |\
+dedc =Bgfg egfg =Bgfg |\
+cgfg =Bgfg ec'=bc' fc'bc' |\
+gc'=bc' gbab \
+!p! c2e2f2g2 |\
+c2g2e2c2 f2c'2a2f2 |\
+b2f2d2B2 b2b2g2e2 |\
+a2e2c2A2 a2a2^f2d2 |\
+!mp!G!crescendo(!BAG dADc gbag d'ad!crescendo)!c' |\
+b4 !mp!
+^f4!crescendo(! g4 a4 |\
+%%%%%%%%%% bar 60 %%%%%%%%%%
+b4 =b4 c'4 ^c'4 |\
+!crescendo)!
+!f! d'4 =e2^f2 g4 =a2b2 |\
+c'g=f_e c'afa Bfed bgeg |\
+Aedc a^fdf
+!f! G4 d4 |\
+B6 A2 G2B2A2G2 |\
+(^F2A2) D4 G2D2A2D2 |\
+B2AG A2D2 G2DG A2DA |\
+B2AG A2D2 G2e2c2d2 |\
+[G16d16=b16] |]
+W:playing time: approximately 4 minutes
+W:
+W:Copyright © 2003 by Jeff Bigler.  Permission is hereby granted to copy, distribute, modify, and/or perform this
+W:music in any form as long as this copyright notice is included.
+%%pagewidth 8.5in
+%%pageheight 14in
+% %%pageheight 11in
+%%stretchlast yes
+%%scale 0.68
+% %%scale 0.55
+% %%vocalfont Times-BoldItalic 13.0
+%%gchordfont Times-BoldRoman 18
+X:1
+T:Little Fugue in G Minor
+M:4/4
+C:J. S. Bach
+C:transcribed by Jeff Bigler
+Z:Jeff Bigler
+Q:1/4=72
+L:1/16
+K:Gm
+% %abc2mtex: yes
+%%staves [1 2]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V:1                           nm="Violin"             snm=""  %%
+%%MIDI channel 1                                              %%
+%%MIDI control 7 100	% volume = 100                        %%
+%%MIDI program 41       % General MIDI violin                 %%
+%%MIDI transpose 0                                            %%
+%%MIDI gchordoff                                              %%
+V:2     clef=bass octave=-2   nm="Cello"              snm=""  %%
+%%MIDI channel 2                                              %%
+%%MIDI control 7 100	% volume = 100                        %%
+%%MIDI program 43       % General MIDI cello                  %%
+%%MIDI transpose 0                                            %%
+%%MIDI gchordoff                                              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V:1     % Violin
+%%%%%%%%%% bar 1 %%%%%%%%%%
+!f! G4 d4 B6 A2 |\
+G2B2A2G2 (^F2A2) D4 |\
+G2D2A2D2 B2AG A2D2 |\
+G2DG A2DA B2AG ADdc |
+BAGB AG^FA GDGA Bcd=e |\
+!mf! =f=edf ed^ce d2A2d2e2 |\
+(vfg)ufvg (uTg3f/2g/2) agab agf=e |\
+faga ^caga daga caga |\
+fd^cd gdcd adcd gdcd |\
+%%%%%%%%%% bar10 %%%%%%%%%%
+!mp! A2f2G2=e2 F2A2d2f2 |\
+!p! _e2a2 z2 e2 d2g2 z2 d2 "A"|\
+!mf! cBcd caga Bg^fg Af=ef |\
+g2D2G2A2 (vBc)uBvc (uTc3B/2c/2) |\
+dcd_e dcBA Bdcd ^Fdcd |\
+Gdcd ^Fdcd BGFG cGFG |\
+dG^FG cGFG D2B2C2A2 |\
+B,2D2 GABG \
+!f! D4 A4 |\
+F6 =E2 D2F2E2D2 |\
+(^C2=E2) A,4 D2A,2E2A,2 |\
+%%%%%%%%%% bar 20 %%%%%%%%%%
+F2=ED E2A,2 D2A,D E2A,E |\
+F2=ED E2A,2 vD2vG,2 uA,4 |\
+D2\
+!p!A2d2c2 B2d2g2f2 |\
+_e2G2c2B2 A2c2f2e2 |\
+!crescendo(! d4- !crescendo)! !mf!dg^fg c4- cBAc |\
+"B"!mf! BAGB AG^FA GD=EF GDGA |\
+BGBc dAdc !crescendo(! B6 !crescendo)! !f! A2 |\
+G2B2A2G2 (^F2A2) D4 |\
+G2D2A2D2 B2AG A2D2 |\
+G2DG A2DA B2AG ADdc |\
+%%%%%%%%%% bar 30 %%%%%%%%%%
+BAGB AG^FA !mf!GBcd eBAG |\
+^FABc dAG=F EGAB cGFE |\
+DFGA BdcB \
+!mf! Acde fgfe |\
+"C"dfed cBAc BFGA BcBc |\
+(vd=e)udve (uTe3d/2e/2) f_efg fedc |\
+dfef Afef Bfef Afef |\
+dBAB eBAB fBAB eBAB |\
+BcdB edce dcde dcBd |\
+cBcd cBAc BABc BAGB |\
+!p! A2f2 z2 _A2 G2e2 z2 G2 |\
+%%%%%%%%%% bar 40 %%%%%%%%%%
+F2d2 z2 !mp! F2 \
+EGcB =AGFE |\
+"D"DEFG ABcA BFGA BcBc |\
+(!mf! vd=e)udve (uTe3d/2e/2) fefg fgf_e |\
+% FGFG TG3F/2G/2 AGAB AGF_E |\ % alternate for bar 42
+dfef Afef Bfef Afef |\
+dbab ebab fbab ebab |\
+fefg c3a babc' bagf |\
+edef edcB agab agfe |\
+dcde dcBA gfg_a gfed |\
+c=Bcd cdec fedc =B_agf |\
+e8- ecde fg_af "E"|\
+%%%%%%%%%% bar 50 %%%%%%%%%%
+=BcdB G2 z2 \
+!f! c4 g4 |\
+e6 d2 c2e2d2c2 |\
+(=B2d2) G4 c2G2d2G2 |\
+e2dc d2G2 c2Gc d2Gd |\
+e2dc dGgf edce dc=Bd |\
+cg_eg ceG_B AcAc FACE |\
+Dfdf BdFA GBGB EGB,D |\
+Cece Ac=EG ^FAFA DFA,C "F"|\
+!p! B,2G2A,2^F2 G2d2^F2d2 |\
+!crescendo(!GBAG dADc BdcB =fc=Fe |\
+%%%%%%%%%% bar 60 %%%%%%%%%%
+dfed gdGf =egfe aeA!crescendo)!g |\
+!f! ^f_edc BdAd G_ag=f gf_ed |\
+e4 =a4- [a4d4] g4- |\
+[g4c4] ^f4 \
+!f! G,B,DG ^FG=EF |\
+G6 ^F2 G4 uA2uD2 |\
+Dg^f=e dcBA \
+!mf! Bdcd ^Fdcd |\
+Gdcd ^Fdcd !crescendo(! BGFG cGFG |\
+dG^FG cGF!crescendo)!G \
+!f! B2g2A2^f2 |\
+[G,16D16=B16g16] |]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V:2     % Viola
+%%%%%%%%%% bar 1 %%%%%%%%%%
+z16 |\
+z16 |\
+z16 |\
+z16 |\
+z16 |\
+!f! d4 a4 f6 =e2 |\
+d2f2=e2d2 (^c2e2) A4 |\
+d2A2=e2A2 f2ed e2A2 |\
+d2Ad =e2Ae f2ed eAag |\
+%%%%%%%%%% bar 10 %%%%%%%%%%
+f=edf ed^ce dAde fga=b |\
+!mf! c'_bc'd' c'bac' babc' bagb |\
+a2g2^f2d2 \
+!f! G4 d4 |\
+B6 A2 G2B2A2G2 |\
+(^F2A2) D4 G2D2A2D2 |\
+B2AG A2D2 G2DG A2DA |\
+B2AG ADdc BAGB AG^FA |\
+GDGA Bcd=e \
+!mf! =fedf ed^ce |\
+d2A2d2=e2 (vfg)ufvg (uTg3f/2g/2) |\
+agab agf=e faga ^caga |\
+%%%%%%%%%% bar 20 %%%%%%%%%%
+daga ^caga fdcd gdcd |\
+ad^cd gdcd f2=ed (uT^c3d) |\
+d=cd=e dcBA GFG=A GF_ED |\
+cBcd cBAG FEFG FEDC |\
+BBcd e4- eABc d4 |\
+!f! uG4 vd4 uB6 uA2 |\
+GBAG ^FG=EF \
+!mf! GDEF GDGA |\
+(vBc)uBvc (uTc3B/2c/2) dcd_e dcBA |\
+Bdcd ^Fdcd Gdcd Fdcd |\
+BG^FG cGFG dGFG cGFG |\
+%%%%%%%%%% bar 30 %%%%%%%%%%
+!mp! G2B2 cBAc B4- BdcB |\
+A4- AcBA G4- GBAG |\
+F6 =E2 !crescendo(!F2_e2d2!crescendo)!c2 |\
+!f! B4 f4 d6 c2 |\
+B2d2c2B2 (A2c2) F4 |\
+B2F2c2F2 d2cB c2F2 |\
+B2FB c2Fc d2cB cFfe |\
+dcBd cBAc B2g2 z2 \
+!p! G2 |\
+A2f2 z2 F2 G2f2c2=e2 |\
+!mf! f_efg fedf edef edce |\
+%%%%%%%%%% bar 40 %%%%%%%%%%
+dcde dcBd cBcd cBAc |\
+!f! B4 f4 d6 c2 |\
+B2d2c2B2 (A2c2) F4 |\
+B2F2c2F2 d2cB c2F2 |\
+B2FB c2Fc d2cB c2F2 |\
+d2e2f2F2 B2\
+!p!f2b2a2 |\
+g2G2c2B2 A2c2a2g2 |\
+f2F2B2A2 G2B2g2f2 |\
+e2E2_A2G2 F4 G4- |\
+!mf! GG=A=B cdec \
+!p! _A2c2_a2f2- |\
+%%%%%%%%%% bar 50 %%%%%%%%%%
+f4- \
+!mf! ffed edce dc=Bd |\
+cGcd efef gecg _afga |\
+dedc =Bgfg egfg =Bgfg |\
+cgfg =Bgfg ec'=bc' fc'bc' |\
+gc'=bc' gbab \
+!p! c2e2f2g2 |\
+c2g2e2c2 f2c'2a2f2 |\
+b2f2d2B2 b2b2g2e2 |\
+a2e2c2A2 a2a2^f2d2 |\
+!mp!G!crescendo(!BAG dADc gbag d'ad!crescendo)!c' |\
+b4 !mp!
+^f4!crescendo(! g4 a4 |\
+%%%%%%%%%% bar 60 %%%%%%%%%%
+b4 =b4 c'4 ^c'4 |\
+!crescendo)!
+!f! d'4 =e2^f2 g4 =a2b2 |\
+c'g=f_e c'afa Bfed bgeg |\
+Aedc a^fdf
+!f! G4 d4 |\
+B6 A2 G2B2A2G2 |\
+(^F2A2) D4 G2D2A2D2 |\
+B2AG A2D2 G2DG A2DA |\
+B2AG A2D2 G2e2c2d2 |\
+[G16d16=b16] |]
+W:playing time: approximately 4 minutes
+W:
+W:Copyright © 2003 by Jeff Bigler.  Permission is hereby granted to copy, distribute, modify, and/or perform this
+W:music in any form as long as this copyright notice is included.
+%%pagewidth 8.5in
+%%pageheight 14in
+% %%pageheight 11in
+%%stretchlast yes
+%%scale 0.67
+% %%scale 0.56
+% %%vocalfont Times-BoldItalic 13.0
+%%gchordfont Times-BoldRoman 18
+X:1
+T:Little Fugue in G Minor
+M:4/4
+C:J. S. Bach
+C:transcribed by Jeff Bigler
+Z:Jeff Bigler
+Q:1/4=72
+L:1/16
+K:Gm
+% %abc2mtex: yes
+%%staves [1 2]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V:1                           nm="Violin"             snm=""  %%
+%%MIDI channel 1                                              %%
+%%MIDI control 7 100	% volume = 100                        %%
+%%MIDI program 41       % General MIDI violin                 %%
+%%MIDI transpose 0                                            %%
+%%MIDI gchordoff                                              %%
+V:2     clef=alto octave=-1   nm="Viola"              snm=""  %%
+%%MIDI channel 2                                              %%
+%%MIDI control 7 100	% volume = 100                        %%
+%%MIDI program 42       % General MIDI Viola                  %%
+%%MIDI transpose 0                                            %%
+%%MIDI gchordoff                                              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V:1     % Violin
+%%%%%%%%%% bar 1 %%%%%%%%%%
+!f! G4 d4 B6 A2 |\
+G2B2A2G2 (^F2A2) D4 |\
+G2D2A2D2 B2AG A2D2 |\
+G2DG A2DA B2AG ADdc |
+BAGB AG^FA GDGA Bcd=e |\
+!mf! =f=edf ed^ce d2A2d2e2 |\
+(vfg)ufvg (uTg3f/2g/2) agab agf=e |\
+faga ^caga daga caga |\
+fd^cd gdcd adcd gdcd |\
+%%%%%%%%%% bar10 %%%%%%%%%%
+!mp! A2f2G2=e2 F2A2d2f2 |\
+!p! _e2a2 z2 e2 d2g2 z2 d2 |\
+!mf! "A"cBcd caga Bg^fg Af=ef |\
+g2D2G2A2 (vBc)uBvc (uTc3B/2c/2) |\
+dcd_e dcBA Bdcd ^Fdcd |\
+Gdcd ^Fdcd BGFG cGFG |\
+dG^FG cGFG D2B2C2A2 |\
+B,2D2 GABG \
+!f! D4 A4 |\
+F6 =E2 D2F2E2D2 |\
+(^C2=E2) A,4 D2A,2E2A,2 |\
+%%%%%%%%%% bar 20 %%%%%%%%%%
+F2=ED E2A,2 D2A,D E2A,E |\
+F2=ED E2A,2 vD2vG,2 uA,4 |\
+D2\
+!p!A2d2c2 B2d2g2f2 |\
+_e2G2c2B2 A2c2f2e2 |\
+!crescendo(! d4- !crescendo)! !mf!dg^fg c4- cBAc |\
+"B"!mf! BAGB AG^FA GD=EF GDGA |\
+BGBc dAdc !crescendo(! B6 !crescendo)! !f! A2 |\
+G2B2A2G2 (^F2A2) D4 |\
+G2D2A2D2 B2AG A2D2 |\
+G2DG A2DA B2AG ADdc |\
+%%%%%%%%%% bar 30 %%%%%%%%%%
+BAGB AG^FA !mf!GBcd eBAG |\
+^FABc dAG=F EGAB cGFE |\
+DFGA BdcB \
+!mf! Acde fgfe |\
+"C"dfed cBAc BFGA BcBc |\
+(vd=e)udve (uTe3d/2e/2) f_efg fedc |\
+dfef Afef Bfef Afef |\
+dBAB eBAB fBAB eBAB |\
+BcdB edce dcde dcBd |\
+cBcd cBAc BABc BAGB |\
+!p! A2f2 z2 _A2 G2e2 z2 G2 |\
+%%%%%%%%%% bar 40 %%%%%%%%%%
+F2d2 z2 !mp! F2 \
+EGcB =AGFE |\
+"D"DEFG ABcA BFGA BcBc |\
+(!mf! vd=e)udve (uTe3d/2e/2) fefg fgf_e |\
+% FGFG TG3F/2G/2 AGAB AGF_E |\ % alternate for bar 42
+dfef Afef Bfef Afef |\
+dbab ebab fbab ebab |\
+fefg c3a babc' bagf |\
+edef edcB agab agfe |\
+dcde dcBA gfg_a gfed |\
+c=Bcd cdec fedc =B_agf |\
+e8- ecde fg_af "E"|\
+%%%%%%%%%% bar 50 %%%%%%%%%%
+=BcdB G2 z2 \
+!f! c4 g4 |\
+e6 d2 c2e2d2c2 |\
+(=B2d2) G4 c2G2d2G2 |\
+e2dc d2G2 c2Gc d2Gd |\
+e2dc dGgf edce dc=Bd |\
+cg_eg ceG_B AcAc FACE |\
+Dfdf BdFA GBGB EGB,D |\
+Cece Ac=EG ^FAFA DFA,C "F"|\
+!p! B,2G2A,2^F2 G2d2^F2d2 |\
+!crescendo(!GBAG dADc BdcB =fc=Fe |\
+%%%%%%%%%% bar 60 %%%%%%%%%%
+dfed gdGf =egfe aeA!crescendo)!g |\
+!f! ^f_edc BdAd G_ag=f gf_ed |\
+e4 =a4- [a4d4] g4- |\
+[g4c4] ^f4 \
+!f! G,B,DG ^FG=EF |\
+G6 ^F2 G4 uA2uD2 |\
+Dg^f=e dcBA \
+!mf! Bdcd ^Fdcd |\
+Gdcd ^Fdcd !crescendo(! BGFG cGFG |\
+dG^FG cGF!crescendo)!G \
+!f! B2g2A2^f2 |\
+[G,16D16=B16g16] |]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V:2     % Viola
+%%%%%%%%%% bar 1 %%%%%%%%%%
+z16 |\
+z16 |\
+z16 |\
+z16 |\
+z16 |\
+!f! d4 a4 f6 =e2 |\
+d2f2=e2d2 (^c2e2) A4 |\
+d2A2=e2A2 f2ed e2A2 |\
+d2Ad =e2Ae f2ed eAag |\
+%%%%%%%%%% bar 10 %%%%%%%%%%
+f=edf ed^ce dAde fga=b |\
+!mf! c'_bc'd' c'bac' babc' bagb |\
+a2g2^f2d2 \
+!f! G4 d4 |\
+B6 A2 G2B2A2G2 |\
+(^F2A2) D4 G2D2A2D2 |\
+B2AG A2D2 G2DG A2DA |\
+B2AG ADdc BAGB AG^FA |\
+GDGA Bcd=e \
+!mf! =fedf ed^ce |\
+d2A2d2=e2 (vfg)ufvg (uTg3f/2g/2) |\
+agab agf=e faga ^caga |\
+%%%%%%%%%% bar 20 %%%%%%%%%%
+daga ^caga fdcd gdcd |\
+ad^cd gdcd f2=ed (uT^c3d) |\
+d=cd=e dcBA GFG=A GF_ED |\
+cBcd cBAG FEFG FEDC |\
+BBcd e4- eABc d4 |\
+!f! uG4 vd4 uB6 uA2 |\
+GBAG ^FG=EF \
+!mf! GDEF GDGA |\
+(vBc)uBvc (uTc3B/2c/2) dcd_e dcBA |\
+Bdcd ^Fdcd Gdcd Fdcd |\
+BG^FG cGFG dGFG cGFG |\
+%%%%%%%%%% bar 30 %%%%%%%%%%
+!mp! G2B2 cBAc B4- BdcB |\
+A4- AcBA G4- GBAG |\
+F6 =E2 !crescendo(!F2_e2d2!crescendo)!c2 |\
+!f! B4 f4 d6 c2 |\
+B2d2c2B2 (A2c2) F4 |\
+B2F2c2F2 d2cB c2F2 |\
+B2FB c2Fc d2cB cFfe |\
+dcBd cBAc B2g2 z2 \
+!p! G2 |\
+A2f2 z2 F2 G2f2c2=e2 |\
+!mf! f_efg fedf edef edce |\
+%%%%%%%%%% bar 40 %%%%%%%%%%
+dcde dcBd cBcd cBAc |\
+!f! B4 f4 d6 c2 |\
+B2d2c2B2 (A2c2) F4 |\
+B2F2c2F2 d2cB c2F2 |\
+B2FB c2Fc d2cB c2F2 |\
+d2e2f2F2 B2\
+!p!f2b2a2 |\
+g2G2c2B2 A2c2a2g2 |\
+f2F2B2A2 G2B2g2f2 |\
+e2E2_A2G2 F4 G4- |\
+!mf! GG=A=B cdec \
+!p! _A2c2_a2f2- |\
+%%%%%%%%%% bar 50 %%%%%%%%%%
+f4- \
+!mf! ffed edce dc=Bd |\
+cGcd efef gecg _afga |\
+dedc =Bgfg egfg =Bgfg |\
+cgfg =Bgfg ec'=bc' fc'bc' |\
+gc'=bc' gbab \
+!p! c2e2f2g2 |\
+c2g2e2c2 f2c'2a2f2 |\
+b2f2d2B2 b2b2g2e2 |\
+a2e2c2A2 a2a2^f2d2 |\
+!mp!G!crescendo(!BAG dADc gbag d'ad!crescendo)!c' |\
+b4 !mp!
+^f4!crescendo(! g4 a4 |\
+%%%%%%%%%% bar 60 %%%%%%%%%%
+b4 =b4 c'4 ^c'4 |\
+!crescendo)!
+!f! d'4 =e2^f2 g4 =a2b2 |\
+c'g=f_e c'afa Bfed bgeg |\
+Aedc a^fdf
+!f! G4 d4 |\
+B6 A2 G2B2A2G2 |\
+(^F2A2) D4 G2D2A2D2 |\
+B2AG A2D2 G2DG A2DA |\
+B2AG A2D2 G2e2c2d2 |\
+[G16d16=b16] |]
+W:playing time: approximately 4 minutes
+W:
+W:Copyright © 2003 by Jeff Bigler.  Permission is hereby granted to copy, distribute, modify, and/or perform this
+W:music in any form as long as this copyright notice is included.
+X:1
+T:Little Fugue in G Minor
+M:4/4
+C:J. S. Bach
+C:transcribed by Jeff Bigler
+Z:Jeff Bigler
+L:1/16
+K:Gm
+%abc2mtex: yes
+%%staves [(1 2)]
+%%topmargin 15
+%%topspace 0
+%%scale 0.65
+%%slurgraces 1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V:1                 nm="Violin"             snm=""
+V:2     clef=alto   nm="Viola"              snm=""
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V:1     % Violin
+%%MIDI channel 1
+%%MIDI program 73       % General MIDI Flute
+%%MIDI transpose 0
+% page 1
+K:Gm
+%%%%%%%%%% bar 1 %%%%%%%%%%
+G4 d4 B6 A2 |\
+G2B2A2G2 (^F2A2) D4 |\
+G2D2A2D2 B2AG A2D2 |\
+G2DG A2DA B2AG ADdc |\
+BAGB AG^FA GDGA Bcd=e |
+=f=edf ed^ce d2A2d2e2 |\
+(vfg)ufvg (uTg3f/2g/2) agab agf=e |\
+faga ^caga daga caga |\
+fd^cd gdcd adcd gdcd |\
+%%%%%%%%%% bar10 %%%%%%%%%%
+A2f2G2=e2 F2A2d2f2 |\
+_e2a2 z2 e2 d2g2 z2 d2 "A"|\
+cBcd caga Bg^fg Af=ef |\
+g2D2G2A2 (vBc)uBvc (uTc3B/2c/2) |\
+dcd_e dcBA Bdcd ^Fdcd |\
+Gdcd ^Fdcd BGFG cGFG |\
+dG^FG cGFG D2B2C2A2 |\
+B,2D2 GABG D4 A4 |\
+F6 =E2 D2F2E2D2 |\
+(^C2=E2) A,4 D2A,2E2A,2 |\
+%%%%%%%%%% bar 20 %%%%%%%%%%
+F2=ED E2A,2 D2A,D E2A,E |\
+F2=ED E2A,2 vD2vG,2 uA,4 |\
+D2A2d2c2 B2d2g2f2 |\
+_e2G2c2B2 A2c2f2e2 |\
+d4- dg^fg c4- cBAc "B"|\
+BAGB AG^FA GD=EF GDGA |\
+BGBc dAdc B6 A2 |\
+G2B2A2G2 (^F2A2) D4 |\
+G2D2A2D2 B2AG A2D2 |\
+G2DG A2DA B2AG ADdc |\
+%%%%%%%%%% bar 30 %%%%%%%%%%
+BAGB AG^FA GBcd eBAG |\
+^FABc dAG=F EGAB cGFE |\
+DFGA BdcB Acde fgfe "C"|\
+dfed cBAc BFGA BcBc |\
+(vd=e)udve (uTe3d/2e/2) f_efg fedc |\
+dfef Afef Bfef Afef |\
+dBAB eBAB fBAB eBAB |\
+BcdB edce dcde dcBd |\
+cBcd cBAc BABc BAGB |\
+A2f2 z2 _A2 G2e2 z2 G2 |\
+%%%%%%%%%% bar 40 %%%%%%%%%%
+F2d2 z2 F2 EGcB =AGFE "D"|\
+DEFG ABcA BFGA BcBc |\
+% DCDB, CDEC DCB,C DEDE |\ % alternate for bar 41
+(vd=e)udve (uTe3d/2e/2) fefg fgf_e |\
+% FGFG TG3F/2G/2 AGAB AGF_E |\ % alternate for bar 42
+dfef Afef Bfef Afef |\
+dbab ebab fbab ebab |\
+fefg c3a babc' bagf |\
+edef edcB agab agfe |\
+dcde dcBA gfg_a gfed |\
+c=Bcd cdec fedc =B_agf |\
+e8- ecde fg_af "E"|\
+%%%%%%%%%% bar 50 %%%%%%%%%%
+=BcdB G2 z2 c4 g4 |\
+e6 d2 c2e2d2c2 |\
+(=B2d2) G4 c2G2d2G2 |\
+e2dc d2G2 c2Gc d2Gd |\
+e2dc dGgf edce dc=Bd |\
+cg_eg ceG_B AcAc FACE |\
+Dfdf BdFA GBGB EGB,D |\
+Cece Ac=EG ^FAFA DFA,C "F"|\
+B,2G2A,2^F2 G2d2^F2d2 |\
+GBAG dADc BdcB =fc=Fe |\
+%%%%%%%%%% bar 60 %%%%%%%%%%
+dfed gdGf =egfe aeAg |\
+^f_edc BdAd G_ag=f gf_ed |\
+e4 =a4- [a4d4] g4- |\
+[g4c2] ^f4 G,B,DG ^FG=EF |\
+G6 ^F2 G4 uA2uD2 |\
+Dg^f=e dcBA Bdcd ^Fdcd |\
+Gdcd ^Fdcd BGFG cGFG |\
+dG^FG cGFG B2g2A2^f2 |\
+[G,16D16=B16g16] |]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V:2     % Viola
+%%MIDI channel 1
+%%MIDI program 73       % General MIDI Flute
+%%MIDI transpose 0
+% page 1
+K:Gm
+%%%%%%%%%% bar 1 %%%%%%%%%%
+z16 |\
+z16 |\
+z16 |\
+z16 |\
+z16 |\
+d4 a4 f6 =e2 |\
+d2f2=e2d2 (^c2e2) A4 |\
+d2A2=e2A2 f2ed e2A2 |\
+d2Ad =e2Ae f2ed eAag |\
+%%%%%%%%%% bar 10 %%%%%%%%%%
+f=edf ed^ce dAde fga=b |\
+c'_bc'd' c'bac' babc' bagb |\
+a2g2^f2d2 G4 d4 |\
+B6 A2 G2B2A2G2 |\
+(^F2A2) D4 G2D2A2D2 |\
+B2AG A2D2 G2DG A2DA |\
+B2AG ADdc BAGB AG^FA |\
+GDGA Bcd=e =fedf ed^ce |\
+d2A2d2=e2 (vfg)ufvg (uTg3f/2g/2) |\
+agab agf=e faga ^caga |\
+%%%%%%%%%% bar 20 %%%%%%%%%%
+daga ^caga fdcd gdcd |\
+ad^cd gdcd f2=ed (uT^c3d) |\
+d=cd=e dcBA GFG=A GF_ED |\
+cBcd cBAG FEFG FEDC |\
+BBcd e4- eABc d4 |\
+uG4 vd4 uB6 uA2 |\
+GBAG ^FG=EF GDEF GDGA |\
+(vBc)uBvc (uTc3B/2c/2) dcd_e dcBA |\
+Bdcd ^Fdcd Gdcd Fdcd |\
+BG^FG cGFG dGFG cGFG |
+%%%%%%%%%% bar 30 %%%%%%%%%%
+G2B2 cBAc B4- BdcB |\
+A4- AcBA G4- GBAG |\
+F6 =E2 F2_e2d2c2 |\
+B4 f4 d6 c2 |\
+B2d2c2B2 (A2c2) F4 |\
+B2F2c2F2 d2cB c2F2 |\
+B2FB c2Fc d2cB cFfe |\
+dcBd cBAc B2g2 z2 G2 |\
+A2f2 z2 F2 G2f2c2=e2 |\
+f_efg fedf edef edce |\
+%%%%%%%%%% bar 40 %%%%%%%%%%
+dcde dcBd cBcd cBAc |
+B4 f4 d6 c2 |\
+B2d2c2B2 (A2c2) F4 |\
+B2F2c2F2 d2cB c2F2 |\
+B2FB c2Fc d2cB c2F2 |\
+d2e2f2F2 B2f2b2a2 |\
+g2G2c2B2 A2c2a2g2 |\
+f2F2B2A2 G2B2g2f2 |\
+e2E2_A2G2 F4 G4- |\
+GG=A=B cdec _A2c2_a2f2- |\
+%%%%%%%%%% bar 50 %%%%%%%%%%
+f4-ffed edce dc=Bd |\
+cGcd efef gecg _afga |\
+dedc =Bgfg egfg =Bgfg |\
+cgfg =Bgfg ec'=bc' fc'bc' |\
+gc'=bc' gbab c2e2f2g2 |\
+c2g2e2c2 f2c'2a2f2 |\
+b2f2d2B2 b2b2g2e2 |\
+a2e2c2A2 a2a2^f2d2 |\
+GBAG dADc gbag d'adc' |\
+b4 ^f4 g4 a4 |\
+%%%%%%%%%% bar 60 %%%%%%%%%%
+b4 =b4 c'4 ^c'4 |\
+d'4 =e2^f2 g4 =a2b2 |\
+c'g=f_e c'afa Bfed bgeg |\
+Aedc a^fdf G4 d4 |\
+B6 A2 G2B2A2G2 |\
+(^F2A2) D4 G2D2A2D2 |\
+B2AG A2D2 G2DG A2DA |\
+B2AG A2D2 G2e2c2d2 |\
+[G16d16=b16] |]
+%%pagewidth 8.5in
+%%pageheight 14in
+%%pageheight 11in
+%%stretchlast yes
+%%scale 0.67
+% %%scale 0.57
+% %%vocalfont Times-BoldItalic 13.0
+%%gchordfont Times-BoldRoman 18
+X:1
+T:Little Fugue in G Minor
+M:4/4
+C:J. S. Bach
+C:transcribed by Jeff Bigler
+Z:Jeff Bigler
+Q:1/4=72
+L:1/16
+K:Gm
+% %abc2mtex: yes
+%%staves [1 2]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V:1                           nm="Violin 1"           snm=""  %%
+%%MIDI channel 1                                              %%
+%%MIDI control 7 100	% volume = 100                        %%
+%%MIDI program 41       % General MIDI violin                 %%
+%%MIDI transpose 0                                            %%
+%%MIDI gchordoff                                              %%
+V:2                           nm="Violin 2"           snm=""  %%
+%%MIDI channel 2                                              %%
+%%MIDI control 7 100	% volume = 100                        %%
+%%MIDI program 41       % General MIDI Violin                 %%
+%%MIDI transpose 0                                            %%
+%%MIDI gchordoff                                              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V:1     % Violin 1
+%%%%%%%%%% bar 1 %%%%%%%%%%
+!f! G4 d4 B6 A2 |\
+G2B2A2G2 (^F2A2) D4 |\
+G2D2A2D2 B2AG A2D2 |\
+G2DG A2DA B2AG ADdc |
+BAGB AG^FA GDGA Bcd=e |\
+!mf! =f=edf ed^ce d2A2d2e2 |\
+(vfg)ufvg (uTg3f/2g/2) agab agf=e |\
+faga ^caga daga caga |\
+fd^cd gdcd adcd gdcd |\
+%%%%%%%%%% bar10 %%%%%%%%%%
+!mp! A2f2G2=e2 F2A2d2f2 |\
+!p! _e2a2 z2 e2 d2g2 z2 d2 "A"|\
+!mf! cBcd caga Bg^fg Af=ef |\
+g2D2G2A2 (vBc)uBvc (uTc3B/2c/2) |\
+dcd_e dcBA Bdcd ^Fdcd |\
+Gdcd ^Fdcd BGFG cGFG |\
+dG^FG cGFG D2B2C2A2 |\
+B,2D2 GABG \
+!f! D4 A4 |\
+F6 =E2 D2F2E2D2 |\
+(^C2=E2) A,4 D2A,2E2A,2 |\
+%%%%%%%%%% bar 20 %%%%%%%%%%
+F2=ED E2A,2 D2A,D E2A,E |\
+F2=ED E2A,2 vD2vG,2 uA,4 |\
+D2\
+!p!A2d2c2 B2d2g2f2 |\
+_e2G2c2B2 A2c2f2e2 |\
+!crescendo(! d4- !crescendo)! !mf!dg^fg c4- cBAc |\
+"B"!mf! BAGB AG^FA GD=EF GDGA |\
+BGBc dAdc !crescendo(! B6 !crescendo)! !f! A2 |\
+G2B2A2G2 (^F2A2) D4 |\
+G2D2A2D2 B2AG A2D2 |\
+G2DG A2DA B2AG ADdc |\
+%%%%%%%%%% bar 30 %%%%%%%%%%
+BAGB AG^FA !mf!GBcd eBAG |\
+^FABc dAG=F EGAB cGFE |\
+DFGA BdcB \
+!mf! Acde fgfe |\
+"C"dfed cBAc BFGA BcBc |\
+(vd=e)udve (uTe3d/2e/2) f_efg fedc |\
+dfef Afef Bfef Afef |\
+dBAB eBAB fBAB eBAB |\
+BcdB edce dcde dcBd |\
+cBcd cBAc BABc BAGB |\
+!p! A2f2 z2 _A2 G2e2 z2 G2 |\
+%%%%%%%%%% bar 40 %%%%%%%%%%
+F2d2 z2 !mp! F2 \
+EGcB =AGFE |\
+"D"DEFG ABcA BFGA BcBc |\
+(!mf! vd=e)udve (uTe3d/2e/2) fefg fgf_e |\
+% FGFG TG3F/2G/2 AGAB AGF_E |\ % alternate for bar 42
+dfef Afef Bfef Afef |\
+dbab ebab fbab ebab |\
+fefg c3a babc' bagf |\
+edef edcB agab agfe |\
+dcde dcBA gfg_a gfed |\
+c=Bcd cdec fedc =B_agf |\
+e8- ecde fg_af "E"|\
+%%%%%%%%%% bar 50 %%%%%%%%%%
+=BcdB G2 z2 \
+!f! c4 g4 |\
+e6 d2 c2e2d2c2 |\
+(=B2d2) G4 c2G2d2G2 |\
+e2dc d2G2 c2Gc d2Gd |\
+e2dc dGgf edce dc=Bd |\
+cg_eg ceG_B AcAc FACE |\
+Dfdf BdFA GBGB EGB,D |\
+Cece Ac=EG ^FAFA DFA,C "F"|\
+!p! B,2G2A,2^F2 G2d2^F2d2 |\
+!crescendo(!GBAG dADc BdcB =fc=Fe |\
+%%%%%%%%%% bar 60 %%%%%%%%%%
+dfed gdGf =egfe aeA!crescendo)!g |\
+!f! ^f_edc BdAd G_ag=f gf_ed |\
+e4 =a4- [a4d4] g4- |\
+[g4c4] ^f4 \
+!f! G,B,DG ^FG=EF |\
+G6 ^F2 G4 uA2uD2 |\
+Dg^f=e dcBA \
+!mf! Bdcd ^Fdcd |\
+Gdcd ^Fdcd !crescendo(! BGFG cGFG |\
+dG^FG cGF!crescendo)!G \
+!f! B2g2A2^f2 |\
+[G,16D16=B16g16] |]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V:2     % Violin 2
+%%%%%%%%%% bar 1 %%%%%%%%%%
+z16 |\
+z16 |\
+z16 |\
+z16 |\
+z16 |\
+!f! D4 A4 F6 =E2 |\
+D2F2=E2D2 (^C2E2) A,4 |\
+D2A,2=E2A,2 F2ED E2A,2 |\
+D2A,D =E2A,E F2ED EA,AG |\
+%%%%%%%%%% bar 10 %%%%%%%%%%
+F=EDF ED^CE DA,DE FGA=B |\
+!mf! c_Bcd cBAc BABc BAGB |\
+A2G2^F2D2 \
+!f! G4 d4 |\
+B6 A2 G2B2A2G2 |\
+(^F2A2) D4 G2D2A2D2 |\
+B2AG A2D2 G2DG A2DA |\
+B2AG ADdc BAGB AG^FA |\
+GDGA Bcd=e \
+!mf! =fedf ed^ce |\
+d2A2d2=e2 (vfg)ufvg (uTg3f/2g/2) |\
+agab agf=e faga ^caga |\
+%%%%%%%%%% bar 20 %%%%%%%%%%
+daga ^caga fdcd gdcd |\
+ad^cd gdcd f2=ed (uT^c3d) |\
+d=cd=e dcBA GFG=A GF_ED |\
+cBcd cBAG FEFG FEDC |\
+B,Bcd e4- eABc d4 |\
+!f! uG4 vd4 uB6 uA2 |\
+GBAG ^FG=EF \
+!mf! GDEF GDGA |\
+(vBc)uBvc (uTc3B/2c/2) dcd_e dcBA |\
+Bdcd ^Fdcd Gdcd Fdcd |\
+BG^FG cGFG dGFG cGFG |\
+%%%%%%%%%% bar 30 %%%%%%%%%%
+!mp! G2B2 cBAc B4- BdcB |\
+A4- AcBA G4- GBAG |\
+F6 =E2 !crescendo(!F2_E2D2!crescendo)!C2 |\
+!f! B,4 F4 D6 C2 |\
+B,2D2C2B,2 (A,2C2) F4 |\
+B2F2c2F2 d2cB c2F2 |\
+B2FB c2Fc d2cB cFfe |\
+dcBd cBAc B2g2 z2 \
+!p! G2 |\
+A2f2 z2 F2 G2f2c2=e2 |\
+!mf! f_efg fedf edef edce |\
+%%%%%%%%%% bar 40 %%%%%%%%%%
+dcde dcBd cBcd cBAc |\
+!f! B4 f4 d6 c2 |\
+B2d2c2B2 (A2c2) F4 |\
+B2F2c2F2 d2cB c2F2 |\
+B2FB c2Fc d2cB c2F2 |\
+d2e2f2F2 B2\
+!p!f2b2a2 |\
+g2G2c2B2 A2c2a2g2 |\
+f2F2B2A2 G2B2g2f2 |\
+e2E2_A2G2 F4 G4- |\
+!mf! GG=A=B cdec \
+!p! _A2c2_a2f2- |\
+%%%%%%%%%% bar 50 %%%%%%%%%%
+f4- \
+!mf! ffed edce dc=Bd |\
+cGcd efef gecg _afga |\
+dedc =BGFG EGFG =B,GFG |\
+CGFG =B,GFG Ec=Bc FcBc |\
+Gc=Bc GBAB \
+!p! C2E2F2G2 |\
+C2G2E2C2 F2c2A2F2 |\
+B2F2D2B,2 B2B2G2E2 |\
+A2E2C2A,2 A2A2^F2D2 |\
+!mp!G,!crescendo(!B,A,G, DA,DC GBAG dAD!crescendo)!c |\
+B4 !mp!
+^F4!crescendo(! G4 A4 |\
+%%%%%%%%%% bar 60 %%%%%%%%%%
+B4 =B4 c4 ^c4 |\
+!crescendo)!
+!f! d4 =E2^F2 G4 =A2B2 |\
+cG=F_E cAFA B,FED BGEG |\
+A,EDC A^FDF
+!f! G4 d4 |\
+B6 A2 G2B2A2G2 |\
+(^F2A2) D4 G2D2A2D2 |\
+B2AG A2D2 G2DG A2DA |\
+B2AG A2D2 G2E2C2D2 |\
+[G,16D16=B16] |]
+W:playing time: approximately 4 minutes
+W:
+W:Copyright © 2003 by Jeff Bigler.  Permission is hereby granted to copy, distribute, modify, and/or perform this
+W:music in any form as long as this copyright notice is included.
+X:5
+T:Meine Seel' erhebt den Herren
+S:Bach/Riemenschneider #358
+C:J.S. Bach
+S:Jack Campin abcusers 2003-7-22
+M:C
+L:1/4
+V:1
+V:2
+V:3 bass
+V:4 bass
+K:GMin
+V:1 d2  f2 |d  d  d  d |e2    d2   |c2    c2 |HB4  |
+V:2 G2  F2 |F ^F  G  A |G     F2 G |G2    F2 |HF4  |
+V:3 B,2 C2 |D  C  B, A,|B, C2    B,|B,2   A,2|HD4  |
+V:4 G,2 A,2|B, A, G,^F,|G, A, B, G,|E, C, F,2|HB,,4|
+%
+V:1 d2  f2 |c  c  c  G |B2    A2   |HG4  |
+V:2 F4     |F  F  E  G |G2   ^F2   |HD4  |
+V:3 B,4    |A, C  C  C |D3       C |HB,4 |
+V:4 B,2 D,2|F, A, G, E,|D, C, D,2  |HG,,4|
+%
+V:1 d2  f2 |d  d d   d |e2    d2   |c2    c2 |HB4  |
+V:2 G2  A2 |F3      ^F |G  A  B2-  |B  B  B A|HF4  |
+V:3 B,2 C2 |D  C D2    |D  C  B, F |G2    F C|HD4  |
+V:4 G,2 F,2|B, C B,  A,|B, C  F, D,|E, C, F,2|HB,,4|
+%
+V:1 d2     f2   |c  c  c c |c2    G  A|B2     A2   | G4-        |G4-        |G4       |H G4  |]
+V:2 z4          |F  G  A B |c2    C2  |D2     D  C |=B, D  G  F |E4-        |E2  D  C |H D4  |]
+V:3 z2     F, G,|A, B, C2- |C  D =E ^F|G2    =F  E | D =B, C  D-|D  G, C2-  |C2 =B, A,|H=B,4 |]
+V:4 B,, C, D, E,|F,3     G,|A, B, C2  |B,, C, D, E,| F,2   E, D,|C, D, E, F,|G,4      |H G,,4|]
+X:5
+T:Meine Seel' erhebt den Herren
+S:Bach/Riemenschneider #358
+C:J.S. Bach
+S:Jack Campin abcusers 2003-7-22
+M:C
+L:1/4
+V:1
+V:2
+V:3 bass
+V:4 bass
+K:GMin
+V:1 d2  f2 |d  d  d  d |e2    d2   |c2    c2 |HB4  |
+V:2 G2  F2 |F ^F  G  A |G     F2 G |G2    F2 |HF4  |
+V:3 B,2 C2 |D  C  B, A,|B, C2    B,|B,2   A,2|HD4  |
+V:4 G,2 A,2|B, A, G,^F,|G, A, B, G,|E, C, F,2|HB,,4|
+%
+V:1 d2  f2 |c  c  c  G |B2    A2   |HG4  |
+V:2 F4     |F  F  E  G |G2   ^F2   |HD4  |
+V:3 B,4    |A, C  C  C |D3       C |HB,4 |
+V:4 B,2 D,2|F, A, G, E,|D, C, D,2  |HG,,4|
+%
+V:1 d2  f2 |d  d d   d |e2    d2   |c2    c2 |HB4  |
+V:2 G2  A2 |F3      ^F |G  A  B2-  |B  B  B A|HF4  |
+V:3 B,2 C2 |D  C D2    |D  C  B, F |G2    F C|HD4  |
+V:4 G,2 F,2|B, C B,  A,|B, C  F, D,|E, C, F,2|HB,,4|
+%
+V:1 d2     f2   |c  c  c c |c2    G  A|B2     A2   | G4-        |G4-        |G4       |H G4  |]
+V:2 z4          |F  G  A B |c2    C2  |D2     D  C |=B, D  G  F |E4-        |E2  D  C |H D4  |]
+V:3 z2     F, G,|A, B, C2- |C  D =E ^F|G2    =F  E | D =B, C  D-|D  G, C2-  |C2 =B, A,|H=B,4 |]
+V:4 B,, C, D, E,|F,3     G,|A, B, C2  |B,, C, D, E,| F,2   E, D,|C, D, E, F,|G,4      |H G,,4|]
+X:1
+T:Praeludium I
+C:J.S. Bach
+B:Das Wohltemperierte Clavier
+Z:Abc by Henrik Norbeck <henrik.norbeck@mailbox.swipnet.se> 2002-8-12
+M:C
+L:1/16
+Q:1/4=80
+K:C
+%%midi program 0 (piano)
+[C8z] [E7z] Gc eGce [C8z] [E7z] Gc eGce|
+[C8z] [D7z] Ad fAdf [C8z] [D7z] Ad fAdf|
+[B,8z] [D7z] Gd fGdf [B,8z] [D7z] Gd fGdf|
+[C8z] [E7z] Gc eGce [C8z] [E7z] Gc eGce|
+[C8z] [E7z] Ae aAea [C8z] [E7z] Ae aAea|
+[C8z] [D7z] Ad ^fAd^f [C8z] [D7z] Ad ^fAd^f|
+[B,8z] [D7z] Gd gGdg [B,8z] [D7z] Gd gGdg|
+[B,8z] [C7z] EG cEGc [B,8z] [C7z] EG cEGc|
+[A,8z] [C7z] EG cEGc [A,8z] [C7z] EG cEGc|
+[D,8z] [A,7z] D^F cD^Fc [D,8z] [A,7z] D^F cD^Fc|
+[G,8z] [B,7z] DG BDGB [G,8z] [B,7z] DG BDGB|
+[G,8z] [_B,7z] EG _dEG_d [G,8z] [_B,7z] EG _dEG_d|
+[F,8z] [A,7z] DA dDAd [F,8z] [A,7z] DA dDAd|
+[F,8z] [_A,7z] DF BDFB [F,8z] [_A,7z] DF BDFB|
+[E,8z] [G,7z] CG cCGc [E,8z] [G,7z] CG cCGc|
+[E,8z] [F,7z] A,C FA,CF [E,8z] [F,7z] A,C FA,CF|
+[D,8z] [F,7z] A,C FA,CF [D,8z] [F,7z] A,C FA,CF|
+[G,,8z] [D,7z] G,B, FG,B,G [G,,8z] [D,7z] G,B, FG,B,G|
+[C,8z] [E,7z] G,C EG,CE [C,8z] [E,7z] G,C EG,CE|
+[C,8z] [G,7z] _B,C E_B,CE [C,8z] [G,7z] _B,C E_B,CE|
+[F,,8z] [F,7z] A,C EA,CE [F,,8z] [F,7z] A,C EA,CE|
+[^F,,8z] [C,7z] A,C _EA,C_E [^F,,8z] [C,7z] A,C _EA,C_E|
+[_A,,8z] [F,7z] B,C DB,CD [_A,,8z] [F,7z] B,C DB,CD|
+[G,,8z] [F,7z] G,B, DG,B,D [G,,8z] [F,7z] G,B, DG,B,D|
+[G,,8z] [E,7z] G,C EG,CE [G,,8z] [E,7z] G,C EG,CE|
+[G,,8z] [D,7z] G,C FG,CF [G,,8z] [D,7z] G,C FG,CF|
+[G,,8z] [D,7z] G,B, FG,B,F [G,,8z] [D,7z] G,B, FG,B,F|
+[G,,8z] [_E,7z] A,C ^FA,C^F [G,,8z] [_E,7z] A,C ^FA,C^F|
+[G,,8z] [E,7z] G,C GG,CG [G,,8z] [E,7z] G,C GG,CG|
+[G,,8z] [D,7z] G,C FG,CF [G,,8z] [D,7z] G,C FG,CF|
+[G,,8z] [D,7z] G,B, FG,B,F [G,,8z] [D,7z] G,B, FG,B,F|
+[C,,8z] [C,7z] G,_B, EG,_B,E [C,,8z] [C,7z] G,_B, EG,_B,E|
+[C,,16z] [C,15z] F,A, CFCA, CA,F,A, F,D,F,D,|
+[C,,16z] [B,,15z] GB dfdB dBGB DFED|
+[C,,16C,16E16G16c16]|]
+X:1
+T:Praeludium I
+C:J.S. Bach
+B:Das Wohltemperierte Clavier
+Z:Abc by Henrik Norbeck <henrik.norbeck@mailbox.swipnet.se> 2002-8-12
+M:C
+L:1/16
+Q:1/4=80
+K:C
+%%midi program 0 (piano)
+[C8z] [E7z] Gc eGce [C8z] [E7z] Gc eGce|
+[C8z] [D7z] Ad fAdf [C8z] [D7z] Ad fAdf|
+[B,8z] [D7z] Gd fGdf [B,8z] [D7z] Gd fGdf|
+[C8z] [E7z] Gc eGce [C8z] [E7z] Gc eGce|
+[C8z] [E7z] Ae aAea [C8z] [E7z] Ae aAea|
+[C8z] [D7z] Ad ^fAd^f [C8z] [D7z] Ad ^fAd^f|
+[B,8z] [D7z] Gd gGdg [B,8z] [D7z] Gd gGdg|
+[B,8z] [C7z] EG cEGc [B,8z] [C7z] EG cEGc|
+[A,8z] [C7z] EG cEGc [A,8z] [C7z] EG cEGc|
+[D,8z] [A,7z] D^F cD^Fc [D,8z] [A,7z] D^F cD^Fc|
+[G,8z] [B,7z] DG BDGB [G,8z] [B,7z] DG BDGB|
+[G,8z] [_B,7z] EG _dEG_d [G,8z] [_B,7z] EG _dEG_d|
+[F,8z] [A,7z] DA dDAd [F,8z] [A,7z] DA dDAd|
+[F,8z] [_A,7z] DF BDFB [F,8z] [_A,7z] DF BDFB|
+[E,8z] [G,7z] CG cCGc [E,8z] [G,7z] CG cCGc|
+[E,8z] [F,7z] A,C FA,CF [E,8z] [F,7z] A,C FA,CF|
+[D,8z] [F,7z] A,C FA,CF [D,8z] [F,7z] A,C FA,CF|
+[G,,8z] [D,7z] G,B, FG,B,G [G,,8z] [D,7z] G,B, FG,B,G|
+[C,8z] [E,7z] G,C EG,CE [C,8z] [E,7z] G,C EG,CE|
+[C,8z] [G,7z] _B,C E_B,CE [C,8z] [G,7z] _B,C E_B,CE|
+[F,,8z] [F,7z] A,C EA,CE [F,,8z] [F,7z] A,C EA,CE|
+[^F,,8z] [C,7z] A,C _EA,C_E [^F,,8z] [C,7z] A,C _EA,C_E|
+[_A,,8z] [F,7z] B,C DB,CD [_A,,8z] [F,7z] B,C DB,CD|
+[G,,8z] [F,7z] G,B, DG,B,D [G,,8z] [F,7z] G,B, DG,B,D|
+[G,,8z] [E,7z] G,C EG,CE [G,,8z] [E,7z] G,C EG,CE|
+[G,,8z] [D,7z] G,C FG,CF [G,,8z] [D,7z] G,C FG,CF|
+[G,,8z] [D,7z] G,B, FG,B,F [G,,8z] [D,7z] G,B, FG,B,F|
+[G,,8z] [_E,7z] A,C ^FA,C^F [G,,8z] [_E,7z] A,C ^FA,C^F|
+[G,,8z] [E,7z] G,C GG,CG [G,,8z] [E,7z] G,C GG,CG|
+[G,,8z] [D,7z] G,C FG,CF [G,,8z] [D,7z] G,C FG,CF|
+[G,,8z] [D,7z] G,B, FG,B,F [G,,8z] [D,7z] G,B, FG,B,F|
+[C,,8z] [C,7z] G,_B, EG,_B,E [C,,8z] [C,7z] G,_B, EG,_B,E|
+[C,,16z] [C,15z] F,A, CFCA, CA,F,A, F,D,F,D,|
+[C,,16z] [B,,15z] GB dfdB dBGB DFED|
+[C,,16C,16E16G16c16]|]
+X: 1
+T: Round
+C: J.S.Bach (attrib)
+M: 2/4
+L: 1/16
+K: G
+D2 | G2G2 D2D2 | E2 E4 B,2 | C2A,2 D2F2 | G2 G,4 D2 | G2 G,4 B,2 | C2A,2 D2F2 | G2 G,4 |]
+D2 | B3c  B3A  | A2 G4 G2  | A2A2  F2F2 | GFGA B4   | GFGA  B2G2 | A2A2  F2F2 | G6 |]
+D2 | d3e  d3c  | c2 B4 B2  | c2c2  A2A2 | BABc d4   | BABc  d2B2 | c2c2  A2A2 | G6 |]
+X: 1
+T: Sonata in Bb
+T: f\"ur 2 Alt-Blockfl\"oten und Basso Continuo
+T: BWV 1039
+C: J.S.Bach (1685-1750)
+N: Also published as a sonata for viola da gambo and cembalo.
+N: Voice 2 is the gamba part.
+M: 12/8
+L: 1/16
+%%staffsep 60
+K: Bb
+P: Adagio
+V: 1
+[|f24- |
+V: 2
+[|d2fedc d2B2cd/e/ {e}d2fedc dBf2ga/b/ |
+V: 3 clef=bass
+[|B2d2f2 b2d'2f'2 b2d2f2 B2d2B2 |
+%
+T: II
+P: Allegro ma non tanto
+M: 3/4
+L: 1/16
+%%measurefirst
+V: 1
+[|z4 z2F2 Bcd2 |
+V: 2
+[|z12 |
+V: 3
+[|B4 d4 B4 |

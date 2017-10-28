@@ -1,0 +1,187 @@
+
+X: 0
+T: Tom Thumb
+Z: 2016 John Chambers <jc:trillian.mit.edu>
+B: Robert Purdie "Tom Thumb", Edinburgh ca. 1810
+F: http://digital.nls.uk/special-collections-of-printed-music/pageturner.cfm?id=102744622
+K:
+%%sep 2 2 400
+%%center TOM THUMB
+%%center a Favorite Dance.
+%%center with Three New Strathspeys and a Reel.
+%%center for the
+%%center Piano Forte &c.
+%%center -----------------------------------
+%%center Enin.r Printed and Sold by ROBERT PURDIE Music Seller 70 Princes Street.
+%%center J.Anderson Engraver.
+%%begintext align
+%% Transcription notes:
+%% The tunes are are unnumbered; their count (1-5)
+%% is used in the file name to preserve the publication order.
+%% There are simple bass lines.
+%% Despite the title, there is no dance description.
+%%endtext
+%%sep 2 1 400
+%%sep 1 2 400
+
+
+X: 1
+T: Tom Thumb
+%R: reel
+B: "Tom Thumb a Favorite Dance with Three New Strathspeys and a Reel", R.RobertPurdie, ed. p.1 #1
+F: http://digital.nls.uk/special-collections-of-printed-music/pageturner.cfm?id=118869468
+Z: 2016 John Chambers <jc:trillian.mit.edu>
+M: C|
+L: 1/8
+K: Bb
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+V: 1
+!segno!|:\
+TB2FD TB2FD | BdcB BAGF |\
+GABG GFED | E2F2 "^Fine."B4 ::\
+d2dB ~d2~d2 | ddfd TB2TB2 |
+c2cA ccTc2 | FGFE EDCB, ::\
+deff [fd][fd][fd][fd] | fbag gfed |\
+eege fdcB | cgfe edcB !segno!:|
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+V: 2 clef=bass middle=d
+!segno!|:\
+[b2B2][b2B2] b2b2 | b2b2 d2d2 |\
+e2e2 G2G2 | e2f2 "^Fine."B4 ::\
+B2b2 B2b2 | B2b2 B2b2 |\
+F2f2 F2f2 | F2F2 B2B2 ::\
+[b2d2][b2d2] [b2d2][b2d2] | [b2d2][b2d2] [b2d2][b2d2] |\
+[b2e2][b2e2] [b2d2][b2d2] | f2a2 b2b2 !segno!:|
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+X: 2
+T: Mr Guthrie of Craigie's Strathspey.
+C: by J. Boick.
+%R: strathspey
+B: "Tom Thumb a Favorite Dance with Three New Strathspeys and a Reel", R.RobertPurdie, ed. p.1 #2
+F: http://digital.nls.uk/special-collections-of-printed-music/pageturner.cfm?id=118869468
+Z: 2016 John Chambers <jc:trillian.mit.edu>
+M: C
+L: 1/8
+K: Bb
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+V: 1
+F |\
+TB>cBF D>B,TB,D | E>F (G/F/).E/.D/ E>CC>A |\
+B>c {Bc}d>c B>FDB, | TE>GF>A B2B :|
+d/e/ |\
+f>ba>b Tg>bf>d | e>dTc>B Tc>dTg2 |\
+f>gfd b>fd>B | d>f (e/d/).c/.B/ Tc2B>d |
+(3(fga) (3(bab) (3(gab) (3(fdB) | (3(gfe) (3(dcB) Tc>B TGA |\
+TB>c {Bc}d>c B>FDB, | E>GF>A B2B |]
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+V: 2 clef=bass middle=d
+z |\
+B2B2 B2B2 | c2c2 e2e2 |\
+B2B2 B2B2 | e2f2 B2B :| z |\
+B2B2 B2B2 | e2=e2 f2_e2 |
+d2d2 B2B2 | B2B2 f2B2 |\
+B2B2 B2B2 | B2B2 e2e2 |\
+B2B2 B2B2 | e2f2 B2B |]
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+X: 3
+T: Mrs Rait of Anniston's Strathspey
+C: by J. Boick.
+%R: strathspey
+B: "Tom Thumb a Favorite Dance with Three New Strathspeys and a Reel", R.RobertPurdie, ed. p.2 #1
+F: http://digital.nls.uk/special-collections-of-printed-music/pageturner.cfm?id=118869468
+Z: 2016 John Chambers <jc:trillian.mit.edu>
+N: Both strains have final repeat but no initial repeat symbol; not fixed.
+M: C
+L: 1/16
+K: A
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+V: 1
+E2 |\
+AA3Tc3A F4 F3E | AA3Tc3A eA3c3e |\
+c3e {d}c2BA {G}F4 F2E2 | (AB).c.d e2c2 A4 A2 :|
+cd |\
+eA3Tc3e {d}c2BA TB2cd | eA3c3e | Ta3ec2d2 |\
+eA3c3e {d}c2BA TB3c | .A.B.c.d e3c {B}A4 A2cd |
+eA3c3e {d}c2BA B2cd | .e2.A2.f2.A2 .g2.A2.a2.f2 |\
+eA3c3e {d}c2BA TB3c | .A.B.c.d e3c A4 A2 :|
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+V: 2 clef=bass middle=d
+z2 |\
+A4A4 d4d4 | A4A4 A4A4 |\
+A4A4 d4d4 | a4e4 A6 :|\
+z2 |\
+A4A4 e4e4 | A4A4 A4A4 |
+A4A4 e4e4 | A4A4 A4A4 |\
+A4A4 e4e4 | A4A4 A4A4 |\
+A4A4 e4e4 | a4e4 A6 :|
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+X: 4
+T: Mr Rait of Anniston's Reel
+C: by J.Boick.
+%R: reel
+B: "Tom Thumb a Favorite Dance with Three New Strathspeys and a Reel", R.RobertPurdie, ed. p.2 #2
+F: http://digital.nls.uk/special-collections-of-printed-music/pageturner.cfm?id=118869468
+Z: 2016 John Chambers <jc:trillian.mit.edu>
+M: C|
+L: 1/8
+K: A
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+V: 1
+d |\
+cedf {f}e2cA | (FA) .d.f ecBd |\
+cedf {f}e2cA | dBGB A2A :|\
+d |\
+.c.e.a.f .e.d.c.e | .d.c.B.A .G.F.E.d |
+.c.e.a.g .f.g.a.f | (3(gab) af {f}e2ed |\
+.c.e.a.g .f.e.d.c | .d.c.B.A .G.F.E.d |\
+.c.A.d.B .e.c.f.d | .c.B.A.G A2A |]
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+V: 2 clef=bass middle=d
+z |\
+A2A2 A2A2 | d2d2 c2e2 |\
+A2A2 A2A2 | d2e2 A2A :|\
+z |\
+A2A2 A2A2 | B2c2 d2e2 |
+A2A2 d2d2 | e2B2 e2e2 |\
+A2A2 A2A2 | B2c2 d2e2 |\
+A2B2 c2d2 | e2E2 A2A |]
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+X: 5
+T: Major Mc Niel's Strathspey
+C: by J.Boick.
+%R: strathspey
+B: "Tom Thumb a Favorite Dance with Three New Strathspeys and a Reel", R.RobertPurdie, ed. p.2 #3
+F: http://digital.nls.uk/special-collections-of-printed-music/pageturner.cfm?id=118869468
+Z: 2016 John Chambers <jc:trillian.mit.edu>
+M: C
+L: 1/16
+K: Bb
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+V: 1
+FE |\
+D3FB3F GE3E3e | d3fd3B Tc3Bc3d |\
+D3FB3F GE3E3e | {e}d2cB {d}c2BA B4B2 :|
+e2 |\
+d2f2Tf3d e3dTc2e2 | Td3fd2B2 {B}TA3GF2B2 |\
+{Bc}d3c TB2F2 e3dc2e2 | d3ff2d2 .e.d.c.B .A.G.F.E |
+D3FB3F GE3E3e | d3fTd3B c3Bc3d |\
+D3FB3F G3E e3c | d3Bc3A B4B2 |]
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+V: 2 clef=bass middle=d
+z2 |\
+B4B4 e4c4 | B4B4 f4f4 |\
+B4d4 e4c4 | f4F4 B4B2 :|\
+z2 |\
+B4B4 c4c4 | B4d4 f4f4 |
+B4d4 c4c4 | B4B4 c4f4 |\
+B4d4 e4c4 | d4d4 f4f4 |\
+B4B4 e4c4 | f4F4 B4B2 |]
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
