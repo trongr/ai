@@ -32,8 +32,13 @@ from lib import utils
 
 FILENAME = sys.argv[1]
 DATA = open(FILENAME, 'r').read()
-# DATA = DATA[100000:110000]
-CHARS = list(set(DATA))
+
+# TODO. Replace this list with new char set if DATA contains new chars
+CHARS = ['\x93', ' ', '$', '(', ',', '0', '4', '8', '<', '@', '\xc3', 'D', 'H', 'L', 'P', 'T', 'X', '\\', '`', 'd', 'h', 'l', 'p', '\xf3', 't', 'x', '|', '\xff', '\x80', '\x94', '\x98', '#', "'", '+', '/', '3', '7', ';', '?', '\xc0', 'C', 'G', 'K', 'O', 'S', 'W', '[', '_', '\xe0', 'c', 'g', 'k', 'o', 's', 'w', '{', '\x89', '\n', '\x99', '"', '&', '\xa9', '*', '.', '2', '6', ':', '>', 'B', 'F', 'J', 'N', 'R', 'V', 'Z', '^', 'b', 'f', '\xe9', 'j', 'n', 'r', 'v', '\xf9', 'z', '~', '\t', '\x96', '!', '%', ')', '-', '1', '5', '9', '=', 'A', 'E', 'I', '\xca', 'M', 'Q', 'U', 'Y', ']', 'a', '\xe2', 'e', 'i', 'm', 'q', '\xf2', 'u', 'y', '}']
+CHARS.extend(list(set(DATA)))
+CHARS = list(set(CHARS))
+print("Char set", CHARS)
+
 DATA_SIZE, VOCAB_SIZE = len(DATA), len(CHARS)
 CHAR_TO_IX = {ch: i for i, ch in enumerate(CHARS)}
 IX_TO_CHAR = {i: ch for i, ch in enumerate(CHARS)}

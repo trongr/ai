@@ -1,0 +1,36 @@
+%%scale         0.65
+%%staffwidth    18.6cm
+%%staffsep      40
+%%landscape     0
+%%lineskipfac   1.1
+%%staffsep      40
+%%titleleft     no
+%%maxshrink     1.0
+%%botmargin     0.50cm
+%%topspace      0.00cm
+%%titlespace    0.30cm
+%%subtitlespace 0.00cm
+%%composerspace 0.30cm
+%%musicspace    0.00cm
+%%partsspace    0.20cm
+%%titlefont     Times-Roman-bold 16
+%%subtitlefont  Times-Roman 14
+%%composerfont  Times-Italic   11
+%%partsfont     Times-Roman-Bold 14
+%%barlabelfont  Times-Roman-Bold 10
+%%vocalfont     Times-Roman-Bold 14
+%%gchordfont    Times-Roman-Bold 14
+%%textfont      Times-Roman    12
+%%wordsfont     Times-Roman    12
+%%botmargin     0.50cm
+
+X: 1
+T: 3
+M: 3/4
+L: 1/8
+K: Dm
+P: Largo
+V:1
+[| z2 a2 a2 | (d'6- |d'^c'd'e'ag) | (fefedc) | (BAGABG) | A2 z2 ^c2 | d2 b3 b | (bg) a3 a |]
+V:2
+[| (defedc) | (BAGABG) | A2 z2 ^c2 | d2 a2 a2 | (d'6- |d'^c'd'e'ag) | (fed=cdB) | (cefefF) |]
