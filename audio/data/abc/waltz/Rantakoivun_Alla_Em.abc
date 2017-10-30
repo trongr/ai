@@ -1,0 +1,12 @@
+X: 1
+T: Rantakoivun alla  (Em)
+C: Onni Laihanen (1916-1956)
+M: 3/4
+L: 1/4
+K: Em
+%%staffsep 45
+B, \
+| "Em"E2^D | E2F | G2F | G2A | Bd_d | "Am"c2d | "Em"B3- | "E7"BBc \
+| "Am"AFG | "B7"A2B | "Em"G3- | GEF | GEF | "C"G2A | "B7"F3- | FzB, |
+| B,^C^D | "Em"E2F | G2A | B2"Cdim"e | "Am"f2e | "D7"cde | "G"B3- | "E7"BBc \
+| "Am"AFG | "B7"A2B | "Em"G2E | "Am"d2c | "Em"BAG | "B7"F2B | "Em"E3- | E2 |]

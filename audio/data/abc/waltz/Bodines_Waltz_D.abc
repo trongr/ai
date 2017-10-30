@@ -1,0 +1,21 @@
+X: 1
+T: Bodine's Waltz [D]
+C: Dale Hopkins
+R: waltz
+Z: 2007 John Chambers <jc:trillian.mit.edu>
+S: printed MS with handwritten chords, passed out at NOMAD festival
+N: Originally 9/8 meter, key of A
+N: Variation: Replace D chords with Bm in the first section.
+M: 9/16
+L: 1/16
+K: D
+A d2e \
+| "D"f3- f3 f2g | f3 e3 def | "G"g3- g3 g2f | g3- g3 d2e \
+| "D"f3- f3 f2g | f3 e3 def | "Em"e3- e3 e2f | "A7"e3- e3 d2e |
+| "D"f3- f3 f2g | f3 e3 def | "G"g3- g2f g2a | "Em"g3- gfe d2e \
+| "D"f3- f2e def | "A7"e3- e2d c3 | "G"d3- d3 d2e | "D"d3 z2 :|
+|: D D2E \
+| "D"F2A B2d B2A | "D7"F2A B2A F2F | "G"=F2A B2d B2A | =F2A B2A F2F2 \
+| "D"^F2A B2d B2A | F2A B2A F2=F | "Em"E3- E2E FEF | "A7"G3- GFE D2E |
+| "D"F2A B2d B2A | "D7"F2A B2A F2F | "G"=F2A B2d B2A | =F3- F2z D2E \
+| "D"^F3- F2E D3 | "A7"E3- E2D C3 | "G"D3- D3 D2E | "D"D3 z2 :|

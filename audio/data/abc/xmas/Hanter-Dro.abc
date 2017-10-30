@@ -1,0 +1,72 @@
+
+X: 1
+T: Hanter-dro 1    [G]
+G:Kazimodal
+R:Hanter-dro
+C:Traditionnel, arrangement Ronan Keryell http://kazimodal.trad.org
+Q:C2=116
+M:3/4
+S:Tonioù Breizh-Izel 1926 (Pleuigner)
+K:G
+|: "G"{GA}GF/2G/2 "Am"(Ac) "Bm"{Bc}BG | "C"(AB/2)c/2 "D"dc "Em"{Bc}BG |\
+"G"{GA}GF/2G/2 "Am"(Ac) "Bm"{Bc}BG | "C"(AB/2)c/2 "D"d{cB}c A2 :|
+|: "G"{Bc}BA/2B/2 dd "Em"(BG) | "C"{GA}GF/2G/2 (BA/2)G/2 "D"A2 |\
+"G"{Bc}BA/2B/2 dc "Em"(BG) | "C"{GA}GF/2G/2 "D"(AB) "G"G2 :|
+
+%%sep 1 1 500
+
+X: 2
+T: Hanter-dro 2    [Gm]
+G:Kazimodal
+R:Hanter-dro
+C:Traditionnel, arrangement Ronan Keryell http://kazimodal.trad.org
+Q:C2=116
+M:3/4
+S:Tonioù Breizh-Izel 1925 (Pleskob)
+K:Gm
+  "F"(cB/2)A/2 "Gm"GB (A/2G/2)"F"F | {GA}"Eb"GF/2E/2 "Dm"DG (G/2A/2)"Bb"B \
+| "C"(cB/2)A/2 "Eb"GB (A/2G/2)"F"F | "Dm"(GF/2)E/2 DG "Eb"G2 |
+|| "Gm"(GA/2)B/2 "F"cA "Eb"(B/2A/2)G | "Gm"{GA}GA/2B/2 "Bb"cB "C"A2 \
+| "Gm"(GA/2)B/2 "F"cA "Eb"(B/2A/2)G | "Gm"{GA}GA/2B/2 "Bb"cB "C"A2 ||
+|| "F"(cB/2)A/2 "Gm"GB (A/2G/2)"F"F | "Eb"GF/2E/2 "Dm"DG (G/2A/2)"Bb"B \
+|  "C"(cB/2)A/2 "Eb"GB (A/2G/2)"F"F | "Dm"{GA}(GF/2)E/2 (DG) "Eb"G2 |]
+
+%%sep 1 1 500
+
+X: 4
+T: Hanter-dro 3    [Dm]
+G:Kazimodal
+R:Hanter-zañs
+C:Traditionnel, arrangement Ronan Keryell http://kazimodal.trad.org
+Q:C2=100
+M:3/4
+S:Tonioù Breizh-Izel 1910 (Plañwour/An Oriant)
+K:Dm
+|: "Dm"DF/2E/2 D"F"F {EF}"C"E2 \
+|  "Gm"(G/2F/2)(G/2A/2) {FG}"Am"FG/2E/2 "Bb"FD \
+|  "Dm"DF/2E/2 D"F"F {EF}"C"E2 \
+|  "Gm"(G/2F/2)A/2G/2 {FG}"Bb"F"C"(E/2F/2) "Dm"D2 :|
+|: "F"A(A/2B/2) "Gm"GA {FG}"Bb"FD \
+|  "Gm"G(G/2A/2) "C"EG "Bb"(F/2E/2)(F/2G/2) \
+|  "F"A(A/2B/2) "Gm"GA {FG}"Bb"FD \
+| "C"G(G/2A/2) {FG}"Bb"F"C"E "Dm"D2 :|
+
+%%sep 1 1 500
+
+X: 5
+T: Hanter-dro 3    [Em]
+G:Kazimodal
+R:Hanter-zañs
+C:Traditionnel, arrangement Ronan Keryell http://kazimodal.trad.org
+Q:C2=100
+M:3/4
+S:Tonioù Breizh-Izel 1910 (Plañwour/An Oriant)
+K:EDor
+|: "Em"EG/2F/2 EG "D"{FG}F2 \
+| "Am"(A/2G/2)(A/2B/2) "Bm"{GA}GA/2F/2 "C"GE \
+| "Em"EG/2F/2 EG "D"{FG}F2 \
+| "Am"(A/2G/2)B/2A/2 "C"{GA}G"D"F "Em"E2 :|
+|: "G"B(B/2c/2) "Am"AB "C"{GA}GE \
+| "Am"A(A/2B/2) "D"FA "C"(G/2F/2)(G/2A/2) \
+| "G"B(B/2c/2) "Am"AB "C"{GA}GE \
+| "D"A(A/2B/2) "C"{GA}G"D"F "Em"E2 :|

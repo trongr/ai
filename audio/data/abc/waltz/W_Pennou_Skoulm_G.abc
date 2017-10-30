@@ -1,0 +1,15 @@
+X: 1
+T: Waltz from Pennou Skoulm
+N: Pennou Skoulm was a Breton band in the late 1980s.
+R: waltz
+Z: 2006 John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/8
+K: G
+DF \
+| "G"GF GA Bc | d2 dc BG | "Am"c2 cB AG | "D7"A2 FA AD \
+| "G"GF GA Bc | d2 dc BG | "Am"cB AG FG | "D7"A4 :|
+|: d2 \
+| "C"ed e2 "D7"f2 | "G"g3 d BG | "Am"cB AG FG | "D7"A3 g fd \
+| "C"ed e2 "D7"f2 | "G"g3 d BG | "Am"cB AG FG |["1-N" "D7"A4 :|
+|["Coda" "D7"A2 FA AD | "G"HG6 |]

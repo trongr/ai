@@ -1,0 +1,23 @@
+X: 1
+T: All Things Are Quite Silent  [Am]
+T: My Bonny, Bonny Boy
+O: trad English
+N: For dance by Victor Skowronki (2005)
+N: Tunes collected by Ralph Vaughan Williams
+R: waltz
+Z: 2012 John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/8
+K: Am
+"A"[|] A2 |\
+"Am"c2 B2 A2 | "D"a2 g2 a2 |  "Am"e3 d ed | "(D)"c2 B2 A2 |\
+"Am"c2 c2 c2 | "G"d2 c2 d2 | "C"e4 f2 | "E"e4 e2 |
+"G"g2 a2 g2 | "C"g2 e2 c2 | "D"a2 g2 a2 | "Am"e2 d2 c2 |\
+"D"d2 a2 a2 | "Em"g2 A2 B2 | "C"c3 def | "E"e4 |] [K:^f]
+K: Ador
+"B"[|] ed |\
+"Am"c2 B2 A2 | "D"d2 e2 f2 | "D"d2 ed "G"B2 | "Am"A4 AB |\
+c2 B2 A2 | "D"d2 ed f2 | "D"d2 e2 "Em"B2 | e4 eg |
+"D"fe de f2 | "Em"gf e2 e2 | "Am"a2 g2 a2 | "E"e4 ed |\
+"Am"c2 B2 A2 | "D"d2 e2 f2 | "D"d2 ed "G"B2 | "Am"A4 |]
+%%center The A part is the song My Bonny, Bonny Boy; the B part is the song All Things Are Quite Silent.

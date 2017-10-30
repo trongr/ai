@@ -1,0 +1,22 @@
+T: Eyemouth Harbour
+C: Murial A. Johnstone
+R: waltz
+Z: 2014 John Chambers <jc:trillian.mit.edu>
+N: Slightly modified to work with ABC software that doesn't understand overlays.
+N: Handwritten MS from Barbara McOwen
+S: SRSNH 5.22
+B: Muriel A. Johnstone "Two Score More"
+M: 3/4
+L: 1/4
+K: D
+"A"|: "G"B2"A"A | "Bm"F2  F | "Em"F>E  D |  "A"E3 | "G"B2"A"A | "Bm"F2 F |"Em"F2   "A7"E | "D"D3 "^Fine":|
+"B"[| "D"D2   d | "F#m"c>BA |  "G"B2"A"A |  "D"F3 |  "D"D2  d |"F#m"c>BA | "G"B"Em"B"A"A | "D"D3 |
+   | "Bm"D2   d | "F#m"c>BA |  "G"B2"A"A | "Bm"F3 | "D7"D2  d |  "G"B>AG | "A"A2   "A7"C | "D"D3 |]
+"C"|:\
+      "G"[B2D2]"A"[AC] | "Bm"[F2D2][FD] | "Em"[FD2]>ED | "A"[E-D][E-B,][EC] |\
+      "G"[B2D2]"A"[A/-A,/][A/B,/] | "Bm"[F-C][F-D][FB,] | "Em"[F-D][FB,]"A"[EC] | "D"[D3D3] :|
+"D"[| "D"[d2D2][d'd] | "F#m"[c'c]>[bB][aA] | "G"[b2B2]"A"[aA] | "D"[f3F3] |\
+      "D"[d2D2][d'd] | "F#m"[c'c]>[bB][aA] | "G"[bB][bB]"A"[aA] | "D"[d3D3] |
+   | "Bm"[d2D2][d'd] | "F#m"[c'c]>[bB][aA] | "G"[bB][bB]"A"[aA] | "Bm"[f3F3] |\
+     "D7"D2d | "G"B>AG | "A"A2"A7"C | "D"D3 "^D.C. al Fine"y2|]
+%%text Parts C and D are A and B plus a 2nd voice.

@@ -85,7 +85,7 @@ class RNN(object):
             
         self.sess.run(tf.global_variables_initializer())
 
-        self.Saver = tf.train.Saver(max_to_keep=100, keep_checkpoint_every_n_hours=1) 
+        self.Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1) 
         if glob.glob(self.SAVE_DST + "*"):
             self.Saver.restore(self.sess, tf.train.latest_checkpoint(self.SAVE_DST))
 

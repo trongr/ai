@@ -1,0 +1,77 @@
+X: 0
+T: Waltz Country Dance
+T: 8x40W2
+O: RSCDS 4-8
+R: waltz
+K:
+
+
+
+X: 1
+P: Come o'er the stream, Charlie
+O: Trad
+R: 40-bar waltz
+B: RSCDS 4-8
+Z: 1997 by John Chambers <jc:trillian.mit.edu>
+N: Title of song by James Hogg, adapted by him to this contemporary Waltz tune circa 1822.
+N: Suitable Pipe Tune "Speed bonnie boat".
+M: 3/4
+L: 1/4
+K: D
+|: A, \
+| "D"D>FA | "D"AF"G"B | "D"AF"G"B | "D"AF"A7"E | "D"D>FA | AFD | "A7"A,FE | "D"D2 :|
+|| A \
+| "D"d>cd | "G"Bcd | "E7"Bed | "A"cBA | "D"d>cd | "G"BAG | "D"FED | "A"A2 ||
+|: F \
+| "G(Em)"GBG | "D"FAd | A>FE/D/ | "A7"FEA | "G"d>cB | "D"AdF | "A7"AGE | "D"D2 :|
+
+
+X: 2
+P: the Blackbird
+R: 40-bar waltz
+Z: 1997 by John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/8
+K: G
+| GA \
+| "G"B3AG2 | "C"E4 GE | "G"D2 E2 G2 | "(D)"B3 AGA | "G"B3AG2 | "C"E4 GE | "D7"D2 E2 F2 | "G"G4 ||
+|: GA \
+| "G"B3ABc | "Bm"d4 ef | "C"g4 fg | "D7"f2 e2 dc | "G"B2 A2 B2 | "Bm"d3 e f2 | "C"g2 f2 e2 | "D7"d4 Bd |
+| "C"c4 dB | "D"A2 B2 d2 | "C"e2 ge dB | "D7"B2 A2 GA | "G"B3AG2 | "C"E4 GE | "D7"D2 E2 F2 | "G"G4 :|
+
+
+
+X: 3
+P: the Star of the County Down
+O: Trad
+R: 40-bar waltz
+N: Also in 2/4 as a ballad.
+N: There is a County Down in both Ireland and Scotland, and both claim this tune.
+Z: 1997 by John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/8
+K: Am
+E2G2 \
+|  "Am"A4 A2 | "F"A3 G A2 | "C"c4 c2 | "G"d4 cd \
+|  "C"e3 d c2 | "Am"A3 G E2 | "Em"G6- | G2 ||
+|| c2B2 \
+|  "Am"A4 A2 | "F"A3 G A2 | "C"c4 c2 | "G"d4 cd \
+|  "Am"e3 d c2 | "Dm"A4 A2 | "Am"A6- | A2 ||
+|| c2e2 \
+|  "C"g4 e2 | e3 d c2 | "G"d4 d2 | d4 cd \
+|  "C"e3 d c2 | "Am"A3 G E2 | "Em"G6- | G2 ||
+|: c2B2 \
+| "Am"A4 A2 | "F"A3 G A2 | "C"c4 c2 | "G"d4 cd \
+|  "Am"e3 d c2 | "Dm"A4 A2 | "Am"A6- | A4 :|
+
+
+X: 4
+P: Margaret's Waltz
+C: Pat Shaw
+N: Composed for Margaret Grant when she was retiring from the EFDSS.
+R: waltz
+M: 3/4
+L: 1/8
+K: A
+%%text Tune removed by request of the copyright holder (Christopher Shuldham-Shaw css@onyx.go-plus.net)
+

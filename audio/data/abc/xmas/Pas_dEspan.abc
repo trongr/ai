@@ -1,0 +1,57 @@
+X: 0
+T: Pas d'Espan
+K: C
+
+
+X: 1
+P: Pas d'Espan
+O: France
+Z: John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/8
+K: C
+[| g2 g2 \
+| "C"c'2efef | g2agfe | "G7"f2d4- | d2d2e2 \
+| f2gfed | f2gfed | "C"e2c4- | c2e2g2 |
+| "C"c'2efef | g2agfe | "Dm"b2a4- | a2b2a2 \
+| "G7"gz GABc | defgab | "C"c'2z2"G7"g2 | "C"c'z "fine" |] [K:Cm]
+[| z2G2\
+| "Cm"cz cece | g2z2e2 | "G7"e2{fe}d4 | g2z2f2 \
+| "Cm"e2{fe}d2c2 | "Ab"e2{fe}d2c2 | "G7"{^f}gz [g2G2]z2 | {^f}gz [g2G2] z2 |
+| "Cm"cz cece | g2z2e2 | "G7"e2{fe}d4 | g2z2f2 \
+| "Cm"e2{fe}d2c2 | "G7"=B2c2d2 | "Cm"c6- | c2 |] [K:G]
+[| b2c'2\
+| "D7"b2a^ga2- | a2a2b2 | "G"a2gfg2- | g2f2e2 \
+| "D7"e2d^cd2- | d2f2e2 | "G"e2d^cd2- | d2b2c'2 |
+| "D7"b2a^ga2- | a2a2b2 | "G"a2gfg2- | g2f2e2 \
+| "D7"d2{ed}^c2d2 | b4a2 | "G"g6- | g2 |]
+
+X: 2
+P: Pas d'Espan
+O: France
+Z: John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/8
+K: D
+V: 1
+[| a2 a2 \
+| "D"d'2fgfg | a2bagf | "A7"g2e4- | e2e2f2 \
+| g2agfe | g2agfe | "D"f2d4- | d2f2a2 |
+| "D"d'2fgfg | a2bagf | "Em"c'2b4- | b2c'2b2 \
+| "A7"az ABcd | efgabc' | "D"d'2z2"A7"a2 | "D"d'z "ginf" |] [K:Dm]
+[| z2A2\
+| "Dm"dz dfdf | a2z2f2 | "A7"f2{gf}e4 | a2z2g2 \
+| "Dm"f2{gf}e2d2 | "Bb"f2{gf}e2d2 | "A7"{^g}az [a2A2]z2 | {^g}az [a2A2] z2 |
+| "Dm"dz dfdf | a2z2f2 | "A7"f2{gf}e4 | a2z2g2 \
+| "Dm"f2{gf}e2d2 | "A7"^c2d2e2 | "Dm"d6- | d2 |] [K:A]
+[| c'2d'2\
+| "E7"c'2b^ab2- | b2b2c'2 | "A"b2aga2- | a2g2f2 \
+| "E7"f2e^de2- | e2g2f2 | "A"f2e^de2- | e2c'2d'2 |
+| "E7"c'2b^ab2- | b2b2c'2 | "A"b2aga2- | a2g2f2 \
+| "E7"e2{fe}^d2e2 | c'4b2 | "A"a6- | a2 |]
+
+X: 3
+%%wordsfont Helvetica 10
+W: Arrangement by John Chambers http://trillian.mit.edu/~jc/music/abc/Intl/
+K: C
+

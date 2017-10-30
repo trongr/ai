@@ -1,0 +1,24 @@
+X: 1
+T: Valse Aldor
+C: Aldor Morin (1921-1998)
+O: Qu\'ebec
+R: waltz
+Z: 2011 John Chambers <jc:trillian.mit.edu> 
+M: 3/4
+L: 1/8
+K: D
+[|\
+"D"f3 efg | "/C#"f3 efg | "/B"(3fff f2 d2 | "D"A3 Bcd |\
+"Em"e3 def | "/D"e3 def | (3eee e2 c2 | "A7"A2 Bc de |
+"D"f3 efg | "/C#"f3 efg | "/B"(3fff f2 d2 | "D"A6- |\
+"G"AA Bc de | "D"f2 fe cA | "E7"BA ^GA cB | "A7"AF G2 E2 |]
+[|\
+"D"f3 efg | "/C#"f3 efg | "/B"(3fff f2 d2 | "D"A3 Bcd |\
+"Em"e3 def | "/D"e3 def | "/C"(3eee e2 c2 | "A7"A6 |
+"D"(3ABA F2A2 | "D7"d3 c2=c | "G"(3BcB G2 B2 | "E7/^G"e4 d2 |\
+"A7"CD EF GA | B4 c2 | "D"d2 dc de | d3 B=c^c |][K:G]
+|:\
+"G"dB GD GB | "Em"dB GD GB | "Am"d2 c3 B | "/G"c3 BAB |\
+"D"cA FD FA | "/C"cA FD FA | "G"c2 B3 ^A | B3 GBd |
+"G"gd BG Bd | "G7/F"gd BG Bd | "C"f2 e3 ^d | "C6"e4 g2 |\
+"D7"(3fgf (3efe (3ded | (3cdc (3BcB (3ABA |1 "G"G3 B=c^c :|2 "G"g6 |]
