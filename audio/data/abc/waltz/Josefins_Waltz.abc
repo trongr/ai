@@ -1,0 +1,76 @@
+X: 1
+T: Josefins dopvals [F]
+T: Josefin's baptism waltz
+C: Roger Tallroth
+N: Josefin is Roger's niece.
+Z: John Chambers <jc:trillian.mit.edu>
+D: V\"asen, "Spirit"
+D: Dervish, "At the End of the Day"
+M: 3/4
+L: 1/4
+K: F
+z"C7"C \
+| "F"CFG | AcB | AGF | C2D \
+| "Bb"B,>B,B, |1,3 DFE | "Gm"D3 | "C7"C3 \
+:|2,4 "C7"CEF | G3- | G :|
+|: AB | "F"cAc | f2e | "Bb"d3 | "F"c3 \
+| "Bb"Bdc | BFG | "F"A>BA | "C7"GAB \
+| "F"cAc | f2e | "Bb"d3 | "F"c3 |
+| "Gm"Bdc | "C7"BAG | "F"A>BA | "C7"GAB \
+| "F"AGF | "C7"E2F | "Bb"F3 | B,>CB, \
+| "F"A,CF | "C7"EDE | "F"F3- | F :|
+%%sep 1 1 500
+
+X: 1
+T: Josefins dopvals [G]
+T: Josefin's baptism waltz
+C: Roger Tallroth
+N: Josefin is Roger's niece.
+Z: John Chambers <jc:trillian.mit.edu>
+D: V\"asen, "Spirit"
+D: Dervish, "At the End of the Day"
+M: 3/4
+L: 1/4
+K: G
+z"D7"D \
+|: "G"DGA | Bdc | BAG | D2E \
+| "C"C>CC |1,3 EGF | "Am"E3 | "D7"D3 \
+:|2,4 "D7"DFG | A3- | A :|
+|: Bc \
+| "G"dBd | g2f | "C"e3 | "G"d3 \
+| "C"ced | cGA | "G/B"B>cB | "Am"ABc \
+| dBd | g2f | "C"e3 | "G/B"d3 |
+| "Am"ced | "D7"cBA | "G"B>cB | "D7"ABc \
+| "Em"BAG | "D7"F2G | "C"G3 | C>DC \
+| "G"B,DG | "D7"FEF | "G"G3- | G :|
+%%sep 1 1 500
+
+X: 1
+T: Josefins dopvals [A]
+T: Josefin's baptism waltz
+C: Roger Tallroth
+N: Josefin is Roger's niece.
+Z: John Chambers <jc:trillian.mit.edu>
+D: V\"asen, "Spirit"
+D: Dervish, "At the End of the Day"
+M: 3/4
+L: 1/4
+K: A
+z"E7"E \
+| "A"EAB | ced | cBA | E2F \
+| "D"D>DD |1,3 FAG | "Bm"F3 | "E7"E3 \
+:|2,4 "E7"EGA | B3- | B :|
+|: cd | "A"ece | a2g | "D"f3 | "A"e3 \
+| "D"dfe | dAB | "A"c>dc | "E7"Bcd \
+| "A"ece | a2g | "D"f3 | "A"e3 |
+| "Bm"dfe | "E7"dcB | "A"c>dc | "E7"Bcd \
+| "A"cBA | "E7"G2A | "D"A3 | D>ED \
+| "A"CEA | "E7"GFG | "A"A3- | A :|
+%%sep 1 1 500
+
+X: 0
+M:none
+K:C clef=none
+x4
+x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4 x4
+%%sep 1 1 500

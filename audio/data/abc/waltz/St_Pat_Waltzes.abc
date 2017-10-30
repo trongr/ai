@@ -1,0 +1,72 @@
+X: 0
+T: Saint Patrick's Day Waltzes
+K: C
+
+
+% waltz/WhenIrishEyesAreSmiling_Dch.abc
+
+
+X: 1
+P: When Irish Eyes Are Smiling (chorus)
+C:Music by Ernest R. Ball
+%C:Lyrics by Chauncey Olcott and George Graff Jr.
+M:3/4
+L:1/4
+K:D
+[| A \
+| "D"F2 F | E2 D | F A2- | A F D \
+| "G"G2 B | d2 B | "D"A3- | A2 B/c/ |
+| "G"d2 c | d2 c | "D"B A2 | "B7"G2 F \
+|"Em"B2 E | "E7"E2 F | "A"E3- | "A7"E2 A |
+| "D"F2 F | E2 D | F A2- | A F D \
+| "G"G2 B | d2 B | "D"A3- | A B c |
+| "G"d2 c | "E7"e2 d | "D"f3 | "B7"A ^G A \
+|"E7"B c d | "A7"e2 d | "D"d3- | d2 |]
+
+% waltz/RoseOfTralee_G.abc
+
+
+X: 2
+P: The Rose of Tralee
+C: Music by Charles W. Glover
+C: Words by C. Mordaunt Spencer
+N: Published in London in 1845
+R: waltz
+M: 3/4
+L: 1/4
+%%staffsep 30
+K: G
+D \
+| "G"DED | B>AG | "C"GCE | "G"ED>D \
+| "D7"DED | "G"DG>G | "A7"G>FG | "D7"A2D |
+| "G"DED | B>AG | "C"GCE | "G"ED>D \
+| "D7"Dcc | "G"B>GE | "D7"DEG | "G"G2G/A/ |
+| "B7"BB>A | "Em"G2G/F/ | "C"EE/^D/E/F/ | "B7"^DB,B \
+| "Em"BE"D7"c | "G"BB>A | "B7"G>AF | "Em"E2"D7"D |
+| "G"DE>D | B>AG | "C"GCE | "G"ED>D \
+| "D7"Dcc | "G"BG>E | "D7"DB>A | "G"G2 |]
+
+% waltz/MyWildIrishRose_Dch.abc
+
+
+X: 3
+P: My Wild Irish Rose (chorus)
+C: Music and Lyrics by Chauncey Olcott (1898)
+N: Irish-American, composed for the New York theater show "A Romance of Athlone".
+M: 3/4
+L: 1/4
+K: D
+A \
+| "D"f3 | "A7"f3e \
+| "D"d3- | "D7"d2d \
+| "G"dd2 | "A7"c2B \
+| "D"A3- | A2 F/F/ |
+| "G"GAB | "D"A2F \
+| "G"GAB | "D"A2c/d/ \
+|1 "E7"B3 | f2e \
+| "A7"e3- | e2 :|
+|2 "E7"Bcd \
+| "A7"edc | "D"d3- | d2 \
+:|["Coda" "E7"Bcd \
+| "A7"d{f}He3/d/ | "D"d3- | d2 |]
+

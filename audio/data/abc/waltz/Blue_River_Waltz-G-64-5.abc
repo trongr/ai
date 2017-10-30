@@ -1,0 +1,25 @@
+X: 1
+T: the Blue River Waltz
+C: Jay Ungar \251 2002
+R: waltz
+Z: 2013 John Chambers <jc:trillian.mit.edu>
+S: Fiddle Hell waltz collection
+P: Play ABCABC+Coda
+M: 3/4
+L: 1/8
+K: G
+"A"|:\
+"G"DE GA BG | "Am"A3 G AB | A3 B AG | "C"E6 |\
+"(G)"DE GA BG | "Am"A3 G AB | "D7"d3 B AB | "G"G6 :|
+"B"|:\
+"G"DE GA Bd | "C"e3 d eg | "Am"e3 d Bd | "D7"A6 |\
+"G"DE GA Bd | "C"e3 g eB | "D7"d3 B AB |1 G6 :|2 "G"G3 A Bd ||
+"C"|:\
+"G"g2 f2 d2 | "C"e6 | g2 f2 d2 | "Em"e6 | "(G)"g2 f2 d2 |\
+"Am"e3 g eB | "D7"d3 B AB |1 "G"G3 A Bd :|2 "G"G6 "d.C."y|]
+["Coda"\
+"G"b2 a2 g2 | "C"e6 | b2 a2 g2 | "Em"e6 |\
+b2 a2 g2 | "Am"e3 g eB | "D7"d3 B AB | "G"G3 A Bd |
+"G"b2 a2 g2 | "C"e6 | b2 a2 g2 | "Em"e6 |\
+ba gd- d2 | "Am"e3 g eB | "D7"d3 B AB | "G"G2 B2 d2 |\
+"G"[g6B6] |]

@@ -1,0 +1,60 @@
+X: 0
+T: English Waltzes 1 (A D G)
+R: waltz
+K: A
+
+
+X: 1
+P: Farewell to Devon   [G]
+R: waltz
+C: Pat Shuldnam-Shaw
+Z: John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/8
+K: G
+d2 \
+|  "G"g3 fed |     B2 d4        | "D7"G2 G2A2 |  "G"B4 d2    \
+| "Em"g3 fed | "Bm"B2 d4        | "A7"BA G2B2 | "D7"A4 d2    |
+|  "G"g3 fed | "Bm"d2 B4        |  "C"e3  dcB | "Em"B2 G4    \
+| "Am"c3 BAG |  "C"A3  G     FE | "D7"D2 B2A2 |  "G"G4 D2   ||
+|| "G"G3 ABA |     G2 D4        | "Am"A3  BcB | "D7"A2 D4    \
+|  "G"B3 cdc | "Em"B2 G2     cd | "Am"e3  dcB | "D7"A4 d2    |
+|  "G"B3 cdc | "Em"B2 G4        | "Am"c3  ded | "D7"c2 A2 Bc \
+| "Bm"d3 efd | "Em"g2 G2 "Am"c2 | "D7"B3  cA2 |  "G"G4      |]
+
+
+X: 2
+P: Come o'er the stream, Charlie
+O: Trad
+R: waltz
+B: RSCDS 4-8
+Z: 1997 by John Chambers <jc:trillian.mit.edu>
+N: Title of song by James Hogg, adapted by him to this contemporary Waltz tune circa 1822.
+M: 3/4
+L: 1/4
+K: D
+A, |\
+"D"D>FA | "D"AF"G"B | "D"AF"G"B | "D"AF"A7"E |\
+"D"D>FA | AFD | "A7"A,FE | "D"D2 :|
+A |\
+"D"d>cd | "G"Bcd | "E7"Bed | "A"cBA |\
+"D"d>cd | "G"BAG | "D"FED | "A"A2 ||
+F |\
+"Em"GBG | "D"FAd | A>FE/D/ | "A7"FEA |\
+"G"d>cB | "D"AdF | "A7"AGE | "D"D2 |]
+
+
+X: 3
+P: the Shepherd's Wife
+O: Trad
+Z: John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/4
+K: G
+D \
+| "G"G2A | B2c | d2g | g>fd | "C"e>fg | "G"dcB | "A(m)"A>BG | "D7"FED |
+y2| "G"G2A | B2c | d2g | g>fd | "C"e>fg | "D7"agf | "G"g3- | g2 ||
+g/a/ \
+| "G"b2b | "D"a>gf | "Em"g2g | "Bm"f>ed | "C"e>fg | "G"dcB | "A7"ABG | "D7"FED |
+y2| "G"b2b | "D"a>gf | "Em"g>ag | "Bm"f>ed | "C"e>fg | "D7"agf | "G"g3- | g2 |]
+

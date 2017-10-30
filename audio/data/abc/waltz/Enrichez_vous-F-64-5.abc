@@ -1,0 +1,30 @@
+X: 1
+T: Enrichez-vous   [F]
+C: Edith Farrar 1986
+R: waltz
+Z: 2014 John Chambers <jc:trillian.mit.edu>
+B: Barnes "English Country Dance Tunes" v.2 2005 p.39
+B: Matthiesen "Waltz Book I" 1992 pp. 60-61
+B: Pixton "The Pinewoods International Collection" ed.2 2004 p.307
+M: 3/4
+L: 1/8
+K: F
+AB |\
+"F"c3 FAc | "Bb"d2 "C7"c2 (3BcB |\
+"F"A2 F2 A2 | "C"GE C4 |\
+"Bb"D2 F3 D | "C7"E2 F2G2 |
+[1,3 "F"A3 CAC | "C7"G3 G :|\
+[2,4 "F"F6- | F4 :|\
+|: AB |\
+"F"c3 cde | "Bb"f2 e3 d |\
+"C7"c2G2 B2 |
+"F"B2 A2 (3GAG |\
+"Dm"F4 FE | F3 FDF |\
+"Bb"A2 G2 F2 | "C7"G3 GAB |\
+"F"c3 cde | "Bb"f3 fef |
+[1,3 "C"e2 a2 g2 | "Dm"f4 ag |\
+"Bb"f2 d3 B | "F"AB c2 A2 |\
+"C7"G2GB AG | "F"F4 :|
+[2,4 "C"e2 f2 g2 | "A"a4 ag |\
+"Bb"f2 d3 B | "F"AB c2 A2 |\
+"C7"G2 GB AG | "F"F4 |]

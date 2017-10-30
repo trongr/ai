@@ -52,7 +52,16 @@ class RNN(object):
         causing the model (specifically these cells) not to be saved properly.
         Then when it's reloaded, the cells are re-initialized to zero.
         '''
-        Cells = tf.contrib.rnn.MultiRNNCell([RNN.lstm_cell(self.NUM_CELL_UNITS) for _ in range(self.NUM_LSTM_CELLS)])
+        # Cells = tf.contrib.rnn.MultiRNNCell([RNN.lstm_cell(self.NUM_CELL_UNITS) for _ in range(self.NUM_LSTM_CELLS)])
+        # See if this helps saving and restoring. I have a feeling creating a 
+        # MultiRNNCell in a loop like above doesn't store / reload properly.
+        Cell1 = RNN.lstm_cell(self.NUM_CELL_UNITS)
+        Cell2 = RNN.lstm_cell(self.NUM_CELL_UNITS)
+        Cell3 = RNN.lstm_cell(self.NUM_CELL_UNITS)
+        # Cell4 = RNN.lstm_cell(self.NUM_CELL_UNITS)        
+        # Cells = tf.contrib.rnn.MultiRNNCell([Cell1, Cell2, Cell3, Cell4])
+        Cells = tf.contrib.rnn.MultiRNNCell([Cell1, Cell2, Cell3])
+        
         self.InitState = Cells.zero_state(tf.shape(self.X)[0], tf.float32)
         Output, self.State = tf.nn.dynamic_rnn(Cells, X_onehot, initial_state=self.InitState, dtype=tf.float32)
 
@@ -76,7 +85,7 @@ class RNN(object):
             
         self.sess.run(tf.global_variables_initializer())
 
-        self.Saver = tf.train.Saver(max_to_keep=100, keep_checkpoint_every_n_hours=1) 
+        self.Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1) 
         if glob.glob(self.SAVE_DST + "*"):
             self.Saver.restore(self.sess, tf.train.latest_checkpoint(self.SAVE_DST))
 
@@ -85,7 +94,8 @@ class RNN(object):
 
     @staticmethod
     def lstm_cell(NUM_CELL_UNITS):
-        return tf.contrib.rnn.BasicLSTMCell(NUM_CELL_UNITS, state_is_tuple=True)
+        cell = tf.contrib.rnn.BasicLSTMCell(NUM_CELL_UNITS, state_is_tuple=True)
+        return cell
 
     def save(self, i):
         self.Saver.save(self.sess, self.SAVE_DST + "char", global_step=i)

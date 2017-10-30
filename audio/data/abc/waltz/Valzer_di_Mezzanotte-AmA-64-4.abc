@@ -1,0 +1,24 @@
+X: 1
+T: il Valzer di Mezzanotte    [Am]
+C: Franc Amodio 1937
+S: Roaring Jelly collection
+P: (AABBC)xN+A
+K: Am
+M: 3/4
+R: Waltz
+L: 1/8
+K: Am
+E AB cd "A"[|\
+"Am"e6 | "Dm"f6 | "Am"ed c4- | c2de dc |\
+"E7"B6 | d6 | "Am"cB A4 | "Am/E"zE AB cd |
+"Am"e6 | "A7"g6 | "Dm"fe d4- | d2 ef ed |\
+"Am"c2 z2 e2 | "E7"B2 z2 e2 | "Am"A3 A A2 |1 !fine!A :|2 "Am"A2 z2 z2 |]
+K: A
+"B"|:\
+"A"e4 z2 | f2 g2 za | "E7"g6- | "Bm7"g2 b3 a |\
+"E7"g4 g2 | f4 =f2 | "A"e6- | e2 e2 d2 |
+"F#7"c6 | c2 e2 zc | "Bm"d6- | "D"d2 e2 d2 |\
+"A"c2 z2 d2 | "E"B2 z2 e2 | "A"A2 zA A2 |1 A6 :|2 "(Am)"A [K:=f=c=g][K:Am] 
+E AB cd "C"[|\
+"Am"e4 c2 | "Dm"d4 B2 | "Am"c4 A2 | "E7"B4 e2 |\
+"Am"(e2f2)e2 | "Dm"(d2e2)d2 | "Am"(c2d2)c2 | "E7"B "d.C."y|]

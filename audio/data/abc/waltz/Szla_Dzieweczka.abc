@@ -1,0 +1,64 @@
+X: 0
+T: Waltz: Sz\la dzieweczka
+K: C
+
+X: 1
+P: Sz\la dzieweczka
+O: Poland
+R: waltz
+Z: John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/4
+K: C
+|: "C"G2 c | e2 d | "F"c2 B | c B A | "C"G2 G | E2 F | G3- | G3 | "G7"F2 F | D2 E | F3- | F3 |
+|1 "C"G2 G | E2 F | G3- | G3 :|2 "C"G2 G | e2 d | c3- | c3 [| "C"e e/d/c | e e/d/c | "A7"e f> e | "Dm"d3 |
+| "G7"d d/c/B | d d/c/B | d e> d | "C"c3 || "C" e e/d/c | e e/d/c | "A7"e f> e | "Dm"d2 e \
+| "Dm"f e d | "C"c B A | "G7"G A B | "C"c3 |]
+
+X: 2
+P: Sz\la dzieweczka (with harmony and "cuckoos")
+O: Poland
+R: waltz
+Z: John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/4
+K: C
+|: "C"[G2E] [cG] | [e2c] [dB] | "F"[c2A] [BG] | [cA] [BG] [AF] \
+| "C"[G2E] [GE] | [E2C] [FD] | [G2E] .[ge] | [e3c] | "G7"[F2D] [FD] | [D2B,] [EC] | [F2D] .[fd] | [d3B] |
+|1 "C"[G2E] [GE] | [E2C] [FD] | [G2E] .[ge] | [e3c] :|2 "C"[G2E] [GE] | [e2G] [dF] | [c3E]- | [c3E] \
+[| "C"[eG] [e/G][d/F][cE] | [eG] [e/G][d/F][cE] | "A7"[eG] [fA]> [eG] | "Dm"[d3F] |
+| "G7"[dF] [d/F][c/E][BD] | [dF] [d/F][c/E][BD] | [dF] [eG]> [dF] | "C"[c3E] \
+|| "C" [eG] [e/G][d/F][cE] | [eG] [e/G][d/F][cE] | "A7"[eG] [fA]> [eG] | "Dm"[d2F] [eG] \
+| "Dm"[fA] [eG] [dF] | "C"[cE] [BE] [AF] | "G7"[GG] [A_G] [BF] | "C"[c3E] |]
+
+%%sep 2 1 500
+%%sep 1 1 500
+
+X: 3
+P: Sz\la dzieweczka
+O: Poland
+R: Waltz
+Z: John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/4
+K: D
+|: "D"A2 d | f2 e | "G"d2 c | d c B | "D"A2 A | F2 G | A3- | A3 | "A7"G2 G | E2 F | G3- | G3 |
+|1 "D"A2 A | F2 G | A3- | A3 :|2 "D"A2 A | f2 e | d3- | d3 [| "D"f f/e/d | f f/e/d | "B7"f g> f | "Em"e3 |
+| "A7"e e/d/c | e e/d/c | e f> e | "D"d3 || "D" f f/e/d | f f/e/d | "B7"f g> f | "Em"e2 f \
+| "Em"g f e | "D"d c B | "A7"A B c | "D"d3 |]
+
+X: 4
+P: Sz\la dzieweczka (with harmony and "cuckoos")
+O: Poland
+R: Waltz
+Z: John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/4
+K: D
+|: "D"[A2F2] [dA] | [f2d2] [ec] | "G"[d2B2] [cA] | [dB] [cA] [BG] \
+| "D"[A2F2] [AF] | [F2D2] [GE] | [A2F2] .[af] | [f3d3] | "A7"[G2E2] [GE] | [E2C2] [FD] | [G2E2] .[ge] | [e3c3] |
+|1 "D"[A2F2] [AF] | [F2D2] [GE] | [A2F2] .[af] | [f3d3] :|2 "D"[A2F2] [AF] | [f2A] [eG] | [d3F3]- | [d3F3] \
+[| "D"[fA] [f/A/][e/G/][dF] | [fA] [f/A/][e/G/][dF] | "B7"[fA] [gB]> [fA] | "Em"[e3G3] |
+| "A7"[eG] [e/G/][d/F/][cE] | [eG] [e/G/][d/F/][cE] | [eG] [fA]> [eG] | "D"[d3F3] \
+|| "D" [fA] [f/A/][e/G/][dF] | [fA] [f/A/][e/G/][dF] | "B7"[fA] [gB]> [fA] | "Em"[e2G2] [fA] \
+| "Em"[gB] [fA] [eG] | "D"[dF] [cF] [BG] | "A7"[AA] [B_A] [cG] | "D"[d3F3] |]

@@ -1,0 +1,177 @@
+%%scale         0.70
+%%pagewidth     8.50in
+%%pageheight   11.00in
+%%leftmargin    0.60in
+%%botmargin     0.30in
+%%topmargin     0.20in
+%%systaffsep    1.00cm
+%%staffsep      1.00cm
+%%titleleft     0
+%%titlespace    0.00in
+%%landscape     0
+%%topspace      0.00in
+%%composerspace 0.00in
+%%lineskipfac   1.1
+%%maxshrink     1.0
+%%musicspace    7pt
+%%partsspace    10
+%%staffwidth    7.50in
+%%subtitlespace 0.00in
+%%composerfont  Times-Italic   11
+%%barlabelfont  Helvetica-Bold 18 box
+%%gchordfont    Helvetica-Bold 14
+%%partsfont     Helvetica-Bold 14
+%%subtitlefont  Times-Roman    12
+%%textfont      Times-Roman    12
+%%titlefont     Helvetica-Bold 16
+%%vocalfont     Helvetica-Narrow-Bold 16
+%%wordsfont     Helvetica-Narrow-Bold 12
+
+X: 1
+T: Sonata Nr 3 in C
+T: \`a deux fl\^utes \`a bec
+C: Georg Philip Telemann
+N: Published in Hamburg in 1727
+M: 6/8
+L: 1/8
+P: Siciliana
+K: C
+V: 1
+c/d | e>fe Td>cd | c2g c>de | A>Bc B2c | G2z e>de | f2z d2z | e2z f>ef | B>cd G>AB | c2F G2g |
+e>dc ^f2^F | G3 z>bc' | d'>e'd' Tc'>bc' | b3 z>c'd' | g>ab c'>d'b | Tb2a z2d' | e'>^fg ^f'>fg | g'>^fg e'3- |
+e'2c ^f2c' | b>ag g>a^f | g>a_b a>bg | f>ed z2^c | d2_b a>bg | f>ga g>af | e>^c'd' f>c'd' | g>^c'd' f>c'd' |
+%
+e2_b a>bg | a>^c'd' f>ge | d3 z>e^f | g>fg G>AB | c3 z>de | =f>ef F2e | d2e f>ef | e3 z>^f^g |
+a2d e2e' | c'>d'e' a>bc' | g>ag Tf>ef | e3 z>fg | c>de f>ge | Te2d z2g | a>Bc b>Bc | c'>Bc a3- | a>gf d'2f | e>dc c>dB |
+c3 z>de | f>ef F>d^c | d3 z>e^f | g>^fg G2=f | e2d ^c>de | d2=c B>cd | c2a g>af | e>dc z2B | c>de d>ec | G>de G>fe |
+G>de G>fe | G2f e>fd | g>bc' e>fd | c2g f>ge | d>bc' e>bc' | f>bc' e>bc' | d2a g>af | e>dc G2Tb | c'3 z3/ |]
+V: 2
+e/f | g>ag Tf>ef | e3 z>fg | c>de f>ge | Te2d z2g | a>Bc b>Bc | c'>Bc a3- | a>gf d'2f | e>dc d>eB |
+c>de d>ec | B>dg G>ga | b>c'b Ta>ga | g2d' g>ab | e>^fg f2g | d2z b>ab | c'2z a2z | b2z c'>bc' |
+^f>ga d>ef | g2c d2d' | b>ag ^c'2^c | d2_b a>bg | f>ed z2^c | d>ef e>fd | A>ef A>gf | A>ef A>gf |
+%
+A2g f>ge | f>ed A2g | ^f>ga d2c' | Tc'2b z2f | e>fg c2_b | T_b2a z>=bc' | b>c'b a>^ga | ^g>^fe d'>c'b |
+c'>ba a>b^g | a3 z2a | e>fe Td>cd | c2g c>de | A>Bc B2c | G2z e>de | f2z d2z | e2z f>ef | B>cd G>AB | c2F G2g |
+e>fg c2_b | T_b2a z2a | ^f>ga d2c' | Tc'2=b z>c'd' | g>a_b a>bg | f>ga g>af | e>dc z2B | c2a g>af | e>fg f>ge | d>bc' e>bc' |
+f>bc' e>bc' | d2a g>af | e>dc G2f | e>fe d>ec | G>de G>fe | G>de G>fe | G2f e>fd | g>bc' e>fd | c3 z3/ |]
+
+X: 2
+T:
+P: Vivace
+M: 3/4
+L: 1/8
+K: C
+V: 1
+z6 | z6 | z6 | z6 | z6 | z6 | z6 | z6 | z6 | z6 | g4c'2 | Tb4e'2 |
+d'2c'2b2 | a2d2b2 | Ta4g2 | a2d2b2 | Ta4g2 | c'6 | b2c'2Ta2 | g2gabc' |
+d'c'bag^f | gdgabc' | d'c'bag=f | e2g2c'2 | e'2g'2z2 | e2g2c'2 | e'2g'2z2 | z2c'_bag |
+fgagfe | defedc | =BcdcBA | G2c2e2 | g2c'2z2 | c4f2 | e2AGAB | cGcBcd |
+%
+ecdBcA | BdBGc2- | cABGec | BdBGc2- | cABGec | BdBGAB | c2F2G2 | c2z2c2 | B2z2B2 | A2z2A2 |
+Gd'c'd'bd' | ad'c'd'ad' | Gd'c'd'gd' | ^fdfga2- | aabag^f |gegab2- | bbc'bag | a^fabc'2- |
+c'c'd'c'ba | b2ede^f | g4c'2 | Tb4e'2 | d'2c'2b2 | a2d2b2 | Ta4g2 | a2d2b2 |
+Ta4g2 | c'6 | b2c'2Ta2 | g2bc'd'2 | z2c'bc'2 | z2bab2 | z2c'ba^g | a2_baba | _bcagag | acgfgf |
+%
+gcagfe | f2A2d2 | f2a2z2 | F2A2d2 | f2a2z2 | z2gabc' | d'c'bag^f | gdgabc' |
+d'c'bagf | e2g2c'2 | e'2g'2z2 | e2g2c'2 | e'2g'2z2 | f4_b2 | Ta4d'2 | c'2_b2z2 |
+g2c2a2 | Tg4f2 | g2c2a2 | Tg4f2 | _b6 | a2_b2Tg2 | fafedc | d2^f2z2 |
+gbgfed | e2^g2z2 | ac'agfe | f2a2z2 | bd'bc'd'b | g2b2z2 | c4f2 | e2AGAB |
+%
+cGcBcd | ecdBcA | BdBGc2- | cABGec | BdBGc2- | cABGec | BdBGAB | c2F2G2 |
+cgfgeg | dgfgdg | c2z2c2 | B2z2B2 | egfgeg | dgfgdg | cgfgcg | BAGABc |
+dcBcde | fedefg | agfgab | c'2f'2z2 | e'2d'c'ba | g2fedc | e2f2Td2 | cc'bagf | eagfed | cfedcB |
+AdcBAG | f2e2z2 | a2g2z2 | c'2bagf | Te2d2z2 | c2F2G2 | Te2d2z2 | c'2bagf | e2f2Td2 | c6 |]
+V: 2
+c4f2 | Te4a2 | g2f2e2 | d2G2e2 | Td4c2 | d2G2e2 | Td4c2 | f6 | e2f2Td2 | c2cBcd | ecede^f | gdg^fga |
+bga^fge | ^fafdg2- | ge^fdbg | ^fafdg2- | ge^fdbg | ^fafdef | g2c2d2 | B2d2g2 |
+b2d'2z2 | B2d2g2 | b2d'2z2 | z2cdef | gfedcB | cGcdef | gfedc_B | A2c2f2 |
+c'2e'2z2 | z2d'c'ba | gabagf | efgfed | cdedcB | A2AGAB | c4f2 | Te4a2 |
+%
+g2f2e2  |  d2G2e2 | Td4 c2  | d2G2e2  | Td4  c2 | f6     | e2f2Td2 |  cgfgeg | dgfgdg | cgfgcg |
+B2z2g2  | ^f2z2f2 | e2z2e2  | d^fdcBA | B2^d2z2 | egedcB | c2e2z2  | ^fafgaf |
+d2^f2z2 |  g4 c'2 | b2ede^f | gdg^fga | bga^fge |^fafdg2-| ge^fdbg | ^fafdg2-|
+ge^fdbg | ^fafdef | g2c2d2  | G2fefe  | fGeded  | eGdcdc | dGedcB  |  c2efg2 | z2fef2 | z2ede2 |
+%
+z2fed^c | d2defg | agfed^c | dAdefg | agfedc  | B2d2g2  | b2d'2z2 | B2d2g2 |
+b2d'2z2 | z2cdef | gfedcB  | cGcdef | gfedc_B | A2dcde  | fcfefg  | afgefd |
+egecf2- | fdecaf | egecf2- | fdecaf | egecde  | f2_B2c2 | AFA=Bc2-| ccdcBA |
+BGBcd2- | ddedcB | cAcde2- | eefedc | dBdef2- | ffgfed  | e2AGAB  | c4  f2 |
+%
+Te4a2 | g2f2e2 | d2G2e2 | Td4c2 | d2G2e2 | Td4c2 | f6 | e2f2Td2 |
+c2z2c2 | B2z2B2 | egfgeg | dgfgdg | c2z2c2 | B2z2B2 | A2z2A2 | G2z4 |
+BAGABc | dcBcde | fedefg | agfgab | c'2f2z2 | e2dcBA | G2F2G2 | c2z4 | cc'bagf | eagfed |
+cfedcB | AdcBAG | f2e2z2 | a2g2z2 | c'2bagf | e2f2d2 | c'2bagf | Te2d2z2 | c2F2G2 | c6 |]
+
+X: 3
+T:
+P: Andante
+M: 4/4
+L: 1/16
+K: Am
+V:1
+[| z2cd e2cd e2a2 g2f2 | e2cd e2cd e2dc  Bfed  | cBA2 z2c'2- c'de^f gab2- | bcde ^fga2- aB^c^d eagf  |
+   gega b2ga b2e'2 d'2c'2 | b2ga b2ga b2ag ^fc'ba | g2^fe T^d3e e2A2 B2B2 |
+   e4   z2ed ^c2c2 z2cB | A2A2 z2^c2 d2d=c _BAG2 | A2^cA _BAG2 A2cA ecg2 | z2e^c ge_b2 z2ge bge'^c' |
+%
+   d'f'e'f' T^c'3d' d'ad'e' f'2a2 | gf'e'd' e'2g2 fe'd'^c' d'2f2 | ed'=c'b c'ba^g a2AB c2AB |
+   c2z2 B2z2 c2AB c2AB | c2BA ^G2^g2 aedc Bfed | cc'ba T^g3a a2d'^c' d'2d'2 | z2f'e' d'2d'2 z2^ga b2d2 |
+   dBc2 z2f'2 ^gab2 z2f'2 | ^gab2 z2ge b2d2 z2dB | f2^G2 z2fd b^gad e2e2 | A4 z4 z8 |]
+V:2
+[| z2AB c2AB c2z2 B2z2 | c2AB c2AB c2BA ^G2^g2 | aeab c'2e2  dc'ba  b2d2  | cba^g a2c2  Ba=g^f gfe^d |
+   e2e^f g2ef g2z2 f2z2 | g2e^f g2ef g2fe ^d2^d'2 | e'bag ^fc'ba g2fe T^d3e |
+   e2g^f g2g2 z2_ba g2g2 | z2^c'd' e'2g2 gef2 z2_b2 | ^cde2 z2_b2 cde2 z2cA | e^cg2 z2ec ge_b2 z2ge |
+%
+   fd^cd a2A2 d4 z2f'2- | f'gab c'd'e'2- e'fga bc'd'2- | d'e^f^g ad'c'b c'2cd e2cd |
+   e2a2 g2f2 e2cd e2cd | e2dc Bfed c2BA ^G2^g2 | a2d2 e2e2 f2d2 z2ba | ^g2g2 z2g^f e2e2 z2^G2 |
+   A2ag fed2 e2^ge fed2 | e2^ge b2d2 z2dB f2^G2 | z2fd b^gd'2- d'bc'a T^g3a | a4 z4 z8 |]
+
+X: 4
+T:
+P: Allegro
+M: 2/4
+L: 1/16
+K: C
+V: 1
+|: g2 |\
+  e2g2 d2g2 | c2z2 a2z2 | g2c'2 f2c'2 | e4 z2e2 | fgag fedc | B2d2 B2f2 | efgf edcB |
+  A2c2 A2c2 | defe dcBA | G2 B4 d2- | d2 f4 a2- | a4 zgfe | defe dcBA | G2 B4 d2- |
+  d2 f4 d'2- | d'4 zc'ba | g2c'2 d2b2 | c'4 z2g2 | e2g2 d2g2 | c2z2 e2z2 | d2g2 c2g2 | B4 z2b2 |
+  c'd'e'd' c'bag | ^f2a2 f2a2 | bc'd'c' bag^f | e2g2 e2g2 | abc'b ag^fe | d2 ^f4 a2- |
+%
+  a2 c'4 e'2- | e'4 zd'c'b | abc'b ag^fe | d2 ^f4 a2- | a2 c'4 ^f'2- | f'4 z2^f2 | g2c2 d4 |
+  G2B2 d2g2 | ^f4 z2f2 | g4 z2g2 | ^f4 z2f2 | g4 z2g2 | ^f4 b4 | a2d'2 g2d'2 | ^f2z2 e2z2 |
+  d4 z2^f2 | e2^g2 a2e2 | ^f2a2 d'2f2 | e2^g2 a2e2 |   ^f2a2 d'2d2 | e2c2 d4 | g2e2 ^f4 |
+  b2g2 c'2g2 | d'2g2 e'2g2 | b2g2 c'2g2 | d'2g2 e'2g2 | ^f2d2 a2c2 | B2d2 g4- | g2^fe dcBA | G6 :|
+%
+|: d2 |\
+  g2d2 a2d2 | b2z2 c'2z2 | d'2g2 c'2^f2 | b2g2 z2G2 | c2G2 d2G2 | e2z2 f2z2 | g2c2 f2B2 | e2c2 z2e2 | fga_b c'aga | fga_b c'aga | ^fga=b c'aga |
+  ^fgab c'aga | b2g2 dg^fg | b2g2 dg^fg | b2^g2 eg^fg | b2^g2 eg^fg | a2z2 =g2z2 | f2z2 e2z2 | d2z2 c2z2 | B2d2 f2A2 |
+  ^G4 A2B2 | c4 z2B2 | A4 ^G4 | A4 z4 | d2^f2 a2d'2 | b4 z2b2 | c2e2 g2c'2 | a2b2 c'2a2 | g2b2 c'2g2 | f2b2 c'2f2 | f2d2 e2B2 | c4 z2c2 |
+  B4 z2B2 | A4 z2A2 | G4 z2g2 | e2g2 d2g2 | c2z2 B2z2 | A2c2 F2f2 | e2z2 d2z2 | c2g2 e2g2 | a2f2 d2^f2 | gabc' d'c'ba | g2e2 c2e2 |
+%
+  fgab c'bag | f2d2 B2d2 | B2G2 d2G2 | f2G2 d2c2 | BcBA Bcde | f2d2 B2d2 | B2G2 d2G2 | f2G2 d2G2 | B2G2 g4 | e2c2 G2g2 |
+  e2c2 GcBc | e2c2 GcBc | e2^c2 AcBc | e2^c2 AcBc | defg afef | g4 zede | fgab c'aga | bc'd'e' f'd'c'd' |
+  bc'd'e' f'd'c'd' | e'2c'2 d'2g2 | c'2a2 b2e2 | a2f2 g2c2 | f4 z2g2  | a2f2 g4 | c'2a2 b4 | e'2g2 g'2g2 | d'2g2 f'2g2 | e'2g2 g'2g2 | d'2g2 f'2g2 |
+  e'2c'2 d'2a2 | b2g2 c'4- | c'2ba gfed | c4 d'2b2 | c4 e'4 | B4 d'4 | c4 e'4 | B4 d'4 | c4 f4 | z2ed e2c2 | a2f2 g2G2 | c6 :|
+V: 2
+|: z2 |\
+  c4 B4 | A2c2 F2f2 | e4 d4 | c2g2 e2g2 | a2f2 d2^f2 | gabc' d'c'ba | g2e2 c2e2 |
+  fgab c'bag | f2d2 B2d2 | B2G2 d2G2 | f2G2 d2c2 | BcBA Bcde | f2d2 B2d2 | B2G2 d2G2 |
+  f2G2 d2G2 | B2G2 g4 | e2c2 G2g2 | e2g2 d2g2 | c2z2 B2z2 | e2g2 c2g2 | B2z2 A2z2 | G2d2 B2d2 |
+  e2c2 A2^c2 | de^fg agfe | d2B2 G2B2 | cde^f gfed | c2a2 ^f2a2 | ^f2d2 a2d2 |
+%
+  c'2d2 a2g2 | ^fgfe fgab | c'2a2 ^f2a2 | ^f2d2 a2d2 | c'2d2 a2d2 |d'2d2 c'4 | b2ag d2^f2 |
+  g4 z2b2 | a2^c'2 d'2a2 | b2d2 G2b2 | a2^c'2 d'2a2 | b2d2 G2b2 | a2d'2 g2d'2 | ^f2z2 b2z2 | a2d'2 g2d'2 |
+  ^fgag f2d2 | ^c4 z2c2 | d4 z2d2 | ^c4 z2c2 | d4 z2B2 | =c4 ^f2d2 | e4 a2^f2 |
+  g4 a4 | b4 c'4 | g4 a4 | b4 c'4 | z2^fe f2a2 | d4 z2B2 | e2c2 d2^f2 | g6 :|
+%
+|: z2 |\
+  z6 d2 | g2d2 a2d2 | b2z2 a2z2 | g4 z4 | z6 G2 | c2G2 d2G2 | e2z2 d2z2 | c4 c'2g2 | a2f2 cfef | a2f2 cfef | a2^f2 dfef |
+  a2^f2 dfef | gabc' d'bab | gabc' d'bab | ^gabc' d'bab | ^gabc' d'bab | c'2a2 b2e2 | a2f2 g2c2 | f2d2 e2A2 | d4 z2f2 |
+  e2f2 e2^d2 | e2^g2 a2d2 | cdec BcdB | A2c2 e2a2 | ^f4 z2f2 | G2B2 d2g2 | e4 z2e2 | f4 z2f2 | e4 z2e2 | d4 z2d2 | c4 z2g2 | e2^f2 g2e2 |
+  d2^f2 g2d2 | c2^f2 g2c2 | c2A2 B4 | z6 g2 | e2g2 d2g2 | c2z2 a2z2 | g2c'2 f2c'2 | e4 z2e2 | fgag fedc | B2d2 B2d2 | efgf edcB |
+%
+  A2c2 A2c2 | defe dcBA | G2 B4 d2- | d2 f4 a2- | a4 zgfe | defe dcBA | G2 B4 d2- | d2 f4 d'2- | d'4 zc'ba | g2c'2 d2b2 |
+  cdef gede | cdef gede | ^cdef gede | ^cdef gede | f4 zd^cd | efga _bgfg | a4 z^fef | gabc' d'bab |
+  gabc' d'bab | c'2z2 b2z2 | a2z2 g2z2 | f2z2 e2z2 | d4 z2e2 | f4 b2g2 | a4 d'2b2 | c4 e'4 | B4 d'4 | c4 e'4 | B4 d'4 |
+  c4 f4 | z2ed e2c2 | a2f2 g2b2 | c'2a2 b4 | e'2g2 g'2g2 | d'2g2 f'2g2 | e'2g2 g'2g2 | d'2g2 f'2g2 | e'2c'2 d'2a2 | b2g2 c'4- | c'2ba gfed | c6 :|
