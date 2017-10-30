@@ -20,3 +20,5 @@ audio/save_midi/
 audio/save_abc/
 audio/data/abc/master_processed.abc
 audio/data/abc/*.mid
+audio/output/*/*.flp
+audio/output/*/*.mp3
