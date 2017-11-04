@@ -23,20 +23,24 @@ from random import shuffle
 
 INPUT_FILENAME = sys.argv[1]
 
-regex = re.compile("^\s*X:")
+regex = re.compile(r"^\s*X:.*\n")
 songs = []
 current_song = ""
-current_song_i = 0
 
+# Add lines into songs
 with open(INPUT_FILENAME, "r") as f:
     for line in f:
         if regex.match(line):
             songs.append(current_song)
-            current_song = "X: " + str(current_song_i) + "\n"
-            current_song_i += 1
+            current_song = line
         else:
             current_song += line
 
 shuffle(songs)
+
+# Replace titles with increasing sequence
+song_i = 0
 for song in songs:
+    song = regex.sub("X: " + str(song_i) + "\n", song)
+    song_i += 1    
     print song
