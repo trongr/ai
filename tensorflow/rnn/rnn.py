@@ -48,9 +48,11 @@ class RNN(object):
         # Cells = tf.contrib.rnn.MultiRNNCell([Cell] * self.NUM_LSTM_CELLS)
 
         '''
-        TODO. I think building a MultiRNNCell using a for loop like this is 
+        NOTE. I think building a MultiRNNCell using a for loop like this is
         causing the model (specifically these cells) not to be saved properly.
         Then when it's reloaded, the cells are re-initialized to zero.
+        Confirmed. Changing it to variable init instead of loop init fixes
+        restoring.
         '''
         # Cells = tf.contrib.rnn.MultiRNNCell([RNN.lstm_cell(self.NUM_CELL_UNITS) for _ in range(self.NUM_LSTM_CELLS)])
         # See if this helps saving and restoring. I have a feeling creating a 
