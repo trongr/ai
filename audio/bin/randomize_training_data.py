@@ -43,4 +43,4 @@ song_i = 0
 for song in songs:
     song = regex.sub("X: " + str(song_i) + "\n", song)
     song_i += 1    
-    print song
+    print(song)

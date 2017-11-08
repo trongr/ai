@@ -1,22 +1,25 @@
 #!/bin/bash
 
-# USAGE. bash gen_master_abc.sh SRC_DIR DST_DIR
+# USAGE. bash gen_master_abc.sh MY_SRC_DIR ANOTHER_DIR ...
+#
+# This script cats all ABC files in the src dirs and cats them together,
+# preprocesses them, randomizes the training data, and retitles the songs,
+# and dumps them in the current working dir's master.abc
 
-SRC_DIR="$1"
-DST_DIR="$2"
+SRC_DIR="$@"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-echo "Removing $DST_DIR/master*.abc"
-rm $DST_DIR/master*.abc
+echo "Removing master*.abc"
+rm master*.abc
 
 echo "Concatenating abc files into master_tmp_all.abc"
-cat $(find $SRC_DIR -type f | grep "\.abc") > $DST_DIR/master_tmp_all.abc
+cat $(find $SRC_DIR -type f | grep "\.abc") > master_tmp_all.abc
 
 echo "Preprocessing master_tmp_all.abc by removing metadata"
-python $SCRIPT_DIR/preprocess_abc.py $DST_DIR/master_tmp_all.abc > $DST_DIR/master_tmp_preprocessed.abc
+python $SCRIPT_DIR/preprocess_abc.py master_tmp_all.abc > master_tmp_preprocessed.abc
 
 echo "Randomizing preprocessed file and outputting master.abc"
-python $SCRIPT_DIR/randomize_training_data.py $DST_DIR/master_tmp_preprocessed.abc > $DST_DIR/master.abc
+python $SCRIPT_DIR/randomize_training_data.py master_tmp_preprocessed.abc > master.abc
 
 echo "Removing tmp files"
-rm $DST_DIR/master_tmp_*.abc
+rm master_tmp_*.abc
