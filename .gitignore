@@ -21,9 +21,10 @@ audio/save_abc/
 audio/data/abc/master*.abc
 audio/data/abc/master_processed.abc
 # audio/data/abc/*.mid
+audio/output/output.abc
+audio/output/*/*.wav
 # audio/output/*/*.flp
 # audio/output/*/*.mp3
-audio/output/*/*.wav
 *.mscz,
 audio/output/History/
 audio/output/*/History/

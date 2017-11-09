@@ -54,7 +54,7 @@ model = RNN(sess, data, {
     "SAVE_DST": "./save_abc/",
 })
 
-output_file = open("output/output.abc", "w")
+output_file = open("output/output.abc", "w", encoding="utf-8")
 t = time.time()
 i = 0
 while True: 
