@@ -34,9 +34,10 @@ FILENAME = sys.argv[1]
 DATA = open(FILENAME, 'r').read()
 
 # TODO. Replace this list with new char set if DATA contains new chars
-CHARS = ['\x93', ' ', '$', '(', ',', '0', '4', '8', '<', '@', '\xc3', 'D', 'H', 'L', 'P', 'T', 'X', '\\', '`', 'd', 'h', 'l', 'p', '\xf3', 't', 'x', '|', '\xff', '\x80', '\x94', '\x98', '#', "'", '+', '/', '3', '7', ';', '?', '\xc0', 'C', 'G', 'K', 'O', 'S', 'W', '[', '_', '\xe0', 'c', 'g', 'k', 'o', 's', 'w', '{', '\x89', '\n', '\x99', '"', '&', '\xa9', '*', '.', '2', '6', ':', '>', 'B', 'F', 'J', 'N', 'R', 'V', 'Z', '^', 'b', 'f', '\xe9', 'j', 'n', 'r', 'v', '\xf9', 'z', '~', '\t', '\x96', '!', '%', ')', '-', '1', '5', '9', '=', 'A', 'E', 'I', '\xca', 'M', 'Q', 'U', 'Y', ']', 'a', '\xe2', 'e', 'i', 'm', 'q', '\xf2', 'u', 'y', '}']
+CHARS =  ['\t', '\n', ' ', '!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ':', ';', '<', '=', '>', '?', '@', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '[', '\\', ']', '^', '_', '`', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '{', '|', '}', '~', '\x80', '\x89', '\x93', '\x94', '\x96', '\x98', '\x99', '©', 'À', 'Ã', 'Ê', 'à', 'â', 'é', 'ò', 'ó', 'ù', 'ÿ']
 CHARS.extend(list(set(DATA)))
 CHARS = list(set(CHARS))
+CHARS.sort()
 print("Char set", CHARS)
 
 DATA_SIZE, VOCAB_SIZE = len(DATA), len(CHARS)
@@ -54,8 +55,8 @@ model = RNN(sess, data, {
     "SAVE_DST": "./save_abc/",
 })
 
-output_file = open("output/output.abc", "w")
 t = time.time()
+current_song = ""
 i = 0
 while True: 
     batchX, batchY = model.train_batch()
@@ -96,9 +97,24 @@ while True:
         print(sample)
         print("======")
 
-        output_file.write(sample)
-        output_file.write("\n")
-        output_file.flush()
+        if "X:" in sample:
+            output_file = open("output/output" + str(i) + ".abc", "w", encoding="utf-8")            
+            split = sample.split("X:")
+            """
+            sample could contain more than one X:, but we'll keep it simple and
+            just end the song at before and start a new song at the last split.
+            """
+            before = split[0]
+            after = split[-1]
+            current_song += before
+            try: 
+                output_file.write(current_song)
+                output_file.flush()
+            finally:
+                current_song = "X:" + after
+                output_file.close()
+        else:
+            current_song += sample
 
         print('Batch: {:2d}, elapsed: {:.4f}'.format(i, time.time() - t))
         t = time.time()        

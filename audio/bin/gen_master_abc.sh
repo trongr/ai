@@ -2,9 +2,9 @@
 
 # USAGE. bash gen_master_abc.sh MY_SRC_DIR ANOTHER_DIR ...
 #
-# This script cats all ABC files in the src dirs and cats them together,
-# preprocesses them, randomizes the training data, and retitles the songs,
-# and dumps them in the current working dir's master.abc
+# This script cats all ABC files in the src dirs together, preprocesses them,
+# randomizes the training data, and retitles the songs, and dumps them in the
+# current working dir's master.abc
 
 SRC_DIR="$@"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
