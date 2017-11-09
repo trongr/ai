@@ -1,0 +1,197 @@
+X: 1
+T: from bach/bjsbmm04.mid
+M: 3/8
+L: 1/16
+Q:1/4=96
+K:D % 2 sharps
+%     Mass in B Minor          Johann Sebastion Bach  No. 4, Chor, Gloria in excelsis Deo &  Et in terra pax    seq by David Siu  dss@po.cwru.edu      
+% Instrument  1
+%%MIDI program 56
+V:1
+% Trumpet
+%%MIDI program 56
+x6| \
+%     Mass in B Minor          Johann Sebastion Bach  No. 4, Chor, Gloria in excelsis Deo &  Et in terra pax    seq by David Siu  dss@po.cwru.edu      
+dx Ax dx| \
+ex fe de| \
+[fd]x [dA]x [fd]x|
+[ge]x [af][ge] [fd][ge]| \
+[a-fd]a- [a-aA]a- [a-gA]a-| \
+[afA]x [bdD]a [gdA]f| \
+[eeA]x ax gx|
+[fdA]a gf ed| \
+[aeA]x4x| \
+[af]x4x| \
+[af]x4x|
+x2 [bg]x [af]x| \
+[ge]x4x| \
+[ge]x4x| \
+[geA]x4x|
+x2 [afd]x [geA]x| \
+[fdA]x [af]x [d'b]x| \
+x2 [c'a][bg] [c'ae]x| \
+dx [fd]x [bg]x|
+x2 [af][ge] [afD]x| \
+Dx [dd]x [ge]x| \
+x2 [fd][ec] [fdA]x| \
+[e-d-d][e4d4-][f/2d/2-][g/2d/2-]|
+[fd]e [f/2A/2-A/2-][e/2A/2A/2][f/2e/2A/2-A/2-][f/2A/2A/2] [eAA][dAA]| \
+[dAF]x4x| \
+x6| \
+[afd]x4x|
+x6| \
+[afd]x [afA]x [geA]x| \
+[fdA]x [aeA]A [d'fA]A| \
+[c'eA]x4x|
+[d'aF]x4x| \
+[c'eA]x4x| \
+[ae]x4x| \
+[c'e]x4x|
+x2 [d'f]x [c'e]x| \
+[bd]x4x| \
+[fd]x4x| \
+[bd]x4x|
+x2 [c'e]x [be]x| \
+[aeA]x4x| \
+x6| \
+[aeA]x4x|
+x6| \
+[c'ae]x [c'ae]x [b^gd]x| \
+[aae]x4x| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+[c'/2-a/2-e/2][c'/2a/2f/2]e/2f/2 e/2f/2e/2f/2 e/2f/2e/2f/2| \
+e/2f/2e/2f/2 e/2f/2e/2f/2 e/2f/2e/2f/2| \
+[aeA]x a^g ax|
+ax ^ga f^g| \
+[aeA]x4x| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+dx Ax dx| \
+ex fe de| \
+[fd]x [dA]x [fd]x|
+[=ge]x [af][ge] [fd][ge]| \
+[a-fd]a- [a-aA]a- [a-gA]a-| \
+[afA]x [bdD]a [gdA]f| \
+[eeA]x ax gx|
+[fdA]a gf ed| \
+[aeA]x4x| \
+[af]x4x| \
+[af]x4x|
+x2 [bg]x [af]x| \
+[ge]x4x| \
+[ge]x4x| \
+[geA]x4x|
+x2 [afd]x [geA]x| \
+[fdA]x [af]x [d'b]x| \
+x2 [c'a][bg] [c'ae]x| \
+dx [fd]x [bg]x|
+x2 [af][ge] [afD]x| \
+Dx [dd]x [ge]x| \
+x2 [fd][ec] [fdA]x| \
+[e-d-d][e4d4-][f/2d/2-][g/2d/2-]|
+[fd]e [f/2A/2-A/2-][e/2A/2A/2][f/2e/2A/2-A/2-][f/2A/2A/2] [eAA][dAA]| \
+M: 4/4
+L: 1/16
+[d4A4F4] x12| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x8 [a8-f8-]|
+[a16-f16-]| \
+[a8f8] [^g8-e8-]| \
+[^g8e8-] [=g8-e8]| \
+[g6-e6-] [g-e-A][ge] [f-d-D][f-d-] [f-d-D][f-d-] [f-d-D][f-d-] [f-d-D][f-d-]|
+[f4-d4-D4] [f2-d2-] [f2f2d2-] [g2e2-d2-] [ae-d-][e-d-] [b2e2-d2-] [ae-d-][e-d]| \
+[a2-e2A2-] [a-fA-][agA] f2 [d2d2d2] [d2d2d2] [AAA]x [A2A2A2] [FFF]x| \
+[FFF]x3 [afd]x3 [afd]x3 [^ged]x3| \
+[aeA]x12x3|
+x16| \
+x16| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x16|
+x16| \
+x6 [a-e-A][ae] [a-f-A][af] [b=g]x [b2g2] [=c'ad]x| \
+[=c'-a-d][=c'a] [bg]x [=c'2a2] [d'bD]x [b-g-D][bg] [af]x [g2e2] [fd]x| \
+[e-A]e [d'AA][^c'AA] [d'-AF]d' [g-dD]g [f-dF]f- [f-AD][fA] [f/2A/2-A/2-][e/2A/2A/2]f/2e/2 [f/2A/2-A/2-][e/2A/2A/2][d/2A/2-][e/2A/2]|
+[dAF-]F- [d/2-A/2-F/2][d3/2A3/2] [a2-f2] [a2-a2e2] [d'af]x [d'be-][c'ae] [d'-^ge-][d'ae] [b-fe-][b^ge]| \
+[c'ae]x [aeA]x12x| \
+x16| \
+x16|
+x12 x2 e2| \
+[e2A2A2] [fdA-]A [f2d2A2] [=geA-]A [g2e2A2] [fdA-]A [g2e2A2] [afA-]A| \
+[f4d4A4] x12| \
+x2 [bgd]x [g4d4D4] x8|
+x8 x2 [c'ae]x [a4e4A4]| \
+x16| \
+x2 [d'bf]x [b4f4d4] x8| \
+x16|
+x16| \
+x12 x2 [a2e2A2]| \
+[a-fD]a bx [b-gd]b =c'x [=c'-ae]=c' bx [=c'-af]=c' d'x| \
+[b2g2d2-] [afd-]d [g2e2] [fdD]x [e-AA]e [d'dA][^c'eA] [d'-dA]d' [gdA]x|
+[f-dA]f- [f-AF][fD] [e-AA]e- [e-AA][eAA] [d8A8F8]|
+V:2
+% Timpani
+%%MIDI program 47
+x6 
+%     Mass in B Minor          Johann Sebastion Bach  No. 4, Chor, Gloria in excelsis Deo &  Et in terra pax    seq by David Siu  dss@po.cwru.edu      

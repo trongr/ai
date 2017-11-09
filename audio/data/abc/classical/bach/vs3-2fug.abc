@@ -1,0 +1,1470 @@
+Error: Time=197760 Track=2 Note terminated when not on - pitch 82
+Error: Time=198240 Track=2 Note terminated when not on - pitch 82
+Error: Time=201600 Track=2 Note terminated when not on - pitch 79
+Error: Time=202080 Track=2 Note terminated when not on - pitch 79
+X: 1
+T: from bach/vs3-2fug.mid
+M: 4/4
+L: 1/8
+Q:1/4=140
+K:C % 0 sharps
+% untitled
+% ->
+V:1
+% Solo Violin
+%%MIDI program 40
+x4 
+% untitled
+G4| \
+A2 GF E2 F2| \
+G4 D2 E2| \
+F2 E2 F2 GF|
+E2 FG A4| \
+^G4 =G4| \
+^F4 =F4| \
+E2 D2 E2 ^F2|
+G2 =F2 G2 E2| \
+F2 E2 F2 D2| \
+E4 E4| \
+E4 A4|
+D4 x4| \
+D8| \
+E4 A4| \
+E4 E4|
+D4 F4| \
+E4 x4| \
+D4 x4| \
+A4 D4|
+G4 x4| \
+G2 x4 G2| \
+F2 x6| \
+F2 x4 F2|
+E2 F2 G4| \
+^F4 =F4| \
+E4 ^D4| \
+=D4 E4|
+F2 E2 F2 GF| \
+E4 ^F4| \
+G4 G4| \
+A2 G=F E2 ^F2|
+G4 D2 E2| \
+=F2 E2 F2 GF| \
+E2 cB A2 G2| \
+^F2 dc d2 ^F2|
+G2 ^A=A G2 =F2| \
+E2 c^A c2 E2| \
+F2 =AG FG EF| \
+DA dc BA GF|
+E2 cB Ac eG| \
+FA fe dc BA| \
+GA/2B/2 cd ef g^A| \
+=Ae ag fg/2a/2 de/2f/2|
+Bd ef g4| \
+x4 A2 x2| \
+Gg fe d2 e2| \
+e2 fe f2 gf|
+e2 x6| \
+e2 x2 d2 x2| \
+d2 cB c2 de| \
+f2 fe f2 gf|
+e2 x6| \
+e2 x4 e2| \
+f2 x6| \
+^f2 x4 ^f2|
+g2 x2 g4| \
+g4 =f4| \
+f4 e4| \
+e2 x6|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x4 a4| \
+^a2 =ag f2 g2|
+a4 e2 f2| \
+g2 f2 g2 ag| \
+f4 ^a4-| \
+^a2 =ag a^a =ag|
+^f4 g4-| \
+g2 =fe f4| \
+e4 a4| \
+x8|
+x8| \
+x4 E2 x2| \
+x8| \
+^F4 =F4|
+E4 ^F4| \
+G4 G4| \
+A2 G=F E2 ^F2| \
+G4 D2 E2|
+=F2 E2 F2 GF| \
+E4 E2 ^F2| \
+G2 ^F2 G2 AG| \
+=F4 F2 GF|
+E4 E2 FE| \
+D4 G4| \
+G2 x6| \
+x8|
+x8| \
+x8| \
+E4 x4| \
+^G4 E4|
+^F2 E2 ^F2 ^G2| \
+A4 E2 ^F2| \
+=G2 ^F2 G2 AG| \
+^F4 =F4|
+E4 ^F4| \
+G2 =FE D2 E2| \
+F2 E2 F2 GF| \
+E4 D2 E2|
+F2 G2 A4| \
+D4 x4| \
+x4 A2 B2| \
+c2 B2 E2 F2|
+G2 F2 B,2 C2| \
+D2 C2 D2 ED| \
+C2 ^A,2 C2 DC| \
+^A,4 ^A,4|
+=A,4 G,4| \
+G,2 A,2 ^A,4| \
+G,4 =A,4| \
+D4 x4|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x4 G,4| \
+D4 G,4|
+C4 C4| \
+B,4 B,4| \
+A,4 C4| \
+G,4 B,4|
+A,4 B,4| \
+x8| \
+E4 x4| \
+E4 x2 E2|
+E4 x4| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x4 g2 a2| \
+b2 ag ^f2 g2|
+a4 e2 ^f2| \
+g2 ^f2 g2 ag| \
+^f2 g2 a2 a2| \
+g2 a2 b2 b2|
+a2 b2 c'2 c'2| \
+b2 c'2 d'2 d'2| \
+e'2 d'c' b2 ^c'2| \
+d'2 d'2 a2 b2|
+=c'2 b2 c'2 d'c'| \
+b2 a2 b2 b2| \
+b2 b2 a2 a2| \
+a2 a2 g2 g2|
+g2 g2 ^f2 ^f2| \
+g4 x4| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x4 g4| \
+e2 =fg a2 g2| \
+f4 ^a2 =a2|
+g2 ag f2 g2| \
+a4 x4| \
+x4 g4| \
+^g4 a4|
+^a4 x2 b2| \
+c'2 ^a2 =a2 =g2| \
+^f2 ed g4| \
+E4 x2 E2|
+D4 D4| \
+D4 C2 B,A,| \
+^D4 x2 ^D2| \
+E2 x6|
+E4 x4| \
+x8| \
+E4 =D4| \
+B,4 C4|
+x4 G,4| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x4 g2 =f2| \
+e2 fe d2 e2| \
+f4 f2 f2|
+f2 x2 e2 x2| \
+^d2 =dc a2 g2| \
+^f2 g^f eg ^fa| \
+g2 d2 c2 c2|
+c3d2<B2c| \
+c2 x6| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x2 g2 g2 ^f2|
+g4 x4| \
+x8| \
+x8| \
+x8|
+x4 c2 d2| \
+e2 dc B2 c2| \
+d4 A2 B2| \
+c2 B2 c2 dc|
+B4 
+% ->
+e4-| \
+e4 d4-| \
+d2 B2 e2 d2| \
+^c4 =c4|
+B4 ^A4| \
+=A2 G2 A2 B2| \
+c4 c4| \
+B4 ^c4|
+d4 =c2 d2| \
+e2 dc B2 ^c2| \
+d4 A2 B2| \
+=c2 B2 c2 dc|
+B4 x4| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x4 d4| \
+^c4 =c4|
+B4 ^A4| \
+=A4 B4| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x4 c2 ^A2| \
+=Aa g=f e2 ^f2| \
+dx4x e2| \
+e2 =fe f2 gf|
+e2 x6| \
+e2 x2 d2 x2| \
+d2 cB c2 de| \
+f2 fe f2 gf|
+e2 x6| \
+e2 x4 e2| \
+f2 x6| \
+^f2 x4 ^f2|
+g2 x2 g4| \
+g4 =f4| \
+f4 e4| \
+e2 x6|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+g4 
+V:2
+% --------------------------------------
+%%MIDI program 40
+x8| \
+x8| \
+x8| \
+x8|
+x4 
+% untitled
+c4| \
+e2 dc B2 ^c2| \
+d4 A2 B2| \
+=c2 B2 c2 dc|
+B2 cd e4-| \
+e4 d4-| \
+d2 B2 e2 d2| \
+^c4 =c4|
+B4 ^A4| \
+=A2 G2 A2 B2| \
+c4 c4| \
+B4 ^c4|
+d4 =c2 d2| \
+e2 dc B2 ^c2| \
+d4 A2 B2| \
+=c2 B2 c2 dc|
+B4 x4| \
+x8| \
+x8| \
+x8|
+x4 C4| \
+D2 CB, A,2 B,2| \
+C4 G,2 A,2| \
+^A,2 =A,2 ^A,2 C^A,|
+=A,4 B,4| \
+C2 B,2 C2 DC| \
+B,2 A,2 ^A,4| \
+=A,4 x4|
+G,4 x4| \
+D4 G,4| \
+C2 x6| \
+C2 x4 C2|
+^A,2 x6| \
+^A,2 x4 ^A,2| \
+=A,2 x6| \
+B,x6x|
+C2 x6| \
+Dx6x| \
+Ex6x| \
+Fx6x|
+Fx3 E2 D2| \
+^Cx3 =C2 x2| \
+B,2 x2 ^A,2 x2| \
+=A,2 x6|
+G,2 x6| \
+x8| \
+x8| \
+x8|
+x2 CD EG FA| \
+G2 ^A,=A, ^A,2 G2| \
+=A2 x6| \
+x8|
+x2 B,2 E2 D2| \
+^C2 A,2 D2 =C2| \
+B,2 G,2 C2 ^A,2| \
+=A,2 x6|
+G,x6x| \
+x8| \
+^G,x6x| \
+x8|
+x8| \
+x6 B2| \
+c=g/2f/2 eg ce Gc| \
+EG CE G,e dc|
+B/2g/2^f/2e/2 dg Bd GB| \
+DG B,D G,d cB| \
+ca/2g/2 ^fa c^f Ac| \
+^FA D^F Ac ^fa|
+G,D ^Fc BG EG| \
+^CE/2=F/2 GE ^AG ^ce| \
+F=A g^c dA ^Ad| \
+^GB/2=c/2 dB fd ^gb|
+Ec e^g =ac' ^fa| \
+^d^f/2=g/2 a^f ^dB c^D| \
+EB ^da gb/2a/2 ge| \
+^c^A/2=A/2 GE ^C=D/2E/2 A,B,/2^C/2|
+DA ^cg =fa/2g/2 fd| \
+B^G/2=G/2 FD B,=C/2D/2 G,A,/2B,/2| \
+CG Bf eg/2f/2 ec| \
+fd/2c/2 Bd ^GA/2B/2 E^F/2^G/2|
+A,E ^Gd cA =FA| \
+B,D ^Ge dB ^GB| \
+CE ^Gf ec Ac| \
+Da/2=g/2 fe d^a/2=a/2 ^ad|
+Ed/2e/2 fd ^gd bd| \
+Ec/2d/2 ec =ae c'e| \
+EB/2c/2 dB ^ge d'e| \
+EA/2B/2 c^d ^fa c'^d'|
+e'b ^ge E2 e2| \
+=f2 e=d c2 d2| \
+e4 B2 c2| \
+d2 c2 d2 ed|
+c4 f4-| \
+f2 ef =ge fg| \
+^c2 BA d4| \
+d2 x2 D4|
+F2 ED E2 x2| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x4 =C2 D2| \
+E2 DC B,2 C2| \
+D4 A,2 B,2|
+C2 B,2 C2 DC| \
+B,2 CD E2 D2| \
+^C4 =C4| \
+B,4 ^A,4|
+=A,4 D4-| \
+D2 CB, C4| \
+B,4 E4-| \
+E2 DC D4-|
+D2 CB, C4-| \
+C2 B,A, B,2 G,2| \
+C2 D2 E4| \
+D4 x4|
+A4 D4| \
+G4 E4| \
+^C4 D4| \
+D2 =CB, C2 DC|
+B,4 B,4| \
+A,4 A,4| \
+G,4 A,4| \
+D4 D4|
+A,4 D4| \
+G,4 G,4| \
+D4 G,4| \
+C4 ^A,4|
+=A,2 x2 A,4| \
+G,4 x4| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x4 D4| \
+G2 G2 F2 GF| \
+E2 F2 G2 AG| \
+^F4 x4|
+x4 g4| \
+b2 ag ^f2 g2| \
+a4 e2 ^f2| \
+g2 ^f2 g2 ag|
+^f2 ga b4| \
+e4 a4| \
+xa g^f g4| \
+=f4 x4|
+e2 ^d2 e2 ^fe| \
+^d4 =d4| \
+c4 c4| \
+B4 ^d4|
+^c4 ^d4| \
+e2 =d2 =c2 B2| \
+A4 x4| \
+B4 x2 c2|
+B4 A4| \
+x2 g=f eg dg| \
+^cb ge ^ce A^c| \
+DA ^cg fe d=c|
+B^G FD B,D =G,F| \
+CE A,G DF B,A| \
+EG C^A F=A Dc| \
+GB dg dB GE|
+^CA GF E=C ^FC| \
+B,G =FE D^A, E^A,| \
+=A,C DE FA, B,F| \
+CE ^F^G A^C ^DA|
+E=G AB =cE ^Fc| \
+GB ^c^d e^G ^Ae| \
+B=d e^f =gB ^cg| \
+d^f =ad' a^f dB|
+^Ge d=c B=G ^cG| \
+^Fd =cB A=F BF| \
+EG AB cE ^Fc| \
+GB Ed Ac ^Fe|
+Bd G=f ce Ag| \
+d^f Ad ^FA Dc| \
+Be dc Bx cx| \
+dx cB Ax Bx|
+cx Bx cx dc| \
+Bx Ax Bx ^c2| \
+dx dx =cx dx| \
+ex ex dx ex|
+^fx ^fx ex ^fx| \
+gx gx ^fx =fx| \
+ex ^f2 gx gx| \
+^fx ^fx =fx fx|
+ex ex ^dx ^d2| \
+=dx cx dx ed| \
+^cx Bx =cx dc| \
+Bx Ax ^Ax c^A|
+=Ax Bx cx dc| \
+B4 x4| \
+x8| \
+x8|
+x8| \
+x4 G4| \
+^F2 GA B2 A2| \
+G4 c2 B2|
+A2 BA G2 A2| \
+B4 B4| \
+c4 ^c4| \
+d4 d4|
+^d4 x2 e2| \
+=f2 e2 =d2 =c2| \
+B2 cd e2 d2| \
+c4 f2 e2|
+d2 ed c2 d2| \
+e4 c4| \
+c4 ^A2 =AG| \
+^c4 x2 ^c2|
+d2 =c2 ^A2 =A2| \
+^G2 ^FE A4| \
+A2 Bc B2 A2| \
+=G2 =F2 E2 D2|
+^C2 B,A, D4| \
+D2 EF E2 D2| \
+^C4 x4| \
+G4 G4|
+F2 E2 D4| \
+=C4 x4| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x4 G,4|
+^G,4 A,4| \
+^A,4 x2 B,2| \
+C4 x2 ^C2| \
+D4 D2 =C2|
+B,2 CD C2 ^A,2| \
+=A,4 x4| \
+C4 x4| \
+x2 B,2 C2 A,2|
+=G,4 G,4| \
+x2 CD EC FD| \
+GE CE G^A =AG| \
+AF DE ^FD GE|
+A^F D^F Ac BA| \
+Bd GA BG cA| \
+dB GB d=f ed| \
+ec Gc eg ^fe|
+^fc Ac ^fa g^f| \
+gd Bd gb ag| \
+a^f c^f ac' ba| \
+bg dg bd' gb|
+c'a g=f ec' ^fc'| \
+bg =fe d^a e^a| \
+f^a =ag af bf| \
+eg ab c'a c'g|
+fa bc' d'b d'a| \
+gb c'd' e'c' e'^a| \
+=ac' d'e' f'd' f'c'| \
+bd' e'f' g'e' g'd'|
+c'a f'd' bg e'c'| \
+af d'b ge c'a| \
+fd' c'b af bf| \
+ec' ba g^d a^d|
+=d^a =ag ^fd gd| \
+ca g=f ec ^fc| \
+Bg ^fe dc BA| \
+BG d^F GD BG|
+dB gd BG DB,| \
+G,x4G, xG,| \
+xG, x3G, xG,| \
+xG, xG, xG, x2|
+xG, xG, xG, x2| \
+xG, xG, xG, xG,| \
+xG, xG, xG, xG,| \
+xG, xG, xG, xG,|
+xG, xG, xG, xG,| \
+xG, x3G, xG,| \
+xG, xG, xG, xG,| \
+xG, xG, xG, x2|
+xG, xG, xG, x2| \
+xG, xG, xG, x2| \
+xG, xG, xG, x2| \
+xG, xG, xG, xG,|
+G,4 x4| \
+x4 C4| \
+B,4 ^A,4| \
+=A,2 G,2 A,2 B,2|
+C2 B,2 A,4| \
+G,4 G,2 A,2| \
+B,2 C2 D4| \
+A,4 A,4|
+G,4 x4| \
+x8| \
+x8| \
+% ->
+A,4 A,4|
+G,4 G,4| \
+x8| \
+A,4 x4| \
+x4 E4|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x4 G4| \
+^F4 =F4| \
+E4 ^D4| \
+=D4 E4|
+F2 E2 F2 GF| \
+E4 ^F4| \
+G4 G4| \
+A2 G=F E2 ^F2|
+G4 x4| \
+=F2 E2 F2 GF| \
+E2 cB A2 G2| \
+^F2 dc d2 ^F2|
+G2 ^A=A G2 =F2| \
+E2 c^A c2 E2| \
+F2 =AG FG EF| \
+DA dc BA GF|
+E2 cB Ac eG| \
+FA fe dc BA| \
+GA/2B/2 cd ef g^A| \
+=Ae ag fg/2a/2 de/2f/2|
+Bd ef g4| \
+x4 A2 x2| \
+Gg fe d2 x2| \
+c2 x6|
+c2 x6| \
+x8| \
+x8| \
+x8|
+x2 CD EG FA| \
+G2 ^A,=A, ^A,2 G2| \
+=A2 x6| \
+x8|
+x2 B,2 E2 D2| \
+^C2 A,2 D2 =C2| \
+B,2 G,2 C2 ^A,2| \
+=A,2 x6|
+G,x6x| \
+x8| \
+^G,x6x| \
+x8|
+x8| \
+x8| \
+C4 
+V:3
+% Johann Sebastian Bach  (1685-1750)
+%%MIDI program 40
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x4 
+% untitled
+=g4| \
+a2 gf e2 ^f2|
+g4 d2 e2| \
+=f2 e2 f2 gf| \
+e2 d2 e2 f2| \
+g2 f2 g2 ag|
+f2 g2 a4| \
+^g4 =g4| \
+^f4 =f4| \
+e4 ^f4|
+x2 g=f e2 d2| \
+^c2 ag a2 ^c2| \
+d2 fe d2 =c2| \
+B2 gf g2 B2|
+c2 d2 e4| \
+A4 d4| \
+xG AB c4| \
+x8|
+x8| \
+x8| \
+x4 d4| \
+^c4 =c4|
+B4 ^A4| \
+=A4 B4| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x4 c2 ^A2| \
+=Aa gf e2 ^f2| \
+dx3 G2 x2| \
+=F2 x6|
+G2 GF G2 AG| \
+F2 FE F2 GF| \
+E2 x6| \
+D2 x2 G2 x2|
+x8| \
+x8| \
+A,2 DE FG FG| \
+A2 CB, C2 A2|
+B2 x2 B4| \
+A4 A4| \
+G4 G4| \
+F2 x6|
+Fx6x| \
+x8| \
+^Dx6x| \
+x8|
+x8| \
+x6 F2| \
+Ex6x| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x4 A4| \
+c2 BA ^G2 A2| \
+B4 ^F2 ^G2|
+A2 =G2 A2 ^A=A| \
+G2 x6| \
+G4 =F2 E=D| \
+G2 A2 ^A4|
+=A4 A2 A2| \
+^c2 d^c B2 ^c2| \
+d2 =c2 d2 ^d=d| \
+^c4 =c4|
+c2 ^A=A ^Ad c^A| \
+=A4 A2 B2| \
+c2 B2 c2 dc| \
+B2 c2 d2 e2|
+f2 e2 f2 gf| \
+e4 e2 dc| \
+B2 c2 d4| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x4 d4| \
+e2 dc B2 c2| \
+d4 A2 B2|
+c2 B2 c2 dc| \
+B2 A2 B2 cB| \
+A4 A4| \
+B4 A4|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x4 g4|
+a2 gf e2 ^f2| \
+g4 x4| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x4 d2 e2|
+=f2 e2 f2 gf| \
+e2 x6| \
+x8| \
+x4 d4|
+e2 dc B2 c2| \
+d4 A2 B2| \
+c2 B2 c2 dc| \
+B4 e4-|
+e4 d4| \
+^c4 =c4| \
+B4 ^A4| \
+=A4 B4|
+B4 A4| \
+x4 b4| \
+c'2 ba g2 a2| \
+b4 ^f2 g2|
+a2 g2 a2 ba| \
+g4 g4-| \
+g2 ag ^f2 ge| \
+b3c' b2 a2|
+g4 ^f4| \
+e2 x6| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+D4 D4| \
+B,2 CD E2 D2| \
+C4 =F2 E2|
+D2 ED C2 D2| \
+E2 DC B,2 C2| \
+D4 ^D4| \
+E4 E4|
+F4 x2 ^F2| \
+G2 =F2 E2 =D2| \
+C4 A,4| \
+D4 G,4|
+C4 x2 C2| \
+x8| \
+x4 C4| \
+x8|
+x8| \
+C4 x4| \
+x8| \
+g2 a^a =a2 g2|
+f4 f4| \
+e4 e4| \
+^f4 x4| \
+x4 B4|
+A4 A4| \
+B4 x2 ^A2| \
+=A4 A2 Bc| \
+d4 c4|
+x4 B4| \
+G2 AB c2 B2| \
+A4 d2 c2| \
+B2 cB A2 B2|
+c4 x2 ^A2| \
+=A2 ^A=A G2 AG| \
+=F2 GF E2 FE| \
+D4 G4|
+G4 F4| \
+F4 x2 G2| \
+G4 x2 G2| \
+F4 x2 D2|
+G2 x2 G2 x2| \
+^F4 x4| \
+A4 x4| \
+x2 G2 G2 ^F2|
+G4 D4| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x4 c2 d2| \
+e2 dc B2 c2| \
+d4 A2 B2|
+c2 B2 c2 dc| \
+B2 c2 d2 d2| \
+c2 d2 e2 e2| \
+d2 e2 =f2 f2|
+e2 ^f2 g2 g2| \
+a2 g=f e2 ^f2| \
+g2 g2 d2 e2| \
+=f2 e2 f2 gf|
+e2 d2 e2 e2| \
+e2 e2 d2 d2| \
+d2 d2 c2 ed| \
+c2 B2 c2 A2|
+B4 G4| \
+A2 GF E2 F2| \
+G4 D2 E2| \
+F2 E2 F2 GF|
+E2 D2 E2 ^F2| \
+G4 G2 G2| \
+^F4 =F4| \
+E2 D2 E2 ^F2|
+G2 =F2 
+% ->
+G2 E2| \
+F2 E2 F2 D2| \
+E4 E4| \
+E4 A4|
+D4 x4| \
+D8| \
+E4 A4| \
+E4 A,4|
+D4 F4| \
+E4 x4| \
+D4 x4| \
+A4 D4|
+G4 x4| \
+G2 x4 G2| \
+F2 x6| \
+F2 x4 F2|
+E2 F2 C4| \
+D2 CB, A,2 B,2| \
+C4 G,2 A,2| \
+^A,2 =A,2 ^A,2 C^A,|
+=A,4 B,4| \
+C2 B,2 C2 DC| \
+B,2 A,2 ^A,4| \
+=A,4 x4|
+G,4 D2 E2| \
+D4 G,4| \
+C2 x6| \
+C2 x4 C2|
+^A,2 x6| \
+^A,2 x4 ^A,2| \
+=A,2 x6| \
+B,x6x|
+C2 x6| \
+Dx6x| \
+Ex6x| \
+Fx6x|
+Fx3 E2 D2| \
+^Cx3 =C2 x2| \
+B,x3 ^A,2 x2| \
+=A,2 x6|
+G,2 x6| \
+F2 FE F2 GF| \
+E2 x2 A2 x2| \
+c2 x2 B2 x2|
+c2 x6| \
+c2 x4 c2| \
+c2 x6| \
+d2 x4 c2|
+x8| \
+E4 x4| \
+G4 G4| \
+F2 x6|
+Fx6x| \
+x8| \
+^Dx6x| \
+x8|
+x8| \
+x6 B2| \
+c4 
+V:4
+% Six Sonatas and Partitas for Solo Violin
+%%MIDI program 40
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+% untitled
+A,4 A,4|
+G,4 G,4| \
+x8| \
+A,4 x4| \
+x4 A,4|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+Ex3 E2 x2| \
+x8| \
+c2 x6|
+c2 x6| \
+A2 x6| \
+x4 A2 x2| \
+c2 x2 B2 x2|
+c2 x6| \
+c2 x4 c2| \
+c2 x6| \
+=d2 x4 c2|
+x8| \
+E4 x4| \
+d4 c4| \
+c2 de fg ac|
+Bd cB AG Fd| \
+gB cE Dc fB| \
+cd ^df ga bc'| \
+^f^d =dc Bc ^FA,|
+G,C EG ce ge| \
+cG EC G,2 x2| \
+Cx6x| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x4 ^C2 D2| \
+E4 E4| \
+D4 G4| \
+E4 ^D4|
+=D4 x4| \
+D4 D4| \
+E2 D2 E2 ^F2| \
+G4 x2 G2|
+A2 G2 A2 B2| \
+=c2 B2 A2 x2| \
+^G2 x2 =G4| \
+A4 x4|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x4 g4| \
+^f4 =f4|
+e4 ^f4| \
+g4 g4| \
+g2 =fe f2 gf| \
+e4 e4|
+^d4 =d4| \
+^c4 =c4| \
+B4 ^c4| \
+d2 =cB A2 B2|
+c2 B2 c2 dc| \
+B4 ^A4| \
+=A4 B4| \
+c4 d4|
+d2 d2 c4| \
+B4 d2 e2| \
+f2 e2 f2 gf| \
+e4 c2 dc|
+B4 G2 AG| \
+F4 ^A4-| \
+^A4 =A4-| \
+A4 G4|
+A4 ^A4| \
+^A2 ^c2 d4| \
+d4 ^c4| \
+d4 x4|
+x8| \
+x8| \
+x8| \
+x8|
+x4 G4| \
+=A2 GF E2 ^F2| \
+G4 D2 E2| \
+=F2 E2 F2 GF|
+E4 E4| \
+^F2 E2 ^F2 ^G2| \
+A4 E4| \
+E4 ^F4|
+^F4 ^F4| \
+E4 E2 D2| \
+=C4 x4| \
+=G,4 x2 A,2|
+B,4 ^D4| \
+E2 x6| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x4 x=D xD| \
+xD x3D xD|
+xD xD xD x2| \
+xD xD xD x2| \
+xD xD xD xD| \
+xD xD xD xD|
+xD xD xD xD| \
+xD xD xD xD| \
+xD x3D xD| \
+xD xD xD xD|
+xD xD xD x2| \
+xD xD xD x2| \
+xD xD xD x2| \
+xD xD xD x2|
+xD xD xD x2| \
+G,4 x4| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+E4 E4| \
+x4 G4|
+G4 x2 G2| \
+=F4 ^F4| \
+G4 G4| \
+=F4 D4|
+G4 x4| \
+G4 ^D4| \
+=D4 x4| \
+x6 A,2|
+x8| \
+B4 A4| \
+x8| \
+x4 g4|
+g4 f2 ed| \
+^g4 x2 =g2| \
+g2 fe f4| \
+f2 ed e2 fe|
+d2 ef g2 f2| \
+e4 a2 g2| \
+^f2 g^f e2 ^f2| \
+g4 g2 =f2|
+e2 fe d2 e2| \
+f2 gf e2 fe| \
+d2 ed c4-| \
+c2 dc B2 AB|
+c2 d^d f2 ^d2| \
+=d4 x2 d2| \
+c4 x2 ^A2| \
+=A2 Bc B2 A2|
+d2 x2 c2 x2| \
+x8| \
+D4 x4| \
+x4 e2 x2|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+xA GF Ex Fx| \
+Gx FE Dx Ex| \
+Fx Ex Fx GF|
+Ex Dx Ex ^F2| \
+Gx Gx =Fx Gx| \
+Ax Ax Gx Ax| \
+Bx ^Ax =Ax Bx|
+cx cx Bx ^Ax| \
+=Ax B2 cx cx| \
+Bx Bx ^Ax ^Ax| \
+=Ax Ax ^Gx ^G2|
+=Gx Fx Gx AG| \
+Fx Ex Fx GF| \
+Ex Dx Ex GF| \
+Ex Dx Ex ^Dx|
+=D4 x4| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x4 
+% ->
+g4| \
+a2 gf e2 ^f2|
+g4 d2 e2| \
+=f2 e2 f2 gf| \
+e2 d2 e2 f2| \
+g2 f2 g2 ag|
+f2 g2 a4| \
+^g4 =g4| \
+^f4 =f4| \
+e4 ^f4|
+x2 g=f e2 d2| \
+^c2 ag a2 ^c2| \
+d2 fe d2 =c2| \
+B2 gf g2 B2|
+c2 d2 e4| \
+A4 d4| \
+xG AB c4| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+Ex3 E2 x2| \
+x4 G2 x2| \
+F2 x6|
+G2 GF G2 AG| \
+A2 x6| \
+x8| \
+D2 x2 G2 x2|
+x8| \
+x8| \
+A,2 DE FG FG| \
+A2 CB, C2 A2|
+B2 x2 B4| \
+A4 A4| \
+d4 c4| \
+c2 de fg ac|
+Bd cB AG Fd| \
+gB cE Dc fB| \
+cd ^df ga bc'| \
+^f^d =dc Bc ^FA,|
+G,C EG ce ge| \
+cG EC G,2 =F2| \
+E4 
+% --------------------------------------
+% Sonata No. 3 in C major - BWV 1005
+% 2nd Movement: Fugue
+% --------------------------------------
+% Sequenced with Cakewalk Pro Audio by
+% David J. Grossman - dave@unpronounceable.com
+% This and other Bach MIDI files can be found at:
+% Dave's J.S. Bach Page
+% http://www.unpronounceable.com/bach
+% --------------------------------------
+% Original Filename: vs3-2fug.mid
+% Last Modified: February 22, 1997

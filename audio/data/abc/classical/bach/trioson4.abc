@@ -1,0 +1,757 @@
+X: 1
+T: from bach/trioson4.mid
+M: 4/4
+L: 1/8
+Q:1/4=211
+K:G % 1 sharps
+% untitled
+% J.S.Bach - Triosonate -Presto
+V:1
+% flute 1
+%%MIDI program 73
+x6 
+% untitled
+% J.S.Bach - Triosonate -Presto
+dc| \
+B2 G2 g2 d2| \
+B2 AG d2 d2| \
+d2 cB cd e2|
+e2 A2 A2 cB| \
+c2 BA Bc d2| \
+d2 G2 G2 g2-| \
+g2 f4 e2-|
+e2 d^c BA B^c| \
+dA B^c de fg| \
+ab ag fe d^c| \
+B2 ba gf ed|
+^cB AB ^cd e^c| \
+a2 A2 A2 ^c2| \
+d4 x2 f2| \
+ef ga de fg|
+=c6 BA| \
+GF GA Bc de| \
+dg fe dc BA| \
+GB cd ef ge|
+ag fg ag fe| \
+fa gf ed cd| \
+BA Bc de fg| \
+^c2 a2 B2 g2|
+A=c BA G2 g2| \
+f3e2<e2d| \
+df ed af ed| \
+ce dc ae dc|
+B^d ^cB ag fe| \
+^de fg ag af| \
+g2 B2 e2 g2| \
+b2 ^g2 e2 B2|
+^G2 B2 EF ^GA| \
+B=c =dc BA B^G| \
+e8-| \
+e4 x4|
+x8| \
+x4 xd cB| \
+cd e=f AB cd| \
+Bc de ^GA Bc|
+AB cd ^F^G AB| \
+^GA BE ^GB ed| \
+c2 A2 a2 e2| \
+c2 BA e2 e2|
+e2 d^c de =f2-| \
+=f2 B2 B2 d=c| \
+d2 cB cd e2| \
+e2 A2 A2 B/2c/2d|
+c3B2<B2A| \
+A2 a4 =g2-| \
+g2 ^fe ^d2 B2| \
+g4 f4|
+e6 =d^c| \
+B2 b4 a2-| \
+a2 ^gf =f2 ^c2| \
+a4 ^g4|
+^f4 e4| \
+d6 ^cB| \
+^A2 ^c2 F2 ^A2| \
+B2 fe d2 B2|
+b2 f2 d2 ^cB| \
+=gf g=a gf ed| \
+^cd ed ^cB AG| \
+fe fg fe d^c|
+B^c de fg ^A2| \
+B3^c2<^A2B| \
+B2 f2 d2 B2| \
+x2 =a2 f2 ^d2|
+x2 =c'2 a2 f2| \
+^de fg ac' ba| \
+g2 x4 B2| \
+G2 E2 x2 =d2|
+B2 ^G2 x2 =f2| \
+d2 B2 ^G3A| \
+A2 e2 ^c2 A2| \
+x2 =g2 e2 ^c2|
+x2 ^a2 g2 e2| \
+^cd e^f g^a =ag| \
+f2 x4 A2| \
+F2 D2 x2 =c2|
+A2 F2 x2 ^d2| \
+c2 A2 FA =dc| \
+B2 G2 g2 d2| \
+B2 AG d2 d2|
+d2 cB cd e2| \
+e2 A2 A2 cB| \
+c2 BA Bc d2| \
+d2 G2 G2 =f2-|
+=f2 e4 d2-| \
+d2 cB AG AB| \
+cG AB cd e=f| \
+ga g=f ed cB|
+A2 ag =fe dc| \
+BA GA Bc dB| \
+g2 G2 G2 B2| \
+c4 x2 e2|
+de ^fg cd ef| \
+Bc dB GF GA| \
+D2 EF GA Bc| \
+de dc BA GF|
+E2 ed cB AG| \
+FE DE FG AF| \
+d2 D2 D2 F2| \
+G4 x2 B2|
+AB ^cd GA B^c| \
+F2 f4 e2-| \
+e2 de2<^c2d| \
+df ed af ed|
+=c^d =dc af ed| \
+c'b ag fe de| \
+fg ab c'b c'a| \
+b2 D2 G2 B2|
+d2 G2 B2 d2| \
+B2 ^G2 E2 ^G2| \
+B2 d2 B2 ^G2| \
+e4 d4|
+c6 BA| \
+=G2 g4 f2-| \
+f2 ed ^c2 A2| \
+f4 e4|
+d6 =cB| \
+A2 a4 g2-| \
+g2 fe ^d2 B2| \
+g4 f4|
+e4 =d4-| \
+d2 cB c4| \
+xB AB ce dc| \
+Bc de GA Bc|
+AB cd FG AB| \
+GA Bc EF GA| \
+FG AD FA d2| \
+d8-|
+d4 x4| \
+x4 c4| \
+xD FA ce dc| \
+BG FG g2 d2|
+B2 AG d2 d2| \
+d2 cB cd e2| \
+e2 A2 A2 cB| \
+c2 BA Bc d2|
+d2 G2 G2 c2| \
+B3A2<A2G| \
+G4 
+V:2
+% flute 2
+%%MIDI program 73
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x6 
+% untitled
+% J.S.Bach - Triosonate -Presto
+AG| \
+F2 D2 d2 A2| \
+F2 ED A2 A2| \
+A2 GF GA B2|
+B2 E2 E2 GF| \
+G2 FE FG A2| \
+A2 D2 D2 d2-| \
+d2 c4 B2-|
+B2 AG FD EF| \
+GD EF GA Bc| \
+de dc BA GF| \
+E2 ed cB AG|
+FE DE FG AF| \
+d2 D2 D2 F2| \
+G4 x2 B2| \
+AB ^cd GA B^c|
+F2 f4 e2-| \
+e2 de2<^c2d| \
+d2 A2 d2 f2| \
+a2 d2 f2 a2|
+f2 ^d2 B2 ^d2| \
+f2 a2 f2 ^d2| \
+EG FE BG FE| \
+=D=F ED B=F ED|
+d=c BA ^G^F EF| \
+^GA Bc dc dB| \
+cd e=f AB cd| \
+Bc de ^GA Bc|
+AB cd ^F^G AB| \
+^GA BE ^GB e2-| \
+e8-| \
+e2 x6|
+x4 d4| \
+xe dc BA ^GB| \
+A2 ed c2 A2| \
+a2 e2 c2 BA|
+=fe =f=g =fe dc| \
+Bc dc BA G=F| \
+ed e=f ed cB| \
+AB cd e^f ^ge|
+a3b2<^g2a| \
+a4 b4| \
+a6 =gf| \
+e2 e4 d2-|
+d2 ^cB ^A2 F2| \
+d4 ^c4| \
+B6 =A^G| \
+F2 f4 e2-|
+e2 d4 ^c2-| \
+^c2 B2 e4| \
+xd ^cd e=g fe| \
+d2 B2 b2 f2|
+d2 ^cB f2 f2| \
+f2 e^d ef g2| \
+g2 ^c2 ^c2 e=d| \
+e2 d^c de f2|
+f2 B2 B2 e2| \
+d3^c2<^c2B| \
+B4 x2 f2| \
+d2 B2 x2 a2|
+f2 ^d2 x2 =c'2| \
+a2 f2 ^d3e| \
+e2 B2 G2 E2| \
+x2 =d2 B2 ^G2|
+x2 =f2 d2 B2| \
+^GA Bc d=f ed| \
+^c2 x4 e2| \
+^c2 A2 x2 =g2|
+e2 ^c2 x2 ^a2| \
+g2 e2 ^c3d| \
+d2 =A2 ^F2 D2| \
+x2 =c2 A2 F2|
+x2 ^d2 c2 A2| \
+FG AB c2 F2| \
+G=D EF GA Bc| \
+de dc BA GF|
+E2 ed cB AG| \
+FE DE FG AF| \
+d2 D2 D2 F2| \
+G4 x4|
+x8| \
+x6 g=f| \
+e2 c2 c'2 g2| \
+e2 dc g2 g2|
+g2 =fe =fg a2| \
+a2 d2 d2 =fe| \
+=f2 ed e=f g2| \
+g2 c2 c2 c2-|
+c2 B4 A2-| \
+A2 G^F ED EF| \
+GF GA Bc de| \
+dg fe dc BA|
+GB cd ef ge| \
+ag fg ag fe| \
+fa gf ed cd| \
+BA B^c de fg|
+^c2 a2 B2 g2| \
+A=c BA G2 g2| \
+f3e2<e2d| \
+d2 A2 d2 f2|
+a2 f2 d2 A2| \
+F2 A2 DE FG| \
+AB cB AG AF| \
+GB AG dB AG|
+=FA G=F dA G=F| \
+E^G ^FE dc BA| \
+^GA Bc dc dB| \
+c2 c'4 b2-|
+b2 a=g f2 d2| \
+b4 a4| \
+g6 fe| \
+d2 d'4 c'2-|
+c'2 ba ^g2 e2| \
+c'4 b4| \
+a6 =gf| \
+e^d e4 =d2-|
+d2 c4 BA| \
+GF EF GB AG| \
+FG FE D2 d2| \
+d8-|
+d4 x4| \
+x8| \
+x4 xc BA| \
+Bc de GA Bc|
+AB cd FG AB| \
+GA Bc EF GA| \
+F4 xD EF| \
+GB dc BG FG|
+g2 d2 B2 AG| \
+ed e=f ed cB| \
+AB cB AG ^FE| \
+dc de dc BA|
+GA Bc de fd| \
+g3a2<f2g| \
+g4 
+V:3
+% piano
+%%MIDI program 6
+x8| \
+x2 
+% untitled
+% J.S.Bach - Triosonate -Presto
+[BG-][cG-] [d2-G2] [d2B2]| \
+x2 [BG-][cG-] [d2-G2] [d2-B2]| \
+[d2G2-] [c2G2] x2 [c2E2]|
+[c4-A4] [c2E2-] [AE-][GE]| \
+[A2F2-] [B2F2] G-[AG] [B2F2]| \
+[B6G6] [B2G2]| \
+[^c2-E2] [^c2F2] [B2-D2] [B2E2]|
+[A2-^C2] [A2D2-] [G2-D2] [G2^C2]| \
+[F3D3-][GD-] [A2D2] [^c2G2E2]| \
+[d4A4F4] x2 [A2-D2]| \
+A2 G4 [E2B,2]|
+[^C2-B,2] [^C2A,2-] [A2A,2] [G2-E2]| \
+[G2D2-] [F4D4] [E2^C2]| \
+[D4A,4] [d4-A4F4]| \
+[d2B2D2] [=c2-G2] [c2A2D2] [B2-F2]|
+[B2G2C2] [A2E2] [A4F4D4-]| \
+[B2G2D2] [dB][cA] [B2G2] [GB,][FC]| \
+[G2D2-] [B2-D2] [B2G2] [c2F2]| \
+[B2-G2] [B2E2-] [A2E2] [G2C2]|
+[F6C6] E-[GE]| \
+[A2F2] [d2D2] [d2G2] [c2F2]| \
+[B6G6] [B2G2]| \
+[^c2A2-] [d2A2] [B2G2-] [^c2G2]|
+[A2F2-] [BF-][^cF-] [d2F2] [e2-G2]| \
+[e2F2-] [d-F][dB] [^c2-A2-] [^c2A2E2]| \
+[d4A4F4] x4| \
+[d4A4F4] x4|
+[B4A4F4] x4| \
+x2 [A2-^D2] [A2F2] [^d2A2F2]| \
+[e4B4G4] x4| \
+[=d4B4=F4] x4|
+[d4^G4=F4] x4| \
+x2 [d2-^G2] [d2B2] [^G2D2]| \
+[A4E4=C4] x4| \
+[^G4E4B,4] x4|
+[A4E4C4] x4| \
+[B6^G6-E6-] [c^G-E-][d^GE]| \
+[c4A4-E4-] [e4A4E4]| \
+[B4-B4E4-] [e4B4E4]|
+[A4E4] [d2-D2] [d2-A2]| \
+[d4^G4] x2 [B2=G2]| \
+[c2A2-] [e2A2] [c2A2-] [e2A2]| \
+[c2E2-] [B2E2] [c2A2-] [e2A2]|
+[e2A2-=F2-] [d2A2=F2] =F2- [c2=F2]| \
+[B3-=F3][B-E] [B2D2] [d2B2=F2]| \
+[d2G2-E2-] [c2G2E2] E2- [B2E2]| \
+[A3-E3][A-D] [A2C2] [B2^G2]|
+[cA-][dA-] [eA-][=fA] [B^G-][c^G-] [d^G-][e^G]| \
+[cA-][dA-] [eA-][=fA-] [e2A2] [B2=G2]| \
+[c2-E2] [c-^F][cG] [B2-A2] [BF-][^dF]| \
+[e-G][e-A] [e-B][e-c] [e2B2] [=d2F2]|
+[B2G2-] [^cG-][dG] [e2F2-] [^c-F][^c^A]| \
+[dB-][eB-] [fB-][gB-] [f2B2] [^c2=A2]| \
+F2 ^GA [^c2-B2] [^c^G-][=f^G]| \
+[^f-A][f-B] [f-^c][f-d] [f2^c2] [e2-^G2]|
+[e2F2-] [d2F2] [B2D2] [^G2E2]| \
+[F2D2-] [B2-D2] [B2=G2-] [^c2G2]| \
+[^A3F3-][BF-] [^cF-][dF] [e-^G][e=A]| \
+[d2B2-] [f2B2] [d2B2-] [f2B2]|
+[d2F2-] [^c2F2] [d2B2-] [f2B2]| \
+[f2B2-=G2-] [e2B2G2] G2- [d2G2-]| \
+[^c2-G2] ^c-[^c-F] [^c2E2] [e2^c2G2]| \
+[e2A2-F2-] [d2A2F2] F2- [^c2F2-]|
+[B2-F2] [B2-G2] [B2F2] [^c2^A2]| \
+[dB-][eB-] [fB-][gB] [^c^A-][d^A-] [e^A-][f^A]| \
+[B4F4D4] x4| \
+[d4B4-F4-] [^d3B3-F3-][eBF]|
+[f4-B4=A4-] [f4^d4A4]| \
+[^d2A2] x2 [f2^d2A2] x2| \
+[g4e4B4] x4| \
+[G4E4-B,4-] [^G3E3-B,3-][AEB,]|
+[B4-E4=D4-] [B4^G4D4]| \
+[^G2D2] x2 [B2^G2D2] x2| \
+[^c4A4E4] x4| \
+[A4-E4-] [^c3A3-E3-][dAE]|
+[e4-A4=G4-] [e4^c4G4]| \
+[^c2G2] x2 [e2^c2G2] x2| \
+[f4d4A4] x4| \
+[D4-A,4-] [F3D3-A,3-][GDA,]|
+[A4-D4=C4-] [A4F4C4]| \
+[F2C2] x2 [A2F2C2] x2| \
+[B3G3-D3-][cGD] [d2G2-] [B2G2]| \
+B2- [B-B][cB-] [d2-B2] [d2-D2]|
+[d2E2-] [c4E4] [A2E2-]| \
+[F2-E2-] [F2E2D2-] [d2D2] [c2A2]| \
+[c2G2-] [B4G4] [A2F2]| \
+[G3D3-][AD-] [B2-D2] [B2G2]|
+[c3G3-][BG] [A2-E2] [A2D2-]| \
+[E2D2] [G2C2] [A2E2] [G2B,2]| \
+[E3C3-][=FC-] [G2C2] [B-G][B=F]| \
+[c4E4] x2 [G2-C2]|
+[G2A,2-] [=F4A,4] [D2-C2]| \
+[D4B,4-] [G2B,2] [=F2-D2]| \
+[=F2C2-] [E4C4] [D2B,2]| \
+[C4G,4] [c4-G4E4]|
+[c2A2D2] [B2-^F2] [B2G2C2] [A2-E2]| \
+[A2F2B,2] [G2D2] [A2-E2] [A2F2]| \
+[G2D2] [dB][cA] [B2G2] [GB,][FC]| \
+[G2D2-] [B2-D2] [B2G2] [c2F2]|
+[B2-G2] [B2E2-] [A2E2] [G2C2]| \
+[F6C6] E-[GE]| \
+[A2F2] [d2D2] [d2G2] [c2F2]| \
+[B6G6] [B2G2]|
+[^c2A2-] [d2A2] [B2G2-] [^c2G2]| \
+[A2F2-] [BF-][^cF-] [d2F2] [e2-G2]| \
+[e2F2-] [d-F][dB] [^c2-A2-] [^c2A2E2]| \
+[d4A4F4] x4|
+[=c4A4^D4] x4| \
+[c4F4^D4] x4| \
+x2 [A2-F2] [A2A2] [F2C2]| \
+[G4=D4B,4] x4|
+[=F4D4B,4] x4| \
+[E4D4B,4] x4| \
+x2 [D2-^G,2] [D2B,2] [^G2D2B,2]| \
+[A2-E2C2] [AE-][BE] [c2-A2] [cB-][dB]|
+[e2-=G2] [e-A][eB] [d2-c2] [dA-][^fA]| \
+[g-B][g-c] [g-d][g-e] [g2d2] [f2A2]| \
+[d2B2-] [eB-][fB] [g2A2-] [e-A][e^c]| \
+[fd-][gd-] [ad-][bd-] [a2d2] [e2=c2]|
+[=f2-A2] [=f-B][=fc] [e2-d2] [eB-][^gB]| \
+[a-c][a-d] [a-e][a-=f] [a2e2] [=g2-B2]| \
+[g2A2-] [^f2A2] [^d2F2-] [B2F2-]| \
+[GF-][AF] [BE-][cE-] [B2-E2] [B2=D2-]|
+[E2D2] [A2C2-] [D2C2] [G2-B,2]| \
+[G2D2] [B2G2-] [c2G2] [A2-E2]| \
+[A2-C2] [A2D2-] [F2-D2] [F2C2]| \
+[G4D4B,4] x4|
+[F4D4A,4] x4| \
+[G4D4B,4] x4| \
+[A4-F4D4] A2 Bc| \
+[B4G4-D4-] [d4G4D4]|
+[A4-D4-] [d4A4D4]| \
+[G4D4] [c2-C2] [c2-G2]| \
+[c3-F3][cE] D-[FD-] [GD-][AD]| \
+[B2G2-] [d2G2] [B2G2-] [d2G2]|
+[B2D2-] [A2D2] [B2G2-] [d2G2]| \
+[d2G2-] [c2G2] E2- [B2E2]| \
+[A3-E3][A-D] [A2C2] [c2E2]| \
+[c2F2] [B2G2] D2- [A2D2]|
+[G3-D3][G-C] [G2B,2] [A2F2D2]| \
+[BG-D-][cG-D-] [dG-D-][eGD] [AF-D-][BF-D-] [cF-D-][dFD]| \
+[B4G4D4] 
+V:4
+% piano
+%%MIDI program 6
+x8| \
+x2 
+% untitled
+% J.S.Bach - Triosonate -Presto
+G,,A,, B,,2 G,,2| \
+x2 G,A, B,2 G,2| \
+E,4 x2 C,2|
+F,,2 F,G, A,2 F,2| \
+D,4 x2 B,,2| \
+E,,2 E,F, G,2 E,2| \
+A,2 D,2 G,2 ^C,2|
+F,2 B,,2 E,2 A,,2| \
+B,,2 A,,G,, F,,G,, F,,E,,| \
+D,,4 x2 F,,2| \
+G,,2 F,,2 E,,2 G,,2|
+A,,4 x2 ^C,2| \
+D,E, F,G, A,B, A,G,| \
+F,G, F,E, D,^C, B,,A,,| \
+G,,2 E,2 F,,2 D,2|
+E,,2 =C,2 D,,2 D,C,| \
+B,,2 G,,2 G,2 D,2| \
+B,,2 A,,G,, D,2 D,2| \
+D,2 C,B,, C,D, E,2|
+E,2 A,,2 A,,2 C,B,,| \
+C,2 B,,A,, B,,C, D,2| \
+D,2 G,,2 G,,2 G,2-| \
+G,2 F,4 E,2-|
+E,2 D,^C, B,,A,, B,,^C,| \
+D,2 G,2 A,2 A,,2| \
+D,4 x4| \
+D,4 x4|
+^D,4 x4| \
+x2 B,,2 ^D,2 B,,2| \
+E,4 x4| \
+^G,4 x4|
+B,4 x4| \
+x2 E,2 ^G,2 E,2| \
+A,2 A,,2 =C,2 A,,2| \
+x2 E,2 ^G,2 E,2|
+x2 A,2 C2 A,2| \
+E2 =D2 C2 B,2| \
+A,2 ^G,2 F,2 A,2| \
+^G,2 F,2 E,2 ^G,2|
+F,2 A,2 B,2 B,,2| \
+E,4 x2 E,,2| \
+A,,2 C,B,, A,,2 C,B,,| \
+A,,2 ^G,,2 A,,2 C,2|
+D,4 x2 D,,2| \
+=G,,4 x2 G,,2| \
+C,4 x2 C,2| \
+=F,4 xD, C,B,,|
+A,,2 D,2 E,2 E,,2| \
+A,,B,, C,D, E,^F, E,D,| \
+C,B,, C,A,, B,,^C, ^D,B,,| \
+E,F, G,A, B,^C B,A,|
+G,F, G,E, F,^G, ^A,F,| \
+B,,^C, =D,E, F,=G, F,E,| \
+D,^C, D,B,, ^C,^D, =F,^C,| \
+^F,^G, =A,B, ^C=D ^CB,|
+^A,^C B,=A, ^G,F, ^G,^A,| \
+B,=A, =G,F, E,D, E,^C,| \
+F,2 E,2 D,2 ^C,2| \
+B,,2 D,^C, B,,2 D,^C,|
+B,,2 ^A,,2 B,,2 D,2| \
+E,4 x2 E,,2| \
+=A,,4 x2 A,,2| \
+D,4 x2 D,2|
+G,2 F,E, D,2 ^C,2| \
+B,,2 E,2 F,2 F,,2| \
+B,,D, ^C,B,, F,E, D,^C,| \
+B,,D, ^C,B,, A,G, F,E,|
+^D,F, E,^D, =CB, A,G,| \
+F,E, ^D,^C, B,,A,, G,,F,,| \
+E,G, F,E, B,A, G,F,| \
+E,G, F,E, =D=C B,A,|
+^G,B, A,^G, =FE DC| \
+B,A, ^G,^F, E,D, C,B,,| \
+A,,^C, B,,A,, E,D, ^C,B,,| \
+A,,^C, B,,A,, =G,F, E,D,|
+^C,E, D,^C, ^A,=A, G,F,| \
+E,D, ^C,B,, A,,G,, F,,E,,| \
+D,F, E,D, A,G, F,E,| \
+D,F, E,D, =CB, A,G,|
+F,A, G,F, ^D=D CB,| \
+A,G, F,E, D,C, B,,A,,| \
+G,,2 G,A, B,2 G,2| \
+x2 G,,A,, B,,C, D,B,,|
+C,2 B,,2 A,,2 C,2| \
+D,4 x2 F,,2| \
+G,,A,, B,,C, D,E, D,C,| \
+B,,C, B,,A,, G,,=F,, E,,D,,|
+C,,C, D,E, =F,E, =F,G,| \
+A,2 E,2 =F,2 G,2| \
+A,2 G,=F, E,=F, E,D,| \
+C,4 x2 E,2|
+=F,2 E,2 D,2 =F,2| \
+G,4 x2 B,,2| \
+C,D, E,=F, G,A, G,=F,| \
+E,=F, E,D, C,B,, A,,G,,|
+^F,,2 D,2 E,,2 C,2| \
+D,,2 B,,2 C,,E, D,C,| \
+B,,2 G,,2 G,2 D,2| \
+B,,2 A,,G,, D,2 D,2|
+D,2 C,B,, C,D, E,2| \
+E,2 A,,2 A,,2 C,B,,| \
+C,2 B,,A,, B,,C, D,2| \
+D,2 G,,2 G,,2 G,2-|
+G,2 F,4 E,2-| \
+E,2 D,^C, B,,A,, B,,^C,| \
+D,2 G,2 A,2 A,,2| \
+D,4 x4|
+F,4 x4| \
+A,4 x4| \
+x2 D,2 F,2 D,2| \
+G,4 x4|
+G,,4 x4| \
+^G,,4 x4| \
+x2 E,,2 ^G,,2 E,,2| \
+A,,B,, A,,=G,, F,,A,, G,,F,,|
+E,,D,, E,,=C,, D,,E,, F,,D,,| \
+G,,A,, B,,C, D,E, D,^C,| \
+B,,A,, B,,G,, A,,B,, ^C,A,,| \
+D,E, F,G, A,B, A,G,|
+=F,E, =F,D, E,^F, ^G,E,| \
+A,B, =CD EF ED| \
+CB, CA, B,^C ^DB,| \
+E,F, =G,A, B,=C B,A,|
+^G,B, A,=G, F,A, G,F,| \
+E,2 =D,2 E,2 C,2| \
+D,2 C,2 B,,2 A,,2| \
+G,,2 G,2 B,2 G,2|
+x2 D,2 F,2 D,2| \
+x2 G,,2 B,,2 G,,2| \
+D,,2 D,C, B,,2 A,,2| \
+G,,2 F,,2 E,,2 G,,2|
+F,,2 E,,2 D,,2 F,,2| \
+E,,2 G,,2 A,,2 A,,,2| \
+D,,2 D,C, B,,2 A,,2| \
+G,,2 B,,A,, G,,2 B,,A,,|
+G,,2 F,,2 G,,2 B,,2| \
+C,4 x2 C,2| \
+F,,4 x2 F,,2| \
+B,,4 x2 B,,2|
+E,,4 xC, B,,A,,| \
+G,,2 C,2 D,2 D,,2| \
+G,,4 
+V:5
+% bass continuo
+%%MIDI program 42
+x8| \
+x2 
+% untitled
+% J.S.Bach - Triosonate -Presto
+G,,A,, B,,2 G,,2| \
+x2 G,A, B,2 G,2| \
+E,4 x2 C,2|
+F,,2 F,G, A,2 F,2| \
+D,4 x2 B,,2| \
+E,,2 E,F, G,2 E,2| \
+A,2 D,2 G,2 ^C,2|
+F,2 B,,2 E,2 A,,2| \
+B,,2 A,,G,, F,,G,, F,,E,,| \
+D,,4 x2 F,,2| \
+G,,2 F,,2 E,,2 G,,2|
+A,,4 x2 ^C,2| \
+D,E, F,G, A,B, A,G,| \
+F,G, F,E, D,^C, B,,A,,| \
+G,,2 E,2 F,,2 D,2|
+E,,2 =C,2 D,,2 D,C,| \
+B,,2 G,,2 G,2 D,2| \
+B,,2 A,,G,, D,2 D,2| \
+D,2 C,B,, C,D, E,2|
+E,2 A,,2 A,,2 C,B,,| \
+C,2 B,,A,, B,,C, D,2| \
+D,2 G,,2 G,,2 G,2-| \
+G,2 F,4 E,2-|
+E,2 D,^C, B,,A,, B,,^C,| \
+D,2 G,2 A,2 A,,2| \
+D,4 x4| \
+D,4 x4|
+^D,4 x4| \
+x2 B,,2 ^D,2 B,,2| \
+E,4 x4| \
+^G,4 x4|
+B,4 x4| \
+x2 E,2 ^G,2 E,2| \
+A,2 A,,2 =C,2 A,,2| \
+x2 E,2 ^G,2 E,2|
+x2 A,2 C2 A,2| \
+E2 =D2 C2 B,2| \
+A,2 ^G,2 F,2 A,2| \
+^G,2 F,2 E,2 ^G,2|
+F,2 A,2 B,2 B,,2| \
+E,4 x2 E,,2| \
+A,,2 C,B,, A,,2 C,B,,| \
+A,,2 ^G,,2 A,,2 C,2|
+D,4 x2 D,,2| \
+=G,,4 x2 G,,2| \
+C,4 x2 C,2| \
+=F,4 xD, C,B,,|
+A,,2 D,2 E,2 E,,2| \
+A,,B,, C,D, E,^F, E,D,| \
+C,B,, C,A,, B,,^C, ^D,B,,| \
+E,F, G,A, B,^C B,A,|
+G,F, G,E, F,^G, ^A,F,| \
+B,,^C, =D,E, F,=G, F,E,| \
+D,^C, D,B,, ^C,^D, =F,^C,| \
+^F,^G, =A,B, ^C=D ^CB,|
+^A,^C B,=A, ^G,F, ^G,^A,| \
+B,=A, =G,F, E,D, E,^C,| \
+F,2 E,2 D,2 ^C,2| \
+B,,2 D,^C, B,,2 D,^C,|
+B,,2 ^A,,2 B,,2 D,2| \
+E,4 x2 E,,2| \
+=A,,4 x2 A,,2| \
+D,4 x2 D,2|
+G,2 F,E, D,2 ^C,2| \
+B,,2 E,2 F,2 F,,2| \
+B,,D, ^C,B,, F,E, D,^C,| \
+B,,D, ^C,B,, A,G, F,E,|
+^D,F, E,^D, =CB, A,G,| \
+F,E, ^D,^C, B,,A,, G,,F,,| \
+E,G, F,E, B,A, G,F,| \
+E,G, F,E, =D=C B,A,|
+^G,B, A,^G, =FE DC| \
+B,A, ^G,^F, E,D, C,B,,| \
+A,,^C, B,,A,, E,D, ^C,B,,| \
+A,,^C, B,,A,, =G,F, E,D,|
+^C,E, D,^C, ^A,=A, G,F,| \
+E,D, ^C,B,, A,,G,, F,,E,,| \
+D,F, E,D, A,G, F,E,| \
+D,F, E,D, =CB, A,G,|
+F,A, G,F, ^D=D CB,| \
+A,G, F,E, D,C, B,,A,,| \
+G,,2 G,A, B,2 G,2| \
+x2 G,,A,, B,,C, D,B,,|
+C,2 B,,2 A,,2 C,2| \
+D,4 x2 F,,2| \
+G,,A,, B,,C, D,E, D,C,| \
+B,,C, B,,A,, G,,=F,, E,,D,,|
+C,,C, D,E, =F,E, =F,G,| \
+A,2 E,2 =F,2 G,2| \
+A,2 G,=F, E,=F, E,D,| \
+C,4 x2 E,2|
+=F,2 E,2 D,2 =F,2| \
+G,4 x2 B,,2| \
+C,D, E,=F, G,A, G,=F,| \
+E,=F, E,D, C,B,, A,,G,,|
+^F,,2 D,2 E,,2 C,2| \
+D,,2 B,,2 C,,E, D,C,| \
+B,,2 G,,2 G,2 D,2| \
+B,,2 A,,G,, D,2 D,2|
+D,2 C,B,, C,D, E,2| \
+E,2 A,,2 A,,2 C,B,,| \
+C,2 B,,A,, B,,C, D,2| \
+D,2 G,,2 G,,2 G,2-|
+G,2 F,4 E,2-| \
+E,2 D,^C, B,,A,, B,,^C,| \
+D,2 G,2 A,2 A,,2| \
+D,4 x4|
+F,4 x4| \
+A,4 x4| \
+x2 D,2 F,2 D,2| \
+G,4 x4|
+G,,4 x4| \
+^G,,4 x4| \
+x2 E,,2 ^G,,2 E,,2| \
+A,,B,, A,,=G,, F,,A,, G,,F,,|
+E,,D,, E,,=C,, D,,E,, F,,D,,| \
+G,,A,, B,,C, D,E, D,^C,| \
+B,,A,, B,,G,, A,,B,, ^C,A,,| \
+D,E, F,G, A,B, A,G,|
+=F,E, =F,D, E,^F, ^G,E,| \
+A,B, =CD EF ED| \
+CB, CA, B,^C ^DB,| \
+E,F, =G,A, B,=C B,A,|
+^G,B, A,=G, F,A, G,F,| \
+E,2 =D,2 E,2 C,2| \
+D,2 C,2 B,,2 A,,2| \
+G,,2 G,2 B,2 G,2|
+x2 D,2 F,2 D,2| \
+x2 G,,2 B,,2 G,,2| \
+D,,2 D,C, B,,2 A,,2| \
+G,,2 F,,2 E,,2 G,,2|
+F,,2 E,,2 D,,2 F,,2| \
+E,,2 G,,2 A,,2 A,,,2| \
+D,,2 D,C, B,,2 A,,2| \
+G,,2 B,,A,, G,,2 B,,A,,|
+G,,2 F,,2 G,,2 B,,2| \
+C,4 x2 C,2| \
+F,,4 x2 F,,2| \
+B,,4 x2 B,,2|
+E,,4 xC, B,,A,,| \
+G,,2 C,2 D,2 D,,2| \
+G,,4 
+% J.S.Bach - Triosonate
+% 4o Movimento
+% seq. Eduardo Moreno
+% emoreno@regra.com.br

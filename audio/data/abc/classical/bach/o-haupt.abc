@@ -1,0 +1,339 @@
+X: 1
+T: from bach/o-haupt.mid
+M: 4/4
+L: 1/8
+Q:1/4=72
+K:C % 0 sharps
+V:1
+% Soprano
+%%MIDI program 68
+E2 A2 G2 F-[FD]| \
+E-[EC] D2- [D2B,2] E2| \
+B2 c-[cD] c2 BA| \
+B-[BD] A6|
+E2 A2 G2 F-[FD]| \
+E-[EC] D2- [D2B,2] E2| \
+B2 c-[cD] c2 BA| \
+B-[BD] A6|
+c-[cG] BA G-[GD] A2| \
+B2 c2- [c-E][cD] c2| \
+G2 A2 G2 F2| \
+F4<E4|
+c2 Bc d2 c2| \
+B2 A2- [A2D2] B2| \
+E2 F-[FB,] E2 D2| \
+G2 E6|
+x2 
+M: 1/4
+L: 1/8
+M: 4/4
+L: 1/8
+E2 A2 G2| \
+F-[FD] E-[EC] D2- [D2B,2]| \
+E2 B2 c-[cD] c2| \
+BA B-[BD] A4-|
+A2 E2 A2 G2| \
+F-[FD] E-[EC] D2- [D2B,2]| \
+E2 B2 c-[cD] c2| \
+BA B-[BD] A4-|
+A2 c-[cG] BA G-[GD]| \
+A2 B2 c2- [c-E][cD]| \
+c2 G2 A2 G2| \
+F2 F2 E4-|
+E2 c2 Bc d2| \
+c2 B2 A2- [A2D2]| \
+B2 E2 F-[FB,] E2| \
+D2 G2 E4-|
+E2 
+V:2
+% Alto
+%%MIDI program 56
+C2 C2 C2 CD| \
+DC C2 B,2 C2| \
+D2 CD E2 E-[AE]| \
+ED C6|
+C2 C2 C2 CD| \
+DC C2 B,2 C2| \
+D2 CD E2 E-[AE]| \
+ED C6|
+AG F-[AF] ED C2| \
+F2 F2 ED E2| \
+E2 F2 E2 E2| \
+D4<^C4|
+D2 D-[=cD] D2 E2| \
+D2 E2 D2 D2| \
+C2 CB, C2 C2| \
+B,2 C6|
+x2 
+M: 1/4
+L: 1/8
+M: 4/4
+L: 1/8
+C2 C2 C2| \
+CD DC C2 B,2| \
+C2 D2 CD E2| \
+E-[AE] ED C4-|
+C2 C2 C2 C2| \
+CD DC C2 B,2| \
+C2 D2 CD E2| \
+E-[AE] ED C4-|
+C2 AG F-[AF] ED| \
+C2 F2 F2 ED| \
+E2 E2 F2 E2| \
+E2 D2 ^C4-|
+^C2 D2 D-[=cD] D2| \
+E2 D2 E2 D2| \
+D2 C2 CB, C2| \
+C2 B,2 C4-|
+C2 
+V:3
+% Tenor
+%%MIDI program 70
+G,2 F,2 G,2 A,G,| \
+G,2 A,2 G,2 G,2| \
+^G,2 E,-[E,B,,] A,-[A,D,] A,2| \
+^G,4<A,4|
+=G,2 F,2 G,2 A,G,| \
+G,2 A,2 G,2 G,2| \
+^G,2 E,-[E,B,,] A,-[A,D,] A,2| \
+^G,4<A,4|
+E2 DC B,2 A,=G,| \
+F,G, A,2 G,F, G,2| \
+C2 C2 CB, A,-[A,E,]| \
+A,-[A,G,] A,6|
+A,2 G,2 G,^F, G,A,| \
+B,G, E,A, ^F,2 G,2| \
+G,-[G,B,,] =F,2 G,2 A,2| \
+D,G, G,6|
+x2 
+M: 1/4
+L: 1/8
+M: 4/4
+L: 1/8
+G,2 F,2 G,2| \
+A,G, G,2 A,2 G,2| \
+G,2 ^G,2 E,-[E,B,,] A,-[A,D,]| \
+A,2 ^G,2 A,4-|
+A,2 =G,2 F,2 G,2| \
+A,G, G,2 A,2 G,2| \
+G,2 ^G,2 E,-[E,B,,] A,-[A,D,]| \
+A,2 ^G,2 A,4-|
+A,2 E2 DC B,2| \
+A,=G, F,G, A,2 G,F,| \
+G,2 C2 C2 CB,| \
+A,-[A,E,] A,-[A,G,] A,4-|
+A,2 A,2 G,2 G,^F,| \
+G,A, B,G, E,A, ^F,2| \
+G,2 G,-[G,B,,] =F,2 G,2| \
+A,2 D,G, G,4-|
+G,2 
+V:4
+% Bass
+%%MIDI program 71
+C,2 F,2 E,2 A,,B,,| \
+C,2 G,,2 A,,2 C,2| \
+B,,2 A,,B,, C,D, E,2| \
+E,4<A,,4|
+C,2 F,2 E,2 A,,B,,| \
+C,2 G,,2 A,,2 C,2| \
+B,,2 A,,B,, C,D, E,2| \
+E,4<A,,4|
+A,2 D,-[CD,] E,2 F,E,| \
+D,-[G,D,] C,2- [G,C,-][F,C,] C,2| \
+C,2 F,2 C,-[B,C,] D,E,| \
+F,G, A,6|
+^F,2 G,2 D,-[^F,D,] E,^F,| \
+G,G, C,-[A,C,] D,2 G,,2| \
+C,B,, A,,2 G,,2 =F,,2| \
+G,,-[G,G,,] C,6|
+x2 
+M: 1/4
+L: 1/8
+M: 4/4
+L: 1/8
+C,2 F,2 E,2| \
+A,,B,, C,2 G,,2 A,,2| \
+C,2 B,,2 A,,B,, C,D,| \
+E,2 E,2 A,,4-|
+A,,2 C,2 F,2 E,2| \
+A,,B,, C,2 G,,2 A,,2| \
+C,2 B,,2 A,,B,, C,D,| \
+E,2 E,2 A,,4-|
+A,,2 A,2 D,-[CD,] E,2| \
+F,E, D,-[G,D,] C,2- [G,C,-][F,C,]| \
+C,2 C,2 F,2 C,-[B,C,]| \
+D,E, F,G, A,4-|
+A,2 ^F,2 G,2 D,-[^F,D,]| \
+E,^F, G,G, C,-[A,C,] D,2| \
+G,,2 C,B,, A,,2 G,,2| \
+=F,,2 G,,-[G,G,,] C,4-|
+C,2 
+V:5
+% Organ RH
+%%MIDI program 19
+[E2C2] [A2C2] [G2C2] [F-C][FD]| \
+[E-D][EC] [D2-C2] [D2B,2] [E2C2]| \
+[B2D2] [c-C][cD] [c2E2] [BE-][AE]| \
+[B-E][BD] [A6C6]|
+[E2C2] [A2C2] [G2C2] [F-C][FD]| \
+[E-D][EC] [D2-C2] [D2B,2] [E2C2]| \
+[B2D2] [c-C][cD] [c2E2] [BE-][AE]| \
+[B-E][BD] [A6C6]|
+[c-A][cG] [BF-][AF] [G-E][GD] [A2C2]| \
+[B2F2] [c2-F2] [c-E][cD] [c2E2]| \
+[G2E2] [A2F2] [G2E2] [F2E2]| \
+[F2D2] [E6^C6]|
+[=c2D2] [BD-][cD] [d2D2] [c2E2]| \
+[B2D2] [A2-E2] [A2D2] [B2D2]| \
+[E2C2] [F-C][FB,] [E2C2] [D2C2]| \
+[G2B,2] [E6C6]|
+x2 
+M: 1/4
+L: 1/8
+M: 4/4
+L: 1/8
+[E2C2] [A2C2] [G2C2]| \
+[F-C][FD] [E-D][EC] [D2-C2] [D2B,2]| \
+[E2C2] [B2D2] [c-C][cD] [c2E2]| \
+[BE-][AE] [B-E][BD] [A4-C4-]|
+[A2C2] [E2C2] [A2C2] [G2C2]| \
+[F-C][FD] [E-D][EC] [D2-C2] [D2B,2]| \
+[E2C2] [B2D2] [c-C][cD] [c2E2]| \
+[BE-][AE] [B-E][BD] [A4-C4-]|
+[A2C2] [c-A][cG] [BF-][AF] [G-E][GD]| \
+[A2C2] [B2F2] [c2-F2] [c-E][cD]| \
+[c2E2] [G2E2] [A2F2] [G2E2]| \
+[F2E2] [F2D2] [E4-^C4-]|
+[E2^C2] [=c2D2] [BD-][cD] [d2D2]| \
+[c2E2] [B2D2] [A2-E2] [A2D2]| \
+[B2D2] [E2C2] [F-C][FB,] [E2C2]| \
+[D2C2] [G2B,2] [E4-C4-]|
+[E2C2] 
+V:6
+% Organ LH
+%%MIDI program 19
+[G,2C,2] F,2 [G,2E,2] [A,A,,][G,B,,]| \
+[G,2C,2] [A,2G,,2] [G,2A,,2] [G,2C,2]| \
+[^G,2B,,2] [E,-A,,][E,B,,] [A,-C,][A,D,] [A,2E,2]| \
+[^G,2E,2E,,2] [A,6A,,6]|
+[=G,2C,2] F,2 [G,2E,2] [A,A,,][G,B,,]| \
+[G,2C,2] [A,2G,,2] [G,2A,,2] [G,2C,2]| \
+[^G,2B,,2] [E,-A,,][E,B,,] [A,-C,][A,D,] [A,2E,2]| \
+[^G,2E,2E,,2] [A,6A,,6]|
+[E2A,2] [DD,-][CD,] [B,2E,2] [A,F,][=G,E,]| \
+x4 G,x [G,2C,2]| \
+[C2C,2] [C2F,2] [CC,-][B,C,] [A,-D,][A,E,]| \
+[A,-F,][A,G,] A,6|
+[A,2^F,2] G,2 [G,D,-][^F,D,] [G,E,][A,^F,]| \
+[B,G,]G, [E,C,-][A,C,] [^F,2D,2] [G,2G,,2]| \
+[G,-C,][G,B,,] [=F,2A,,2] [G,2G,,2] [A,2F,,2]| \
+[D,G,,-][G,G,,] [G,6C,6]|
+x2 
+M: 1/4
+L: 1/8
+M: 4/4
+L: 1/8
+[G,2C,2] F,2 [G,2E,2]| \
+[A,A,,][G,B,,] [G,2C,2] [A,2G,,2] [G,2A,,2]| \
+[G,2C,2] [^G,2B,,2] [E,-A,,][E,B,,] [A,-C,][A,D,]| \
+[A,2E,2] [^G,2E,2E,,2] [A,4-A,,4-]|
+[A,2A,,2] [=G,2C,2] F,2 [G,2E,2]| \
+[A,A,,][G,B,,] [G,2C,2] [A,2G,,2] [G,2A,,2]| \
+[G,2C,2] [^G,2B,,2] [E,-A,,][E,B,,] [A,-C,][A,D,]| \
+[A,2E,2] [^G,2E,2E,,2] [A,4-A,,4-]|
+[A,2A,,2] [E2A,2] [DD,-][CD,] [B,2E,2]| \
+[A,F,][=G,E,] [F,D,-][G,D,] [A,2C,2-] [G,C,-][F,C,]| \
+[G,2C,2] [C2C,2] [C2F,2] [CC,-][B,C,]| \
+[A,-D,][A,E,] [A,-F,][A,G,] A,4-|
+A,2 [A,2^F,2] G,2 [G,D,-][^F,D,]| \
+[G,E,][A,^F,] [B,G,]G, [E,C,-][A,C,] [^F,2D,2]| \
+[G,2G,,2] [G,-C,][G,B,,] [=F,2A,,2] [G,2G,,2]| \
+[A,2F,,2] [D,G,,-][G,G,,] [G,4-C,4-]|
+[G,2C,2] 
+V:7
+% Strings
+%%MIDI program 48
+[E2C2] [A2C2] [G2C2] [F-C][FD]| \
+[E-D][EC] [D2-C2] [D2B,2] [E2C2]| \
+[B2D2] [c-C][cD] [c2E2] [BE-][AE]| \
+[B-E][BD] [A6C6]|
+[E2C2] [A2C2] [G2C2] [F-C][FD]| \
+[E-D][EC] [D2-C2] [D2B,2] [E2C2]| \
+[B2D2] [c-C][cD] [c2E2] [BE-][AE]| \
+[B-E][BD] [A6C6]|
+[c-A][cG] [BF-][AF] [G-E][GD] [A2C2]| \
+[B2F2] [c2-F2] [c-E][cD] [c2E2]| \
+[G2E2] [A2F2] [G2E2] [F2E2]| \
+[F2D2] [E6^C6]|
+[=c2D2] [BD-][cD] [d2D2] [c2E2]| \
+[B2D2] [A2-E2] [A2D2] [B2D2]| \
+[E2C2] [F-C][FB,] [E2C2] [D2C2]| \
+[G2B,2] [E6C6]|
+x2 
+M: 1/4
+L: 1/8
+M: 4/4
+L: 1/8
+[E2C2] [A2C2] [G2C2]| \
+[F-C][FD] [E-D][EC] [D2-C2] [D2B,2]| \
+[E2C2] [B2D2] [c-C][cD] [c2E2]| \
+[BE-][AE] [B-E][BD] [A4-C4-]|
+[A2C2] [E2C2] [A2C2] [G2C2]| \
+[F-C][FD] [E-D][EC] [D2-C2] [D2B,2]| \
+[E2C2] [B2D2] [c-C][cD] [c2E2]| \
+[BE-][AE] [B-E][BD] [A4-C4-]|
+[A2C2] [c-A][cG] [BF-][AF] [G-E][GD]| \
+[A2C2] [B2F2] [c2-F2] [c-E][cD]| \
+[c2E2] [G2E2] [A2F2] [G2E2]| \
+[F2E2] [F2D2] [E4-^C4-]|
+[E2^C2] [=c2D2] [BD-][cD] [d2D2]| \
+[c2E2] [B2D2] [A2-E2] [A2D2]| \
+[B2D2] [E2C2] [F-C][FB,] [E2C2]| \
+[D2C2] [G2B,2] [E4-C4-]|
+[E2C2] 
+V:8
+% Bass Strings
+%%MIDI program 48
+[G,2C,2] F,2 [G,2E,2] [A,A,,][G,B,,]| \
+[G,2C,2] [A,2G,,2] [G,2A,,2] [G,2C,2]| \
+[^G,2B,,2] [E,-A,,][E,B,,] [A,-C,][A,D,] [A,2E,2]| \
+[^G,2E,2E,,2] [A,6A,,6]|
+[=G,2C,2] F,2 [G,2E,2] [A,A,,][G,B,,]| \
+[G,2C,2] [A,2G,,2] [G,2A,,2] [G,2C,2]| \
+[^G,2B,,2] [E,-A,,][E,B,,] [A,-C,][A,D,] [A,2E,2]| \
+[^G,2E,2E,,2] [A,6A,,6]|
+[E2A,2] [DD,-][CD,] [B,2E,2] [A,F,][=G,E,]| \
+[F,D,-][G,D,] [A,2C,2-] [G,C,-][F,C,] [G,2C,2]| \
+[C2C,2] [C2F,2] [CC,-][B,C,] [A,-D,][A,E,]| \
+[A,-F,][A,G,] A,6|
+[A,2^F,2] G,2 [G,D,-][^F,D,] [G,E,][A,^F,]| \
+[B,G,]G, [E,C,-][A,C,] [^F,2D,2] [G,2G,,2]| \
+[G,-C,][G,B,,] [=F,2A,,2] [G,2G,,2] [A,2F,,2]| \
+[D,G,,-][G,G,,] [G,6C,6]|
+x2 
+M: 1/4
+L: 1/8
+M: 4/4
+L: 1/8
+[G,2C,2] F,2 [G,2E,2]| \
+[A,A,,][G,B,,] [G,2C,2] [A,2G,,2] [G,2A,,2]| \
+[G,2C,2] [^G,2B,,2] [E,-A,,][E,B,,] [A,-C,][A,D,]| \
+[A,2E,2] [^G,2E,2E,,2] [A,4-A,,4-]|
+[A,2A,,2] [=G,2C,2] F,2 [G,2E,2]| \
+[A,A,,][G,B,,] [G,2C,2] [A,2G,,2] [G,2A,,2]| \
+[G,2C,2] [^G,2B,,2] [E,-A,,][E,B,,] [A,-C,][A,D,]| \
+[A,2E,2] [^G,2E,2E,,2] [A,4-A,,4-]|
+[A,2A,,2] [E2A,2] [DD,-][CD,] [B,2E,2]| \
+[A,F,][=G,E,] [F,D,-][G,D,] [A,2C,2-] [G,C,-][F,C,]| \
+[G,2C,2] [C2C,2] [C2F,2] [CC,-][B,C,]| \
+[A,-D,][A,E,] [A,-F,][A,G,] A,4-|
+A,2 [A,2^F,2] G,2 [G,D,-][^F,D,]| \
+[G,E,][A,^F,] [B,G,]G, [E,C,-][A,C,] [^F,2D,2]| \
+[G,2G,,2] [G,-C,][G,B,,] [=F,2A,,2] [G,2G,,2]| \
+[A,2F,,2] [D,G,,-][G,G,,] [G,4-C,4-]|
+[G,2C,2] 
+% "O Haupt voll Blut und Wunden"
+% St. Matthew Passion (BWV244)
+% by J.S. Bach, 1729
+% Sequenced by Ken Whitcomb \0xa91997
+% kendawl@aol.com

@@ -1,0 +1,182 @@
+X: 1
+T: from ./mozk545c.mid
+M: 2/4
+L: 1/16
+Q:1/4=104
+K:C % 0 sharps
+V:1
+% Mozart
+%%MIDI program 0
+x4 
+%%MIDI program 0
+[g2e2] [g2e2]| \
+[e2c2] x2 [f2d2] [f2d2]| \
+[d2B2] x2 cd ec| \
+AB c^c de fd|
+=cB AG [g2e2] [g2e2]| \
+[e2c2] x2 [a2f2] [a2f2]| \
+[d2B2] x2 ag fe| \
+^cd ef A=c Bd|
+c2 x2 [g2e2] [g2e2]| \
+[e2c2] x2 [f2d2] [f2d2]| \
+[d2B2] x2 cd ec| \
+AB c^c de fd|
+=cB AG [g2e2] [g2e2]| \
+[e2c2] x2 [a2f2] [a2f2]| \
+[d2B2] x2 ag fe| \
+^cd ef A=c Bd|
+c2 x2 [eC][^fG] [gE][gG]| \
+[aB,][gG] [^fD][eG] dd dd| \
+ed cB e'd' c'b| \
+^ga bc' e^f =ga|
+g^f ed [d'2b2] [d'2b2]| \
+[b2g2G2E2] [G2E2] [c'2a2G2E2] [c'2a2]| \
+[a2^f2^F2D2] [^F2D2] [gD-B,-][aDB,] bg| \
+^de ge =dB cA|
+G2 x2 GA Bc| \
+d2 x2 Bc de| \
+=f2 x2 de fg| \
+a2 ^g2 =g2 ^f2|
+=f2 x2 [g2e2] [g2e2]| \
+[e2c2] x2 [f2d2] [f2d2]| \
+[d2B2] x2 cd ec| \
+AB c^c de fd|
+=cB AG [ge]x [g2e2]| \
+[e2c2] x2 [a2f2] [a2f2]| \
+[d2B2] x2 ag fe| \
+^cd ef A=c Bd|
+c2 x6| \
+e^d fe x4| \
+e^d fe [c'2e2] [c'2e2]| \
+[a2c2] x2 [b2=d2] [b2d2]|
+[^g2B2] x2 [aE-C-][eE-C-] [cE-C-][AEC]| \
+[cF-D-][^AF-D-] [^AF-D-][^AFD] [d=G-E-][^cG-E-] [^cG-E-][^cGE]| \
+[e=A-F-][dA-F] [fA-^C-][eA-^C] [gA-D-][fA-D] [fA-E-][eAE]| \
+[eA-F-][^dAF] =c'2- [c'2A2F2] ^d2|
+e2 x2 b^g e=d| \
+ce a^g ae cA| \
+^GB e^g b^g ed| \
+ce a^g ae cA|
+E2 x2 [e2c2] [e2c2]| \
+[c2A2] x2 [d2B2] [d2B2]| \
+[B2^G2] x6| \
+E^D FE x4|
+e'^d' f'e' =d'^c'>e'd'| \
+d'=c' c'b [bE-C-][aE-C] [aE-^C-][=gE^C]| \
+[gA-D-][fA-D] [fA-E-][eA-E] [eA-F-][dA-F] [dA-E-][=cAE]| \
+[^AF-D-][fF-D-] [dF-D-][^AFD] =A2 ^G2|
+A2 x2 ^Gd B^G| \
+A2 x2 ^Gd B^G| \
+A2 x2 ^Gd B^G| \
+Ae cA Bf dB|
+x4 [=g2e2] [g2e2]| \
+[e2c2] x2 [f2d2] [f2d2]| \
+[d2B2] x2 cd ec| \
+AB c^c de fd|
+=cB AG [g2e2] [g2e2]| \
+[e2c2] x2 [a2f2] [a2f2]| \
+[d2B2] x2 ag fe| \
+^cd ef A=c Bd|
+c2 x2 Bf dB| \
+ag fe df dB| \
+ag fe d'c' ba| \
+ag fe ed cB|
+[d-C][dG] [c-E][cG] Bf dB| \
+ag fe df dB| \
+ag fe d'c' ba| \
+ag fe ed cB|
+ce Gc EG CE| \
+Gc [ec][ge] [ge][fd] [ec][dB]| \
+ce Gc EG CE| \
+Gc [ec][ge] [ge][fd] [ec][dB]|
+c2 [c'2g2e2] [c2E2] [c2E2]| \
+[c4E4] 
+V:2
+% Sonata # 3
+%%MIDI program 0
+x8| \
+%%MIDI program 0
+[C2A,2] [C2A,2] [A,2F,2] x2| \
+[B,2G,2] [B,2G,2] [G,2E,2] x2| \
+F,6 D,2|
+G,2 x6| \
+[CA,]x [C2A,2] [F,2D,2] x2| \
+[B,2G,2] [B,2G,2] [E,2C,2] x2| \
+[A,6F,6] [F2G,2]|
+[E2C2] C,2 x4| \
+[C2A,2] [C2A,2] [A,2F,2] x2| \
+[B,2G,2] [B,2G,2] [G,2E,2] x2| \
+F,6 D,2|
+G,2 x6| \
+[CA,]x [C2A,2] [F,2D,2] x2| \
+[B,2G,2] [B,2G,2] [E,2C,2] x2| \
+[A,6F,6] [F2G,2]|
+[E2C2] C,2 x4| \
+x4 ^F,D A,D| \
+G,D B,D B,,G, D,G,| \
+C,A, E,A, ^C,A, E,A,|
+D,2 x6| \
+x8| \
+x8| \
+[G,4-=C,4] [G,2D,2-] [^F,2D,2]|
+G,2 G,,2 x4| \
+[B,2G,2] G,,2 x4| \
+[B,2G,2] G,,2 x4| \
+x8|
+x8| \
+[C2A,2] [C2A,2] [A,2=F,2] x2| \
+[B,2G,2] [B,2G,2] [G,2E,2] x2| \
+F,6 D,2|
+G,2 x6| \
+[C2A,2] [C2A,2] [F,2D,2] x2| \
+[B,2G,2] [B,2G,2] [E,2C,2] x2| \
+[A,6F,6] [F2G,2]|
+[E2C2] C,2 [E2C2] [E2C2]| \
+[C2A,2] x2 [D2B,2] [D2B,2]| \
+[B,2^G,2] x6| \
+E^D FE x4|
+E^D FE x4| \
+x8| \
+x8| \
+x8|
+E,E ^G,E B,E ^G,F| \
+E,E A,E CE A,E| \
+E,E ^G,E B,E ^G,E| \
+E,E A,E CE A,E|
+E,2 x6| \
+E^D FE x4| \
+E^D FE [C2E,2] [C2E,2]| \
+[A,2C,2] x2 [B,2=D,2] [B,2D,2]|
+[=G,2B,,2] x2 [B,4G,4]| \
+[C2A,2] [D2B,2] x4| \
+x8| \
+x4 [C2E,2-] [B,2E,2]|
+A,C EC E,B, DB,| \
+A,C EC E,B, DB,| \
+A,C EC E,B, DB,| \
+A,C EC G,C FD|
+x8| \
+[C2A,2] [C2A,2] [A,2F,2] x2| \
+[B,2G,2] [B,2G,2] [G,2E,2] x2| \
+F,6 D,2|
+G,2 x6| \
+[C2A,2] [C2A,2] [F,2D,2] x2| \
+[B,2G,2] [B,2G,2] [E,2C,2] x2| \
+[A,6F,6] [F2G,2]|
+[E2C2] C,2 F,B, G,B,| \
+E,C G,C F,B, G,B,| \
+E,C G,C F,D A,D| \
+G,E CE G,F DF|
+x4 F,B, G,B,| \
+E,C G,C F,B, G,B,| \
+C,C G,C F,D A,D| \
+G,E CE G,F DF|
+CE G,C E,G, C,E,| \
+G,2 x2 G,,2 x2| \
+CE G,C E,G, C,E,| \
+G,2 x2 G,,2 x2|
+[C,2C,,2] [E,2E,,2] [G,2G,,2] [E,2E,,2]| \
+[C,4C,,4] 
+% K545-a -Rondo Allegretto Grazioso
+% by Bob
+% Fisher

@@ -1,0 +1,627 @@
+X: 1
+T: from bach/blute.mid
+M: 4/4
+L: 1/8
+Q:1/4=76
+K:C % 0 sharps
+V:1
+% Soprano
+%%MIDI program 68
+K:D % 2 sharps
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+Bc2^A B2 x2| \
+x8| \
+de2c d2 x2| \
+x8|
+x=f ed =c=c B/2=c/2=A| \
+Gg ^fe dd ^c/2d/2B| \
+^Ac d^A B^d eB| \
+c=f ^fc =df g^d|
+e8-| \
+eB ^Ae =d^A Bd| \
+E8| \
+xe dc fB Fd|
+c2 B2 x4| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+xc dB =A^G xA| \
+Bc2<d2c c2| \
+x^d ec B^A2B| \
+c=d2<e2d d2|
+x=F2^F ^GB/2=A/2 BB| \
+B^A/2c/2 B/2d/2c/2e/2 dc B=f| \
+^f^d =c^c e2 e/2x/2^d/2x/2| \
+c2 x6|
+xe2f =A/2x/2^G/2A/2 B/2c/2=d| \
+dc c2 x4| \
+xc2d F/2x/2=F/2^F/2 ^G/2A/2B| \
+BA A2 x4|
+x^d e=g/2x/2 fe/2=d/2 d/2ec/2| \
+B/2^G<^Ac/2x/2B/2 =f/2^f/2F e/2x3/2| \
+x^d e=g/2x/2 g/2f/2e/2^d/2 e2-| \
+e/2f/2e/2^d/2 e/2=d/2=c/2B/2 x/2=A<^de/2E/2x/2|
+G2 G/2x/2F E2 x2| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+B^c2^A B2 x2| \
+x8| \
+=de2c d2 x2|
+x8| \
+x=f ed =c=c B/2=c/2=A| \
+Gg ^fe dd ^c/2d/2B| \
+^Ac d^A B^d eB|
+c=f ^fc =df g^d| \
+e8-| \
+eB ^Ae =d^A Bd| \
+E8|
+xe dc fB Fd| \
+c2 B2 
+V:2
+% Flute I
+%%MIDI program 73
+K:D % 2 sharps
+Bc2^A/2x/2 B/2x/2g/2x/2 g/2x/2f/2x/2| \
+F/2x/2f/2x/2 fe E/2x/2e/2x/2 ed| \
+de2c/2x/2 d/2x/2b/2x/2 b=a| \
+A/2x/2a/2x/2 ag G/2x/2g/2x/2 gf|
+f^g2a2^d2e-| \
+e^a2b2=f2^f-| \
+fc/2x/2 c=d e/2x/2=G/2x/2 GF| \
+F/2x/2e dc fe dc|
+Bc2^A B/2x/2g/2x/2 gf| \
+F/2x/2f/2x/2 fe E/2x/2e/2x/2 ed| \
+de2c d/2x/2b/2x/2 b=a| \
+A/2x/2a/2x/2 ag G/2x/2g/2x/2 gf|
+f/2x/2=f ed =c/2x/2=c/2x/2 B/2=c/2A| \
+G/2x/2g ^fe d/2x/2d/2x/2 ^c/2d/2B| \
+^A/2x/2c d^A/2x/2 B/2x/2^d eB/2x/2| \
+c/2x/2=f ^fc/2x/2 =d/2x/2f g^d/2x/2|
+e8-| \
+eB ^Ae =d^A Bd| \
+E8| \
+xe dc fB Fd|
+c/2B/2c2^A/2x/2 B/2x/2g/2x/2 gf| \
+F/2x/2f/2x/2 fe E/2x/2e/2x/2 ed| \
+de2c/2x/2 d/2x/2b/2x/2 b=a| \
+A/2x/2a/2x/2 ag G/2x/2g/2x/2 gf|
+f^g2a2^d2e-| \
+e^a2b2=f2^f-| \
+fc/2x/2 c=d e/2x/2=G/2x/2 GF| \
+F/2x/2e dc fe dc|
+Bc dB/2x/2 =A^G xA| \
+B/2x/2c2<d2c c2| \
+x^d ec/2x/2 B^A2B| \
+c/2x/2=d2<e2d d2|
+x=F2^F ^GB/2=A/2 BB| \
+B^A/2c/2 B/2d/2c/2e/2 dc B=f| \
+^f^d =c^c e2 e/2x/2^d/2x/2| \
+c/2x/2^g/2x/2 ^gf F/2x/2f/2x/2 fe|
+Ee2f =A/2x/2^G/2A/2 B/2c/2=d| \
+dc ed D/2x/2d/2x/2 dc| \
+cc2d F/2x/2=F/2^F/2 ^G/2A/2B| \
+BA c'b B/2x/2b/2x/2 ba|
+A/2x/2^d e=g/2x/2 fe/2=d/2 d/2ec/2| \
+B/2^G<^Ac/2x/2B/2 =f/2^f/2F e/2x3/2| \
+x^d e=g/2x/2 g/2f/2e/2^d/2 e2-| \
+e/2f/2e/2^d/2 e/2=d/2=c/2B/2 x/2=A<^de/2E/2x/2|
+Gx G/2x/2F E2 x2| \
+B^c2^A/2x/2 B/2x/2g/2x/2 g/2x/2f/2x/2| \
+F/2x/2f/2x/2 fe E/2x/2e/2x/2 e=d| \
+de2c/2x/2 d/2x/2b/2x/2 b=a|
+A/2x/2a/2x/2 ag G/2x/2g/2x/2 gf| \
+f^g2a2^d2e-| \
+e^a2b2=f2^f-| \
+fc/2x/2 c=d e/2x/2=G/2x/2 GF|
+F/2x/2e dc fe dc| \
+Bc2^A B/2x/2g/2x/2 gf| \
+F/2x/2f/2x/2 fe E/2x/2e/2x/2 ed| \
+de2c d/2x/2b/2x/2 b=a|
+A/2x/2a/2x/2 ag G/2x/2g/2x/2 gf| \
+f/2x/2=f ed =c/2x/2=c/2x/2 B/2=c/2A| \
+G/2x/2g ^fe d/2x/2d/2x/2 ^c/2d/2B| \
+^A/2x/2c d^A/2x/2 B/2x/2^d eB/2x/2|
+c/2x/2=f ^fc/2x/2 =d/2x/2f g^d/2x/2| \
+e8-| \
+eB ^Ae =d^A Bd| \
+E8|
+xe dc fB Fd| \
+c/2B/2c2^A/2x/2 B/2x/2g/2x/2 gf| \
+F/2x/2f/2x/2 fe E/2x/2e/2x/2 ed| \
+de2c/2x/2 d/2x/2b/2x/2 b=a|
+A/2x/2a/2x/2 ag G/2x/2g/2x/2 gf| \
+f^g2a2^d2e-| \
+e^a2b2=f2^f-| \
+fc/2x/2 c=d e/2x/2=G/2x/2 GF|
+F/2x/2e dc fe dc| \
+B4 
+V:3
+% Flute II
+%%MIDI program 73
+K:D % 2 sharps
+Bc2^A/2x/2 B/2x/2g/2x/2 g/2x/2f/2x/2| \
+F/2x/2d/2x/2 dc E/2x/2c/2x/2 cB| \
+de2c/2x/2 d/2x/2g/2x/2 gf| \
+=A/2x/2f/2x/2 fe G/2x/2e/2x/2 ed|
+f^g2a2^d2e-| \
+e^a2b2=f2^f-| \
+f^A/2x/2 ^AB c/2x/2E/2x/2 E=D| \
+F/2x/2e dc fe dc|
+B2 x3e/2x/2 ed| \
+F/2x/2d/2x/2 dc E/2x/2c/2x/2 cB| \
+Bx4=g/2x/2 gf| \
+=A/2x/2f/2x/2 fe G/2x/2e/2x/2 ed|
+dx6x| \
+x8| \
+x8| \
+x8|
+xa/2x/2 ag G/2x/2g/2x/2 gf| \
+fx6x| \
+xc/2x/2 cd e/2x/2G/2x/2 GF| \
+Fx6x|
+Bc2^A/2x/2 B/2x/2e/2x/2 ed| \
+F/2x/2d/2x/2 dc E/2x/2c/2x/2 cB| \
+de2c/2x/2 d/2x/2g/2x/2 gf| \
+=A/2x/2f/2x/2 fe G/2x/2e/2x/2 ed|
+f^g2a2^d2e-| \
+e^a2b2=f2^f-| \
+f^A/2x/2 ^AB c/2x/2E/2x/2 E=D| \
+F/2x/2e dc fe dc|
+B2 x6| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+xe/2x/2 e^d F/2x/2^d/2x/2 ^dc|
+E2 x6| \
+xc/2x/2 cB =D/2x/2B/2x/2 B=A| \
+Ax6x| \
+xa/2x/2 a^g B/2x/2^g/2x/2 ^gf|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+Bc2^A/2x/2 B/2x/2=g/2x/2 g/2x/2f/2x/2| \
+F/2x/2d/2x/2 dc E/2x/2c/2x/2 cB| \
+de2c/2x/2 d/2x/2g/2x/2 gf|
+=A/2x/2f/2x/2 fe G/2x/2e/2x/2 ed| \
+f^g2a2^d2e-| \
+e^a2b2=f2^f-| \
+f^A/2x/2 ^AB c/2x/2E/2x/2 E=D|
+F/2x/2e dc fe dc| \
+B2 x3e/2x/2 ed| \
+F/2x/2d/2x/2 dc E/2x/2c/2x/2 cB| \
+Bx4=g/2x/2 gf|
+=A/2x/2f/2x/2 fe G/2x/2e/2x/2 ed| \
+dx6x| \
+x8| \
+x8|
+x8| \
+xa/2x/2 ag G/2x/2g/2x/2 gf| \
+fx6x| \
+xc/2x/2 cd e/2x/2G/2x/2 GF|
+Fx6x| \
+Bc2^A/2x/2 B/2x/2e/2x/2 ed| \
+F/2x/2d/2x/2 dc E/2x/2c/2x/2 cB| \
+de2c/2x/2 d/2x/2g/2x/2 gf|
+=A/2x/2f/2x/2 fe G/2x/2e/2x/2 ed| \
+f^g2a2^d2e-| \
+e^a2b2=f2^f-| \
+f^A/2x/2 ^AB c/2x/2E/2x/2 E=D|
+F/2x/2e dc fe dc| \
+B4 
+V:4
+% Violin I
+%%MIDI program 48
+K:D % 2 sharps
+Bc2^A/2x/2 B/2x/2g/2x/2 g/2x/2f/2x/2| \
+F/2x/2f/2x/2 fe E/2x/2e/2x/2 ed| \
+de2c/2x/2 d/2x/2b/2x/2 b=a| \
+A/2x/2a/2x/2 ag G/2x/2g/2x/2 gf|
+f^g2a2^d2e-| \
+e^a2b2=f2^f-| \
+fc/2x/2 c=d e/2x/2=G/2x/2 GF| \
+F/2x/2e dc fe dc|
+B/2x/2G/2x/2 GF F/2x/2g/2x/2 gf| \
+F/2x/2f/2x/2 fe E/2x/2e/2x/2 ed| \
+d/2x/2B/2x/2 B=A A/2x/2b/2x/2 ba| \
+A/2x/2a/2x/2 ag G/2x/2g/2x/2 gf|
+f^g2a2^d2e-| \
+e^a2b2=f2^f| \
+f4- ff e=d| \
+c4- c=c B=A|
+=G/2x/2a/2x/2 ag G/2x/2g/2x/2 gf| \
+f6 F2| \
+B/2x/2^c/2x/2 cd e/2x/2G/2x/2 GF| \
+Fx6x|
+Bc2^A/2x/2 B/2x/2g/2x/2 gf| \
+F/2x/2f/2x/2 fe E/2x/2e/2x/2 ed| \
+de2c/2x/2 d/2x/2b/2x/2 b=a| \
+A/2x/2a/2x/2 ag G/2x/2g/2x/2 gf|
+f^g2a2^d2e-| \
+e^a2b2=f2^f-| \
+fc/2x/2 c=d e/2x/2=G/2x/2 GF| \
+F/2x/2e dc fe dc|
+B2 x6| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x^g/2x/2 ^gf F/2x/2f/2x/2 fe|
+E2 x6| \
+xe/2x/2 ed D/2x/2d/2x/2 dc| \
+C2 x6| \
+xc'/2x/2 c'b B/2x/2b/2x/2 b=a|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+Bc2^A/2x/2 B/2x/2=g/2x/2 g/2x/2f/2x/2| \
+F/2x/2f/2x/2 fe E/2x/2e/2x/2 ed| \
+de2c/2x/2 d/2x/2b/2x/2 b=a|
+A/2x/2a/2x/2 ag G/2x/2g/2x/2 gf| \
+f^g2a2^d2e-| \
+e^a2b2=f2^f-| \
+fc/2x/2 c=d e/2x/2=G/2x/2 GF|
+F/2x/2e dc fe dc| \
+B/2x/2G/2x/2 GF F/2x/2g/2x/2 gf| \
+F/2x/2f/2x/2 fe E/2x/2e/2x/2 ed| \
+d/2x/2B/2x/2 B=A A/2x/2b/2x/2 ba|
+A/2x/2a/2x/2 ag G/2x/2g/2x/2 gf| \
+f^g2a2^d2e-| \
+e^a2b2=f2^f| \
+f4- ff e=d|
+c4- c=c B=A| \
+=G/2x/2a/2x/2 ag G/2x/2g/2x/2 gf| \
+f6 F2| \
+B/2x/2^c/2x/2 cd e/2x/2G/2x/2 GF|
+Fx6x| \
+Bc2^A/2x/2 B/2x/2g/2x/2 gf| \
+F/2x/2f/2x/2 fe E/2x/2e/2x/2 ed| \
+de2c/2x/2 d/2x/2b/2x/2 b=a|
+A/2x/2a/2x/2 ag G/2x/2g/2x/2 gf| \
+f^g2a2^d2e-| \
+e^a2b2=f2^f-| \
+fc/2x/2 c=d e/2x/2=G/2x/2 GF|
+F/2x/2e dc fe dc| \
+B4 
+V:5
+% Violin II
+%%MIDI program 48
+K:D % 2 sharps
+FG2E/2x/2 F/2x/2e/2x/2 ed| \
+D/2x/2d/2x/2 dc C/2x/2c/2x/2 cB| \
+BB2A/2x/2 A/2x/2g/2x/2 gf| \
+F/2x/2f/2x/2 fe E/2x/2e/2x/2 ed|
+dB2e2F2B-| \
+Bc2f2^G2c-| \
+c^A/2x/2 ^AB c/2x/2E/2x/2 ED| \
+DB2^A Bc B^A|
+F/2x/2E/2x/2 E/2x/2E/2x/2 D/2x/2e/2x/2 ed| \
+D/2x/2d/2x/2 dc C/2x/2c/2x/2 cB| \
+B/2x/2E/2x/2 =GG F/2x/2g/2x/2 gf| \
+F/2x/2f/2x/2 fe E/2x/2e/2x/2 ed|
+d2 B2 =c2 F2| \
+G2 ^c2 d2 ^G2| \
+^A/2x/2e dc B4-| \
+BB =A=G F/2x/2A GF|
+E/2x/2F/2x/2 FG G/2x/2B/2x/2 Bc| \
+c6 B2-| \
+B^A/2x/2 ^AB c/2x/2E/2x/2 ED| \
+Dx6x|
+F/2x2x/2E/2x/2 F/2x/2e ed| \
+D/2x/2d/2x/2 dc C/2x/2c/2x/2 cB| \
+BB2=A/2x/2 A/2x/2g/2x/2 gf| \
+F/2x/2f/2x/2 fe E/2x/2e/2x/2 ed|
+dB2e2F2B-| \
+Bc2f2^G2c-| \
+c^A/2x/2 ^AB c/2x/2E/2x/2 ED| \
+DB2^A Bc B^A|
+F2 x6| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+xe/2x/2 e^d ^D/2x/2^d/2x/2 ^dc|
+C2 x6| \
+xc/2x/2 cB B,/2x/2B/2x/2 B=A| \
+A,2 x6| \
+xa/2x/2 a^g ^G/2x/2^g/2x/2 ^gf|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+F=G2E/2x/2 F/2x/2e/2x/2 e=d| \
+D/2x/2d/2x/2 dc C/2x/2c/2x/2 cB| \
+BB2A/2x/2 A/2x/2g/2x/2 gf|
+F/2x/2f/2x/2 fe E/2x/2e/2x/2 ed| \
+dB2e2F2B-| \
+Bc2f2^G2c-| \
+c^A/2x/2 ^AB c/2x/2E/2x/2 ED|
+DB2^A Bc B^A| \
+F/2x/2E/2x/2 E/2x/2E/2x/2 D/2x/2e/2x/2 ed| \
+D/2x/2d/2x/2 dc C/2x/2c/2x/2 cB| \
+B/2x/2E/2x/2 =GG F/2x/2g/2x/2 gf|
+F/2x/2f/2x/2 fe E/2x/2e/2x/2 ed| \
+d2 B2 =c2 F2| \
+G2 ^c2 d2 ^G2| \
+^A/2x/2e dc B4-|
+BB =A=G F/2x/2A GF| \
+E/2x/2F/2x/2 FG G/2x/2B/2x/2 Bc| \
+c6 B2-| \
+B^A/2x/2 ^AB c/2x/2E/2x/2 ED|
+Dx6x| \
+F/2x2x/2E/2x/2 F/2x/2e ed| \
+D/2x/2d/2x/2 dc C/2x/2c/2x/2 cB| \
+BB2=A/2x/2 A/2x/2g/2x/2 gf|
+F/2x/2f/2x/2 fe E/2x/2e/2x/2 ed| \
+dB2e2F2B-| \
+Bc2f2^G2c-| \
+c^A/2x/2 ^AB c/2x/2E/2x/2 ED|
+DB2^A Bc B^A| \
+F4 
+V:6
+% Viola
+%%MIDI program 41
+K:D % 2 sharps
+DE2C/2x/2 D2 ^A,2| \
+B,2 F,2 ^A,2 F,2| \
+FG2E/2x/2 F2 C2| \
+D2 =A,2 C2 A,2|
+AD2<E2A, B,2-| \
+B,E2<F2B, C2-| \
+C2 E2 ^A,2 ^A2| \
+B/2x/2E FG FG FE|
+D/2x/2^A,/2x/2 ^A,/2x/2C/2x/2 D2 ^A,2| \
+B,2 F,2 ^A,2 F,2| \
+B,2 EE F2 C2| \
+D2 =A,2 C2 A,2|
+D2 E2 A,2 B,2| \
+B,2 F2 B,2 C2| \
+C/2x/2^A, FE DB,2E-| \
+ED CE D/2x/2^D EB,|
+E/2x/2=A,/2x/2 A,B, B,/2x/2E/2x/2 GC| \
+F4- FE =DF/2x/2| \
+G4- G^A, ^A,B,| \
+B,x6x|
+D/2x/2E2C/2x/2 D2 ^A,2| \
+B,2 F,2 ^A,2 F,2| \
+FG2E/2x/2 F2 C2| \
+D2 =A,2 C2 A,2|
+AD2<E2A, B,2-| \
+B,E2<F2B, C2-| \
+C2 E2 ^A,2 ^A2| \
+B/2x/2E FG FG FE|
+D2 x6| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+C2 ^G,2 =C2 ^G,2|
+^C2 x6| \
+=A,2 E,2 ^G,2 E,2| \
+A,2 x6| \
+F2 C2 =F2 C2|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+DE2C/2x/2 D2 ^A,2| \
+B,2 ^F,2 ^A,2 F,2| \
+F=G2E/2x/2 F2 C2|
+D2 =A,2 C2 A,2| \
+AD2<E2A, B,2-| \
+B,E2<F2B, C2-| \
+C2 E2 ^A,2 ^A2|
+B/2x/2E FG FG FE| \
+D/2x/2^A,/2x/2 ^A,/2x/2C/2x/2 D2 ^A,2| \
+B,2 F,2 ^A,2 F,2| \
+B,2 EE F2 C2|
+D2 =A,2 C2 A,2| \
+D2 E2 A,2 B,2| \
+B,2 F2 B,2 C2| \
+C/2x/2^A, FE DB,2E-|
+ED CE D/2x/2^D EB,| \
+E/2x/2=A,/2x/2 A,B, B,/2x/2E/2x/2 GC| \
+F4- FE =DF/2x/2| \
+G4- G^A, ^A,B,|
+B,x6x| \
+D/2x/2E2C/2x/2 D2 ^A,2| \
+B,2 F,2 ^A,2 F,2| \
+FG2E/2x/2 F2 C2|
+D2 =A,2 C2 A,2| \
+AD2<E2A, B,2-| \
+B,E2<F2B, C2-| \
+C2 E2 ^A,2 ^A2|
+B/2x/2E FG FG FE| \
+D4 
+V:7
+% Cello
+%%MIDI program 42
+K:D % 2 sharps
+B,B,, B,,B,, B,,2 x2| \
+x8| \
+B,G, E,A, D,2 x2| \
+x8|
+D,/2x/2=F ED =C/2x/2=C B,A,| \
+G,/2x/2G, ^F,E, D,/2x/2D, ^C,B,,| \
+^A,,2 C,2 F,,2 C,2| \
+D,/2x/2G,, F,,E,, D,,E,, F,,2|
+B,B,, B,,B,, B,,2 x2| \
+x8| \
+B,G, E,=A, D,2 x2| \
+x8|
+x6 B,2| \
+E,2 x4 C2| \
+F,2 xF,, G,,2 x^G,,| \
+A,,2 x^A,, B,,2 xB,,|
+=C,/2x/2=C,/2x/2 =C,B,, B,,/2x/2B,,/2x/2 B,,^A,,| \
+^A,,2 F,,2 B,,2 D,2| \
+=G,,2 G,2 ^A,,2 ^C,2| \
+D,,G, F,E, D,E, F,2|
+B,B,, B,,B,, B,,2 x2| \
+x8| \
+B,G, E,=A, D,2 x2| \
+x8|
+D,/2x/2=F ED =C/2x/2=C B,A,| \
+G,/2x/2G, ^F,E, D,/2x/2D, ^C,B,,| \
+^A,,2 C,2 F,,2 C,2| \
+D,/2x/2G,, F,,E,, D,,E,, F,,2|
+B,,2 xD, E,E FD/2x/2| \
+^G,2 xE, =A,/2x/2B, A,=G,| \
+F,/2x/2A, G,E,/2x/2 C,F GE/2x/2| \
+^A,2 xF, B,/2x/2C B,=A,|
+^G,/2x/2C DF,/2x/2 =F,/2x/2^F, ^G,D,/2x/2| \
+C,/2x/2C DF,/2x/2 =F,/2x/2^F, ^G,D,/2x/2| \
+C,/2x/2^G, A,F,/2x/2 ^G,F, ^G,^G,,| \
+C,2 x6|
+xC B,A, B,/2x/2A, ^G,E,/2x/2| \
+A,2 x6| \
+xA, ^G,F, ^G,F, =F,C,/2x/2| \
+^F,2 x6|
+xF, =G,B,,/2x/2 ^A,,/2x/2B,, C,G,,/2x/2| \
+F,,F, G,B,, ^A,,/2x/2B,, C,G,,/2x/2| \
+F,,/2x/2B,, =C,E,,/2x/2 ^D,,/2x/2B, =C=A,| \
+B,F, G,^D, E,B,, =C,^A,,|
+B,,4 E,,2 x2| \
+B,B,, B,,B,, B,,2 x2| \
+x8| \
+B,G, E,=A, =D,2 x2|
+x8| \
+D,/2x/2=F ED =C/2x/2=C B,A,| \
+G,/2x/2G, ^F,E, D,/2x/2D, ^C,B,,| \
+^A,,2 C,2 F,,2 C,2|
+D,/2x/2G,, F,,E,, D,,E,, F,,2| \
+B,B,, B,,B,, B,,2 x2| \
+x8| \
+B,G, E,=A, D,2 x2|
+x8| \
+x6 B,2| \
+E,2 x4 C2| \
+F,2 xF,, G,,2 x^G,,|
+A,,2 x^A,, B,,2 xB,,| \
+=C,/2x/2=C,/2x/2 =C,B,, B,,/2x/2B,,/2x/2 B,,^A,,| \
+^A,,2 F,,2 B,,2 D,2| \
+=G,,2 G,2 ^A,,2 ^C,2|
+D,,G, F,E, D,E, F,2| \
+B,B,, B,,B,, B,,2 x2| \
+x8| \
+B,G, E,=A, D,2 x2|
+x8| \
+D,/2x/2=F ED =C/2x/2=C B,A,| \
+G,/2x/2G, ^F,E, D,/2x/2D, ^C,B,,| \
+^A,,2 C,2 F,,2 C,2|
+D,/2x/2G,, F,,E,, D,,E,, F,,2| \
+B,,4 
+V:8
+% Double Bass
+%%MIDI program 71
+K:D % 2 sharps
+B,,B,,, B,,,B,,, B,,,2 x2| \
+x8| \
+B,,G,, E,,A,, D,,2 x2| \
+x8|
+D,,/2x/2=F, E,D, =C,/2x/2=C, B,,A,,| \
+G,,/2x/2G,, ^F,,E,, D,,/2x/2D,, ^C,,B,,,| \
+^A,,,2 C,,2 F,,,2 C,,2| \
+D,,/2x/2G,,, F,,,E,,, D,,,E,,, F,,,2|
+B,,B,,, B,,,B,,, B,,,2 x2| \
+x8| \
+B,,G,, E,,=A,, D,,2 x2| \
+x8|
+x6 B,,2| \
+E,,2 x4 C,2| \
+F,,2 xF,,, G,,,2 x^G,,,| \
+A,,,2 x^A,,, B,,,2 xB,,,|
+=C,,/2x/2=C,,/2x/2 =C,,B,,, B,,,/2x/2B,,,/2x/2 B,,,^A,,,| \
+^A,,,2 F,,,2 B,,,2 D,,2| \
+=G,,,2 G,,2 ^A,,,2 ^C,,2| \
+D,,,G,, F,,E,, D,,E,, F,,2|
+B,,B,,, B,,,B,,, B,,,2 x2| \
+x8| \
+B,,G,, E,,=A,, D,,2 x2| \
+x8|
+D,,/2x/2=F, E,D, =C,/2x/2=C, B,,A,,| \
+G,,/2x/2G,, ^F,,E,, D,,/2x/2D,, ^C,,B,,,| \
+^A,,,2 C,,2 F,,,2 C,,2| \
+D,,/2x/2G,,, F,,,E,,, D,,,E,,, F,,,2|
+B,,,2 xD,, E,,E, F,D,/2x/2| \
+^G,,2 xE,, =A,,/2x/2B,, A,,=G,,| \
+F,,/2x/2A,, G,,E,,/2x/2 C,,F, G,E,/2x/2| \
+^A,,2 xF,, B,,/2x/2C, B,,=A,,|
+^G,,/2x/2C, D,F,,/2x/2 =F,,/2x/2^F,, ^G,,D,,/2x/2| \
+C,,/2x/2C, D,F,,/2x/2 =F,,/2x/2^F,, ^G,,D,,/2x/2| \
+C,,/2x/2^G,, A,,F,,/2x/2 ^G,,F,, ^G,,^G,,,| \
+C,,2 x6|
+xC, B,,A,, B,,/2x/2A,, ^G,,E,,/2x/2| \
+A,,2 x6| \
+xA,, ^G,,F,, ^G,,F,, =F,,C,,/2x/2| \
+^F,,2 x6|
+xF,, =G,,B,,,/2x/2 ^A,,,/2x/2B,,, C,,G,,,/2x/2| \
+F,,,F,, G,,B,,, ^A,,,/2x/2B,,, C,,G,,,/2x/2| \
+F,,,/2x/2B,,, =C,,E,,,/2x/2 ^D,,,/2x/2B,, =C,=A,,| \
+B,,F,, G,,^D,, E,,B,,, =C,,^A,,,|
+B,,,4 E,,,2 x2| \
+B,,B,,, B,,,B,,, B,,,2 x2| \
+x8| \
+B,,G,, E,,=A,, =D,,2 x2|
+x8| \
+D,,/2x/2=F, E,D, =C,/2x/2=C, B,,A,,| \
+G,,/2x/2G,, ^F,,E,, D,,/2x/2D,, ^C,,B,,,| \
+^A,,,2 C,,2 F,,,2 C,,2|
+D,,/2x/2G,,, F,,,E,,, D,,,E,,, F,,,2| \
+B,,B,,, B,,,B,,, B,,,2 x2| \
+x8| \
+B,,G,, E,,=A,, D,,2 x2|
+x8| \
+x6 B,,2| \
+E,,2 x4 C,2| \
+F,,2 xF,,, G,,,2 x^G,,,|
+A,,,2 x^A,,, B,,,2 xB,,,| \
+=C,,/2x/2=C,,/2x/2 =C,,B,,, B,,,/2x/2B,,,/2x/2 B,,,^A,,,| \
+^A,,,2 F,,,2 B,,,2 D,,2| \
+=G,,,2 G,,2 ^A,,,2 ^C,,2|
+D,,,G,, F,,E,, D,,E,, F,,2| \
+B,,B,,, B,,,B,,, B,,,2 x2| \
+x8| \
+B,,G,, E,,=A,, D,,2 x2|
+x8| \
+D,,/2x/2=F, E,D, =C,/2x/2=C, B,,A,,| \
+G,,/2x/2G,, ^F,,E,, D,,/2x/2D,, ^C,,B,,,| \
+^A,,,2 C,,2 F,,,2 C,,2|
+D,,/2x/2G,,, F,,,E,,, D,,,E,,, F,,,2| \
+B,,,,4 
+% "Blute nur, du liebes Herz"
+% St. Matthew Passion
+% by J.S. Bach, 1729
+% Sequenced by Ken Whitcomb \0xa91997
+% kendawl@aol.com

@@ -1,0 +1,1472 @@
+X: 1
+T: from bach/bwv1060c.mid
+M: 2/4
+L: 1/16
+Q:1/4=100
+K:C % 0 sharps
+% Allegro - Third Movement - BWV 1060 - J.S. Bach
+% MIDI Sequence Copyright 1997 Garrett W. Van Cleef
+V:1
+% Violin I
+%%MIDI program 48
+% Allegro - Third Movement - BWV 1060 - J.S. Bach
+% MIDI Sequence Copyright 1997 Garrett W. Van Cleef
+c2 G2 c2 F2| \
+c2 ^D=D ^D=D C2| \
+^d2 =d2 g3-g/2x/2| \
+c2 BA BA GA|
+BG c2 G2 d2| \
+G2 f2 ^d3c| \
+=de f2 c2 g2| \
+c2 ^a2 ^g3=g|
+^gf cB cd ef| \
+=g^g ^a=g ^gf cf| \
+^gf cB cd ef| \
+=g^g ^a=g ^gf cf|
+^gf ^A=A ^Ac d^d| \
+f=g ^gf =g^d ^A^d| \
+g^d ^A=A ^Ac =d^d| \
+fg ^gf =g^d ^A^d|
+g^d f2 x2 f2| \
+x2 f4- f^d| \
+=df ^d=d2<^d2=d| \
+^d3c ^d3-^d/2x/2|
+=dc B2 d2 F2| \
+d2 ^D=D ^D=D C2| \
+^df g2 c2 G2| \
+B2 c3-c/2x2x/2|
+x8| \
+x8| \
+c2 Gx cx Fx| \
+=dx ^D=D ^D=D C2|
+x8| \
+x8| \
+^d2 ^A2 ^d2 ^G2| \
+f2 =GF GF ^D2|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+=D2 C2 =A2 ^A,2| \
+G2 =A,G, A,G, A,2|
+g2 d2 g2 c2| \
+g2 ^A=A ^A=A G2| \
+^a2 =a2 d'3-d'/2x/2| \
+g2 ^fe ^fe d2|
+x8| \
+x8| \
+^F2 G2 D2 A2| \
+D2 ^A=A ^A=A G2|
+x8| \
+x8| \
+B2 c2 G2 d2| \
+G2 ^d=d ^d=d c2|
+x8| \
+x8| \
+c2 B2 d2 G2| \
+B2 c2 G2 C2|
+x8| \
+x8| \
+^A2 =A2 c2 =F2| \
+A2 ^A2 F2 ^A,2|
+G2 c2 x2 c2| \
+x2 c4- c^A| \
+=Ac ^A=A2<^A2=A| \
+^A3G ^A3-^A/2x/2|
+=AG ^F2 A2 c2| \
+a2 ^A=A ^A=A GA| \
+^Ac d2 G2 D2| \
+^F2 G3-G/2x2x/2|
+x2 d6-| \
+d8-| \
+d8-| \
+d8-|
+d6 ^d2-| \
+^d3/2x/2 =f6-| \
+f8-| \
+f8-|
+f8-| \
+f8-| \
+fx ^d6-| \
+^d8-|
+^dx6x| \
+x8| \
+x8| \
+x8|
+f2 c2 f2 ^A2| \
+f2 ^G=G ^G=G F2| \
+^g2 =g2 c'3-c'/2x/2| \
+f2 e=d ed c2|
+g2 ^g2 f2 c2| \
+=g2 ^g2 f2 ^G2| \
+=g2 ^g2 f2 ^A2| \
+f2 ^g2 f2 d2|
+f2 =g2 ^d2 ^A2| \
+f2 g2 ^d2 G2| \
+f2 g2 ^d2 ^G2| \
+^d2 =g2 ^d2 c2|
+^d2 f2 =d2 ^G2| \
+^d2 f2 =d2 F2| \
+^d2 f2 =d2 =G2| \
+d2 f2 d2 B2|
+d2 ^d2 x4| \
+x8| \
+c2 G2 c2 F2| \
+c2 ^D=D ^D=D C2|
+x8| \
+x8| \
+^d2 ^A2 ^d2 ^G2| \
+f2 =GF GF ^D2|
+x8| \
+x8| \
+^G2 =G2 ^A2 ^D2| \
+G2 ^G2 ^D2 ^G,2|
+x8| \
+x8| \
+^A2 =A2 c2 F2| \
+A2 ^A2 F2 ^A,2|
+x8| \
+x8| \
+c2 B2 =d2 =G2| \
+B2 c2 G2 C2|
+c2 f2 x2 f2| \
+x2 f4- f^d| \
+=df ^d=d2<^d2=d| \
+^d3c ^d3-^d/2x/2|
+=dc B6-| \
+B8-| \
+Bx c6-| \
+c8-|
+cx d6-| \
+d8-| \
+d8-| \
+dx c6-|
+c8-| \
+cx B6-| \
+Bx c2 c2 F2| \
+c2 ^D=D ^D=D C2|
+^d2 =d2 g3-g/2x/2| \
+c2 B=A BA G2| \
+x8| \
+x8|
+B,2 C2 G,2 D2| \
+G,2 ^D=D ^D=D C2| \
+x8| \
+x8|
+E2 F2 C2 G2| \
+C2 ^G=G ^G=G F2| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+G2 F2 d2 ^D2| \
+c2 =DC DC B,2| \
+c2 G2 c2 F2| \
+c2 ^D=D ^D=D C2|
+^d2 =d2 g3-g/2x/2| \
+c2 BA BA GA| \
+BG c2 G2 d2| \
+G2 f2 ^d3c|
+=de f2 c2 g2| \
+c2 ^a2 ^g3=g| \
+^gf cB cd ef| \
+=g^g ^a=g ^gf cf|
+^gf cB cd ef| \
+=g^g ^a=g ^gf cf| \
+^gf ^A=A ^Ac d^d| \
+f=g ^gf =g^d ^A^d|
+g^d ^A=A ^Ac =d^d| \
+fg ^gf =g^d ^A^d| \
+g^d f2 x2 f2| \
+x2 f4- f^d|
+=df ^d=d2<^d2=d| \
+^d3c ^d3-^d/2x/2| \
+=dc B2 d2 F2| \
+d2 ^D=D ^D=D C2|
+^df g2 c2 G2| \
+B2 c3-c/2
+V:2
+% Violin II
+%%MIDI program 48
+x8| \
+x8| \
+% Allegro - Third Movement - BWV 1060 - J.S. Bach
+% MIDI Sequence Copyright 1997 Garrett W. Van Cleef
+c2 =d2 D2 ^D2| \
+F2 G=A GA Bc|
+=dB G2 c3-c/2x/2| \
+B2 c2 G2 c2| \
+G2 c2 f3-f/2x/2| \
+e2 f2 c2 f2|
+c2 g2 c2 g2| \
+c2 f2 c2 f2| \
+c2 g2 c2 g2| \
+c2 f2 c2 f2|
+c2 f2 ^A2 f2| \
+^A2 ^d2 ^A2 ^d2| \
+^A2 f2 ^A2 f2| \
+^A2 ^d2 ^A2 ^d2|
+^A2 B2 c3-c/2x/2| \
+=d2 d4- dc| \
+dB c2 x2 c2| \
+x2 c4- c3/2x/2|
+D2 G2 B2 d2-| \
+d4 cB c2| \
+CD ^D2 ^G2 =G2| \
+G2 G3-G/2x2x/2|
+x8| \
+x8| \
+GF G^G =G^G F=G| \
+FG ^DF ^DF G2|
+x8| \
+x8| \
+^A^G ^Ac ^Ac ^G^A| \
+^G^A =G^G =G^G ^A2|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+=D2 C2 =A2 ^A,2| \
+=G2 =A,G, A,G, A,2|
+x8| \
+x8| \
+g2 a2 A2 ^A2| \
+c2 de de ^f2|
+x8| \
+x8| \
+^F2 G2 D2 =A2| \
+D2 ^A=A ^A=A G2|
+x8| \
+x8| \
+B2 c2 G2 d2| \
+G2 ^d=d ^d=d c2|
+x8| \
+x8| \
+c2 B2 d2 G2| \
+B2 c2 G2 C2|
+x8| \
+x8| \
+^A2 =A2 c2 =F2| \
+A2 ^A2 F2 ^A,2|
+G2 ^F2 G3-G/2x/2| \
+=A2 A3-A/2x/2 AG| \
+A^F G2 x2 G2| \
+x2 G4- G3/2x/2|
+A,2 D2 ^F2 A2-| \
+A4 G^F G2| \
+G,A, ^A,2 ^D2 =D2| \
+D2 D3-D/2x2x/2|
+x2 G6-| \
+Gx =A6-| \
+Ax ^A6-| \
+^Ax =A4- A3/2x/2|
+c2 ^A6-| \
+^Ax c6-| \
+cx d6-| \
+dx c3-c/2x/2 =A2-|
+A4- A3/2x/2 ^G2-| \
+^G3/2x/2 =G6-| \
+G8-| \
+Gx =F6-|
+Fx6x| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+f2 g2 G2 ^G2| \
+^A2 cd cd e2|
+c2 cx3 ^dx| \
+x2 fx4x| \
+^D2 ^Ac ^Ac ^G^A| \
+^G^A =G^G =G^G F=G|
+FG ^Dx3 ^Ax| \
+x2 ^dx4x| \
+=D2 ^G^A ^G^A =G^G| \
+=G^G F=G FG ^DF|
+^DF =Dx3 Fx| \
+x2 Gx4x| \
+C2 G^G =G^G F=G| \
+FG ^DF ^DF =D^D|
+=D^D C2 x4| \
+x8| \
+GF G^G =G^G F=G| \
+FG ^DF ^DF G2|
+x8| \
+x8| \
+^A^G ^Ac ^Ac ^G^A| \
+^G^A =G^G =G^G ^A2|
+x8| \
+x8| \
+^G2 =G2 ^A2 ^D2| \
+G2 ^G2 ^D2 ^G,2|
+x8| \
+x8| \
+^A2 =A2 c2 F2| \
+A2 ^A2 F2 ^A,2|
+x8| \
+x8| \
+c2 B2 =d2 =G2| \
+B2 c2 G2 C2|
+c2 B2 c3-c/2x/2| \
+d2 d4- dc| \
+dB c2 x2 c2| \
+x2 c4- c3/2x/2|
+D2 G6-| \
+G8-| \
+G8-| \
+G8-|
+Gx B6-| \
+B8-| \
+B8-| \
+Bx G6-|
+G8-| \
+G6- G^G| \
+F=G ^DF ^DF =D^D| \
+=D^D C2 ^D2 G2|
+c2 =d2 D2 ^D2| \
+F2 G=A GA B2| \
+x8| \
+x8|
+B,2 C2 G,2 =D2| \
+G,2 ^D=D ^D=D C2| \
+x8| \
+x8|
+E2 F2 C2 G2| \
+C2 ^G=G ^G=G F2| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+G2 F2 d2 ^D2| \
+c2 =DC DC B,2| \
+x8| \
+x8|
+c2 d2 D2 ^D2| \
+F2 GA GA Bc| \
+=dB G2 c3-c/2x/2| \
+B2 c2 G2 c2|
+G2 c2 f3-f/2x/2| \
+e2 f2 c2 f2| \
+c2 g2 c2 g2| \
+c2 f2 c2 f2|
+c2 g2 c2 g2| \
+c2 f2 c2 f2| \
+c2 f2 ^A2 f2| \
+^A2 ^d2 ^A2 ^d2|
+^A2 f2 ^A2 f2| \
+^A2 ^d2 ^A2 ^d2| \
+^A2 B2 c3-c/2x/2| \
+=d2 d4- dc|
+dB c2 x2 c2| \
+x2 c4- c3/2x/2| \
+D2 G2 B2 d2-| \
+d4 cB c2|
+CD ^D2 ^G2 =G2| \
+G2 G3-G/2
+V:3
+% Viola
+%%MIDI program 48
+x8| \
+x8| \
+% Allegro - Third Movement - BWV 1060 - J.S. Bach
+% MIDI Sequence Copyright 1997 Garrett W. Van Cleef
+G2 G,2 G,2 C2| \
+C2 =D2 D2 D2|
+D2 ^D2 ^D2 F2| \
+F4<G4| \
+G2 ^G2 ^G2 ^A2| \
+^A4<c4|
+F2 =G2 G2 c2| \
+c2 c2 ^G2 F2| \
+F2 =G2 G2 c2| \
+c2 c2 ^G2 F2|
+F2 F2 F2 ^A2| \
+^A2 ^A2 =G2 ^D2| \
+^D2 F2 F2 ^A2| \
+^A2 ^A2 G2 ^D2|
+^D2 ^G^A ^G^A ^G^A| \
+^G^A =GF GF G2-| \
+G3^G =G^G =G^G| \
+=G^G ^F=G ^FG =A2|
+^F2 =D2 G2 B2| \
+B,2 C4- C=F| \
+^D=D C2 D2 ^D2| \
+=D2 ^D3-^D/2x2x/2|
+x8| \
+x8| \
+^DF ^DF ^DF =D^D| \
+=D^D CB, CB, C2|
+x8| \
+x8| \
+G^G =G^G =G^G F=G| \
+FG ^D=D ^D=D ^D2|
+x2 ^G6-| \
+^Gx =G6-| \
+Gx F6-| \
+Fx ^D6-|
+^D4 =D2 D2| \
+G2 D3-D/2x2x/2| \
+D2 C2 A2 D2| \
+G2 ^FE ^FE D2|
+x8| \
+x8| \
+d2 D2 D2 G2| \
+G2 AG AG A2|
+x8| \
+x8| \
+^F2 G2 D2 A2| \
+D2 ^A=A ^A=A G2|
+x8| \
+x8| \
+B2 c2 G2 d2| \
+G2 ^d=d ^d=d c2|
+x8| \
+x8| \
+c2 B2 d2 G2| \
+B2 c2 G2 C2|
+x8| \
+x8| \
+^A2 =A2 c2 =F2| \
+A2 ^A2 F2 ^A,2|
+G2 =A,^A, CD ^DF| \
+^DF =DC DC D2-| \
+D3^D =D^D =D^D| \
+=D^D ^C=D ^CD E2|
+^C2 =A,2 D2 ^F2| \
+^F,2 G,4- G,=C| \
+^A,=A, G,2 A,2 ^A,2| \
+=A,2 ^A,3-^A,/2x2x/2|
+x2 D6-| \
+D8-| \
+D8-| \
+D4- D3/2x/2 ^F2-|
+^F3/2x/2 G6-| \
+Gx =F6-| \
+Fx ^A6-| \
+^Ax F4- F3/2x/2|
+^D2 =D2 x4| \
+D2 G2 x4| \
+G2 C2 x4| \
+C2 F2 x4|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+c2 C2 C2 F2| \
+F2 G2 G2 G2|
+G2 Fx3 cx| \
+x2 Fx4x| \
+^Dx ^Ac ^Ac ^G^A| \
+^G^A =G^G =G^G F=G|
+FG ^Dx3 ^A,x| \
+x2 ^D,x4x| \
+=D2 ^G^A ^G^A =G^G| \
+=G^G F=G FG ^DF|
+^DF =Dx3 Fx| \
+x2 Gx4x| \
+C2 G^G =G^G F=G| \
+FG ^DF ^DF =D^D|
+=D^D C2 x4| \
+x8| \
+^DF ^DF ^DF =D^D| \
+=D^D CB, CB, C2|
+x8| \
+x8| \
+G^G =G^G =G^G F=G| \
+FG ^D=D ^D=D ^D2|
+x8| \
+x8| \
+^G2 =G2 ^A2 ^D2| \
+G2 ^G2 ^D2 ^G,2|
+x8| \
+x8| \
+^A2 =A2 c2 F2| \
+A2 ^A2 F2 ^A,2|
+x8| \
+x8| \
+c2 B2 =d2 =G2| \
+B2 c2 G2 C2|
+G2 ^G^A ^G^A ^G^A| \
+^G^A =GF GF G2-| \
+G3^G =G^G =G^G| \
+=G^G ^F=G ^FG =A2|
+^F2 D6-| \
+D8-| \
+Dx ^D6-| \
+^D8-|
+^Dx =F6-| \
+F8-| \
+Fx ^D6-| \
+^D8-|
+^Dx =D6-| \
+D8-| \
+Dx ^DF ^DF =D^D| \
+=D^D C2 C2 ^D2|
+G2 G,2 G,2 C2| \
+C2 =DC DC D2| \
+x8| \
+x8|
+B,2 C2 G,2 D2| \
+G,2 ^D=D ^D=D C2| \
+x8| \
+x8|
+E2 F2 C2 G2| \
+C2 ^G=G ^G=G F2| \
+x2 ^c6-| \
+^cx =c6-|
+cx ^A6-| \
+^Ax ^G6-| \
+^G4 =G2 G2| \
+c2 G3-G/2x2x/2|
+G2 F2 d2 ^D2| \
+c2 =DC DC B,2| \
+x8| \
+x8|
+G2 G,2 G,2 C2| \
+C2 D2 D2 D2| \
+D2 ^D2 ^D2 F2| \
+F4<G4|
+G2 ^G2 ^G2 ^A2| \
+^A4<c4| \
+F2 =G2 G2 c2| \
+c2 c2 ^G2 F2|
+F2 =G2 G2 c2| \
+c2 c2 ^G2 F2| \
+F2 F2 F2 ^A2| \
+^A2 ^A2 =G2 ^D2|
+^D2 F2 F2 ^A2| \
+^A2 ^A2 G2 ^D2| \
+^D2 ^G^A ^G^A ^G^A| \
+^G^A =GF GF G2-|
+G3^G =G^G =G^G| \
+=G^G ^F=G ^FG =A2| \
+^F2 =D2 G2 B2| \
+B,2 C4- C=F|
+^D=D C2 D2 ^D2| \
+=D2 ^D3-^D/2
+V:4
+% Continuo
+%%MIDI program 48
+x8| \
+x8| \
+% Allegro - Third Movement - BWV 1060 - J.S. Bach
+% MIDI Sequence Copyright 1997 Garrett W. Van Cleef
+C2 ^A,C ^A,C ^G,^A,| \
+^G,^A, =G,2 =D,2 G,,2|
+F,2 ^D,F, ^D,F, =D,^D,| \
+=D,^D, C,=D, C,D, ^A,,C,| \
+^A,,C, ^G,,^A,, ^G,,^A,, =G,,^G,,| \
+=G,,^G,, F,,E,, F,,=G,, ^G,,^A,,|
+C,D, E,2 =G,2 C,2| \
+E,2 F,2 F,,2 ^G,,2| \
+C,2 E,2 =G,2 C,2| \
+E,2 F,2 F,,2 ^G,,2|
+C,2 D,2 F,2 ^A,,2| \
+D,2 ^D,2 ^D,,2 =G,,2| \
+^A,,2 =D,2 F,2 ^A,,2| \
+D,2 ^D,,2 ^D,2 G,2|
+^D,2 =D,2 ^G,2 C,2| \
+^G,2 B,,=A,, B,,A,, =G,,A,,| \
+B,,G,, C,2 G,2 ^A,,2| \
+F,2 =A,,G,, A,,G,, ^F,,G,,|
+A,,^F,, G,,^G,, =G,,^G,, =G,,^G,,| \
+=F,,=G,, ^G,,^G, =G,F, ^D,^G,| \
+=G,F, ^D,^G, =G,F, G,2| \
+G,,2 C,2 G,,2 C,,2|
+x8| \
+x8| \
+C,=D, ^D,2 C,2 G,2| \
+G,,2 C,2 G,,2 C,,2|
+x8| \
+x8| \
+^D,F, G,2 ^D,2 ^A,2| \
+^A,,2 ^D,2 ^A,,2 ^D,,2|
+^D,2 ^G,2 F,2 =D,2| \
+^A,,2 x2 ^D,=D, C,2| \
+^G,,x D,2 C,2 B,,2| \
+=G,,2 x2 C,^A,, =A,,2|
+G,,2 ^F,,2 ^F,2 G,2| \
+C,2 D,6-| \
+D,8-| \
+D,6- D,^D,|
+C,=D, ^A,,C, ^A,,C, =A,,^A,,| \
+=A,,^A,, G,,2 D2 ^A,2| \
+G,2 =F,G, F,G, ^D,F,| \
+^D,F, =D,2 =A,,2 D,,2|
+x8| \
+x8| \
+D,2 G,2 ^A,,2 C,2| \
+D,2 G,,2 D,2 G,2|
+x8| \
+x8| \
+G,2 C2 ^D,2 F,2| \
+G,2 C,2 G,,2 C,,2|
+C2 B,2 =D2 G,2| \
+B,2 C2 C,2 C2| \
+x8| \
+G,2 C2 C,2 C2|
+^A,2 =A,2 C2 F,2| \
+A,2 ^A,2 ^A,,2 ^A,2| \
+x8| \
+F,2 ^A,2 ^A,,2 ^A,2|
+^D2 =A,x ^Dx G,x| \
+^Dx ^F,E, ^F,E, =D,E,| \
+^F,D, G,,2 D2 =F,2| \
+D2 E,D, E,D, ^C,D,|
+E,^C, D,^D, =D,^D, =D,^D,| \
+=C,=D, ^D,2 =D,C, ^A,,^D,| \
+=D,C, ^A,,^D, =D,C, D,2| \
+D,,2 G,,3-G,,/2x2x/2|
+x2 G,3-G,/2x/2 ^A,2-| \
+^A,3/2x/2 D3-D/2x2x/2| \
+C2 ^A,x Dx G,x| \
+Dx ^F,E, ^F,E, D,2|
+x2 G,2 x2 G,,2| \
+x2 =A,,3-A,,/2x2x/2| \
+=F,2 D,x F,x ^A,,x| \
+D,x =A,,G,, A,,G,, F,,2|
+x4 D,x D,,x| \
+x4 G,x G,,x| \
+x4 C,x C,,x| \
+x4 F,x F,,x|
+F,2 ^A,2 F,2 D2| \
+F,2 G,2 ^A,2 G,2| \
+E,2 F,2 ^C,2 ^A,,2| \
+G,,2 =C,2 G,,2 C,,2|
+x8| \
+x8| \
+F,2 ^D,F, ^D,F, ^C,^D,| \
+^C,^D, =C,2 G,,2 C,,2|
+E,2 F,G, F,G, ^D,F,| \
+^D,F, =D,^D, =D,^D, C,=D,| \
+C,D, ^A,C ^A,C ^G,^A,| \
+^G,^A, =G,^G, =G,^G, F,=G,|
+F,G, ^D,F, ^D,F, =D,^D,| \
+=D,^D, C,=D, C,D, ^A,,C,| \
+^A,,C, ^G,^A, ^G,^A, =G,^G,| \
+=G,^G, F,=G, F,G, ^D,F,|
+^D,F, =D,^D, =D,^D, C,=D,| \
+C,D, B,,C, B,,C, =A,,B,,| \
+A,,B,, G,^G, =G,^G, F,=G,| \
+F,G, ^D,F, ^D,F, =D,^D,|
+=D,^D, C,2 x4| \
+x8| \
+C,=D, ^D,2 C,2 G,2| \
+G,,2 C,2 G,,2 C,,2|
+x8| \
+x8| \
+^D,F, G,2 ^D,2 ^A,2| \
+^A,,2 ^D,2 ^A,,2 ^D,,2|
+^D,F, G,2 ^A,2 ^D,2| \
+G,2 ^G,2 ^G,,2 ^G,2| \
+x8| \
+^D,2 ^G,2 ^G,,2 ^G,2|
+F,=G, =A,2 C2 F,2| \
+A,2 ^A,2 ^A,,2 ^A,2| \
+x8| \
+F,2 ^A,2 ^A,,2 ^A,2|
+G,=A, B,2 =D2 G,2| \
+B,2 C2 C,2 C2| \
+x8| \
+G,2 C2 C,2 C2|
+^D,2 =D,2 ^G,2 C,2| \
+^G,2 B,,A,, B,,A,, =G,,A,,| \
+B,,G,, C,2 G,2 ^A,,2| \
+G,2 =A,,G,, A,,G,, ^F,,G,,|
+A,,^F,, G,,6-| \
+G,,8-| \
+G,,8-| \
+G,,8-|
+G,,8-| \
+G,,8-| \
+G,,8-| \
+G,,8-|
+G,,8-| \
+G,,8-| \
+G,,x C,,3-C,,/2x2x/2| \
+x8|
+C2 ^A,C ^A,C ^G,^A,| \
+^G,^A, =G,2 D,2 G,,2| \
+x8| \
+x8|
+G,,2 C,2 ^D,,2 =F,,2| \
+G,,2 C,,2 G,,2 C,2| \
+x8| \
+x8|
+C,2 F,2 ^G,,2 ^A,,2| \
+C,2 F,,2 C,2 F,2| \
+^G,2 ^A,2 ^G,2 =G,2| \
+^D,2 x2 ^G,=G, F,2|
+^C,2 G,2 F,2 E,2| \
+=C,2 x2 F,^D, =D,2| \
+C,x B,,2 B,2 C2| \
+F,2 G,6-|
+G,8-| \
+G,6- G,^G,| \
+F,=G, ^D,F, ^D,F, =D,^D,| \
+=D,^D, C,2 G,2 ^D,2|
+C,2 ^A,,C, ^A,,C, ^G,,^A,,| \
+^G,,^A,, =G,,2 =D,2 G,2| \
+F,2 ^D,F, ^D,F, =D,^D,| \
+=D,^D, C,=D, C,D, ^A,,C,|
+^A,,C, ^G,,^A,, ^G,,^A,, =G,,^G,,| \
+=G,,^G,, F,,E,, F,,=G,, ^G,,^A,,| \
+C,D, E,2 =G,2 C,2| \
+E,2 F,2 F,,2 ^G,,2|
+C,2 E,2 =G,2 C,2| \
+E,2 F,2 F,,2 ^G,,2| \
+C,2 D,2 F,2 ^A,,2| \
+D,2 ^D,2 ^D,,2 =G,,2|
+^A,,2 =D,2 F,2 ^A,,2| \
+D,2 ^D,,2 ^D,2 G,2| \
+^D,2 =D,2 ^G,2 C,2| \
+^G,2 B,,=A,, B,,A,, =G,,A,,|
+B,,G,, C,2 G,2 ^A,,2| \
+F,2 =A,,G,, A,,G,, ^F,,G,,| \
+A,,^F,, G,,^G,, =G,,^G,, =G,,^G,,| \
+=F,,=G,, ^G,,^G, =G,F, ^D,^G,|
+=G,F, ^D,^G, =G,F, G,2| \
+G,,2 C,,3-C,,/2
+V:5
+% Harpsichord I (RH)
+%%MIDI program 6
+% Allegro - Third Movement - BWV 1060 - J.S. Bach
+% MIDI Sequence Copyright 1997 Garrett W. Van Cleef
+c2 G2 c2 F2| \
+c2 ^D=D ^D=D C2| \
+^d2 =d2 g3-g/2x/2| \
+c2 BA BA GA|
+BG c2 G2 d2| \
+G2 [f2c2-G2-] [^d3/2-c3/2G3/2]^d3/2c| \
+=de f2 c2 g2| \
+c2 [^a2f2-c2-] [^g3/2-f3/2c3/2]^g3/2=g|
+^gf cB cd ef| \
+=g^g ^a=g ^gf cf| \
+^gf cB cd ef| \
+=g^g ^a=g ^gf cf|
+^gf ^A=A ^Ac d^d| \
+f=g ^gf =g^d ^A^d| \
+g^d ^A=A ^Ac =d^d| \
+fg ^gf =g^d ^A^d|
+g^d f2 x2 f2| \
+x2 f4- f^d| \
+=df ^d=d2<^d2=d| \
+^d3c ^d3-^d/2x/2|
+=dc B2 d2 F2| \
+d2 ^D=D ^D=D C2| \
+^df g2 c2 G2| \
+B2 c3-c/2x2x/2|
+C=D ^DF ^DF =D^D| \
+=D^D C2 G2 ^d2| \
+c2 G2 c2 F2| \
+=d2 ^D=D ^D=D CD|
+^DF G^G =G^G F=G| \
+FG ^D2 ^A2 g2| \
+^d2 ^A2 ^d2 ^G2| \
+f2 =GF GF ^DG|
+^A^c =c^d fg ^gf| \
+=dc ^Ad ^df =g^d| \
+=dc Bc d^d f=d| \
+B=A GB cd ^dc|
+A^A c=d cd ^Ac| \
+^Ac =A^A =A^A cd| \
+^Ac =A^A =A^A G=A| \
+GA ^FE ^FE D2|
+g2 d2 g2 c2| \
+g2 ^A=A ^A=A G2| \
+^a2 =a2 d'3-d'/2x/2| \
+g2 ^fe ^fe dc|
+^A=A ^Ad ^AG ^F=A| \
+^FD G^A GD =Ac| \
+AD D2 G2 A^A| \
+c=A ^A=A ^A=A G=F|
+^D=D ^DG ^DC B,=D| \
+B,G, C^D CG, =DF| \
+DG, G2 c2 d^d| \
+f=d ^d=d ^d=d cd|
+^dc G^F GA Bc| \
+=d^d =f=d ^dc Gc| \
+^dc =d2 Bc d2| \
+g4 c2 ^d2|
+g2 FE FG A^A| \
+c=d ^dc =d^A F^A| \
+d^A c2 =A^A c2| \
+f4 ^A2 d2|
+G2 c2 x2 c2| \
+x2 c4- c^A| \
+=Ac ^A=A2<^A2=A| \
+^A3G ^A3-^A/2x/2|
+=AG ^F2 A2 c2| \
+a2 ^A=A ^A=A GA| \
+^Ac d2 G2 D2| \
+^F2 GD E^F G=A|
+^Ac  (3dg=a  (3^a=ag  (3dga| \
+ (3^a=ag  (3d^fg  (3ag^f  (3d^fg| \
+ (3ag^f  (3dga  (3^a=ag  (3dga| \
+ (3^a=ag  (3d^fg  (3ag^f  (3d^fg|
+ (3ag^f  (3dga  (3^a=ag  (3dga| \
+ (3^a=ag  (3^da^a  (3c'^a=a  (3^da^a| \
+ (3c'^a=a  (3=f^ac'  (3=d'c'^a  (3f^ac'| \
+ (3d'c'^a  (3f=a^a  (3c'^a=a  (3fa^a|
+ (3c'^a=a d'f d'f ^Gf| \
+^Gf d'f d'f =Gf| \
+Gf c'^d c'^d A^d| \
+A^d c'^d c'^d A^d|
+A^d  (3=d^ac'  (3d'c'^a f^a| \
+d^a  (3e^ac'  (3^c'=c'^a e^c'| \
+=c'^a  (3^gf=g  (3^g=gf ^c'e| \
+fB =ce g^a ^g2-|
+^g/2x/2=g ^g^a ^g^a =g^g| \
+=g^g f2 c2 ^G2| \
+^g2 =g2 c'3-c'/2x/2| \
+f2 ed ed c2|
+g2 ^g^a ^g^a =g^g| \
+=g^g f=g fg ^df| \
+^df =d^d =d^d fg| \
+fg ^Ac ^Ac =d2|
+^A2 g6-| \
+g8-| \
+g8-| \
+g8-|
+gx fg fg ^df| \
+^df =d^d =d^d c=d| \
+cd Bc Bc d^d| \
+=d^d G=A GA B2|
+=d2 G2 c2 F2| \
+d2 ^D=D ^D=D C2-| \
+C4 c3-c/2x/2| \
+B2 cd cd ^d2|
+=dc ^A2 ^d2 ^G2| \
+f2 =GF GF ^D2-| \
+^D4 ^d3-^d/2x/2| \
+=d2 ^d3-^d/2x2x/2|
+^d2 ^D=D ^DF G^G| \
+^Ac ^c^A =c^G ^D^G| \
+c^G ^A2 =G^G ^A2| \
+^d4 ^G2 c2|
+^d2 FE F=G =A^A| \
+c=d ^dc =d^A F^A| \
+d^A c2 =A^A c2| \
+f4 ^A2 d2|
+f2 G^F G=A Bc| \
+d^d =f=d ^dc Gc| \
+^dc =d2 Bc d2| \
+g4 c2 ^d2|
+g2 f2 x2 f2| \
+x2 f4- f^d| \
+=df ^d=d2<^d2=d| \
+^d3c ^d3-^d/2x/2|
+=dc  (3BD^D  (3F^D=D  (3G,D^D| \
+ (3F^D=D  (3BD^D  (3F^D=D  (3G,D^D| \
+ (3F^D=D  (3c^DF  (3GF^D  (3G,^DF| \
+ (3GF^D  (3c^DF  (3GF^D  (3G,^DF|
+ (3GF^D  (3=dFG  (3^G=GF  (3G,FG| \
+ (3^G=GF  (3dFG  (3^G=GF  (3G,FG| \
+ (3^G=GF  (3d^DF  (3GF^D  (3G,^DF| \
+ (3GF^D  (3c^DF  (3GF^D  (3G,^DF|
+ (3GF^D  (3c=D^D  (3F^D=D  (3G,D^D| \
+ (3F^D=D  (3BD^D  (3F^D=D  (3G,D^D| \
+ (3F^D=D ^D2 c2 F2| \
+c2 ^D=D ^D=D C2|
+^d2 =d2 g3-g/2x/2| \
+c2 BA BA GF| \
+^D=D ^DG ^DC B,=D| \
+B,G, C^D CG, =DF|
+DG, Gd ^dc =d^d| \
+fB c4- c=d| \
+^Ac ^Gc ^GF E=G| \
+EC F^G FC =G^A|
+GC cg ^gf =g^g| \
+^ae f=g ^g^a ^g=g| \
+f^d ^cf ^a=c' ^c'^a| \
+gf ^dg ^g^a =c'^g|
+=gf ef g^g ^a=g| \
+e=d ce fg ^gf| \
+d^d f=g fg ^df| \
+^df =d^d =d^d fg|
+^df =d^d =d^d c=d| \
+cd B=A BA G2| \
+c2 G2 c2 F2| \
+c2 ^DG, C=D ^DG|
+c^d =d2 g3-g/2x/2| \
+c2 BA BA GA| \
+BG c2 G2 d2| \
+G2 [f2c2-G2-] [^d3/2-c3/2G3/2]^d3/2c|
+=de f2 c2 g2| \
+c2 [^a2f2-c2-] [^g3/2-f3/2c3/2]^g3/2=g| \
+^gf cB cd ef| \
+=g^g ^a=g ^gf cf|
+^gf cB cd ef| \
+=g^g ^a=g ^gf cf| \
+^gf ^A=A ^Ac d^d| \
+f=g ^gf =g^d ^A^d|
+g^d ^A=A ^Ac =d^d| \
+fg ^gf =g^d ^A^d| \
+g^d f2 x2 f2| \
+x2 f4- f^d|
+=df ^d=d2<^d2=d| \
+^d3c ^d3-^d/2x/2| \
+=dc B2 d2 F2| \
+d2 ^D=D ^D=D C2|
+^df g2 c2 G2| \
+[B2G2F2=D2] [c3-G3-^D3-C3-][c/2G/2^D/2C/2]
+V:6
+% Harpsichord I (LH)
+%%MIDI program 6
+x8| \
+x8| \
+% Allegro - Third Movement - BWV 1060 - J.S. Bach
+% MIDI Sequence Copyright 1997 Garrett W. Van Cleef
+C2 ^A,C ^A,C ^G,^A,| \
+^G,^A, =G,2 =D,2 G,,2|
+F,2 ^D,F, ^D,F, =D,^D,| \
+=D,^D, C,=D, C,D, ^A,,C,| \
+^A,,C, ^G,,^A,, ^G,,^A,, =G,,^G,,| \
+=G,,^G,, F,,E,, F,,=G,, ^G,,^A,,|
+C,D, E,2 =G,2 C,2| \
+E,2 F,2 F,,2 ^G,,2| \
+C,2 E,2 =G,2 C,2| \
+E,2 F,2 F,,2 ^G,,2|
+C,2 D,2 F,2 ^A,,2| \
+D,2 ^D,2 ^D,,2 =G,,2| \
+^A,,2 =D,2 F,2 ^A,,2| \
+D,2 ^D,,2 ^D,2 G,2|
+^D,2 =D,2 ^G,2 C,2| \
+^G,2 B,,=A,, B,,A,, =G,,A,,| \
+B,,G,, C,2 G,2 ^A,,2| \
+F,2 =A,,G,, A,,G,, ^F,,G,,|
+A,,^F,, G,,^G,, =G,,^G,, =G,,^G,,| \
+=F,,=G,, ^G,,^G, =G,F, ^D,^G,| \
+=G,F, ^D,^G, =G,F, G,2| \
+G,,2 C,2 G,,2 C,,2|
+x8| \
+x8| \
+C,=D, ^D,=D, ^D,C, G,F,| \
+G,G,, C,2 G,,2 C,,2|
+x8| \
+x8| \
+^D,F, G,F, G,^D, ^A,^G,| \
+^A,^A,, ^D,2 ^A,,2 ^D,,2|
+^D,2 ^G,C ^G,C =D,2| \
+^A,2 ^D^A, =G,^A, ^D,2| \
+^G,2 =D,^G, F,^G, B,,2| \
+=G,2 CG, ^D,G, C,2|
+C2 ^F,2 =D,2 G,^F,| \
+G,C, D,2 D2 ^F,2| \
+G,2 D,6-| \
+D,6- D,^D,|
+C,=D, ^A,,C, ^A,,C, =A,,^A,,| \
+=A,,^A,, G,,2 DC ^A,=A,| \
+G,A, =F,G, F,G, ^D,F,| \
+^D,F, =D,2 A,,2 D,,2|
+x8| \
+x8| \
+D,2 G,2 ^A,,2 C,2| \
+D,2 G,,2 D,2 G,2|
+x8| \
+G,,2 x6| \
+G,,2 C,2 ^D,2 F,2| \
+G,2 C,2 G,,2 C,,2|
+C,2 B,,2 =D,2 G,,2| \
+B,,2 C,2 G,2 C2| \
+G4 F^D =DC| \
+B,=A, G,B, CG, ^D,G,|
+C,^D, A,,2 C,2 F,,2| \
+A,,2 ^A,,2 F,2 ^A,2| \
+F4 ^D=D C^A,| \
+=A,G, F,A, ^A,F, D,F,|
+^D,G, C,2 ^D2 G,2| \
+^D2 ^F,E, ^F,E, =D,E,| \
+^F,D, G,,2 D2 =F,2| \
+D2 E,D, E,D, ^C,D,|
+E,^C, D,^D, =D,^D, =D,^D,| \
+=C,=D, ^D,2 =D,C, ^A,,^D,| \
+=D,C, ^A,,^D, =D,C, D,2| \
+D,,2 G,,2- G,,/2x/2D, E,^F,|
+G,=A, ^A,2 G,2 ^A,2| \
+G,2 D3-D/2x2x/2| \
+C2 ^A,2 D2 G,2| \
+D2 ^F,E, ^F,E, D,2|
+x4 G,,2 G,2| \
+^D,2 =A,3-A,/2x2x/2| \
+=F,2 =D,2 F,2 ^A,,2| \
+D,2 =A,,G,, A,,G,, F,,2|
+x8| \
+x8| \
+x8| \
+x8|
+x4 ^A,,2 D,2| \
+^A,,2 x2 G,,2 C,2| \
+C,,2 x2 F,,2 ^A,,2| \
+^C,2 x=C, E,G, CC,|
+D,E, F,2 F3-F/2x/2| \
+E2 FE FC F,G,| \
+F,G, ^D,F, ^D,F, ^C,^D,| \
+^C,^D, =C,2 G,,2 C,,C,|
+E,C, F,G, F,G, ^D,F,| \
+^D,F, =D,^D, =D,^D, C,=D,| \
+C,D, ^A,,2 x2 ^G,,2| \
+x2 =G,,2 x2 F,,2|
+x2 ^D,F, ^D,F, =D,^D,| \
+=D,^D, C,=D, C,D, ^A,,C,| \
+^A,,C, ^G,,2 x2 =G,,2| \
+x2 F,,2 x2 ^D,,2|
+x2 =D,^D, =D,^D, C,=D,| \
+C,D, B,,C, B,,C, =A,,B,,| \
+A,,B,, G,,2 x2 F,,2| \
+x2 ^D,,2 x2 =D,,2|
+x2 C,,2 x4| \
+x4 C,B,, C,D,| \
+C,D, ^D,=D, ^D,C, G,F,| \
+G,G,, C,2 G,,2 C,,2|
+x8| \
+x4 ^D,=D, ^D,F,| \
+^D,F, G,F, G,^D, ^A,^G,| \
+^A,^A,, ^D,2 ^A,,2 ^D,,=D,,|
+^D,,F,, =G,,2 ^A,,2 ^D,,2| \
+G,,2 ^G,,2 ^D,2 ^G,2| \
+^D4 ^C=C ^A,^G,| \
+=G,F, ^D,G, ^A,^D, C,^D,|
+^G,,=G,, =A,,2 C,2 F,,2| \
+A,,2 ^A,,2 F,2 ^A,2| \
+F4 ^D=D C^A,| \
+=A,G, F,A, ^A,F, D,F,|
+^A,,=A,, B,,2 D,2 G,,2| \
+B,,2 C,2 G,2 C2| \
+G4 F^D =DC| \
+B,A, G,B, CG, ^D,G,|
+C,^D, =D,2 ^G,2 C,2| \
+^G,2 B,,A,, B,,A,, =G,,A,,| \
+B,,G,, C,2 G,2 ^A,,2| \
+G,2 =A,,G,, A,,G,, ^F,,G,,|
+A,,^F,, G,,2 x2 G,2| \
+x2 G,,2 x2 G,2| \
+x2 G,,2 x2 G,2| \
+x2 G,,2 x2 G,2|
+x2 G,,2 x2 G,2| \
+x2 G,,2 x2 G,2| \
+x2 G,,2 x2 G,2| \
+x2 G,,2 x2 G,2|
+x2 G,,2 x2 G,2| \
+x2 G,,2 x2 G,2| \
+x2 C,2 x4| \
+x8|
+C2 ^A,C ^A,C ^G,^A,| \
+^G,^A, =G,2 D,2 G,,2| \
+x8| \
+x8|
+G,,2 C,2 ^D,,2 =F,,2| \
+G,,2 C,,2 G,,2 C,2| \
+x8| \
+x8|
+C,2 F,2 ^G,,2 ^A,,2| \
+C,2 F,,2 C,2 F,2| \
+F,,2 ^A,,^C, F,^G, =G,2| \
+^D2 ^G^D =C^D ^G,2|
+^C2 =G,^C ^A,^C E,2| \
+=C2 FC ^G,C F,2| \
+F2 B,2 =G,2 CB,| \
+CF, G,2 G2 B,2|
+C2 G,6-| \
+G,6- G,^G,| \
+F,=G, ^D,F, ^D,F, =D,^D,| \
+=D,^D, C,2 G,2 C2|
+C,2 ^A,,C, ^A,,C, ^G,,^A,,| \
+^G,,^A,, =G,,2 =D,2 G,2| \
+F,2 ^D,F, ^D,F, =D,^D,| \
+=D,^D, C,=D, C,D, ^A,,C,|
+^A,,C, ^G,,^A,, ^G,,^A,, =G,,^G,,| \
+=G,,^G,, F,,E,, F,,=G,, ^G,,^A,,| \
+C,D, E,2 =G,2 C,2| \
+E,2 F,2 F,,2 ^G,,2|
+C,2 E,2 =G,2 C,2| \
+E,2 F,2 F,,2 ^G,,2| \
+C,2 D,2 F,2 ^A,,2| \
+D,2 ^D,2 ^D,,2 =G,,2|
+^A,,2 =D,2 F,2 ^A,,2| \
+D,2 ^D,,2 ^D,2 G,2| \
+^D,2 =D,2 ^G,2 C,2| \
+^G,2 B,,=A,, B,,A,, =G,,A,,|
+B,,G,, C,2 G,2 ^A,,2| \
+F,2 =A,,G,, A,,G,, ^F,,G,,| \
+A,,^F,, G,,^G,, =G,,^G,, =G,,^G,,| \
+=F,,=G,, ^G,,^G, =G,F, ^D,^G,|
+=G,F, ^D,^G, =G,F, G,2| \
+G,,2 [C,3-C,,3-][C,/2C,,/2]
+V:7
+% Harpsichord II (RH)
+%%MIDI program 6
+% Allegro - Third Movement - BWV 1060 - J.S. Bach
+% MIDI Sequence Copyright 1997 Garrett W. Van Cleef
+c2 G2 c2 F2| \
+c2 ^D=D ^D=D C2| \
+^d2 =d2 g3-g/2x/2| \
+c2 BA BA GA|
+BG c2 G2 d2| \
+G2 [f2c2-G2-] [^d3/2-c3/2G3/2]^d3/2c| \
+=de f2 c2 g2| \
+c2 [^a2f2-c2-] [^g3/2-f3/2c3/2]^g3/2=g|
+^gf cB cd ef| \
+=g^g ^a=g ^gf cf| \
+^gf cB cd ef| \
+=g^g ^a=g ^gf cf|
+^gf ^A=A ^Ac d^d| \
+f=g ^gf =g^d ^A^d| \
+g^d ^A=A ^Ac =d^d| \
+fg ^gf =g^d ^A^d|
+g^d f2 x2 f2| \
+x2 f4- f^d| \
+=df ^d=d2<^d2=d| \
+^d3c ^d3-^d/2x/2|
+=dc B2 d2 F2| \
+d2 ^D=D ^D=D C2| \
+^df g2 c2 G2| \
+B2 c3-c/2x2x/2|
+c2 G2 c2 F2| \
+c2 ^D=D ^D=D C2-| \
+C3/2x/2 C2 c3-c/2x/2| \
+B2 cd cd ^d2|
+=dc ^A2 ^d2 ^G2| \
+^d2 =GF GF ^D2-| \
+^D4 ^d3-^d/2x/2| \
+=d2 ^df ^df g2-|
+g4 ^g=g f2| \
+f2 g/2f/2g/2f/2 ^d2 x2| \
+^d4 f^d =d2| \
+d2 ^d/2=d/2^d/2=d/2 c2 x2|
+c^A =A2 d2 G2| \
+^d2 ^FE ^FE =D2| \
+g2 ^fg ^fg e^f| \
+e^f d2 A2 ^F2|
+g2 d2 g2 c2| \
+g2 ^A=A ^A=A G2| \
+^a2 =a2 d'3-d'/2x/2| \
+g2 ^fe ^fe d2|
+D2 G2 D2 A2| \
+D2 ^A2 D2 c2| \
+D2 ^A=A G^A =AG| \
+^FA G^F G^F G2|
+G2 c2 G2 d2| \
+G2 ^d2 G2 =f2| \
+G2 ^d=d c^d =dc| \
+Bd cB cB c2|
+^d2 =d2 Bc d2| \
+g4 c2 ^d2| \
+g2 G^F GA Bc| \
+=d^d =f=d ^dc Gc|
+^d=d ^d2 A^A c2| \
+f4 ^A2 =d2| \
+f2 FE FG =A^A| \
+cd ^dc =d^A F^A|
+d^A c2 x2 c2| \
+x2 c4- c^A| \
+=Ac ^A=A2<^A2=A| \
+^A3G ^A3-^A/2x/2|
+=AG ^F2 A2 c2| \
+a2 ^A=A ^A=A GA| \
+^Ac d2 G2 D2| \
+^F2 G3-G/2x2x/2|
+d2 ^A2 d2 G2| \
+d2 ^FE ^FE D2| \
+x8| \
+x8|
+=A2 ^A2 d2 G2| \
+^d3=d ^d=d c2| \
+x8| \
+x8|
+c2 =f2 d2 f2| \
+c2 B=A BA G2| \
+d2 ^d2 c2 ^d2| \
+^A2 =AG AG F2|
+x8| \
+x8| \
+x8| \
+x8|
+f2 x6| \
+x2 ^G=G ^G=G F2| \
+^g2 =g2 c'3-c'/2x/2| \
+f2 e=d ed c2|
+g2 ^g6-| \
+^g8-| \
+^g8-| \
+^g8-|
+^gx =g^g =g^g f=g| \
+fg ^df ^df =d^d| \
+=d^d c=d cd ^df| \
+^df ^G^A ^G^A c2|
+^G2 f6-| \
+f8-| \
+f8-| \
+f8-|
+fx ^df ^df =d^d| \
+=d^d c2 =G2 ^D2| \
+c2 G2 c2 F2| \
+=d2 ^D=D ^D=D CD|
+^DF G^G =G^G F=G| \
+FG ^D2 ^A2 g2| \
+^d2 ^A2 ^d2 ^G2| \
+f2 =GF GF ^D2|
+^A4 G^G ^A2| \
+^d4 ^G2 c2| \
+^d2 ^D=D ^DF =G^G| \
+^Ac ^c^A =c^G ^D^G|
+c4 =A^A c2| \
+f4 ^A2 =d2| \
+f2 FE F=G =A^A| \
+cd ^dc =d^A F^A|
+d4 Bc d2| \
+g4 c2 ^d2| \
+g2 G^F G=A Bc| \
+=d^d =f=d ^dc Gc|
+^dc f2 x2 f2| \
+x2 f4- f^d| \
+=df ^d=d2<^d2=d| \
+^d3c ^d3-^d/2x/2|
+=dc B2 d2 F2| \
+d2 B2 d2 F2| \
+d2 G2 c2 ^D2| \
+c2 C=D ^D=D C2|
+^d2 =d^d2<f2^d| \
+=dc Bc dB G2| \
+d2 G2 d2 ^D2| \
+=d2 G2 c2 ^D2|
+c2 F2 c2 =D2| \
+c2 F2 B2 D2| \
+B2 G2 c2 F2| \
+c2 ^D=D ^D=D C2|
+^d2 =d2 g3-g/2x/2| \
+c2 BA BA G2| \
+G2 c2 G2 d2| \
+G2 ^d2 G2 f2|
+G2 ^d=d c^d =dc| \
+Bd cB cB cd| \
+ec f2 c2 g2| \
+c2 ^g2 c2 ^a2|
+c2 ^g=g f^g =gf| \
+eg f2 F2 c2-| \
+c4 ^c=c ^A2| \
+^A2 ^A/2^G/2^A/2^G/2 ^G2 x2|
+^G4 ^A^G =G2| \
+G2 G2 F2 x2| \
+f^d =d2 g2 c2| \
+^g2 B=A BA =G2|
+c'2 bc' bc' ab| \
+ab g2 d2 G2| \
+c2 G2 c2 F2| \
+c2 ^D=D ^D=D C2|
+^d2 =d2 g3-g/2x/2| \
+c2 BA BA GA| \
+BG c2 G2 d2| \
+G2 [f2c2-G2-] [^d3/2-c3/2G3/2]^d3/2c|
+=de f2 c2 g2| \
+c2 [^a2f2-c2-] [^g3/2-f3/2c3/2]^g3/2=g| \
+^gf cB cd ef| \
+=g^g ^a=g ^gf cf|
+^gf cB cd ef| \
+=g^g ^a=g ^gf cf| \
+^gf ^A=A ^Ac d^d| \
+f=g ^gf =g^d ^A^d|
+g^d ^A=A ^Ac =d^d| \
+fg ^gf =g^d ^A^d| \
+g^d f2 x2 f2| \
+x2 f4- f^d|
+=df ^d=d2<^d2=d| \
+^d3c ^d3-^d/2x/2| \
+=dc B2 d2 F2| \
+d2 ^D=D ^D=D C2|
+^df g2 c2 G2| \
+[B2G2F2=D2] [c3-G3-^D3-C3-][c/2G/2^D/2C/2]
+V:8
+% Harpsichord II (LH)
+%%MIDI program 6
+x8| \
+x8| \
+% Allegro - Third Movement - BWV 1060 - J.S. Bach
+% MIDI Sequence Copyright 1997 Garrett W. Van Cleef
+C2 ^A,C ^A,C ^G,^A,| \
+^G,^A, =G,2 =D,2 G,,2|
+F,2 ^D,F, ^D,F, =D,^D,| \
+=D,^D, C,=D, C,D, ^A,,C,| \
+^A,,C, ^G,,^A,, ^G,,^A,, =G,,^G,,| \
+=G,,^G,, F,,E,, F,,=G,, ^G,,^A,,|
+C,D, E,2 =G,2 C,2| \
+E,2 F,2 F,,2 ^G,,2| \
+C,2 E,2 =G,2 C,2| \
+E,2 F,2 F,,2 ^G,,2|
+C,2 D,2 F,2 ^A,,2| \
+D,2 ^D,2 ^D,,2 =G,,2| \
+^A,,2 =D,2 F,2 ^A,,2| \
+D,2 ^D,,2 ^D,2 G,2|
+^D,2 =D,2 ^G,2 C,2| \
+^G,2 B,,=A,, B,,A,, =G,,A,,| \
+B,,G,, C,2 G,2 ^A,,2| \
+F,2 =A,,G,, A,,G,, ^F,,G,,|
+A,,^F,, G,,^G,, =G,,^G,, =G,,^G,,| \
+=F,,=G,, ^G,,^G, =G,F, ^D,^G,| \
+=G,F, ^D,^G, =G,F, G,2| \
+G,,2 C,2 G,,2 C,,2|
+x8| \
+x8| \
+C,=D, ^D,=D, ^D,C, G,F,| \
+G,G,, C,2 G,,2 C,,2|
+x8| \
+x8| \
+^D,F, G,F, G,^D, ^A,^G,| \
+^A,^A,, ^D,2 ^A,,2 ^D,,^D,|
+=G,^D, ^G,2 F,2 =D,^A,| \
+^G,^A, ^D,2 =G,2 C,C| \
+B,C =D,2 C,2 B,,G,| \
+F,G, C,2 ^D,2 =A,,C,|
+^D,G,, ^F,,^F, A,^F, G,2| \
+C,2 =D,6-| \
+D,4 C2 D,2| \
+^A,2 [=A,2D,2-] [D2D,2-] D,^D,|
+C,=D, ^A,,C, ^A,,C, =A,,^A,,| \
+=A,,^A,, G,,2 DC ^A,=A,| \
+G,A, =F,G, F,G, ^D,F,| \
+^D,F, =D,2 A,,2 D,,2|
+x8| \
+x8| \
+D,2 G,2 ^A,,2 C,2| \
+D,2 G,,2 D,2 G,2|
+x8| \
+G,2 x6| \
+G,2 C2 ^D,2 F,2| \
+G,2 C,2 G,2 C2|
+G4 F^D =DC| \
+B,=A, G,B, CG, ^D,G,| \
+C,^D, B,,2 =D,2 G,,2| \
+B,,2 C,2 G,2 C2|
+G2 F2 ^D=D C^A,| \
+=A,G, F,A, ^A,F, D,F,| \
+^A,,D, =A,,2 C,2 F,,2| \
+A,,2 ^A,,2 F,2 ^A,2|
+^D,2 C,2 ^D2 G,2| \
+^D2 ^F,E, ^F,E, =D,E,| \
+^F,D, G,,2 D2 =F,2| \
+D2 E,D, E,D, ^C,D,|
+E,^C, D,^D, =D,^D, =D,^D,| \
+=C,=D, ^D,2 =D,C, ^A,,^D,| \
+=D,C, ^A,,^D, =D,C, D,2| \
+D,,2 G,,3-G,,/2x2x/2|
+G,,2 G,3-G,/2x/2 ^A,2-| \
+^A,3/2x/2 D3-D/2x2x/2| \
+x8| \
+x8|
+D,2 G,3-G,/2x/2 G,,2-| \
+G,,3/2x/2 =A,,3-A,,/2x2x/2| \
+x8| \
+x8|
+A,,2 D,,3-D,,/2x/2 D,2-| \
+D,3/2x/2 G,,3-G,,/2x2x/2| \
+B,,2 C,,3-C,,/2x/2 C,2-| \
+C,3/2x/2 F,,3-F,,/2x2x/2|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+F,2 ^D,F, ^D,F, ^C,^D,| \
+^C,^D, =C,2 G,,2 C,,C,|
+E,C, F,G, F,G, ^D,F,| \
+^D,F, =D,^D, =D,^D, C,=D,| \
+C,D, ^A,,2 x2 ^G,,2| \
+x2 =G,,2 x2 F,,2|
+x2 ^D,F, ^D,F, =D,^D,| \
+=D,^D, C,=D, C,D, ^A,,C,| \
+^A,,C, ^G,,2 x2 =G,,2| \
+x2 F,,2 x2 ^D,,2|
+x2 =D,^D, =D,^D, C,=D,| \
+C,D, B,,C, B,,C, =A,,B,,| \
+A,,B,, G,,2 x2 F,,2| \
+x2 ^D,,2 x2 =D,,2|
+x2 C,,2 x4| \
+x2 CG, ^D,G, C,=D,| \
+C,D, ^D,=D, ^D,C, G,F,| \
+G,G,, C,2 G,,2 C,,2|
+C,=D, ^D,=D, ^D,3-^D,/2x/2| \
+=D,2 ^D,^A,, G,,^A,, ^D,,^A,,| \
+^D,F, G,F, G,^D, ^A,^G,| \
+^A,^A,, ^D,2 ^A,,2 ^D,2|
+=G,^G, ^D2 ^C=C ^A,^G,| \
+=G,F, ^D,G, ^G,^D, C,^D,| \
+^G,,C, =G,,2 ^A,,2 ^D,,2| \
+G,,2 ^G,,2 ^D,2 ^G,^D,|
+^G,C F2 ^D=D C^A,| \
+=A,=G, F,A, ^A,F, D,F,| \
+^A,,D, =A,,2 C,2 F,,2| \
+A,,2 ^A,,2 F,2 ^A,F,|
+^A,D G2 F^D =DC| \
+B,=A, G,B, CG, ^D,G,| \
+C,^D, B,,2 =D,2 G,,2| \
+B,,2 C,2 G,2 C2|
+^D,2 =D,2 ^G,2 C,2| \
+^G,2 B,,A,, B,,A,, =G,,A,,| \
+B,,G,, C,2 G,2 ^A,,2| \
+G,2 =A,,G,, A,,G,, ^F,,G,,|
+A,,^F,, G,,2 G,2 B,2| \
+G,2 G,,2 G,2 B,2| \
+G,2 G,,2 ^D,2 C2| \
+^D,2 G,,2 C,2 ^D,2|
+C,2 G,,2 B,2 =D2| \
+B,2 G,,2 B,2 D2| \
+B,2 G,,2 G,2 B,2| \
+G,2 G,,2 G,2 C2|
+G,2 G,,2 D,2 G,2| \
+D,2 G,,2 D,2 G,2| \
+D,2 C,3-C,/2x2x/2| \
+x8|
+C2 ^A,C ^A,C ^G,^A,| \
+^G,^A, =G,2 D,2 G,,2| \
+x8| \
+x8|
+G,,2 C,2 ^D,,2 =F,,2| \
+G,,2 C,,2 G,,2 C,2| \
+x8| \
+x8|
+C,2 F,2 ^G,,2 ^A,,2| \
+C,2 F,,2 C,2 F,=G,| \
+^G,F, ^A,2 ^G,2 =G,^D| \
+^C^D ^G,2 =C2 F,F|
+EF =G,2 F,2 E,C| \
+^A,C F,2 ^G,2 =D,F,| \
+^G,C, B,,B, DB, C2| \
+F,2 =G,6-|
+G,4 F2 G,2| \
+^D2 [=D2G,2-] [G2G,2-] G,^G,| \
+F,=G, ^D,F, ^D,F, =D,^D,| \
+=D,^D, C,2 G,,2 C,,2|
+C,2 ^A,,C, ^A,,C, ^G,,^A,,| \
+^G,,^A,, =G,,2 =D,2 G,2| \
+F,2 ^D,F, ^D,F, =D,^D,| \
+=D,^D, C,=D, C,D, ^A,,C,|
+^A,,C, ^G,,^A,, ^G,,^A,, =G,,^G,,| \
+=G,,^G,, F,,E,, F,,=G,, ^G,,^A,,| \
+C,D, E,2 =G,2 C,2| \
+E,2 F,2 F,,2 ^G,,2|
+C,2 E,2 =G,2 C,2| \
+E,2 F,2 F,,2 ^G,,2| \
+C,2 D,2 F,2 ^A,,2| \
+D,2 ^D,2 ^D,,2 =G,,2|
+^A,,2 =D,2 F,2 ^A,,2| \
+D,2 ^D,,2 ^D,2 G,2| \
+^D,2 =D,2 ^G,2 C,2| \
+^G,2 B,,=A,, B,,A,, =G,,A,,|
+B,,G,, C,2 G,2 ^A,,2| \
+F,2 =A,,G,, A,,G,, ^F,,G,,| \
+A,,^F,, G,,^G,, =G,,^G,, =G,,^G,,| \
+=F,,=G,, ^G,,^G, =G,F, ^D,^G,|
+=G,F, ^D,^G, =G,F, G,2| \
+G,,2 [C,3-C,,3-][C,/2C,,/2]

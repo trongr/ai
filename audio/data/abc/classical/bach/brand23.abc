@@ -1,0 +1,856 @@
+X: 1
+T: from bach/brand23.mid
+M: 2/4
+L: 1/16
+Q:1/4=100
+K:C % 0 sharps
+V:1
+% JS Bach
+%%MIDI program 56
+f3/2x/2 c'3/2x/2 c'3/2x/2 ^ac'| \
+d'3/2x/2 c'^a c'3/2x/2 f'3/2x/2| \
+c'3/2x/2 =a^a c'3/2x/2 ^ac'| \
+d'3/2x/2 c'^a c'^a =ac'|
+^a=a g^a =ag fa| \
+gf ga ^a=a gf| \
+g3/2x/2 c3/2x/2 c'3/2x2x/2| \
+c'3/2x2x/2 c'3/2x2x/2|
+c'3/2x2x/2 c'3/2x2x/2| \
+c'3/2x/2 d'3x c'2-| \
+c'3/2x/2 b3/2x/2 c'b ac'| \
+ba bc' d'c' ba|
+ba ga bc' ab| \
+c'd' bc' d'b c'd'| \
+g3/2x/2 c3/2x/2 c'4-| \
+c'3/2x/2 ^a=a ^a3/2x/2 ^a3/2x/2|
+=ag fg a^a g=a| \
+^ac' =a^a c'd' ^ac'| \
+d'c' d'^d' =d'c' ^a=a| \
+gf ga ^a=a ^ag|
+=a3/2x/2 fg a3/2x/2 ga| \
+^a3/2x/2 =ag a3/2x/2 fg| \
+a3/2x/2 fg a3/2x/2 ga| \
+^a3/2x2x/2 =a3/2x2x/2|
+g3/2x2x/2 f3/2x2x/2| \
+c3/2x2x/2 F3/2x2x/2| \
+c3/2x6x/2| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+c3/2x/2 g3/2x/2 g3/2x/2 fg| \
+a3/2x/2 gf g3/2x/2 c'3/2x/2| \
+g3/2x/2 af g3/2x/2 fg| \
+a3/2x/2 gf gc' d'e'|
+f'e' d'f' e'd' c'e'| \
+d'c' d'e' f'e' d'c'| \
+d'3/2x/2 g3/2x2x/2 g3/2x/2| \
+c'3/2x/2 c'3/2x/2 c'3/2x/2 ba|
+b3/2x/2 b3/2x/2 b3/2x/2 c'b| \
+a3/2x/2 a3/2x/2 a3/2x/2 gf| \
+g3/2x/2 g3/2x/2 g3/2x/2 ag| \
+f3/2x/2 a3/2x/2 b3/2x/2 d'3/2x/2|
+e'f' e'd' c'^a =ag| \
+ab ga bc' ab| \
+c'd' bc' d'c' ba| \
+g3/2x/2 c'd'2<b2c'|
+c'3/2x6x/2| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+A3/2x2x/2 A3/2x2x/2|
+A3/2x2x/2 A3/2x2x/2| \
+A3/2x2x/2 A3/2x2x/2| \
+A3/2x2x/2 A3/2x2x/2| \
+A3/2x2x/2 A3/2x2x/2|
+A3/2x2x/2 A3/2x2x/2| \
+A3/2x2x/2 A3/2x2x/2| \
+A3/2x4x/2 f3/2x/2| \
+^a3/2x/2 ^a3/2x/2 ^a3/2x/2 =ag|
+a3/2x/2 a3/2x/2 a3/2x/2 ^a=a| \
+g3/2x/2 g3/2x/2 g3/2x/2 f^d| \
+f3/2x/2 f3/2x/2 f3/2x/2 gf| \
+^d3/2x/2 ^d'3/2x/2 a3x|
+g3/2x6x/2| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x2 g3/2x/2 c'4-| \
+c'3/2x/2 ^a=a ^a3/2x/2 ^a3/2x/2| \
+=ag fg a^a g=a| \
+^ac' =a^a c'=a ^ac'|
+f=a ga ^a3/2x/2 ^a3/2x/2| \
+^a3/2x/2 c'^a =a3/2x/2 a3/2x/2| \
+a3/2x/2 ^a=a g3/2x/2 g3/2x/2| \
+g3/2x/2 ag f3/2x/2 f3/2x/2|
+f3/2x/2 gf ^d3/2x/2 ^d'3/2x/2| \
+^d'3/2x/2 f'^d' =d'3/2x/2 d'3/2x/2| \
+d'3/2x/2 ^d'=d' c'^a =ag| \
+f3/2x2x/2 f3/2x2x/2|
+f3/2x2x/2 f3/2x2x/2| \
+g3/2x2x/2 f3/2x2x/2| \
+f3/2x/2 ^ac' d'3/2x/2 c'd'| \
+^d'3/2x/2 =d'c' d'3/2x/2 ^ac'|
+d'3/2x/2 ^ac' d'3/2x/2 d'2-| \
+d'3/2x/2 c'3x ^a2-| \
+^a3/2x/2 =a3/2x/2 ^a=a g^a| \
+=ag a^a c'^a =ag|
+a3/2x2x/2 F3/2x2x/2| \
+F3/2x2x/2 F3/2x2x/2| \
+F3/2x2x/2 F3/2x2x/2| \
+F3/2x2x/2 F3/2x2x/2|
+f3/2x/2 g3x f2-| \
+f3/2x/2 e3/2x/2 fg af| \
+c'3/2x6x/2| \
+c3/2x2x/2 c3/2x2x/2|
+c3/2x2x/2 c3/2x2x/2| \
+c3/2x2x/2 c3/2x2x/2| \
+c3/2x2x/2 c3/2x2x/2| \
+c3/2x2x/2 c3/2x2x/2|
+c3/2x2x/2 c3/2x2x/2| \
+A3/2x/2 a^a c'd' ^ac'| \
+d'e' c'd' e'c' d'e'| \
+=ac' fg a^a g=a|
+^ac' =a^a c'=a ^ac'| \
+f=a ga ^ac' =a^a| \
+c'=a fg a^a c'=a| \
+d'^d' =d'c' ^a=a gf|
+c'3/2x2x/2 c'3/2x2x/2| \
+c'3/2x2x/2 c'3/2x2x/2| \
+x8| \
+f3/2x/2 c'3/2x/2 c'3/2x/2 ^ac'|
+d'3/2x/2 c'^a c'3/2x/2 f'3/2x/2| \
+c'3/2x/2 =a^a c'3/2x/2 ^ac'| \
+d'3/2x/2 c'^a c'3/2
+V:2
+% Brandenburg #2
+%%MIDI program 74
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+c3/2x/2 g3/2x/2 g3/2x/2 fg| \
+=a3/2x/2 gf g3/2x/2 c'3/2x/2|
+g3/2x/2 ef g3/2x/2 fg| \
+a3/2x/2 gf gf eg| \
+fe df ed ce| \
+dc de fe dc|
+d3/2x/2 G3/2x/2 c4-| \
+cA FA d4-| \
+dB GB e4-| \
+ec Ac f4-|
+fd Bd ga gf| \
+ed ce dc Bd| \
+cG AB cd ef| \
+g3/2x/2 c3/2x/2 G3/2x/2 B3/2x/2|
+c3/2x2x/2 c'3/2x2x/2| \
+c'3/2x2x/2 c'3/2x2x/2| \
+c'3/2x2x/2 c'3/2x2x/2| \
+c'3/2x/2 d'3x c'2-|
+c'3/2x/2 b3/2x/2 c'b ac'| \
+ba bc' d'c' ba| \
+ba bc' d'e' c'd'| \
+e'f' d'e' f'd' e'f'|
+bd' ga bc' ab| \
+c'd' bc' d'b c'd'| \
+ga ef ga fg| \
+ab c'd' bd' gf|
+e3/2x/2 g3/2x/2 c'4-| \
+c'd' ^ac' d'e' c'd'| \
+e'f' g'e' f'3/2x/2 f'2-| \
+f'3/2x/2 e'd'2<d'2c'|
+c'3/2x/2 cd e3/2x/2 de| \
+f3/2x/2 ed e3/2x/2 cd| \
+e3/2x/2 cd e3/2x/2 e'2-| \
+e'3/2x/2 d'3x c'2-|
+c'3/2x/2 b3/2x/2 c'b =ac'| \
+ba bc' d'c' ba| \
+ba ga ba bd'| \
+^c'b ^c'd' e'd' ^c'b|
+^c'b ab ^c'b ^c'e'| \
+d'3/2x2x/2 d'3/2x2x/2| \
+d'3/2x2x/2 d'3/2x2x/2| \
+d'3/2x2x/2 d'3/2x2x/2|
+d'3/2x/2 e'3x d'2-| \
+d'3/2x/2 ^c'3/2x/2 d'^c' bd'| \
+^c'b ^c'd' e'd' ^c'b| \
+^c'3/2x/2 ef g3/2x/2 fg|
+a3/2x/2 gf g3/2x/2 ef| \
+g3/2x/2 ef g3/2x/2 fg| \
+a3/2x2x/2 g3/2x2x/2| \
+f3/2x2x/2 g3/2x2x/2|
+a3/2x2x/2 g3/2x2x/2| \
+f3/2x2x/2 e3/2x2x/2| \
+d3/2x4x/2 d'3/2x/2| \
+g'3/2x/2 g'3/2x/2 g'3/2x/2 f'e'|
+f'3/2x/2 f'3/2x/2 f'3/2x/2 g'f'| \
+^d'3/2x/2 ^d'3/2x/2 ^d'3/2x/2 =d'=c'| \
+d'3/2x/2 d'3/2x/2 d'3/2x/2 ^d'=d'| \
+c'3/2x/2 c'3/2x/2 c'3/2x/2 ^a=a|
+^a3/2x6x/2| \
+x8| \
+x8| \
+x8|
+x2 =a3/2x/2 d'4-| \
+d'3/2x/2 c'^a c'3/2x/2 c'3/2x/2| \
+b=a ga bc' ab| \
+c'd' bc' d'b c'd'|
+g3/2x6x/2| \
+x8| \
+x8| \
+x8|
+x2 ^ac' d'^d' c'=d'| \
+^d'f' =d'^d' f'=d' ^d'f'| \
+^a=d' g=a ^ac' =a^a| \
+c'd' =ac' d'^a c'd'|
+g=a ^df g^g f=g| \
+^g^a =g^g ^a=g ^g^a| \
+^d3x3 =g3/2x/2| \
+c'3/2x/2 f3/2x/2 ^a3/2x/2 f3/2x/2|
+=a3/2x/2 f3/2x/2 ^a3/2x/2 =d'c'| \
+^a3/2x/2 g'3/2x/2 c'3/2x/2 f'3/2x/2| \
+d'3/2x6x/2| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+f3/2x/2 c'3/2x/2 c'3/2x/2 ^ac'| \
+d'3/2x/2 c'^a c'3/2x/2 f'3/2x/2| \
+c'3/2x/2 =a^a c'3/2x/2 ^ac'| \
+d'3/2x/2 c'^a c'^a =ac'|
+^a=a g^a =ag fa| \
+gf ga ^a=a gf| \
+g3/2x/2 GA ^A3/2x/2 =A^A| \
+c3/2x/2 ^A=A ^A3/2x/2 G=A|
+^A3/2x/2 G=A ^A3/2x/2 =A^A| \
+c3/2x2x/2 ^A3/2x2x/2| \
+=A3/2x2x/2 ^A3/2x2x/2| \
+c3/2x2x/2 ^A3/2x2x/2|
+=A3/2x2x/2 G3/2x2x/2| \
+F3/2x/2 c'3/2x/2 f'3/2x/2 f'3/2x/2| \
+f'3/2x/2 g'f' e'3/2x/2 e'3/2x/2| \
+e'3/2x/2 f'e' d'3/2x/2 d'3/2x/2|
+d'3/2x/2 e'd' c'3/2x/2 c'3/2x/2| \
+c'3/2x/2 d'c' ^a3/2x/2 ^a3/2x/2| \
+^a3/2x/2 c'^a =a3/2x/2 a3/2x/2| \
+a3/2x/2 ^a=a gf ed|
+ef de fg ef| \
+ga fg ag fe| \
+de fg2<e2f| \
+f3/2x2x/2 ^d3/2x2x/2|
+=d3/2x2x/2 a3/2x2x/2| \
+f3/2x2x/2 ^d3/2x2x/2| \
+=d3/2x2x/2 a3/2
+V:3
+% 3rd mvmt
+%%MIDI program 68
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+c3/2x/2 g3/2x/2 g3/2x/2 fg| \
+a3/2x/2 gf g3/2x/2 c'3/2x/2|
+g3/2x/2 ef g3/2x/2 fg| \
+a3/2x/2 gf gf eg| \
+fe df ed ce| \
+dc de fe dc|
+d3/2x/2 G3/2x/2 g4-| \
+g3/2x/2 fe f3/2x/2 f3/2x/2| \
+ed cd ef de| \
+fg ef ge fg|
+c^A =A^A cd ^Ac| \
+de cd ef de| \
+fe fg fe gf| \
+ed ef gf eg|
+c3/2x2x/2 f3/2x2x/2| \
+f3/2x2x/2 f3/2x2x/2| \
+f3/2x2x/2 f3/2x2x/2| \
+f3/2x/2 g3x f2-|
+f3/2x/2 e3/2x/2 fe df| \
+ed ef gf ed| \
+e3/2x/2 cd e3/2x/2 de| \
+f3/2x/2 ed e3/2x/2 cd|
+e3/2x/2 cd e3/2x/2 de| \
+f3/2x2x/2 e3/2x2x/2| \
+d3/2x2x/2 c3/2x2x/2| \
+G3/2x2x/2 G3/2x2x/2|
+G3/2x4x/2 g3/2x/2| \
+=a3/2x/2 c3/2x/2 f3/2x/2 a3/2x/2| \
+b3/2x/2 d3/2x/2 g3/2x/2 b3/2x/2| \
+c'3/2x/2 e3/2x/2 a3/2x/2 c'3/2x/2|
+d'3/2x/2 g3/2x/2 b3/2x/2 d'3/2x/2| \
+c'3/2x/2 g3/2x/2 a3/2x/2 g3/2x/2| \
+cB cd e3/2x/2 g3/2x/2| \
+e2- e/2x/2d2<d2c|
+c3/2x/2 ed c3/2x/2 c3/2x/2| \
+F3/2x/2 f3/2x/2 c3/2x/2 ed| \
+c3/2x/2 ed c3/2x/2 c3/2x/2| \
+F3/2x2x/2 c3/2x2x/2|
+d3/2x/2 d3/2x/2 e3/2x/2 f3/2x/2| \
+g3/2x/2 g3/2x/2 e3/2x/2 c3/2x/2| \
+G3/2x/2 d3/2x/2 g3/2x/2 g3/2x/2| \
+g3/2x/2 ag f3/2x/2 f3/2x/2|
+f3/2x/2 gf e3/2x/2 e3/2x/2| \
+e3/2x/2 fe d3/2x/2 d3/2x/2| \
+c3/2x/2 ed c3/2x/2 c3/2x/2| \
+c3/2x/2 ^A=A f3/2x/2 ed|
+fa gf e3/2x/2 g3/2x/2| \
+g3/2x/2 c3/2x/2 f3/2x/2 d3/2x/2| \
+G3/2x/2 g3/2x/2 g3/2x/2 d3/2x/2| \
+G3/2x/2 g3/2x/2 g3/2x/2 d3/2x/2|
+e3/2x6x/2| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+d3/2x/2 a3/2x/2 a3/2x/2 ga| \
+^a3/2x/2 =ag a3/2x/2 d'3/2x/2| \
+a3/2x/2 fg a3/2x/2 ga|
+^a3/2x/2 =ag ag fa| \
+gf eg fe df| \
+ed ef gf ed| \
+e3/2x/2 g3/2x/2 e3/2x/2 ^c3/2x/2|
+A3/2x4x/2 ^cd| \
+e3/2x/2 g3/2x/2 e3/2x/2 ^c3/2x/2| \
+A3/2x2x/2 ^c3/2x2x/2| \
+d3/2x2x/2 e3/2x2x/2|
+A3/2x2x/2 ^c3/2x2x/2| \
+d3/2x2x/2 e3/2x2x/2| \
+A=c de fg ef| \
+ga fg af ga|
+df ^Ac d^d c=d| \
+^df =d^d f=d ^df| \
+^A=d G=A ^Ac =A^A| \
+cd ^Ac d^A cd|
+Gd ef g4-| \
+gf eg fe df| \
+e3/2x/2 =A3/2x/2 a4-| \
+a3/2x/2 gf g3/2x/2 g3/2x/2|
+fe de fg ef| \
+ga fg af ga| \
+d3/2x6x/2| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x6 ^A3/2x/2| \
+^d3/2x/2 ^d3/2x/2 ^d3/2x/2 =dc| \
+d3/2x/2 d3/2x/2 d3/2x/2 ^d=d| \
+c3/2x/2 c3/2x/2 c3/2x/2 ^A=A|
+^A3/2x/2 ^A3/2x/2 ^A3/2x/2 c^A| \
+^G3/2x/2 ^G3/2x/2 ^G3/2x/2 ^A^G| \
+=G^g =gf ^d=d c^A| \
+=A^A G=A ^Ac =A^A|
+cd ^Ac dc ^A=A| \
+GA ^Ac2<=A2^A| \
+^A3/2x/2 f3/2x/2 f3/2x/2 ^df| \
+g3/2x/2 f^d f3/2x/2 ^a3/2x/2|
+f3/2x/2 =d^d f3/2x/2 ^df| \
+g3/2x/2 f^d f^d =df| \
+^d=d c^d =dc ^Ad| \
+c^A cd ^d=d c^A|
+c3/2x/2 FG =A3/2x/2 GA| \
+^A3/2x/2 =AG A3/2x/2 FG| \
+A3/2x/2 FG A3/2x/2 GA| \
+^A3/2x2x/2 =A3/2x2x/2|
+G3/2x2x/2 F3/2x/2 f3/2x/2| \
+ed ef gf ed| \
+e3/2x/2 ^a3/2x/2 g3/2x/2 e3/2x/2| \
+c3/2x4x/2 ef|
+g3/2x/2 ^a3/2x/2 g3/2x/2 e3/2x/2| \
+c3/2x2x/2 e3/2x2x/2| \
+f3/2x2x/2 g3/2x2x/2| \
+c3/2x2x/2 e3/2x2x/2|
+f3/2x2x/2 g3/2x2x/2| \
+d3/2x4x/2 c3/2x/2| \
+g3/2x/2 g3/2x/2 g3/2x/2 fe| \
+f3/2x/2 f3/2x/2 f3/2x/2 gf|
+e3/2x/2 e3/2x/2 e3/2x/2 dc| \
+d3/2x/2 d3/2x/2 d3/2x/2 ed| \
+c3/2x/2 c3/2x/2 c3/2x/2 ^A=A| \
+^Ag f^d =dc ^A=A|
+GA FG A^A G=A| \
+^Ac =A^A c3/2x/2 c2-| \
+c3/2x/2 ^A=A2<G2F| \
+F3/2x2x/2 c3/2x2x/2|
+^A3/2x2x/2 f3/2x2x/2| \
+=A3/2x2x/2 c3/2x2x/2| \
+^A3/2x2x/2 f3/2
+V:4
+%%MIDI program 43
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+F3/2x/2 c3/2x/2 c3/2x/2 ^Ac| \
+d3/2x/2 c^A c3/2x/2 f3/2x/2| \
+c3/2x/2 =A^A c3/2x/2 ^Ac| \
+d3/2x/2 c^A c^A =Ac|
+^A=A G^A =AG FA| \
+GF GA ^A=A GF| \
+G3/2x/2 c3/2x/2 c3/2x2x/2| \
+c3/2x2x/2 c3/2x2x/2|
+c3/2x2x/2 c3/2x2x/2| \
+c3/2x/2 d3x c2-| \
+c3/2x/2 B3/2x/2 cB Ac| \
+BA Bc dc BA|
+B3x3 e3/2x/2| \
+A4- Ad fd| \
+B4- Be ge| \
+c4- cf af|
+d4- dc' ba| \
+gf eg fe df| \
+e3/2x3x/2B cd| \
+ef ga de fg|
+e3/2x/2 cd e3/2x/2 de| \
+f3/2x/2 ed e3/2x/2 cd| \
+e3/2x/2 cd e3/2x/2 de| \
+f3/2x2x/2 e3/2x2x/2|
+d3/2x2x/2 c3/2x2x/2| \
+G3/2x2x/2 g3/2x2x/2| \
+g3/2x4x/2 e3/2x/2| \
+a3/2x/2 a3/2x/2 a3/2x/2 gf|
+g3/2x/2 g3/2x/2 g3/2x/2 ag| \
+f3/2x/2 f3/2x/2 f3/2x/2 ed| \
+e3/2x/2 e3/2x/2 e3/2x/2 fe| \
+d3/2x/2 d3/2x/2 d3/2x/2 cB|
+c3x3 e2-| \
+e3/2x/2 A3/2x/2 d3/2x/2 B3/2x/2| \
+g3/2x/2 fe d3/2x2x/2| \
+x8|
+c3/2x/2 g3/2x/2 g3/2x/2 fg| \
+a3/2x/2 gf g3/2x/2 c'3/2x/2| \
+g3/2x/2 ef g3/2x/2 fg| \
+a3/2x/2 gf gf eg|
+fe df ed ce| \
+dc de fe dc| \
+dc Bc dc df| \
+ed ef gf ed|
+ed ^cd ed eg| \
+f3/2x/2 de f3/2x/2 ef| \
+g3/2x/2 fe f3/2x/2 de| \
+f3/2x/2 de f3/2x/2 ef|
+g3/2x2x/2 f3/2x2x/2| \
+e3/2x2x/2 d3/2x2x/2| \
+Aa Ba ^ca da| \
+Aa Ba ^ca Aa|
+da Ba ^ca Aa| \
+^ca ea ^ca Aa| \
+da Ba ^ca Aa| \
+fa da ea ^ca|
+da Ba ^ca Aa| \
+fa da ea ^ca| \
+fe fg a^a g=a| \
+^a=c' =a^a c'=a ^ac'|
+f=a d^d fg ^df| \
+ga fg af ga| \
+=df ^Ac d^d c=d| \
+^df =d^d =A3/2x/2 =d3/2x/2|
+dc ^A=A GB ^cd| \
+ed ^ce d^c Bd| \
+^cB AB ^cd B^c| \
+de ^cd e^c de|
+A3/2x6x/2| \
+x8| \
+x2 d3/2x/2 g4-| \
+g3/2x/2 fe f3/2x/2 f3/2x/2|
+ed =cd ef de| \
+fg ef ge fg| \
+cf A^A cd ^Ac| \
+d^d c=d GF G=A|
+^Ac d^d fg ^df| \
+g=a fg af ga| \
+=df ^Ac d^d c=d| \
+ef de fd ef|
+^Ad G^G ^Ac ^G^A| \
+cd ^Ac d^A cd| \
+=Gc ^A^G =G3/2x/2 ^d=d| \
+cd ^Ac d^d c=d|
+^df =d^d f3/2x/2 f2-| \
+f3/2x/2 ^d=d2<c2^A| \
+^A3x4x| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+cc' dc' ec' fc'| \
+cc' dc' ec' fc'|
+ec' gc' ec' cc'| \
+fc' dc' ec' cc'| \
+=ac' fc' gc' ec'| \
+fc' dc' ec' cc'|
+ac' fc' gc' ec'| \
+f3/2x/2 ed c3/2x/2 f3/2x/2| \
+^a3/2x/2 ^a3/2x/2 ^a3/2x/2 =ag| \
+a3/2x/2 a3/2x/2 a3/2x/2 ^a=a|
+g3/2x/2 g3/2x/2 g3/2x/2 fe| \
+f3/2x/2 f3/2x/2 f3/2x/2 gf| \
+e3/2x/2 ag f^d =dc| \
+d3x3 d3/2x/2|
+g3/2x/2 c3/2x/2 f3/2x/2 c3/2x/2| \
+e3/2x/2 c3/2x/2 f3/2x/2 ag| \
+f3/2x/2 d'3/2x/2 e3/2x/2 c'3/2x/2| \
+a3/2x/2 FG A3/2x/2 GA|
+^A3/2x/2 =AG A3/2x/2 FG| \
+A3/2x/2 FG A3/2x/2 GA| \
+^A3/2x/2 =AG F3/2
+V:5
+%%MIDI program 43
+F,3/2x/2 G,3/2x/2 A,3/2x/2 G,A,| \
+^A,3/2x/2 =A,G, A,3/2x/2 F,G,| \
+A,3/2x/2 F,G, A,3/2x/2 G,A,| \
+^A,3/2x/2 =A,G, A,3/2x/2 D3/2x/2|
+G,3/2x/2 C3/2x/2 F,3/2x/2 A,3/2x/2| \
+C3/2x/2 F,3/2x/2 E,3/2x/2 F,3/2x/2| \
+C,3/2x/2 D,3/2x/2 E,3/2x/2 D,E,| \
+F,3/2x/2 E,D, E,3/2x/2 C,D,|
+E,3/2x/2 C,D, E,3/2x/2 D,E,| \
+F,3/2x2x/2 E,3/2x2x/2| \
+D,3/2x2x/2 C,3/2x2x/2| \
+G,3/2x/2 C,3/2x/2 B,,3/2x/2 C,3/2x/2|
+G,,3x3 G,3/2x/2| \
+A,3/2x/2 G,A, B,3/2x/2 A,B,| \
+C3x3 C,3/2x/2| \
+D,3/2x/2 C,D, E,3/2x/2 D,E,|
+F,3x3 F,2-| \
+F,3/2x/2 ^D,3/2x/2 =D,3/2x/2 C,3/2x/2| \
+^A,,3x3 ^A,3/2x/2| \
+C3/2x/2 ^A,3/2x/2 =A,3/2x/2 G,3/2x/2|
+F,3/2x/2 A,G, F,3/2x/2 F,,3/2x/2| \
+^A,,3/2x/2 ^A,3/2x/2 F,3/2x/2 =A,G,| \
+F,3/2x/2 A,G, F,3/2x/2 F,,3/2x/2| \
+^A,,3/2x2x/2 F,3/2x2x/2|
+G,3/2x/2 G,,3/2x/2 =A,,3/2x/2 ^A,,3/2x/2| \
+C,3/2x/2 C3/2x/2 =A,3/2x/2 F,3/2x/2| \
+C,3/2x/2 E,D, C,3/2x/2 C,3/2x/2| \
+F,,3/2x/2 F,3/2x/2 C,3/2x/2 E,D,|
+C,3/2x/2 E,D, C,3/2x/2 C,3/2x/2| \
+F,,3/2x2x/2 C,3/2x2x/2| \
+D,3/2x/2 D,3/2x/2 E,3/2x/2 F,3/2x/2| \
+G,,3/2x/2 G,3/2x/2 E,3/2x/2 C,3/2x/2|
+G,,3/2x/2 G,3/2x/2 E,3/2x/2 C,3/2x/2| \
+F,3/2x/2 A,3/2x/2 F,3/2x/2 D,3/2x/2| \
+G,3/2x/2 B,3/2x/2 G,3/2x/2 E,3/2x/2| \
+A,3/2x/2 C3/2x/2 A,3/2x/2 F,3/2x/2|
+B,3/2x/2 D3/2x/2 B,3/2x/2 G,3/2x/2| \
+C3/2x/2 E,3/2x/2 F,3/2x/2 G,3/2x/2| \
+A,3/2x/2 G,F, E,3/2x/2 D,3/2x/2| \
+C,D, E,F, G,3/2x/2 G,,3/2x/2|
+C,3x4x| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x2 G,A, B,C A,B,| \
+CD B,C DB, CD|
+G,B, E,F, G,A, F,G,| \
+A,B, G,A, B,G, A,B,| \
+E,G, C,D, E,F, D,E,| \
+F,G, E,F, G,E, F,G,|
+C,3/2x/2 D,3/2x/2 E,3/2x/2 C,3/2x/2| \
+F,,3/2x/2 F,E, D,3/2x/2 G,F,| \
+E,3/2x/2 D,C, B,,3/2x/2 G,,3/2x/2| \
+C,3/2x/2 E,F, G,3/2x/2 G,,3/2x/2|
+C,3/2x2x/2 C,3/2x2x/2| \
+C,3/2x2x/2 C,3/2x2x/2| \
+C,3/2x2x/2 C,3/2x/2 D,E,| \
+F,3/2x/2 E,D, E,3/2x/2 A,3/2x/2|
+D,3/2x/2 G,3/2x/2 C,3/2x/2 C,3/2x/2| \
+G,,3/2x/2 D,3/2x/2 B,,3/2x/2 C,3/2x/2| \
+G,,3x3 G,2-| \
+G,3/2x/2 F,3/2x/2 ^C,3/2x/2 D,3/2x/2|
+A,,3x3 A,3/2x/2| \
+D,3/2x/2 F,E, D,3/2x/2 D,3/2x/2| \
+G,,3/2x/2 G,3/2x/2 D,3/2x/2 F,E,| \
+D,3/2x/2 F,E, D,3/2x/2 D,3/2x/2|
+G,,3/2x2x/2 D,3/2x2x/2| \
+E,3/2x/2 E,3/2x/2 F,3/2x/2 G,3/2x/2| \
+A,3/2x/2 F,3/2x/2 E,3/2x/2 D,3/2x/2| \
+A,,3/2x/2 E,3/2x/2 E,3/2x/2 D,E,|
+F,3/2x/2 E,D, E,3/2x/2 A,3/2x/2| \
+E,3/2x/2 ^C,D, E,3/2x/2 D,E,| \
+F,3/2x/2 E,D, E,D, ^C,E,| \
+D,^C, B,,D, ^C,D, E,^C,|
+F,E, D,F, E,D, ^C,E,| \
+D,^C, B,,D, ^C,D, E,^C,| \
+D,3/2x/2 A,3/2x/2 D3/2x/2 D3/2x/2| \
+D3/2x/2 ED =C3/2x/2 C3/2x/2|
+C3/2x/2 DC ^A,3/2x/2 ^A,3/2x/2| \
+^A,3/2x/2 C^A, =A,3/2x/2 A,3/2x/2| \
+A,3/2x/2 ^A,=A, G,3/2x/2 G,3/2x/2| \
+G,3/2x/2 A,G, ^F,3/2x/2 ^F,3/2x/2|
+G,3/2x/2 =F,3/2x/2 E,3/2x/2 D,3/2x/2| \
+^C,3/2x/2 A,3/2x/2 D3/2x/2 D,3/2x/2| \
+A,3x3 A,3/2x/2| \
+B,3/2x/2 A,B, ^C3/2x/2 B,^C|
+D3x3 D,3/2x/2| \
+E,3/2x/2 D,E, ^F,3/2x/2 E,^F,| \
+G,3x3 G,3/2x/2| \
+A,3/2x/2 G,A, B,3/2x/2 A,B,|
+=C3x3 C,3/2x/2| \
+D,3/2x/2 C,D, E,3/2x/2 D,E,| \
+=F,3/2x/2 C,3/2x/2 F,4-| \
+F,3/2x/2 ^D,=D, ^D,3/2x/2 ^D,3/2x/2|
+=D,3/2x/2 ^A,,3/2x2x/2 G,,3/2x/2| \
+C,3/2x/2 C,3/2x/2 C,3/2x/2 D,C,| \
+^A,,3/2x/2 ^A,,3/2x/2 ^A,,3/2x/2 C,^A,,| \
+=A,,3/2x/2 A,,3/2x/2 A,,3/2x/2 G,,F,,|
+G,,3/2x/2 G,,3/2x/2 G,,3/2x/2 ^G,,=G,,| \
+F,,3/2x/2 F,,3/2x/2 F,3/2x/2 ^F,=F,| \
+^D,3x3 ^D,2-| \
+^D,3/2x/2 F,^D, =D,3/2x/2 ^D,=D,|
+C,3/2x/2 D,C, ^A,,3/2x/2 D,3/2x/2| \
+^D,3/2x/2 C,3/2x/2 F,3/2x/2 F,,3/2x/2| \
+^A,,3/2x2x/2 ^A,,3/2x2x/2| \
+^A,,3/2x2x/2 ^A,,3/2x2x/2|
+^A,,3/2x2x/2 ^A,,3/2x/2 C,=D,| \
+^D,3/2x/2 =D,C, D,3/2x/2 G,3/2x/2| \
+C,3/2x/2 F,3/2x/2 ^A,3/2x/2 ^A,,3/2x/2| \
+F,3/2x/2 ^A,,3/2x/2 =A,,3/2x/2 ^A,,3/2x/2|
+F,3/2x/2 =A,G, F,3/2x/2 F,,3/2x/2| \
+^A,,3/2x/2 ^A,3/2x/2 F,3/2x/2 =A,G,| \
+F,3/2x/2 A,G, F,3/2x/2 F,,3/2x/2| \
+^A,,3/2x2x/2 F,3/2x2x/2|
+G,3/2x/2 G,,3/2x/2 =A,,3/2x/2 ^A,,3/2x/2| \
+C,3/2x/2 =A,,3/2x/2 G,,3/2x/2 F,,3/2x/2| \
+C,3/2x/2 G,3/2x/2 G,3/2x/2 F,G,| \
+A,3/2x/2 G,F, G,3/2x/2 C3/2x/2|
+G,3/2x/2 E,F, G,3/2x/2 F,G,| \
+A,3/2x/2 G,F, G,F, E,G,| \
+F,E, D,F, E,F, G,E,| \
+A,G, F,A, G,F, E,G,|
+F,E, D,F, E,D, C,E,| \
+D,E, F,G, A,^A, G,=A,| \
+^A,C =A,^A, C=A, ^A,C| \
+F,=A, D,E, F,G, E,F,|
+G,A, F,G, A,F, G,A,| \
+D,F, ^A,,C, D,E, C,D,| \
+E,F, D,E, F,D, ^D,F,| \
+^A,,3x3 ^A,2-|
+^A,3/2x/2 C^A, =A,3/2x/2 ^A,=A,| \
+G,3/2x/2 A,G, F,3/2x/2 A,,3/2x/2| \
+^A,,3/2x/2 G,,3/2x/2 C,3/2x/2 C,3/2x/2| \
+F,,3/2x2x/2 F,,3/2x2x/2|
+F,,3/2x2x/2 F,,3/2x2x/2| \
+F,,3/2x2x/2 F,,3/2x2x/2| \
+F,,3/2x2x/2 F,,3/2
+V:6
+% deranged by mjstarke@ix.netcom.com
+%%MIDI program 6
+F,3/2x/2 G,3/2x/2 =A,3/2x/2 G,A,| \
+^A,3/2x/2 =A,G, A,3/2x/2 F,G,| \
+A,3/2x/2 F,G, A,3/2x/2 G,A,| \
+^A,3/2x/2 =A,G, A,3/2x/2 =D3/2x/2|
+G,3/2x/2 C3/2x/2 F,3/2x/2 A,3/2x/2| \
+C3/2x/2 F,3/2x/2 E,3/2x/2 F,3/2x/2| \
+C,3/2x/2 D,3/2x/2 E,3/2x/2 D,E,| \
+F,3/2x/2 E,D, E,3/2x/2 C,D,|
+E,3/2x/2 C,D, E,3/2x/2 D,E,| \
+F,3/2x2x/2 E,3/2x2x/2| \
+D,3/2x2x/2 C,3/2x2x/2| \
+G,3/2x/2 C,3/2x/2 B,,3/2x/2 C,3/2x/2|
+G,,3x3 G,3/2x/2| \
+A,3/2x/2 G,A, B,3/2x/2 A,B,| \
+C3x3 C,3/2x/2| \
+D,3/2x/2 C,D, E,3/2x/2 D,E,|
+F,3x3 F,2-| \
+F,3/2x/2 ^D,3/2x/2 =D,3/2x/2 C,3/2x/2| \
+^A,,3x3 ^A,3/2x/2| \
+C3/2x/2 ^A,3/2x/2 =A,3/2x/2 G,3/2x/2|
+F,3/2x/2 A,G, F,3/2x/2 F,,3/2x/2| \
+^A,,3/2x/2 ^A,3/2x/2 F,3/2x/2 =A,G,| \
+F,3/2x/2 A,G, F,3/2x/2 F,,3/2x/2| \
+^A,,3/2x2x/2 F,3/2x2x/2|
+G,3/2x/2 G,,3/2x/2 =A,,3/2x/2 ^A,,3/2x/2| \
+C,3/2x/2 C3/2x/2 =A,3/2x/2 F,3/2x/2| \
+C,3/2x/2 E,D, C,3/2x/2 C,3/2x/2| \
+F,,3/2x/2 F,3/2x/2 C,3/2x/2 E,D,|
+C,3/2x/2 E,D, C,3/2x/2 C,3/2x/2| \
+F,,3/2x2x/2 C,3/2x2x/2| \
+D,3/2x/2 D,3/2x/2 E,3/2x/2 F,3/2x/2| \
+G,,3/2x/2 G,3/2x/2 E,3/2x/2 C,3/2x/2|
+G,,3/2x/2 G,3/2x/2 E,3/2x/2 C,3/2x/2| \
+F,3/2x/2 A,3/2x/2 F,3/2x/2 D,3/2x/2| \
+G,3/2x/2 B,3/2x/2 G,3/2x/2 E,3/2x/2| \
+A,3/2x/2 C3/2x/2 A,3/2x/2 F,3/2x/2|
+B,3/2x/2 D3/2x/2 B,3/2x/2 G,3/2x/2| \
+C3/2x/2 E,3/2x/2 F,3/2x/2 G,3/2x/2| \
+A,3/2x/2 G,F, E,3/2x/2 D,3/2x/2| \
+C,D, E,F, G,3/2x/2 G,,3/2x/2|
+C,3x4x| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x2 G,A, B,C A,B,| \
+CD B,C DB, CD|
+G,B, E,F, G,A, F,G,| \
+A,B, G,A, B,G, A,B,| \
+E,G, C,D, E,F, D,E,| \
+F,G, E,F, G,E, F,G,|
+C,3/2x/2 D,3/2x/2 E,3/2x/2 C,3/2x/2| \
+F,,3/2x/2 F,E, D,3/2x/2 G,F,| \
+E,3/2x/2 D,C, B,,3/2x/2 G,,3/2x/2| \
+C,3/2x/2 E,F, G,3/2x/2 G,,3/2x/2|
+C,3/2x2x/2 C,3/2x2x/2| \
+C,3/2x2x/2 C,3/2x2x/2| \
+C,3/2x2x/2 C,3/2x/2 D,E,| \
+F,3/2x/2 E,D, E,3/2x/2 A,3/2x/2|
+D,3/2x/2 G,3/2x/2 C,3/2x/2 C,3/2x/2| \
+G,,3/2x/2 D,3/2x/2 B,,3/2x/2 C,3/2x/2| \
+G,,3x3 G,2-| \
+G,3/2x/2 F,3/2x/2 ^C,3/2x/2 D,3/2x/2|
+A,,3x3 A,3/2x/2| \
+D,3/2x/2 F,E, D,3/2x/2 D,3/2x/2| \
+G,,3/2x/2 G,3/2x/2 D,3/2x/2 F,E,| \
+D,3/2x/2 F,E, D,3/2x/2 D,3/2x/2|
+G,,3/2x2x/2 D,3/2x2x/2| \
+E,3/2x/2 E,3/2x/2 F,3/2x/2 G,3/2x/2| \
+A,3/2x/2 F,3/2x/2 E,3/2x/2 D,3/2x/2| \
+A,,3/2x/2 E,3/2x/2 E,3/2x/2 D,E,|
+F,3/2x/2 E,D, E,3/2x/2 A,3/2x/2| \
+E,3/2x/2 ^C,D, E,3/2x/2 D,E,| \
+F,3/2x/2 E,D, E,D, ^C,E,| \
+D,^C, B,,D, ^C,D, E,^C,|
+F,E, D,F, E,D, ^C,E,| \
+D,^C, B,,D, ^C,D, E,^C,| \
+D,3/2x/2 A,3/2x/2 D3/2x/2 D3/2x/2| \
+D3/2x/2 ED =C3/2x/2 C3/2x/2|
+C3/2x/2 DC ^A,3/2x/2 ^A,3/2x/2| \
+^A,3/2x/2 C^A, =A,3/2x/2 A,3/2x/2| \
+A,3/2x/2 ^A,=A, G,3/2x/2 G,3/2x/2| \
+G,3/2x/2 A,G, ^F,3/2x/2 ^F,3/2x/2|
+G,3/2x/2 =F,3/2x/2 E,3/2x/2 D,3/2x/2| \
+^C,3/2x/2 A,3/2x/2 D3/2x/2 D,3/2x/2| \
+A,3x3 A,3/2x/2| \
+B,3/2x/2 A,B, ^C3/2x/2 B,^C|
+D3x3 D,3/2x/2| \
+E,3/2x/2 D,E, ^F,3/2x/2 E,^F,| \
+G,3x3 G,3/2x/2| \
+A,3/2x/2 G,A, B,3/2x/2 A,B,|
+=C3x3 C,3/2x/2| \
+D,3/2x/2 C,D, E,3/2x/2 D,E,| \
+=F,3/2x/2 C,3/2x/2 F,4-| \
+F,3/2x/2 ^D,=D, ^D,3/2x/2 ^D,3/2x/2|
+=D,3/2x/2 ^A,,3/2x2x/2 G,,3/2x/2| \
+C,3/2x/2 C,3/2x/2 C,3/2x/2 D,C,| \
+^A,,3/2x/2 ^A,,3/2x/2 ^A,,3/2x/2 C,^A,,| \
+=A,,3/2x/2 A,,3/2x/2 A,,3/2x/2 G,,F,,|
+G,,3/2x/2 G,,3/2x/2 G,,3/2x/2 ^G,,=G,,| \
+F,,3/2x/2 F,,3/2x/2 F,3/2x/2 ^F,=F,| \
+^D,3x3 ^D,2-| \
+^D,3/2x/2 F,^D, =D,3/2x/2 ^D,=D,|
+C,3/2x/2 D,C, ^A,,3/2x/2 D,3/2x/2| \
+^D,3/2x/2 C,3/2x/2 F,3/2x/2 F,,3/2x/2| \
+^A,,3/2x2x/2 ^A,,3/2x2x/2| \
+^A,,3/2x2x/2 ^A,,3/2x2x/2|
+^A,,3/2x2x/2 ^A,,3/2x/2 C,=D,| \
+^D,3/2x/2 =D,C, D,3/2x/2 G,3/2x/2| \
+C,3/2x/2 F,3/2x/2 ^A,3/2x/2 ^A,,3/2x/2| \
+F,3/2x/2 ^A,,3/2x/2 =A,,3/2x/2 ^A,,3/2x/2|
+F,3/2x/2 =A,G, F,3/2x/2 F,,3/2x/2| \
+^A,,3/2x/2 ^A,3/2x/2 F,3/2x/2 =A,G,| \
+F,3/2x/2 A,G, F,3/2x/2 F,,3/2x/2| \
+^A,,3/2x2x/2 F,3/2x2x/2|
+G,3/2x/2 G,,3/2x/2 =A,,3/2x/2 ^A,,3/2x/2| \
+C,3/2x/2 =A,,3/2x/2 G,,3/2x/2 F,,3/2x/2| \
+C,3/2x/2 G,3/2x/2 G,3/2x/2 F,G,| \
+A,3/2x/2 G,F, G,3/2x/2 C3/2x/2|
+G,3/2x/2 E,F, G,3/2x/2 F,G,| \
+A,3/2x/2 G,F, G,F, E,G,| \
+F,E, D,F, E,F, G,E,| \
+A,G, F,A, G,F, E,G,|
+F,E, D,F, E,D, C,E,| \
+D,E, F,G, A,^A, G,=A,| \
+^A,C =A,^A, C=A, ^A,C| \
+F,=A, D,E, F,G, E,F,|
+G,A, F,G, A,F, G,A,| \
+D,F, ^A,,C, D,E, C,D,| \
+E,F, D,E, F,D, ^D,F,| \
+^A,,3x3 ^A,2-|
+^A,3/2x/2 C^A, =A,3/2x/2 ^A,=A,| \
+G,3/2x/2 A,G, F,3/2x/2 A,,3/2x/2| \
+^A,,3/2x/2 G,,3/2x/2 C,3/2x/2 C,3/2x/2| \
+F,,3/2x2x/2 F,,3/2x2x/2|
+F,,3/2x2x/2 F,,3/2x2x/2| \
+F,,3/2x2x/2 F,,3/2x2x/2| \
+F,,3/2x2x/2 F,,3/2

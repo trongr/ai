@@ -1,0 +1,341 @@
+X: 1
+T: from ./btvn-rnd.mid
+M: 3/8
+L: 1/16
+Q:1/4=100
+K:C % 0 sharps
+% Allegretto
+V:1
+% Piano
+%%MIDI program 0
+x6| \
+% Allegretto
+g/2x3/2 g/2x3/2 g/2x3/2| \
+e4 c2| \
+g/2x3/2 g/2x3/2 g/2x3/2|
+f4 d2| \
+ec f/2x/2d/2x/2 g/2x/2e/2x/2| \
+ag f/2x/2e/2x/2 d/2x/2c/2x/2| \
+Bc d/2x/2c/2x/2 B/2x/2A/2x/2|
+G^F G/2x/2=F/2x/2 E/2x/2D/2x/2| \
+^f/2g/2x g/2x3/2 g/2x3/2| \
+e4 c2| \
+^f/2g/2x g/2x3/2 g/2x3/2|
+=f4 d2| \
+ec f/2x/2d/2x/2 g/2x/2e/2x/2| \
+af e/2x/2d/2x/2 c/2x/2B/2x/2| \
+c6|
+x6| \
+[e4c4] [e2c2]| \
+[f/2d/2][e3/2-c3/2-] [e/2d/2-c/2B/2-][d3/2B3/2] [e/2c/2]x3/2| \
+[e6^c6]|
+[f4d4] G2| \
+[f4d4] [f2d2]| \
+e/2[f3/2-d3/2-] [f/2e/2-d/2^c/2-][e3/2^c3/2] [f/2d/2]x3/2| \
+[^f6^d6]|
+[g6e6]| \
+xg ^fg ag| \
+=fe f=d =cB| \
+xg ^fg ag|
+=fe fd cB| \
+c/2x3/2 c'2 b2| \
+a/2x3/2 a2 g2| \
+^f/2x3/2 ^f/2x3/2 ^f/2x3/2|
+^f/2g/2^f/2g/2 e2 ^f/2x3/2| \
+g2 d2 B/2x3/2| \
+d2 B2 ^F/2x3/2| \
+G6|
+x6| \
+GD B,/2x/2D/2x/2 G/2x/2D/2x/2| \
+AD A,/2x/2D/2x/2 A/2x/2D/2x/2| \
+BD B,/2x/2D/2x/2 B/2x/2D/2x/2|
+cD C/2x/2D/2x/2 c/2x/2D/2x/2| \
+dD c/2x/2D/2x/2 B/2x/2D/2x/2| \
+AD G/2x/2D/2x/2 ^F/2x/2D/2x/2| \
+GD B,/2x/2D/2x/2 G/2x/2D/2x/2|
+AD A,/2x/2D/2x/2 A/2x/2D/2x/2| \
+BD B,/2x/2D/2x/2 B/2x/2D/2x/2| \
+^cG ^C/2x/2G/2x/2 ^c/2x/2G/2x/2| \
+[d6^F6]|
+^f2 e2 d/2x3/2| \
+[^c2G2-] [^c2G2-] [^c2G2]| \
+d/2^c3/2- [^c/2B/2-]B3/2 ^c2| \
+[d6^F6]|
+^F2 E2 D/2x3/2| \
+[G2^C2] ^C2 ^C2| \
+[B/2-^C/2][B/2-D/2][B^C] B,2 ^C/2x3/2| \
+x[D/2-A,/2-][^F4-D4-A,4-][^F/2-D/2-A,/2-]|
+[^F4-D4-A,4-] [^F3/2-D3/2A,3/2-][^F/2A,/2]| \
+d/2x3/2 d/2x3/2 d/2x3/2| \
+^A4 G2| \
+d/2x3/2 d/2x3/2 d/2x3/2|
+=c4 =A2| \
+d/2x3/2 d/2x3/2 d/2x3/2| \
+B4 G2| \
+A4 B2|
+c6| \
+G6| \
+[g2G2] [^f2^F2] [=f2F2]| \
+[^d2^D2] [=d2D2] [c/2C/2]x3/2|
+[c2^F2] B2 c/2x3/2| \
+[d6B6G6]| \
+G2 ^F2 =F/2x3/2| \
+^D2 =D2 C/2x3/2|
+C2 B,2 C/2x3/2| \
+DB, C/2x/2D/2x/2 E/2x/2^F/2x/2| \
+GA Bc d/2e/2=f/2^f/2| \
+g/2x3/2 g/2x3/2 g/2x3/2|
+e4 c2| \
+g/2x3/2 g/2x3/2 g/2x3/2| \
+=f4 d2| \
+ec f/2x/2d/2x/2 f/2x/2e/2x/2|
+ag f/2x/2e/2x/2 d/2x/2c/2x/2| \
+Bc d/2x/2c/2x/2 B/2x/2A/2x/2| \
+G^F G/2x/2=F/2x/2 E/2x/2D/2x/2| \
+g/2x3/2 g/2x3/2 g/2x3/2|
+e4 c2| \
+g/2x3/2 g/2x3/2 g/2x3/2| \
+f4 d2| \
+ec f/2x/2d/2x/2 g/2x/2e/2x/2|
+af e/2x/2d/2x/2 c/2x/2B/2x/2| \
+K:Eb % 3 flats
+c2 x4| \
+xc ec ge| \
+c'b a/2x/2g/2x/2 f/2x/2e/2x/2|
+xd gd =bg| \
+d'c' =b/2x/2a/2x/2 g/2x/2f/2x/2| \
+ef g/2x/2e/2x/2 d/2x/2c/2x/2| \
+=Bc d/2x/2=B/2x/2 =A/2x/2G/2x/2|
+xc ec ge| \
+c'_b _a/2x/2g/2x/2 f/2x/2e/2x/2| \
+xd gd bg| \
+d'c' b/2x/2a/2x/2 g/2x/2f/2x/2|
+ef g/2x/2e/2x/2 d/2x/2c/2x/2| \
+de f/2x/2d/2x/2 c/2x/2=B/2x/2| \
+c6| \
+x2 C2 D2|
+E6| \
+_B2 G2 E2| \
+D6| \
+x2 D2 E2|
+F6| \
+B2 =A2 _A2| \
+G/2x3/2 EF GA| \
+B/2x3/2 GA Bc|
+_dc Bc BA| \
+GA GF E_D| \
+C6| \
+A2 F2 E/2x3/2|
+=D4 D2| \
+D/2E/2D/2E/2 C2 D/2x3/2| \
+E6| \
+G2 E2 C/2x3/2|
+=B,4 =B,2| \
+=B,/2C/2=B,/2C/2 =A,2 =B,/2x3/2| \
+C6| \
+[_G2E2] D2 C/2x3/2|
+[=G6=B,6]| \
+[_G2E2] D2 C/2x3/2| \
+=G6| \
+G/2=A/2G/2=A/2 G/2=A/2G/2=A/2 G/2=A/2G/2=A/2|
+G/2=A/2G/2=A/2 G/2=A/2G/2=A/2 G/2=A/2G/2=A/2| \
+G/2=A/2G/2=A/2 G/2=A/2G/2=A/2 G/2=A/2G/2=A/2| \
+G/2=A/2G/2=A/2 G/2=A/2G/2=A/2 G/2=A/2G/2=A/2| \
+G/2=A/2G/2=A/2 G/2=A/2G/2=A/2 G/2=A/2G/2=A/2|
+G/2=A/2G/2=A/2 G/2=A/2G/2=A/2 G/2=A/2G/2=A/2| \
+G/2=A/2G/2=A/2 G/2=A/2G/2=A/2 G/2=A/2G/2>=A/2| \
+G/2=A/2G/2=A/2 G/2=A/2G/2=A/2 G/2=A/2G/2=A/2| \
+G/2=A/2_G/2=G/2 G,4|
+K:C % 0 sharps
+g/2x3/2 g/2x3/2 g/2x3/2| \
+e4 c2| \
+g/2x3/2 g/2x3/2 g/2x3/2| \
+f4 d2|
+ec f/2x/2d/2x/2 g/2x/2e/2x/2| \
+ag f/2x/2e/2x/2 d/2x/2c/2x/2| \
+Bc d/2x/2c/2x/2 B/2x/2A/2x/2| \
+G^F G/2x/2=F/2x/2 E/2x/2D/2x/2|
+^f/2g/2x g/2x3/2 g/2x3/2| \
+e4 c2| \
+^f/2g/2x g/2x3/2 g/2x3/2| \
+=f4 d2|
+ec f/2x/2d/2x/2 g/2x/2e/2x/2| \
+af e/2x/2d/2x/2 c/2x/2B/2x/2| \
+cG E/2x/2G/2x/2 c/2x/2e/2x/2| \
+dG D/2x/2G/2x/2 d/2x/2f/2x/2|
+[e2c2] [g2e2] [e/2c/2]x3/2| \
+[g/2e/2][f3/2-d3/2-] [f/2e/2-d/2c/2-][e3/2c3/2] [d/2B/2]x3/2| \
+cG EG ce| \
+dG DG df|
+[e2c2] [g2e2] [e2c2]| \
+[g/2e/2][f3/2-d3/2-] [f/2e/2-d/2c/2-][e3/2c3/2] [d/2B/2]x3/2| \
+[c6G6E6]|
+V:2
+% Piano
+%%MIDI program 0
+x6| \
+% Allegretto
+CE GE GE| \
+CE GE GE| \
+B,D GD GD|
+B,D GD GD| \
+C6| \
+F,4 ^F,2| \
+G,6|
+x6| \
+CE GE GE| \
+CE GE GE| \
+B,D GD GD|
+B,D GD GD| \
+C6| \
+=F,4 G,2| \
+C,E, G,/2x/2C/2x/2 B,/2x/2C/2x/2|
+C,6| \
+[G2G,2] G/2x3/2 G/2x3/2| \
+G/2x3/2 G/2x3/2 G/2x3/2| \
+G/2x3/2 G/2x3/2 G/2x3/2|
+G/2x3/2 G/2x3/2 G/2x3/2| \
+[G2G,2] G/2x3/2 G/2x3/2| \
+G/2x3/2 G/2x3/2 G/2x3/2| \
+G/2x3/2 G/2x3/2 G/2x3/2|
+G/2x3/2 G/2x3/2 G/2x3/2| \
+[E6C6]| \
+[D6B,6]| \
+[E6C6]|
+[D6B,6]| \
+[E6C6]| \
+x6| \
+x2 [^F/2C/2]x3/2 [^F/2C/2]x3/2|
+[^F/2C/2]x3/2 [^F/2C/2]x3/2 [^F/2C/2]x3/2| \
+G2 D2 B,/2x3/2| \
+D2 B,2 ^F,/2x3/2| \
+G,2 ^F,2 G,/2x3/2|
+G,,6| \
+G,6| \
+^F,6| \
+G,6|
+A,6| \
+B,2 A,2 G,/2x3/2| \
+^F,2 E,2 D,/2x3/2| \
+G,6|
+^F,6| \
+G,6| \
+E,6| \
+D,6|
+x6| \
+E,6-| \
+E,6| \
+D,6-|
+D,6| \
+x6| \
+x6| \
+D,,/2-[A,,/2-^F,,/2-D,,/2-][D,4-A,,4-^F,,4-D,,4-][D,-A,,-^F,,-D,,-]|
+[D,6A,,6^F,,6D,,6]| \
+x6| \
+G,^A, D^A, D^A,| \
+G,^A, D^A, D^A,|
+^F,=A, DA, DA,| \
+^F,A, DA, DA,| \
+=F,B, DB, DB,| \
+F,B, DB, DB,|
+^D,G, CG, CG,| \
+G,6| \
+G,2 A,2 B,2| \
+C2 =D2 ^D/2x3/2|
+[^D6^G,6]| \
+=G,6| \
+[G,2G,,2] A,,2 B,,/2x3/2| \
+[G,2C,2] =D,2 ^D,/2x3/2|
+[^F,6^G,,6]| \
+=G,,6| \
+x6| \
+CE GE GE|
+CE GE GE| \
+B,=D GD GD| \
+B,D GD GD| \
+C6|
+=F,4 ^F,2| \
+G,6| \
+x6| \
+CE GE GE|
+CE GE GE| \
+B,D GD GD| \
+B,D GD GD| \
+C6|
+=F,4 G,2| \
+K:Eb % 3 flats
+CE G/2x/2F/2x/2 E/2x/2D/2x/2| \
+C6-| \
+C6|
+=B,6-| \
+=B,6| \
+C6| \
+G,6|
+C6-| \
+C6| \
+_B,6-| \
+B,6|
+C4 E,2| \
+F,4 G,2| \
+C,2 E,2 G,2| \
+C2 x4|
+E,G, B,G, B,G,| \
+E,G, B,G, B,G,| \
+F,A, B,A, B,A,| \
+F,A, B,A, B,A,|
+D,F, B,F, B,F,| \
+D,F, B,F, B,F,| \
+E,6| \
+x6|
+[G,6-E,6-]| \
+[G,6E,6]| \
+[A,6A,,6]| \
+x6|
+[A,4F,4B,,4] [A,2F,2B,,2]| \
+[A,6F,6B,,6]| \
+[G,6E,6]| \
+x6|
+[F,4D,4G,,4] [F,2D,2G,,2]| \
+[F,6D,6G,,6]| \
+[E,6C,6]| \
+A,,6|
+G,,6| \
+A,,6| \
+G,4 [E2C2]| \
+[E2C2] [D2=B,2] [C/2=A,/2]x3/2|
+[=B,4G,4] [E2C2]| \
+[E2C2] [D2_B,2] [C/2=A,/2]x3/2| \
+[=B,2G,2] [C2=A,2] [D/2=B,/2]x3/2| \
+[E2C2] [D2=B,2] [C/2=A,/2]x3/2|
+[=B,2G,2] [C2=A,2] [D/2=B,/2]x3/2| \
+[E2C2] [D2=B,2] [C/2=A,/2]x3/2| \
+G,,/2-[D,/2-=B,,/2-G,,/2-][G,4-D,4-=B,,4-G,,4-][G,-D,-=B,,-G,,-]| \
+[G,6D,6=B,,6G,,6]|
+K:C % 0 sharps
+CE GE GE| \
+CE GE GE| \
+B,D GD GD| \
+B,D GD GD|
+C6| \
+F,4 ^F,2| \
+G,6| \
+x6|
+CE GE GE| \
+CE GE GE| \
+B,D GD GD| \
+B,D GD GD|
+C6| \
+=F,4 G,2| \
+[C6C,6]| \
+[B,6B,,6]|
+[C6C,6]| \
+F,2 G,2 G,,/2x3/2| \
+[C6C,6]| \
+[B,6B,,6]|
+[C6C,6]| \
+F,2 G,2 G,,/2x3/2| \
+[C,6C,,6]|
+% Ludwig van Beethoven
+% Rondeau
+% MIDI by - Les Winters
+% lwinters@midiworld.com

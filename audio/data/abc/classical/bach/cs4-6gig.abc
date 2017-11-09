@@ -1,0 +1,120 @@
+X: 1
+T: from bach/cs4-6gig.mid
+M: 12/8
+L: 1/8
+Q:1/4=250
+K:Eb % 3 flats
+% untitled
+% A
+% A'
+% B
+% B'
+V:1
+% Solo Cello
+%%MIDI program 42
+x8x3
+% untitled
+% A
+E,| \
+E,D,E, B,,C,D, E,D,E, G,F,G,| \
+E,D,E, B,,C,D, E,,4-E,,G,| \
+F,E,F, B,G,A, G,F,G, E,F,G,|
+F,E,F, B,G,A, G,F,G, E,G,F,| \
+E,D,E, C=A,B, =A,G,=A, F,=A,F,| \
+E,D,E, C=A,B, =A,G,=A, F,=A,E,| \
+D,C,D, D=A,B, E,D,E, D=A,B,|
+F,E,F, D=A,B, G,F,G, D=A,B,| \
+E,D,E, C,E,B,, =A,,E,G,, =A,,E,F,,| \
+B,,D,F, B,D,F, B,,4-B,,E,| \
+% A'
+E,D,E, B,,C,D, E,D,E, G,F,G,|
+E,D,E, B,,C,D, E,,4-E,,G,| \
+F,E,F, B,G,_A, G,F,G, E,F,G,| \
+F,E,F, B,G,A, G,F,G, E,G,F,| \
+E,D,E, C=A,B, =A,G,=A, F,=A,F,|
+E,D,E, C=A,B, =A,G,=A, F,=A,E,| \
+D,C,D, D=A,B, E,D,E, D=A,B,| \
+F,E,F, D=A,B, G,F,G, D=A,B,| \
+E,D,E, C,E,B,, =A,,E,G,, =A,,E,F,,|
+B,,D,F, B,D,F, B,,4-B,,B,| \
+% B
+B,=A,B, F,G,=A, B,=A,B, DCD| \
+B,=A,B, F,G,=A, B,,4-B,,D| \
+DCD _A,G,A, F,E,F, =B,,F,D|
+DCD A,G,A, F,E,F, =B,,D,F,| \
+E,D,E, C,E,_B,, A,,C,F, A,CE,| \
+D,C,D, B,,D,A,, G,,B,,E, G,B,D,| \
+C,B,,C, A,,C,G,, F,,A,,D, F,A,C,|
+=B,,D,G, =B,DF, E,G,C G,C=B,| \
+C=B,C G,=A,=B, C=B,C EDE| \
+C=B,C E,F,G, C,E,_G, =A,C=A,| \
+_G,=A,C EDC _B,=A,=G, D,G,_G,|
+=G,_G,=G, B,_G,=G, C,B,,C, B,_G,=G,| \
+D,C,D, B,_G,=G, E,D,E, B,_G,=G,| \
+=A,CG, _G,C=E, D,C=E, _G,C=G,| \
+=A,CG, _G,C=E, D,C=E, _G,CD,|
+B,=A,=G, D,G,_G, =G,D,B,, G,,2_E,| \
+E,D,E, B,,C,D, E,D,E, G,F,G,| \
+E,D,E, B,,C,D, E,,4-E,,G,| \
+F,E,F, B,G,_A, G,F,G, E,F,G,|
+F,E,F, B,G,A, G,F,G, E,G,A,| \
+B,A,B, EC_D CB,C A,B,C| \
+B,A,B, EC_D CB,C A,B,C| \
+_G,F,_G, E,=D,E, C,B,,C, =A,,C,E,|
+_G,F,_G, E,D,E, C,B,,C, =A,,C,E,| \
+D,C,D, B,,D,_A,, =G,,B,,E, G,B,_D,| \
+C,B,,C, A,,C,G,, F,,A,,=D, F,B,C,| \
+B,,A,,B,, G,,B,,F,, =E,,G,,C, =E,G,B,,|
+A,,G,,A,, F,,A,,_E,, D,,F,,B,, D,F,A,,| \
+G,,F,,G,, G,D,E, A,,G,,A,, G,D,E,| \
+B,,A,,B,, G,D,E, C,B,,C, G,D,E,| \
+A,G,A, F,A,E, D,A,C, D,A,B,,|
+E,G,B, EG,,B,, E,,4-E,,B,| \
+% B'
+B,=A,B, F,G,=A, B,=A,B, DCD| \
+B,=A,B, F,G,=A, B,,4-B,,D| \
+DCD _A,G,A, F,E,F, =B,,F,D|
+DCD A,G,A, F,E,F, =B,,D,F,| \
+E,D,E, C,E,_B,, A,,C,F, A,CE,| \
+D,C,D, B,,D,A,, G,,B,,E, G,B,D,| \
+C,B,,C, A,,C,G,, F,,A,,D, F,A,C,|
+=B,,D,G, =B,DF, E,G,C G,C=B,| \
+C=B,C G,=A,=B, C=B,C EDE| \
+C=B,C E,F,G, C,E,_G, =A,C=A,| \
+_G,=A,C EDC _B,=A,=G, D,G,_G,|
+=G,_G,=G, B,_G,=G, C,B,,C, B,_G,=G,| \
+D,C,D, B,_G,=G, E,D,E, B,_G,=G,| \
+=A,CG, _G,C=E, D,C=E, _G,C=G,| \
+=A,CG, _G,C=E, D,C=E, _G,CD,|
+B,=A,=G, D,G,_G, =G,D,B,, G,,2_E,| \
+E,D,E, B,,C,D, E,D,E, G,F,G,| \
+E,D,E, B,,C,D, E,,4-E,,G,| \
+F,E,F, B,G,_A, G,F,G, E,F,G,|
+F,E,F, B,G,A, G,F,G, E,G,A,| \
+B,A,B, EC_D CB,C A,B,C| \
+B,A,B, EC_D CB,C A,B,C| \
+_G,F,_G, E,=D,E, C,B,,C, =A,,C,E,|
+_G,F,_G, E,D,E, C,B,,C, =A,,C,E,| \
+D,C,D, B,,D,_A,, =G,,B,,E, G,B,_D,| \
+C,B,,C, A,,C,G,, F,,A,,=D, F,B,C,| \
+B,,A,,B,, G,,B,,F,, =E,,G,,C, =E,G,B,,|
+A,,G,,A,, F,,A,,_E,, D,,F,,B,, D,F,A,,| \
+G,,F,,G,, G,D,E, A,,G,,A,, G,D,E,| \
+B,,A,,B,, G,D,E, C,B,,C, G,D,E,| \
+A,G,A, F,A,E, D,A,C, D,A,B,,|
+E,G,B, EG,,B,, E,,4-E,,
+% --------------------------------------
+% Johann Sebastian Bach  (1685-1750)
+% Six Suites for Solo Cello
+% --------------------------------------
+% Suite No. 4 in Eb major - BWV 1010
+% 6th Movement: Gigue
+% --------------------------------------
+% Modified from an anonymous sequence with Cakewalk Pro Audio by
+% David J. Grossman - dave@unpronounceable.com
+% This and other Bach MIDI files can be found at:
+% Dave's J.S. Bach Page
+% http://www.unpronounceable.com/bach
+% --------------------------------------
+% Original Filename: cs4-6gig.mid
+% Last Modified: February 22, 1997

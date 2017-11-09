@@ -1,0 +1,498 @@
+X: 1
+T: from ./mozsq1.mid
+M: 3/4
+L: 1/8
+Q:1/4=42
+K:G % 1 sharps
+% Mozart Quartet #
+V:1
+% Violino I
+%%MIDI program 40
+% Mozart First Quartett Series 14 No. 1 K. Version No. 80 Composed around 15 March 1770  Transcribed by James Perdue using ConcertWare Midi and lots of time!
+% Mozart Quartet #
+d2 d3g| \
+x/2x/2x/2g/2 f3g| \
+af2<d2c| \
+dc B2 x2|
+c'c2e/2d/2 f/2e/2d/2c/2| \
+B/2d/2e/2f/2 g/2a/2b/2c'/2 d'2| \
+d'e'/2d'/2 c'2 b2| \
+x/2x/2x/2x/2 a2 x2|
+a3b/2a/2 d'/2^c'/2b/2a/2| \
+a3/2b/2 aa aa| \
+a/2f/2g xg gg| \
+g/2e/2f xf ff|
+e2 x4| \
+x6| \
+f/2e/2f/2g/2 ad dd| \
+g/2e/2f/2d/2 ^ce/2^c/2 A2|
+a6| \
+a6| \
+x/2dfad'=c'a/2| \
+ (3b/2d'/2b/2 (3g/2d/2B/2  (3G/2d/2B/2 (3G/2D/2B,/2 G,b/2g/2|
+x/2x/2x/2x/2 x/2x/2x/2x/2 x/2x/2x/2x/2| \
+dx/2x/2 d'x3| \
+x6| \
+c'6|
+c'/2b/2a/2g/2 f2 x/2x/2x/2x/2| \
+dA BA BG| \
+F2 x2 x/2 (3a/2g/2f/2[e/2d/2]| \
+[^c/2-^c/2]^c3-^c/2 dx|
+x6| \
+x6| \
+d'6| \
+d'2 g'd' =c'b|
+x/2x/2x/2x/2 a2 x2| \
+e2 e/2f/2^g/2a/2 b/2c'/2d'/2b/2| \
+d'c'2d'/2c'/2 e'=g| \
+f2 x4|
+ (3G/2d/2B/2 (3G/2D/2B,/2 G,x2=f| \
+ee'2d'/2c'/2 b/2a/2g| \
+^f/2e/2d/2e/2 d2 x2| \
+x6|
+x6| \
+c'3a fc| \
+dc B2 x2| \
+e3g a/2<g/2[g/2f/2]e/2|
+d2 fe/2f/2 g/2a/2b/2c'/2| \
+d'3/2e'/2 [d'/2c'/2-]c'3/2 b2| \
+x/2x/2x/2x/2 a2 x2| \
+d3e/2d/2 g/2f/2e/2d/2|
+d/2e/2d xd' d'd'| \
+d'/2b/2c' xc' c'c'| \
+c'/2a/2b xb bb| \
+a2 x4|
+x6| \
+b/2a/2b/2c'/2 d'g gg| \
+c'/2a/2b/2g/2 g/2f/2a/2f/2 d2| \
+d'6-|
+d'6| \
+x/2GBdgd'=f/2| \
+ (3e/2g/2e/2 (3c/2e/2c/2  (3G/2c/2G/2 (3E/2G/2E/2 C/2g/2e/2c/2| \
+ (3B/2d/2c/2[c/2B/2][e/2d/2] [g/2=f/2][b/2a/2][d'/2c'/2]x/2 x/2x/2x/2x/2|
+g/2>a/2[c'/2b/2][e'/2d'/2] [g'/2-^f'/2]g'/2x3| \
+x6| \
+=f'6| \
+=f'/2e'/2d'/2c'/2 b2 x/2x/2x/2x/2|
+gd ed ec| \
+B2 x2 x/2 (3d'/2c'/2b/2[a/2g/2]| \
+[^f/2-f/2]f3-f/2 gx| \
+M: 4/4
+L: 1/8
+g2 a/2[g/2f/2]g/2a/2 gg fa|
+gb ac' bx3| \
+g4 d4| \
+cB AG d2 D2| \
+G2 a/2[g/2f/2]g/2a/2 gg fa|
+gb ac' bx3| \
+g4 d4| \
+cB AG d2 D2| \
+G2 x2 g3b/2g/2|
+f2 x2 a3c'/2a/2| \
+g2 x2 g3b/2g/2| \
+f2 x2 a3c'/2a/2| \
+gG, A,B, CD EF|
+GF ED CB, A,G,| \
+D2 f2 f2 x2| \
+d4 f2 a2| \
+d'6 e'2|
+f'2 f'4 g'e'| \
+f'2 f4 ge| \
+d4 f2 a2| \
+d'/2a/2b/2a/2 d'/2a/2b/2a/2 d'x3|
+g'2 f'4 e'2| \
+d'/2a/2b/2a/2 d'/2a/2b/2a/2 d'x3| \
+g'2 f'4 e'2| \
+d'2 x6|
+x/2G/2A/2B/2 c/2d/2e/2f/2 g/2d/2e/2f/2 g/2a/2b/2c'/2| \
+d'4 ^c'2 b2| \
+a3b d2 ^c2| \
+D/2d/2^c/2d/2 =c/2d/2B/2d/2 A/2d/2B/2d/2 c/2d/2A/2d/2|
+B2 x2 x/2B/2c/2d/2 e/2f/2g/2a/2| \
+b4 a2 g2| \
+f3g f2 e2| \
+d2 a/2g/2f/2e/2 fa x^c|
+d2 a/2g/2f/2e/2 fa x^c| \
+d2 f2 f2 x2| \
+g2 a/2[g/2f/2]g/2a/2 gg fa| \
+gb a=c' bx3|
+g4 d4| \
+cB AG d2 D2| \
+G2 a/2[g/2f/2]g/2a/2 gg fa| \
+gb ac' bx3|
+g4 d4| \
+cB AG d2 D2| \
+G2 x2 g3b/2g/2| \
+f2 x2 a3c'/2a/2|
+g2 x2 g3b/2g/2| \
+f2 x2 a3c'/2a/2| \
+gG, A,B, CD EF| \
+GF ED CB, A,G,|
+D2 f2 f2 x2| \
+d4 f2 a2| \
+d'6 e'2| \
+f'2 f'4 g'e'|
+f'2 f4 ge| \
+d4 f2 a2| \
+d'/2a/2b/2a/2 d'/2a/2b/2a/2 d'x3| \
+g'2 f'4 e'2|
+d'/2a/2b/2a/2 d'/2a/2b/2a/2 d'x3| \
+g'2 f'4 e'2| \
+d'2 x6| \
+x/2G/2A/2B/2 c/2d/2e/2f/2 g/2d/2e/2f/2 g/2a/2b/2c'/2|
+d'4 ^c'2 b2| \
+a3b d2 ^c2| \
+D/2d/2^c/2d/2 =c/2d/2B/2d/2 A/2d/2B/2d/2 c/2d/2A/2d/2| \
+B2 x2 x/2B/2c/2d/2 e/2f/2g/2a/2|
+b4 a2 g2| \
+f3g f2 e2| \
+d2 a/2g/2f/2e/2 fa x^c| \
+d2 a/2g/2f/2e/2 fa x^c|
+d2 f2 f2 x2| \
+d8| \
+e8| \
+f8|
+g8| \
+f8| \
+e8| \
+fg fe d=c BA|
+Bc de fg ab| \
+c'4 c'a d'^c'| \
+d'=c' ba gf ed| \
+e3d cd cB|
+A2 xc cB xg| \
+f2 xc cB xg| \
+f2 f2 f2 x2| \
+g2 a/2[g/2f/2]g/2a/2 gg fa|
+gb ac' bx3| \
+g4 d4| \
+ed AG d2 D2| \
+G2 g/2f/2g/2a/2 gg fa|
+gb ac' bx3| \
+g4 d4| \
+c/2[B/2-B/2]B AG d2 D2| \
+G2 x2 g3b/2g/2|
+f2 x2 a3c'/2a/2| \
+g2 x2 g3b/2g/2| \
+f2 x2 a3c'/2a/2| \
+gG, A,B, CD EF|
+GF ED CB, A,G,| \
+D2 f2 f2 x2| \
+G4 B2 d2| \
+g2 g4 a2|
+b2 b4 c'a| \
+b2 B4 cA| \
+G4 B2 d2| \
+g/2d/2e/2d/2 g/2d/2e/2d/2 gx3|
+c'2 b4 a2| \
+g/2d/2e/2d/2 g/2d/2e/2d/2 g2 x2| \
+c'2 b4 a2| \
+g2 x6|
+x/2C/2D/2E/2 =F/2G/2A/2B/2 c/2e/2=f/2g/2 a/2b/2c'/2d'/2| \
+e'4 d'2 c'2| \
+b3c'/2d'/2 g2 ^f2| \
+G/2g/2f/2g/2 =f/2g/2e/2g/2 d/2g/2e/2g/2 =f/2g/2d/2g/2|
+e2 x2 x/2c/2d/2e/2 =f/2g/2a/2b/2| \
+c'4 b2 a2| \
+g3a/2b/2 g2 ^f2| \
+g2 d'/2c'/2b/2a/2 bd' xf|
+g2 d'/2c'/2b/2a/2 bd' xf| \
+g2 g2 g2 x2| \
+M: 3/4
+L: 1/8
+d6| \
+c'6|
+bx d'c' ba| \
+g4 f2| \
+g2 a2 b2| \
+c'x c2 B2|
+AB Gx Fx| \
+G4 x2| \
+d6| \
+c'6|
+bx d'c' ba| \
+g4 f2| \
+g2 a2 b2| \
+c'x c2 B2|
+AB Gx Fx| \
+G4 x2| \
+bc' a2 x2| \
+ga f2 x2|
+e2 g2 b2| \
+d4 ^c2| \
+d2 e2 f2| \
+g2 a2 b2|
+ax fd e^c| \
+d6| \
+d2 f2 g2| \
+a2 =c'2 b2|
+e'x ex ax| \
+g4 f2| \
+d6| \
+c'6|
+bx d'c' ba| \
+g4 f2| \
+g2 a2 b2| \
+c'x c2 B2|
+AB Gx Fx| \
+G4 x2| \
+bc' a2 x2| \
+ga f2 x2|
+e2 g2 b2| \
+d4 ^c2| \
+d2 e2 f2| \
+g2 a2 b2|
+a2 fd e^c| \
+d6| \
+d2 f2 g2| \
+a2 =c'2 b2|
+e'2 e2 a2| \
+g4 f2| \
+d6| \
+c'6|
+b2 d'c' ba| \
+g4 f2| \
+g2 a2 b2| \
+c'2 c2 B2|
+AB G2 F2| \
+G4 x2| \
+K:C % 0 sharps
+G2 c2 e2| \
+g4 dx|
+E2 A2 c2| \
+e4 Bx| \
+C2 F2 A2| \
+Gc2<c2e|
+A2 fd cB| \
+Bc3 x2| \
+G2 c2 e2| \
+g4 dx|
+E2 A2 c2| \
+e4 Bx| \
+C2 F2 A2| \
+Gc2<c2e|
+A2 fd cB| \
+Bc3 x2| \
+x6| \
+g3^f/2e/2 d2|
+B2 B2 cA| \
+B2  (3d/2c/2d/2[d/2c/2][d/2c/2] [d/2-c/2]d3/2| \
+G,g ^fe dc| \
+Be dc BA|
+G2 A,2  (3g/2^f/2g/2[g/2^f/2]^f/2| \
+g2 G2 x2| \
+G2 A2 e2| \
+g4 dx|
+E2 A2 c2| \
+e4 Bx| \
+C2 =F2 A2| \
+Gc2<c2e|
+A2 fd cB| \
+Bc3 x2| \
+x6| \
+g3^f/2e/2 d2|
+B2 B2 cA| \
+B2  (3d/2c/2d/2[d/2c/2][d/2c/2] [d/2-c/2]d3/2| \
+G,g ^fe dc| \
+Be dc BA|
+G2 A,2  (3g/2^f/2g/2[g/2^f/2]^f/2| \
+g2 G2 x2| \
+G2 A2 e2| \
+g4 dx|
+E2 A2 c2| \
+e4 Bx| \
+C2 =F2 A2| \
+Gc2<c2e|
+A2 fd cB| \
+Bc3 x2| \
+d6| \
+c'6|
+b2 d'c' ba| \
+g4 ^f2| \
+g2 a2 b2| \
+c'2 c2 B2|
+AB G2 ^F2| \
+G4 x2| \
+bc' a2 x2| \
+ga ^f2 x2|
+e2 g2 b2| \
+d4 ^c2| \
+d2 e2 ^f2| \
+g2 a2 b2|
+a2 ^fd e^c| \
+d6| \
+d2 ^f2 g2| \
+a2 =c'2 b2|
+e'2 e2 a2| \
+g4 ^f2| \
+d6| \
+c'6|
+b2 d'c' ba| \
+g4 ^f2| \
+g2 a2 b2| \
+c'2 c2 B2|
+AB G2 ^F2| \
+G6| \
+x6| \
+M: 2/4
+L: 1/8
+d2 d2|
+M: 4/4
+L: 1/8
+K:G % 1 sharps
+ed cB e2 e2| \
+e4 c2 c2| \
+dc BA A2 A2| \
+BA GF d2 d2|
+ed cB ed ef| \
+gf ga ba bc'| \
+d'2 x2  (3B/2A/2B/2[B/2A/2][B/2A/2] [B/2A/2][B/2A/2][B/2A/2][B/2A/2]| \
+[A/2G/2-]G3/2 x2 d2 d2|
+ed cB e2 e2| \
+e4 c2 c2| \
+dc BA A2 A2| \
+BA GF d2 d2|
+ed cB ed ef| \
+gf ga ba bc'| \
+d'2 x2  (3B/2A/2B/2[B/2A/2][B/2A/2] [B/2A/2][B/2A/2][B/2A/2][B/2A/2]| \
+[A/2G/2-]G3/2 x2 g2 ab|
+ba gf fe d^c| \
+ed fe gf ag| \
+ba gf fe gb| \
+d2 ^c2 g2 ab|
+ba gf f/2[e/2-e/2]e d^c| \
+ed fe gf ag| \
+ba gf fe d^c| \
+d4 D2 DD|
+=F2 E2 E2 EE| \
+E2 A,2 =C2 CC| \
+^D2 =D2 D2 DD| \
+D2 G,2 ba g^f|
+gf ed ed cB| \
+cB AG AG FE| \
+D2 c4  (3c/2B/2c/2[c/2B/2][c/2B/2]| \
+[B/2A/2-]A3/2 x2 d2 d2|
+ed cB e2 e2| \
+e4 c2 c2| \
+dc BA A2 A2| \
+BA GF d2 d2|
+ed cB ed ef| \
+gf ga ba bc'| \
+d'2 x2  (3B/2A/2B/2[B/2A/2][B/2A/2] [B/2A/2][B/2A/2][B/2A/2][B/2A/2]| \
+[A/2G/2-]G3/2 x2 g2 ab|
+ba gf fe d^c| \
+ed fe gf ag| \
+ba gf fe gb| \
+d2 ^c2 g2 ab|
+ba gf f/2[e/2-e/2]e d^c| \
+ed fe gf ag| \
+ba gf fe d^c| \
+d4 D2 DD|
+=F2 E2 E2 EE| \
+E2 A,2 =C2 CC| \
+^D2 =D2 D2 DD| \
+D2 G,2 ba g^f|
+gf ed ed cB| \
+cB AG AG FE| \
+D2 c4  (3c/2B/2c/2[c/2B/2][c/2B/2]| \
+[B/2A/2-]A3/2 x2 d2 d2|
+ed cB e2 e2| \
+e4 c2 c2| \
+dc BA A2 A2| \
+BA GF d2 d2|
+ed cB ed ef| \
+gf ga ba bc'| \
+d'2 x2  (3B/2A/2B/2[B/2A/2][B/2A/2] [B/2A/2][B/2A/2][B/2A/2][B/2A/2]| \
+M: 2/4
+L: 1/8
+[A/2G/2-]G3/2 x2|
+G2 GG| \
+M: 4/4
+L: 1/8
+^A2 =A2 A2 AA| \
+c2 ^A2 ^A2 ^A^A| \
+d2 c2 c2 cc|
+^d2 =d2 d2 dd| \
+=f2 e2 e2 ee| \
+g2 =f2 x4| \
+x8|
+x4 G2 GG| \
+^A2 =A2 A2 AA| \
+c2 ^A2 ^A2 ^A^A| \
+d2 c2 c2 cc|
+^d2 =d2 d2 dd| \
+=f2 e2 e2 ee| \
+g2 =f2 x4| \
+x8|
+x4 d2 dd| \
+=f2 B2 B2 BB| \
+d2 c2 c2 cc| \
+^d2 =A2 A2 AA|
+c2 ^A2 G4| \
+G4 ^F4| \
+x4 ^A4| \
+B4 =A4|
+x4 g2 gg| \
+g2 f2 ^d2 ^d^d| \
+^d2 =d2 c2 cc| \
+c^A =AG c^A =AG|
+F2 A4 d2| \
+ (3c/2^A/2c/2[c/2^A/2][c/2^A/2] [c/2^A/2][c/2^A/2][c/2^A/2][c/2^A/2] [c/2^A/2][c/2^A/2][c/2^A/2][c/2^A/2] [c/2^A/2][c/2^A/2][c/2^A/2][c/2^A/2]| \
+[c/2=A/2-]A3-A/2 d2 d2| \
+ed cB e2 e2|
+e4 c2 c2| \
+dc BA A2 A2| \
+BA GF d2 d2| \
+ed cB ed ef|
+gf ga ba bc'| \
+d'2 x2  (3B/2A/2B/2[B/2A/2][B/2A/2] [B/2A/2][B/2A/2][B/2A/2][B/2A/2]| \
+[A/2G/2-]G3/2 x2 g2 ab| \
+ba gf fe d^c|
+ed fe gf ag| \
+ba gf fe gb| \
+d2 ^c2 g2 ab| \
+ba gf f/2[e/2-e/2]e d^c|
+ed fe gf ag| \
+ba gf fe d^c| \
+d4 D2 DD| \
+=F2 E2 E2 EE|
+E2 A,2 =C2 CC| \
+^D2 =D2 D2 DD| \
+D2 G,2 ba g^f| \
+gf ed ed cB|
+cB AG AG FE| \
+D2 c4  (3c/2B/2c/2[c/2B/2][c/2B/2]| \
+[B/2A/2-]A3/2 x2 d2 d2| \
+ed cB e2 e2|
+e4 c2 c2| \
+dc BA A2 A2| \
+BA GF d2 d2| \
+ed cB ed ef|
+gf ga ba bc'| \
+d'2 x2  (3B/2A/2B/2[B/2A/2][B/2A/2] [B/2A/2][B/2A/2][B/2A/2][B/2A/2]| \
+M: 2/4
+L: 1/8
+[A/2G/2-]G3/2 x2| \
+x4|
+d2 d2| \
+M: 4/4
+L: 1/8
+ed cB e2 e2| \
+e4 c2 c2| \
+dc BA A2 A2|
+BA GF d2 d2| \
+ed cB ed ef| \
+gf ga ba bc'| \
+d'2 x6|
+x8| \
+x4 ed ef| \
+gf ga ba bc'| \
+d'2 x6|
+B/2A/2B/2A/2 B/2A/2B/2A/2 B/2A/2B/2A/2 B/2A/2B/2A/2| \
+G2 
+V:2
+% Violino II
+%%MIDI program 40
+x8| \
+x4 
+% Mozart Quartet #

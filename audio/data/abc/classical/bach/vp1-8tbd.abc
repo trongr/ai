@@ -1,0 +1,383 @@
+X: 1
+T: from bach/vp1-8tbd.mid
+M: 4/4
+L: 1/8
+Q:1/4=250
+K:D % 2 sharps
+% untitled
+% Copyright \0xa9 1996 by David J. Grossman
+% David J. Grossman
+% A
+% A'
+% B
+% B'
+V:1
+% Solo Violin
+%%MIDI program 40
+x4 x
+% untitled
+% Copyright \0xa9 1996 by David J. Grossman
+% David J. Grossman
+B df| \
+% A
+bf dB df bf| \
+gf ed cB ^Ag| \
+fd ce dB Fc|
+ed cd BF Bc| \
+dB FD B,D GB| \
+cG =A,G ce ae| \
+cA EC A,C FA|
+BF G,F Bd fa| \
+bg eg ec ec| \
+GA Bc de fg| \
+aF Ad Ge Ac|
+dA B,A db d^G| \
+c=G A,G ca =cF| \
+GB dF E^c de| \
+GF ED Ce fg|
+ED CB, A,g ab| \
+c'd' e'd' c'b ag| \
+fe gf ed cB| \
+AG Fd Ed A,c|
+dD FA dB df| \
+% A'
+bf dB df bf| \
+gf ed cB ^Ag| \
+fd ce dB Fc|
+ed cd BF Bc| \
+dB FD B,D GB| \
+cG =A,G ce ae| \
+cA EC A,C FA|
+BF G,F Bd fa| \
+bg eg ec ec| \
+GA Bc de fg| \
+aF Ad Ge Ac|
+dA B,A db d^G| \
+c=G A,G ca =cF| \
+GB dF E^c de| \
+GF ED Ce fg|
+ED CB, A,g ab| \
+c'd' e'd' c'b ag| \
+fe gf ed cB| \
+AG Fd Ed A,c|
+dD FA dx2f| \
+% B
+e2 f2 g2 f2| \
+ed cd eG Fd| \
+c2 d2 e2 d2|
+cB AB cA F^d| \
+eB gA, B,g f^d| \
+e^d e=c BA GF| \
+GB eb ag fe|
+eB GB EB g=d| \
+^ce AG Fa gE| \
+Dg fe df bd| \
+=Fc ^gb ac ^Fa|
+^gf =f^d c^g ab| \
+c'e Be ^Ae c'e| \
+Be =dc d^f ^g=a| \
+bd Ad ^Gd Fd|
+=F^G c^d =f^f ^ga| \
+ba ^gf ca/2^g/2 f=f| \
+^fB A^G FE ^DC| \
+B,^D FA =c^d fa|
+Ea =gf g=D ^CB,| \
+A,C EG ^Ac eg| \
+Dg fe dc eB| \
+B^A e=A A^G e=G|
+GF E^D EG FE| \
+=DB, DF G^A Bc| \
+Fd cB ^Ac F^G| \
+^AB cd ef =gf|
+ge ^Ae ge ge| \
+ge ^AB cd ef| \
+^g=f B=f ^g=f ^g=f| \
+^g=f Bc d=f ^f^g|
+^ae cd ef ^g^a| \
+bc' d'b fb c'^a| \
+bf ec dB ^AB| \
+=G,d cB ^AB eB|
+fd cB ^AB FG| \
+=A=c BA ^DA GF| \
+EB ^c=d ef ^ge| \
+Bd cB =FB ^A^G|
+^Fc de f^g ^ab| \
+c'e ^Ae c'e c'e| \
+c'e ^AB cd ef| \
+=g=a gf ed cB|
+^ab ^a^g fe dc| \
+dB df bf dB| \
+=gf ed cB ^Ag| \
+fd ce dB F^A|
+B,4 x3f| \
+% B'
+e2 f2 g2 f2| \
+ed cd eG Fd| \
+c2 d2 e2 d2|
+cB =AB cA F^d| \
+eB gA, B,g f^d| \
+e^d e=c BA GF| \
+GB eb ag fe|
+eB GB EB g=d| \
+^ce AG Fa gE| \
+Dg fe df bd| \
+=Fc ^gb ac ^Fa|
+^gf =f^d c^g ab| \
+c'e Be ^Ae c'e| \
+Be =dc d^f ^g=a| \
+bd Ad ^Gd Fd|
+=F^G c^d =f^f ^ga| \
+ba ^gf ca/2^g/2 f=f| \
+^fB A^G FE ^DC| \
+B,^D FA =c^d fa|
+Ea =gf g=D ^CB,| \
+A,C EG ^Ac eg| \
+Dg fe dc eB| \
+B^A e=A A^G e=G|
+GF E^D EG FE| \
+=DB, DF G^A Bc| \
+Fd cB ^Ac F^G| \
+^AB cd ef =gf|
+ge ^Ae ge ge| \
+ge ^AB cd ef| \
+^g=f B=f ^g=f ^g=f| \
+^g=f Bc d=f ^f^g|
+^ae cd ef ^g^a| \
+bc' d'b fb c'^a| \
+bf ec dB ^AB| \
+=G,d cB ^AB eB|
+fd cB ^AB FG| \
+=A=c BA ^DA GF| \
+EB ^c=d ef ^ge| \
+Bd cB =FB ^A^G|
+^Fc de f^g ^ab| \
+c'e ^Ae c'e c'e| \
+c'e ^AB cd ef| \
+=g=a gf ed cB|
+^ab ^a^g fe dc| \
+dB df bf dB| \
+=gf ed cB ^Ag| \
+fd ce dB F^A|
+B,4 
+V:2
+% --------------------------------------
+%%MIDI program 40
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x
+% untitled
+% Copyright \0xa9 1996 by David J. Grossman
+% David J. Grossman
+% A
+% A'
+% B
+=A xA xA xA| \
+A2 x6| \
+xA, xA, xA, xA,|
+A,x6x| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x
+% B'
+A xA xA xA| \
+A2 x6| \
+xA, xA, xA, xA,|
+A,
+V:3
+% Johann Sebastian Bach  (1685-1750)
+%%MIDI program 40
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x4 x
+% untitled
+% Copyright \0xa9 1996 by David J. Grossman
+% David J. Grossman
+% A
+% A'
+f ad| \
+% B
+cx dx ex dx| \
+c2 x6| \
+Ex Fx Gx Fx|
+Ex6x| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x4 xf ad| \
+% B'
+cx dx ex dx| \
+c2 x6| \
+Ex Fx Gx Fx|
+E
+% Six Sonatas and Partitas for Solo Violin
+% --------------------------------------
+% Partita No. 1 in B minor - BWV 1002
+% 8th Movement: Double  ( Tempo di Borea )
+% --------------------------------------
+% Sequenced with Cakewalk Pro Audio by
+% David J. Grossman - dave@unpronounceable.com
+% This and other Bach MIDI files can be found at:
+% Dave's J.S. Bach Page
+% http://www.unpronounceable.com/bach
+% --------------------------------------
+% Original Filename: vp1-8tbd.mid
+% Last Modified: February 22, 1997

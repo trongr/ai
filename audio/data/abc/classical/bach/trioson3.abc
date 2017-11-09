@@ -1,0 +1,128 @@
+X: 1
+T: from bach/trioson3.mid
+M: 4/4
+L: 1/8
+Q:1/4=33
+K:G % 1 sharps
+% untitled
+% J.S.Bach - Triosonate - Adagio
+V:1
+% flute 1
+%%MIDI program 73
+% untitled
+% J.S.Bach - Triosonate - Adagio
+B/2^d/2e/2g/2 B/2^d/2e/2g/2 c/2B/2c/2e/2 c/2B/2c/2e/2| \
+A/2c/2^d/2f/2 A/2c/2^d/2f/2 G/2F/2G/2B/2 G/2F/2G/2B/2| \
+E/2F/2^G/2B/2 e/2f/2^g/2b/2 =f^g =f^c| \
+^F/2^G/2A/2^c/2 f/2^g/2a/2f/2 =c^d c^G|
+B/2=d/2^c/2^G/2 A/2=F/2^F/2A/2 D/2E/2F/2A/2 d/2e/2f/2A/2| \
+^DF E=G EG EG-| \
+G/2^A/2=A/2E/2 =F/2A/2^c/2=d<^ga<^cd/2| \
+d2 x2 d/2^f/2=g/2b/2 d/2f/2g/2b/2|
+e/2d/2e/2g/2 e/2d/2e/2g/2 A/2^c/2d/2f/2 A/2^c/2d/2f/2| \
+FA FD F/2G/2A/2^d/2 f/2g/2a/2f/2| \
+gb ge E/2^D/2E/2^A/2 ^c/2^d/2e/2g/2| \
+=f^d e2 x/2^f/2g/2e<^de/2|
+=c/2^d/2e/2=a/2 c/2^d/2e/2a/2 B/2^d/2e/2g/2 B/2^d/2e/2g/2| \
+A/2^d/2e/2f/2 A/2^d/2e/2f/2 G/2^d/2e/2b/2 G/2^d/2e/2b/2| \
+F/2^d/2e/2c'/2 F/2^d/2e/2c'/2 G/2^d/2e/2b/2 G/2^d/2e/2b/2| \
+^G/2e/2=f/2b/2 B/2e/2=f/2^g/2 c/2^d/2e/2a/2 B/2^d/2e/2=g/2|
+^A/2^d/2e/2g/2 B/2^d/2e/2g/2 ^c/2^d/2e/2g/2 ^f/2e/2^d/2e/2| \
+^d4 
+V:2
+% flute 2
+%%MIDI program 73
+x4 
+% untitled
+% J.S.Bach - Triosonate - Adagio
+e/2^g/2=a/2=c'/2 e/2^g/2a/2c'/2| \
+f/2e/2f/2a/2 f/2e/2f/2a/2 B/2^d/2e/2=g/2 B/2^d/2e/2g/2| \
+^GB ^GE ^G/2A/2B/2=f/2 ^g/2a/2b/2^g/2| \
+a^c' a^f ^D/2E/2F/2=c/2 ^d/2e/2f/2^g/2|
+=f^g ^fa fa fa| \
+A/2c/2B/2F/2 =G/2^D/2E/2G/2 c/2=d/2e/2g/2 c/2d/2e/2g/2| \
+^ce d=f3/2e/2=f/2d<ed/2| \
+A/2^c/2d/2^f/2 A/2^c/2d/2f/2 B/2A/2B/2d/2 B/2A/2B/2d/2|
+G/2B/2^c/2e/2 G/2B/2^c/2e/2 F/2E/2F/2A/2 F/2E/2F/2A/2| \
+D/2E/2F/2A/2 d/2e/2f/2a/2 ^df ^dB| \
+E/2F/2G/2B/2 e/2f/2g/2e/2 ^A^c ^AF| \
+=A/2=c/2B/2F/2 G/2^D/2E/2G<^AB<FE/2|
+E8| \
+E8| \
+E8| \
+E8|
+xg e^c ^A (3B/2^A/2^G/2 [^A/2-^A/2]^A^G/2| \
+[B/2-^A/2]B3-B/2 
+V:3
+% piano
+%%MIDI program 6
+% untitled
+% J.S.Bach - Triosonate - Adagio
+[B2=G2E2] [B2G2E2] [=c2=A2E2] [c2A2E2]| \
+[c2A2^D2] [c2A2^D2] [B2G2E2] [B2G2E2]| \
+[e2B2^G2] [e2B2^G2] [=f2B2^G2] [=f2B2^G2]| \
+[^f2^c2A2] [f2^c2A2] [f2^d2A2] [f-^d-^G][f^d=c]|
+[^g2=f2B2] [^f^c-A-][^c^cA] [=d2A2F2] [d2A2F2]| \
+[^d2A2F2] [eB-=G-][BBG] [=c2G2E2] [c2G2E2]| \
+[^c2G2E2] [=d2A2=F2] [d-^G][d-A] [dA-E-][^cAE]| \
+[d2A2^F2] [d2A2F2] [B2=G2D2] [B2G2D2]|
+[B2G2^C2] [B2G2^C2] [A2F2D2] [A2F2D2]| \
+[d2A2F2] [d2A2F2] [^d2A2F2] [^d2A2F2]| \
+[e2B2G2] [e2B2G2] [e2^c2^A2] [e-^c-F][e^c^A]| \
+[^d2B2=A2] [e2B2G2] [^c2^A2E2-] [B-FE][B=A^D]|
+[A2E2=C2] x2 [G2E2B,2] x2| \
+[A2F2E2] x2 [B2G2E2] x2| \
+[c2F2E2] x2 [e2B2E2] x2| \
+[=d2^G2E2] x6|
+[^c2^A2E2] x4 ^c3/2B/2| \
+[^d/2-^c/2B/2-F/2-][^d3-B3-F3-][^d/2B/2F/2] 
+V:4
+% piano
+%%MIDI program 6
+% untitled
+% J.S.Bach - Triosonate - Adagio
+E,E, E,E, E,E, E,E,| \
+E,E, E,E, E,E, E,E,| \
+=D,D, D,D, ^C,^C, ^C,^C,| \
+^C,^C, ^C,^C, ^C,^C, ^C,^C,|
+^C,^C, ^C,^C, =C,C, C,C,| \
+B,,B,, B,,B,, ^A,,^A,, ^A,,^A,,| \
+=A,,A,, A,,A,, A,,A,, A,,A,,| \
+D,D, D,D, D,D, D,D,|
+D,D, D,D, D,D, D,D,| \
+C,C, C,C, B,,B,, B,,B,,| \
+B,,B,, B,,B,, B,,B,, B,,B,,| \
+B,,B,, B,,B,, B,,B,, B,,B,,|
+E,2 x2 D,2 x2| \
+C,2 x2 B,,2 x2| \
+A,,2 x2 =G,,2 x2| \
+C,2 x6|
+^C,2 x4 F,,2| \
+B,,4 
+V:5
+% bass continuo
+%%MIDI program 42
+% untitled
+% J.S.Bach - Triosonate - Adagio
+E,E, E,E, E,E, E,E,| \
+E,E, E,E, E,E, E,E,| \
+D,D, D,D, ^C,^C, ^C,^C,| \
+^C,^C, ^C,^C, ^C,^C, ^C,^C,|
+^C,^C, ^C,^C, =C,C, C,C,| \
+B,,B,, B,,B,, ^A,,^A,, ^A,,^A,,| \
+=A,,A,, A,,A,, A,,A,, A,,A,,| \
+D,D, D,D, D,D, D,D,|
+D,D, D,D, D,D, D,D,| \
+C,C, C,C, B,,B,, B,,B,,| \
+B,,B,, B,,B,, B,,B,, B,,B,,| \
+B,,B,, B,,B,, B,,B,, B,,B,,|
+E,2 x2 D,2 x2| \
+C,2 x2 B,,2 x2| \
+A,,2 x2 G,,2 x2| \
+C,2 x6|
+^C,2 x4 F,,2| \
+B,,4 
+% J.S.Bach - Triosonate
+% 3o Movimento
+% seq. Eduardo Moreno
+% emoreno@regra.com.br

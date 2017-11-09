@@ -1,0 +1,366 @@
+X: 1
+T: from bach/vp2-2cou.mid
+M: 3/4
+L: 1/8
+Q:1/4=240
+K:F % 1 flats
+% untitled
+% A
+% A'
+% B
+% B'
+V:1
+% Solo Violin
+%%MIDI program 40
+x4 x3/2
+% untitled
+% A
+A/2| \
+A2  (3_DBA  (3GFE| \
+F2  (3A,GF  (3E=D_D| \
+=D3/2B,<G,F<ED/2|
+_D3/2A,<_DE<AG/2| \
+ (3F=DE  (3FGA  (3Bcd| \
+c3/2A<FC<A,_E/2| \
+ (3DB,C  (3D=EF  (3GAB|
+ (3AFG  (3ABc  (3d_ec| \
+ (3dBc  (3d=ef  (3gab| \
+E3/2c<gb<ag/2| \
+ (3agf  (3efg  (3cde|
+ (3fcB  (3ABc  (3FGA| \
+D3/2_G<Ac<BA/2| \
+ (3Bdc  (3BA=G  (3FED| \
+_D3/2E<Ag<fe/2|
+ (3fAG  (3FE=D  (3C=B,A,| \
+ (3_A,de  (3fed  (3cd=B| \
+ (3=A,cd  (3edc  (3=BcA| \
+ (3_ADE  (3FED  (3CD=B,|
+ (3CE=A  (3cea  (3=b_a=a| \
+ (3f_d=d  (3_B_A=A  (3F_D=D| \
+ (3_A,=b=a  (3_afe  (3dc=B| \
+ (3ced  (3c=B=A  (3EA_A|
+=A,4- A,3/2A/2| \
+% A'
+A2  (3_D_BA  (3GFE| \
+F2  (3A,GF  (3E=D_D| \
+=D3/2B,<G,F<ED/2|
+_D3/2A,<_DE<AG/2| \
+ (3F=DE  (3FGA  (3Bcd| \
+c3/2A<FC<A,_E/2| \
+ (3DB,C  (3D=EF  (3GAB|
+ (3AFG  (3ABc  (3d_ec| \
+ (3dBc  (3d=ef  (3gab| \
+E3/2c<gb<ag/2| \
+ (3agf  (3efg  (3cde|
+ (3fcB  (3ABc  (3FGA| \
+D3/2_G<Ac<BA/2| \
+ (3Bdc  (3BA=G  (3FED| \
+_D3/2E<Ag<fe/2|
+ (3fAG  (3FE=D  (3C=B,A,| \
+ (3_A,de  (3fed  (3cd=B| \
+ (3=A,cd  (3edc  (3=BcA| \
+ (3_ADE  (3FED  (3CD=B,|
+ (3CE=A  (3cea  (3=b_a=a| \
+ (3f_d=d  (3_B_A=A  (3F_D=D| \
+ (3_A,=b=a  (3_afe  (3dc=B| \
+ (3ced  (3c=B=A  (3EA_A|
+=A,4- A,3/2e/2| \
+% B
+e2  (3_Afe  (3d_d=B| \
+ (3_d=AE  (3A,_BA  (3GFE| \
+F3/2=d<Eg<fe/2|
+f3/2d<AF<DF/2| \
+ (3A,_ed  (3cBA  (3gf_e| \
+d3/2B<FD<B,d/2| \
+ (3_Gc'b  (3a=g_g  (3_edc|
+ (3B=GA  (3Bcd  (3_ed_e| \
+ (3AFG  (3ABc  (3dcd| \
+_E3/2d<gB<c_e/2| \
+ (3_GA=G  (3_G_ED  (3CB,A,|
+ (3B,D=G  (3Bdg  (3dg_g| \
+ (3=gdc  (3BAG  (3F=ED| \
+E3/2G<Bd<cB/2| \
+ (3AFG  (3A=B_d  (3=def|
+ (3gag  (3fed  (3_d=BA| \
+ (3fgf  (3e=dc  (3=BAG| \
+ (3efe  (3dc_B  (3Ac_e| \
+ (3d_ed  (3cBA  (3_Ad=b|
+_d2  (3=A,A=B  (3_d=d=e| \
+ (3G_G=G  (3_DGA  (3_BAG| \
+ (3FGA  (3=Dde  (3fga| \
+ (3c=Bc  (3_Gcd  (3_edc|
+ (3_B_G=G  (3_e_d=d  (3b_g=g| \
+_d'2- _d'/2 (3=d'_d'=d'c'/2b/2x/2| \
+ (3agf  (3=efd  (3Ad_d| \
+=d3/2B/2 _A2- _A/2=A/2x/2=B/2|
+ (3_DEG _B2- B/2A/2x/2G/2| \
+ (3FA_d  (3=dfa  (3A,D_D| \
+=D4- D3/2e/2| \
+% B'
+e2  (3_Afe  (3d_d=B|
+ (3_d=AE  (3A,_BA  (3GFE| \
+F3/2=d<Eg<fe/2| \
+f3/2d<AF<DF/2| \
+ (3A,_ed  (3cBA  (3gf_e|
+d3/2B<FD<B,d/2| \
+ (3_Gc'b  (3a=g_g  (3_edc| \
+ (3B=GA  (3Bcd  (3_ed_e| \
+ (3AFG  (3ABc  (3dcd|
+_E3/2d<gB<c_e/2| \
+ (3_GA=G  (3_G_ED  (3CB,A,| \
+ (3B,D=G  (3Bdg  (3dg_g| \
+ (3=gdc  (3BAG  (3F=ED|
+E3/2G<Bd<cB/2| \
+ (3AFG  (3A=B_d  (3=def| \
+ (3gag  (3fed  (3_d=BA| \
+ (3fgf  (3e=dc  (3=BAG|
+ (3efe  (3dc_B  (3Ac_e| \
+ (3d_ed  (3cBA  (3_Ad=b| \
+_d2  (3=A,A=B  (3_d=d=e| \
+ (3G_G=G  (3_DGA  (3_BAG|
+ (3FGA  (3=Dde  (3fga| \
+ (3c=Bc  (3_Gcd  (3_edc| \
+ (3_B_G=G  (3_e_d=d  (3b_g=g| \
+_d'2- _d'/2 (3=d'_d'=d'c'/2b/2x/2|
+ (3agf  (3=efd  (3Ad_d| \
+=d3/2B/2 _A2- _A/2=A/2x/2=B/2| \
+ (3_DEG _B2- B/2A/2x/2G/2| \
+ (3FA_d  (3=dfa  (3A,D_D|
+=D4- D3/2
+V:2
+% --------------------------------------
+%%MIDI program 40
+x6| \
+% untitled
+% A
+F2 x4| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+% A'
+F2 x4| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+% B
+_d2 x4| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+A2 x4| \
+x6| \
+x6| \
+x6|
+x6| \
+g2 x4| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+% B'
+_d2 x4|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+A2 x4| \
+x6|
+x6| \
+x6| \
+x6| \
+g2 
+V:3
+% Johann Sebastian Bach  (1685-1750)
+%%MIDI program 40
+x6| \
+% untitled
+% A
+=D2 x4| \
+D2 x4| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+% A'
+D2 x4| \
+D2 x4| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+% B
+A2 x4| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+A2 x4| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+% B'
+A2 x4|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+A2 
+% Six Sonatas and Partitas for Solo Violin
+% --------------------------------------
+% Partita No. 2 in D minor - BWV 1004
+% 2nd Movement: Courante
+% --------------------------------------
+% Sequenced with Cakewalk Pro Audio by
+% David J. Grossman - dave@unpronounceable.com
+% This and other Bach MIDI files can be found at:
+% Dave's J.S. Bach Page
+% http://www.unpronounceable.com/bach
+% --------------------------------------
+% Original Filename: vp2-2cou.mid
+% Last Modified: February 22, 1997

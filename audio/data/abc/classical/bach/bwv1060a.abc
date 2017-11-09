@@ -1,0 +1,928 @@
+X: 1
+T: from bach/bwv1060a.mid
+M: 4/4
+L: 1/8
+Q:1/4=100
+K:C % 0 sharps
+% Allegro - First Movement - BWV 1060 - J.S. Bach
+% MIDI Sequence Copyright 1997 Garrett W. Van Cleef
+V:1
+% Violin I
+%%MIDI program 48
+% Allegro - First Movement - BWV 1060 - J.S. Bach
+% MIDI Sequence Copyright 1997 Garrett W. Van Cleef
+Gc ^d=d Gc/2d/2 ^d/2=d/2^d/2=d/2| \
+cd/2^d/2 f/2g/2^g ^g=d x2| \
+F^A dc F^A/2c/2 d/2c/2d/2c/2| \
+^Ac/2d/2 ^d/2f/2=g gc x2|
+c'/2^a/2^g/2=g/2 ff f2- f/2c/2f/2g/2| \
+^g/2=g/2f/2^d/2 ^c^c ^c2- ^c/2^G/2^c/2^d/2| \
+f/2=g/2^g/2=g/2 f/2^d/2=d/2=c/2 Bg cf| \
+^d3/2=d/2 d/2c/2d/2c/2 c2 x2|
+x2 C2 x2 C2| \
+x2 C2 xg/2x/2 ^d/2x3/2| \
+x2 G2 x2 G2| \
+x2 G2 xB/2x/2 c/2x/2=D|
+Gc ^d=d Gc/2d/2 ^d/2=d/2^d/2=d/2| \
+cd/2^d/2 f/2g/2^g ^g=d f^A| \
+d/2x6x3/2| \
+F^A dc F^A/2c/2 d/2c/2d/2c/2|
+^Ac/2d/2 ^d/2f/2=g gc ^dG| \
+cx6x| \
+c/2^A/2^G/2=G/2 FF F2 x2| \
+^A/2^G/2=G/2F/2 ^D^D ^D2 x2|
+x8| \
+x4 x/2f/2^g/2=g/2 f/2^d/2=d/2c/2| \
+^A^d gf ^A^d/2f/2 g/2f/2g/2f/2| \
+^df/2g/2 ^g/2^a/2c' c'=d x2|
+d^d/2f/2 =g/2^g/2^a ^ac x2| \
+c=d/2^d/2 f/2=g/2^g ^g^A x2| \
+x2 =G2 x2 ^G2| \
+x2 ^A2 x2 ^d/2=d/2c/2^A/2|
+^G^G2<^G2^G/2=G/2 F/2^D/2=D/2C/2| \
+^A,/2x/2^A,/2x/2 ^A,/2x4x3/2| \
+x8| \
+x8|
+^A,^D GF ^A,^D/2F/2 G/2F/2G/2F/2| \
+^DF/2G/2 ^G/2^A/2c cF x2| \
+^G,=D F^D ^G,=D/2^D/2 F/2^D/2F/2^D/2| \
+=D^D/2F/2 =G/2^G/2^A ^A^D x2|
+x2 C2 x2 ^A,2| \
+xc/2x/2 =A/2x/2c/2x/2 =d2 ^A,2| \
+x2 =A,2 x2 =G,2| \
+xA/2x/2 ^F/2x/2A/2x/2 ^A2 x2|
+x8| \
+x8| \
+DG ^A=A DG/2A/2 ^A/2=A/2^A/2=A/2| \
+GA/2^A/2 c/2d/2^d ^d=A x2|
+C=F AG CF/2G/2 A/2G/2A/2G/2| \
+FG/2A/2 ^A/2c/2=d dG x2| \
+g/2f/2^d/2=d/2 cc c2- c/2G/2c/2d/2| \
+^d/2=d/2c/2^A/2 ^G^G ^G2 x2|
+x4 xd =Gc| \
+^A3/2=A<AG/2 G2 xG/2A/2| \
+B/2c/2d/2^d/2 fB x3B/2c/2| \
+=d/2^d/2f/2g/2 ^g=d x4|
+=Gc ^d=d Gc/2d/2 ^d/2=d/2^d/2=d/2| \
+c/2d/2^d/2f/2 g/2a/2^a/2c'/2 ^f=d xD/2E/2| \
+^F/2G/2=A/2^A/2 c^F x3^F/2G/2| \
+=A/2^A/2c/2d/2 ^d=A x4|
+x2 =d/2c/2^A/2=A/2 G/2D/2G/2^F/2 Gx| \
+x2 ^A/2^G/2=G/2=F/2 ^D/2^A,/2^D/2=D/2 ^Dx| \
+x2 g/2f/2^d/2=d/2 c/2G/2c/2B/2 cx| \
+x4 x/2c/2^d/2=d/2 c/2^A/2=A/2G/2|
+F^A dc F^A/2c/2 d/2c/2d/2c/2| \
+^Ac/2d/2 ^d/2f/2g g=A x2| \
+A^A/2c/2 =d/2^d/2f fG x2| \
+G=A/2^A/2 c/2=d/2^d ^dF x2|
+x2 =D2 x2 ^D2| \
+x2 F2 x2 ^a/2^g/2=g/2f/2| \
+^d^d ^d2- ^d/2F/2^D/2=D/2 C/2^D/2F/2G/2| \
+F/2G/2=A/2^A/2 c^D x4|
+x8| \
+x8| \
+F^A =dc F^A/2c/2 d/2c/2d/2c/2| \
+^Ac/2d/2 ^d/2f/2g gc x2|
+^D=A c^A ^D=A/2^A/2 c/2^A/2c/2^A/2| \
+=A^A/2c/2 =d/2^d/2f f^A x2| \
+x2 G,2 x2 ^G,2| \
+x2 ^A,2 x2 C2|
+x2 =D2 x2 E2| \
+xc'2x/2x/2 x/2c'3/2 x2| \
+x2 F2 x2 F2| \
+x2 F2 xc/2x/2 ^G/2x3/2|
+x2 C2 x2 C2| \
+x2 C2 xe/2x/2 f/2x/2=g/2x/2| \
+^G2 F2 x2 ^D2| \
+xF/2x/2 =D/2x/2F/2x/2 =G2 ^D2|
+x2 =D2 x2 C2| \
+xD/2x/2 B,/2x/2D/2x/2 ^D2 x2| \
+x8| \
+x8|
+Gc ^d=d Gc/2d/2 ^d/2=d/2^d/2=d/2| \
+cd/2^d/2 f/2g/2^g ^g=d x2| \
+F^A dc F^A/2c/2 d/2c/2d/2c/2| \
+^Ac/2d/2 ^d/2f/2=g gc x2|
+c'/2^a/2^g/2=g/2 ff f2- f/2c/2f/2g/2| \
+^g/2=g/2f/2^d/2 ^c^c ^c2 x2| \
+x4 xg =cf| \
+^d3/2=d<dc/2 c2 xD/2E/2|
+^F/2G/2=A/2^A/2 c^F x3^F/2G/2| \
+=A/2^A/2c/2d/2 ^d=A x4| \
+G=d =f^d G=d/2^d/2 f/2^d/2f/2^d/2| \
+=d/2c/2d/2^d/2 f/2g/2^g B=D x=G/2A/2|
+B/2c/2d/2^d/2 fB x3B/2c/2| \
+=d/2^d/2f/2g/2 ^g=d x4| \
+=Gc ^d=d Gc/2d/2 ^d/2=d/2^d/2=d/2| \
+cd/2^d/2 f/2g/2^g ^g=d x2|
+F^A dc F^A/2c/2 d/2c/2d/2c/2| \
+^Ac/2d/2 ^d/2f/2=g gc x2| \
+c'/2^a/2^g/2=g/2 ff f2- f/2c/2f/2g/2| \
+^g/2=g/2f/2^d/2 ^c^c ^c2- ^c/2^G/2^c/2^d/2|
+f/2=g/2^g/2=g/2 f/2^d/2=d/2=c/2 Bg cf| \
+^d3/2=d<dc/2 c3-c/2
+V:2
+% Violin II
+%%MIDI program 48
+% Allegro - First Movement - BWV 1060 - J.S. Bach
+% MIDI Sequence Copyright 1997 Garrett W. Van Cleef
+C^D GF ^D^D/2F/2 G/2F/2G/2F/2| \
+^DF/2G/2 Cc =dF x2| \
+^A,D F^D =DD/2^D/2 F/2^D/2F/2^D/2| \
+=D^D/2F/2 ^A,^A c^D x2|
+x2 c/2^A/2^G/2=G/2 FC x2| \
+x2 ^G/2=G/2F/2^D/2 ^C^G, x2| \
+x=D/2^D/2 F/2=G/2^G =GG =cc| \
+c3/2=d/2 B/2=A/2B/2A/2 G2 x2|
+x2 C2 x2 C2| \
+x2 C2 xG/2x/2 c/2x3/2| \
+x2 G2 x2 G2| \
+x2 G2 xG/2x/2 c/2x/2G|
+G^D GF ^D^D/2F/2 G/2F/2G/2F/2| \
+^DF/2G/2 Cc =dF x2| \
+x8| \
+^A,D F^D =DD/2^D/2 F/2^D/2F/2^D/2|
+=D^D/2F/2 ^A,^A c^D x2| \
+x8| \
+x4 =DF/2^D/2 =D/2C/2^A,/2^G,/2| \
+=G,/2x/2D/2x2x/2 C^D/2=D/2 C/2^A,/2^G,/2=G,/2|
+^G,x6x| \
+x4 x/2d/2f/2^d/2 =d/2c/2^A/2^G/2| \
+=G^A ^d=d ^DG/2^G/2 ^A/2^G/2^A/2^G/2| \
+=Gx4c/2x/2 c/2x/2f/2x/2|
+f/2x4x/2^A/2x/2 ^A/2x/2^d/2x/2| \
+^d/2x4x/2^G/2=G/2 F/2^D/2=D/2C/2| \
+^A,/2x/2^A/2x2x/2 C/2x/2^G/2x2x/2| \
+^A,/2x/2=G/2x2x/2 ^G,/2x/2^D/2x2x/2|
+^D/2=D/2C/2^A,/2 ^G,x F/2x/2^A,/2x2x/2| \
+F/2^D/2=D/2C/2 ^A,x4x| \
+x8| \
+x8|
+=G,^A, ^D=D ^A,G,/2^G,/2 ^A,/2^G,/2^A,/2^G,/2| \
+=G,^G,/2^A,/2 C/2D/2^D F^G x2| \
+=D^A, D^A, D^A,/2C/2 D/2C/2D/2C/2| \
+^A,^G =GF ^D^A, x2|
+x2 C2 x2 ^A,2| \
+x=A/2x/2 c/2x/2A/2x/2 ^A2 ^A,2| \
+x2 =A,2 x2 G,2| \
+xc/2x/2 A/2x/2^F/2x/2 G2 x2|
+x8| \
+x8| \
+x2 G/2x/2=D/2x2x/2 d/2x/2^A/2x/2| \
+G=A/2^A/2 c/2d/2^d ^d=A x2|
+x2 =F/2x/2C/2x2x/2 c/2x/2A/2x/2| \
+FG/2A/2 ^A/2c/2=d dG x2| \
+x2 G/2F/2^D/2=D/2 Cx3| \
+x2 ^D/2^C/2=C/2^A,/2 ^G,x3|
+x2 ^D/2=D/2C/2^A,/2 C=A ^Ac| \
+d^d =dc B=G,/2=A,/2 B,/2C/2D| \
+x2 B,/2C/2D/2^D/2 Fx B,/2C/2=D/2^D/2| \
+Fx4=D/2x/2 B,/2x/2G/2x/2|
+G^D GF ^DG c/2B/2c/2B/2| \
+cG c=d/2^d/2 A=D/2E/2 ^F/2G/2A| \
+x2 ^F/2G/2A/2^A/2 cx ^F/2G/2=A/2^A/2| \
+cx4=A/2x/2 ^F/2x/2d/2x/2|
+dg/2^f/2 gx D/2C/2^A,/2=A,/2 G,x| \
+x^d/2=d/2 ^dx ^A/2^G/2=G/2=F/2 ^Dx| \
+xc/2B/2 cx G/2F/2^D/2=D/2 Cx| \
+x4 x/2=A/2c/2^A/2 =A/2G/2F/2^D/2|
+=DF ^A=A ^A,D/2^D/2 F/2^D/2F/2^D/2| \
+=Dx4G/2x/2 G/2x/2c/2x/2| \
+c/2x4x/2F/2x/2 F/2x/2^A/2x/2| \
+^A/2x4x/2^d/2=d/2 c/2^A/2=A/2G/2|
+F/2x/2f/2x2x/2 G/2x/2^d/2x2x/2| \
+F/2x/2=d/2x2x/2 ^D/2x/2^A/2x2x/2| \
+^A/2^G/2=G/2F/2 ^Dx c/2x/2F/2x2x/2| \
+c/2^A/2=A/2G/2 Fx4x|
+x8| \
+x8| \
+=DF ^A=A ^AD/2^D/2 F/2^D/2F/2^D/2| \
+=D^D/2F/2 G/2=A/2^A ^A^D x2|
+=AF AF AF/2G/2 A/2G/2A/2G/2| \
+F^d =dc ^AF x2| \
+x2 e2 x2 f2| \
+x2 ^c2 x2 =c2|
+x2 ^A2 x2 g2| \
+xf ^G^A E2 x2| \
+x2 F2 x2 F2| \
+x2 F2 xc/2x/2 f/2x3/2|
+x2 C2 x2 C2| \
+x2 C2 xC/2x/2 F/2x/2C/2x/2| \
+F2 F2 x2 ^D2| \
+x=d/2x/2 f/2x/2d/2x/2 ^d2 ^D2|
+x2 =D2 x2 C2| \
+xf/2x/2 d/2x/2B/2x/2 c2 x2| \
+x8| \
+x8|
+=g8-| \
+g/2c/2d/2^d/2 f/2g/2^g ^g=d x2| \
+f8-| \
+f/2^A/2c/2d/2 ^d/2f/2=g gc x2|
+x2 c/2^A/2^G/2=G/2 Fx3| \
+x2 ^G/2^F/2=F/2^D/2 ^Cx3| \
+x2 ^G/2=G/2F/2^D/2 F=D ^DF| \
+G^G =G=D2D/2E/2 ^F/2G/2=A|
+x2 ^F/2G/2A/2^A/2 =cx ^F/2G/2=A/2^A/2| \
+cx4=A/2x/2 ^F/2x/2d/2x/2| \
+BB dc DB/2c/2 d/2c/2d/2c/2| \
+B/2A/2B/2c/2 d/2^d/2=f2G/2A/2 B/2c/2=d|
+x2 B/2c/2d/2^d/2 fx B/2c/2=d/2^d/2| \
+fx4=d Bd| \
+c^D GF ^DG c/2B/2c/2B/2| \
+cc cf f^A x2|
+^A,=D F^D =DF ^A/2=A/2^A/2=A/2| \
+^A^A ^A^d ^d^D x2| \
+x2 c/2^A/2^G/2=G/2 FC x2| \
+x2 ^G/2=G/2F/2^D/2 ^C^G, x2|
+x=D/2^D/2 F/2=G/2^G =GG =cc| \
+c3/2=d<BG/2 G3-G/2
+V:3
+% Viola
+%%MIDI program 48
+% Allegro - First Movement - BWV 1060 - J.S. Bach
+% MIDI Sequence Copyright 1997 Garrett W. Van Cleef
+G2 x2 C2 x2| \
+G,C C^G ^G^A, x2| \
+D2 x2 ^A,2 x2| \
+F,^A, ^A,^D ^D^G, x2|
+F2 x2 C/2^A,/2^G,/2=G,/2 F,x| \
+^C2 x2 ^G,/2=G,/2F,/2^D,/2 ^C,x| \
+x8| \
+xF/2^D/2 =D/2=C/2B,/2C/2 DC ^D^G|
+x2 C2 x2 C2| \
+x2 C2 x^D/2x/2 ^G/2x3/2| \
+x2 =G2 x2 G2| \
+x2 G2 x=D/2x/2 ^D/2x/2G|
+^D2 x2 C2 x2| \
+G,C C^G ^G^A, x2| \
+x8| \
+=D2 x2 ^A,2 x2|
+F,^A, ^A,^D ^D^G, x2| \
+x8| \
+x4 =DF/2^D/2 =D/2C/2^A,/2^G,/2| \
+=G,/2x/2D/2x2x/2 C^D/2=D/2 C/2^A,/2^G,/2=G,/2|
+^G,x6x| \
+x8| \
+^D=G ^A^G =G^A ^d/2=d/2^d/2=d/2| \
+^Ax4F/2x/2 F/2x/2^G/2x/2|
+^G/2x4x/2^D/2x/2 ^D/2x/2=G/2x/2| \
+G/2x4x/2^A,/2C/2 =D/2^D/2F-| \
+F^D/2x2x/2 F/2x/2C/2x2x/2| \
+G/2x/2^A,/2x2x/2 ^G/2x/2^G,/2x2x/2|
+^D/2=D/2C/2^A,/2 ^G,x ^A,/2x/2F/2x2x/2| \
+F/2^D/2=D/2C/2 ^A,x4x| \
+x8| \
+x8|
+^D,=G, ^A,^G, =G,^A, ^D/2=D/2^D/2=D/2| \
+^DC ^D,^G, ^G,^A, x2| \
+FF, ^G,=G, FF,/2G,/2 ^G,/2=G,/2^G,/2=G,/2| \
+F,^D ^D=D ^DG, x2|
+x2 C2 x2 ^A,2| \
+x^D/2x/2 C/2x/2F/2x/2 F2 ^A,2| \
+x2 =A,2 x2 G,2| \
+xA,/2x/2 A,/2x/2=D/2x/2 D2 x2|
+x8| \
+x8| \
+D8-| \
+D^A, G,G =Ac AF|
+C8-| \
+CA, F,F G^A G^D| \
+x4 G/2F/2^D/2=D/2 Cx| \
+x4 ^D/2^C/2=C/2^A,/2 ^G,x|
+x4 =A/2=G/2^F/2E/2 =D^D| \
+^A,G, =DD D2 x2| \
+G,/2=A,/2B,/2C/2 Dx A,/2B,/2C/2D/2 ^Dx| \
+x4 x=F/2x/2 =D/2x/2G,/2x/2|
+C2 x2 C^D/2F/2 G/2F/2G/2F/2| \
+^D/2F/2^D/2=D/2 CG, D2 x2| \
+D,/2E,/2^F,/2G,/2 A,x D,/2E,/2^F,/2G,/2 A,x| \
+x4 xC/2x/2 A,/2x/2D,/2x/2|
+G,x2G/2^F/2 GD3/2C/2^A,/2C/2| \
+Dx2^D/2=D/2 ^D^A,3/2^G,/2=G,/2^G,/2| \
+^A,x2c/2B/2 c=G3/2=F/2^D/2F/2| \
+G/2F/2^D/2=D/2 C/2D/2^D2=A, ^A,C|
+=DD GF DF ^A/2=A/2^A/2=A/2| \
+Fx4C/2x/2 C/2x/2^D/2x/2| \
+^D/2x4x/2^A,/2x/2 ^A,/2x/2=D/2x/2| \
+D/2x4x/2F,/2G,/2 =A,/2^A,/2C-|
+C/2x/2^A, x2 C/2x/2G,/2x2x/2| \
+D/2x/2F,/2x2x/2 ^D/2x/2F,/2x2x/2| \
+^A/2^G/2=G/2F/2 ^Dx F/2x/2c/2x2x/2| \
+c/2^A/2=A/2G/2 Fx4x|
+x8| \
+x8| \
+^A,=D F^D =DF ^A/2=A/2^A/2=A/2| \
+^AG ^A,^D ^DF x2|
+cC GF cC/2=D/2 ^D/2=D/2^D/2=D/2| \
+C^A ^A=A ^AD x2| \
+x2 G2 x2 F2| \
+x2 E2 x2 C2|
+x2 F2 x2 E2| \
+xC ^CF, =C2 x2| \
+x2 F2 x2 F2| \
+x2 F2 x^G/2x/2 c/2x3/2|
+x2 C2 x2 C2| \
+x2 C2 x=G,/2x/2 ^G,/2x/2C/2x/2| \
+C2 F2 x2 ^D2| \
+x^G/2x/2 F/2x/2^A/2x/2 ^A2 ^D2|
+x2 =D2 x2 C2| \
+xD/2x/2 D/2x/2=G/2x/2 G2 x2| \
+x8| \
+x8|
+x2 C/2x/2G,/2x2x/2 G/2x/2^D/2x/2| \
+xG,/2x/2 ^A,/2x/2C/2x/2 =DF D^A,| \
+x2 ^A,/2x/2F,/2x2x/2 F/2x/2D/2x/2| \
+xF,/2x/2 G,/2x/2^A,/2x/2 C^D C^G,|
+x4 C/2^A,/2^G,/2=G,/2 F,x| \
+x4 ^G,/2^F,/2=F,/2^D,/2 ^C,x| \
+x4 =D/2=C/2B,/2=A,/2 =G,C,| \
+^D,C, G,G ^F2 x2|
+=D/2E/2^F/2G/2 Ax D/2E/2^F/2G/2 Ax| \
+x4 xc/2x/2 A/2x/2D/2x/2| \
+D=F ^G=G B,F/2G/2 ^G/2=G/2^G/2=G/2| \
+F/2^D/2=D/2C/2 B,D D2 x2|
+G,/2A,/2B,/2C/2 Dx G,/2A,/2B,/2C/2 Dx| \
+x4 xF DG,| \
+G,G cB c^D/2F/2 G/2F/2G/2F/2| \
+^DF/2G/2 ^G/2^A/2c ^AF x2|
+=DF ^A=A ^AD/2^D/2 F/2^D/2F/2^D/2| \
+=D^D/2F/2 =G/2^G/2^A c^G x2| \
+F2 x2 C/2^A,/2^G,/2=G,/2 F,x| \
+^C2 x2 ^G,/2=G,/2F,/2^D,/2 ^C,x|
+xF/2^D/2 =D/2=C/2B,/2C/2 DC ^D^G| \
+=G^G =GF ^D3-^D/2
+V:4
+% Continuo
+%%MIDI program 48
+% Allegro - First Movement - BWV 1060 - J.S. Bach
+% MIDI Sequence Copyright 1997 Garrett W. Van Cleef
+C,2 x2 C2 x2| \
+C,C ^G,F, ^A,,^A, x2| \
+^A,,2 x2 ^A,2 x2| \
+^A,,^A, =G,^D, ^G,,^G, x2|
+^G,C/2^A,/2 ^G,C/2^A,/2 ^G,C/2^A,/2 ^G,=G,| \
+F,^G,/2=G,/2 F,^G,/2=G,/2 F,^G,/2=G,/2 F,x| \
+F,2 x2 F,^D, ^G,F,| \
+=G,F, G,G,, C,,2- C,,/2B,,/2C,/2=D,/2|
+C,,2 x2 C,,2 x2| \
+C,,2 x2 C,,C,/2B,,/2 C,/2D,/2^D,/2F,/2| \
+G,2 x2 G,2 x2| \
+G,2 x2 G,,G,/2F,/2 ^D,/2=D,/2C,/2B,,/2|
+C,2 x2 C,2 x2| \
+C,C ^G,F, ^A,,^A, x2| \
+x8| \
+^A,,2 x2 ^A,,2 x2|
+^A,,^A, =G,^D, ^G,,^G, x2| \
+x8| \
+^G,C/2^A,/2 ^G,/2=G,/2F,/2^D,/2 =D,^A,, x2| \
+G,^A,/2^G,/2 =G,/2F,/2^D,/2=D,/2 C,^G,, x2|
+^D,^G,/2=G,/2 F,^D,/2x/2 =D,F,/2^D,/2 =D,^A,,/2x/2| \
+^D,G, C^G, =D,^A,, C,D,| \
+^D,2 x2 ^D,,2 x2| \
+^D,^D C^G, F,^G,/2=G,/2 F,/2^D,/2=D,/2C,/2|
+D,D ^A,G, ^D,G,/2F,/2 ^D,/2=D,/2C,/2^A,,/2| \
+C,C ^G,F, D,F,/2^D,/2 =D,/2C,/2^A,,/2^G,,/2| \
+=G,,2 x2 ^G,,2 x2| \
+^A,,2 x2 C,^D,/2=D,/2 C,^D,/2=D,/2|
+C,^D,/2=D,/2 C,F,/2^D,/2 =D,F,/2^D,/2 =D,F,/2^D,/2| \
+=D,F,/2^D,/2 =D,^A,, ^D,C, ^G,,F,| \
+=D,^A,, =G,^D, C,C/2^A,/2 ^G,/2=G,/2F,/2^G,/2| \
+=G,/2F,/2^D,/2=D,/2 C,/2^A,,/2=A,,/2C,/2 ^A,,=A, ^A,^A,,|
+^D,,2 x2 ^D,,2 x2| \
+^D,,^D, C,^G,, =D,,D,/2^D,/2 F,/2=G,/2^G,| \
+^A,,2 x2 ^A,,2 x2| \
+^A,,C, ^A,,^G,, =G,,G,/2^G,/2 ^A,/2C/2^C|
+=C,2 x2 ^A,,2 x2| \
+=A,,C, F,F,, ^A,,2 x2| \
+=A,,2 x2 =G,,2 x2| \
+^F,,A,, =D,D,, G,,^A,, ^D,^D,,|
+=A,,C, =F,F,, ^A,,=D, G,G,,| \
+C,^D, =A,C =D,^D, =D,C,| \
+^A,,/2x/2G,,/2x2x/2 G,/2x/2^A,,/2x2x/2| \
+^A,G, ^D,C, F,,/2x/2F,/2x2x/2|
+=A,,/2x/2F,,/2x2x/2 F,/2x/2A,,/2x2x/2| \
+A,F, =D,^A,, ^D,,^D, x2| \
+x4 ^D,/2x/2C/2x2x/2| \
+x4 C,/2x/2^G,/2x2x/2|
+x4 =A,,^F,/2x/2 =G,/2x/2^D,/2x/2| \
+=D,C, D,D,, G,,/2x/2G,/2x2x/2| \
+G,,/2x/2G,/2x2x/2 G,,/2x/2G,/2x2x/2| \
+G,,/2x/2G,/2x/2 D,=F, B,,D, G,,B,,|
+C,2 x2 C,2 x2| \
+C,D, ^D,C, =D,/2x/2D,,/2x2x/2| \
+D,/2x/2D,,/2x2x/2 D,/2x/2D,,/2x2x/2| \
+D,D A,C ^F,A, D,^F,|
+^A,,D/2C/2 ^A,D/2C/2 ^A,D/2C/2 ^A,=A,/2x/2| \
+G,/2x/2^A,/2^G,/2 =G,^A,/2^G,/2 =G,^A,/2^G,/2 =G,=F,/2x/2| \
+^D,/2x/2G,/2F,/2 ^D,G,/2F,/2 ^D,G,/2F,/2 ^D,=D,| \
+C,/2x/2^D,/2x/2 G,/2x/2^A,/2x/2 =A,F, G,A,|
+^A,x3 ^A,,2 x2| \
+^A,,/2x/2^A,/2x/2 G,/2x/2^D,/2x/2 C,^D,/2=D,/2 C,/2B,,/2=A,,/2G,,/2| \
+A,,/2x/2A,/2x/2 F,/2x/2D,/2x/2 ^A,,D,/2C,/2 ^A,,/2=A,,/2G,,/2F,,/2| \
+G,,/2x/2G,/2x/2 ^D,/2x/2C,/2x/2 A,,C,/2^A,,/2 =A,,/2G,,/2F,,/2^D,,/2|
+=D,,2 x2 ^D,,2 x2| \
+F,,2 x2 G,,^A,,/2^G,,/2 =G,,^A,,/2^G,,/2| \
+=G,,^A,,/2^G,,/2 =G,,C,/2^A,,/2 =A,,C,/2^A,,/2 =A,,C,/2^A,,/2| \
+=A,,C,/2^A,,/2 =A,,F,, ^A,,/2x/2G,,/2x/2 ^D,,/2x/2C,/2x/2|
+=A,,F,, =D,^A,, G,,G,/2F,/2 ^D,/2=D,/2C,/2^D,/2| \
+=D,/2C,/2^A,,/2=A,,/2 G,,/2F,,/2E,,/2G,,/2 F,,E, F,F,,| \
+^A,,2 x2 ^A,,2 x2| \
+^A,,^A, G,^D, =A,,A,/2^A,/2 C/2=D/2^D|
+F,2 x2 F,,2 x2| \
+F,G, F,^D, =D,/2C,/2D,/2^D,/2 F,/2G,/2^G,| \
+=G,,2 x2 ^G,,2 x2| \
+^A,,2 x2 C,2 x2|
+=D,2 x2 E,2 x2| \
+F,^D, ^C,^C =C^A, ^G,=G,| \
+F,2 x2 F,2 x2| \
+F,2 x2 F,F,,/2E,,/2 F,,/2G,,/2^G,,/2^A,,/2|
+C,2 x2 C,2 x2| \
+C,2 x2 C,C/2^A,/2 ^G,/2=G,/2F,/2E,/2| \
+F,2 x2 ^D,2 x2| \
+=D,F, ^A,^A,, ^D,2 x2|
+=D,2 x2 C,2 x2| \
+B,,D, G,G,, C,^D, ^G,^G,,| \
+=D,F, ^A,^A,, ^D,=G, CC,| \
+F,^G, =D,F, =G,^G, =G,F,|
+^D,/2x/2C,/2x2x/2 C/2x/2^D,/2x2x/2| \
+^DC ^G,F, ^A,,^A, x2| \
+=D,/2x/2^A,,/2x2x/2 ^A,/2x/2D,/2x2x/2| \
+D^A, =G,^D, ^G,,/2x/2^G,/2x2x/2|
+x4 ^G,,F, x2| \
+x4 F,,^C, x2| \
+x4 =D,,B,, =C,^G,| \
+=G,F, G,G,, D,,D, x2|
+D,,/2x/2D,/2x2x/2 D,,/2x/2D,/2x2x/2| \
+D,/2x/2D/2x/2 =A,C ^F,A, D,^F,| \
+G,D, B,,C, =F,/2^D,/2=D,/2C,/2 B,,C,| \
+G,,G, D,B,, G,,/2x/2G,/2x2x/2|
+G,,G, x2 G,,G, x2| \
+G,,G, D,F, B,,D, G,,B,,| \
+C,,2 x2 C,,2 x2| \
+C,C ^G,F, ^A,,^A, x2|
+^A,,2 x2 ^A,,2 x2| \
+^A,,^A, =G,^D, ^G,,^G, x2| \
+^G,C/2^A,/2 ^G,C/2^A,/2 ^G,C/2^A,/2 ^G,=G,/2x/2| \
+F,^G,/2=G,/2 F,^G,/2=G,/2 F,^G,/2=G,/2 F,^D,/2x/2|
+^C,/2=C,/2B,,/2C,/2 =D,/2^D,/2F,2^D, ^G,F,| \
+=G,F, G,G,, C,,3-C,,/2
+V:5
+% Harpsichord I (RH)
+%%MIDI program 6
+% Allegro - First Movement - BWV 1060 - J.S. Bach
+% MIDI Sequence Copyright 1997 Garrett W. Van Cleef
+[G^D-][c^D] [^dG][=dF] [G/2-^D/2][G/2=D/2][c/2^D/2][=d/2F/2] [^d/2G/2][=d/2F/2][^d/2G/2][=d/2F/2]| \
+[c^D]=d/2^d/2 f/2g/2^g ^g=d x2| \
+[FD-][^AD] [dF][c^D] [F/2-=D/2][F/2C/2][^A/2D/2][c/2^D/2] [=d/2F/2][c/2^D/2][=d/2F/2][c/2^D/2]| \
+[^A=D]c/2d/2 ^d/2f/2=g gc x2|
+c'/2^a/2^g/2=g/2 ff f/2^d/2f/2^d/2 f/2c/2f/2g/2| \
+^g/2=g/2f/2^d/2 ^c^c ^c/2^A/2^c/2^A/2 ^c/2^G/2^c/2^d/2| \
+f/2=g/2^g/2=g/2 f/2^d/2=d/2=c/2 Bg cf| \
+^d3/2=d/2 d/2c/2d/2c/2 c2- c/2^G/2=G/2F/2|
+^D/2c/2F/2c/2 ^D/2c/2=D/2c/2 ^D/2c/2^G/2c/2 =G/2c/2F/2c/2| \
+G/2c/2F/2c/2 ^D/2c/2=D/2c/2 ^D/2=D/2C/2D/2 ^D/2F/2G/2=A/2| \
+B/2G/2c/2G/2 =d/2G/2c/2G/2 B/2G/2F/2D/2 ^D/2G/2c/2^d/2| \
+^g/2f/2=d/2B/2 c/2^d/2^f/2a/2 c'/2a/2b/2=d'/2 =g/2=f/2^d/2=d/2|
+[G^D-][c^D] [^dG][=dF] [G/2-^D/2][G/2=D/2][c/2^D/2][=d/2F/2] [^d/2G/2][=d/2F/2][^d/2G/2][=d/2F/2]| \
+[c^DC]=d/2^d/2 f/2g/2^g ^g=d ^A,/2C/2D/2^D/2| \
+F/2^A,/2^D/2^A,/2 ^G/2^A,/2=G/2^A,/2 F/2^A,/2^D/2^A,/2 =D/2^A,/2C/2^A,/2| \
+[D^A,-][^A^A,] [dF][c^D] [F/2-=D/2][F/2C/2][^A/2D/2][c/2^D/2] [=d/2F/2][c/2^D/2][=d/2F/2][c/2^D/2]|
+^Ac/2=d/2 ^d/2f/2g gc C/2B,/2C/2=D/2| \
+^D/2C/2F/2C/2 ^D/2C/2^G/2C/2 =G/2C/2F/2C/2 ^D/2C/2=D/2C/2| \
+c/2^A/2^G/2=G/2 FF F2 x2| \
+^A/2^G/2=G/2F/2 ^D^D ^D2 x2|
+x8| \
+x4 x/2f/2^g/2=g/2 f/2^d/2=d/2c/2| \
+[^AG-^D-][^dG^D] [g^A][f^G] [^A/2-=G/2][^A/2F/2][^d/2G/2][f/2^G/2] [=g/2^A/2][f/2^G/2][=g/2^A/2][f/2^G/2]| \
+[^d=G^D]f/2g/2 ^g/2^a/2c' c'=d x2|
+d^d/2f/2 =g/2^g/2^a ^ac x2| \
+c=d/2^d/2 f/2=g/2^g ^g^A x2| \
+x2 [^d^A=G][^AG^D] x2 [^d^AG][^AG^D]| \
+x2 [^d^AG][^AG^D] x2 ^d/2=d/2c/2^A/2|
+^G^G2<^G2^G/2=G/2 F/2^D/2=D/2C/2| \
+^A,^A, ^A,x4x| \
+x8| \
+x8|
+[^A,G,-][^DG,] GF ^A,^D/2F/2 G/2F/2G/2F/2| \
+[^DG,]F/2G/2 ^G/2^A/2c cF x2| \
+^G,=D F^D ^G,=D/2^D/2 F/2^D/2F/2^D/2| \
+[=D^G,]^D/2F/2 =G/2^G/2^A ^A^D x2|
+^d/2c/2^G/2^D/2 ^G/2c/2^d/2=d/2 ^d/2^A/2=G/2^D/2 G/2^A/2^d/2=d/2| \
+^d/2c/2=A/2F/2 A/2c/2^d/2c/2 =d/2^A/2F/2D/2 F/2^A/2d/2^A/2| \
+c/2=A/2^F/2C/2 ^F/2A/2c/2^A/2 c/2G/2^D/2C/2 ^D/2G/2c/2^A/2| \
+c/2=A/2^F/2=D/2 ^F/2A/2c/2A/2 ^A/2G/2D/2G/2 ^A/2d/2^d/2=d/2|
+c/2=A/2=F/2A/2 c/2^d/2f/2^d/2 =d/2^A/2G/2^A/2 d/2f/2g/2f/2| \
+^d/2c/2G/2c/2 ^d/2g/2=a/2g/2 ^f/2c/2A/2c/2 ^f/2a/2^a/2=a/2| \
+g/2=d/2^A/2c/2 d/2g/2c/2g/2 ^A/2G/2D/2^F/2 G/2D/2G/2D/2| \
+^A,D Gc3/2=A/2=F/2A/2 c/2f/2g/2f/2|
+^d/2c/2A/2^A/2 c/2^d/2^A/2^d/2 =A/2F/2C/2E/2 F/2C/2F/2C/2| \
+A,C F^A3/2G/2^D/2G/2 ^A/2=d/2^d/2=d/2| \
+cg/2f/2 ^d/2=d/2c/2B/2 c/2^G/2=G/2F/2 ^D/2=D/2C/2B,/2| \
+C^d/2=d/2 c/2^A/2^G/2=G/2 ^G/2F/2^D/2^C/2 =C/2^A,/2^G,/2=G,/2|
+^G,/2^A,/2C/2=D/2 ^D^D3/2^d/2=d/2c/2 ^A/2=A/2=G/2^F/2| \
+G3/2A<^FG/2 G2 xG/2A/2| \
+B/2c/2d/2^d/2 =fB x3B/2c/2| \
+=d/2^d/2f/2g/2 ^g/2f/2=d/2^d/2 f/2=d/2B/2c/2 d/2^G/2=G/2F/2|
+^Dc [^dG][=dF] [G/2-^D/2][G/2=D/2][c/2^D/2][=d/2F/2] [^d/2G/2][=d/2F/2][^d/2G/2][=d/2F/2]| \
+[c/2^D/2-C/2-][=d/2^D/2C/2]^d/2f/2 g/2a/2^a/2c'/2 ^f=d xD/2E/2| \
+^F/2G/2=A/2^A/2 c^F x3^F/2G/2| \
+=A/2^A/2c/2d/2 ^d/2c/2=A/2^A/2 c/2=A/2^F/2G/2 A/2^D/2=D/2C/2|
+^A,/2=A,/2G, d/2c/2^A/2=A/2 G/2D/2G/2^F/2 Gx| \
+x2 ^A/2^G/2=G/2=F/2 ^D/2^A,/2^D/2=D/2 ^Dx| \
+x2 g/2f/2^d/2=d/2 c/2G/2c/2B/2 cx| \
+x4 x/2c/2^d/2=d/2 c/2^A/2=A/2G/2|
+[FD-][^AD] [dF][c^D] [F/2-=D/2][F/2C/2][^A/2D/2][c/2^D/2] [=d/2F/2][c/2^D/2][=d/2F/2][c/2^D/2]| \
+[^A=D^A,]c/2d/2 ^d/2f/2g g=A x2| \
+A^A/2c/2 =d/2^d/2f fG x2| \
+G=A/2^A/2 c/2=d/2^d ^dF x2|
+x2 [^af=d][fd^A] x2 [^afd][fd^A]| \
+x2 [^afd][fd^A] x2 ^a/2^g/2=g/2f/2| \
+^d^d ^d2- ^d/2F/2^D/2=D/2 C/2^D/2F/2G/2| \
+F/2G/2=A/2^A/2 c^D x4|
+x8| \
+x8| \
+[F=D-][^AD] [dF][c^D] [F/2-=D/2][F/2C/2][^A/2D/2][c/2^D/2] [=d/2F/2][c/2^D/2][=d/2F/2][c/2^D/2]| \
+[^A=D^A,]c/2d/2 ^d/2f/2g gc x2|
+^D=A [c^D][^A=D] [^D/2-C/2][^D/2^A,/2][=A/2C/2][^A/2=D/2] [c/2^D/2][^A/2=D/2][c/2^D/2][^A/2=D/2]| \
+[=A^D]^A/2c/2 =d/2^d/2f f^A x2| \
+xg/2^g/2 ^a/2^g/2^a/2=g/2 c/2e/2f/2g/2 ^g/2=g/2^g/2f/2| \
+c/2=d/2e/2f/2 =g/2f/2g/2e/2 f4-|
+f/2^A/2f/2g/2 ^g/2=g/2^g/2f/2 =g/2f/2e/2d/2 cc| \
+cc'2^a3/2^g/2=g/2f/2 g/2^c/2=c/2^A/2| \
+^G/2F/2^A/2F/2 ^G/2F/2=G/2F/2 ^G/2F/2^c/2F/2 =c/2F/2^A/2F/2| \
+c/2F/2^A/2F/2 ^G/2F/2=G/2F/2 ^G/2=G/2F/2G/2 ^G/2^A/2c/2^c/2|
+E/2=c/2F/2c/2 =G/2c/2F/2c/2 E/2C/2^A,/2G,/2 ^G,/2C/2F/2^G/2| \
+^c/2^A/2=G/2E/2 F/2^G/2B/2d/2 f/2d/2e/2=g/2 =c/2^A/2^G/2=G/2| \
+^G/2F/2C/2^G,/2 C/2F/2^G/2=G/2 ^G/2F/2C/2^G,/2 C/2F/2^G/2=G/2| \
+^G/2F/2D/2^A,/2 D/2F/2^G/2F/2 =G/2^D/2^A,/2G,/2 ^A,/2^D/2G/2^D/2|
+F/2=D/2B,/2G,/2 B,/2D/2F/2^D/2 F/2C/2^G,/2=G,/2 ^G,/2C/2F/2^D/2| \
+F/2=D/2B,/2=G,/2 B,/2D/2F/2D/2 ^D/2C/2G,/2C/2 ^D/2G/2^G/2=G/2| \
+F/2=D/2^A,/2D/2 F/2^G/2^A/2^G/2 =G/2^D/2C/2^D/2 G/2^A/2c/2^A/2| \
+^G/2F/2C/2F/2 ^G/2c/2=d/2c/2 B/2F/2D/2F/2 ^A/2d/2^d/2=d/2|
+c/2=G/2^D/2F/2 G/2c/2F/2c/2 ^D/2C/2G,/2B,/2 C/2G,/2C/2G,/2| \
+^DG cf3/2=d/2^A/2d/2 F/2^A/2c/2^A/2| \
+^G/2F/2D/2^D/2 F/2^G/2^D/2^G/2 =D/2^A/2F/2=A/2 ^A/2F/2^A/2F/2| \
+DF ^A^d3/2c/2^G/2c/2 ^d/2=g/2^g/2=g/2|
+fc'/2^a/2 ^g/2=g/2f/2e/2 f/2^c/2=c/2^A/2 ^G/2=G/2F/2E/2| \
+F^g/2=g/2 f/2^d/2^c/2=c/2 ^c/2^A/2^G/2=G/2 F/2^D/2^C/2=C/2| \
+^C/2^D/2F/2G/2 ^G^G3/2^g/2=g/2f/2 ^d/2=d/2=c/2B/2| \
+c3/2d<Bc/2 c2 xD/2E/2|
+^F/2G/2=A/2^A/2 c^F x3^F/2G/2| \
+=A/2^A/2c/2d/2 ^d/2c/2=A/2^A/2 c/2=A/2^F/2G/2 A=D| \
+Gd [=f^G][^d=G] G=d/2^d/2 f/2^d/2f/2^d/2| \
+=d/2c/2d/2^d/2 f/2g/2^g B=G xG/2A/2|
+B/2c/2=d/2^d/2 fB x3B/2c/2| \
+=d/2^d/2f/2g/2 ^g/2f/2=d/2^d/2 f/2=d/2B/2c/2 d/2^G/2=G/2F/2| \
+^Dc [^dG][=dF] [G/2-^D/2][G/2=D/2][c/2^D/2][=d/2F/2] [^d/2G/2][=d/2F/2][^d/2G/2][=d/2F/2]| \
+[c^D]=d/2^d/2 f/2g/2^g ^g=d x2|
+F^A dc F^A/2c/2 d/2c/2d/2c/2| \
+^Ac/2d/2 ^d/2f/2=g gc x2| \
+c'/2^a/2^g/2=g/2 ff f2- f/2c/2f/2g/2| \
+^g/2=g/2f/2^d/2 ^c^c ^c2- ^c/2^G/2^c/2^d/2|
+f/2=g/2^g/2=g/2 f/2^d/2=d/2=c/2 Bg c[fc]| \
+[^d3/2c3/2][=d/2d/2] [d3/2B3/2-][c/2B/2] [c3-G3-^D3-][c/2G/2^D/2]
+V:6
+% Harpsichord I (LH)
+%%MIDI program 6
+% Allegro - First Movement - BWV 1060 - J.S. Bach
+% MIDI Sequence Copyright 1997 Garrett W. Van Cleef
+C,2 x2 C,2 x2| \
+C,C ^G,F, ^A,,^A, x2| \
+^A,,2 x2 ^A,,2 x2| \
+^A,,^A, =G,^D, ^G,,^G, x2|
+^G,C/2^A,/2 ^G,C/2^A,/2 ^G,C/2^A,/2 ^G,=G,| \
+F,^G,/2=G,/2 F,^G,/2=G,/2 F,^G,/2=G,/2 F,^D,| \
+^C,/2=C,/2B,,/2C,/2 =D,/2^D,/2F,2C/2B,/2 C^G,| \
+=G,F, G,G,, C,/2^D,/2F,/2G,/2 C,x|
+x/2C/2B,/2C/2 C,x3/2C/2B,/2C/2 C,x| \
+x/2C/2B,/2C/2 C,x2C,/2B,,/2 C,/2=D,/2^D,/2F,/2| \
+G,x3/2G,/2^F,/2G,/2 G,,x3/2G,/2^F,/2G,/2| \
+=Dx3/2C/2^D/2^F/2 GG, x/2G,,/2=A,,/2B,,/2|
+[C2G,2^D,2C,2] x2 C2 x2| \
+[G,^D,C,]C ^G,=F, ^A,^A,, x2| \
+^A,,C, =D,^D, F,=G, F,^D,| \
+[^A,2F,2=D,2^A,,2] x2 ^A,2 x2|
+[F,D,^A,,]^A, G,^D, ^G,^G,, x2| \
+C,=D, ^D,F, =G,^G, =G,G,,| \
+^G,,C/2^A,/2 ^G,/2=G,/2F,/2^D,/2 =D,D ^DF| \
+G/2C/2^A,/2^G,/2 =G,/2F,/2^D,/2=D,/2 C,C D^D|
+F^A, x6| \
+x4 x^A,, C,=D,| \
+[^A,2G,2^D,2] x2 ^D2 x2| \
+[^A,G,^D,]^D C^G, F,F x/2=G/2F/2^D/2|
+F=D ^A,G, ^D,^D3/2F/2^D/2=D/2| \
+^DC ^G,F, =D,D3/2C/2^A,/2^G,/2| \
+=G,2 x2 ^G,2 x2| \
+^A,2 x2 C/2D/2^D/2=D/2 C/2D/2^D/2=D/2|
+C/2D/2^D/2=D/2 C/2^D/2=D/2C/2 ^A,/2=G,/2F,/2^D,/2 =D,/2^D,/2F,/2^D,/2| \
+=D,/2^D,/2F,/2^D,/2 =D,/2F,/2D,/2^A,,/2 ^D,x3| \
+x8| \
+x8|
+[^D,2^A,,2^D,,2] ^A,^G, [=G,/2^D,/2-][F,/2^D,/2-][G,/2^D,/2-][^G,/2^D,/2] ^A,/2^G,/2^A,/2^G,/2| \
+[=G,^A,,^D,,]^D, C,^G,, =D,D,, x2| \
+[F,2D,2^A,,2] ^G,=G, [F,/2D,/2-^A,,/2-][^D,/2=D,/2-^A,,/2-][F,/2D,/2-^A,,/2-][G,/2D,/2^A,,/2] ^G,/2=G,/2^G,/2=G,/2| \
+[F,^A,,]C ^A,^G, =G,G,, x2|
+C,C x2 ^A,,^A, x2| \
+=A,,C, F,F,, ^A,,^A, x2| \
+=A,,A, x2 G,,G, x2| \
+^F,,A,, D,D,, G,,G, x2|
+A,,A, x2 ^A,,^A, x2| \
+C,C x2 D,^F,/2=A,/2 Dx| \
+x2 [^A,G,][C=A,] x2 ^A,G,| \
+xG, ^D,C, =F,=A,/2C/2 Fx|
+x2 A,^A, x2 =A,F,| \
+xF, =D,^A,, ^D,G,/2^A,/2 ^Dx| \
+xC, ^D,G, CC, x2| \
+xC, ^D,^G, CC, x2|
+x=G,, C,^D, =A,,^F, G,^D,| \
+=D,C, D,D,, G,,2 x2| \
+xD B,G, D,G, D,=F,| \
+G,,G, D,F, B,,D, G,,B,,|
+[G,C,]x3 Cx3| \
+[G,^D,C,]=D, ^D,C, =D,D,, x2| \
+xA, ^F,D, A,,D, A,,C,| \
+D,,D A,C ^F,A, D,^F,|
+G,,D,/2C,/2 ^A,,/2C,/2D,/2C,/2 ^A,,/2C,/2D,/2C,/2 ^A,,/2C,/2D,/2C,/2| \
+^A,,/2C,/2^A,,/2^G,,/2 =G,,/2^G,,/2^A,,/2^G,,/2 =G,,/2^G,,/2^A,,/2^G,,/2 =G,,/2^G,,/2^A,,/2^G,,/2| \
+=G,,/2^G,,/2=G,,/2=F,,/2 ^D,,/2F,,/2G,,/2F,,/2 ^D,,/2F,,/2G,,/2F,,/2 ^D,,x| \
+x4 xF, G,=A,|
+[^A,2F,2=D,2^A,,2] x2 ^A,2 x2| \
+[F,^A,,]^A, G,^D, C,C3/2=D/2C/2^A,/2| \
+C=A, F,D, ^A,,^A,3/2C/2^A,/2=A,/2| \
+^A,G, ^D,C, =A,,A,3/2G,/2F,/2^D,/2|
+=D,2 x2 ^D,2 x2| \
+F,2 x2 G,/2^G,/2^A,/2^G,/2 =G,/2^G,/2^A,/2^G,/2| \
+=G,/2^G,/2^A,/2^G,/2 =G,/2^A,/2=A,/2G,/2 F,/2=D,/2C,/2^A,,/2 =A,,/2^A,,/2C,/2^A,,/2| \
+=A,,/2^A,,/2C,/2^A,,/2 =A,,/2C,/2A,,/2F,,/2 ^A,,x3|
+x8| \
+x8| \
+[^A,2F,2D,2^A,,2] x2 ^A,2 x2| \
+[F,^A,,]^A, G,^D, =A,A,, x2|
+[C2A,2F,2] x2 F,2 x2| \
+[CF,]G, F,^D, =D,D,, x2| \
+G,G,, x2 ^G,^G,, x2| \
+^A,^A,, x2 ^G,/2^A,/2C/2^A,/2 ^G,/2=G,/2F,/2^D,/2|
+=D,D/2E/2 FF, CG,/2F,/2 E,C,| \
+F,/2E,/2F,/2^G,/2 ^C/2=C/2^C/2^A,/2 =G,=C/2D/2 EE,| \
+x/2F,/2E,/2F,/2 F,,x3/2F,/2E,/2F,/2 F,,x| \
+x/2F,/2E,/2F,/2 F,,x2F,/2E,/2 F,/2G,/2^G,/2^A,/2|
+Cx3/2C/2B,/2C/2 C,x3/2C,/2B,,/2C,/2| \
+=G,x3/2F,/2^G,/2B,/2 CC,3/2C,/2D,/2E,/2| \
+F,F,, x2 ^D,^D,, x2| \
+=D,F, ^A,^F,, ^D,^D,, x2|
+=D,D,, x2 C,C,, x2| \
+B,,D, =G,G,, C,C,, x2| \
+D,D,, x2 ^D,^D,, x2| \
+=F,F,, x2 G,,B,,/2=D,/2 G,x|
+Cx [^D,C,][F,=D,] x2 ^D,C,| \
+xC, ^G,,F,, ^A,,=D,/2F,/2 ^A,x| \
+F,x [D,^A,,][^D,C,] x2 =D,^A,,| \
+x^A,, =G,,^D,, ^G,,C,/2^D,/2 ^G,x|
+xF, ^G,C FF, x2| \
+xF, ^G,^C FF, x2| \
+x=C, F,^G, =D,B, C^G,| \
+=G,F, G,G,, D,D,, x2|
+x=A, ^F,D, A,,D, A,,C,| \
+D,,D A,C ^F,A, D,^F,| \
+G,,/2G,/2=F,/2^D,/2 =D,/2B,/2^D,/2C/2 F,/2B,/2F,/2^D,/2 =D,/2G,/2C,/2C/2| \
+G,/2G/2F/2^D/2 =D/2C/2B,/2C/2 D/2C/2B,/2A,/2 G,x|
+xD B,G, D,G, D,F,| \
+G,,G, D,F, B,,D, G,,B,,| \
+[G,2^D,2C,2] x2 C2 x2| \
+[G,^D,C,]C ^G,F, ^A,^A,, x2|
+^A,,2 x2 ^A,2 x2| \
+^A,,^A, =G,^D, ^G,,^G, x2| \
+^G,C/2^A,/2 ^G,C/2^A,/2 ^G,C/2^A,/2 ^G,=G,| \
+F,^G,/2=G,/2 F,^G,/2=G,/2 F,^G,/2=G,/2 F,^D,|
+^C,/2=C,/2B,,/2C,/2 =D,/2^D,/2F,2[C/2^D,/2-][B,/2^D,/2] [C^G,][^G,F,]| \
+[=G,G,]F, G,G,, [G,3-^D,3-C,3-][G,/2^D,/2C,/2]
+V:7
+% Harpsichord II (RH)
+%%MIDI program 6
+% Allegro - First Movement - BWV 1060 - J.S. Bach
+% MIDI Sequence Copyright 1997 Garrett W. Van Cleef
+G,2 x2 C,2 x2| \
+G,x4x ^g=d| \
+F,2 x2 ^A,,2 x2| \
+F,x4x =gc|
+x2 c/2^A/2^G/2=G/2 FC x2| \
+x2 ^G/2=G/2F/2^D/2 ^C^G, x^C/2^D/2| \
+F/2=G/2^G/2=G/2 F/2^D/2=D/2=C/2 B,x2C| \
+C2 B,2 C/2G,/2=A,/2B,/2 C/2D/2^D/2F/2|
+g^g =gf gf ^d=d| \
+^d^g =gf g/2f/2^d/2=d/2 cx| \
+d^d f^d =d^g =g^d| \
+Bf ^dc ^d=d x2|
+[G^D-][c^D] [^dG][=dF] [G/2-^D/2][G/2=D/2][c/2^D/2][=d/2F/2] [^d/2G/2][=d/2F/2][^d/2G/2][=d/2F/2]| \
+[c^DC]=d/2^d/2 f/2g/2^g x/2x/2x/2x/2 x/2x/2x/2x/2| \
+^g=g f^d =dc ^A=A| \
+[D^A,-][^A^A,] [dF][c^D] [F/2-=D/2][F/2C/2][^A/2D/2][c/2^D/2] [=d/2F/2][c/2^D/2][=d/2F/2][c/2^D/2]|
+[^A=D^A,]c/2d/2 ^d/2f/2g x/2x/2x/2x/2 x/2x/2x/2x/2| \
+g^g =gf ^d=d cB| \
+c2- c/2x/2d/2^d/2 f/2^d/2=d/2c/2 ^A/2^G/2=G/2F/2| \
+^D^A2c/2=d/2 ^d/2=d/2c/2^A/2 ^G/2=G/2F/2^D/2|
+=D/2^D/2F/2G/2 ^G/2=G/2^G/2c/2 ^A/2c/2=d/2^d/2 f/2^d/2f/2^g/2| \
+=g/2^a/2c'/2^a/2 ^g/2=g/2f/2^d/2 x/2x/2x/2x/2 x/2x/2x/2x/2| \
+^a8-| \
+^a2 x^d ^g/2=g/2f/2g/2 ^g/2^a/2c'|
+c'=d xd =g/2f/2^d/2f/2 g/2=a/2^a| \
+^ac xc f/2^d/2=d/2^d/2 f/2g/2^g| \
+^A^d/2f/2 =g/2f/2g/2f/2 ^d/2c/2^d/2f/2 g/2f/2g/2f/2| \
+^d/2^A/2^d/2f/2 g/2f/2g/2f/2 ^d/2=d/2c/2^A/2 ^G^G|
+^G2- ^G/2^D/2^G/2c/2 f/2^d/2=d/2c/2 ^A/2^G/2=G/2^G/2| \
+^G2- ^G/2^A/2d/2f/2 =g/2f/2^g/2=g/2 c'/2^a/2^g/2=g/2| \
+f/2^d/2=d/2c/2 ^A/2^G/2=G/2F/2 G^d F=d| \
+^d/2=d/2c/2^A/2 =A^f2=f/2^d<=d^d/2|
+^d2 x6| \
+x6 cF| \
+x8| \
+x6 ^A^D|
+x2 ^dc x2 ^d^A| \
+x2 ^d=A x2 =d^A| \
+x2 c=A x2 cG| \
+x2 c^F x2 GC|
+x2 AC x2 ^A^D| \
+x2 c^D x2 c^F| \
+=DG [^AG][=A^F] DG/2A/2 [^A/2G/2][=A/2^F/2][^A/2G/2][=A/2^F/2]| \
+[GG]A/2^A/2 c/2d/2^d ^d=A x2|
+C=F [AF][GC] CF/2G/2 [A/2F/2][G/2E/2][A/2F/2][G/2E/2]| \
+[FF]G/2A/2 ^A/2c/2=d dG x2| \
+g/2f/2^d/2=d/2 cc c2- c/2G/2c/2d/2| \
+^d/2=d/2c/2^A/2 ^G^G ^G2- ^G/2^D/2^G/2^A/2|
+c/2=d/2^d/2=d/2 c/2B/2=A/2=G/2 ^Fd Gc| \
+^A3/2=A<AG/2 G/2A/2B/2c/2 d/2^d/2=f| \
+fB x2 B/2c/2=d/2^d/2 f/2g/2^g| \
+^g=d fB dF/2A/2 =G/2F/2^D/2=D/2|
+Cx6x| \
+x4 D/2E/2^F/2G/2 A/2^A/2c| \
+c^F x2 ^F/2G/2=A/2^A/2 c/2d/2^d| \
+^d=A c^F AC/2^D/2 =D/2C/2^A,/2=A,/2|
+d/2c/2^A/2=A/2 GG G2- G/2D/2G/2A/2| \
+^A/2^G/2=G/2=F/2 ^D^D ^D2- ^D/2^A/2^d/2f/2| \
+g/2f/2^d/2=d/2 cc c2- c/2G/2c/2d/2| \
+^d/2f/2g/2f/2 ^d/2=d/2c/2^A/2 x/2x/2x/2x/2 x/2x/2x/2x/2|
+f8-| \
+f2 x^A ^d/2=d/2c/2d/2 ^d/2f/2g| \
+g=A xA =d/2c/2^A/2c/2 d/2^d/2f| \
+fG xG c/2^A/2=A/2^A/2 c/2=d/2^d|
+F^A/2c/2 =d/2c/2d/2c/2 ^A/2G/2^A/2c/2 d/2c/2d/2c/2| \
+^A/2F/2^A/2c/2 d/2c/2d/2c/2 ^A/2^G/2=G/2F/2 ^D^D| \
+^D2- ^D/2=D/2^D/2G/2 c/2^A/2=A/2G/2 F/2^D/2=D/2^D/2| \
+^D2- ^D/2F/2A/2c/2 =d/2c/2^d/2=d/2 g/2f/2^d/2=d/2|
+c/2^A/2=A/2G/2 F/2^D/2=D/2C/2 D^A C=A| \
+^A/2=A/2G/2F/2 E^c2=c/2^A<=A^A/2| \
+^A2 x6| \
+x6 gc|
+x8| \
+x6 f^A| \
+e^A/2c/2 ^ce f^G/2^A/2 =cf| \
+=gG/2^G/2 ^A=g ^gF/2=G/2 ^G^g|
+^A8-| \
+^A/2=G/2^G/2c/2 f/2^g/2=g/2f/2 g/2f/2e/2d/2 c2-| \
+c^c =c^A c^A ^G=G| \
+^G^c =c^A c/2^A/2^G/2=G/2 Fx|
+G^G ^A^G =G^c =c^G| \
+E^A ^GF ^G=G x2| \
+x2 ^gf x2 ^g^d| \
+x2 ^g=d x2 =g^d|
+x2 f=d x2 fc| \
+x2 fB x2 cF| \
+x2 dF x2 ^d^G| \
+x2 f^G x2 fB|
+=Gc [^dcG][=dBF] [G^D-][c/2^D/2-][=d/2^D/2] [^d/2c/2][=d/2B/2][^d/2c/2][=d/2B/2]| \
+[cc]d/2^d/2 f/2g/2^g ^g=d x2| \
+F^A [d^A][cF] [FD-][^A/2D/2-][c/2D/2] d/2c/2d/2c/2| \
+^Ac/2d/2 ^d/2f/2=g gc x2|
+c'/2^a/2^g/2=g/2 ff f2- f/2c/2f/2g/2| \
+^g/2=g/2f/2^d/2 ^c^c ^c2- ^c/2^G/2^c/2^d/2| \
+f/2=g/2^g/2=g/2 f/2^d/2=d/2=c/2 Bg cf| \
+^d3/2=d<dc/2 c^F/2G/2 =A/2^A/2c|
+c^F x2 ^F/2G/2=A/2^A/2 c/2d/2^d| \
+^d=A c^F Ac/2^d/2 =d/2c/2B/2A/2| \
+BG x6| \
+x4 G/2A/2B/2c/2 d/2^d/2=f|
+fB x2 B/2c/2=d/2^d/2 f/2g/2^g| \
+^g=d fB fF/2^G/2 =G/2F/2^D/2=D/2| \
+^DC x2 g4-| \
+g/2c/2=d/2^d/2 f/2g/2^g/2f/2 =d/2c/2d/2f/2 ^gd|
+x4 f4-| \
+f/2^A/2c/2d/2 ^d/2f/2=g/2^d/2 c/2B/2c/2^d/2 gc| \
+c'/2^a/2^g/2=g/2 ff f2- f/2c/2f/2g/2| \
+^g/2=g/2f/2^d/2 ^c^c ^c2- ^c/2^G/2^c/2^d/2|
+x/2=g/2^g/2=g/2 f/2^d/2=d/2=c/2 Bg c[fc]| \
+[^d3/2c3/2][=d/2d/2] [d3/2B3/2-][c/2B/2] [c3-G3-^D3-][c/2G/2^D/2]
+V:8
+% Harpsichord II (LH)
+%%MIDI program 6
+% Allegro - First Movement - BWV 1060 - J.S. Bach
+% MIDI Sequence Copyright 1997 Garrett W. Van Cleef
+^D,2 x6| \
+^D,x6x| \
+=D,2 x6| \
+D,x6x|
+x4 C/2^A,/2^G,/2=G,/2 F,x| \
+x4 ^G,/2=G,/2F,/2^D,/2 ^C,x| \
+xF/2^D/2 =D/2=C/2B,/2C/2 DC/2B,/2 C^G,| \
+=G,F, G,G,, C,G,, C,,G,,|
+^Dx3/2C/2B,/2C/2 C,x3/2C/2B,/2C/2| \
+C,x3/2C/2B,/2C/2 C,x3/2C,/2B,,/2=A,,/2| \
+G,,/2G,/2^F,/2G,/2 B,x3/2B,/2=D/2=F/2 ^Dx| \
+x/2=D/2B,/2G,/2 C/2G,/2^D,/2C,/2 G,/2G,,/2G,/2F,/2 ^D,/2=D,/2C,/2B,,/2|
+[C2G,2^D,2C,2] x2 C2 x2| \
+[G,^D,C,]C ^G,F, ^A,,/2F,/2^A,/2C/2 =D/2^D/2F/2=G/2| \
+Fx ^A,,C, =D,^D, F,F,,| \
+[^A,2F,2=D,2^A,,2] x2 ^A,2 x2|
+[F,D,^A,,]^A, G,^D, ^G,,/2^D,/2^G,/2^A,/2 C/2=D/2^D/2F/2| \
+^DB, C=D ^DF =G/2G/2F/2G/2| \
+^D/2F/2^D/2=D/2 C/2^A,/2^G,/2=G,/2 ^G,^A,, C,D,| \
+=G,,/2^D/2=D/2C/2 ^A,/2^G,/2=G,/2F,/2 G,^G,, ^A,,C,|
+F,,D,/2^D,/2 F,/2^D,/2F,/2^G,/2 =D,/2F,/2^A,/2C/2 D/2C/2D/2F/2| \
+^A,/2=G,/2^D/2=D/2 C/2^D/2=D/2C/2 D[D,^A,,] [^D,C,][F,=D,]| \
+[G,/2^D,/2-][^G,/2^D,/2]=G,/2F,/2 ^D,/2G,/2^A,/2=D/2 ^D/2=D/2^D/2^A,/2 G,/2^A,/2^D/2F/2| \
+G/2^D/2^A,/2^D/2 ^D,x2^G/2^A/2 cC|
+F=G/2^G/2 =Dx2=G/2^G/2 ^A^A,| \
+^DF/2=G/2 Cx2^A,/2C/2 =D/2^D/2F| \
+G,/2^A,/2C/2=D/2 ^D/2=D<^D^G,/2C/2=D/2 ^D/2=D/2^D| \
+x/2^A,/2C/2=D/2 ^D/2=D/2^D x^G,/2^A,/2 C/2^A,/2^G,/2^A,/2|
+C/2^A,/2^G,/2^A,/2 C^G, x^A,/2C/2 =D/2C/2^A,/2C/2| \
+D/2C/2^A,/2C/2 D^A, ^D/2=D/2C/2^A,/2 ^G,/2=G,/2F,/2^D,/2| \
+=D,/2C,/2^A,,/2^G,,/2 =G,,/2^A,,/2C,/2D,/2 ^D,/2F,/2G,/2^D,/2 ^G,/2^A,/2^G,/2F,/2| \
+=G,/2^A,/2C/2=D/2 ^D/2=D/2[^D/2-C/2][^D/2-=A,/2] [^D^A,][C=A,] [^A,^A,][^G,^A,,]|
+[=G,2^D,2] x6| \
+x6 =D,D,,| \
+x8| \
+x6 G,G,,|
+x2 C^G, x2 =G,^D,| \
+x2 CF, x2 ^A,^A,,| \
+x2 =A,^F, x2 ^D,C,| \
+x2 A,=D, x2 ^D,^D,,|
+x2 =F,F,, x2 G,G,,| \
+x2 A,A,, x2 =D,/2^D,/2=D,/2C,/2| \
+[G,D,^A,,]G,, x2 [^A,-G,][^A,^A,,] x2| \
+^A,G, ^D,C, F,,F, x2|
+[F,C,=A,,]F,, x2 [A,-F,][A,A,,] x2| \
+A,F, =D,^A,, ^D,,^D, x2| \
+^D,C x3C G,^D,| \
+C,^G, x3^G, ^D,C,|
+^G,,=G,, ^F,,G,, =A,,^F, G,^D,| \
+=D,C, D,D,, G,,D B,G,| \
+D,G, D,=F, G,,3/2G/2 F/2^D/2=D/2C/2| \
+B,G, D,F, B,,D, G,,B,,|
+[G,^D,C,]x6x| \
+x4 xA, ^F,=D,| \
+A,,D, A,,^D, =D,,3/2D/2 C/2^A,/2=A,/2G,/2| \
+^F,D, A,,C, ^F,,A,, D,,^F,,|
+G,,G,/2A,/2 ^A,/2=A,/2G,/2A,/2 ^A,/2=A,/2G,/2A,/2 ^A,x| \
+x^D,/2=F,/2 G,/2F,/2^D,/2F,/2 G,/2F,/2^D,/2F,/2 G,x| \
+xC,/2=D,/2 ^D,/2=D,/2C,/2D,/2 ^D,/2=D,/2C,/2D,/2 ^D,x| \
+x^D,/2F,/2 G,/2^A,/2=A,/2G,/2 A,F, G,A,|
+[=D/2^A,/2-][^D/2^A,/2]=D/2C/2 ^A,/2D/2F/2=A/2 ^A/2=A/2^A/2F/2 D/2F/2^A/2c/2| \
+d/2^A/2F/2^A/2 ^A,x2^D/2F/2 GG,| \
+C=D/2^D/2 =A,x2=D/2^D/2 FF,| \
+^A,C/2=D/2 G,x2F,/2G,/2 =A,/2^A,/2C|
+D,/2F,/2G,/2=A,/2 ^A,/2=A,<^A,^D,/2G,/2=A,/2 ^A,/2=A,/2^A,-| \
+^A,/2F,/2G,/2=A,/2 ^A,/2=A,/2^A, x^D,/2F,/2 G,/2F,/2^D,/2F,/2| \
+G,/2F,/2^D,/2F,/2 G,^D, xF,/2G,/2 =A,/2G,/2F,/2G,/2| \
+A,/2G,/2F,/2G,/2 A,F, ^A,/2=A,/2G,/2F,/2 ^D,/2=D,/2C,/2^A,,/2|
+=A,,/2G,,/2F,,/2^D,,/2 =D,,/2F,,/2G,,/2A,,/2 ^A,,/2C,/2D,/2^A,,/2 ^D,/2F,/2^D,/2C,/2| \
+=D,/2F,/2G,/2=A,/2 ^A,/2=A,/2^A,/2-[^A,/2E,/2] [^A,F,][G,E,] [F,F,][^D,F,,]| \
+[=D,2^A,,2] x6| \
+x6 =A,A,,|
+x8| \
+x6 DD,| \
+G,^A,/2^G,/2 =G,G,, ^G,,C/2^A,/2 ^G,^G,,| \
+^A,,^C/2B,/2 ^A,^A,, =C,^G,/2=G,/2 F,/2^D,/2=D,/2C,/2|
+D,/2F,/2^G,/2=G,/2 F,/2^D,/2=D,/2F,/2 E,/2D,/2C,/2D,/2 E,/2F,/2G,/2E,/2| \
+F,^D, ^C,^C =C2- C/2^A,/2^G,/2=G,/2| \
+^G,x3/2F,/2E,/2F,/2 F,,x3/2F,/2E,/2F,/2| \
+F,,x3/2F,/2E,/2F,/2 F,,x3/2F,/2^D,/2^C,/2|
+=C,/2C/2B,/2C/2 E,x3/2E,/2=G,/2^A,/2 ^G,x| \
+x/2=G,/2E,/2C,/2 F,/2C,/2^G,,/2F,,/2 C,/2C,,/2C,/2^A,,/2 ^G,,/2=G,,/2F,,/2E,,/2| \
+F,,x F,F x2 C^G| \
+x2 F,^A, x2 ^D,^D|
+x2 =D,B, x2 ^G,F| \
+x2 B,=G x2 C,^G,| \
+x2 ^A,,^A, x2 C,C| \
+x2 D,D x2 =G,/2^G,/2=G,/2F,/2|
+[CG,^D,]C, x2 C^D, x2| \
+^DC ^G,F, ^A,,^A, x2| \
+[^A,F,=D,]^A,, x2 ^A,D, x2| \
+D^A, =G,^D, ^G,,^G, x2|
+^G,F x3F C^G,| \
+F,^C x3^C ^G,F,| \
+^C,=C, B,,C, =D,B, C^G,| \
+=G,F, G,G,, D,=A, ^F,D,|
+A,,D, A,,C, D,,3/2D/2 C/2^A,/2=A,/2G,/2| \
+^F,D, A,,C, ^F,,A,, D,,^F,,| \
+G,,G, x6| \
+x4 xD B,G,|
+D,G, D,=F, G,,3/2G/2 F/2^D/2=D/2C/2| \
+B,G, D,F, B,,D, G,,B,,| \
+C,C,, x2 x/2F/2^D/2=D/2 CG| \
+G,C ^G,F, ^A,/2^G,/2^A,/2D/2 F/2^D/2F/2=D/2|
+^A^A, x2 x/2^D/2=D/2C/2 ^A,F| \
+F,^A, =G,^D, ^G,/2=G,/2^G,/2C/2 ^D/2=D/2^D/2C/2| \
+^G,/2=G,/2F,/2G,/2 ^G,/2=G,/2F,/2G,/2 ^G,/2=G,/2F,/2G,/2 ^G,/2=G,/2F,/2E,/2| \
+F,/2^D,/2^C,/2^D,/2 F,/2^D,/2^C,/2^D,/2 F,/2^D,/2^C,/2^D,/2 F,/2^D,/2^C,/2=C,/2|
+^C,F, ^G,,F,2[=C/2^D,/2-][B,/2^D,/2] [C^G,][^G,F,]| \
+[=G,G,]F, G,G,, [C,3-C,,3-][C,/2C,,/2]

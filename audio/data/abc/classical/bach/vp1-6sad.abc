@@ -1,0 +1,110 @@
+X: 1
+T: from bach/vp1-6sad.mid
+M: 9/8
+L: 1/8
+Q:1/4=140
+K:D % 2 sharps
+% untitled
+% Copyright \0xa9 1996 by David J. Grossman
+% David J. Grossman
+% A
+% 1.
+% A'
+% 2.
+% B
+% 1.
+% B'
+% 2.
+V:1
+% Solo Violin
+%%MIDI program 40
+% untitled
+% Copyright \0xa9 1996 by David J. Grossman
+% David J. Grossman
+% A
+Bdf ged cag| \
+fdc dAF Ddc| \
+BGF Eed =FcB| \
+^A^fc ^AGF EDC|
+DFB CB=A B,AG| \
+A,CE Gce ^Afe| \
+dB=A Ged c^AB| \
+% 1.
+F^Ac fgf edc|
+% A'
+Bdf ged c=ag| \
+fdc dAF Ddc| \
+BGF Eed =FcB| \
+^A^fc ^AGF EDC|
+DFB CB=A B,AG| \
+A,CE Gce ^Afe| \
+dB=A Ged c^AB| \
+% 2.
+fc^A F6|
+% B
+Fc^a ^acF EDC| \
+DFB dfb =a^gf| \
+e^Gd cAf dB^g| \
+aec Ace =gfe|
+^dA=c' beG F^da| \
+=cAE ^DBa g^de| \
+Agf BGe FA^d| \
+eBG EGB efg|
+ae=d ^cBA GFE| \
+FAc dfe fAD| \
+G,DB cba gef| \
+ecB cA^G AE=G|
+^Ace gfe dec| \
+dBc dfe f=AF| \
+GBf ecd c^AB| \
+^AcB ^A^GF EDC|
+DFB B^Ac cBd| \
+dB^G E^GB d^gb| \
+E=Gc cBd dce| \
+ec^A F^Ac e^ac'|
+dbF c=aE BgD| \
+CEG ^Ace gfe| \
+^ab=f ^fcd FB^A| \
+% 1.
+BFD B,DF Bcd|
+% B'
+Fc^a ^acF EDC| \
+DFB dfb =a^gf| \
+e^Gd cAf dB^g| \
+aec Ace =gfe|
+^dA=c' beG F^da| \
+=cAE ^DBa g^de| \
+Agf BGe FA^d| \
+eBG EGB efg|
+ae=d ^cBA GFE| \
+FAc dfe fAD| \
+G,DB cba gef| \
+ecB cA^G AE=G|
+^Ace gfe dec| \
+dBc dfe f=AF| \
+GBf ecd c^AB| \
+^AcB ^A^GF EDC|
+DFB B^Ac cBd| \
+dB^G E^GB d^gb| \
+E=Gc cBd dce| \
+ec^A F^Ac e^ac'|
+dbF c=aE BgD| \
+CEG ^Ace gfe| \
+^ab=f ^fcd FB^A| \
+% 2.
+B,DF Bdf2<b2|
+% --------------------------------------
+% Johann Sebastian Bach  (1685-1750)
+% Six Sonatas and Partitas for Solo Violin
+% --------------------------------------
+% Partita No. 1 in B minor - BWV 1002
+% 6th Movement: Double  ( Sarabande )
+% --------------------------------------
+% Sequenced with Cakewalk Pro Audio by
+% David J. Grossman - dave@unpronounceable.com
+% This and other Bach MIDI files can be found at:
+% Dave's J.S. Bach Page
+% http://www.unpronounceable.com/bach
+% --------------------------------------
+% Original Filename: vp1-6sad.mid
+% Last Modified: February 22, 1997

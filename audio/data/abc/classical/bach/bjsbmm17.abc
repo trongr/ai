@@ -1,0 +1,775 @@
+X: 1
+T: from bach/bjsbmm17.mid
+M: 1/4
+L: 1/16
+Q:1/4=96
+K:A % 3 sharps
+%     Mass in B Minor          Johann Sebastion Bach  No. 17 Bass Aria, Et in spritum    seq by David Siu  dss@po.cwru.edu      
+V:1
+% Oboe d'amore I
+%%MIDI program 68
+x4| \
+x4| \
+x2 
+%     Mass in B Minor          Johann Sebastion Bach  No. 17 Bass Aria, Et in spritum    seq by David Siu  dss@po.cwru.edu      
+M: 6/8
+L: 1/16
+A4 Bxc2d2| \
+exd2c2 Bxc2d2|
+exd2c2 Bxc2ex| \
+axd2cB cxB4-| \
+B4c2 ^d2e xG2| \
+AxF2Ex ^d2e xG2|
+AxF2Ex =d2c4-| \
+c6 F2B4-| \
+B6 B,2C2^D2| \
+ExG/2 (3A/2G/2A/2G/2F2 ExE2B2|
+GxE2Bx B,2C2^D2| \
+ExG/2 (3A/2G/2A/2G/2F2 ExE4-| \
+E2x8x2| \
+x12|
+x12| \
+x8e4-| \
+e4f2 g2a xc2| \
+=dxB2Ax g2a xc2|
+dxB2Ax =g2f4-| \
+f6 B2e4-| \
+e6 E2F2^G2| \
+Axc/2 (3d/2c/2d/2c/2B2 AxA2e2|
+cxA2ex E2F2G2| \
+Axc/2 (3d/2c/2d/2c/2B2 AxA4| \
+x2A4 Bxc2d2| \
+exd2c2 Bxc2d2|
+exd2c2 Bxc2e2| \
+axd2B2 c2B4-| \
+B2x8x2| \
+x2e8f2|
+=g2f8=g2| \
+e2d8e2| \
+f2e8f2| \
+d2c8^d2|
+exa ^gfx gx^d2e2| \
+fxB2c2 ^dxe xG2| \
+AxF2Ex ^d2e xG2| \
+AxF2Ex =d2c4-|
+c6 F2B4-| \
+B4e2 G2A4-| \
+A4G2 A2G4-| \
+G4F2 E2A4-|
+A4G2 F2B4-| \
+B4A2 G2F4-| \
+F2x4 B,2C2^D2| \
+ExG/2 (3A/2G/2A/2G/2F2 ExE2B2|
+G2E2Bx B,2C2^D2| \
+ExG/2 (3A/2G/2A/2G/2F2 ExE2G2| \
+Bxe2B2 ^dxe2f2| \
+gxf2e2 ^dxe2f2|
+gxf2e2 ^dxe2gx| \
+Bx^d3x ex^d2e2| \
+cxB2c2 ^d2e xG2| \
+AxF2Ex ^d2e xG2|
+AxF2Ex =d2c4-| \
+c6 F2B4-| \
+B4-Bx B2B2A2| \
+GxB2A2 GxG2E2|
+GxB2ex g2f2a2| \
+gxB2^d2 exE4-| \
+E2x8x2| \
+x2c8e2|
+=d2c2B2 x6| \
+x2d8=c2| \
+^c2g4 x6| \
+x2f4 c2d4-|
+d12| \
+B2e4 B2c4-| \
+c8-c xd2| \
+e2f8e2|
+dxc2BA B2A4-| \
+A8-A2G2| \
+A2B4 =F2^F xB2| \
+A4Bx G2F4-|
+F6 GxA2B2| \
+cxB2A2 GxA2B2| \
+cxB2A2 GxA2B2| \
+cx=c/2^c/2 =c/2^c/2=c/2^c/2=c/2^c/2 c2c4-|
+c12-| \
+c12-| \
+c12-| \
+c4-cx =F2^F4|
+x12| \
+x12| \
+x2c2^d2 =f2^f xA2| \
+BxG2Fx =f2^f x^A2|
+cx=G2Fx e2=d4-| \
+d6 ^Gxc4-| \
+c4B2 =AxG2Ax| \
+F2=F4 x6|
+x12| \
+x4^f2 e2d2cx| \
+x12| \
+x12|
+x12| \
+x8e4-| \
+e4f2 g2a xc2| \
+dxB2Ax g2a xc2|
+dxB2Ax =g2f4-| \
+f6 B2e4-| \
+e6 E2F2^G2| \
+Axc/2 (3d/2c/2d/2c/2B2 AxA2e2|
+cxA2ex E2F2G2| \
+Axc/2 (3d/2c/2d/2c/2B2 AxA4| \
+x2A4 B2c2d2| \
+exd2c2 Bxc2d2|
+exd2c2 Bxc2e2| \
+axd2B2 cxB4-| \
+B2x8x2| \
+x2e8f2|
+=g2f8=g2| \
+e2d8e2| \
+f2e8f2| \
+=g2f8d2|
+exE6-E xc2| \
+dxA2^Gx4 xe2| \
+fxg2ax d2c xe2| \
+fxg2ax6x|
+^A2B8E2| \
+=G2F8-F2| \
+B2=F2^G2 ^FxG2=AG| \
+F=FA2G2 ^F2f4-|
+f4e2 d2c4-| \
+c4B2 A2e4-| \
+e3 dcB AGF2G2| \
+Axc2B2 AxA2e2|
+cxA2ex E2F2G2| \
+Axc2B2 AxA4| \
+x12| \
+x12|
+x12| \
+x2A4 Bxc2d2| \
+exd2c2 Bxc2d2| \
+exd2c2 Bxc2ex|
+axd2cB cxB4-| \
+B2x8e2| \
+fxg2ax d2c xe2| \
+fxg2ax6x|
+A2d8-d2| \
+G2c3x E2F2G2| \
+Axc/2 (3d/2c/2d/2c/2B2 AxA2e2| \
+cxA2ex E2F2G2|
+Axc/2 (3d/2c/2d/2c/2B2 AxA4-|A2
+V:2
+% Oboe d'amore II
+%%MIDI program 68
+x8 x2 
+%     Mass in B Minor          Johann Sebastion Bach  No. 17 Bass Aria, Et in spritum    seq by David Siu  dss@po.cwru.edu      
+M: 6/8
+L: 1/16
+E2-| \
+E2G xA2 B2c xB2| \
+A2G xA2 B2c xB2| \
+A2G xA2 cxE xG2-|
+G2A xG8-| \
+G4-Gx B2c x^d2| \
+exA2Gx B2c x^d2| \
+ex6xE2A2-|
+A8^D2G2-| \
+G2B,2C2 ^D2E xG/2 (3A/2G/2A/2G/2| \
+F2E xE2 B2G xE2| \
+BxB,2C2 ^D2E xG/2 (3A/2G/2A/2G/2|
+F2E xE6x2| \
+x12| \
+x12| \
+x12|
+x8x2E2-| \
+E4-Ex E2F xG2| \
+Ax=D2Cx E2F xG2| \
+Ax6xA2d2-|
+d8G2c2-| \
+c2E2F2 G2A xc/2 (3d/2c/2d/2c/2| \
+B2A xA2 e2c xA2| \
+exE2F2 G2A xc/2 (3d/2c/2d/2c/2|
+B2A xA4x2E2-| \
+E8A xF2-| \
+F2B xA2 B2c xB2| \
+c2d xc2 d2e xG2|
+B2E xG6x2| \
+x12| \
+x4c8| \
+d2e2d8|
+e2c2B8| \
+c2d2c8| \
+d2B xA2 B2c xB2-| \
+B4-Bx G2A x^D2-|
+^D2x4 B2c x^d2| \
+exA2Gx B2c x^d2| \
+ex6xE2F2-| \
+F6 A2^D2E2-|
+E6 A2F2=C2| \
+^D2^C2^D8| \
+A2G2F8| \
+B2A2G8|
+F2E2B6x2| \
+x2B,2C2 ^D2E xG/2 (3A/2G/2A/2G/2| \
+F2E xE2 B2G2E2| \
+BxB,2C2 ^D2E xG/2 (3A/2G/2A/2G/2|
+F2E xE4G xB2| \
+E2F xG2 A2B xA2| \
+G2F xG2 A2B xA2| \
+G2F xG2 Bxe xA2|
+FxG xF2 G2E x^D2-| \
+^D2x4 B2c x^d2| \
+exA2Gx B2c x^d2| \
+ex6xE2A2-|
+A8^D2G2-| \
+GxB,2C2 ^D2E xG/2 (3A/2G/2A/2G/2| \
+F2E xE2 B2G xE2| \
+BxB,2C2 ^D2E xG/2 (3A/2G/2A/2G/2|
+F2E xE6x2| \
+x12| \
+x4F8| \
+=F2^F2=d4x4|
+x4G8| \
+F2=F2c4x4| \
+x8x2B2-| \
+B2^F2G8-|
+G8E2A2-| \
+A2E2F6-Fx| \
+B6 c2d xG2-| \
+G6 F2G2A2|
+=F2^F2d8| \
+cBc3x =F2^F2C2| \
+DxB,2A,8| \
+C2=F x^F2 G2A xG2|
+F2=F x^F2 G2A xG2| \
+F2=F x^F2 G2A xG2| \
+A2F x=F8| \
+^F2G xC4F x=F2|
+^F2G xF2 G2A xG2| \
+c2B xA2 G2F x=F2| \
+^F2G xF4x4| \
+x12|
+x12| \
+x6 c2^d x=f2| \
+^fxB2cx =g2f xe2| \
+=dxc2d2 c2B x=f2|
+^fx^g xG4x4| \
+x12| \
+x12| \
+x12|
+c2B4 Ax4x| \
+x12| \
+x12| \
+x12|
+x8x2e2-| \
+e4-ex E2F xG2| \
+AxD2Cx E2F xG2| \
+Ax6xA2d2-|
+d8G2c2-| \
+c2E2F2 G2A xc/2 (3d/2c/2d/2c/2| \
+B2A xA2 e2c xA2| \
+exE2F2 G2A xc/2 (3d/2c/2d/2c/2|
+B2A xA4x2E2-| \
+E8A xF2-| \
+F2B xA2 B2c xB2| \
+c2d xc2 B2A xG2|
+B2E xG6x2| \
+x12| \
+x4c8| \
+d2e2d8|
+e2c2B8| \
+c2d2c2 d2e4| \
+d2e2f2 g2a xd2| \
+B2c2G2 A2B xE2|
+F2G xAx C2D xB,2| \
+A,xG2Ax C2D xB,2| \
+A,x=G2F6-Fe| \
+dcd Be8|
+fed cd8| \
+c2d xc8| \
+B2A2d8| \
+c2B2A8|
+d2c2B2 A2^G xA2| \
+exE2F2 G2A xc2| \
+B2A xA2 e2c xA2| \
+exE2F2 G2A xc2|
+B2A xA4x4| \
+x12| \
+x12| \
+x8x2E2-|
+E2G xA2 B2c xB2| \
+A2G xA2 B2c xB2| \
+A2G xA2 cxE xG2-| \
+G2A xG2 A2F xE2|
+F2G xAx C2D xB,2| \
+A,/2x3/2G2Ax C2D xB,2| \
+A,x=G2F8-| \
+F2B,2E8-|
+ExE4 D2C xE2| \
+D2C4 A,2C xE2| \
+A2c xB2 d2c xE2| \
+^G2A xC6
+V:3
+% Bassoon
+%%MIDI program 70
+x4 
+%     Mass in B Minor          Johann Sebastion Bach  No. 17 Bass Aria, Et in spritum    seq by David Siu  dss@po.cwru.edu      
+M: 6/8
+L: 1/16
+A,G, A,xE, xC,2-| \
+C,2B,, xA,,4A, xD,2-| \
+D,2E, xA,,4A, xD,2-| \
+D,2E, xA,,x A,xC xB,2-|
+B,2A, xE^D ExB, xE,2-| \
+E,2^D, xC,4x4| \
+x4B,,4x4| \
+x4A,,x A,2G, xF,2|
+^D,xE, x^D,2 C,2B,, xE,x| \
+F,xG, xA,4x2B,2-| \
+B,2x2C4x2G,,2-| \
+G,,2x2A,,4x2B,,2-|
+B,,2x2E,,x E,x=D, xC,D,| \
+C,xB,, xA,,4C, xB,,2-| \
+B,,2E, xA,2 B,2C xB,2| \
+A,2G, xA,4C, xB,,2-|
+B,,2A,, xE,2 F,2G, xG,2| \
+A,2B, xC,4x4| \
+x4F,6x2| \
+x2E, xD,x D2C xB,2|
+F,xA, xG,2 F,2E, xA,2| \
+B,2C xD,4x2E,2-| \
+E,2x2F,4x2C,2-| \
+C,2x2D,4x2E,2-|
+E,2x2A,G, A,xE, xC,2-| \
+C,2E, xA,,4A, xD,2-| \
+D,2E, xA,,4A, xD,2-| \
+D,2E, xA,,4C, xB,,2-|
+B,,2A,, xE,^D, E,xB,, xE,,x| \
+E,x=D, xC,2 E,2G, xC2| \
+^A,2B, x^A,4x2F,2-| \
+F,2x2B,4B,, xB,2-|
+B,2=A, xG,4x2E,2-| \
+E,2x2A,4A,, xA,2-| \
+A,2G, xF,4E, x^D,2-| \
+^D,2E, xB,,6-B,,x|
+A,,xB,, xC,4x4| \
+x4B,,4x4| \
+x4A,,x A,2G, xF,2| \
+^D,xE, x^D,4B,, xE,2-|
+E,2=D, xC,2 F,2E, x^D,2| \
+=C,2^C, x=C,4G,, x^C,2| \
+^D,2E, xF,2 G,2A, xB,,2| \
+C,2^D, xE,2 F,2G, xA,2-|
+A,6 G,2F, xG,2| \
+B,2E, xA,4x2B,2-| \
+B,2x2C4x2G,,2-| \
+G,,2x2A,,4x2B,,2-|
+B,,2x2E,^D, E,xB,, xG,,2-| \
+G,,2F,, xE,,4E, xA,,2-| \
+A,,2B,, xE,4E xA,2-| \
+A,2B, xE,4G, xF,2-|
+F,2E, xB,,4F, xB,2-| \
+B,2A, xG,4x4| \
+x4C,6x2| \
+x2B,, xA,,2 A,2G, xF,2|
+^D,2E, x^D,2 C,2B,, xE,2| \
+F,2G, xA,2 B,2C xB,2-| \
+B,2B,, xC,4x2G,,2-| \
+G,,2x2A,,4x2B,,2-|
+B,,2x2E,^D, E,xB,, xE,,2-| \
+E,,2=D, xC,4B,, x^A,,2-| \
+^A,,2F,, xB,,4C, xD,2-| \
+D,2C, xB,,x =F,,2^F,, xB,,2-|
+B,,2G,, xC,2 ^D,2=F,4| \
+^D,2C, x^F,2 G,2=A,4| \
+G,2F, xB,,2 C,2=D,4| \
+C,2B,, xE,,2 F,,2G,,4|
+F,,2E,, xA,,2 B,,2C,4| \
+B,,2A,, xD,4x2^D,2-| \
+^D,2x2E,4x2=F,2-| \
+=F,2x2^F,8|
+A,2=D xG,4F, x=F,2-| \
+=F,2C, x^F,4=C, x^C,2-| \
+C,2C,, xF,,2 A,,2C, xF,2| \
+A,2C xF,4F,, xB,,2-|
+B,,2C, xF,,4F, xB,,2-| \
+B,,2C, xF,,4E,, xD,,2-| \
+D,,2D, xC,2 =F,2G, xC,2-| \
+C,2B,, xA,,4^F,, xC,2-|
+C,2C,, xF,,4F, xC,2| \
+^D,2=F, x^F,2 G,2A, xG,2| \
+A,2B, xA,2 G,2F, xG,2-| \
+G,2A, xB,4=F, x^F,2-|
+F,2=C, x^C,2 =F,2G, xB,2| \
+A,2G, xA,4x4| \
+x4^A,4x4| \
+x2^A,,2B,,2 C,2=D, xG,,2|
+=A,,x^F,, x=F,,4x2^F,,2| \
+G,,2A,, xB,,2 C,2D, xG,,2| \
+A,,2B,, xA,,2 G,,2F,, xC,2-| \
+C,2C,, xF,,2 A,,2C, xF,2|
+A,2G, xA,G, A,xE, xC,2| \
+D,2E, xA,,4C, xB,,2-| \
+B,,2E, xA,2 B,2C xB,2| \
+A,2G, xA,2 B,2C xB,2|
+G,2A, xE,2 F,2G,4| \
+A,2B, xC,4x4| \
+x4F,4x4| \
+x2E,2D,x D2C xB,2|
+F,xA, xG,2 F,2E, xA,2| \
+B,2C xD,4x2E,2-| \
+E,2x2F,4x2C,2-| \
+C,2x2D,4x2E,2-|
+E,2x2A,G, A,xE, xC,2-| \
+C,2E, xA,,4A, xD,2-| \
+D,2E, xA,,4A, xD,2-| \
+D,2E, xA,,4C, xB,,2-|
+B,,2A,, xE,^D, E,xB,, xE,,x| \
+E,2=D, xC,2 E,2G, xC2| \
+^A,xB, x^A,4x2F,2-| \
+F,2x2B,4B,, xB,2-|
+B,2=A, xG,4x2E,2-| \
+E,2x2A,4A,, xD,2-| \
+D,2C, xB,,4A,, xG,,2-| \
+G,,2A,, xE,8|
+D,2E, xF,6x2| \
+x2B,, xC,6x2| \
+x2A,,2D,x E,xF, xB,,x| \
+F,,xA,, x=G,,4E, x^A,,2-|
+^A,,2F, xB,,x B,2=A, x^G,2| \
+=F,x^F, x=F,4C, x^F,2| \
+G,2A, xB,,2 C,2D, xE,2| \
+F,2G, xA,,2 B,,2C, xD,2-|
+D,6 C,2B,, xC,2| \
+A,,2C, xD,4x2E,2-| \
+E,2x2F,4x2C,2-| \
+C,2x2D,4x2E,2-|
+E,2x2F,2 A,2=C x^D,2| \
+F,2A, xB,,2 ^C,2^D, xE,2| \
+G,2E, xA,2 E,2F, x=D,2| \
+B,,2E, xA,G, A,xE, xC,2-|
+C,2B,, xA,,4A, xD,2-| \
+D,2E, xA,,4A, xD,2-| \
+D,2E, xA,,4C, xB,,2-| \
+B,,2A,, xE,4F, xG,2|
+A,2B, xC,4x4| \
+x4F,6x2| \
+x2E,2D,x D2C xB,2| \
+G,xA, xG,2 F,2E, xA,2|
+B,2C xD,4x2E,2-| \
+E,2x2F,4x2C,2-| \
+C,2x2D,4x2E,2-| \
+E,2x2A,,6
+V:4
+% Bass
+%%MIDI program 64
+x12| \
+x4| \
+x4| \
+x4|
+x4| \
+x4| \
+x4| \
+x4|
+x4| \
+x4| \
+x4| \
+x4|
+x4| \
+x4| \
+x4| \
+x4|
+x4| \
+x4| \
+x4| \
+x4|
+x4| \
+x4| \
+x4| \
+x4|
+x4| \
+x4| \
+x4| \
+x4|
+x4| \
+x4| \
+x4| \
+x4|
+x4| \
+x4| \
+x4| \
+x4|
+x2 
+%     Mass in B Minor          Johann Sebastion Bach  No. 17 Bass Aria, Et in spritum    seq by David Siu  dss@po.cwru.edu      
+M: 6/8
+L: 1/16
+A,2-| \
+A,2B, xC2 D2E xD2| \
+C2B, xC2 D2E xD2| \
+C2B, xCD E2A,2D2|
+CB,C A,B,4E,2x2| \
+x12| \
+x12| \
+x12|
+x12| \
+x12| \
+x12| \
+x12|
+x8x2A,2-| \
+A,2G, xA,2 B,2C xB,2| \
+A,2G, xA,4E,2F,2| \
+A,2G, xA,2 B,2C2B,2|
+G,2A, xE,4x2B,2| \
+C2D2E4E,2x2| \
+x8x2^A,2| \
+G,2F,2B,4B,, xF,2|
+G,2=A,2B,4A, xG,2| \
+F,2E,2A,4A,, xE,2| \
+F,2G, xA,2 F,2G, xF,2| \
+^D,2E, xB,,4x2F,2|
+A,2G, xG,2 B,2A, xA,2| \
+C2B, xB,8-| \
+B,4-B,x E,2G,2A,2-| \
+A,6 ^D,2F,2G,2-|
+G,6 CB,A, G,F,2-| \
+F,6 =C,2^D,2E,2-| \
+E,6 ^D,x^C,2^D,2| \
+E,2F,2G,2 A,2B,2C2|
+^D2E2^D2 B,2C2B,x| \
+F,2G,2E,8| \
+A,2G, xG,2 ^D2E2B,2-| \
+B,4-B,x ^D,2E,2G,2|
+F,2E, xE,4x4| \
+x12| \
+x12| \
+x12|
+x12| \
+x12| \
+x12| \
+x12|
+x12| \
+x12| \
+x12| \
+x12|
+x8x2E,2| \
+F,2=G, x^A,,2 C,2E,2=G,2| \
+F,2E,2=D,2 C,2B,, xF,2| \
+^G,2=A,2B,2 D2C2A,2|
+G,2F,2=F,2 ^D,2C, xC2-| \
+C2G,2A,8-| \
+A,6 G,2^F,4| \
+E,2=D,2B,8-|
+B,6 A,2G,2A,2-| \
+A,6 B,2C xB,2| \
+G,2A,2G,2 A,2B, xC2-| \
+C6 D2E2D2|
+CB,C2B,4A, xG,2| \
+D2C2A,2 G,2F,2=F,2-| \
+=F,4^F,6x2| \
+x12|
+x12| \
+x12| \
+x8x2C,2| \
+^D,2=F,2^F,2 G,2A,2G,2|
+A,2B,2A,2 G,2F,2=F,2| \
+^F,xG,2A,2 B,2C2B,2| \
+C2=D2C2 B,2A, xG,2| \
+=F,2^F,2D2 C2B,2A,2|
+=F,2^F,2C,6x2| \
+x8F,2B,2| \
+A,2G,2F,x F,2^A,2C2-| \
+C8B,2x2|
+x2B,2B,2 =A,2G,2A,2| \
+G,2F,2D8| \
+C2B, xC2 =F,2^F,2C,2| \
+B,,2C,2F,,4x4|
+x8x2A,2| \
+C2B,2C2 D2E2D2| \
+C2B, xC2 D2E2D2| \
+C2B,2C2 G,2A,2D2|
+CB,C A,B,4G,2E,2-| \
+E,2x8x2| \
+x12| \
+x12|
+x12| \
+x12| \
+x12| \
+x12|
+x8x2A,,2| \
+A,2G,2A,2 B,2C2B,2| \
+A,2G,2E2 E,2E,2F,2| \
+A,2G,2A,2 B,xC xB,2|
+G,xA,2E,4x2B,2| \
+C2D2E4E,2x2| \
+x8E2^A,2| \
+B,^A,G, ^A,B,8|
+CB,=A, B,G,8| \
+A,G,F, G,A,8| \
+CB,D CED CB,C A,CB,| \
+A,G,A,2B,2 E,xG,2B,2-|
+B,2D2C2 G,2A, x=F,2| \
+^F,xB,2E,8-| \
+E,4-E,=G, F,E,D, C,D,2-| \
+D,4-D,F, E,D,C, B,,C,2-|
+C,2F,2B,,4x2B,2-| \
+B,6 CB,A, ^G,A,2-| \
+A,6 G,2F,2G,2| \
+A,2B,2C2 D2E2F,2|
+G,2A,2G,2 A,2B,2E,2| \
+A,G,A,4 B,2C2E,x| \
+DCD2CB, DCB, A,E2| \
+C2A,2A,2 G,2F, xE,2|
+D,2C,2^D,2 F,2A,2=C2-| \
+=C6 B,2A,2G,2| \
+B,2=D2^C2 G,2A,2F,2| \
+D,2E,2A,,4
+V:5
+% Continuo
+%%MIDI program 6
+x4 
+%     Mass in B Minor          Johann Sebastion Bach  No. 17 Bass Aria, Et in spritum    seq by David Siu  dss@po.cwru.edu      
+M: 6/8
+L: 1/16
+A,/2-[C/2-A,/2-A,/2][E-C-A,-G,] [E3/2-C3/2-A,3/2-A,3/2][E/2-C/2-A,/2-][E-C-A,-E,] [ECA,][A2-E2-C,2-]| \
+[A2E2C,2][B-G-D-B,,] [BGD][c4-A4-E4-A,,4][c-A-E-A,] [cAE][d2-B2-F2-D,2-]| \
+[d2B2F2D,2][B-G-E,] [BG][c4-A4-E4-A,,4][c-A-E-A,] [cAE][d2-B2-F2-D,2-]| \
+[d2B2F2D,2][B-G-E,] [BG][c-A-A,,][c-A-] [c-A-A,][c-A-][c-A-C] [cA][d2G2B,2-]|
+[cB,-][BB,][c-A-A,] [cA][B-G-E][B-G-^D] [B-G-E][B-G-][B-G-B,] [B-G-][B2-G2-E,2-]| \
+[B2G2E,2][^d-B-G-^D,] [^dBG][e4c4G4C,4]x4| \
+x4[e4B4G4B,,4]x4| \
+x4[c-A-A,,][c-A-] [c2-A2-A,2][c-A-G,] [c-A-][c2-A2-F,2]|
+[c-A-^D,][cA][F-E,] F[B2-A2-^D,2] [B2-A2-C,2][B-A-B,,] [B-A][B-G-E,][B-G-]| \
+[B-G-F,][BG][B,-G,] B,[E4C4A,4]x2[G2-E2-B,2-]| \
+[G2E2B,2]x2[B4G4C4]x2[B2-E2-B,2-G,,2-]| \
+[B2E2B,2G,,2]x2[E4C4A,,4]x2[G2^D2B,,2-]|
+[F2B,,2][E2B,2A,2]E,,/2-[B,/2-G,/2-E,,/2][E-B,-G,-] [E-B,-G,-E,][EB,G,]=D, x[EC,][FD,]| \
+[E-C,]E[D-B,,] D[C4A,,4][A-E-C,] [AE][G2-E2-B,,2-]| \
+[G2E2B,,2][B-G-E-E,] [BGE][c2-A2-E2-A,2] [c2-A2-E2-B,2][c-A-E-C] [cAE][d2-G2-E2-B,2]| \
+[d2-G2-E2-A,2][d-G-E-G,] [dGE][c4E4A,4][A-E-C,] [AE][G2-E2-D2-B,,2-]|
+[G2E2D2B,,2][A-E-C-A,,] [AEC][e2-B2-G2-E2-E,2] [e2-B2-G2-E2-F,2][e-B-G-E-G,] [eBGE][e2-G2-G,2]| \
+[e2-G2-A,2][e-G-B,] [eG][e4A4C,4]x4| \
+x4[c4A4F4F,4-]F,2x2| \
+x2[c-A-=G-E,] [cA=G][d-A-F-D,][d-A-F-] [d2-A2-F2-D2][d-A-F-C] [dAF][d2-B2-F2-B,2]|
+[d-B-F-F,][d-B-F-][d-B-F-A,] [dBF][e2-d2-^G2-G,2] [e2-d2-G2-F,2][e-d-G-E,] [edG][e2-c2-A2-A,2]| \
+[e2c2A2B,2]C x[F4C4A,4D,4]x2[A2-E2-C2-E,2-]| \
+[A2E2C2E,2]x2[c4A4F4F,4]x2[A2-E2-C2-C,2-]| \
+[A2E2C2C,2]x2[F4D4D,4]x2[c2G2E,2-]|
+[B2E,2]A2A,/2-[E/2-C/2-A,/2][A-E-C-G,] [A-E-C-A,][AEC]E, x[A2-E2-C,2-]| \
+[A2E2C,2][B-E,] B[c4E4A,,4][e-A-A,] [eA][d2-F2-D,2-]| \
+[d2F2D,2][B-G-E,] [BG][c4A4A,,4][e-c-A,] [ec][d2-B2-D,2-]| \
+[d2B2D,2][B-E,] B[c2A,,2-] [B2A,,2][c-A-C,] [cA][d2G2B,,2-]|
+[B2B,,2][c-E-A,,] [cE][B-G-E-E,][B-G-E-^D,] [B-G-E-E,][B-G-E-][B-G-E-B,,] [BGE][B-G-E,,][BG]| \
+[c-A-E,][cA][=d-B-D,] [dB][e2-c2-C,2] [e2-c2-E,2][e-c-G,] [ec][^A2-F2-C2]| \
+[^A2-F2-^A,2][^A-F-B,] [^AF][c4^A4^A,4]x2[f2-^A2-F2-F,2-]| \
+[f2^A2F2F,2]x2[d4B4B,4][F-B,,] F[B2-D2-B,2-]|
+[B2D2B,2][=A-C-A,] [AC][G4E4G,4]x2[B2-G2-E,2-]| \
+[B2G2E,2]x2[c2A2A,2-] [d2A,2][B-A,,] B[c2-A2-A,2-]| \
+[c2A2A,2][B-G-G,] [BG][A4F4F,4][A-C-E,] [AC][A2-B,2-^D,2-]| \
+[A2B,2^D,2][G-B,-E,] [GB,][F6-^D6-B,,6-][F-^D-B,,][F^D]|
+[c-E-A,,][cE][B-^D-B,,] [B^D][A4E4C,4]x4| \
+x4[G4E4B,,4]x4| \
+x4[c-E-A,,][c-E-] [c2E2A,2][E-G,] E[F2-F,2]| \
+[F-^D,]F[F-E,] F[B4-A4-^D4-^D,4][B-A-^D-B,,] [BA^D][B2-G2-E2-E,2-]|
+[B2G2E2E,2][G-E-=D,] [GE-][A2E2C,2] [A2-F,2][A-F-E,] [AF][A2=C2^D,2]| \
+[G2^D2=C,2][A-^C-C,] [AC][G4-^D4-=C,4][G-^D-G,,] [G-^D-][G2^D2^C,2]| \
+[A2F2^D,2][G-E-E,] [GE][A2-F2-F,2] [A2-F2-G,2][A-F-A,] [A-F-][A2F2B,,2]| \
+[G2B,2C,2][F-A,-^D,] [FA,][G2E2E,2] [F2^D2F,2][G-E-G,] [GE][A2-F2-A,2-]|
+[A2F2A,2-]A,2-[B2-F2-^D2-A,2] [B2-F2-^D2-G,2][B-F-^D-F,] [BF^D]G,2| \
+B,2[B,-E,] B,[G4E4A,4]x2[G2-E2-B,2-]| \
+[G2E2B,2]x2[G4E4C4]x2[E2-B,2-G,,2-]| \
+[E2B,2G,,2]x2[E4C4A,,4]x2[G2^D2B,,2-]|
+[F2B,,2]E2E,/2-[B,/2-G,/2-E,/2][E-B,-G,-^D,] [E-B,-G,-E,][E-B,-G,-][E-B,-G,-B,,] [EB,G,][e2-B2-G,,2-]| \
+[e2B2G,,2][^d-A-F,,] [^dA][e4G4E,,4][g-B-E,] [gB][f2-A2-A,,2-]| \
+[f2A2A,,2][^d-F-B,,] [^dF][e4G4E,4][g-B-E] [gB][f2-A2-A,2-]| \
+[f2A2A,2][^d-F-B,] [^dF][e4G4E,4][B-E-G,] [BE][B2-^D2-F,2-]|
+[B2^D2F,2][B-G-E,] [BG][B4F4^D4B,,4][c-E-F,] [cE][B2^D2B,2-]| \
+[^d2-F2-B,2][^d-F-A,] [^dF][e4B4E4G,4]x4| \
+x4[e6c6G6C,6]x2| \
+x2[=d-G-E-B,,] [dGE][c2-A2-E2-A,,2] [c2-A2-E2-A,2][c-A-E-G,] [cAE][c2-A2-F2-F,2]|
+[c2-A2-F2-^D,2][c-A-F-E,] [cAF][B2-A2-^D2-^D,2] [B2-A2-^D2-C,2][B-A-^D-B,,] [BA^D][B2-G2-E2-E,2]| \
+[B2G2E2F,2][B-B,-G,] [BB,][B2C2A,2] [A2^D2B,2][G-E-C] [GE][B2-G2-B,2-]| \
+[B2G2B,2][G-E-B,,] [GE][G4E4C4C,4]x2[B2-G2-E2-G,,2-]| \
+[B2G2E2G,,2]x2[c4F4E4A,,4]x2[B2G2B,,2-]|
+[^d2F2B,,2][e2E2]E,/2-[B,/2-G,/2-E,/2][E-B,-G,-^D,] [E-B,-G,-E,][E-B,-G,-][E-B,-G,-B,,] [EB,G,][=G2-B,2-E,,2-]| \
+[=G2-B,2-E,,2][=G-B,-=D,] [=GB,][=G4^A,4C,4][B-=G-E-B,,] [B=GE][c2-=G2-^A,,2-]| \
+[c2-=G2^A,,2][c-E-F,,] [cE][c4F4-B,,4][d-F-C,] [dF-][c2F2D,2-]| \
+[B2=F2D,2][=A-^F-C,] [AF][d-^G-B,,][dG] [B2G2=F,,2][A-^F-F,,] [A-F-][A2F2B,,2-]|
+[B2=F2B,,2][A-^F-G,,] [AF][G2C2C,2] [F2^D,2][G2=F,2-][B2-=F,2]| \
+[B2^D,2][=F-C,] =F[A2^F,2] [B2G,2][c4A,4]| \
+[B2G,2][A-F,] A[=D2B,,2] [E2C,2][F2D,2-][B2-D2-D,2]| \
+[B2D2C,2][F-B,,] F[G2-E2-B,2-E,,2] [G2-E2-B,2-F,,2][G4-E4-B,4-G,,4]|
+[G2-E2-B,2-F,,2][G-E-B,-E,,] [G-E-B,][G2-E2-C2-A,,2] [G2E2C2B,,2][E2-C,2-][A2-E2-C,2]| \
+[A2E2B,,2][E-C-A,,] [EC][F4D4D,4]x2[F2-B,2-^D,2-]| \
+[F2B,2^D,2]x2[G4B,4E,4]x2[G2-C2-=F,2-]| \
+[G2C2=F,2]x2[A8-C8-^F,8]|
+[A2C2A,2][A-F-=D] [AF][A2D2G,2-] [G2G,2][A-F,] A[B2-C2-=F,2-]| \
+[B2C2=F,2][G-=F-C,] [G=F][A2^F2F,2-] [G2=F2^F,2][A-F-=C,] [A-F-][A2F2^C,2-]| \
+[B2G2C,2][G-=F-C,,] [G=F][^F2-A,2-F,,2] [F2-A,2-A,,2][F-A,-C,] [F-A,-][F2A,2F,2]| \
+[C2A,2][G-=F-C] [G=F][A4^F4C4F,4][c-A-F,,] [cA][B2-G2-D2-B,,2-]|
+[B2G2D2B,,2][G-=F-C,] [G=F][A4^F4C4F,,4][c-A-F,] [cA][B2-G2-D2-B,,2-]| \
+[B2G2D2B,,2][G-=F-C,] [G=F][A4^F4C4F,,4][c-A-E,,] [cA][=c2G2D,,2-]| \
+[A2D,,2][^c-F-D,] [cF][c2-G2-=F2-C,2] [c2-G2-=F2-=F,2][c-G-=F-G,] [c-G-=F-][c2G2=F2C,2-]| \
+[A2^F2C,2][B-G-B,,] [BG][c4A4A,,4][c-F-F,,] [cF][c2G2=F2C,2-]|
+[^F2^D2C,2][B-=F-C-C,,] [B=FC][A4-^F4-C4-F,,4][A-F-C-F,] [AFC][G2=F2C,2]| \
+[c2^F2^D,2][B-G-=F,] [BG][A2^F2F,2] [G2=F2G,2][^F-A,] F[G2=F2G,2]| \
+[^F2A,2][G-=F-B,] [G=F][^F2C2A,2] [G2=F2G,2][A-^F-F,] [AF][B2=F2G,2-]| \
+[=d2B2G,2][c-A-A,] [cA][B2G2B,2-] [A2C2B,2][G-D-B,-=F,] [GDB,][^F2C2A,2F,2-]|
+[G2=F2C2^F,2][A-F-^D-=C,] [AF^D]^C,/2-[=F/2-C,/2-][G-=F-C,] [G2=F2=F,2]G, x[G2=F2B,2]| \
+[A2^F2A,2][B-G-G,] [BG][c4F4A,4]x4| \
+x4[c4F4E4^A,4]x4| \
+x2[c2=G2^A,,2][=d2-F2-B,,2] [d2-F2-C,2][d-F-D,] [dF][=f2d2B2^G,,2]|
+[^f-d-=A,,][fd][B-G-F,,] [BG][c4-B4-G4-=F,,4][c2-B2G2][c2^F2F,,2]| \
+[B2=F2G,,2][A-^F-A,,] [AF][G2D2-B,,2] [A2D2C,2][B-D,] B[=F2D2G,,2]| \
+[^F2C2A,,2][G-B,-B,,] [GB,][F2C2A,,2] [D2B,2G,,2][C-A,-F,,] [CA,][C2B,2G,2C,2-]| \
+[D2C,2][=F-C-B,-C,,] [=FCB,]^F,,/2-[C/2-A,/2-F,,/2-][F-C-A,-F,,] [F2C2A,2A,,2]C, x[c2A2F2F,2]|
+[f2c2A,2][e-B-G,] [eB][d-B-A,][dBG,] [c-A-A,][cA][B-G-E,] [BG][A2E2C,2]| \
+[c2F2D,2][B-G-E,] [BG][c4A4E4A,,4][e-A-C,] [eA][d2-B2-F2-B,,2-]| \
+[d2B2F2B,,2][B-G-E,] [BG][A2-E2-C2-A,2] [A2-E2-C2-B,2][A-E-C-C] [AEC][G2-E2-D2-B,2]| \
+[G2-E2-D2-A,2][G-E-D-G,] [GED][E2C2A,2] [G2D2B,2][A-E-C] [AE][d2G2E2B,2]|
+[c2-E2-G,2][c-E-A,] [cE]E,/2-[G/2-E/2-E,/2-][B-G-E-E,] [B2-G2-E2-F,2][B4G4E4G,4]| \
+[c2A2A,2][d-B-B,] [dB][e4A4E4C,4]x4| \
+x4[c4A4F4F,4]x4| \
+x2[c2A2=G2E,2][d-A-F-D,][d-A-F-] [d2A2F2D2][e-A-C] [eA][f2-d2-B,2]|
+[f-d-F,][fd][d-B-A,] [dB][e2-d2-^G2-G,2] [e2-d2-G2-F,2][e-d-G-E,] [edG][e2-c2-A2-A,2]| \
+[e2c2A2B,2][E-C] E[c4A4D,4]x2[c2-A2-E,2-]| \
+[c2A2E,2]x2[c4A4F,4]x2[A2-E2-C,2-]| \
+[A2E2C,2]x2[A4F4D,4]x2[dGE,-][cE,-]|
+[B2G2E,2]A2A,/2-[E/2-C/2-A,/2][A-E-C-G,] [A-E-C-A,][A-E-C-][A-E-C-E,] [AEC][E2-A,2-C,2-]| \
+[E2A,2C,2][D-B,-E,] [DB,][C4A,,4][A-E-C-A,] [AEC][G2-E2-D,2-]| \
+[G2E2D,2][B-G-E-E,] [BGE][c4-A4-E4-A,,4][c-A-E-A,] [cAE][A2-F2-D2-D,2-]| \
+[A2F2D2D,2][G-E-E,] [GE][c4A4E4A,,4][A-E-C,] [AE][G2-E2-D2-B,,2-]|
+[G2E2D2B,,2][A-E-C-A,,] [AEC][E/2-E,/2-][B/2-G/2-E/2-E,/2][e-B-G-E-^D,] [e-B-G-E-E,][e-B-G-E-][e-B-G-E-B,,] [eBGE][B-G-E,,][BG]| \
+[c2A2E,2][=d-B-D,] [dB][e2-c2-C,2] [e2-c2-E,2][e-c-G,] [ec][e2-F2-C2]| \
+[e-F-^A,][e-F-][e-F-B,] [e-F-][e2F2^A,2-] [f2c2-^A,2][=g2c2][f2-c2-^A2-F,2-]| \
+[f2c2^A2F,2]x2[d4B4B,4][e-^A-B,,] [e^A][d2-B2-F2-B,2-]|
+[d2B2F2B,2][c-F-=A,] [cF][d2B2E2^G,2-] [e2B2-G,2][f2B2][e2-B2-G2-E,2-]| \
+[e2B2G2E,2]x2[c4A4A,4][c-=G-A,,] [c=G][A2-F2-D,2-]| \
+[A2F2D,2][A-E-C,] [AE][A4D4B,,4][A-C-A,,] [AC][^G2-B,2-G,,2-]| \
+[G2B,2G,,2][E-C-A,,] [EC][E2B,2G,2E,2-] [C2A,2E,2-][B,4-G,4-E,4]|
+[B,2G,2D,2][D-B,-E,] [DB,][C6A,6F,6]x2| \
+x2[B-G-B,,] [BG][A6E6C6C,6]x2| \
+x2[=G2C2A,2A,,2][F-D-D,][F-D-] [F-D-E,][FD][F-C-F,] [FC][F-D-B,,][F-D-]| \
+[F-D-F,,][FD][D-B,-A,,] [DB,][E4B,4=G,,4][=G-E-E,] [=GE][F2-C2-^A,,2-]|
+[F2C2^A,,2][E-C-^A,-F,] [EC^A,][D-B,-B,,][D-B,-] [D2B,2B,2][D-B,-=A,] [DB,-][=F2B,2^G,2]| \
+[C-B,-=F,][CB,][^F-A,-F,] [FA,][G4C4=F,4][=F-B,-C,] [=FB,][^F2A,2F,2]| \
+[=F2B,2G,2][^F-C-A,] [FC][F2D2B,,2] [E2C,2][F-D,] F[G2E2B,2E,2]| \
+[A2F,2][B-E-G,] [BE][E2C2A,,2] [D2B,,2][E-A,-C,] [EA,][F2-D2-D,2-]|
+[F2D2D,2-][E2C2D,2-][D2B,2D,2] [C2A,2C,2][B,-G,-B,,] [B,G,][E2A,2C,2]| \
+[E2C2A,,2][E-A,-C,] [EA,][F4D4A,4D,4]x2[c2A2E2E,2-]| \
+[B2G2E,2]x2[A4F4F,4]x2[A2-E2-A,2-C,2-]| \
+[A2E2A,2C,2]x2[F2D2D,2-] [G2E2D,2][A2F2][c2A2E2E,2-]|
+[B2G2E,2][A2E2C2][=C/2-F,/2-][F/2-^D/2-=C/2-F,/2-][A-F-^D-=C-F,] [A2F2^D2=C2A,2]=C x[=c2-A2-F2-^D,2]| \
+[=c2-A2-F2-F,2][=c-A-F-A,] [=c-AF][=c2^D2B,,2] [B2E2^C,2][A-F-^D,] [AF][G2E2E,2]| \
+[B2G,2][e-=d-G-E,] [e-dG][e2c2A2A,2] [d2B2E,2][c-A-F,] [cA][B2F2-D,2]| \
+[A2F2B,,2][G-E-D-E,] [GED]A,/2-[E/2-C/2-A,/2][A-E-C-G,] [A-E-C-A,][AEC]E, x[A2-E2-C,2-]|
+[A2E2C,2][B-G-D-B,,] [BGD][c4-A4-E4-A,,4][c-A-E-A,] [cAE][d2-B2-F2-D,2-]| \
+[d2B2F2D,2][B-G-E,] [BG][c4-A4-E4-A,,4][c-A-E-A,] [cAE][d2-B2-F2-D,2-]| \
+[d2B2F2D,2][B-G-E,] [BG][c4-A4-A,,4][c-A-C,] [cA][d2G2B,,2-]| \
+[cB,,-][BB,,][c-A-A,,] [cA][B4-G4-E,4][B-G-F,] [B-G][B2E2G,2]|
+[F2C2A,2][G-D-B,] [GD][A4E4C,4]x4| \
+x4[c4A4F4F,4-]F,2x2| \
+x2[c2A2=G2E,2][d-A-F-D,][d-A-F-] [d2-A2-F2-D2][d-A-F-C] [dAF][d2-B2-F2-B,2]| \
+[d-B-F-^G,][d-B-F-][d-B-F-A,] [dBF][e2-d2-G2-G,2] [e2-d2-G2-F,2][e-d-G-E,] [edG][e2-c2-A2-A,2]|
+[e2c2A2B,2]C x[F4C4A,4D,4]x2[A2-E2-C2-E,2-]| \
+[A2E2C2E,2]x2[c4A4F4F,4]x2[A2-E2-C2-C,2-]| \
+[A2E2C2C,2]x2[F4D4D,4]x2[c2G2E,2-]| \
+[B2E,2]A2A,,/2-[E/2-C/2-A,,/2-][A4-E4-C4-A,,4-] [AECA,,]

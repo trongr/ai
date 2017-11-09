@@ -1,0 +1,252 @@
+X: 1
+T: from bach/vp2-1all.mid
+M: 4/4
+L: 1/8
+Q:1/4=220
+K:F % 1 flats
+% untitled
+% A
+% A'
+% B
+% B'
+V:1
+% Solo Violin
+%%MIDI program 40
+x8| \
+% untitled
+% A
+D3/2E/2 F/2G/2A/2B/2 _D/2B/2A/2G<eG/2| \
+F/2_D/2=D/2A,/2 B,/2D/2F/2G/2 _D/2A,/2_D/2E/2>A/2[G/2F/2] (3G/2F/2E/2| \
+F/2=D/2F/2A/2>B/2[A/2G/2] (3A/2G/2F/2 E/2G/2B/2d/2>c/2[B/2A/2] (3B/2A/2G/2|
+A/2F/2A/2c/2 f/2g/2a/2c/2 d/2A/2B/2d/2 g/2a/2b/2d/2| \
+e/2B/2c/2G/2 A/2B/2c/2E/2 F/2A,/2B,/2G/2 C/2E/2G/2B/2| \
+A/2G/2F/2A/2 d/2F/2E/2D/2 _D/2e/2f/2g/2 A/2g/2f/2e/2| \
+f/2e/2=d/2E/2 D/2C/2=B,/2A,/2 _A,/2=B/2c/2d/2 E/2d/2c/2=B/2|
+c/2=B/2=A/2=B/2 c/2>f/2[e/2d/2]c/2 =B/2A/2G/2A/2 =B/2>e/2[d/2c/2]=B/2| \
+A/2G/2F/2>G/2 [A/2D/2]c/2=B/2A/2 _A/2_G/2E/2_G/2 _A/2=A/2=B/2c/2| \
+d/2e/2f/2e/2 d/2c/2=B/2A/2 _a/2=a/2=b/2a/2 _a/2_g/2e/2d/2| \
+c/2>d/2[f/2e/2]=a/2 =B/2>c/2[e/2d/2]=g/2 A/2>=B/2[d/2c/2]f/2 G/2>A/2[c/2=B/2]e/2|
+F/2>G/2[=B/2A/2]d/2 E/2>_G/2[A/2_A/2]c/2 D/2_D/2=D/2F/2 _B/2c/2d/2B/2| \
+F/2E/2F/2B/2 d/2e/2f/2d/2 B/2=A/2B/2d/2 f/2>=g/2[b/2a/2]a/2| \
+_a/2>=b/2[=a/2_a/2]f/2 [e/2d/2]f/2[e/2d/2]=B/2 [=A/2_A/2]=B/2e/2_a/2 =b/2e/2d'/2>c'/2| \
+[c'/2=b/2]=b/2[=a/2_a/2]=a/2>c/2[e/2d/2] (3d/2c/2=B/2 A3/2=B/2 _d/2=d/2e/2G/2|
+F/2D/2F/2A/2 d/2f/2_a/2D/2 E3-E/2x/2| \
+% A'
+D3/2E/2 F/2G/2=A/2_B/2 _D/2B/2A/2G<eG/2| \
+F/2_D/2=D/2A,/2 B,/2D/2F/2G/2 _D/2A,/2_D/2E/2>A/2[G/2F/2] (3G/2F/2E/2| \
+F/2=D/2F/2A/2>B/2[A/2G/2] (3A/2G/2F/2 E/2G/2B/2d/2>c/2[B/2A/2] (3B/2A/2G/2|
+A/2F/2A/2c/2 f/2g/2a/2c/2 d/2A/2B/2d/2 g/2a/2b/2d/2| \
+e/2B/2c/2G/2 A/2B/2c/2E/2 F/2A,/2B,/2G/2 C/2E/2G/2B/2| \
+A/2G/2F/2A/2 d/2F/2E/2D/2 _D/2e/2f/2g/2 A/2g/2f/2e/2| \
+f/2e/2=d/2E/2 D/2C/2=B,/2A,/2 _A,/2=B/2c/2d/2 E/2d/2c/2=B/2|
+c/2=B/2=A/2=B/2 c/2>f/2[e/2d/2]c/2 =B/2A/2G/2A/2 =B/2>e/2[d/2c/2]=B/2| \
+A/2G/2F/2>G/2 [A/2D/2]c/2=B/2A/2 _A/2_G/2E/2_G/2 _A/2=A/2=B/2c/2| \
+d/2e/2f/2e/2 d/2c/2=B/2A/2 _a/2=a/2=b/2a/2 _a/2_g/2e/2d/2| \
+c/2>d/2[f/2e/2]=a/2 =B/2>c/2[e/2d/2]=g/2 A/2>=B/2[d/2c/2]f/2 G/2>A/2[c/2=B/2]e/2|
+F/2>G/2[=B/2A/2]d/2 E/2>_G/2[A/2_A/2]c/2 D/2_D/2=D/2F/2 _B/2c/2d/2B/2| \
+F/2E/2F/2B/2 d/2e/2f/2d/2 B/2=A/2B/2d/2 f/2>=g/2[b/2a/2]a/2| \
+_a/2>=b/2[=a/2_a/2]f/2 [e/2d/2]f/2[e/2d/2]=B/2 [=A/2_A/2]=B/2e/2_a/2 =b/2e/2d'/2>c'/2| \
+[c'/2=b/2]=b/2[=a/2_a/2]=a/2>c/2[e/2d/2] (3d/2c/2=B/2 A3/2=B/2 _d/2=d/2e/2G/2|
+F/2D/2F/2A/2 d/2f/2_a/2D/2 _d3-_d/2x/2| \
+% B
+e3/2f/2 e/2=d/2_d/2=B/2 =A/2>G/2[_B/2A/2]A/2 G/2F/2E/2F/2| \
+G/2F/2E/2=D/2 f/2A/2B/2D/2 C/2G/2B/2_e/2 A/2c/2f/2_e/2| \
+d/2A/2B/2d/2 _E/2G/2A/2=B/2 c/2d/2_e/2c/2>a/2[g/2_g/2] (3=g/2_g/2=e/2|
+_g/2>c/2[_e/2d/2]d/2 c/2>_B/2[d/2A/2]c/2 B/2>c/2[_e/2d/2]=g/2 A/2>B/2[d/2c/2]f/2| \
+G/2>A/2[c/2B/2]_e/2 F/2>G/2[B/2A/2]d/2 _E/2>g/2[f/2_e/2]c/2 [B/2A/2]c/2[B/2A/2]_G/2| \
+[=E/2D/2]_G/2A/2c/2>_e/2[d/2c/2] (3_g/2=e/2d/2 b/2>a/2[=g/2_g/2]=g/2>B/2[d/2c/2] (3c/2B/2A/2| \
+G3/2A/2 B/2c/2d/2F/2 E/2C/2E/2G/2 B/2>e/2[g/2f/2]B/2|
+A/2F/2A/2c/2 f/2A/2G/2F/2 C/2G/2c/2d/2 e/2B/2A/2G/2| \
+F/2D/2F/2A/2 d/2F/2E/2D/2 A,/2E/2A/2B/2 c/2G/2F/2_E/2| \
+D/2B,/2D/2F/2 B/2A/2G/2F/2 =e/2>f/2[g/2f/2]e/2 d/2c/2B/2g/2| \
+ (3A/2G/2F/2[F/2E/2]B,/2 C/2E/2G/2A/2 B/2A/2G/2F/2 a/2e/2f/2d/2|
+=B/2d/2f/2a/2 g/2e/2_d/2g/2 =D/2A/2_d/2g/2 f/2_d/2=d/2_B/2| \
+G/2B/2d/2f/2 _e/2c/2A/2_e/2 B,/2F/2A/2_e/2 d/2A/2B/2G/2| \
+=E/2G/2B/2d/2 c/2A/2_G/2c/2 B/2A/2=G/2F/2 _E/2D/2_E/2G/2| \
+B/2A/2B/2_e/2 g/2_g/2=g/2b/2 _d/2>A/2[_d/2=B/2]=e/2 G/2>_B/2[A/2G/2]F/2|
+[F/2E/2]A/2[G/2F/2]E/2 [=D/2A,/2]E/2d/2_d/2 =d3-d/2x/2| \
+% B'
+e3/2f/2 e/2d/2_d/2=B/2 A/2>G/2[_B/2A/2]A/2 G/2F/2E/2F/2| \
+G/2F/2E/2=D/2 f/2A/2B/2D/2 C/2G/2B/2_e/2 A/2c/2f/2_e/2| \
+d/2A/2B/2d/2 _E/2G/2A/2=B/2 c/2d/2_e/2c/2>a/2[g/2_g/2] (3=g/2_g/2=e/2|
+_g/2>c/2[_e/2d/2]d/2 c/2>_B/2[d/2A/2]c/2 B/2>c/2[_e/2d/2]=g/2 A/2>B/2[d/2c/2]f/2| \
+G/2>A/2[c/2B/2]_e/2 F/2>G/2[B/2A/2]d/2 _E/2>g/2[f/2_e/2]c/2 [B/2A/2]c/2[B/2A/2]_G/2| \
+[=E/2D/2]_G/2A/2c/2>_e/2[d/2c/2] (3_g/2=e/2d/2 b/2>a/2[=g/2_g/2]=g/2>B/2[d/2c/2] (3c/2B/2A/2| \
+G3/2A/2 B/2c/2d/2F/2 E/2C/2E/2G/2 B/2>e/2[g/2f/2]B/2|
+A/2F/2A/2c/2 f/2A/2G/2F/2 C/2G/2c/2d/2 e/2B/2A/2G/2| \
+F/2D/2F/2A/2 d/2F/2E/2D/2 A,/2E/2A/2B/2 c/2G/2F/2_E/2| \
+D/2B,/2D/2F/2 B/2A/2G/2F/2 =e/2>f/2[g/2f/2]e/2 d/2c/2B/2g/2| \
+ (3A/2G/2F/2[F/2E/2]B,/2 C/2E/2G/2A/2 B/2A/2G/2F/2 a/2e/2f/2d/2|
+=B/2d/2f/2a/2 g/2e/2_d/2g/2 =D/2A/2_d/2g/2 f/2_d/2=d/2_B/2| \
+G/2B/2d/2f/2 _e/2c/2A/2_e/2 B,/2F/2A/2_e/2 d/2A/2B/2G/2| \
+=E/2G/2B/2d/2 c/2A/2_G/2c/2 B/2A/2=G/2F/2 _E/2D/2_E/2G/2| \
+B/2A/2B/2_e/2 g/2_g/2=g/2b/2 _d/2>A/2[_d/2=B/2]=e/2 G/2>_B/2[A/2G/2]F/2|
+[F/2E/2]A/2[G/2F/2]E/2 [=D/2A,/2]E/2d/2_d/2 =d3
+V:2
+% --------------------------------------
+%%MIDI program 40
+x6 x3/2
+% untitled
+D/2| \
+% A
+D3/2x6x/2| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x4 a3-a/2D/2| \
+% A'
+D3/2x6x/2| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x4 a3-a/2e/2| \
+% B
+e3/2x6x/2| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x4 D3-D/2e/2| \
+% B'
+e3/2x6x/2| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x4 D3
+V:3
+% Johann Sebastian Bach  (1685-1750)
+%%MIDI program 40
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x4 
+% untitled
+% A
+_d3-_d/2x/2| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x4 
+% A'
+E3-E/2
+V:4
+% Six Sonatas and Partitas for Solo Violin
+%%MIDI program 40
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x4 
+% untitled
+% A
+A,3-A,/2x/2| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x4 
+% A'
+A,3-A,/2
+% --------------------------------------
+% Partita No. 2 in D minor - BWV 1004
+% 1st Movement: Allemande
+% --------------------------------------
+% Sequenced with Cakewalk Pro Audio by
+% David J. Grossman - dave@unpronounceable.com
+% This and other Bach MIDI files can be found at:
+% Dave's J.S. Bach Page
+% http://www.unpronounceable.com/bach
+% --------------------------------------
+% Original Filename: vp2-1all.mid
+% Last Modified: February 22, 1997

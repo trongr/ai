@@ -1,0 +1,789 @@
+X: 1
+T: from bach/bjsbmm06.mid
+M: 4/2
+L: 1/8
+Q:1/4=96
+K:D % 2 sharps
+%     Mass in B Minor          Johann Sebastion Bach  No. 6 Chor:   Gratias agimus tibi    seq by David Siu  dss@po.cwru.edu      
+% Instrument  1
+%%MIDI program 73
+V:1
+% Trumpet
+%%MIDI program 56
+x16| \
+x16| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x8 
+%     Mass in B Minor          Johann Sebastion Bach  No. 6 Chor:   Gratias agimus tibi    seq by David Siu  dss@po.cwru.edu      
+d8|
+e4 f4 g4 f2 e2| \
+f2 d2 g8 f4| \
+e8 d8| \
+x16|
+x16| \
+x16| \
+x16| \
+x16|
+x16| \
+x16| \
+x12 d4| \
+e4 f4 g4 f2 e2|
+f2 d2 g8 f4| \
+e4 d8 x4| \
+x16| \
+x12 d4|
+e4 [a4f4] [b4g4] [c'2-f2] [c'2e2]| \
+[d'2-f2] [d'2d2] [c'2g2-] [b2g2-] [c'2g2-] [a2g2] [d'4-f4]| \
+[d'4e4-] [c'4e4] [b4-d4] b4| \
+[a2d2-] [gd-][fd-] [g4-d4] [g4e4A4-] [f4-f4A4]|
+[g2-f2D2-] [g-eD-][gdD] [a2-f2] [a2-e2A2] [a2f2A2-] [gd-A-][fdA] [b4g4-d4]| \
+[a4-g4e4] [a4f4d4] [^g4e4-e4-] [a4-e4e4]| \
+[a4f4d4-] [^g4d4D4] [a8e8A8]| \
+x16|
+x16| \
+x12 [d4F4]| \
+[e4A4-] [a4f4A4] [b2-=g2-e2] [b2g2f2] [c'2-g2f2] [c'2a2e2]| \
+[d'2-b2f2] [d'2-b2-f2] [d'-be-][d'-ae] [d'-^gd-][d'-fd] [d'b-e-][c'b-e-] [b-be-][bae-] [b4-^g4e4-]|
+[c'2b2e2] [ae-][=ge] [a2-f2-] [a2-f2-d2] [a2-f2-d2] [a2f2] [g4-e4-]| \
+[g2e2A2] [fA-][eA] [f2d2-] [b2d2-D2] [f2-d2A2] [f-AA][fAA] [e2-A2A2] [e2A2A2]| \
+[d16A16F16]|
+V:2
+% Timpani
+%%MIDI program 47
+x16| \
+x16| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x8 
+%     Mass in B Minor          Johann Sebastion Bach  No. 6 Chor:   Gratias agimus tibi    seq by David Siu  dss@po.cwru.edu      
+A,,8|
+D,4 A,,4 D,4 D,4| \
+A,,4 D,8 A,,4| \
+D,8 A,,8| \
+x16|
+x16| \
+x12 D,4-| \
+D,4 A,,4 x8| \
+x2 D,D, D,2 D,2 D,2 x4 D,2|
+A,,2 x4 D,2 D,2 x6| \
+A,,2 x4 D,2 A,,2 A,,A,, A,,2 A,,2| \
+D,16|
+V:3
+% Flute
+%%MIDI program 68
+x16| \
+x16| \
+x12 
+%     Mass in B Minor          Johann Sebastion Bach  No. 6 Chor:   Gratias agimus tibi    seq by David Siu  dss@po.cwru.edu      
+D4| \
+E4 F4 G4 F2 E2|
+F2 D2 G8 F4| \
+E8 D8| \
+x12 A4-| \
+A2 A2 ^G2 ^G2 A2 =GF EF DE|
+FE FG FG FE DE DE F4| \
+E2 x12 x2| \
+x4 D4 E4 F4| \
+G4 F2 E2 F4 B4-|
+B2 A4 d2 G2 B2 A2 G2| \
+F8 x8| \
+x8 A8| \
+B4 c4 d4 c2 B2|
+c2 A2 d8 c4| \
+B8 A4 D4| \
+E4 F4 G4 F2 E2| \
+F2 D2 A8 G4|
+F8 E4 G4-| \
+G2 G2 F2 F2 G2 FE DE FD| \
+ED EF EG FE D2 E2 F4| \
+E8- E2 D2 E2 A2|
+^G8 F4 x4| \
+x4 D4 E4 F4| \
+=G4 F2 E2 F2 D2 G4-| \
+G4 F4 E8|
+D4 x6 d4 d2| \
+c2 c2 dc BA G2 D2 G4-| \
+G2 F2 D4 E4 F4| \
+G4 F2 E2 F2 D2 G4-|
+G4 F4 E8| \
+D8 x4 D4| \
+E4 F4 G4 F2 E2| \
+F2 D2 G8 F4-|
+F2 ED A6 GF B4| \
+A8 ^G4 A4-| \
+A2 A2 ^G2 ^G2 AE F^G AB ^GA| \
+B2 F4<B4 E2 AB ^GA|
+Bc AB c6 BA B2 B2| \
+B4 E4 D4 D4| \
+E4 F4 =G4 F2 E2| \
+F2 B4 BB E2 ^G2 B4-|
+B2 E2 A8 =G4-| \
+G2 FE F2 B2 F4 E4| \
+F16|
+V:4
+% Bassoon
+%%MIDI program 70
+x16| \
+x4 
+%     Mass in B Minor          Johann Sebastion Bach  No. 6 Chor:   Gratias agimus tibi    seq by David Siu  dss@po.cwru.edu      
+D,4 E,4 F,4| \
+G,4 F,2 E,2 F,2 D,2 G,4-| \
+G,4 F,4 E,8|
+D,8 x8| \
+x4 A,6 A,2 ^G,2 ^G,2| \
+A,2 =G,F, E,F, D,E, F,E, F,G, F,G, F,E,| \
+D,2 C,B,, E,4 A,,8|
+x12 D,4| \
+E,4 F,4 G,4 F,2 E,2| \
+F,2 B,,4<B,4 A,4 D2| \
+G,2 B,2 A,2 G,2 F,8|
+x16| \
+x4 B,6 B,2 ^A,2 ^A,2| \
+B,C =A,B, CD B,C DC DE DE DC| \
+B,8- B,2 C2 D4|
+A,4 G,2 F,2 E,4 A,4| \
+D,4 E,4 A,,8-| \
+A,,4 ^A,,4 B,,4 C,4| \
+D,4 =C,4 B,,4 E,4|
+=A,,4 B,,4 E,,4 x4| \
+x16| \
+x12 D,4-| \
+D,2 D,2 ^C,2 C,2 D,2 C,B,, A,,B,, ^G,,A,,|
+B,,A,, B,,C, B,,D, C,B,, A,,2 B,,2 C,4| \
+F,,2 x2 B,6 A,2 =G,2 F,2| \
+E,4 A,4 D,4 x4| \
+x16|
+x8 D,8| \
+E,4 F,4 G,4 F,2 E,2| \
+F,2 D,2 G,8 F,4| \
+E,4 A,4 D,2 F,2 B,4-|
+B,2 C2 D=C B,A, G,2 E,2 A,4| \
+D,8 x8| \
+x16| \
+x8 A,,8|
+B,,4 ^C,4 D,4 C,2 B,,2| \
+C,2 A,,2 D,8 C,4| \
+B,,8 A,,4 A,4-| \
+A,2 A,2 ^G,2 ^G,2 A,B, A,=G, F,G, E,F,|
+^G,A, F,^G, ^A,B, ^G,^A, B,8-| \
+B,2 =A,=G, A,B, CA, D2 A,2 D4-| \
+D4 =C4 B,8-| \
+B,4 A,4 ^G,8|
+A,6 D,2 =G,2 F,2 G,2 E,2| \
+F,6 G,2 A,4 A,,4| \
+D,,16|
+V:5
+% Violin I
+%%MIDI program 48
+x16| \
+x16| \
+x16| \
+x4 
+%     Mass in B Minor          Johann Sebastion Bach  No. 6 Chor:   Gratias agimus tibi    seq by David Siu  dss@po.cwru.edu      
+A4 B4 ^c4|
+d4 c2 B2 c2 A2 d4-| \
+d4 c4 B8| \
+A8 x8| \
+x4 d6 d2 c2 c2|
+d2 cB AB GA BA B=c B=c BA| \
+G2 FE A4 D4 x4| \
+x12 A4| \
+B4 ^c4 d4 c2 B2|
+c2 F4<f4 B2 e4-| \
+e2 d4 g2 c2 e2 d2 c2| \
+B8 x8| \
+x8 d8|
+e4 f4 g4 f2 e2| \
+f2 d2 g8 f4| \
+e8 d8| \
+x12 e4-|
+e2 e2 ^d2 ^d2 e2 =d=c B=c AB| \
+=cB =cd =ce d=c B2 ^c2 d4| \
+G2 E2 c8 B4| \
+e4 A8 f4-|
+f2 f2 =f2 =f2 ^f2 ed cd Bc| \
+dc de df ed c4 f4| \
+B4 x8 d4| \
+e4 f4 g4 f2 e2|
+f2 d2 g8 f4| \
+ (3e6-ed6- dB6-B B2| \
+A2 A2 B4 E2 x2 A4| \
+B4 c4 d4 c2 B2|
+c2 A2 d8 c4| \
+B8 A8| \
+x16| \
+d8 e4 f4|
+g4 f2 e2 f2 d2 g4-| \
+g4 f4 e8| \
+d4 d6 d2 c2 c2| \
+de dc Bc AB cd Bc ^de c^d|
+e8- e2 =dc de fd| \
+g12 f4| \
+e16| \
+d4 x2 d2 e4- ef ed|
+c2 A2 f8 e4-| \
+e2 A4<d4 cB c4| \
+d16|
+V:6
+% Violin II
+%%MIDI program 48
+x16| \
+x16| \
+x12 
+%     Mass in B Minor          Johann Sebastion Bach  No. 6 Chor:   Gratias agimus tibi    seq by David Siu  dss@po.cwru.edu      
+D4| \
+E4 F4 G4 F2 E2|
+F2 D2 G8 F4| \
+E8 D8| \
+x12 A4-| \
+A2 A2 ^G2 ^G2 A2 =GF EF DE|
+FE FG FG FE D2 CB, F4| \
+B,4 x12| \
+x4 D4 E4 F4| \
+G4 F2 E2 F2 B,2 B4-|
+B2 A4 d2 G2 B2 A2 G2| \
+F8 x8| \
+x8 A8| \
+B4 c4 d4 c2 B2|
+c2 A2 d8 c4| \
+B8 A4 D4| \
+E4 F4 G4 F2 E2| \
+F2 D2 A8 G4|
+F8 E4 G4-| \
+G2 G2 F2 F2 G2 FE DE CD| \
+ED EF EG FE D2 E2 F4| \
+B,2 B,4<E4 D2 C2 A2|
+^G4 ^G4 F4 x4| \
+x4 D4 E4 F4| \
+=G4 F2 E2 F2 D2 G4-| \
+G4 F4 E8|
+D4 x6 d4 d2| \
+c2 c2 dc BA G2 D2 G4-| \
+G2 F2 D4 E4 F4| \
+G4 F2 E2 F2 D2 G4-|
+G4 F4 E8| \
+D8 x4 D4| \
+E4 F4 G4 F2 E2| \
+F2 D2 G8 F4-|
+F2 ED A6 GF B4| \
+A8 ^G4 A4-| \
+A2 A2 ^G2 ^G2 AE F^G AB ^GA| \
+B2 F4<B4 E2 AB ^GA|
+Bc AB c6 BA B2 B2| \
+B4 E4 D4 D4| \
+E4 F4 =G4 F2 E2| \
+F2 B4 BB E2 ^G2 B4-|
+B2 E2 A8 =G4-| \
+G2 FE F2 B2 F4 E4| \
+F16|
+V:7
+% Viola
+%%MIDI program 48
+x16| \
+x12 
+%     Mass in B Minor          Johann Sebastion Bach  No. 6 Chor:   Gratias agimus tibi    seq by David Siu  dss@po.cwru.edu      
+A,4| \
+B,4 C4 D4 C2 B,2| \
+C2 A,2 D8 C4|
+B,8 A,8| \
+x12 D4-| \
+D2 D2 C2 C2 D2 CB, A,B, G,A,| \
+B,A, B,C B,D CB, A,2 E,2 A,4|
+D,8 x8| \
+x4 A,4 B,4 C4| \
+D4 C2 B,2 C2 F,2 F4-| \
+F2 E4 A2 D2 F2 E2 D2|
+C8 x8| \
+D8 E4 F4| \
+G4 F2 E2 F2 D2 A4-| \
+A4 G4 F8|
+E4 A,4 B,4 C4| \
+D4 C2 B,2 C2 A,2 D4-| \
+D4 C4 B,8| \
+A,4 E2 E2 ^D4 B,4|
+=C4 B,4 G,4 x4| \
+x12 B,4-| \
+B,2 B,2 ^A,2 ^A,2 B,2 =A,G, F,G, E,F,| \
+G,F, G,A, G,B, A,G, F,2 G,2 A,4|
+=D,2 D2 ^C2 C2 C2 D2 E4| \
+A,4 x8 A,4| \
+B,4 C4 D4 C2 B,2| \
+C2 A,2 D8 =C4-|
+=C4 B,4 A,8| \
+x4 A,4 B,4 ^C4| \
+D4 C2 B,2 C2 A,2 D4-| \
+D4 C4 A,2 F2 E2 D2|
+C2 E2 D2 F2 B,4 A,4-| \
+A,4 G,4 A,4 B,4| \
+G,4 A,4 B,4 C4| \
+D4 C2 B,2 C2 A,2 D4-|
+D2 CB, E6 A,2 D4| \
+E4 D2 C2 B,4 C4| \
+D2 C2 B,4 E6 E2| \
+F4 E2 E2 E4 F4|
+B,4 F6 FE FE DC| \
+D4 C2 C2 A,4 A,4| \
+x4 A,4 B,4 C4| \
+D4 E2 F2 B,4 E4-|
+E2 C4 D2 B,2 A,2 B,2 G,2| \
+A,2 B,C D2 B,2 A,4 A,4| \
+A,16|
+V:8
+% Cello
+%%MIDI program 48
+x16| \
+x4 
+%     Mass in B Minor          Johann Sebastion Bach  No. 6 Chor:   Gratias agimus tibi    seq by David Siu  dss@po.cwru.edu      
+D,4 E,4 F,4| \
+G,4 F,2 E,2 F,2 D,2 G,4-| \
+G,4 F,4 E,8|
+D,8 A,8| \
+E4 A,6 A,2 ^G,2 ^G,2| \
+A,2 =G,F, E,F, D,E, F,E, F,G, F,G, F,E,| \
+D,2 C,B,, E,4 A,,4 A,4|
+D4 D,4 G,4 D,4| \
+E,4 F,4 G,4 F,2 E,2| \
+F,2 B,,4<B,4 A,4 D2| \
+G,2 B,2 A,2 G,2 F,8-|
+F,E, F,G, F,E, D,C, B,,4 C,4| \
+D,2 F,4<B,4 B,2 ^A,2 ^A,2| \
+B,C =A,B, CD B,C DC DE DE DC| \
+B,8- B,2 C2 D4|
+A,4 G,2 F,2 E,4 A,4| \
+D,4 E,4 A,,8-| \
+A,,4 ^A,,4 B,,4 C,4| \
+D,4 =C,4 B,,4 E,4|
+=A,,4 B,,4 E,,4 G4-| \
+G2 G2 F2 F2 G2 FE B,4-| \
+B,2 B,2 ^A,2 ^A,2 B,2 =A,G, D,4-| \
+D,2 D,2 ^C,2 C,2 D,2 C,B,, A,,B,, ^G,,A,,|
+B,,A,, B,,C, B,,D, C,B,, A,,2 B,,2 C,4| \
+F,,2 F,4<B,4 A,2 =G,2 F,2| \
+E,4 A,4 D,2 D2 C2 B,2| \
+C2 A,2 D8 =C4-|
+=C4 B,4 [A,8D,8]| \
+E,4 F,4 G,4 F,2 E,2| \
+F,2 D,2 G,8 F,4| \
+E,4 A,4 D,2 F,2 B,4-|
+B,2 ^C2 D=C B,A, G,2 E,2 A,4| \
+D,8 A,4 B,4| \
+G,4 A,4 B,4 ^C4| \
+D4 C2 B,2 A,,8|
+B,,4 C,4 D,4 C,2 B,,2| \
+C,2 A,,2 D,8 C,2 C,2| \
+B,,8 A,,4 A,4-| \
+A,2 A,2 ^G,2 ^G,2 A,B, A,=G, F,G, E,F,|
+^G,A, F,^G, ^A,B, ^G,^A, B,8-| \
+B,2 =A,=G, A,B, CA, D2 A,2 D4-| \
+D4 =C4 B,8-| \
+B,4 A,4 ^G,8|
+A,6 D,2 =G,2 F,2 G,2 E,2| \
+F,6 G,2 A,4 A,,4| \
+D,,16|
+V:9
+% Soprano II
+%%MIDI program 52
+x16| \
+x16| \
+x16| \
+x4 
+%     Mass in B Minor          Johann Sebastion Bach  No. 6 Chor:   Gratias agimus tibi    seq by David Siu  dss@po.cwru.edu      
+A4 B4 ^c4|
+d4 c2 B2 c2 A2 d4-| \
+d4 c2 c2 B8| \
+A8 x8| \
+x4 d6 d2 c2 c2|
+d2 cB AB GA BA B=c B=c BA| \
+G2 FE A4 D4 x4| \
+x12 A4| \
+B4 ^c4 d4 c2 B2|
+c2 F4<f4 B2 e4-| \
+e2 d4 g2 c2 e2 d2 c2| \
+B4 B4 x8| \
+x8 d8|
+e4 f4 g4 f2 e2| \
+f2 d2 g8 f2 f2| \
+e8 d8| \
+x12 e4-|
+e2 e2 ^d2 ^d2 e2 =d=c B=c AB| \
+=cB =cd =ce d=c B2 ^cc d4| \
+G2 x2 c6 c2 B2 B2| \
+e2 ee A4 A2 x2 f4-|
+f2 f2 =f2 =f2 ^f2 ed cd Bc| \
+dc de df ed c2 cc f4| \
+B4 x8 d4| \
+e4 f4 g4 f2 e2|
+f2 d2 g8 f2 f2| \
+e2 e4<d4 B2 B2 B2| \
+A2 AA B4 E2 x2 A4| \
+B4 c4 d4 c2 B2|
+c2 A2 d8 c2 c2| \
+B8 A8| \
+x16| \
+d8 e4 f4|
+g4 f2 e2 f2 d2 g4-| \
+g4 f2 f2 e8| \
+d4 d6 d2 c2 c2| \
+de dc Bc AB cd Bc ^de c^d|
+e8- e2 =dc de fd| \
+g12 f2 f2| \
+e16| \
+d4 x2 d2 e2 e3f ed|
+c2 A2 f8 e4-| \
+e2 A4<d4 cB c4| \
+d16|
+V:10
+% Alto
+%%MIDI program 52
+x16| \
+x16| \
+x12 
+%     Mass in B Minor          Johann Sebastion Bach  No. 6 Chor:   Gratias agimus tibi    seq by David Siu  dss@po.cwru.edu      
+D4| \
+E4 F4 G4 F2 E2|
+F2 D2 G8 F2 F2| \
+E8 D8| \
+x12 A4-| \
+A2 A2 ^G2 ^G2 A2 =GF EF DE|
+FE FG FG FE D2 CB, F4| \
+B,4 x12| \
+x4 D4 E4 F4| \
+G4 F2 E2 F2 B,2 B4-|
+B2 A4 d2 G2 B2 A2 G2| \
+F4 F4 x8| \
+x8 A8| \
+B4 c4 d4 c2 B2|
+c2 A2 d8 c2 c2| \
+B8 A4 D4| \
+E4 F4 G4 F2 E2| \
+F2 D2 A8 G2 G2|
+F8 E4 G4-| \
+G2 G2 F2 F2 G2 FE DE CD| \
+ED EF EG FE D2 EE F4| \
+B,2 x2 E6 D2 C2 A2|
+^G2 ^G^G ^G4 F4 x4| \
+x4 D4 E4 F4| \
+=G4 F2 E2 F2 D2 G4-| \
+G4 F2 F2 E8|
+D4 x6 d4 d2| \
+c2 c2 dc BA G2 DD G4-| \
+G2 F2 D4 E4 F4| \
+G4 F2 E2 F2 D2 G4-|
+G4 F2 F2 E8| \
+D8 x4 D4| \
+E4 F4 G4 F2 E2| \
+F2 D2 G8 F4-|
+F2 ED A6 GF B2 B2| \
+A8 ^G4 A4-| \
+A2 A2 ^G2 ^G2 AE F^G AB ^GA| \
+B2 F4<B4 EE A4|
+E2 x2 c6 B2 B2 B2| \
+B2 BB E4 D4 D4| \
+E4 F4 =G4 F2 E2| \
+F2 B4 BB E2 ^G2 B4-|
+B2 E4<A4 D2 =G4-| \
+G2 FE F2 B2 F4 E4| \
+F16|
+V:11
+% Tenor
+%%MIDI program 52
+x16| \
+x12 
+%     Mass in B Minor          Johann Sebastion Bach  No. 6 Chor:   Gratias agimus tibi    seq by David Siu  dss@po.cwru.edu      
+A,4| \
+B,4 C4 D4 C2 B,2| \
+C2 A,2 D8 C2 C2|
+B,8 A,8| \
+x12 D4-| \
+D2 D2 C2 C2 D2 CB, A,B, G,A,| \
+B,A, B,C B,D CB, A,2 E,E, A,4|
+D,8 x8| \
+x4 A,4 B,4 C4| \
+D4 C2 B,2 C2 F,2 F4-| \
+F2 E4 A2 D2 F2 E2 D2|
+C4 C4 x8| \
+D8 E4 F4| \
+G4 F2 E2 F2 D2 A4-| \
+A4 G2 G2 F8|
+E4 A,4 B,4 C4| \
+D4 C2 B,2 C2 A,2 D4-| \
+D4 C2 C2 B,8| \
+A,4 E4 ^D4 B,2 B,2|
+=C4 B,4 G,4 x4| \
+x12 B,4-| \
+B,2 B,2 ^A,2 ^A,2 B,2 =A,G, F,G, E,F,| \
+G,F, G,A, G,B, A,G, F,2 G,G, A,4|
+=D,2 DD ^C2 C2 C2 DD E4| \
+A,4 x8 A,4| \
+B,4 C4 D4 C2 B,2| \
+C2 A,2 D8 =C2 =C2|
+=C4 B,4 A,8| \
+x4 A,4 B,4 ^C4| \
+D4 C2 B,2 C2 A,2 D4-| \
+D4 C2 C2 A,2 F2 E2 D2|
+C2 E2 D2 F2 B,4 A,4-| \
+A,4 G,2 G,2 A,4 B,4| \
+G,4 A,4 B,4 C4| \
+D4 C2 B,2 C2 A,2 D4-|
+D2 CB, E6 A,2 D4| \
+E4 D2 C2 B,4 C2 C2| \
+D2 C2 B,4 E6 E2| \
+ (3F4-FE4- EE4-E EE F4|
+B,4 F6 FE F2 D2| \
+D4 C2 C2 A,4 A,4| \
+x4 A,4 B,4 C4| \
+D4 E2 F2 B,4 E2 E2|
+E2 C2 C2 D2 B,2 A,2 B,2 G,2| \
+A,2 B,C D2 B,2 A,8| \
+A,16|
+V:12
+% Bass
+%%MIDI program 52
+x16| \
+x4 
+%     Mass in B Minor          Johann Sebastion Bach  No. 6 Chor:   Gratias agimus tibi    seq by David Siu  dss@po.cwru.edu      
+D,4 E,4 F,4| \
+G,4 F,2 E,2 F,2 D,2 G,4-| \
+G,4 F,2 F,2 E,8|
+D,8 x8| \
+x4 A,6 A,2 ^G,2 ^G,2| \
+A,2 =G,F, E,F, D,E, F,E, F,G, F,G, F,E,| \
+D,2 C,B,, E,4 A,,8|
+x12 D,4| \
+E,4 F,4 G,4 F,2 E,2| \
+F,2 B,,4<B,4 A,4 D2| \
+G,2 B,2 A,2 G,2 F,4 F,4|
+x16| \
+x4 B,6 B,2 ^A,2 ^A,2| \
+B,C =A,B, CD B,C DC DE DE DC| \
+B,8- B,2 C2 D4|
+A,2 A,2 G,2 F,2 E,4 A,2 A,2| \
+D,4 E,4 A,,8-| \
+A,,4 ^A,,4 B,,4 C,4| \
+D,4 =C,2 =C,2 B,,4 E,2 E,2|
+=A,,4 B,,4 E,4 x4| \
+x16| \
+x12 D,4-| \
+D,2 D,2 ^C,2 C,2 D,2 C,B,, A,,B,, ^G,,A,,|
+B,,A,, B,,C, B,,D, C,B,, A,,2 B,,B,, C,4| \
+F,,2 x2 B,6 A,2 =G,2 F,2| \
+E,2 E,E, A,4 D,4 x4| \
+x16|
+x8 D,8| \
+E,4 F,4 G,4 F,2 E,2| \
+F,2 D,2 G,8 F,2 F,2| \
+E,4 A,4 D,2 x2 B,4-|
+B,2 C2 D=C B,A, G,2 F,E, A,4| \
+D,8 x8| \
+x16| \
+x8 A,,8|
+B,,4 ^C,4 D,4 C,2 B,,2| \
+C,2 A,,2 D,8 C,2 C,2| \
+B,,8 A,,4 A,4-| \
+A,2 A,2 ^G,2 ^G,2 A,B, A,=G, F,G, E,F,|
+^G,A, F,^G, ^A,B, ^G,^A, B,8-| \
+B,2 =A,=G, A,B, CA, D2 A,2 D4-| \
+D4 =C2 =C2 B,8-| \
+B,4 A,4 ^G,8|
+A,4 x2 D,2 =G,2 F,2 G,2 E,2| \
+F,4 F,2 G,2 A,4 A,,4| \
+D,16|
+V:13
+% Organ
+%%MIDI program 19
+x16| \
+x4 
+%     Mass in B Minor          Johann Sebastion Bach  No. 6 Chor:   Gratias agimus tibi    seq by David Siu  dss@po.cwru.edu      
+D,4 E,4 F,4| \
+G,4 F,2 E,2 F,2 D,2 G,4-| \
+G,4 F,4 E,8|
+D,8 A,8| \
+E4 A,6 A,2 ^G,2 ^G,2| \
+A,2 =G,F, E,F, D,E, F,E, F,G, F,G, F,E,| \
+D,2 ^C,B,, E,4 A,,4 A,4|
+D4 D,4 G,4 D,4| \
+E,4 F,4 G,4 F,2 E,2| \
+F,2 B,,4<B,4 A,4 D2| \
+G,2 B,2 A,2 G,2 F,8-|
+F,E, F,G, F,E, D,C, B,,4 C,4| \
+D,2 F,4<B,4 B,2 ^A,2 ^A,2| \
+B,C =A,B, CD B,C DC DE DE DC| \
+B,8- B,2 C2 D4|
+A,4 G,2 F,2 E,4 A,4| \
+D,4 E,4 A,,8-| \
+A,,4 ^A,,4 B,,4 C,4| \
+D,4 =C,4 B,,4 E,4|
+=A,,4 B,,4 E,,4 G4-| \
+G2 G2 F2 F2 G2 FE B,4-| \
+B,2 B,2 ^A,2 ^A,2 B,2 =A,G, D,4-| \
+D,2 D,2 ^C,2 C,2 D,2 C,B,, A,,B,, ^G,,A,,|
+B,,A,, B,,C, B,,D, C,B,, A,,2 B,,2 C,4| \
+F,,2 F,4<B,4 A,2 =G,2 F,2| \
+E,4 A,4 D,2 D2 C2 B,2| \
+C2 A,2 D8 =C4-|
+=C4 B,4 [A,8D,8]| \
+E,4 F,4 G,4 F,2 E,2| \
+F,2 D,2 G,8 F,4| \
+E,4 A,4 D,2 F,2 B,4-|
+B,2 ^C2 D=C B,A, G,2 E,2 A,4| \
+D,8 A,4 B,4| \
+G,4 A,4 B,4 ^C4| \
+D4 C2 B,2 A,,8|
+B,,4 C,4 D,4 C,2 B,,2| \
+C,2 A,,2 D,8 C,2 C,2| \
+B,,8 A,,4 A,4-| \
+A,2 A,2 ^G,2 ^G,2 A,B, A,=G, F,G, E,F,|
+^G,A, F,^G, ^A,B, ^G,^A, B,8-| \
+B,2 =A,=G, A,B, CA, D2 A,2 D4-| \
+D4 =C4 B,8-| \
+B,4 A,4 ^G,8|
+A,6 D,2 =G,2 F,2 G,2 E,2| \
+F,6 G,2 A,4 A,,4| \
+D,,16|
+V:14
+% Flutes I & II
+%%MIDI program 73
+x16| \
+x16| \
+x16| \
+x4 
+%     Mass in B Minor          Johann Sebastion Bach  No. 6 Chor:   Gratias agimus tibi    seq by David Siu  dss@po.cwru.edu      
+A4 B4 ^c4|
+d4 c2 B2 c2 A2 d4-| \
+d4 c4 B8| \
+A8 x8| \
+x4 d6 d2 c2 c2|
+d2 cB AB GA BA B=c B=c BA| \
+G2 FE A4 D4 x4| \
+x12 A4| \
+B4 ^c4 d4 c2 B2|
+c2 F4<f4 B2 e4-| \
+e2 d4 g2 c2 e2 d2 c2| \
+B8 x8| \
+x8 d8|
+e4 f4 g4 f2 e2| \
+f2 d2 g8 f4| \
+e8 d8| \
+x12 e4-|
+e2 e2 ^d2 ^d2 e2 =d=c B=c AB| \
+=cB =cd =ce d=c B2 ^c2 d4| \
+G2 E2 c8 B4| \
+e4 A8 f4-|
+f2 f2 =f2 =f2 ^f2 ed cd Bc| \
+dc de df ed c4 f4| \
+B4 x8 d4| \
+e4 f4 g4 f2 e2|
+f2 d2 g8 f4| \
+ (3e6-ed6- dB6-B B2| \
+A2 A2 B4 E2 x2 A4| \
+B4 c4 d4 c2 B2|
+c2 A2 d8 c4| \
+B8 A8| \
+x16| \
+d8 e4 f4|
+g4 f2 e2 f2 d2 g4-| \
+g4 f4 e8| \
+d4 d6 d2 c2 c2| \
+de dc Bc AB cd Bc ^de c^d|
+e8- e2 =dc de fd| \
+g12 f4| \
+e16| \
+d4 x2 d2 e4- ef ed|
+c2 A2 f8 e4-| \
+e2 A4<d4 cB c4| \
+d16|
+V:15
+% Oboe I
+%%MIDI program 68
+x16| \
+x16| \
+x16| \
+x4 
+%     Mass in B Minor          Johann Sebastion Bach  No. 6 Chor:   Gratias agimus tibi    seq by David Siu  dss@po.cwru.edu      
+A4 B4 c4|
+d4 c2 B2 c2 A2 d4-| \
+d4 c4 B8| \
+A8 x8| \
+x4 d6 d2 c2 c2|
+d2 cB AB GA BA B=c B=c BA| \
+G2 FE A4 D4 x4| \
+x12 A4| \
+B4 ^c4 d4 c2 B2|
+c2 F4<f4 B2 e4-| \
+e2 d4 g2 c2 e2 d2 c2| \
+B8 x8| \
+x8 d8|
+e4 f4 g4 f2 e2| \
+f2 d2 g8 f4| \
+e8 d8| \
+x12 e4-|
+e2 e2 ^d2 ^d2 e2 =d=c B=c AB| \
+=cB =cd =ce d=c B2 ^c2 d4| \
+G2 E2 c8 B4| \
+e4 A8 f4-|
+f2 f2 =f2 =f2 ^f2 ed cd Bc| \
+dc de df ed c4 f4| \
+B4 x8 d4| \
+e4 f4 g4 f2 e2|
+f2 d2 g8 f4| \
+ (3e6-ed6- dB6-B B2| \
+A2 A2 B4 E2 x2 A4| \
+B4 c4 d4 c2 B2|
+c2 A2 d8 c4| \
+B8 A8| \
+x16| \
+d8 e4 f4|
+g4 f2 e2 f2 d2 g4-| \
+g4 f4 e8| \
+d4 d6 d2 c2 c2| \
+de dc Bc AB cd Bc ^de c^d|
+e8- e2 =dc de fd| \
+g12 f4| \
+e16| \
+d4 x2 d2 e4- ef ed|
+c2 A2 f8 e4-| \
+e2 A4<d4 cB c4| \
+d16|

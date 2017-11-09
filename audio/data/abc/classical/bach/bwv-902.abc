@@ -1,0 +1,263 @@
+X: 1
+T: from bach/bwv-902.mid
+M: 3/8
+L: 1/16
+Q:1/4=100
+K:G % 1 sharps
+% Fughetta - J. S. Bach
+V:1
+% Piano
+%%MIDI program 0
+x6| \
+x6| \
+x
+% Fughetta - J. S. Bach
+d Bd gd| \
+Bd Gd Bd|
+ec Ac FA| \
+dB GB EG| \
+cA FA DF| \
+BA GA Bc|
+dA B^c de| \
+fe de fg| \
+a2- a/2x3/2 a2| \
+a2 g2 g2|
+g2 f2 f2| \
+f2 e2 e2| \
+eg fe de| \
+fa gf ed|
+[g-B][gA] GA B=c| \
+d2 [d2B2] [d2B2]| \
+[c2B2] [c2A2] [c2A2]| \
+[B2A2] [B2G2] [B2G2]|
+[A2G2] [A2F2] [A2F2]| \
+[G2F2] [G2E2] [G2E2]| \
+[F2E2] [F2D2] [F2D2]| \
+[E2D2] [E2^C2] [E2^C2]|
+[F2D2] x4| \
+x2 [a2f2=c2] [a2d2c2]| \
+[adB]d Bd gd| \
+Bd [GE-][dE] [B=F-][d=F]|
+[e2B2] x4| \
+x2 [b2^g2d2] [b2e2d2]| \
+[bec]e ce ae| \
+ce Ae ce|
+^f2 x4| \
+x2 [f2^d2A2] [f2B2A2]| \
+[f2B2A2] [e2B2=G2] [^d2A2F2]| \
+[e2B2E2] [g2e2B2] [g2e2B2]|
+[g2e2A2] [f2=d2A2] [f2d2A2]| \
+[f2d2G2] [e2c2G2] [e2c2G2]| \
+[^dc-A-][ecA] [f2B2A2] [f2B2A2]| \
+[f2B2A2] [g2B2G2] [e2B2G2]|
+[e2B2F2] =d^c de| \
+fe df bf| \
+df Bf df| \
+ge ^ce A^c|
+fd Bd GB| \
+e^c ^A^c F^c| \
+df Bd fd| \
+Bd FB dB|
+^GB E^G B^G| \
+E^G B,E ^GD| \
+=CE =A,C EC| \
+A,C E,A, C=G,|
+F,A, D,F, A,F,| \
+D,x4x| \
+x2 [g2d2B2] [f2c2A2]| \
+[g2d2G2] [d2B2G2] [d2B2G2]|
+[d2G2E2] [c2G2E2] [c2G2E2]| \
+[c2F2D2] [B2F2D2] [B2F2D2]| \
+[B2E2C2] [A2E2C2] [A2E2C2]| \
+[A2D2B,2] EF GA|
+BG A-[A-E] [A-F][AC]| \
+[G-D-B,-][dG-D-B,-] [BG-D-B,-][dG-D-B,-] [gG-D-B,-][dGDB,]| \
+Bd Gd Bd| \
+ec Ac FA|
+dB GB EG| \
+cA FA DF| \
+BA GA Bc| \
+dA B^c de|
+fe de fg| \
+a2- a/2x3/2 a2| \
+a2 g2 g2| \
+g2 f2 f2|
+f2 e2 e2| \
+eg fe de| \
+fa gf ed| \
+[g-B][gA] GA B=c|
+d2 [d2B2] [d2B2]| \
+[c2B2] [c2A2] [c2A2]| \
+[B2A2] [B2G2] [B2G2]| \
+[A2G2] [A2F2] [A2F2]|
+[G2F2] [G2E2] [G2E2]| \
+[F2E2] [F2D2] [F2D2]| \
+[E2D2] [E2^C2] [E2^C2]| \
+[F2D2] x4|
+x2 [a2f2=c2] [a2d2c2]| \
+[adB]d Bd gd| \
+Bd [GE-][dE] [B=F-][d=F]| \
+[e2B2] x4|
+x2 [b2^g2d2] [b2e2d2]| \
+[bec]e ce ae| \
+ce Ae ce| \
+^f2 x4|
+x2 [f2^d2A2] [f2B2A2]| \
+[f2B2A2] [e2B2=G2] [^d2A2F2]| \
+[e2B2E2] [g2e2B2] [g2e2B2]| \
+[g2e2A2] [f2=d2A2] [f2d2A2]|
+[f2d2G2] [e2c2G2] [e2c2G2]| \
+[^dc-A-][ecA] [f2B2A2] [f2B2A2]| \
+[f2B2A2] [g2B2G2] [e2B2G2]| \
+[e2B2F2] =d^c de|
+fe df bf| \
+df Bf df| \
+ge ^ce A^c| \
+fd Bd GB|
+e^c ^A^c F^c| \
+df Bd fd| \
+Bd FB dB| \
+^GB E^G B^G|
+E^G B,E ^GD| \
+=CE =A,C EC| \
+A,C E,A, C=G,| \
+F,A, D,F, A,F,|
+D,x4x| \
+x2 [g2d2B2] [f2c2A2]| \
+[g2d2G2] [d2B2G2] [d2B2G2]| \
+[d2G2E2] [c2G2E2] [c2G2E2]|
+[c2F2D2] [B2F2D2] [B2F2D2]| \
+[B2E2C2] [A2E2C2] [A2E2C2]| \
+[A2D2B,2] EF GA| \
+BG A-[A-E] [A-F][AC]|
+[G6D6B,6]|
+V:2
+% Piano
+%%MIDI program 0
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x
+% Fughetta - J. S. Bach
+G FA dA| \
+FA DA FA| \
+BG EG ^CE|
+AF DF B,D| \
+GE ^CE A,^C| \
+FE DE FG| \
+AD EF GA|
+xD B,D GD| \
+B,D G,D B,D| \
+E=C A,C F,A,| \
+DB, G,B, E,G,|
+CA, F,A, D,F,| \
+B,A, G,A, B,^C| \
+D^C B,A, G,F,| \
+G,E, A,G, F,E,|
+D,A, F,A, DA,| \
+F,A, D,A, F,A,| \
+B,2 x4| \
+x2 B,2 A,2|
+[E-^G,][EB,] ^G,B, EB,| \
+^G,B, =C,B, ^G,B,| \
+C2 x4| \
+x2 [C2A,2F,2] [C2A,2E,2]|
+[B,-A,-^D,][B,A,F,] ^D,F, B,F,| \
+^D,F, B,,F, ^D,F,| \
+=G,B, G,B, EB,| \
+G,B, E,B, G,B,|
+CA, F,A, =D,F,| \
+B,G, E,G, C,E,| \
+A,F, ^D,F, B,,^D,| \
+G,F, E,F, G,A,|
+B,F, ^G,^A, B,^C| \
+=D^C B,^C DE| \
+F2 D2 B,2| \
+E=G =AG FE|
+DF GF ED| \
+^CE FE D^C| \
+B,F, D,F, B,,2| \
+x2 D,2 B,,2|
+E,B,, ^G,,B,, E,,2| \
+x2 ^G,,2 E,,2| \
+A,,E,, =C,,E,, A,,E,,| \
+C,2 B,,2 A,,2|
+D,2 D,,2 x2| \
+D,F, A,,D, F,C,| \
+B,,D, B,,D, =G,D,| \
+B,,D, G,,D, B,,D,|
+E,C, A,,C, F,,A,,| \
+D,B,, G,,B,, E,,G,,| \
+C,A,, F,,A,, D,,A,,| \
+B,,A,, G,,A,, B,,B,,|
+D,2 C,2 D,2| \
+G,,6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+xG FA dA| \
+FA DA FA| \
+BG EG ^CE| \
+AF DF B,D|
+GE ^CE A,^C| \
+FE DE FG| \
+AD EF GA| \
+xD B,D GD|
+B,D G,D B,D| \
+E=C A,C F,A,| \
+DB, G,B, E,G,| \
+CA, F,A, D,F,|
+B,A, G,A, B,^C| \
+D^C B,A, G,F,| \
+G,E, A,G, F,E,| \
+D,A, F,A, DA,|
+F,A, D,A, F,A,| \
+B,2 x4| \
+x2 B,2 A,2| \
+[E-^G,][EB,] ^G,B, EB,|
+^G,B, =C,B, ^G,B,| \
+C2 x4| \
+x2 [C2A,2F,2] [C2A,2E,2]| \
+[B,-A,-^D,][B,A,F,] ^D,F, B,F,|
+^D,F, B,,F, ^D,F,| \
+=G,B, G,B, EB,| \
+G,B, E,B, G,B,| \
+CA, F,A, =D,F,|
+B,G, E,G, C,E,| \
+A,F, ^D,F, B,,^D,| \
+G,F, E,F, G,A,| \
+B,F, ^G,^A, B,^C|
+=D^C B,^C DE| \
+F2 D2 B,2| \
+E=G =AG FE| \
+DF GF ED|
+^CE FE D^C| \
+B,F, D,F, B,,2| \
+x2 D,2 B,,2| \
+E,B,, ^G,,B,, E,,2|
+x2 ^G,,2 E,,2| \
+A,,E,, =C,,E,, A,,E,,| \
+C,2 B,,2 A,,2| \
+D,2 D,,2 x2|
+D,F, A,,D, F,C,| \
+B,,D, B,,D, =G,D,| \
+B,,D, G,,D, B,,D,| \
+E,C, A,,C, F,,A,,|
+D,B,, G,,B,, E,,G,,| \
+C,A,, F,,A,, D,,A,,| \
+B,,A,, G,,A,, B,,B,,| \
+D,2 C,2 D,2|
+G,,6|
+% J. S. Bach
+% Fughetta - BVW 902
+% Sequenced by - Les Winters
+% lwinters@midiworld.com

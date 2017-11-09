@@ -1,0 +1,78 @@
+X: 1
+T: from bach/cs5-4sar.mid
+M: 3/4
+L: 1/8
+Q:1/4=46
+K:Eb % 3 flats
+% untitled
+% Copyright \0xa9 1996 by David J. Grossman
+% David J. Grossman
+% A
+% A'
+% B
+% B'
+V:1
+% Solo Cello
+%%MIDI program 42
+% untitled
+% Copyright \0xa9 1996 by David J. Grossman
+% David J. Grossman
+% A
+G,E, =B,,C, A,,2| \
+CA, =E,F, =B,,2| \
+DA, =E,F, G,,G,| \
+F,_E, =B,,C, C,,2|
+C,E, A,G, _DC| \
+=D,F, _B,A, CB,| \
+A,G, D,E, B,,D,| \
+E,,6|
+% A'
+G,E, =B,,C, A,,2| \
+CA, =E,F, =B,,2| \
+DA, =E,F, G,,G,| \
+F,_E, =B,,C, C,,2|
+C,E, A,G, _DC| \
+=D,F, _B,A, CB,| \
+A,G, D,E, B,,D,| \
+E,,6|
+% B
+B,G, D,E, _D,,2| \
+B,G, =E,F, G,,2| \
+_DB, =E,F, C,,C| \
+B,A, =E,F, F,,2|
+_E,,C, F,E, B,=A,| \
+=D,,D, G,F, C=B,| \
+C_A, _G,=G, =B,,C,| \
+G,,D, G,_G, C=B,|
+EC _G,=G, =A,,E| \
+D_A, =E,F, =B,,G,| \
+F,_E, =B,,C, G,,=B,| \
+C,,G,, F,E, C2|
+% B'
+_B,G, D,E, _D,,2| \
+B,G, =E,F, G,,2| \
+_DB, =E,F, C,,C| \
+B,A, =E,F, F,,2|
+_E,,C, F,E, B,=A,| \
+=D,,D, G,F, C=B,| \
+C_A, _G,=G, =B,,C,| \
+G,,D, G,_G, C=B,|
+EC _G,=G, =A,,E| \
+D_A, =E,F, =B,,G,| \
+F,_E, =B,,C, G,,=B,| \
+C,,G,, F,E, C2|
+% --------------------------------------
+% Johann Sebastian Bach  (1685-1750)
+% Six Suites for Solo Cello
+% --------------------------------------
+% Suite No. 5 in C minor - BWV 1011
+% 4th Movement: Sarabande
+% --------------------------------------
+% Sequenced with Cakewalk Pro Audio by
+% David J. Grossman - dave@unpronounceable.com
+% This and other Bach MIDI files can be found at:
+% Dave's J.S. Bach Page
+% http://www.unpronounceable.com/bach
+% --------------------------------------
+% Original Filename: cs5-4sar.mid
+% Last Modified: February 22, 1997

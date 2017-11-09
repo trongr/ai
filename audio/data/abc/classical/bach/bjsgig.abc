@@ -1,0 +1,1705 @@
+X: 1
+T: from bach/bjsgig.mid
+M: 6/8
+L: 1/8
+Q:1/4=125
+K:D % 2 sharps
+% "That One Guy"\0xa8 Publishing Inc.
+% J.S. Bach-Suite No. 3 in D, BWV.1068 (Gigue)
+% Sequenced by:
+% Del Ahlin
+% 1996
+V:1
+% Oboe I
+%%MIDI program 68
+x4x
+% "That One Guy"\0xa8 Publishing Inc.
+% J.S. Bach-Suite No. 3 in D, BWV.1068 (Gigue)
+% Sequenced by:
+% Del Ahlin
+% 1996
+D| \
+A3 B3| \
+A4Bc| \
+dcB ABG|
+FEF DFA| \
+d3 f3| \
+e4-ed| \
+cBA Bcd|
+cBc Ace| \
+aga/2x/2 aga/2x/2| \
+aga- [a/2B/2-]B/2^df| \
+gfg/2x/2 gfg/2x/2|
+gfg Ace| \
+f^ga a^ga| \
+=def fe<f| \
+Bcd dcd|
+^GAB E^GB| \
+edc dcB| \
+A2f A2f| \
+^G2e =G2-[e/2-G/2]e/2|
+F2d =F2d| \
+E4^GB| \
+d^gb dcB| \
+c/2d/2eA EA^G|
+A4-AD| \
+A3 B3| \
+A4Bc| \
+dcB AB=G|
+^FEF DFA| \
+d3 f3| \
+e4-ed| \
+cBA Bcd|
+cBc Ace| \
+aga/2x/2 aga/2x/2| \
+aga>B^df| \
+gfg/2x/2 gfg/2x/2|
+gfg Ace| \
+f^ga/2x/2 a^ga| \
+=def/2x/2 fef| \
+Bcd/2x/2 dcd|
+^GAB E^GB| \
+edc dcB| \
+A2f A2f| \
+^G2-[e/2-^G/2]e/2 =G2e|
+F2d =F2d| \
+E4^GB/2x/2| \
+d^gb dcB| \
+c/2d/2eA EA^G|
+A4-A/2x/2A| \
+e3 ^f3| \
+e4f=g| \
+fed cdB|
+^ABc F^Ac| \
+f3 g3| \
+f4ed| \
+cdB/2x/2 FB^A|
+B4dc| \
+dcd/2x/2 dcd| \
+dcd E^GB| \
+edc Bcd|
+cBc =Ace| \
+=gfg/2x/2 gfg/2x/2| \
+gfg Ace| \
+agf efg|
+fef dfe| \
+f^ga ^g-[a/2-^g/2]a/2b| \
+c4^gb| \
+a^gf edc|
+B4fa| \
+^gf=f ^fed| \
+cfe dcB| \
+A^GF BA^G|
+F4-FD| \
+A3 B3| \
+=c4BA/2x/2| \
+Bd=g Agf|
+gb>a [b/2-a/2]b2-b/2-| \
+ba-[a/2g/2-]g/2 fge/2x/2| \
+fag/2>g/2 a3-| \
+agf ef^d|
+egf/2-[f/2f/2] g3-| \
+gfe =de^c| \
+dfe fga| \
+Bcd efd|
+cde fge| \
+def gaf| \
+efg abg/2x/2| \
+[g/2f/2-]f3-f/2ed|
+ecd Adc/2x/2| \
+D3/2x/2d/2x/2 a3-| \
+aba ^gef| \
+=gag fde|
+=fg=f ecd| \
+cde A3-| \
+A2a b2c'/2x/2| \
+[d'/2-c'/2]d'3/2a/2x/2 ^f/2[g/2f/2]ed|
+d4xA| \
+e3 f3| \
+e4fg| \
+fed cdB|
+^ABc F^Ac| \
+f3 g3| \
+f4ed| \
+cdB/2x/2 FB^A|
+B4dc| \
+dcd/2x/2 dcd| \
+dcd E^GB| \
+edc Bcd|
+cBc =Ace| \
+=gfg/2x/2 gfg/2x/2| \
+gfg Ace| \
+agf efg|
+fef dfe| \
+f^ga ^g-[a/2-^g/2]a/2b| \
+c4^gb| \
+a^gf edc|
+B4fa| \
+^gf=f ^fed| \
+cfe dcB| \
+A^GF BA^G|
+F4-FD| \
+A3 B3| \
+=c4BA/2x/2| \
+Bd=g Agf|
+gb>a [b/2-a/2]b2-b/2-| \
+ba-[a/2g/2-]g/2 fge/2x/2| \
+fag/2>g/2 a3-| \
+agf ef^d|
+egf/2-[f/2f/2] g3-| \
+gfe =de^c| \
+dfe fga| \
+Bcd efd|
+cde fge| \
+def gaf| \
+efg abg/2x/2| \
+[g/2f/2-]f3-f/2ed|
+ecd Adc/2x/2| \
+D3/2x/2d/2x/2 a3-| \
+aba ^gef| \
+=gag fde|
+=fg=f ecd| \
+cde A3-| \
+A2a b2c'/2x/2| \
+[d'/2-c'/2]d'3/2a/2x/2 ^f/2[g/2f/2]ed|
+d4
+V:2
+% Oboe II
+%%MIDI program 68
+x4x
+% "That One Guy"\0xa8 Publishing Inc.
+% J.S. Bach-Suite No. 3 in D, BWV.1068 (Gigue)
+% Sequenced by:
+% Del Ahlin
+% 1996
+D| \
+A3 B3| \
+A4Bc| \
+dcB ABG|
+FEF DFA| \
+d3 f3| \
+e4-ed| \
+cBA Bcd|
+cBc Ace| \
+aga/2x/2 aga/2x/2| \
+aga- [a/2B/2-]B/2^df| \
+gfg/2x/2 gfg/2x/2|
+gfg Ace| \
+f^ga a^ga| \
+=def fe<f| \
+Bcd dcd|
+^GAB E^GB| \
+edc dcB| \
+A2f A2f| \
+^G2e =G2-[e/2-G/2]e/2|
+F2d =F2d| \
+E4^GB| \
+d^gb dcB| \
+c/2d/2eA EA^G|
+A4-AD| \
+A3 B3| \
+A4Bc| \
+dcB AB=G|
+^FEF DFA| \
+d3 f3| \
+e4-ed| \
+cBA Bcd|
+cBc Ace| \
+aga/2x/2 aga/2x/2| \
+aga>B^df| \
+gfg/2x/2 gfg/2x/2|
+gfg Ace| \
+f^ga/2x/2 a^ga| \
+=def/2x/2 fef| \
+Bcd/2x/2 dcd|
+^GAB E^GB| \
+edc dcB| \
+A2f A2f| \
+^G2-[e/2-^G/2]e/2 =G2e|
+F2d =F2d| \
+E4^GB/2x/2| \
+d^gb dcB| \
+c/2d/2eA EA^G|
+A4-A/2x/2A| \
+e3 ^f3| \
+e4f=g| \
+fed cdB|
+^ABc F^Ac| \
+f3 g3| \
+f4ed| \
+cdB/2x/2 FB^A|
+B4dc| \
+dcd/2x/2 dcd| \
+dcd E^GB| \
+edc Bcd|
+cBc =Ace| \
+=gfg/2x/2 gfg/2x/2| \
+gfg Ace| \
+agf efg|
+fef dfe| \
+f^ga ^g-[a/2-^g/2]a/2b| \
+c4^gb| \
+a^gf edc|
+B4fa| \
+^gf=f ^fed| \
+cfe dcB| \
+A^GF BA^G|
+F4-FD| \
+A3 B3| \
+=c4BA/2x/2| \
+Bd=g Agf|
+gb>a [b/2-a/2]b2-b/2-| \
+ba-[a/2g/2-]g/2 fge/2x/2| \
+fag/2>g/2 a3-| \
+agf ef^d|
+egf/2-[f/2f/2] g3-| \
+gfe =de^c| \
+dfe fga| \
+Bcd efd|
+cde fge| \
+def gaf| \
+efg abg/2x/2| \
+[g/2f/2-]f3-f/2ed|
+ecd Adc/2x/2| \
+D3/2x/2d/2x/2 a3-| \
+aba ^gef| \
+=gag fde|
+=fg=f ecd| \
+cde A3-| \
+A2a b2c'/2x/2| \
+[d'/2-c'/2]d'3/2a/2x/2 ^f/2[g/2f/2]ed|
+d4xA| \
+e3 f3| \
+e4fg| \
+fed cdB|
+^ABc F^Ac| \
+f3 g3| \
+f4ed| \
+cdB/2x/2 FB^A|
+B4dc| \
+dcd/2x/2 dcd| \
+dcd E^GB| \
+edc Bcd|
+cBc =Ace| \
+=gfg/2x/2 gfg/2x/2| \
+gfg Ace| \
+agf efg|
+fef dfe| \
+f^ga ^g-[a/2-^g/2]a/2b| \
+c4^gb| \
+a^gf edc|
+B4fa| \
+^gf=f ^fed| \
+cfe dcB| \
+A^GF BA^G|
+F4-FD| \
+A3 B3| \
+=c4BA/2x/2| \
+Bd=g Agf|
+gb>a [b/2-a/2]b2-b/2-| \
+ba-[a/2g/2-]g/2 fge/2x/2| \
+fag/2>g/2 a3-| \
+agf ef^d|
+egf/2-[f/2f/2] g3-| \
+gfe =de^c| \
+dfe fga| \
+Bcd efd|
+cde fge| \
+def gaf| \
+efg abg/2x/2| \
+[g/2f/2-]f3-f/2ed|
+ecd Adc/2x/2| \
+D3/2x/2d/2x/2 a3-| \
+aba ^gef| \
+=gag fde|
+=fg=f ecd| \
+cde A3-| \
+A2a b2c'/2x/2| \
+[d'/2-c'/2]d'3/2a/2x/2 ^f/2[g/2f/2]ed|
+d4
+V:3
+% Trumpet I
+%%MIDI program 56
+x4x
+% "That One Guy"\0xa8 Publishing Inc.
+% J.S. Bach-Suite No. 3 in D, BWV.1068 (Gigue)
+% Sequenced by:
+% Del Ahlin
+% 1996
+d| \
+a3 b3| \
+a4bc'| \
+d'c'b abg|
+fef d2-d/2x/2| \
+x6| \
+x6| \
+x6|
+x4xe| \
+aga/2x/2 aga/2x/2| \
+a4ba/2x/2| \
+gfg/2x/2 gfg/2x/2|
+g4ag| \
+fx4x| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x4xd'/2x/2| \
+c'ba ba^g|
+a4-a/2x/2d| \
+a3 b3| \
+a4bc'| \
+d'c'b ab=g|
+fef d2-d/2x/2| \
+x6| \
+x6| \
+x6|
+x4xe| \
+aga aga/2x/2| \
+a4ba| \
+gfg/2x/2 gfg|
+g4ag| \
+f3/2x4x/2| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x4xd'| \
+c'ba ba^g|
+a4-a/2x/2A| \
+e3 f3| \
+e4-e/2x3/2| \
+x6|
+x4xF| \
+f3 =g3| \
+f4-f/2x3/2| \
+x6|
+x4xF| \
+ded ded| \
+d4ed| \
+e2a a2^g|
+a2e/2x/2 e2A| \
+=gfg/2x/2 gfg/2x/2| \
+g4ag| \
+agf efg|
+fef d2x| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x4xd| \
+a3 b3| \
+=c'4ba| \
+bag/2x/2 agf|
+g2x4| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x2a b^c'd'|
+aba gfe| \
+dx4x| \
+x6| \
+x6|
+x6| \
+x6| \
+x4xc'| \
+d'2a fed|
+d4xA| \
+e3 f3| \
+e4-e/2x3/2| \
+x6|
+x4xF| \
+f3 x/2g2-g/2-| \
+[g/2f/2-]f4x3/2| \
+x6|
+x4xF| \
+ded ded| \
+d4ed| \
+e2a a2^g|
+a2e/2x/2 e2A| \
+=gfg/2x/2 gfg/2x/2| \
+g4ag| \
+agf efg|
+fef d2x| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x4xd| \
+a3 b3| \
+=c'4ba| \
+bag/2x/2 agf|
+g2x4| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x2a b^c'd'|
+aba gfe| \
+dx4x| \
+x6| \
+x6|
+x6| \
+x6| \
+x4xc'| \
+d'2a fed|
+d4
+V:4
+% Trumpet II
+%%MIDI program 56
+x4x
+% "That One Guy"\0xa8 Publishing Inc.
+% J.S. Bach-Suite No. 3 in D, BWV.1068 (Gigue)
+% Sequenced by:
+% Del Ahlin
+% 1996
+A| \
+d3 g3| \
+d4-dg| \
+a2g- [g/2f/2-]f3/2e|
+d2A/2x/2 A3| \
+x6| \
+x6| \
+x6|
+x6| \
+fef/2x/2 fef/2x/2| \
+f4gf| \
+ede/2x/2 ede/2x/2|
+e4fe| \
+dx4x| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x4xb| \
+a2e/2x/2 e3/2x/2e/2x/2|
+e4-e/2x/2A| \
+d3 g3| \
+d4-dg| \
+a2g f2e|
+d2A/2x/2 A2-A/2x/2| \
+x6| \
+x6| \
+x6|
+x4xe| \
+fef/2x/2 fe>f| \
+f4gf| \
+ede/2x/2 ede/2x/2|
+e4fe| \
+dx4x| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x4xb| \
+a2e/2x/2 e3/2x/2e/2x/2|
+e4-e/2x/2A/2x/2| \
+AFA dAd| \
+A4-Ax| \
+x6|
+x4xe| \
+d3 e3| \
+d4-dx| \
+x6|
+x6| \
+x6| \
+x4x^g| \
+a2f/2x/2 f2e/2x/2|
+e2B/2x/2 A2x| \
+x6| \
+x4xe/2x/2| \
+e2d/2x/2 d2A/2x/2|
+A2d Ax2| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x4xA| \
+d3 =g3| \
+f4-f/2x/2f| \
+g2x3d/2x/2|
+d3/2x4x/2| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x3 def|
+e2f/2x/2 edA| \
+F3 x3| \
+x6| \
+x6|
+x6| \
+x6| \
+x4xe| \
+agf fab|
+f/2g/2 (3f/2g/2f/2g/2f2x/2A/2x/2| \
+x/2A/2-[A/2F/2-]F/2A dAd| \
+A4-Ax| \
+x6|
+x4xe| \
+d3 e3| \
+d4-dx| \
+x6|
+x6| \
+x6| \
+x4x^g| \
+a2f/2x/2 f2e/2x/2|
+e2B/2x/2 A2x| \
+x6| \
+x4xe/2x/2| \
+e2d/2x/2 d2A/2x/2|
+A2d Ax2| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x4xA| \
+d3 =g3| \
+f4-f/2x/2f| \
+g2x3d/2x/2|
+d3/2x4x/2| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x3 def|
+e2f/2x/2 edA| \
+F3 x3| \
+x6| \
+x6|
+x6| \
+x6| \
+x4xe| \
+agf fab|
+f/2g/2f/2 (3g/2f/2g/2f3/2
+V:5
+% Trumpet III
+%%MIDI program 56
+x4x
+% "That One Guy"\0xa8 Publishing Inc.
+% J.S. Bach-Suite No. 3 in D, BWV.1068 (Gigue)
+% Sequenced by:
+% Del Ahlin
+% 1996
+F/2x/2| \
+F3 D3-| \
+[F/2-D/2]F4-F/2A| \
+D2d/2x/2 d2A|
+A3/2x/2F/2x/2 F2-F/2x/2| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x4xe/2x/2| \
+e3/2x/2e d3/2x/2d|
+A4-A/2x/2F/2x/2| \
+F3 D3| \
+F4-FA| \
+D2 (3d2d2A2|
+A2F F3| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x4xe/2x/2| \
+e3/2x/2e d3/2x/2d|
+A4-A/2x/2A/2x/2| \
+A3 FDF| \
+A4-Ax| \
+x6|
+x4xF/2x/2| \
+F2-F/2x3x/2| \
+F4-Fx| \
+x6|
+x6| \
+x6| \
+x4xe| \
+A/2x3/2A D2x|
+A3/2x/2A/2x/2 A3/2x3/2| \
+x6| \
+x4xA/2x/2| \
+A3/2x/2f g3/2x/2e/2x/2|
+d3/2x/2A/2x/2 F3| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x4xF/2x/2| \
+F3 D3| \
+A4-Ad/2x/2| \
+dx4D/2x/2|
+D2-D/2x3x/2| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x2d D3/2x/2D|
+A3/2x3x/2A| \
+D2x4| \
+x6| \
+x6|
+x6| \
+x6| \
+x4xA| \
+FAd d2A|
+A4x3/2A/2| \
+A3 x/2FDF/2-| \
+[A/2-F/2]A4-A/2x| \
+x6|
+x4xF/2x/2| \
+F2-F/2x3x/2| \
+F4-Fx| \
+x6|
+x6| \
+x6| \
+x4xe| \
+A/2x3/2A D2x|
+A3/2x/2A/2x/2 A3/2x3/2| \
+x6| \
+x4xA/2x/2| \
+A3/2x/2f g3/2x/2e/2x/2|
+d3/2x/2A/2x/2 F3| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x4xF/2x/2| \
+F3 D3| \
+A4-Ad/2x/2| \
+dx4D/2x/2|
+D2-D/2x3x/2| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x2d D3/2x/2D|
+A3/2x3x/2A| \
+D2x4| \
+x6| \
+x6|
+x6| \
+x6| \
+x4xA| \
+FAd d2A|
+A4
+V:6
+% Timpani
+%%MIDI program 47
+x4x
+% "That One Guy"\0xa8 Publishing Inc.
+% J.S. Bach-Suite No. 3 in D, BWV.1068 (Gigue)
+% Sequenced by:
+% Del Ahlin
+% 1996
+D,/2x/2| \
+x/2x/2D,/2[D,/2D,/2]x/2x/2 x/2x/2D,/2x/2x/2x/2| \
+x/2D,4-D,/2A,,| \
+D,3/2x/2D, A,,3/2x/2A,,|
+D,3/2x/2D,/2x/2 D,3| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x4xD,| \
+A,,xA,, D,xD,/2x/2|
+A,,/2x/2A,,/2A,,/2x/2x/2 A,,/2A,,/2xD,/2x/2| \
+D,x/2x/2D,/2[D,/2D,/2] x/2D,/2x/2x/2x/2D,/2| \
+D,4-D,A,,| \
+D,3/2x/2 (3D,2A,,2A,,2|
+D,3/2x/2D,/2x/2 D,3/2x3/2| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x4xD,| \
+A,,3/2x/2A,, D,xD,/2x/2|
+A,,/2A,,/2A,,/2x/2x/2A,,/2 x/2A,,/2xA,,/2x/2| \
+A,,/2x/2x/2A,,/2x/2A,,/2>A,,/2A,,/2x/2A,,/2 (3A,,/2A,,/2A,,/2| \
+A,,/2A,,/2>A,,/2A,,/2A,,/2A,,/2 A,,/2x2x/2| \
+x6|
+x6| \
+D,4-D,x| \
+ (3D,/2D,/2D,/2D,/2D,/2x/2x/2 D,/2x/2D,/2x/2x| \
+x6|
+x6| \
+x6| \
+x4xD,| \
+A,,3/2x/2A,,2<D,2|
+A,,2A,,/2x/2 A,,2-A,,/2x/2| \
+x6| \
+x4xA,,/2x/2| \
+A,,2D,/2x/2 D,2-[D,/2A,,/2]x/2|
+D,3/2x/2D,/2x/2 D,2-D,/2x/2| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x4xD,/2x/2| \
+D,/2<D,/2x/2D,/2D,/2x/2 D,/2x/2D,/2x/2x/2x/2| \
+x/2D,/2[D,/2D,/2][D,/2D,/2][D,/2D,/2]D,/2 D,/2x3/2D,/2x/2| \
+D,4-D,/2x/2D,/2x/2|
+D,4-D,/2x3/2| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x2D,/2x/2 D,3-|
+D,xD,/2x/2 D,2A,,| \
+D,3 x3| \
+x6| \
+x6|
+x6| \
+x6| \
+x4xA,,| \
+D,3/2x/2 (3D,2A,,2A,,2|
+D,/2x/2D,/2D,/2x/2x/2 x/2x3/2A,,/2x/2| \
+A,,/2<A,,/2x/2A,,/2A,,/2x/2 A,,/2x/2A,,/2x/2x/2x/2| \
+x/2A,,/2[A,,/2A,,/2][A,,/2A,,/2][A,,/2A,,/2]A,,/2 A,,3-| \
+A,,x4x|
+x6| \
+x/2D,4-D,/2x| \
+D,/2D,/2D,/2>D,/2x/2 (3D,/2D,/2D,/2D,/2x2| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x2x/2A,,/2 x/2A,,2-A,,/2-| \
+A,,/2x4x3/2| \
+x4xA,,/2x/2| \
+A,,2 (3D,2D,2A,,2|
+D,2D, x/2D,2x/2| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x4xD,/2x/2| \
+D,/2x/2[D,/2D,/2]D,/2D,/2D,/2 x/2D,/2x/2x/2x/2D,/2| \
+[D,/2D,/2]D,/2D,/2D,/2D,/2D,/2 D,3/2x/2D,/2x/2| \
+D,4-D,/2x/2D,|
+x/2D,2-D,/2 x3| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x2x/2D,/2 x/2D,2-D,/2-|
+D,2x/2D,/2 x/2D,3/2-[D,/2A,,/2-]A,,/2| \
+x/2D,3-D,/2x2| \
+x6| \
+x6|
+x6| \
+x6| \
+x4xA,,| \
+D,2x/2D,A,,3/2x/2A,,/2|
+x/2D,/2x/2D,/2x/2x/2 D,3/2-
+V:7
+% Violin I
+%%MIDI program 49
+x4x
+% "That One Guy"\0xa8 Publishing Inc.
+% J.S. Bach-Suite No. 3 in D, BWV.1068 (Gigue)
+% Sequenced by:
+% Del Ahlin
+% 1996
+D| \
+A3 B3| \
+A4-[B/2-A/2]B/2c| \
+dcB ABG-|
+[G/2F/2-]F/2EF DFA| \
+d3 f3| \
+e4-ed| \
+cBA Bcd|
+cBc Ace| \
+aga/2x/2 aga| \
+aga B^df| \
+gfg gfg|
+gfg Ace| \
+f^ga a^ga| \
+=def fef-| \
+[f/2B/2-]B/2cd dcd|
+^GAB E^GB| \
+edc dcB| \
+A2f A2f| \
+^G2e =G2e|
+F2-[d/2-F/2]d/2 =F2d| \
+E4^GB/2x/2| \
+d^gb d/2x/2cB| \
+c/2d/2eA EA^G|
+A4-Ax/2D/2-| \
+[A/2-D/2]A2-A/2 B3| \
+A4Bc| \
+dcB AB=G-|
+[G/2^F/2-]F/2EF DFA| \
+d3 f3| \
+e4-ed-| \
+[d/2c/2-]c/2BA Bcd-|
+[d/2c/2-]c/2Bc A-[c/2-A/2]c/2e| \
+aga/2x/2 aga| \
+aga B^df| \
+gfg/2x/2 gfg|
+gfg Ace| \
+f^ga a^ga| \
+=def<fef| \
+Bcd dcd|
+^GAB E^GB| \
+edc d-[d/2c/2-]c/2B| \
+A2f A2f| \
+^G2e =G2e|
+F2d =F2d| \
+E4^GB| \
+d^gb dcB| \
+c/2d/2eA EA^G|
+A4-A/2x/2A| \
+e3 ^f3| \
+e4f=g| \
+fed cdB|
+^ABc F^Ac| \
+f3 g2-g/2x/2| \
+g/2f3-f/2e<d| \
+cdB FB^A|
+B4dc| \
+dcd dcd/2x/2| \
+dcd E^GB| \
+edc B-[c/2-B/2]c/2d|
+cBc =Ace| \
+=gfg gfg| \
+gfg Ace| \
+agf efg|
+fef dfe| \
+f^ga ^gab| \
+c4^gb| \
+a^gf edc|
+B4fa| \
+^gf=f ^fed| \
+cfe dcB| \
+A^GF BA^G|
+F4-FD-| \
+[A/2-D/2]A2-A/2 B3| \
+=c4BA| \
+Bd=g A-[g/2-A/2]g/2f|
+gba b3-| \
+bag fge| \
+fag a3-| \
+agf ef-[f/2^d/2-]^d/2|
+egf g3-| \
+g-[g/2f/2-]f/2e =de^c| \
+dfe fga-| \
+[a/2=c/2-]=c/2^cd e<fd|
+cde fge| \
+def gaf| \
+efg abg| \
+f4ed|
+e-[e/2c/2-]c/2d Adc/2x/2| \
+D2d a3-| \
+ax/2b/2a ^gef| \
+=gag fde|
+=fg=f ecd| \
+cde A3-| \
+A2-[a/2-A/2]a/2 b2c'| \
+d'2a ^fe<d|
+d4x3/2A/2-| \
+A/2e2-e/2- [f/2-e/2]f2-f/2| \
+e4fg| \
+fed cdB|
+x/2^A/2-[B/2-^A/2]B/2x/2c/2- [c/2F/2-]F/2^Ac| \
+f3 g2-g/2x/2| \
+f3- f/2x/2e<d| \
+cdB FB^A|
+B4dc| \
+dcd dcd/2x/2| \
+dcd E^GB| \
+edc B-[c/2-B/2]c/2d|
+cBc =Ace| \
+=gfg gfg| \
+gfg Ace| \
+agf efg|
+fef dfe| \
+f^ga ^gab| \
+c4^gb| \
+a^gf edc|
+B4fa| \
+^gf=f ^fed| \
+cfe dcB| \
+A^GF BA^G|
+F4-FD-| \
+[A/2-D/2]A2-A/2 B3| \
+=c4BA| \
+Bd=g A-[g/2-A/2]g/2f|
+gba b3-| \
+bag fge| \
+fag a3-| \
+agf ef-[f/2^d/2-]^d/2|
+egf g3-| \
+g-[g/2f/2-]f/2e =de^c| \
+dfe fga-| \
+[a/2B/2-]B/2cd e<fd|
+cde fge| \
+def gaf| \
+efg abg| \
+f4ed|
+e-[e/2c/2-]c/2d Adc/2x/2| \
+D2d a3-| \
+ax/2b/2a ^gef| \
+=gag fde|
+=fg=f ecd| \
+cde A3-| \
+A2-[a/2-A/2]a/2 b2c'| \
+d'2a ^fe<d|
+d4x/2
+V:8
+% Violin II
+%%MIDI program 48
+x4x
+% "That One Guy"\0xa8 Publishing Inc.
+% J.S. Bach-Suite No. 3 in D, BWV.1068 (Gigue)
+% Sequenced by:
+% Del Ahlin
+% 1996
+F| \
+F3 G3| \
+F4-FG| \
+A2G F2E|
+DCD A,DE| \
+F3 B2-B/2x/2| \
+B4-B/2x/2B| \
+A3/2x/2 (3A2A2^G2|
+A^GA EAB| \
+c2x c3| \
+B3- B/2x3/2B| \
+B2x B2-B/2x/2|
+A3 x2c| \
+d2f e2A| \
+B2d d2d| \
+d2 (3B2A2d2|
+e2-[e/2E/2-]E/2 ^G2^G| \
+A2A A2^G| \
+F6| \
+E6|
+D6-| \
+D4E^G| \
+B2^G A2B| \
+A2E ExE|
+E4-EF/2x/2| \
+F3 =G3| \
+F4-FG| \
+A2G F2E|
+DCD xDE| \
+F3 B2-B/2x/2| \
+B4-B/2x/2B| \
+A3/2x/2 (3A2A2^G2|
+A^GA EAB| \
+c2x c2-c/2x/2| \
+B4xB| \
+B2x B3|
+A4-A/2x/2c| \
+dxf e2A| \
+B2 (3d2d2d2| \
+d2B A2d|
+e2E ^G2^G| \
+A3/2x/2 (3A2A2^G2| \
+F6| \
+E6|
+D6-| \
+D4E^G| \
+B2 (3^G2A2B2| \
+A2 (3E2E2E2|
+E4-E-[c/2-E/2]c/2| \
+c3 d3| \
+c4de| \
+d2-[d/2F/2-]F/2 E2E-|
+[F/2-E/2]F3-F/2-[f/2-F/2]f/2e| \
+d3 e3| \
+d4-dF| \
+E2E F3/2x/2F/2x/2|
+F4-F/2x/2F| \
+B3/2x3/2 ^G2x| \
+^G2x B3/2x/2B| \
+B2A A2^G-|
+[A/2-^G/2]A/2^GA EAc| \
+e3/2x3/2 c2x| \
+c2x e2e| \
+e2 (3d2d2c2|
+dcd Adc| \
+d4cd| \
+=F4-=Fc| \
+c4BA|
+B4-BA| \
+d2c B2B| \
+A2c BA^G| \
+^F3/2x/2 (3F2F2=F2|
+C4-CD| \
+^F3 =G3| \
+F4GA| \
+G2B A2A|
+Bd=c d2B| \
+e2d ^c3-| \
+cfe ^d2e| \
+^d2f B3-|
+B3/2x/2B Be=d| \
+c2e A3-| \
+A3/2x/2A A3/2x/2A/2x/2| \
+A2x B2-B/2x/2|
+A2x c2x| \
+B2x d2x| \
+e2x e2-e/2x/2| \
+dc (3d2B2B2|
+c2A B2A| \
+F4-F/2x/2=c| \
+B6| \
+A6|
+G6-| \
+G4A^c| \
+e2 (3c2d2e2| \
+d2f dcd|
+A4xc| \
+x/2c2-c/2- [d/2-c/2]d2-d/2| \
+c4de| \
+d2-[d/2F/2-]F/2 E2E-|
+[F/2-E/2]F3-F/2-[f/2-F/2]f/2e| \
+d3 e3| \
+d4-dF| \
+E2E F3/2x/2F/2x/2|
+F4-F/2x/2F| \
+B3/2x3/2 ^G2x| \
+^G2x B3/2x/2B| \
+B2A A2^G-|
+[A/2-^G/2]A/2^GA EAc| \
+e3/2x3/2 c2x| \
+c2x e2e| \
+e2 (3d2d2c2|
+dcd Adc| \
+d4cd| \
+=F4-=Fc| \
+c4BA|
+B4-BA| \
+d2c B2B| \
+A2c BA^G| \
+^F3/2x/2 (3F2F2=F2|
+C4-CD| \
+^F3 =G3| \
+F4GA| \
+G2B A2A|
+Bd=c d2B| \
+e2d ^c3-| \
+cfe ^d2e| \
+^d2f B3-|
+B3/2x/2B Be=d| \
+c2e A3-| \
+A3/2x/2A A3/2x/2A/2x/2| \
+A2x B2-B/2x/2|
+A2x c2x| \
+B2x d2x| \
+e2x e2-e/2x/2| \
+dc (3d2B2B2|
+c2A B2A| \
+F4-F/2x/2=c| \
+B6| \
+A6|
+G6-| \
+G4A^c| \
+e2 (3c2d2e2| \
+d2f dcd|
+A4
+V:9
+% Viola
+%%MIDI program 48
+x4x
+% "That One Guy"\0xa8 Publishing Inc.
+% J.S. Bach-Suite No. 3 in D, BWV.1068 (Gigue)
+% Sequenced by:
+% Del Ahlin
+% 1996
+D/2x/2| \
+D3 D2-D/2x/2| \
+D2-D/2x/2 D2-[D/2G,/2-]G,/2| \
+D3/2x/2 (3D2D2C2|
+A,G,A, F,A,C| \
+D3 D3| \
+E4-E/2Ex/2| \
+E2C/2-[F/2-C/2] F3/2x/2E|
+EDE CEG| \
+C2-C/2x/2 F2x| \
+F4-F/2x/2^D| \
+E2-E/2x/2 E2-E/2x/2|
+E4-E/2x/2A| \
+A3/2x/2=D- [E/2-D/2]Ex/2E| \
+F2-[F/2B,/2]x/2 B,2B,| \
+E3/2x/2 (3E2F2F2|
+B,2^G B2D-| \
+[D/2C/2-]C3/2 (3D2E2D2| \
+C3 B,3-| \
+B,3 A,3-|
+A,2-A,/2x/2 ^G,B,A,| \
+B,-[C/2-B,/2]C/2D>^G,B,-[D/2-B,/2]D/2| \
+^G2 (3E2A,2E2| \
+E2C- [C/2B,/2-]B,x/2B,|
+C4-CD/2x/2| \
+D2-D/2x/2 D2-D/2x/2| \
+D4-D=G,| \
+D3/2x/2D/2x/2 DxC|
+A,G,-[A,/2-G,/2]A,/2 F,A,C| \
+D2-D/2x/2 D3| \
+E4-E/2x/2E| \
+E2C- [F/2-C/2]F3/2E/2x/2|
+E>DE CEG| \
+C2-C/2x/2 F2x| \
+F4-F/2x/2^D| \
+E2-E/2x/2 E2-E/2x/2|
+E4-EA| \
+A3/2x/2=D E2E| \
+F2 (3B,2B,2B,2| \
+E3/2x/2 (3E2F2F2|
+B,2^G B2D| \
+C2D E2D| \
+C3 B,3-| \
+B,3 A,3-|
+A,3 ^G,-[B,/2-^G,/2]B,/2A,| \
+B,CD ^G,B,-[D/2-B,/2]D/2| \
+^G2E- [E/2A,/2-]A,3/2E| \
+E2C- [C/2B,/2-]B,x/2B,|
+C4-CE| \
+A2-A/2x/2 A2-A/2x/2| \
+A4-A-[A/2C/2-]C/2| \
+A,2B, =G,2B,|
+C2^A, B,C^A,/2x/2| \
+B,3 B2-B/2x/2| \
+B4-BB,| \
+^G,2B,- [C/2-B,/2]Cx/2C|
+D4-DF| \
+E3/2x3/2 E2-E/2x/2| \
+B,2x E3/2x/2E/2x/2| \
+E2 (3F2F2E2|
+EDE C-[E/2-C/2]E/2=A| \
+A2x A2x| \
+x/2E2-E/2 A3/2x/2A| \
+A2 (3B2B2A2|
+A-[A/2=G/2-]G/2A FDA/2x/2| \
+A^G (3F2B2A2| \
+^G4-^G=F| \
+^F^GA- [A/2A,/2-]A,3/2C|
+F4-Fc-| \
+[c/2B/2-]B/2A (3^G2F2=F2| \
+^F4-F^G-| \
+[^G/2C/2-]C3/2D- [D/2^G,/2-]^G,3/2B,|
+A,4-A,A,| \
+D3 D3| \
+A,4-A,D| \
+D2E E2D/2x/2|
+D4=GF/2x/2| \
+B3/2x/2 (3B2A2G2| \
+F2=c A2E| \
+F2A- [A/2G/2-]G3/2F|
+E2B,- [B/2-B,/2]B3/2F| \
+E2 (3G2F2E2| \
+D2 (3A,2D2D2| \
+D2x E2-E/2x/2|
+E2x F2x| \
+F2-F/2x/2 D2x| \
+A3 A2x| \
+AGA- [A/2G/2-]Gx/2F|
+E2F E3/2x/2E/2x/2| \
+D2x3G/2x/2| \
+F2-F/2x/2 E3-| \
+E3 D3-|
+D3 ^C-[E/2-C/2]E/2D| \
+E-[F/2-E/2]F/2G CEG| \
+c2A D2G| \
+A3/2x/2d- [d/2A/2-]A/2G/2x/2F/2x/2|
+F4-F3/2x/2| \
+A3 A2-A/2x/2| \
+A4-AC| \
+A,2B, G,2B,|
+C2^A, B,C^A,| \
+B,3 B2-B/2x/2| \
+B4xB,| \
+^G,2 (3B,2C2C2|
+D4-DF| \
+E2-E/2x/2 E2-E/2x/2| \
+B,2-B,/2x/2 E3/2x/2E/2x/2| \
+E2F/2x/2 F2E/2x/2|
+ED[E/2-^D/2]E/2 CE=A| \
+A2x A2x| \
+E2x A3/2x/2A/2x/2| \
+A3/2x/2 (3B2B2A2|
+A-[A/2=G/2-]G/2A F-[F/2=D/2-]D/2A| \
+x/2A^G/2-[^G/2F/2-]F/2 B2A| \
+^G4-^G=F| \
+^F^GA A,2C|
+F4-Fc| \
+BA^G F2=F| \
+^F4-F^G| \
+C2 (3D2^G,2C2|
+A,4-A,/2x/2A,| \
+D3 D3| \
+A,4-A,D| \
+D2E E2D/2x/2|
+D4=GF| \
+B2 (3B2A2G2| \
+F2-[=c/2-F/2]=c/2 A2E-| \
+[F/2-E/2]F3/2A G2F-|
+[F/2E/2-]E3/2B,- [B/2-B,/2]B3/2F| \
+x/2E3/2-[G/2-E/2]G/2 F2E| \
+D2A,- [D/2-A,/2]D3/2D| \
+D2-D/2x/2 E2-E/2x/2|
+E2x F2x| \
+F2-F/2x/2 D2x| \
+A2x A2x| \
+AG (3A2G2F2|
+E2 (3F2E2E2| \
+D3 x2F/2x/2| \
+F3 E3-| \
+E3 D3-|
+D3 ^C-[E/2-C/2]E/2D/2x/2| \
+EF-[G/2-F/2]G/2 CEG| \
+c2A3/2D3/2-[G/2-D/2]G/2| \
+A2d AGF/2x/2|
+F4
+V:10
+% Violincello
+%%MIDI program 48
+x4x
+% "That One Guy"\0xa8 Publishing Inc.
+% J.S. Bach-Suite No. 3 in D, BWV.1068 (Gigue)
+% Sequenced by:
+% Del Ahlin
+% 1996
+D,| \
+DCD DCD/2x/2| \
+DC (3D2D,2E,2| \
+F,2G, A,2A,,|
+D,4-D,C,| \
+B,,A,,B,,/2x/2 A,,^G,,A,,| \
+^G,,F,,^G,, E,,F,,^G,,/2x/2| \
+A,,2F, D,2E,|
+A,,4-A,,=G,,| \
+F,,2 (3G,2F,2E,2| \
+^D,2F, ^D,2-[^D,/2B,,/2-]B,,/2-| \
+B,,/2E,3/2-[F,/2-E,/2]F,/2 E,2=D,|
+C,2 (3E,2C,2A,,2| \
+D,2-[D/2-D,/2]D/2 C2C,/2x/2| \
+B,,2B,/2x/2 A,2A,,/2x/2| \
+^G,,2^G,/2x/2 F,2F,,/2x/2|
+E,,2E, D,C,B,,| \
+C,B,,A,, E,3-| \
+E,F,E, ^D,B,,C,| \
+=D,E,D, C,A,,B,,|
+=C,D,=C, B,,^G,,A,,| \
+^G,,/2x/2A,,B,, E,,3-| \
+E,,2 (3E,2F,2^G,2| \
+A,2^C, D,E,E,,|
+A,,4-A,,/2xA,,/2| \
+x/2D/2-[D/2C/2-]C/2D/2x/2 DCD/2x/2| \
+DC (3D2D,2E,2| \
+F,2=G,- [A,/2-G,/2]A,3/2A,,|
+D,3- [A,D,-]D,/2x/2C,/2x/2| \
+B,,A,,B,, A,,^G,,A,,-| \
+[A,,/2^G,,/2-]^G,,/2F,,^G,, E,,-[F,,/2-E,,/2]F,,/2^G,,/2x/2| \
+A,,2-[F,/2-A,,/2]F,/2 D,2E,|
+A,,4-A,,=G,,| \
+F,,2G, F,2E,| \
+^D,2F, ^D,2B,,| \
+E,2F, E,2=D,|
+C,2-[E,/2-C,/2]E,/2 C,2A,,| \
+D,2D C2-[C/2C,/2-]C,/2| \
+B,,2B, A,2A,,| \
+^G,,2-[^G,/2-^G,,/2]^G,/2 F,2F,,|
+E,,2E, D,C,B,,| \
+C,B,,A,, E,3-| \
+E,F,E, ^D,B,,C,| \
+=D,E,D, C,A,,B,,|
+=C,D,=C, B,,^G,,A,,| \
+^G,,A,,B,, E,,3-| \
+E,,2-[E,/2-E,,/2]E,/2 F,2^G,| \
+A,2-[A,/2^C,/2-]C,/2 E,2E,,|
+A,,4-A,,A,,| \
+A,^G,A, A,^G,A,| \
+A,^G, (3A,2C,2A,,2| \
+D,2B,, E,2=G,|
+F,2 (3E,2D,2C,2| \
+B,,^A,,B,,/2x/2 B,,^A,,B,,/2x/2| \
+B,,C,D, D,C,B,,/2x/2| \
+E,F,G, F,E,F,|
+B,,D,F, B,2=A,| \
+^G,2B,/2x/2 B,2^G,| \
+E,x^G,/2x/2 ^G,2E,| \
+C,2F, D,2E,|
+A,,2A,/2x/2 A,2E,| \
+C,3/2x/2E,/2x/2 E,2C,| \
+A,,2C,/2x/2 C,2A,,| \
+F,,2B,, ^G,,2A,,|
+D,,2D, F,2A,| \
+D2C B,3-| \
+B,^G,-[^G,/2=F,/2-]=F,/2 C,=F,C,| \
+^F,2 (3F,,2F,2E,2|
+D,B,,D, F,D,F,| \
+B,2 (3C2D2^G,2| \
+A,2F, B,2=F,| \
+^F,2 (3B,,2C,2C,,2|
+F,,A,,C, F,E,F,| \
+D,C,D,/2x/2 D,C,D,/2x/2| \
+D,F,A, D2F,| \
+=G,2E, =C,2D,|
+G,,4B,,D,| \
+G,2E, A,3-| \
+A,2E,, F,,A,,=C,| \
+F,2^D,- [G,/2-^D,/2]G,2-G,/2-|
+G,3/2x/2^D,, E,,G,,B,,| \
+E,2^C, F,3-| \
+F,3/2x/2 (3C,,2=D,,2F,,2| \
+G,,xB,, ^G,,2E,,|
+A,,2C, ^A,,2F,,| \
+B,,2=A,, B,,2=G,,| \
+x/2=C,3/2B,, =C,2A,,| \
+D,E,F, G,3-|
+G,2 (3F,2G,2A,2| \
+B,A,G, F,G,E,/2x/2| \
+^D,2B, =D,2B,| \
+^C,3/2x/2A, =C,2A,|
+B,,2G, ^A,,2G,| \
+=A,,4^C,E,| \
+G,CE G,F,E,| \
+F,E,D, A,2A,,|
+D,4x3/2A,,/2-| \
+A,,/2A,/2-[A,/2^G,/2-]^G,/2A, A,^G,A,| \
+A,^G, (3A,2C,2A,,2| \
+D,2B,, E,2=G,|
+F,2 (3E,2D,2C,2| \
+B,,^A,,B,,/2x/2 B,,^A,,B,,/2x/2| \
+B,,C,D, D,C,B,,/2x/2| \
+E,F,G, F,E,F,|
+B,,D,F, B,2=A,| \
+^G,2B,/2x/2 B,2^G,| \
+E,x^G,/2x/2 ^G,2E,| \
+C,2F, D,2E,|
+A,,2A,/2x/2 A,2E,| \
+C,3/2x/2E,/2x/2 E,2C,| \
+A,,2C,/2x/2 C,2A,,| \
+F,,2B,, ^G,,2A,,|
+D,,2D, F,2A,| \
+D2C B,3-| \
+B,^G,-[^G,/2=F,/2-]=F,/2 C,=F,C,| \
+^F,2 (3F,,2F,2E,2|
+D,B,,D, F,D,F,| \
+B,2 (3C2D2^G,2| \
+A,2F, B,2=F,| \
+^F,2 (3B,,2C,2C,,2|
+F,,A,,C, F,E,F,| \
+D,C,D,/2x/2 D,C,D,/2x/2| \
+D,F,A, D2F,| \
+=G,2E, =C,2D,|
+G,,4B,,D,| \
+G,2E, A,3-| \
+A,2E,, F,,A,,=C,| \
+F,2^D,- [G,/2-^D,/2]G,2-G,/2-|
+G,3/2x/2^D,, E,,G,,B,,| \
+E,2^C, F,3-| \
+F,3/2x/2 (3C,,2=D,,2F,,2| \
+G,,xB,, ^G,,2E,,|
+A,,2C, ^A,,2F,,| \
+B,,2=A,, B,,2=G,,| \
+x/2=C,3/2B,, =C,2A,,| \
+D,E,F, G,3-|
+G,2 (3F,2G,2A,2| \
+B,A,G, F,G,E,/2x/2| \
+^D,2B, =D,2B,| \
+^C,3/2x/2A, =C,2A,|
+B,,2G, ^A,,2G,| \
+=A,,4^C,x/2E,/2-| \
+[G,/2-E,/2]G,/2x/2CE/2- [E/2G,/2-]G,/2F,E,| \
+F,E,D, A,2A,,|
+D,4
+V:11
+% Continuo
+%%MIDI program 6
+x4x
+% "That One Guy"\0xa8 Publishing Inc.
+% J.S. Bach-Suite No. 3 in D, BWV.1068 (Gigue)
+% Sequenced by:
+% Del Ahlin
+% 1996
+D,| \
+DCD DCD/2x/2| \
+DC (3D2D,2E,2| \
+F,2G, A,2A,,|
+D,4-D,C,| \
+B,,A,,B,,/2x/2 A,,^G,,A,,| \
+^G,,F,,^G,, E,,F,,^G,,/2x/2| \
+A,,2F, D,2E,|
+A,,4-A,,=G,,| \
+F,,2 (3G,2F,2E,2| \
+^D,2F, ^D,2-[^D,/2B,,/2-]B,,/2-| \
+B,,/2E,3/2-[F,/2-E,/2]F,/2 E,2=D,|
+C,2 (3E,2C,2A,,2| \
+D,2-[D/2-D,/2]D/2 C2C,/2x/2| \
+B,,2B,/2x/2 A,2A,,/2x/2| \
+^G,,2^G,/2x/2 F,2F,,/2x/2|
+E,,2E, D,C,B,,| \
+C,B,,A,, E,3-| \
+E,F,E, ^D,B,,C,| \
+=D,E,D, C,A,,B,,|
+=C,D,=C, B,,^G,,A,,| \
+^G,,/2x/2A,,B,, E,,3-| \
+E,,2 (3E,2F,2^G,2| \
+A,2^C, D,E,E,,|
+A,,4-A,,/2xA,,/2| \
+x/2D/2-[D/2C/2-]C/2D/2x/2 DCD/2x/2| \
+DC (3D2D,2E,2| \
+F,2=G,- [A,/2-G,/2]A,3/2A,,|
+D,3- [A,D,-]D,/2x/2C,/2x/2| \
+B,,A,,B,, A,,^G,,A,,-| \
+[A,,/2^G,,/2-]^G,,/2F,,^G,, E,,-[F,,/2-E,,/2]F,,/2^G,,/2x/2| \
+A,,2-[F,/2-A,,/2]F,/2 D,2E,|
+A,,4-A,,=G,,| \
+F,,2G, F,2E,| \
+^D,2F, ^D,2B,,| \
+E,2F, E,2=D,|
+C,2-[E,/2-C,/2]E,/2 C,2A,,| \
+D,2D C2-[C/2C,/2-]C,/2| \
+B,,2B, A,2A,,| \
+^G,,2-[^G,/2-^G,,/2]^G,/2 F,2F,,|
+E,,2E, D,C,B,,| \
+C,B,,A,, E,3-| \
+E,F,E, ^D,B,,C,| \
+=D,E,D, C,A,,B,,|
+=C,D,=C, B,,^G,,A,,| \
+^G,,A,,B,, E,,3-| \
+E,,2-[E,/2-E,,/2]E,/2 F,2^G,| \
+A,2-[A,/2^C,/2-]C,/2 E,2E,,|
+A,,4-A,,A,,| \
+A,^G,A, A,^G,A,| \
+A,^G, (3A,2C,2A,,2| \
+D,2B,, E,2=G,|
+F,2 (3E,2D,2C,2| \
+B,,^A,,B,,/2x/2 B,,^A,,B,,/2x/2| \
+B,,C,D, D,C,B,,/2x/2| \
+E,F,G, F,E,F,|
+B,,D,F, B,2=A,| \
+^G,2B,/2x/2 B,2^G,| \
+E,x^G,/2x/2 ^G,2E,| \
+C,2F, D,2E,|
+A,,2A,/2x/2 A,2E,| \
+C,3/2x/2E,/2x/2 E,2C,| \
+A,,2C,/2x/2 C,2A,,| \
+F,,2B,, ^G,,2A,,|
+D,,2D, F,2A,| \
+D2C B,3-| \
+B,^G,-[^G,/2=F,/2-]=F,/2 C,=F,C,| \
+^F,2 (3F,,2F,2E,2|
+D,B,,D, F,D,F,| \
+B,2 (3C2D2^G,2| \
+A,2F, B,2=F,| \
+^F,2 (3B,,2C,2C,,2|
+F,,A,,C, F,E,F,| \
+D,C,D,/2x/2 D,C,D,/2x/2| \
+D,F,A, D2F,| \
+=G,2E, =C,2D,|
+G,,4B,,D,| \
+G,2E, A,3-| \
+A,2E,, F,,A,,=C,| \
+F,2^D,- [G,/2-^D,/2]G,2-G,/2-|
+G,3/2x/2^D,, E,,G,,B,,| \
+E,2^C, F,3-| \
+F,3/2x/2 (3C,,2=D,,2F,,2| \
+G,,xB,, ^G,,2E,,|
+A,,2C, ^A,,2F,,| \
+B,,2=A,, B,,2=G,,| \
+x/2=C,3/2B,, =C,2A,,| \
+D,E,F, G,3-|
+G,2 (3F,2G,2A,2| \
+B,A,G, F,G,E,/2x/2| \
+^D,2B, =D,2B,| \
+^C,3/2x/2A, =C,2A,|
+B,,2G, ^A,,2G,| \
+=A,,4^C,E,| \
+G,CE G,F,E,| \
+F,E,D, A,2A,,|
+D,4x3/2A,,/2-| \
+A,,/2A,/2-[A,/2^G,/2-]^G,/2A, A,^G,A,| \
+A,^G, (3A,2C,2A,,2| \
+D,2B,, E,2=G,|
+F,2 (3E,2D,2C,2| \
+B,,^A,,B,,/2x/2 B,,^A,,B,,/2x/2| \
+B,,C,D, D,C,B,,/2x/2| \
+E,F,G, F,E,F,|
+B,,D,F, B,2=A,| \
+^G,2B,/2x/2 B,2^G,| \
+E,x^G,/2x/2 ^G,2E,| \
+C,2F, D,2E,|
+A,,2A,/2x/2 A,2E,| \
+C,3/2x/2E,/2x/2 E,2C,| \
+A,,2C,/2x/2 C,2A,,| \
+F,,2B,, ^G,,2A,,|
+D,,2D, F,2A,| \
+D2C B,3-| \
+B,^G,-[^G,/2=F,/2-]=F,/2 C,=F,C,| \
+^F,2 (3F,,2F,2E,2|
+D,B,,D, F,D,F,| \
+B,2 (3C2D2^G,2| \
+A,2F, B,2=F,| \
+^F,2 (3B,,2C,2C,,2|
+F,,A,,C, F,E,F,| \
+D,C,D,/2x/2 D,C,D,/2x/2| \
+D,F,A, D2F,| \
+=G,2E, =C,2D,|
+G,,4B,,D,| \
+G,2E, A,3-| \
+A,2E,, F,,A,,=C,| \
+F,2^D,- [G,/2-^D,/2]G,2-G,/2-|
+G,3/2x/2^D,, E,,G,,B,,| \
+E,2^C, F,3-| \
+F,3/2x/2 (3C,,2=D,,2F,,2| \
+G,,xB,, ^G,,2E,,|
+A,,2C, ^A,,2F,,| \
+B,,2=A,, B,,2=G,,| \
+x/2=C,3/2B,, =C,2A,,| \
+D,E,F, G,3-|
+G,2 (3F,2G,2A,2| \
+B,A,G, F,G,E,/2x/2| \
+^D,2B, =D,2B,| \
+^C,3/2x/2A, =C,2A,|
+B,,2G, ^A,,2G,| \
+=A,,4^C,x/2E,/2-| \
+[G,/2-E,/2]G,/2x/2CE/2- [E/2G,/2-]G,/2F,E,| \
+F,E,D, A,2A,,|
+D,4

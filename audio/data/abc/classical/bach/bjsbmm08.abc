@@ -1,0 +1,566 @@
+X: 1
+T: from bach/bjsbmm08.mid
+M: 3/4
+L: 1/8
+Q:1/4=50
+K:D % 2 sharps
+%     Mass in B Minor          Johann Sebastion Bach  No. 8 Chor, Qui Tollis    seq by David Siu  dss@po.cwru.edu      
+% Instrument  1
+%%MIDI program 19
+V:1
+% Flute
+%%MIDI program 73
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+%     Mass in B Minor          Johann Sebastion Bach  No. 8 Chor, Qui Tollis    seq by David Siu  dss@po.cwru.edu      
+f/2g/2f/2e/2 f/2e/2d/2c/2 B/2d/2c/2B/2|
+[b/2-d/2][b/2-=c/2][b/2-d/2][b/2-e/2] [b/2-d/2][b/2-=c/2][b/2-B/2][b/2-A/2] [b/2-G/2][b/2-B/2][b/2-A/2][b/2-G/2]| \
+[b/2e/2-][a/2e/2-][b/2e/2-][=c'/2e/2-] [b/2e/2-][a/2e/2-][g/2e/2-][f/2e/2-] [e/2-e/2][g/2e/2-][f/2e/2-][e/2-e/2]| \
+[^c'/2-e/2][c'/2-d/2][c'/2-e/2][c'/2f/2] e/2d/2c/2B/2 ^A/2c/2B/2^A/2| \
+f/2e/2f/2^g/2 f/2e/2^d/2c/2 =c/2^d/2^c/2=c/2|
+[b/2^g/2-][=a/2^g/2-][b/2^g/2-][^c'/2^g/2] b/2a/2^g/2f/2 =f/2^g/2^f/2=f/2| \
+[a/2-c/2][a/2-B/2][a/2-c/2][a/2=d/2] c/2B/2A/2^G/2 ^F/2A/2^G/2F/2| \
+[f/2-f/2][f/2-e/2][f/2-f/2][=g/2f/2] f/2e/2d/2c/2 B/2d/2c/2B/2| \
+[b/2d/2][a/2=c/2][b/2d/2][=c'/2e/2] [b/2d/2][a/2=c/2][g/2B/2][a/2A/2] [b/2G/2][g/2B/2][f/2A/2][e/2G/2]|
+[g6-e6-]| \
+[g6-e6-]| \
+[g/2e/2-][f/2e/2-][g/2e/2-][a/2e/2-] [g/2e/2-][f/2e/2-][e/2-e/2][e/2-d/2] [e/2-e/2][e/2-^c/2][e/2-d/2][e/2-e/2]| \
+[e/2^A/2][d/2B/2][e/2c/2][f/2d/2] [e/2c/2][d/2B/2][c/2^A/2][B/2^G/2] [^A/2F/2][c/2^A/2][B/2^G/2][^A/2F/2]|
+[f/2d/2-][e/2d/2-][f/2d/2-][=g/2d/2] [f/2B/2-][e/2B/2-][d/2B/2-][c/2B/2-] [B/2-B/2][d/2B/2-][=c/2B/2-][B/2-B/2]| \
+[g/2-B/2][g/2-=A/2][g/2-B/2][g/2-=c/2] [g/2-B/2][g/2-A/2][g/2-G/2][g/2-F/2] [g/2-E/2][g/2-G/2][g/2-F/2][g/2-E/2]| \
+[g/2^c/2-][e/2c/2-][e/2c/2-][f/2c/2-] [f/2c/2-][d/2c/2-][d/2c/2-][e/2c/2-] [e/2c/2-][c/2-c/2][c/2-c/2][d/2c/2-]| \
+[d/2-c/2][d/2-^A/2][d/2-^A/2][d/2B/2] [^d/2-B/2][^d/2-G/2][^d/2-G/2][^d/2-=A/2] [^d/2-A/2][^d/2-F/2][^d/2-F/2][^d/2G/2]|
+[e/2-G/2][e/2-E/2][e/2-E/2][e/2=d/2] [=f/2-d/2][=f/2-B/2][=f/2-B/2][=f/2-c/2] [=f/2-c/2][=f/2-A/2][=f/2-A/2][=f/2-B/2]| \
+[=f/2B/2][B/2^G/2][B/2^G/2][d'/2b/2] [d'/2b/2][b/2^g/2][b/2^g/2][c'/2a/2] [c'/2a/2][a/2^f/2][a/2f/2][b/2=g/2]| \
+[b/2-g/2][b/2-=f/2][b/2-=f/2][b/2-^f/2] [b/2-f/2][b/2-B/2][b/2-B/2][b/2-=f/2] [b/2-=f/2][b/2-c/2][b/2-c/2][b/2-=f/2]| \
+[b/2^f/2-][^g/2f/2-][a/2f/2-][f/2-f/2] [^g/2-f/2][^g/2-=f/2][^g/2-^f/2][^g/2-^d/2] [^g/2-f/2][^g/2f/2=f/2][^f/2-f/2=f/2][^f/2f/2=f/2]|
+[^f/2-f/2][f/2-B/2][f/2-c/2][f/2-=d/2] [f/2-c/2][f/2-B/2][f/2-A/2][f/2^G/2] F/2A/2^G/2F/2| \
+[a/2f/2][=g/2e/2][a/2f/2][b/2g/2] [a/2f/2][g/2e/2][f/2d/2][e/2e/2] [f/2d/2][f/2d/2][e/2e/2][f/2d/2]| \
+[d'6-B6-]| \
+[d'6-B6-]|
+[d'/2B/2-][c'/2B/2-][d'/2B/2-][e'/2B/2-] [d'/2B/2-][c'/2B/2-][b/2B/2-][a/2B/2-] [b/2B/2-][^g/2B/2-][a/2B/2-][b/2B/2-]| \
+[=f/2B/2][^f/2A/2][^g/2B/2][a/2c/2] [^g/2B/2][f/2A/2][=f/2^G/2][^d/2^F/2] [c/2=F/2][=f/2^G/2][^d/2^F/2][c/2=F/2]| \
+[a/2-c/2][a/2-B/2][a/2-c/2][a/2=d/2] [^f/2-c/2][f/2-B/2][f/2-A/2][f/2-^G/2] [f/2-F/2][f/2-A/2][f/2-^G/2][f/2-F/2]| \
+[f/2d/2-][e/2d/2-][f/2d/2-][=g/2d/2-] [f/2d/2-][e/2d/2-][d/2-d/2][d/2-c/2] [d/2-B/2][d/2-d/2][d/2-c/2][d/2-B/2]|
+[^g/2-d/2][^g/2-B/2][^g/2-B/2][^g/2-c/2] [^g/2-c/2][^g/2-A/2][^g/2-A/2][^g/2-B/2] [^g/2-B/2][^g/2-^G/2][^g/2-^G/2][^g/2-A/2]| \
+[^g/2A/2-][=f/2A/2-][=f/2A/2-][^f/2A/2] [f/2^A/2-][d/2^A/2-][d/2^A/2-][e/2^A/2-] [e/2^A/2-][c/2^A/2-][c/2^A/2-][d/2^A/2]| \
+[d/2B/2-][B/2-B/2][B/2-B/2][=a/2B/2] [a/2=c/2-][f/2=c/2-][f/2=c/2-][^g/2=c/2-] [^g/2=c/2-][e/2=c/2-][e/2=c/2-][f/2=c/2-]| \
+[f/2=c/2][^d/2F/2][^d/2F/2][a/2f/2] [a/2f/2][f/2^d/2][f/2^d/2][^g/2e/2] [^g/2e/2][e/2^c/2][e/2c/2][f/2=d/2]|
+[f/2-d/2][f/2-=c/2][f/2-=c/2][f/2-^c/2] [f/2-c/2][f/2-F/2][f/2-F/2][f/2-=c/2] [f/2-=c/2][f/2-^G/2][f/2-^G/2][f/2-=c/2]| \
+[f/2^c/2-][^d/2c/2-][e/2c/2-][c/2-c/2] [e/2c/2][e/2^d/2=c/2][e/2^d/2^c/2][e/2^d/2^A/2] [e/2^d/2=c/2-][e/2^d/2=c/2-][^d/2^c/2=c/2]^c/2| \
+[c-c][^g/2c/2-][=a/2c/2] [^g/2e/2-][f/2e/2-][e/2-e/2][e/2-^d/2] [e/2-c/2][e/2-e/2][e/2-^d/2][e/2-c/2]| \
+[^a/2-e/2][^a/2-=d/2][^a/2-e/2][^a/2-f/2] [^a/2-e/2][^a/2-d/2][^a/2-c/2][^a/2B/2] [c'/2-^A/2][c'/2-=g/2][c'/2-f/2][c'/2-e/2]|
+[c'/2d/2-][^a/2d/2-][^a/2d/2-][b/2d/2-] [b/2d/2-][g/2d/2-][g/2d/2-][=a/2d/2-] [a/2d/2-][f/2d/2-][f/2d/2-][^g/2d/2-]| \
+[^g/2-d/2][^g/2-B/2][^g/2-B/2][^g/2-c/2] [^g/2-c/2][^g/2-A/2][^g/2-A/2][^g/2-B/2] [^g/2-B/2][^g/2-^G/2][^g/2-^G/2][^g/2-A/2]| \
+[^g/2A/2-][=f/2A/2-][=f/2A/2-][^f/2A/2-] [f/2A/2-][d/2A/2-][d/2A/2-][e/2A/2-] [e/2A/2-][c/2A/2-][c/2A/2-][d/2A/2-]| \
+[d/2-A/2][d/2-F/2][d/2F/2][B/2=G/2] [B/2G/2][d/2B/2][d/2B/2][g/2d/2] [g/2d/2][b/2g/2][b/2g/2][d'/2b/2]|
+[d'/2-b/2][d'/2-=f/2][d'/2-=f/2][d'/2-^g/2] [d'/2-^g/2][d'/2c/2][c'/2-c/2][c'/2=f/2] [b/2^f/2-][a/2f/2-][b/2f/2-][^g/2f/2-]| \
+[a/2f/2][^g/2=f/2][a/2^f/2][b/2^g/2] [^g/2-f/2][^g/2-f/2=f/2][^g/2-^f/2=f/2][^g/2-^f/2=f/2] [^g/2-^f/2=f/2][^g/2^f/2=f/2][^f/2-f/2-=f/2][^f/2f/2]| \
+[f6f6]|
+V:2
+% Violin I
+%%MIDI program 48
+x4 
+%     Mass in B Minor          Johann Sebastion Bach  No. 8 Chor, Qui Tollis    seq by David Siu  dss@po.cwru.edu      
+B2-| \
+B6-| \
+B6-| \
+B2 A2 =G2|
+F4 B2-| \
+Bc B^A Bc| \
+E4 c2-| \
+c2 B^A B2-|
+B6-| \
+B=A GF/2x/2 GE/2x/2| \
+^A2 B2 c2| \
+^d4 ^D2|
+=F2 ^G4-| \
+^G2 ^F2 =A2-| \
+AF Bc =d2-| \
+d=G AB =cd|
+e=c/2d/2 ef/2x/2 ge/2x/2| \
+^c6-| \
+c6-| \
+c6|
+B6-| \
+B4- BB| \
+ed/2x/2 cB/2x/2 ^Ac/2x/2| \
+F2 B4-|
+B=A d4-| \
+dF ^GF/2x/2 =F^F/2x/2| \
+d2 cB/2x/2 A^G/2x/2| \
+c3d/2c/2 B/2A/2B|
+A3B c=f/2x/2| \
+^f6-| \
+fD2E/2F/2 =G/2A/2B| \
+B6-|
+B6-| \
+B^G =F^F/2x/2 ^GB/2x/2| \
+A6| \
+B6-|
+B6| \
+F^G/2x/2 ^AB/2x/2 c^A/2x/2| \
+f2 ^dc/2x/2 =c^c/2x/2| \
+=c^c ^d2 e2|
+x2 ^d4| \
+c/2=c/2^c/2^d/2 e^d ^G2-| \
+^GF E^G/2x/2 c/2B/2^A/2^G/2| \
+F6-|
+FF B=d/2x/2 FB/2x/2| \
+^G2 xC =F^G/2x/2| \
+cB/2x/2 =A^G/2x/2 ^Fe/2x/2| \
+dc/2x/2 BA/2x/2 =Gd/2x/2|
+=F3^G ^F^G/2=F/2| \
+^Fd c^A/2x/2 B2| \
+^A6|
+V:3
+% Violin II
+%%MIDI program 48
+x4 
+%     Mass in B Minor          Johann Sebastion Bach  No. 8 Chor, Qui Tollis    seq by David Siu  dss@po.cwru.edu      
+F2-| \
+F6| \
+=G6| \
+E4 =A2-|
+A2 G2 F2| \
+B4 ^G2| \
+=GF/2x/2 EG/2x/2 CF-| \
+FE DC D2-|
+D=c BA/2x/2 BF/2x/2| \
+G3A BG/2x/2| \
+^C2 F4-| \
+FE ^D^G/2x/2 F^G/2x/2|
+C2 =F4| \
+CB,/2x/2 A,^G,/2x/2 A,C/2x/2| \
+^F3E F^A/2x/2| \
+B6-|
+B=G =c=d/2x/2 e2-| \
+e6-| \
+e6-| \
+e^c ^AB/2x/2 cE/2x/2|
+D6| \
+E6-| \
+E6| \
+B,2 F4|
+EF ^G2 =A2| \
+B2 ^G2 C2| \
+=G2 B,2 C2-| \
+CF FB,/2x/2 DC/2x/2|
+C2 F^G A2-| \
+AD EF =GA| \
+BG/2A/2 B/2=c/2d2B| \
+^G6-|
+^G6-| \
+^G6| \
+F6| \
+F4- FF|
+BA/2x/2 ^GF/2x/2 =F^G/2x/2| \
+^C2 ^F2 C2| \
+DC/2x/2 =C^D/2x/2 ^GF/2x/2| \
+A4 EF/2^G/2|
+F3A =C^D/2x/2| \
+^C^G, ^G2 ^D2| \
+E2 x4| \
+cB/2x/2 c^A/2x/2 f/2e/2=d/2c/2|
+B6-| \
+B^G =Fc/2x/2 ^GB/2x/2| \
+=Ad/2x/2 cB/2x/2 A^G/2x/2| \
+^Fe/2x/2 dc/2x/2 BB,/2x/2|
+^G3c FB/2x/2| \
+DF/2x/2 C2 C2| \
+C6|
+V:4
+% Viola
+%%MIDI program 48
+x4 
+%     Mass in B Minor          Johann Sebastion Bach  No. 8 Chor, Qui Tollis    seq by David Siu  dss@po.cwru.edu      
+D2-| \
+DB,/2x/2 DB,/2x/2 DB,/2x/2| \
+DB,/2x/2 DB,/2x/2 DB,/2x/2| \
+=CB,/2x/2 =CB,/2x/2 =CA,/2x/2|
+FB,/2x/2 ^DB,/2x/2 FB,/2x/2| \
+^G=F/2x/2 ^G=F/2x/2 ^G=F/2x/2| \
+^A^C/2x/2 ^AE/2x/2 ^A^F/2x/2| \
+FB,/2x/2 FC/2x/2 FB,/2x/2|
+=GE/2x/2 GE/2x/2 GB,/2x/2| \
+EB,/2x/2 EB,/2x/2 EG,/2x/2| \
+CE/2x/2 F,C/2x/2 FC/2x/2| \
+=A^G/2x/2 A^D/2x/2 ^G^D/2x/2|
+^GC/2x/2 ^GB,/2x/2 ^GC/2x/2| \
+AC/2x/2 FC/2x/2 FC/2x/2| \
+FC/2x/2 F^A,/2x/2 F=D/2x/2| \
+=FD/2x/2 =FD/2x/2 =FB,/2x/2|
+=CE/2=F/2 =G=F/2x/2 EG/2x/2| \
+GE/2x/2 ^CD EG| \
+^A,6-| \
+^A,B, CD/2x/2 EC/2x/2|
+^F,6| \
+G,6-| \
+G,B, ^A,4| \
+D2 F,2 =A,2|
+G,F,/2x/2 =F,^G,/2x/2 CB,/2x/2| \
+D4 A,B,/2C/2| \
+B,3D =F,^G,/2x/2| \
+^F,C, C2 ^G,2|
+A,F,/2x/2 C=F,/2x/2 CA,/2x/2| \
+=CA,/2x/2 =CA,/2x/2 =C^F,/2x/2| \
+=G,B,/2=C/2 D=C B,D| \
+DB, ^G,A,/2x/2 B,D/2x/2|
+=F,6-| \
+=F,^F, ^G,A,/2x/2 B,/2^G,/2^C/2x/2| \
+C6| \
+D6-|
+DF =F4| \
+A2 C4| \
+B,C ^D2 E2| \
+^F2 ^D2 ^G,2|
+=D2 F,2 ^G,2-| \
+^G,C CF,/2x/2 A,^G,/2x/2| \
+E,^G,/2x/2 C^G,/2x/2 E,/2=G,/2F,/2E,/2| \
+CF,/2x/2 CF,/2x/2 CF,/2x/2|
+DF,/2x/2 DF,/2x/2 DF,/2x/2| \
+B,C,/2x/2 ^G,C,/2x/2 CC,/2x/2| \
+F,6-| \
+F,F, =G,A, B,D|
+C3=F, B,D/2x/2| \
+^F,D ^G,F, ^G,C/2x/2| \
+C6|
+V:5
+% Soprano
+%%MIDI program 53
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x4 
+%     Mass in B Minor          Johann Sebastion Bach  No. 8 Chor, Qui Tollis    seq by David Siu  dss@po.cwru.edu      
+c^A| \
+F2 F2 F2|
+d6-| \
+d2 c2 B2| \
+^A4 ^A2| \
+x2 =A^G ^GF|
+=F2 =F2 x2| \
+x4 cA| \
+^F2 F2 F2| \
+d6-|
+d2 =cB e2| \
+e4 =G2| \
+x2 ed ^cB| \
+^A2 ^A2 x2|
+x2 Bc dG| \
+e6-| \
+e4 e2| \
+d2 B2 =cB|
+B=A d4| \
+x2 ^GF =F^F| \
+d2 ^cB A^G| \
+c3d/2c/2 B/2A/2B|
+A2 x4| \
+x6| \
+x4 B=G| \
+=F2 =F2 =F2|
+d6-| \
+d2 c2 B2| \
+A^G A2 ^F2-| \
+FB/2^A/2 Bc dB|
+=F2 C2 =F2| \
+^F^G ^AB cF| \
+fe ^dc =c^c| \
+=c^c ^d2 e2|
+x2 ^d3=c| \
+^c/2^G<c=c/2^c/2^d<=c^c/2| \
+c2 c3e| \
+^A2 c^A Fc|
+=d6-| \
+d2 c2 B2| \
+=A4 A2| \
+x2 =GF GB|
+=F3A ^F2-| \
+Fd c^A B2| \
+^A6|
+V:6
+% Alto
+%%MIDI program 53
+x4 
+%     Mass in B Minor          Johann Sebastion Bach  No. 8 Chor, Qui Tollis    seq by David Siu  dss@po.cwru.edu      
+FD| \
+B,2 B,2 B,2| \
+G6-| \
+G2 F2 E2|
+^D4 ^D2| \
+x2 =DC CB,| \
+^A,2 ^A,2 x2| \
+x2 DE FB,|
+G6-| \
+GF E2 D2| \
+C2 D2 E2| \
+F4 F2|
+x2 =F2 ^G2| \
+^G=F ^F2 x2| \
+x4 FD| \
+B,2 B,2 B,2|
+=G6-| \
+G2 F2 E2| \
+E4 E2| \
+x2 C2 ^A2|
+B2 DE FD| \
+G6-| \
+G2 C2 F2| \
+F4 F2|
+EF ^G2 =A2| \
+B2 ^G2 C2| \
+=G2 B,2 C2-| \
+CF FB, DC|
+C2 x4| \
+x4 FD| \
+B,2 B,2 B,2| \
+^G6-|
+^G2 F2 =F2| \
+B4 C2| \
+x2 ^F3D| \
+B,2 DE FD|
+^G2 =F2 ^G2| \
+^F4 C2| \
+DC =C^D ^GF| \
+A4 EF/2^G/2|
+F3A =C^D| \
+^C^G, ^G2 ^D2| \
+E2 ^G2 E2| \
+C2 F2 F2|
+F4 F2| \
+B,2 ^G2 ^G2| \
+^G2 F2 F2| \
+x2 =D2 D2|
+^G,3C F,2-| \
+F,F =F4| \
+^F6|
+V:7
+% Tenor
+%%MIDI program 53
+x6| \
+x4 
+%     Mass in B Minor          Johann Sebastion Bach  No. 8 Chor, Qui Tollis    seq by David Siu  dss@po.cwru.edu      
+B,=G,| \
+E,2 E,2 E,2| \
+=C6-|
+=C2 B,2 A,2| \
+^G,4 ^G,2| \
+x2 =G,F, F,E,| \
+D,2 D,2 x2|
+x2 B,=C DG,| \
+E6-| \
+E2 D2 ^C2| \
+=C2 ^C2 ^D2|
+^G,4 ^G,2| \
+x2 A,2 C2| \
+C^A, B,2 x2| \
+x4 B,=G,|
+E,2 E,2 E,2| \
+C6-| \
+C2 B,2 ^A,2| \
+E4 F,2|
+x2 B,=A, G,F,| \
+E,F, G,A, B,G,| \
+C2 ^A,2 C2| \
+B,2 B,2 =A,2|
+G,F, =F,^G, CB,| \
+=D4 A,B,/2C/2| \
+B,3D =F,^G,| \
+^F,C, C2 ^G,2|
+A,2 x2 CA,| \
+F,2 F,2 F,2| \
+D6-| \
+D2 C2 B,2|
+B,4 B,2| \
+x2 ^G3=F| \
+^F2 A,B, CA,| \
+D6-|
+D2 ^G,2 C2-| \
+C2 C2 C2| \
+B,C ^D2 E2| \
+F2 ^D2 ^G,2|
+=D2 F,2 ^G,2-| \
+^G,C CF, A,^G,| \
+^G,2 C2 x2| \
+x2 F,2 ^A,2|
+B,2 D2 B,2| \
+^G,3C CC| \
+C4 C2| \
+x2 B,2 B,2|
+B,3=A, B,2-| \
+B,F, C4| \
+C6|
+V:8
+% Bass
+%%MIDI program 53
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x4 
+%     Mass in B Minor          Johann Sebastion Bach  No. 8 Chor, Qui Tollis    seq by David Siu  dss@po.cwru.edu      
+F,D,|
+B,,2 B,,2 B,,2| \
+=G,6-| \
+G,2 F,2 E,2| \
+^D,4 ^D,2|
+x2 =D,C, C,B,,| \
+A,,2 A,,2 x2| \
+x6| \
+x6|
+x4 E,=C,| \
+^A,,2 ^A,,2 ^A,,2| \
+G,6-| \
+G,2 F,2 E,2|
+D,4 D,2| \
+x2 E,F, G,E,| \
+^A,2 F,2 ^A,2| \
+B,2 F,E, ^D,E,/2F,/2|
+B,,2 B,2 =A,2| \
+^G,2 =F,2 ^F,2| \
+B,,2 ^G,,2 ^C,2| \
+F,,2 x2 ^G,=F,|
+C,2 C,2 C,2| \
+A,6-| \
+A,2 =G,^F, B,2| \
+B,4 =D,2|
+x2 B,3^G,| \
+C4 x2| \
+x2 F,^G, A,F,| \
+B,6-|
+B,2 B,2 B,2| \
+A,2 F,2 =G,F,| \
+F,^G, A,2 ^G,2| \
+x2 ^D,C, =C,^C,|
+A,2 ^G,F, E,^D,| \
+E,/2F,/2^G,2A,/2^G,/2 F,/2E,/2F,| \
+E,2 C,2 x2| \
+x2 ^A,3F,|
+B,2 B,2 =D2| \
+=F,3=F, =F,=F,| \
+^F,4 F,2| \
+x2 B,2 B,,2|
+C,3C, D,2| \
+B,,2 C,4| \
+F,,6|
+V:9
+% Violoncello
+%%MIDI program 48
+x6| \
+%     Mass in B Minor          Johann Sebastion Bach  No. 8 Chor, Qui Tollis    seq by David Siu  dss@po.cwru.edu      
+D,3/2x/2 D,3/2x/2 D,3/2x/2| \
+E,3/2x/2 E,3/2x/2 E,3/2x/2| \
+=A,,3/2x/2 A,,3/2x/2 A,,3/2x/2|
+B,,3/2x/2 B,,3/2x/2 B,,3/2x/2| \
+=F,,3/2x/2 =F,,3/2x/2 =F,,3/2x/2| \
+^F,,3/2x/2 F,,3/2x/2 F,,3/2x/2| \
+B,,3/2x/2 B,,3/2x/2 B,,3/2x/2|
+=G,,3/2x/2 G,,3/2x/2 G,,3/2x/2| \
+E,,3/2x/2 E,,3/2x/2 E,,3/2x/2| \
+F,,3/2x/2 F,,3/2x/2 F,,3/2x/2| \
+=C,,3/2x/2 =C,,3/2x/2 =C,,3/2x/2|
+^C,,3/2x/2 C,,3/2x/2 C,,3/2x/2| \
+F,,3/2x/2 F,,3/2x/2 F,,3/2x/2| \
+D,,3/2x/2 D,,3/2x/2 D,,3/2x/2| \
+G,,3/2x/2 G,,3/2x/2 G,,3/2x/2|
+=C,3/2x/2 =C,3/2x/2 =C,3/2x/2| \
+^C,3/2x/2 C,3/2x/2 C,3/2x/2| \
+^A,,3/2x/2 ^A,,3/2x/2 ^A,,3/2x/2| \
+F,,3/2x/2 F,,3/2x/2 F,,3/2x/2|
+B,,3/2x/2 B,,3/2x/2 B,,3/2x/2| \
+B,,3/2x/2 B,,3/2x/2 B,,3/2x/2| \
+B,,3/2x/2 B,,3/2x/2 B,,3/2x/2| \
+B,,3/2x/2 B,,3/2x/2 B,,3/2x/2|
+B,,3/2x/2 B,3/2x/2 =A,3/2x/2| \
+^G,3/2x/2 =F,3/2x/2 ^F,3/2x/2| \
+B,,3/2x/2 ^G,,3/2x/2 C,3/2x/2| \
+F,,3/2x/2 C,3/2x/2 C,,3/2x/2|
+F,,3/2x/2 F,,3/2x/2 F,,3/2x/2| \
+D,,3/2x/2 D,,3/2x/2 D,,3/2x/2| \
+=G,,3/2x/2 G,,3/2x/2 G,,3/2x/2| \
+^G,,3/2x/2 ^G,,3/2x/2 ^G,,3/2x/2|
+=F,,3/2x/2 =F,,3/2x/2 =F,,3/2x/2| \
+C,,3/2x/2 C,,3/2x/2 C,,3/2x/2| \
+^F,,3/2x/2 F,,3/2x/2 F,,3/2x/2| \
+F,,3/2x/2 F,,3/2x/2 F,,3/2x/2|
+F,,3/2x/2 F,,3/2x/2 F,,3/2x/2| \
+F,,3/2x/2 F,,3/2x/2 F,,3/2x/2| \
+F,,3/2x/2 F,3/2x/2 E,3/2x/2| \
+^D,3/2x/2 =C,3/2x/2 ^C,3/2x/2|
+F,,3/2x/2 ^D,,3/2x/2 ^G,,3/2x/2| \
+C,3/2x/2 ^G,3/2x/2 ^G,,3/2x/2| \
+C,3/2x/2 C,3/2x/2 C,3/2x/2| \
+F,,3/2x/2 F,,3/2x/2 F,,3/2x/2|
+B,,3/2x/2 B,,3/2x/2 B,,3/2x/2| \
+=F,,3/2x/2 =F,,3/2x/2 =F,,3/2x/2| \
+^F,,3/2x/2 F,,3/2x/2 F,,3/2x/2| \
+B,,3/2x/2 B,,3/2x/2 B,,3/2x/2|
+C,3C, =D,3/2x/2| \
+B,,3/2x/2 C,3/2x/2 C,,3/2x/2| \
+F,,6|
+V:10
+% Continuo
+%%MIDI program 19
+x6| \
+%     Mass in B Minor          Johann Sebastion Bach  No. 8 Chor, Qui Tollis    seq by David Siu  dss@po.cwru.edu      
+[B2F2B,2D,2] x4| \
+[B2=G2E2E,2] x4| \
+[G2E2-=C2-A,2-A,,2] [F2E2-=C2-A,2-] [E2=C2A,2]|
+[^D2-=C2B,,2] [^D2B,2] x2| \
+[=D2B,2^G,2=F,2=F,,2] x4| \
+[^A,2=G,2^F,,2] [^A,2F,2] x2| \
+[F2D2B,2B,,2] x4|
+[G2D2B,2G,,2] x4| \
+[D2B,2E,2E,,2] x4| \
+[G2E2^C2^A,2-F,,2] [F2D2^A,2-] [E2C2^A,2]| \
+[=A2F2^D2=C2-=C,,2] [^G2E2=C2-] [F2^D2=C2]|
+[^G2^C2-A,2-F,2-C,,2] [F2C2A,2F,2] x2| \
+[F2-=D2-C2F,,2] [F2D2B,2] x2| \
+[C2F,2-D,2-D,,2] [B,2F,2D,2] x2| \
+[=F2D2B,2=G,2G,,2] x4|
+[D2B,2G,2=C,2] x4| \
+[^A2G2^C2C,2] x4| \
+[G2E2C2^A,2^A,,2] x4| \
+[G2E2-C2-^A,2-^F,,2] [F2E2-C2-^A,2-] [E2C2^A,2]|
+[D2B,2B,,2] x4| \
+[G2D2B,2B,,2] x4| \
+[^A2E2C2B,,2] x4| \
+[B2F2D2B,,2] x4|
+[F2G,2B,,2] [=F2B,2^G,2] [^F2C2=A,2A,2]| \
+[=F2D2^G,2^G,2] [D2B,2=F,2=F,2] [C2A,2^F,2F,2]| \
+[F2=G,2B,,2] [=F2-^G,2-^G,,2] [=F2B,2^G,2C,2]| \
+[C2A,2^F,2F,,2] [C2-^G,2-F,2C,2] [C2^G,2=F,2C,,2]|
+[C2A,2^F,2F,,2] x4| \
+[=C2A,2F,2D,,2] x4| \
+[=C2=G,2G,,2] [B,2G,2] x2| \
+[A2=F2^C2^G,,2] [^G2=F2C2] x2|
+[D2B,2^G,2=F,2=F,,2] x4| \
+[D2B,2C,2C,,2] [C2A,2C,2] x2| \
+[A,2^F,2F,,2] x4| \
+[D2B,2F,2F,,2] x4|
+[=F2B,2^G,2^F,,2] x4| \
+[F2C2A,2F,,2] x4| \
+[DB,F,,-][CF,,] [F2^D2=C2A,2F,2] [^A2=G2E2^C2E,2]| \
+[=c=A-F-^D-^D,-][BAF^D^D,] [A2F2^D2=C2=C,2] [^G2E2^C2C,2]|
+[c2-^G2-E2F,,2] [c2^G2F2^D,,2] [=c2^G2^G,,2]| \
+[^c2^G2E2C,2] [^G2-F2-C2^G,2] [^G2F2=C2^G,,2]| \
+[^G2E2^C2C,2] x4| \
+[E2C2^A,2F,,2] x4|
+[c2F2-=D2-B,,2] [B2F2D2] x2| \
+[B2-^G2-=F2-D2=F,,2] [B2-^G2-=F2-C2] [B2^G2=F2B,2]| \
+[^G2=F2B,2^F,,2] [=A4F4C4]| \
+[A2D2-B,2-B,,2] [=G2D2-B,2-] [F2D2B,2]|
+[=F3D3B,3C,3][=FCC,] [^F2B,2D,2]| \
+[A2F2D2B,2B,,2] [^G2-F2C2-C,2] [^G2=F2C2C,,2]| \
+[^F6C6^A,6F,,6]|

@@ -1,0 +1,808 @@
+X: 1
+T: from bach/bjsbmm14.mid
+M: 2/4
+L: 1/16
+Q:1/4=96
+K:G % 1 sharps
+%     Mass in B Minor          Johann Sebastion Bach  No. 14 Duet, Et in unum    seq by David Siu  dss@po.cwru.edu      
+% Instrument  1
+%%MIDI program 68
+V:1
+% Oboe d'amore I
+%%MIDI program 68
+x8| \
+%     Mass in B Minor          Johann Sebastion Bach  No. 14 Duet, Et in unum    seq by David Siu  dss@po.cwru.edu      
+M: 4/4
+L: 1/16
+G4 x2 Gx Ax Gx4x| \
+A2 B4<c4 Bc dB GB| \
+Ax B^c dA FA G8-|
+Gx Bx Ax Gx F3E2<E2D| \
+D4 d4 x2 dx e2 dx| \
+x4 B2 ^c2 d8-| \
+dx =cd ec Ac B^d ef ge ce|
+fe fg af =df2<g2a2<f2g| \
+g4 x12| \
+x16| \
+x16|
+x16| \
+x16| \
+d4 x2 dx ex dx4x| \
+e2 f4<g4 fg af df|
+ex fg ae ^ce dx Bx Ax Gx| \
+Fx12x3| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x16|
+d4 x2 dx ex dx4x| \
+e2 f4<g4 fg a2 =c2-| \
+c2 Bx g4 x2 gx a2 gx| \
+x4 e2 f2 g8-|
+gx fe f6 ef ge Bd| \
+^cB ^cd e^c A^c2<d2e2<^c2d| \
+d4 x12| \
+x16|
+x16| \
+x16| \
+x16| \
+x16|
+x16| \
+x16| \
+B4 x2 Bx ^cx Bx4x| \
+^c2 d4<e4 ^de f2 A2-|
+A2 Gx E4 x2 Ex F2 Ex| \
+x4 ^c2 ^d2 e8-| \
+ex =d^c d6 ^cd e^c ^GB| \
+^A^G ^AB ^c^A F^A2<B2^c2<^A2B|
+B4 x12| \
+x16| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+=G4 x2 Gx =Ax Gx4x|
+A2 B4<=c4 Bc dB GB| \
+Ax D4<d4 cd ec Ac| \
+B2 E2 e4- ed/2x/2 c/2x/2B/2x/2 A/2x/2G/2x/2 F/2x/2E/2x/2| \
+D4 x2 d3=f ed cB AB|
+c4 x2 d2 ec BA2<^f2g| \
+g4 x12| \
+g4 x2 gx ^g2 =gx4x| \
+=f4 x2 =fx =f^d =fx3 g=f|
+^d2 =dx c2 ^Ax =A4 ^f4| \
+x4 g4 x2 c'2 a2 fx| \
+dx c2 A2 F2 D4 f4| \
+x4 g4 x8|
+x12 =f4| \
+x2 a2 g2 =f2 ex ^fx g4| \
+x2 b2 a2 g2 fx ax c4-| \
+cx e2 d2 c2 B3A2<A2G|
+G4 
+V:2
+% Oboe d'amore II
+%%MIDI program 68
+x8 
+%     Mass in B Minor          Johann Sebastion Bach  No. 14 Duet, Et in unum    seq by David Siu  dss@po.cwru.edu      
+M: 4/4
+L: 1/16
+G4 x2 Gx| \
+Ax Gx4x A2 B2 c4-| \
+c2 Bc dB GB Ax B^c dA FA| \
+G8- Gx Bx Ax Gx|
+F3E2<E2D D4 x2 Dx| \
+Ex Dx4x E2 F2 G4-| \
+G2 FG AF DF Ex A,2 A4-| \
+A2 G2 =c4- cx ex dx cx|
+B3A2<A2G G4 x4| \
+x16| \
+x16| \
+x16|
+x16| \
+x8 A4 d4| \
+x2 dx e2 dx4x B2 ^c2| \
+d8- dx ^cB ^cx ex|
+Bx ex Ax ^cx Dx6x| \
+x16| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x12 d4|
+x2 dx e2 dx4x B2 ^c2| \
+d4 x4 G4 x2 Gx| \
+Ax Gx4x A2 B2 =c4-| \
+c2 Bc dB GB Ax B^c dA FA|
+G8- Gx Bx Ax Gx| \
+F3E2<E2D D4 x4| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x16|
+x16| \
+x12 B4| \
+x2 Bx ^c2 Bx4x ^G2 ^A2| \
+B6 ^c^d E4 x2 ex|
+fx ex4x f2 =g2 =a4-| \
+a2 ga bg eg fx ^g^a bf =df| \
+e8- ex =gx fx ex| \
+d3^c2<^c2B B4 x4|
+x16| \
+x16| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x16|
+x16| \
+x16| \
+x12 G4| \
+x2 Gx =A2 Gx4x E2 F2|
+G8- Gx FG AF DF| \
+E2 A,4<A4 ^G/2x/2F/2x/2 E/2x/2D/2x/2 =C/2x/2B,/2x/2| \
+A,4 x2 c4 BA/2x/2 =GF/2x/2 EF/2x/2| \
+D4 x2 =F2 E4 x2 B2|
+c4 x2 cx c2 Bx4x| \
+x8 ^A4 x2 ^dx| \
+=d2 ^dx4x =d4 x2 dx| \
+dc dx3 ^d=d c2 ^Ax ^G2 =Gx|
+^F4 d4 x4 d4| \
+x8 x2 c2 =A2 F2| \
+D4 d4 x4 ^A4| \
+x16|
+x4 d4 x2 B=A Bx dx| \
+cx BA BG EG ^Cx ^cB ^cx ex| \
+dx fx Ax =cx FB AG AF DF| \
+G3A2<F2G G4 
+V:3
+% Violin I
+%%MIDI program 48
+x8 
+%     Mass in B Minor          Johann Sebastion Bach  No. 14 Duet, Et in unum    seq by David Siu  dss@po.cwru.edu      
+M: 4/4
+L: 1/16
+G4 x2 Gx| \
+Ax Gx4x A2 B2 c4-| \
+c2 Bc dB GB Ax B^c dA FA| \
+G8- Gx Bx Ax Gx|
+F3E2<E2D D4 d4| \
+x2 dx e2 dx4x B2 ^c2| \
+d8- dx =cd ec Ac| \
+B^d ef ge ce fe fg af =df|
+g3a2<f2g g4 x4| \
+x16| \
+x2 Dx Gx Bx3 Ax Dx Fx| \
+x2 Ex Ax cx3 Bx Ex Gx|
+x2 Fx Bx dx c4 x2 dx| \
+Bx Gx Dx3 d4 x2 dx| \
+ex dx4x e2 f2 g4-| \
+g2 fg af df ex fg ae ^ce|
+dx Bx Ax Gx Fe 
+%%MIDI program 40
+fg af df| \
+ex fg ae ^ce dx6x| \
+x8 xA B=c dB Gg| \
+fg a2 x4 x^c ^de f^d Af/2x/2|
+f^d e2 x8 e4-| \
+eA/2x/2 ^G/2x/2F/2x/2 E/2x/2=D/2x/2 =C/2x/2B,/2x/2 A,4 x4| \
+x16| \
+%%MIDI program 48
+A8- A2 =GF Gx g2|
+^c6 B^c d6 ^cB| \
+^c2 x6 xB ^cd eB GB| \
+E2 x12 x2| \
+x8 d4 x2 dx|
+ex dx4x e2 f2 g4-| \
+g2 fg a2 =c4 Bx g4| \
+x2 gx a2 gx4x e2 f2| \
+g8- gx fe f4-|
+f2 ef ge Bd ^cB ^cd e^c A^c| \
+d3e2<^c2d d4 x4| \
+x16| \
+x2 e4 ^d2 e4 x4|
+x16| \
+x8 x2 =d4 ef| \
+gx8x3 e2 dx| \
+^c2 dx e2 fx g2 ax b2 Bx|
+^c2 ^Ax ^A2 Fx F4 x4| \
+x8 B4 x2 Bx| \
+^cx Bx4x ^c2 d2 e4-| \
+e2 ^de f2 =A4 Gx E4|
+x2 Ex F2 Ex4x ^c2 ^d2| \
+e8- ex =d^c d4-| \
+d2 ^cd e^c ^GB ^A^G ^AB ^c^A F^A| \
+B3^c2<^A2B B4 x4|
+x16| \
+x2 =A4 ^G2 A4 x4| \
+x16| \
+x8 x2 e4 f=g|
+ax12x3| \
+x4 =c2 Bx A2 Bx c2 Bx| \
+A2 Fx F2 Bx B,4 x4| \
+x8 e4 x2 ex|
+f2 ex4x d4 x2 d2| \
+de dx3 ed c2 Bx A2 Gx| \
+F4 ^d4 x4 e4| \
+x2 a2 f2 ^dx Bx A2 F2 ^D2|
+B,4 ^d4 x4 e4| \
+x4 B4 x4 A4| \
+G4 x4 G4 x2 Gx| \
+Ax Gx4x A2 B2 c4-|
+c2 Bc =dB GB Ax D2 d4-| \
+d2 cd ec Ac B2 E2 e4-| \
+ed/2x/2 c/2x/2B/2x/2 A/2x/2G/2x/2 F/2x/2E/2x/2 D4 x2 d2-| \
+d=f ed cB AB c4 x2 d2|
+ec BA2<^f2g g4 x4| \
+x8 g4 x2 gx| \
+^g2 =gx4x =f4 x2 =fx| \
+=f^d =fx3 g=f ^d2 =dx c2 ^Ax|
+=A4 ^f4 x4 g4| \
+x2 c'2 a2 fx dx c2 A2 F2| \
+D4 f4 x4 g4| \
+x16|
+x4 =f4 x2 a2 g2 =f2| \
+ex ^fx g4 x2 b2 a2 g2| \
+fx ax c4- cx e2 d2 c2| \
+B3A2<A2G G4 
+V:4
+% Violin II
+%%MIDI program 48
+x12 
+%     Mass in B Minor          Johann Sebastion Bach  No. 14 Duet, Et in unum    seq by David Siu  dss@po.cwru.edu      
+M: 4/4
+L: 1/16
+G4| \
+x2 Gx A2 Gx4x E2 F2| \
+G8- G2 FE F4-| \
+F2 EF GE B,D ^CB, ^CD E^C A,^C|
+D3E2<^C2D D4 x2 Dx| \
+Ex Dx4x E2 F2 G4-| \
+G2 FG AF DF Ex A,2 A4-| \
+A2 G2 =c4- cx ex dx cx|
+B3A2<A2G G4 x4| \
+x16| \
+x6 dx Dx Ax3 Ax| \
+A,x Ex3 ex Ex Bx3 Bx|
+B,x Fx3 Fx Gx Ex4x| \
+x2 Dx Gx Bx A4 d4| \
+x2 dx e2 dx4x B2 ^c2| \
+d8- dx ^cB ^cx ex|
+Bx ex Ax ^cx D4 x4| \
+x8 x
+%%MIDI program 40
+^c de fd Bd| \
+^cx de fd A=c Bx6x| \
+xe dc Bd fA ^de f2 x4|
+xc BA GB eG FA =d2 x4| \
+x4 c4- cG/2x/2 F/2x/2E/2x/2 D/2x/2C/2x/2 B,/2x/2A,/2x/2| \
+G,4 x8 
+%%MIDI program 48
+G4-| \
+Gx FE Fx GA B8-|
+B2 AG A4- Ax BA G4-| \
+G^c de fd Ad G2 x6| \
+x16| \
+x12 d4|
+x2 dx e2 dx4x B2 ^c2| \
+d4 x4 G4 x2 Gx| \
+Ax Gx4x A2 B2 =c4-| \
+c2 Bc dB GB Ax B^c dA FA|
+G8- Gx Bx Ax Gx| \
+F3E2<E2D D4 x4| \
+x16| \
+x2 =c4 B2 B4 x4|
+x16| \
+x8 x2 B4 ^cd| \
+ex12x3| \
+x4 G2 Fx E2 Fx G2 Fx|
+E2 ^Cx ^C2 Fx F4 x4| \
+x12 B4| \
+x2 Bx ^c2 Bx4x ^G2 ^A2| \
+B6 ^c^d E4 x2 ex|
+fx ex4x f2 =g2 =a4-| \
+a2 ga bg eg fx ^g^a bf =df| \
+e8- ex =gx fx ex| \
+d3^c2<^c2B B4 x4|
+x16| \
+x2 =Ax =Fx E2 E4 x4| \
+x16| \
+x8 x2 G4 AB|
+=cx8x3 A2 Gx| \
+^F2 Gx A2 Bx c2 dx e2 Ex| \
+F2 ^Dx ^D2 B,x B,4 x4| \
+x8 G4 x2 Gx|
+A2 Gx4x B4 x2 B2| \
+Bc Bx3 cB A2 Gx =F2 Ex| \
+^D4 B4 x4 B4| \
+x8 x2 A2 ^F2 ^D2|
+B,4 B4 x4 G4| \
+x4 G4 x4 F4| \
+E4 x8 G4| \
+x2 Gx A2 Gx4x E2 F2|
+G8- Gx FG AF =DF| \
+E2 A,4<A4 ^G/2x/2F/2x/2 E/2x/2D/2x/2 C/2x/2B,/2x/2| \
+A,4 x2 c4 BA/2x/2 =GF/2x/2 EF/2x/2| \
+D4 x2 =F2 E4 x2 B2|
+c4 x2 cx c2 Bx4x| \
+x8 ^A4 x2 ^dx| \
+=d2 ^dx4x =d4 x2 dx| \
+dc dx3 ^d=d c2 ^Ax ^G2 =Gx|
+^F4 d4 x4 d4| \
+x8 x2 c2 =A2 F2| \
+D4 d4 x4 ^A4| \
+x16|
+x4 d4 x2 B=A Bx dx| \
+cx BA BG EG ^Cx ^cB ^cx ex| \
+dx fx Ax =cx FB AG AF DF| \
+G3A2<F2G G4 
+V:5
+% Viola
+%%MIDI program 48
+x8 
+%     Mass in B Minor          Johann Sebastion Bach  No. 14 Duet, Et in unum    seq by David Siu  dss@po.cwru.edu      
+M: 4/4
+L: 1/16
+B,x Cx Dx B,x| \
+Ex Dx Ex Dx Ex Dx Cx Dx| \
+Dx G,x B,x Ex3 Dx B,x Dx| \
+x2 B,x E,x G,x3 Gx ^Cx Ex|
+D2 B,x A,x G,x F,x G,x A,x F,x| \
+B,x A,x B,x A,x B,x A,x G,x A,x| \
+A,x Dx Fx Ax3 Ex =Cx Ex| \
+x2 B,x Ex E,x3 Ax Fx Ax|
+Gx Ex Dx Cx B,4 x4| \
+x16| \
+x2 G,x G,x G,x3 Dx Dx Dx| \
+x2 A,x A,x A,x3 Ex Ex Ex|
+x2 B,x B,x B,x3 A,x Dx3| \
+x6 dx Fx Gx Ax Fx| \
+G6 B4 Ax Gx Ex| \
+A4 x2 Ax A4 x2 ^cx|
+Fx Ex Ex Ax A4 x4| \
+x16| \
+x16| \
+x16|
+x16| \
+x16| \
+x6 Dx Dx B,x3 Ex| \
+Ex =Cx3 Dx Dx B,x3 Bx|
+Gx Ex3 Fx Fx Dx3 Ex| \
+A,x Ex12x| \
+xG AB AE ^CE A,2 x6| \
+x8 Fx Gx Ax Fx|
+Bx Ax Bx Ax Bx Ax Gx Ax| \
+A4 x2 Fx D6 B,x| \
+Ex Dx Ex Dx Ex Dx =Cx Dx| \
+Dx G,x B,x Ex3 Dx B,x Dx|
+x2 B,x E,x G,x3 Gx ^Cx Ex| \
+Dx B,x A,x G,x F,4 x4| \
+x16| \
+x2 Ex Ax F2 E4 x4|
+x16| \
+x16| \
+x16| \
+x16|
+x16| \
+x8 Dx Ex Fx Dx| \
+Gx Fx Gx Fx Gx Fx Ex Fx| \
+F4 x4 B,6 B,x|
+=Cx B,x Cx B,x Cx B,x A,x B,x| \
+B,x Bx Ex Gx3 Fx B,x Fx| \
+x2 Gx ^Cx Ex3 ^Cx ^A,x ^Cx| \
+B,x Gx Fx Ex D4 x4|
+x16| \
+x2 D4 B,2 =A,4 x4| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x8 x2 G,2 B,2 Ex|
+^D2 Ex ^D2 Ex E,x B,2 E2 Fx| \
+^G2 Ax ^G2 Ax E2 =D2 =Cx3| \
+x4 B,4 x4 =G4| \
+x8 x2 A2 F2 ^D2|
+B,4 x8 E4| \
+x4 E4 x4 ^D4| \
+B,x Gx Fx Ex =Dx Cx Dx B,x| \
+Ex Dx Ex Dx Ex Dx Cx Dx|
+Dx G,x B,x Dx3 Dx Fx Ax| \
+x2 A,x Cx Ex3 Ex B,x ^G,x| \
+x2 Ax Ex Cx3 Fx Dx A,x| \
+x2 Bx =Gx Dx C4 x2 Gx|
+G2 Fx3 Dx D4 x4| \
+x8 ^Dx ^A2 ^G2 =Gx| \
+=F2 ^Dx4x ^G4 x2 =Dx| \
+=G2 Bx3 B2 G4 x4|
+D4 D4 x4 ^A4| \
+x8 x2 c2 =A2 ^F2| \
+D4 A4 x4 D4| \
+x16|
+x4 B4 x2 DC DB, G,B,| \
+G2 x2 E4 x2 ED E^C A,^C| \
+Ax Dx Ex A,x Ax Fx Dx A,x| \
+G,x Ex Dx =Cx B,4 
+V:6
+% Cello
+%%MIDI program 48
+x8 
+%     Mass in B Minor          Johann Sebastion Bach  No. 14 Duet, Et in unum    seq by David Siu  dss@po.cwru.edu      
+M: 4/4
+L: 1/16
+G,,x A,,x B,,x G,,x| \
+C,x B,,x C,x B,,x C,x B,,x A,,x D,x| \
+G,,x G,x3 E,x ^C,2 D,x3 B,,x| \
+E,x G,x3 E,x A,2 A,,x3 A,x|
+B,2 G,x A,x A,,x D,x E,x F,x D,x| \
+G,x F,x G,x F,x G,x F,x E,x A,,x| \
+D,x D,,x3 F,x A,x A,,x3 =C,x| \
+E,x E,,x3 A,,x D,x D,,x3 D,x|
+E,x C,x D,x D,,x G,,x A,,x B,,x G,,x| \
+C,x B,,x C,x B,,x C,x B,,x A,,x D,x| \
+G,,4 x4 D,4 x4| \
+A,,4 x4 E,4 x4|
+B,,4 x4 E,x A,x F,x D,x| \
+G,4 x2 G,,x D,x E,x F,x D,x| \
+G,x F,x E,x B,A, G,x F,4 E,x| \
+D,4 x2 D,,x A,,4 x2 A,x|
+B,x G,x A,x A,,x D,x E,x F,x G,x| \
+A,x A,,x3 ^A,,x B,,x ^C,x D,x E,x| \
+F,x F,,x3 D,,x G,,x =A,,x B,,x ^C,x| \
+D,x E,x D,x =C,x B,,x ^C,x ^D,x B,,x|
+E,x F,x G,x A,x B,x A,x ^G,x E,x| \
+A,x E,x =C,x E,x A,x =G,x F,x =D,x| \
+G,x D,x B,,x D,x G,,x B,,x E,x D,x| \
+C,x A,,x D,x D,,x G,x F,x E,x D,x|
+E,x ^C,x F,x F,,x B,,x B,x E,x G,x| \
+A,4 x2 D,2 B,4 x2 B,,x| \
+^C,x B,,x ^C,x A,,x D,x ^C,x B,,x F,x| \
+G,x E,x A,x A,,x D,x E,x F,x D,x|
+G,x F,x G,x F,x G,x F,x E,x A,x| \
+D,x E,x F,x D,x G,,x A,,x B,,x G,,x| \
+=C,x B,,x C,x B,,x C,x B,,x A,,x D,x| \
+G,,x G,x3 E,x ^C,x D,x3 B,,x|
+E,x G,x3 E,x A,x A,,x3 A,x| \
+B,x G,x A,x A,,x D,x F,E, D,x F,x| \
+G,x F,E, D,x =C,x B,,x A,,x D,,x E,,x| \
+A,,x G,,x F,,x B,,x E,,x E,F, G,x A,x|
+G,x G,F, G,x Cx B,x A,G, F,x B,x| \
+E,x E,,x A,,x G,,x F,,x B,,^A,, B,,x B,x| \
+^C,x F,x F,,x ^A,,x B,,x F,x G,x F,x| \
+E,x F,x G,x =A,x G,x F,x E,x G,x|
+^A,,x E,x F,,x ^A,,x B,,x D,x E,x ^C,x| \
+D,x E,x F,x F,,x B,,x ^C,x D,x B,,x| \
+E,x D,x E,x D,x E,x D,x ^C,x F,x| \
+B,,x =A,,x G,,x F,,x E,,x F,,x G,,x E,,x|
+A,,x G,,x A,,x G,,x A,,x G,,x F,,x B,,x| \
+E,,x E,x3 ^C,x ^A,,x B,,x3 B,,x| \
+G,,x E,x3 ^C,x F,x F,,x3 F,x| \
+G,x E,x F,x F,,x B,,x B,^C B,x =A,x|
+G,x F,x G,x F,x G,x F,x E,x A,x| \
+D,x =C,x B,,x E,x A,x A,,B,, C,x A,,x| \
+D,x C,x D,x C,x D,x C,x B,,x E,x| \
+A,,x A,^G, A,x Cx B,x E,^D, E,x Ex|
+F,x B,x B,,x ^D,x E,x B,x Cx B,x| \
+A,x B,x Cx =Dx Cx B,x A,x Cx| \
+^D,x A,x B,,x ^D,x E,x =G,x A,x F,x| \
+G,x A,x B,x B,,x E,4 x4|
+C,4 x4 ^G,,4 x4| \
+E,,4 x4 A,,4 x4| \
+B,,4 x6 C,2 B,,2 ^A,,x| \
+B,,4 x12|
+x2 F,2 ^D,2 B,,x =G,,4 x2 E,x| \
+F,x G,F, G,x =A,x B,x A,x B,x B,,x| \
+E,,x E,x =D,x C,x B,,x A,,x B,,x G,,x| \
+C,x B,,x C,x B,,x C,x B,,x A,,x D,x|
+G,,x G,x3 B,x Dx D,x3 F,x| \
+A,x A,,x3 C,x E,x E,,x3 E,x| \
+A,x A,,x3 A,,x D,x D,,x3 D,x| \
+G,x G,,x3 G,x Cx C,x Cx B,x|
+A,x B,C Dx D,x G,x F,x G,x A,x| \
+^A,x =A,x G,x =F,x ^D,4 x4| \
+x2 ^D,2 =D,2 C,x B,,4 x4| \
+G,,4 x4 C,4 x4|
+D,4 x6 ^D,2 =D,2 ^C,x| \
+D,4 x12| \
+x2 A,2 ^F,2 D,x ^A,,x D,x3 G,,x| \
+=A,,x ^A,,=A,, ^A,,x =C,x D,x C,x D,x D,,x|
+G,,x G,F, G,D, B,,D, G,,4 x2 G,x| \
+C,4 ^C,x E,x =A,,4 x2 A,x| \
+D,x =CB, CA, F,A, D,4 x2 D,x| \
+E,x C,x D,x D,,x G,,4 
+V:7
+% Soprano
+%%MIDI program 52
+x16| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+%     Mass in B Minor          Johann Sebastion Bach  No. 14 Duet, Et in unum    seq by David Siu  dss@po.cwru.edu      
+M: 4/4
+L: 1/16
+G4 x2 Gx| \
+Ax Gx4x A2 B2 c4-| \
+c2 BA cB AG A2 D2 d4-| \
+d2 cB dc BA B2 E2 e4-|
+e2 dc ed cB cB ce dc BA| \
+BA Bd cB AG A2 cB c4-| \
+c2 B2 ^c2 d2 e2 d=c d2 e2| \
+A2 x2 a6 fd e^c A^c|
+d3e2<^c2d d4 d2 dd| \
+d2 ^cB ^cx ^c2 ^cA B2 x4| \
+x8 B4 x2 Bx| \
+B2 Ax4x A8-|
+AG G2 x4 d6 dx| \
+dx =cx4x c8-| \
+c2 BA dc BA G2 Dx Gx Bx| \
+A2 A2 Ae dc BA B2 x2 dx|
+^c2 ^c2 ^cg fe d^c dx gx ex| \
+^cx BA f6 GF G4-| \
+G2 ed e2 G2 FA B^c d4-| \
+d2 ^cB2<^c2d d4 x4|
+x16| \
+x16| \
+x16| \
+x16|
+x16| \
+x8 A4 x2 Ax| \
+B2 Ax3 Ax B2 d=c d4-| \
+dB cx4x E4 x2 Ex|
+BG Ex3 Ex F2 G2 A4-| \
+A2 Gx cx Bx ^AF x/2E/2F B4-| \
+B2 ^A^G ^AF B^c d2 ^c2 B2 ^Ax| \
+B8- B2 =A2 =G4-|
+GF Fx e2 d^c de fd B4-| \
+B3^c2<^A2B B4 x4| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x12 d2 Bx|
+x2 d2 e2 dx4x B2 d^c| \
+d8- dB =cx3 =A2-| \
+A2 Ax B2 Ax3 Ex F2 ^Gx| \
+A8- A2 =G2 c2 B2|
+Ax F4<B4 AG A2 B2| \
+c2 B2 A2 ^G4<A4 =G2| \
+F8- F2 Ex c2 BA/2x/2| \
+Be/2x/2 cA2<F2E E4 e^d ex|
+x4 f2 ex3 =dx dc dx| \
+x2 d3e cx3 E2 c4-| \
+c4 B2 Ax G8-| \
+G2 Fx F4 x8|
+x2 F2 fx f4 e^d e=d cB| \
+^A2 B=A B2 cx G4 FE F2| \
+E4 x12| \
+x16|
+x8 x2 Ax A2 AA| \
+A6 Ex E4 x4| \
+A2 ed cB/2x/2 AG FE/2x/2 Dx d2 d2| \
+d3e/2=f/2 ed/2x/2 cB/2x/2 e2 c2 ex g2|
+c3d/2e/2 d2 cc c2 Bx4x| \
+x2 ^Fx G2 A2 ^Ax ^dx =d2 c2| \
+^A4 Bx c2 d2 ^d2 =fx =d2| \
+B2 G2 Bx d2 ^d3=f/2g/2 cx ^d2|
+^d4 =dx c2 ^A8| \
+=A4 x4 D2 ^F2 F2 A2| \
+A2 c^A c6 ^A=A ^Ax G2| \
+G8- G2 FE F4|
+G4 
+V:8
+% Alto
+%%MIDI program 52
+x16| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x4 
+%     Mass in B Minor          Johann Sebastion Bach  No. 14 Duet, Et in unum    seq by David Siu  dss@po.cwru.edu      
+M: 4/4
+L: 1/16
+G4| \
+x2 Gx =A2 Gx3 D2 E2 F2| \
+G8- G2 BE GF ED| \
+E2 A,4<A4 GF AG FE|
+F2 B,4<B4 AG BA GF| \
+GF GB AG FE F2 ED x4| \
+G6 F2 G2 A2 B2 AG| \
+A2 d2 D4 x2 A4 G2|
+F2 GE GF ED D4 x4| \
+x12 B2 BB| \
+B2 AG Ax A2 AF Gx G4| \
+x2 Gx G2 Fx4x F4-|
+F4- FE E2 x4 B4-| \
+B2 Bx Bx Ax4x A4-| \
+A6 GF BA GF E2 B,x| \
+Ex Gx F2 F2 Fc BA GF G2|
+x2 Bx A2 A2 Ae d^c BA Bx| \
+ex ^cx Ax GF d6 ED| \
+E8- E2 DE F2 A,2| \
+B,2 G2 F2 ED D4 x4|
+x16| \
+x16| \
+x16| \
+x16|
+x16| \
+x12 A4| \
+x2 Ax B2 Ax3 Ex F2 A^G| \
+A8- AF =Gx E4|
+x2 Ex BG Ex3 B,2 ^C2 ^D2| \
+E8- E2 =Dx Gx Fx| \
+E^C x/2B,/2^C F6 ED EB, EF| \
+G2 F2 E2 ^Dx E6 =D2|
+^C8- ^CB, B,x G2 FE| \
+F2 GE2<^C2B, B,4 x4| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x8 D2 B,x3 D2|
+E2 Dx4x E2 GF G4-| \
+GE Fx6x A4 Ax| \
+B2 Ax3 A,x B,2 =Cx D4-| \
+D2 Cx =F2 E2 ^Dx B,2 E4-|
+E2 ^D^C ^D2 ^F2 G2 F2 E2 ^D2| \
+E8- E2 =D2 =C4-| \
+C2 B,x A2 GF/2x/2 GA/2x/2 BG E4-| \
+E3F2<^D2E E4 GF Gx|
+x4 A2 Gx3 Bx BA Bx| \
+x2 B3c Ax3 e2 A4-| \
+A4 G2 Fx E8-| \
+E2 ^Dx ^D4 x8|
+x2 ^D2 Ax A4 GF GF E2| \
+E4 E2 x2 E3F ^D4| \
+E4 x12| \
+x16|
+x2 =Dx D2 DD D6 A,x| \
+A,4 x4 Ex BA ^GF/2x/2 ED| \
+CB,/2x/2 A,x A2 A2 A3B/2c/2 BA/2x/2 =GF/2x/2| \
+B2 G2 Bx d2 G3A/2B/2 A2 GG|
+G2 Fx6x Dx E2 F2| \
+Gx cx ^A2 =A2 G4 =Fx ^D2| \
+=F2 G2 =Fx ^G2 ^G2 =G2 ^Gx =F2| \
+=D2 D2 x6 Cx ^D2 =G2|
+^Fx c2 ^A2 =A2 G2 AF G4| \
+F4 x8 =D2 F2| \
+F2 AG A6 GF Gx ^D2| \
+^C2 =D2 G,x ^D2 ^A,4 =A,2 G,x|
+G,4 
+V:9
+% Continuo
+%%MIDI program 19
+x8 
+%     Mass in B Minor          Johann Sebastion Bach  No. 14 Duet, Et in unum    seq by David Siu  dss@po.cwru.edu      
+M: 4/4
+L: 1/16
+G,,x A,,x B,,x G,,x| \
+=C,x B,,x C,x B,,x C,x B,,x A,,x =D,x| \
+G,,x G,x3 E,x ^C,2 D,x3 B,,x| \
+E,x G,x3 E,x A,2 A,,x3 A,x|
+B,2 G,x A,x A,,x D,x E,x F,x D,x| \
+G,x F,x G,x F,x G,x F,x E,x A,,x| \
+D,x D,,x3 F,x A,x A,,x3 =C,x| \
+E,x E,,x3 A,,x D,x D,,x3 D,x|
+E,x C,x D,x D,,x [B,G,,]x [CA,,]x [DB,,]x [B,G,,]x| \
+[EC,]x [DB,,]x [EC,]x [DB,,]x [EC,]x [DB,,]x [CA,,]x [DD,]x| \
+[B,4G,,4] x4 D,4 x4| \
+A,,4 x4 E,4 x4|
+B,,4 x4 E,x A,x F,x D,x| \
+G,4 x2 G,,x D,x E,x F,x D,x| \
+G,x F,x E,x B,A, G,x F,4 E,x| \
+D,4 x2 D,,x A,,4 x2 A,x|
+B,x G,x A,x A,,x D,x E,x F,x G,x| \
+A,x A,,x3 ^A,,x B,,x ^C,x D,x E,x| \
+F,x F,,x3 D,,x G,,x =A,,x B,,x ^C,x| \
+D,x E,x D,x =C,x B,,x ^C,x ^D,x B,,x|
+E,x F,x G,x A,x B,x A,x ^G,x E,x| \
+A,x E,x =C,x E,x A,x =G,x F,x =D,x| \
+G,x D,x B,,x D,x G,,x B,,x E,x D,x| \
+C,x A,,x D,x D,,x G,x F,x E,x D,x|
+E,x ^C,x F,x F,,x B,,x B,x E,x G,x| \
+A,4 x2 D,2 B,4 x2 B,,x| \
+^C,x B,,x ^C,x A,,x D,x ^C,x B,,x F,x| \
+G,x E,x A,x A,,x D,x E,x F,x D,x|
+G,x F,x G,x F,x G,x F,x E,x A,x| \
+D,x E,x F,x D,x G,,x A,,x B,,x G,,x| \
+=C,x B,,x C,x B,,x C,x B,,x A,,x D,x| \
+G,,x G,x3 E,x ^C,x D,x3 B,,x|
+E,x G,x3 E,x A,x A,,x3 A,x| \
+B,x G,x A,x A,,x [F,D,]x [A,F,][G,E,] [F,D,]x [A,F,]x| \
+[B,G,]x [A,F,][G,E,] [F,D,]x [A,=C,]x [G,B,,]x [E,A,,]x [F,D,D,,]x [^G,B,,E,,]x| \
+[A,C,A,,]x =G,,x F,,x [^DB,B,,]x [EG,E,,]x [G,E,][A,F,] [B,G,]x [CA,]x|
+[B,G,]x [B,G,][A,F,] [B,G,]x [EC]x [^DB,]x [B,A,]G, [^CF,]x [^DB,]x| \
+[EE,]x E,,x A,,x G,,x F,,x B,,^A,, B,,x B,x| \
+^C,x F,x F,,x ^A,,x B,,x F,x G,x F,x| \
+E,x F,x G,x =A,x G,x F,x E,x G,x|
+^A,,x E,x F,,x ^A,,x B,,x =D,x E,x ^C,x| \
+D,x E,x F,x F,,x B,,x ^C,x D,x B,,x| \
+E,x D,x E,x D,x E,x D,x ^C,x F,x| \
+B,,x =A,,x G,,x F,,x E,,x F,,x G,,x E,,x|
+A,,x G,,x A,,x G,,x A,,x G,,x F,,x B,,x| \
+E,,x E,x3 ^C,x ^A,,x B,,x3 B,,x| \
+G,,x E,x3 ^C,x F,x F,,x3 F,x| \
+G,x E,x F,x F,,x [B,F,D,B,,]x [DB,][E^C] [DB,]x [F=A,]x|
+[EB,G,]x [DA,F,]x [B,G,]x [A,F,]x [B,G,]x [=CF,]x [DE,]x [^CA,]x| \
+[DA,F,D,]x =C,x B,,x [B,^G,E,]x A,x [CA,,][DB,,] [EC,]x [CA,,]x| \
+[=FD,]x [EC,]x [=FD,]x [EC,]x [=FD,]x [EC,]x [DB,,]x E,x| \
+[CA,,]x [CA,][B,^G,] [CA,]x [EC]x B,x E,^D, E,x Ex|
+^F,x B,x B,,x ^D,x E,x B,x Cx B,x| \
+A,x B,x Cx =Dx Cx B,x A,x Cx| \
+^D,x A,x B,,x ^D,x E,x =G,x A,x F,x| \
+G,x A,x B,x B,,x E,4 x4|
+C,4 x4 ^G,,4 x4| \
+E,,4 x4 A,,4 x4| \
+B,,4 x6 C,2 B,,2 ^A,,x| \
+B,,4 x12|
+x2 F,2 ^D,2 B,,x =G,,4 x2 E,x| \
+F,x G,F, G,x =A,x B,x A,x B,x B,,x| \
+E,,x E,x =D,x C,x B,,x A,,x B,,x G,,x| \
+C,x B,,x C,x B,,x C,x B,,x A,,x D,x|
+G,,x G,x3 B,x Dx D,x3 F,x| \
+A,x A,,x3 C,x E,x E,,x3 E,x| \
+A,x A,,x3 A,,x D,x D,,x3 D,x| \
+G,x G,,x3 G,x Cx C,x Cx B,x|
+A,x B,C Dx D,x G,x F,x G,x A,x| \
+^A,x =A,x G,x =F,x ^D,4 x4| \
+x2 ^D,2 =D,2 C,x B,,4 x4| \
+G,,4 x4 C,4 x4|
+D,4 x6 ^D,2 =D,2 ^C,x| \
+D,4 x12| \
+x2 A,2 ^F,2 D,x ^A,,x D,x3 G,,x| \
+=A,,x ^A,,=A,, ^A,,x [^DG,-=C,]G,- [^A,G,=D,]x C,x [=A,F,D,]x D,,x|
+[G,D,^A,,G,,]x G,F, G,D, B,,D, G,,4 x2 G,x| \
+C,4 ^C,x E,x =A,,4 x2 A,x| \
+D,x =CB, CA, F,A, D,4 x2 D,x| \
+E,x C,x D,x D,,x G,,4 
