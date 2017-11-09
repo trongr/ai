@@ -36,6 +36,8 @@ def dlfile(url):
         print("HTTPError:", e.code, url)
     except URLError as e:
         print("URLError:", e.reason, url)
+    except Exception as e:
+        print("Exception", e, url)
 
 URL = sys.argv[1]
 DOWNLOAD_LINK_PREFIX = sys.argv[2]
