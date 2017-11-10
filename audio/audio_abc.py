@@ -37,6 +37,7 @@ DATA = open(FILENAME, 'r').read()
 CHARS = ['*', 'C', 'N', 'b', '0', '“', '"', 'À', ')', '–', 'Ã', '€', 'K', '<', '$', '%', 'W', 'T', 'l', 'v', 'w', '^', 'Q', '4', '|', '\x89', 'ÿ', 's', 'u', 'ù', 'a', 'E', 'Y', '©', '\x99', '7', 'A', '?', 'U', 'X', 'f', 'i', "'", 'j', 'ò', '`', '@', ']', 'e', '\x98', '{', 'k', '¸', 'h', 'p', 'M', '\x93', ' ', '(', 'V', '2', 't', '\n', 'O', '}', '-', '1', 'g', 'H', 'F', 'J', 'z', '\x94', 'ó', 'Z', '¥', '#', 'L', ',', '5', 'm', ';', 'à', '8', 'é', 'o', '\\', 'G', '/', 'c', 'd', '~', '>', 'Ê', 'r', '+', 'D', '\x96', '!', 'I', '_', 'S', '[', '=', 'P', 'q', '&', '\x80', 'â', '.', '\t', 'y', ':', 'n', '3', 'B', 'R', '6', '9', 'x']
 CHARS.extend(list(set(DATA)))
 CHARS = list(set(CHARS))
+CHARS.sort()
 print("Char set", CHARS)
 
 DATA_SIZE, VOCAB_SIZE = len(DATA), len(CHARS)
@@ -54,8 +55,8 @@ model = RNN(sess, data, {
     "SAVE_DST": "./save_abc/",
 })
 
-output_file = open("output/output.abc", "w", encoding="utf-8")
 t = time.time()
+current_song = ""
 i = 0
 while True: 
     batchX, batchY = model.train_batch()
@@ -96,9 +97,24 @@ while True:
         print(sample)
         print("======")
 
-        output_file.write(sample)
-        output_file.write("\n")
-        output_file.flush()
+        if "X:" in sample:
+            output_file = open("output/output" + str(i) + ".abc", "w", encoding="utf-8")            
+            split = sample.split("X:")
+            """
+            sample could contain more than one X:, but we'll keep it simple and
+            just end the song at before and start a new song at the last split.
+            """
+            before = split[0]
+            after = split[-1]
+            current_song += before
+            try: 
+                output_file.write(current_song)
+                output_file.flush()
+            finally:
+                current_song = "X:" + after
+                output_file.close()
+        else:
+            current_song += sample
 
         print('Batch: {:2d}, elapsed: {:.4f}'.format(i, time.time() - t))
         t = time.time()        
