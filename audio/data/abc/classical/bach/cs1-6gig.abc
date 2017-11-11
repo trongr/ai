@@ -1,0 +1,148 @@
+X: 1
+T: from bach/cs1-6gig.mid
+M: 6/8
+L: 1/8
+Q:1/4=250
+K:G % 1 sharps
+% untitled
+% A
+% A'
+% B
+% B'
+V:1
+% Solo Cello
+%%MIDI program 42
+x4x
+% untitled
+D,| \
+% A
+G,D,E, E,C,D,| \
+D,G,D, B,,G,,D,| \
+G,/2A,/2B,A, A,/2B,/2CB,|
+B,3 A,2A,| \
+B,F,G, G,E,G,| \
+A,E,F, F,D,F,| \
+G,B,G, E,B,,D,|
+^C,E,A, A,,2E,| \
+=F,E,G, G,=F,A,| \
+A,G,^A, ^A,=A,G,| \
+=F,E,D, A,,D,^C,|
+D,A,,^F,, D,,2D,| \
+% A'
+G,D,E, E,=C,D,| \
+D,G,D, B,,G,,D,| \
+G,/2A,/2B,A, A,/2B,/2CB,|
+B,3 A,2A,| \
+B,F,G, G,E,G,| \
+A,E,F, F,D,F,| \
+G,B,G, E,B,,D,|
+^C,E,A, A,,2E,| \
+=F,E,G, G,=F,A,| \
+A,G,^A, ^A,=A,G,| \
+=F,E,D, A,,D,^C,|
+D,A,,^F,, D,,2A,| \
+% B
+A,F,G, G,E,F,| \
+F,/2G,/2A,F, D,=CB,| \
+B,G,A, A,F,G,|
+G,/2A,/2B,G, E,DC| \
+A,DC D,CB,| \
+G,CB, C,B,A,| \
+G,F,E, B,,E,^D,|
+E,B,,G,, E,,2G,| \
+A,F,G, ^C/2=D/2EF,| \
+G,E,=F, B,/2=C/2DE,| \
+=F,D,E, A,/2B,/2CA,|
+^F,/2G,/2A,F, D,2A,| \
+^A,=A,C C^A,D| \
+DC^D ^D=DC| \
+^A,=A,G, D,G,F,|
+G,B,,/2C,/2D, G,,B,,D,| \
+G,E,/2=F,/2G, B,,C,E,| \
+A,^F,/2G,/2A, ^C,D,F,| \
+B,G,/2A,/2B, ^D,E,=C|
+E,F,=D F,G,E| \
+D,E,/2F,/2G,/2A,/2 B,G,F,| \
+G,D,B,, G,,2A,| \
+% B'
+A,F,G, G,E,F,|
+F,/2G,/2A,F, D,CB,| \
+B,G,A, A,F,G,| \
+G,/2A,/2B,G, E,DC| \
+A,DC D,CB,|
+G,CB, C,B,A,| \
+G,F,E, B,,E,^D,| \
+E,B,,G,, E,,2G,| \
+A,F,G, ^C/2=D/2EF,|
+G,E,=F, B,/2=C/2DE,| \
+=F,D,E, A,/2B,/2CA,| \
+^F,/2G,/2A,F, D,2A,| \
+^A,=A,C C^A,D|
+DC^D ^D=DC| \
+^A,=A,G, D,G,F,| \
+G,B,,/2C,/2D, G,,B,,D,| \
+G,E,/2=F,/2G, B,,C,E,|
+A,^F,/2G,/2A, ^C,D,F,| \
+B,G,/2A,/2B, ^D,E,=C| \
+E,F,=D F,G,E| \
+D,E,/2F,/2G,/2A,/2 B,G,F,|
+G,D,B,, G,,2
+V:2
+% --------------------------------------
+%%MIDI program 42
+x6| \
+x6| \
+x6| \
+x6|
+% untitled
+% A
+D,3 D,2x| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+% A'
+D,3 D,2
+V:3
+% Johann Sebastian Bach  (1685-1750)
+%%MIDI program 42
+x6| \
+x6| \
+x6| \
+x6|
+% untitled
+% A
+G,,3 x3| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+% A'
+G,,3 
+% Six Suites for Solo Cello
+% --------------------------------------
+% Suite No. 1 in G major - BWV 1007
+% 6th Movement: Gigue
+% --------------------------------------
+% Sequenced with Cakewalk Pro Audio by
+% David J. Grossman - dave@unpronounceable.com
+% This and other Bach MIDI files can be found at:
+% Dave's J.S. Bach Page
+% http://www.unpronounceable.com/bach
+% --------------------------------------
+% Original Filename: cs1-6gig.mid
+% Last Modified: February 22, 1997

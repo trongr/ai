@@ -1,0 +1,297 @@
+X: 1
+T: from bach/bwv1032a.mid
+M: 4/4
+L: 1/8
+Q:1/4=94
+K:G % 1 sharps
+% Vivace
+% Sonate BWV 1032, 1. Satz
+% Sequenced by M. Beckenkamp
+% Johann Sebastian Bach
+V:1
+% Fl\0xf6te
+%%MIDI program 74
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x
+% Vivace
+% Sonate BWV 1032, 1. Satz
+% Sequenced by M. Beckenkamp
+% Johann Sebastian Bach
+d g/2d/2e/2c/2 B/2c<dg/2e/2c/2| \
+B/2c<dg/2e/2c/2 A/2B<cd/2B/2G/2| \
+AD xg f/2e/2d/2c/2 B/2c/2d/2g/2| \
+f/2e/2d/2c/2 B/2c/2d/2B/2 G2 xf|
+g/2e/2f/2a/2 g/2f/2e/2d/2 ^c/2d<ea/2f/2d/2| \
+^c/2d<ea/2f/2d/2 B/2d<gf/2[f/2e/2]e/2| \
+[g/2d/2]b<ag/2f/2e/2 d/2^c/2B/2g<^cd/2| \
+d8-|
+d2- d/2=c/2B/2d/2 G/2F/2E/2F<FG/2| \
+G/2g<ff/2g/2a/2 b/2a/2g/2f/2 g/2>a/2[b/2f/2]g/2| \
+[a/2g/2]f/2e/2^d/2 e/2>f/2[g/2^d/2]e/2 [f/2e/2]=d/2^c/2B/2 ^c/2d/2e/2^c/2| \
+B/2A/2B/2^c/2 d/2e/2f/2d/2 e/2d/2^c/2e/2 d/2e/2f/2d/2|
+e/2d/2^c/2e/2 d/2e/2f/2d/2 b/2x/2a/2x/2 g/2f/2g/2a/2| \
+f/2x/2e/2x6x/2| \
+x8| \
+x8|
+x/2A/2B/2^c/2 d/2e/2f/2d/2 e/2d/2^c/2e/2 d/2e/2f/2d/2| \
+e/2d/2^c/2e/2 d/2e/2f/2d/2 b/2x/2a/2x/2 g/2f/2g/2a/2| \
+f/2x/2e/2xe/2f/2g/2 a/2g/2f/2e/2 f/2>e/2[e/2d/2]f/2| \
+[g/2f/2]e/2d/2^c/2 d/2>^c/2[^c/2B/2]d/2 [e/2d/2]=c/2B/2A/2 B/2>A/2[A/2G/2]B/2|
+[c/2B/2]d/2^c/2d/2 e/2^c/2d/2e/2 A/2^c/2B/2^c/2 d/2B/2^c/2d/2| \
+G4 x/2A/2^c/2e/2 g/2b/2a/2g/2| \
+f/2e/2d/2f/2 e/2d/2^c/2e/2 d4-| \
+d4 x/2a/2g/2e/2 f/2>e/2[e/2d/2]d/2|
+[d/2-^c/2]de<^cd/2 d4-| \
+d/2x/2d Bg e4-| \
+e/2b/2a/2g/2 fe/2d/2 d2 x2| \
+x8|
+x4 x/2E/2F/2^G/2 A/2B/2=c/2A/2| \
+B/2A/2^G/2B/2 A/2B/2c/2A/2 B/2A/2^G/2B/2 A/2B/2c/2A/2| \
+=fe/2x/2 d/2c/2d/2e/2 c/2B/2A/2c/2 d/2>c/2[c/2B/2]B/2| \
+[B/2A/2]d/2c/2e/2 =f/2>e/2[e/2d/2]d/2 [d/2c/2]=f/2e/2^g/2 a/2>=g/2[g/2^f/2]f/2|
+[e/2^d/2-]^d/2B/2x/2 G/2x/2e/2x/2 ^cb g/2x/2e/2x/2| \
+xB G/2x/2E/2x3/2e3/2x/2^d/2x/2| \
+e8-| \
+e4 x/2=c/2B/2A/2 f/2g/2a/2e/2|
+^d/2e/2^d/2e/2 f2 x/2A/2G/2e<^de/2| \
+eb ge xB/2x/2 G/2x/2E/2x/2| \
+xB2<g2a/2g/2 f2-| \
+fG e2 x/2g/2f/2e<^d^c/2|
+e/2^c/2^d x2 x/2f/2g/2a/2 b/2a/2g/2f/2| \
+g/2x/2b/2x/2 e2 x/2e/2f/2g/2 a/2g/2f/2e/2| \
+f/2x/2a/2x/2 =d2 x/2d/2e/2f/2 g2| \
+x/2A/2B/2^c/2 d/2^c/2d/2e/2 f/2g/2a/2b/2 e2-|
+e/2e/2f/2^g/2 a2- a/2B/2^c/2^d/2 e/2^d/2e/2f/2| \
+=g/2a/2b/2=c'/2 f2 x/2 (3e/2f/2g/2[f/2e/2] [=d/2c/2-]c3/2-| \
+c/2 (3B/2A/2B/2[A/2G/2] [G/2-F/2]G3/2 x/2 (3c/2B/2A/2[G/2F/2] [E/2^D/2-]^D/2x| \
+x^d/2x/2 e/2x/2^d/2x/2 e/2x/2B/2x/2 c/2x/2B/2x/2|
+c/2x/2^G/2x/2 A/2x/2^G/2x/2 A2 a2-| \
+a/2f/2e/2f/2 =g/2e/2f/2g/2 c4-| \
+c/2a/2f/2^d/2 B3x3| \
+x/2B/2^c/2^d/2 e/2B/2=c/2A/2 B/2e/2c/2A/2 B/2G/2A/2F/2|
+G/2g/2f/2>e/2 [e/2^d/2] (3^d/2^c/2^d/2[f/2e/2] B/2^d/2e/2f<^de/2| \
+e2 xa/2x/2 ^ge xA/2x/2| \
+^G/2x/2E/2x3/2A2<=f2=g/2=f/2| \
+e3=F =d2 x/2=f/2e/2d/2|
+=c/2A<BB/2c/2d/2 e/2d/2c/2B/2 c/2x/2e/2x/2| \
+A2 x/2A/2B/2c/2 d/2c/2B/2A/2 B/2x/2d/2x/2| \
+G2 x/2G/2A/2B/2 c/2^F/2G/2A/2 D2| \
+x/2d/2e/2f/2 g2 x/2f/2g/2a/2 d2|
+x/2 (3c/2d/2e/2[d/2c/2] [c/2-B/2]c2 (3B/2c/2d/2[c/2B/2] [B/2-A/2]B3/2| \
+x/2B/2c/2d/2 e/2d/2e/2f/2 g/2f/2g/2a<fg/2| \
+g/2D/2E/2F/2 G/2A/2B/2G/2 A/2G/2F/2A/2 G/2A/2B/2G/2| \
+A/2G/2F/2A/2 G/2A/2B/2G/2 e/2x/2d/2x/2 c/2B/2c/2d/2|
+BA/2xf/2g/2a/2 b/2a/2g/2f/2 g/2>a/2[b/2f/2]g/2| \
+[a/2g/2]f/2e/2^d/2 e/2>f/2[g/2^d/2]e/2 [f/2e/2]=d/2^c/2B/2 ^c/2>d/2B/2>^c/2| \
+^c/2A/2B/2^c/2 d/2e/2f/2d/2 e/2d/2^c/2e/2 d/2e/2f/2d/2| \
+e/2d/2^c/2e/2 d/2e/2f/2d/2 b/2x/2a/2x/2 g/2f/2g/2a/2|
+fe x/2A/2G/2F/2 G/2F<Ge/2^c/2A/2| \
+G/2F<Ge/2^c/2A/2 F/2A<dx/2=c/2>B/2| \
+[g/2A/2]f<ge/2f/2^c/2 d/2A/2B/2g<^cd/2| \
+d8-|
+d2 x/2=c/2B/2d/2 G/2F/2E/2F<FG/2| \
+G/2g/2f x3f gf/2x/2| \
+g^d e^d/2x/2 eB cB/2x/2| \
+c4- c/2x/2B/2A/2 B2|
+x/2e/2A/2B/2 c/2A/2B/2c/2 =D4-| \
+D2 x2 x/2d/2e/2f/2 g/2d/2e/2c/2| \
+d/2g/2e/2c/2 d/2>c/2[c/2B/2]B/2 [B/2A/2]G/2E/2c/2 D/2B/2C/2A/2| \
+dx/2e<FG/2 G2 
+V:2
+% Cembalo rechts
+%%MIDI program 6
+x/2
+% Vivace
+% Sonate BWV 1032, 1. Satz
+% Sequenced by M. Beckenkamp
+% Johann Sebastian Bach
+D/2E/2F/2 G/2A/2B/2G/2 A/2G/2F/2A/2 G/2A/2B/2G/2| \
+A/2G/2F/2A/2 G/2A/2B/2G/2 e/2x/2d/2x/2 c/2B/2c/2d/2| \
+BA x/2A/2B/2c/2 d/2c/2B/2A/2 B/2>A/2[A/2G/2]B/2| \
+[c/2B/2]A/2G/2F/2 G/2>F/2[F/2E/2]G/2 [A/2G/2]=F/2E/2D/2 E/2>D/2[D/2C/2]E/2|
+[=F/2E/2]G/2^F/2G/2 A/2F/2G/2A/2 D/2F/2E/2F/2 G/2E/2F/2G/2| \
+C/2E/2A,/2B,/2 C/2A,/2B,/2C/2 x2 x/2e/2d/2c/2| \
+B/2A/2G/2B/2 A/2G/2F/2A/2 G/2D/2E/2F/2 G/2D/2E/2C/2| \
+D/2G/2E/2C/2 D/2B,/2C/2A,/2 B,/2D/2>C/2[B,/2A,/2] B,/2[A,/2G,/2]A,/2[G,/2F,/2]|
+G,x [G-D][G-E] [G/2D/2-][A/2D/2][B/2G/2][c/2F/2] [dG-][eG]| \
+[G/2-G/2][A/2G/2-][B/2G/2][c/2F/2] [dG-][eG] [dF-][c/2-F/2][c/2-G/2] [cA][BG]| \
+[A/2F/2]D/2E/2F/2 G/2A/2B/2G/2 A/2G/2F/2A/2 G/2A/2B/2G/2| \
+A/2G/2F/2A/2 G/2A/2B/2G/2 e/2x/2d/2x/2 c/2B/2c/2d/2|
+B/2x/2A/2x3/2[BE-] [A/2E/2-][B/2E/2][c/2A/2][d/2B/2] [eA-][fA]| \
+[A/2-A/2][B/2A/2-][^c/2A/2][d/2^G/2] [eA][f-F] [f-=G][f/2B/2-][e/2B/2] [d/2^c/2-G/2-][^c/2G/2][dF]| \
+[eE-][A3/2E3/2-][B/2E/2][^c/2-A/2][^c/2G/2] [dF][e-B] [eA][^cE]| \
+[d/2F/2]D/2E/2F/2 G/2A/2B/2G/2 A/2G/2F/2A/2 G/2A/2B/2G/2|
+A/2G/2F/2A/2 G/2A/2B/2G/2 e/2x/2d/2x/2 =c/2B/2c/2d/2| \
+BA x/2A/2B/2c/2 d/2c/2B/2A/2 B/2>A/2[A/2G/2]B/2| \
+[c/2B/2]A/2G/2F/2 G/2>F/2[F/2E/2]G/2 [A/2G/2-]G3-G/2-| \
+G-[G/2F/2]E/2 F/2G/2A/2d/2 ^c/2B/2A/2G/2 F/2G/2A/2d/2|
+^c/2B/2A/2G/2 F/2G/2A/2F/2 D2 x^c| \
+d/2B/2^c/2e/2 d/2^c/2B/2A/2 G/2F<Ge/2^c/2A/2| \
+G/2F<Ge/2^c/2A/2 E/2G<d^c/2[^c/2B/2]B/2| \
+[g/2A/2]f<ge/2f/2^c/2 d/2A/2B/2G<ED/2|
+D2 x[dF] [^cE-][A/2-E/2][A/2-^C/2] [A/2D/2-]D/2-[dD]| \
+[^cE-][A/2-E/2][A/2-^C/2] [AD][dF] [d-B][d-A] [dB][B/2-A/2][B/2G/2]| \
+[dF][^cE] [A2-E2] [AD]^c d^c| \
+d^A B^A BF GF|
+G4- GF/2E/2 F2-| \
+F/2B/2E/2F/2 G/2E/2F/2G/2 =A,4-| \
+A,2 x2 x/2A/2B/2^c/2 d/2A/2B/2G/2| \
+A/2d/2B/2G/2 A/2>G/2[G/2F/2]F/2 [F/2E/2]D/2B,/2G/2 A,/2F/2G,/2E/2|
+F,/2A,/2D/2G<ED/2 Dd Bg| \
+f/2g/2a3/2x/2g3/2d/2^c/2B/2 A/2G/2F/2E/2| \
+F/2G/2A/2e<^cd/2 d/2A,/2B,/2^C/2 D/2E/2F/2D/2| \
+E/2D/2^C/2E/2 D/2E/2F/2D/2 E/2D/2^C/2E/2 D/2E/2F/2D/2|
+B/2x/2A/2x/2 G/2F/2G/2A/2 F/2E/2D x2| \
+xe =cA xE CA,| \
+xA2^G A4-| \
+A8|
+x/2B,/2^C/2^D/2 E/2F/2=G/2E/2 F/2E/2^D/2F/2 E/2F/2G/2E/2| \
+F/2E/2^D/2F/2 E/2F/2G/2E/2 =c/2x/2B/2x/2 A/2G/2A/2B/2| \
+G/2F/2E/2G/2 A/2>G/2[G/2F/2]F/2 [F/2E/2]A/2G/2B/2 c/2>B/2[B/2A/2]A/2| \
+[A/2G/2]c/2B/2^d/2 e/2>=d/2[d/2c/2]c/2 [c/2-B/2]c3-c/2-|
+c2- c/2c/2B/2A/2 G/2^D/2E/2G<FE/2| \
+E2 xe ^dB xE| \
+^DB, xE2<c2=d/2c/2| \
+B3C A2- A/2c/2B/2A/2|
+G/2E<FF/2G/2A/2 B/2A/2G/2F/2 GB/2x/2| \
+E2 x/2E/2F/2^G/2 A/2=G/2F/2E/2 FA/2x/2| \
+D2 x/2D/2E/2F/2 G/2F/2G/2A/2 B/2c/2d/2e/2| \
+A2 x/2A/2B/2^c/2 d2- d/2E/2F/2^G/2|
+A/2^G/2A/2B/2 =c/2d/2e/2=f/2 B2 x/2B/2^c/2^d/2| \
+e2 x/2^d/2e/2^f/2 B2- B/2 (3A/2B/2=c/2[B/2A/2]| \
+[=G/2F/2-]F2 (3E/2^D/2E/2[=D/2C/2] [C/2-B,/2]C/2x3/2F/2G/2A/2| \
+B/2A/2G/2F/2 G/2>F/2[F/2E/2]G/2 [A/2G/2]=F/2E/2D/2 E/2>D/2[D/2C/2]E/2|
+[=F/2E/2]D/2C/2B,/2 C/2>B,/2[B,/2A,/2]C/2 [D/2C/2]e/2^d/2e/2 ^f/2^d/2e/2f/2| \
+B4- B/2G/2F/2G/2 A/2F/2G/2A/2| \
+^D/2B,/2^D/2F/2 A/2c/2B/2A/2 G/2F/2E/2G/2 F/2E/2^D/2F/2| \
+E8-|
+E/2B/2A/2F/2 G/2E/2F/2^D<Ec<FE/2| \
+Ee cA xE CA| \
+xE2<c2=d/2c/2 B2-| \
+BC A2 x/2c/2B/2A<^GF/2|
+[A/2^G/2]F/2^G x4 x/2E/2F/2=G/2| \
+A/2G/2F/2E/2 FA D2 x/2D/2E/2=F/2| \
+G/2=F/2E/2D/2 EG C2 x/2D/2E/2^F/2| \
+G/2F/2G/2A/2 B/2c/2d/2e/2 A2- A/2 (3G/2A/2B/2[A/2G/2]|
+[F/2E/2-]E2 (3F/2G/2A/2[G/2F/2] [E/2D/2-]D3/2 x/2D/2E/2F/2| \
+G2 x/2d/2c/2A<de<AG/2| \
+G2 x[GB,] [F/2A,/2-][G/2A,/2-][A/2A,/2-][F/2A,/2] D/2x/2[G/2B,/2]x/2| \
+[A/2A,/2-][B/2A,/2-][c/2A,/2-][A/2A,/2] D/2x/2[GB,] [G-E][G-D] [G/2E/2]x/2[F/2-D/2][F/2C/2]|
+[GB,][FA,] x/2A/2B/2c/2 d/2c/2B/2A/2 B/2>A/2[A/2G/2]B/2| \
+[c/2B/2]A/2G/2F/2 G/2>F/2[F/2E/2]G/2 [A/2G/2]F/2E/2D/2 E/2>D/2[D/2^C/2]^C/2| \
+[^C/2-B,/2A,/2-][^C3/2A,3/2] xd ^c/2B/2A/2G/2 F/2G/2A/2d/2| \
+^c/2B/2A/2G/2 F/2G/2A/2F/2 D2 x[^cE]|
+[dF][^cE] x[FD] [GB,-][E/2B,/2-][F/2B,/2-] [GB,-][EB,]| \
+[G-A,][G/2-^C/2][G/2-B,/2] [GA,][A^C] [F3/2D3/2-][G/2D/2-] [AD-][BD]| \
+[A3/2-^C3/2][A/2-D/2] [A/2E/2]x/2[^cG] [d-A][d/2B/2-][e/2B/2] [edA][^cG]| \
+[d/2F/2]D/2E/2F/2 G/2A/2B/2G/2 A/2G/2F/2A/2 G/2A/2B/2G/2|
+A/2G/2F/2A/2 G/2A/2B/2G/2 ed/2x/2 =c/2B/2c/2d/2| \
+BA x/2A/2B/2c/2 d/2c/2B/2A/2 B/2>A/2[A/2G/2]B/2| \
+[c/2B/2]A/2G/2F/2 G/2>F/2[F/2E/2]G/2 [A/2G/2]=F/2E/2D/2 E/2>D/2[D/2C/2]E/2| \
+[=F/2E/2]G/2^F/2G/2 A/2F/2G/2A/2 D/2F/2E/2F/2 G/2E/2F/2G/2|
+C4- C/2D/2F/2A/2 c/2e/2d/2c/2| \
+B/2A/2G/2B/2 A/2G/2F/2A/2 G4-| \
+G4- G/2d/2c/2A/2 B/2>A/2[A/2G/2][G/2F/2]| \
+G/2D/2E/2C<A,G,/2 G,2 
+V:3
+% Cembalo links
+%%MIDI program 6
+% Vivace
+% Sonate BWV 1032, 1. Satz
+% Sequenced by M. Beckenkamp
+% Johann Sebastian Bach
+[G,2D,2B,,2G,,2] x[G,G,,] [F,D,][A,C,] [D,B,,][G,G,,]| \
+[F,D,][A,C,] [D,B,,][G,G,,] [G,-C,][G,-B,,] [G,A,,][F,D,]| \
+[G,G,,][F,/2-D,/2][F,/2E,/2] F,D, B,,[F,D,] G,F,| \
+G,[^D,B,,] E,^D, E,[B,,G,,] C,B,,|
+C,A,, F,,=D, B,,G,, E,,C,| \
+A,,G,, F,,E,, [D,/2-F,,/2][D,/2-A,,/2][D,/2-B,,/2][D,/2C,/2] D,/2E,/2F,/2D,/2| \
+G,E, C,D, B,,A,, B,,C,| \
+B,,C, B,,A,, G,,G, F,D,,|
+G,,G,/2A,/2 B,C G,3/2A,/2 B,C| \
+G,3/2A,/2 B,C DA,/2G,/2 F,G,| \
+D,C, B,,G,, D,D,, xF,| \
+F,D,, xG,, C,B,, A,,D,|
+G,,D, B,G, A,3/2B,/2 ^CD| \
+A,3/2B,/2 ^CD G,3/2F,/2 E,D,| \
+^C,^C/2B,/2 ^CA, B,G, A,A,,| \
+D,=C, B,,G,, D,C, B,,G,,|
+D,C, B,,G,, C,B,, A,,D,| \
+G,,D,/2E,/2 D,C, B,,D, G,D,| \
+G,,B,, E,B,, E,,E,/2F,/2 E,D,| \
+^C,A, F,D, G,A,, xA,|
+A,A,, xD, G,F, E,A,| \
+D,A,, F,,D,, F,,E,/2D,/2 E,G,| \
+^C,E,/2D,/2 ^C,A,, D,3/2E,/2 F,G,| \
+A,3/2B,/2 ^CA, F,G, A,A,,|
+D,,2 xD, A,G, F,D,| \
+A,G, F,D, G,F, E,A,| \
+D,A,/2B,/2 ^CA, F,A, D,x| \
+xF, B,,x2D, G,,x|
+xE, ^C,A, F,D, B,,B,| \
+E,G,/2F,/2 E,D, ^C,E, A,,^C,| \
+D,F, G,A,/2G,/2 F,G, F,E,| \
+F,G, F,E, D,4|
+x/2A,,/2B,,/2G,,/2 A,,/2^C,/2E,/2G,/2 F,/2D,/2E,/2F,/2 G,/2A,/2B,/2G,/2| \
+A,/2G,/2F,/2A,/2 G,/2A,/2B,/2G,/2 ^C,E, ^C,A,,| \
+D,/2E,/2F,/2G,/2 A,A,, D,,2 xD,| \
+A,G, F,D, A,G, F,D,|
+G,F, E,A, D,B,, =C,A,,| \
+E,E,, xE, E,E,, x=F,/2E,/2| \
+D,C, B,,E, A,,A,/2G,/2 =F,E,| \
+D,E, D,C, B,,C,/2B,,/2 C,A,,|
+B,,B,,, xB,, B,,B,,, xB,,| \
+B,,B,,, xC,/2B,,/2 A,,G,, ^F,,B,,| \
+E,,E,/2D,/2 C,B,, A,,B,, A,,G,,| \
+F,,G,,/2F,,/2 G,,E,, A,,G,, A,,F,,|
+B,,F, ^D,B,, E,A, B,B,,| \
+E,,/2B,,/2^C,/2^D,/2 E,/2F,/2G,/2E,/2 F,/2E,/2^D,/2F,/2 E,/2F,/2G,/2E,/2| \
+F,/2E,/2^D,/2F,/2 E,/2F,/2G,/2E,/2 A,,/2G,/2F,/2E,/2 =D,/2=C,/2B,,/2A,,/2| \
+G,,/2F,/2E,/2D,/2 C,/2B,,/2A,,/2G,,/2 F,,/2E,/2^D,/2^C,/2 B,,/2A,,/2G,,/2F,,/2|
+E,,B,, x4 x/2B,,/2^C,/2^D,/2| \
+E,/2=D,/2=C,/2B,,/2 C,/2x/2E,/2x/2 A,,2 x/2A,,/2B,,/2^C,/2| \
+D,/2=C,/2B,,/2A,,/2 B,,D, G,,2 x/2A,,/2B,,/2C,/2| \
+D,/2^C,/2D,/2E,/2 F,/2G,/2F,/2E,/2 D,/2E,,/2F,,/2G,,/2 A,,/2^G,,/2A,,/2B,,/2|
+=C,/2D,/2C,/2B,,/2 A,,/2B,,/2C,/2D,/2 E,/2D,/2E,/2F,/2 =G,/2A,/2G,/2F,/2| \
+E,/2F,/2G,/2A,/2 B,/2C/2B,/2A,/2 G,E, A,F,| \
+^D,B,, E,C, A,,F,, B,,A,,| \
+G,,B,, E,,3/2x3/2G,, C,,x|
+xE,, A,,x2F, ^D,B,,| \
+G,,B,, E,E,, A,,B,, C,A,,| \
+B,,2 x^D, E,G, A,B,/2A,/2| \
+G,F, G,A, G,A, G,F,|
+E,B,, xA,, G,,C,/2A,,/2 B,,B,,,| \
+E,,/2E,/2F,/2^G,/2 A,/2B,/2C/2A,/2 B,/2A,/2^G,/2B,/2 A,/2B,/2C/2A,/2| \
+B,/2A,/2^G,/2B,/2 A,/2B,/2C/2A,/2 =D,/2C/2B,/2A,/2 =G,/2=F,/2E,/2D,/2| \
+C,/2B,/2A,/2G,/2 =F,/2E,/2D,/2C,/2 B,,/2A,/2^G,/2^F,/2 E,/2D,/2C,/2B,,/2|
+A,,/2x/2E,/2x3E,/2F,/2^G,/2 A,/2=G,/2F,/2E,/2| \
+F,A, D,2 x/2D,/2E,/2F,/2 G,/2=F,/2E,/2D,/2| \
+E,/2x/2G,/2x/2 C,2 x/2D,/2E,/2^F,/2 G,/2F,/2G,/2A,/2| \
+B,/2C/2B,/2A,/2 G,/2A,,/2B,,/2^C,/2 D,/2A,/2B,/2=C/2 G,E,|
+A,G, F,D, G,F, E,D,| \
+E,D, C,A,, B,,E,/2^C,/2 D,D,,| \
+G,,2 xG,, D,=C, B,,G,,| \
+D,C, B,,G,, C,B,, A,,D,|
+G,,D,/2E,/2 D,C, B,,D, G,D,| \
+G,,B,, E,B,, E,,F,, G,,E,,| \
+A,,G, F,D, A,A,, xA,| \
+A,A,, xD, G,F, E,A,|
+D,A,/2G,/2 F,D, E,^C,/2D,/2 E,G,| \
+^C,E,/2D,/2 ^C,A,, D,3/2E,/2 F,G,| \
+A,3/2B,/2 ^CA, F,G, A,A,,| \
+D,=C, B,,G,, D,C, B,,G,,|
+D,C, B,,G,, C,B,, G,,D,| \
+G,,D,/2E,/2 F,D, B,,D, G,,x| \
+xB,, E,,x2B,, E,,x| \
+xA,, F,,D, B,,G,, E,,E,|
+A,,C, A,,G,, F,,A,, D,,F,,| \
+G,,B,, C,D, B,,C, B,,A,,| \
+B,,C, B,,A,, G,,4-| \
+G,,/2x/2C, D,D,, G,,2 

@@ -1,0 +1,1317 @@
+X: 1
+T: from bach/vp2-5cha.mid
+M: 3/4
+L: 1/8
+Q:1/4=60
+K:F % 1 flats
+% Chaconne
+% from Partita No.2 for solo Violin BWV 1004
+% J.S. Bach 
+% arpeggio
+% D Major
+% arpeggio
+% D minor
+V:1
+% Solo Violin
+%%MIDI program 40
+x2 
+% Chaconne
+% from Partita No.2 for solo Violin BWV 1004
+% J.S. Bach 
+A3A| \
+e2 e3e| \
+f2 d3c| \
+B2 A2 G/2F/2E/2F/2|
+G/2E/2F/2D/2 A3A| \
+e2 e3e| \
+f2 d3d| \
+b2 a3/2g/2 [g/2-f/2]ge/2|
+f3/2x4x/2| \
+Bx Ax3| \
+Ax2x/2A<GF/2| \
+E3/2D<EG<FE/2|
+D3/2x4x/2| \
+Dx _Dx3| \
+=Dx/2E<FA<GE/2| \
+F3/2G/2 E4|
+Dx4x| \
+x6| \
+x4 x3/2B/2| \
+A3/2=B<_d=d<e_d/2|
+=d3/2d/2 [f/2-e/2]fg/2 [_b/2-a/2]bf/2| \
+e3/2b<ag<a_g/2| \
+=g3/2f<ed/2 [d/2-_d/2]=de/2| \
+f3/2g<d_d/2 [_d/2-=B/2]_dG/2|
+Ff e=d _d=d| \
+GA/2_B/2 _DB AG| \
+FG/2A/2 B,=D Gd/2_d/2| \
+=dF E/2F/2G/2B/2 A/2G/2F/2E/2|
+F/2A/2d/2f/2 f/2e/2g/2f/2 e/2d/2_d/2=d/2| \
+G/2B/2_G/2=G/2 _D/2E/2G/2B/2 A/2G/2e/2G/2| \
+F/2_D/2=D/2A,/2 B,/2D/2G/2A/2 B/2_e/2_d/2=d/2| \
+_A/2=B/2d/2f/2 =e/2g/2_d/2=d/2 =A,/2E/2d/2_d/2|
+=df _ba _aD| \
+_De =ag _gC| \
+=B,=d =gf e_B,| \
+A,/2f/2e/2d/2 _dA eG|
+F/2=D/2F/2A/2 d/2f/2b/2a/2 _a/2=b/2_a/2e/2| \
+_d/2e/2=a/2g/2 _g/2a/2_g/2c/2 A/2_G/2=D/2C/2| \
+=B,/2D/2=G/2_G/2 =G/2_e/2d/2_d/2 _b/2a/2_a/2=a/2| \
+f/2=e/2=d/2c/2 B/2A/2_A/2=A/2 _D/2G/2F/2E/2|
+F/2=D/2E/2F/2 G/2A/2=B/2_d/2 =d/2F/2E/2D/2| \
+A,/2E/2d/2_d/2 =D/2_G/2A/2c/2 c/2_B/2c/2A/2| \
+B/2=G/2F/2_E/2 D/2C/2B,/2A,/2 G,/2G/2_e/2d/2| \
+_d/2=e/2A/2G/2 F/2=d/2E/2D/2 A,/2E/2d/2_d/2|
+g/2e/2f/2_d/2 =d/2c/2B/2A/2 G/2F/2E/2D/2| \
+_D/2B/2A/2G/2 _G/2=D/2A/2D/2 C/2B,/2C/2A,/2| \
+B,/2=G,/2A,/2B,/2 C/2D/2E/2_G/2 =G/2A/2B/2A/2| \
+_A/2=A/2E/2F/2 G/2_D/2=D/2_A,/2 =A,/2F/2E/2_D/2|
+=D/2d/2A/2G/2 F/2E/2D/2C/2 B,/2d/2G/2F/2| \
+E/2c/2G/2F/2 E/2D/2C/2B,/2 A,/2c/2F/2_E/2| \
+D/2B/2F/2_E/2 D/2C/2B,/2A,/2 G,/2B/2=E/2D/2| \
+_D/2A,/2_D/2E/2 A/2E/2A/2_d/2 e/2G/2A/2E/2|
+F/2=D/2F/2A/2 d/2A/2d/2f/2 B/2g/2a/2b/2| \
+e/2C/2E/2G/2 c/2G/2c/2e/2 A/2f/2g/2a/2| \
+d/2B,/2D/2F/2 B/2F/2B/2d/2 G/2e/2f/2g/2| \
+_d/2A/2_d/2e/2 a/2e/2a/2_d'/2 e'/2g/2f/2e/2|
+=dA Dd B/2A/2B/2G/2| \
+cG Cc A/2G/2A/2F/2| \
+BF B,B G/2F/2G/2E/2| \
+F/2E/2F/2D/2 Ea a/2g/2a/2e/2|
+d/2_d/2=d/2A/2 F/2E/2F/2D/2 B,/2G/2d/2b/2| \
+c/2=B/2c/2G/2 E/2D/2E/2C/2 A,/2F/2c/2a/2| \
+F/2_E/2F/2D/2 D/2C/2D/2_B,/2 G,/2=E/2=B/2g/2| \
+A,/2E/2_d/2g/2 A,/2F/2=d/2f/2 A,/2G/2_d/2e/2|
+=d/2>A/2[G/2F/2]E/2 D/2C/2_B,/2A,/2 B,/2>d/2[c/2B/2][A/2G/2]| \
+[F/2E/2]G/2[F/2E/2]D/2 C/2B,/2A,/2G,/2 A,/2>c/2[B/2A/2][G/2F/2]| \
+[_E/2D/2]F/2[_E/2D/2]C/2 B,/2>D/2[C/2B,/2]A,/2 G,/2>B/2[A/2G/2][F/2=E/2]| \
+[D/2_D/2][=B,/2A,/2][_D/2=B,/2][E/2=D/2] [G/2F/2][_B/2A/2][A/2G/2][F/2E/2] [D/2_D/2] (3e/2=d/2_d/2[=B/2A/2]|
+[G/2F/2]=D/2[F/2E/2]A/2 F/2D/2F/2A/2>_B/2[d/2c/2][f/2e/2][a/2g/2]| \
+[b/2e/2]C/2[E/2D/2]G/2 E/2C/2E/2G/2>A/2[c/2B/2][e/2d/2][g/2f/2]| \
+[a/2d/2]B,/2[D/2C/2]F/2 D/2B,/2D/2F/2>G/2[B/2A/2][d/2c/2][f/2e/2]| \
+[g/2_d/2][b/2a/2][g/2f/2][e/2=d/2] [c/2B/2][A/2G/2][F/2E/2][D/2_D/2] [=B,/2A,/2][_D/2=B,/2][E/2=D/2][G/2F/2]|
+[F/2E/2][E/2D/2][G/2F/2][=B/2A/2] [d/2_d/2][_d/2=B/2][e/2=d/2][g/2f/2] [_b/2a/2]D/2C/2B,/2| \
+ (3C/2D/2E/2[G/2_G/2][B/2A/2] [d/2c/2][B/2A/2][d/2c/2][_g/2e/2] [a/2=g/2]C/2B,/2A,/2| \
+ (3B,/2D/2E/2[G/2_G/2][B/2A/2] [d/2c/2][A/2=G/2][c/2B/2][e/2d/2] [g/2_g/2][b/2a/2][a/2=g/2][f/2e/2]| \
+[d/2_d/2][a/2g/2][f/2e/2][=d/2_d/2] [=B/2A/2][_d/2=B/2][e/2=d/2][g/2f/2] [_b/2a/2][g/2e/2][_d/2A/2][G/2F/2]|
+[E/2=D/2]A/2d/2e/2 f/2d/2B/2A/2 _A/2=B/2d/2f/2| \
+C/2E/2=A/2c/2 e/2c/2A/2G/2 _G/2A/2c/2_e/2| \
+_B,/2D/2=G/2B/2 d/2B/2G/2F/2 =E/2G/2B/2_d/2| \
+A,/2=D/2F/2A/2 d/2A/2F/2D/2 A,/2E/2G/2_d/2|
+=D/2b/2b/2_a/2 _a/2f/2f/2d/2 d/2=B/2_A/2E/2| \
+_D/2=a/2a/2_g/2 _g/2_e/2_e/2c/2 c/2A/2_G/2=D/2| \
+=B,/2=g/2g/2_e/2 _e/2_d/2_d/2_B/2 B/2G/2=E/2_D/2| \
+A,/2_D/2_D/2E/2 E/2>G/2[G/2F/2]B/2 [B/2A/2]_d/2[e/2=d/2]G/2|
+ (3F/2A/2=B/2[d/2_d/2][_d/2=B/2] [f/2A/2][e/2=d/2][d/2_d/2][f/2e/2] [a/2g/2][g/2f/2][_b/2e/2][a/2g/2]| \
+[f/2c/2][_g/2e/2][a/2_a/2][_a/2_g/2] [c'/2e/2][=b/2=a/2][a/2_a/2][c'/2=b/2] [e'/2=d'/2][d'/2c'/2][f'/2=b/2][e'/2d'/2]| \
+[d'/2_d'/2][f'/2e'/2][e'/2=d'/2][f'/2e'/2] [f'/2d'/2][e'/2d'/2][f'/2e'/2][f'/2d'/2] [e'/2d'/2][=g'/2f'/2][e'/2d'/2][c'/2_b/2]| \
+[=a/2g/2][b/2a/2][a/2g/2][b/2a/2] [b/2g/2][a/2g/2][b/2a/2][b/2g/2] [a/2g/2][f/2e/2][d/2_d/2][=B/2A/2]|
+% arpeggio
+[a/2-G/2]a4-a3/2| \
+g4 g2| \
+f4 f2| \
+ef e=d d_d|
+=d6| \
+_e6| \
+d6| \
+d4 _d2|
+=d2 A2 _B2| \
+c2 B2 A2| \
+B2 b2 a2| \
+gf d2 _d2|
+=d2 A2 B2| \
+c2 B2 A2| \
+B2 A2 G2| \
+F2 =E4|
+F2 A2 f2| \
+f2 e2 _e2| \
+_e2 b2 =e2| \
+e2 a2 g2|
+f2 _g4| \
+=g2 _a4| \
+=a2 c'2 =b2| \
+d'2 d'2 _d'2|
+=d'6| \
+d'2 _d'4| \
+c'2 =b4| \
+_b2 a2 g2|
+_g2 f2 f2| \
+e2 _e2 _e2| \
+=d2 d2 d2| \
+d2 d2 _d2|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+=e2 e3e| \
+f2 =d3d| \
+d2 d2 _d2|
+=d2 d2 x2| \
+d2 c2 x2| \
+x6| \
+x6|
+K:D % 2 sharps
+% D Major
+d2 F3G| \
+E2 F3G/2A/2| \
+D2 E3F/2G/2| \
+FE E3x|
+x6| \
+x6| \
+x6| \
+cd x3A|
+FE DE F^G| \
+AB cd Bc| \
+df ed cB| \
+AB cd ec|
+d2 d3d| \
+cx4x| \
+x4 dB| \
+cd d2 c2|
+d/2c/2B/2A/2 ^G/2B/2d/2f/2 ee| \
+ex4F| \
+Fx4E| \
+E/2x4x3/2|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x2 x/2a/2a/2f/2 f/2d/2d/2f/2| \
+e/2x2a/2a/2e/2 e/2c/2c/2e/2| \
+d/2x2b/2b/2^g/2 ^g/2e/2e/2^g/2| \
+a/2x2a/2a/2a/2 a/2=g/2g/2g/2|
+f/2x4x3/2| \
+x2 x/2d'/2d'/2d'/2 d'/2=c'/2=c'/2=c'/2| \
+b/2x2b/2b/2b/2 ^c'/2d'/2d'/2d'/2| \
+g/2g/2g/2g/2 f/2f/2f/2f/2 e/2e/2e/2e/2|
+f2 f3f| \
+fe2<e2e| \
+ed2<=c2=c| \
+=cB ^cA Bc|
+d2 d3d| \
+c2 c3c| \
+=cd d=c BA| \
+GF E4|
+F2 F3F| \
+F2 F3F| \
+G2 G3G| \
+GF ED E2|
+D2 D3D| \
+=C2 =C3=C| \
+B,2 ^C3C| \
+D2 A,2 x2|
+x6| \
+x6| \
+x6| \
+x6|
+D2 D3D| \
+A2 D3D| \
+x2 d3d| \
+d2 c3c|
+% arpeggio
+d2 A2 A2| \
+B2 B2 B2| \
+B2 c2 c2| \
+d2 d2 c2|
+d2 AB =c2| \
+B2 B^c d2| \
+d2 c2 c2| \
+xd2<c2d|
+K:F % 1 flats
+% D minor
+d2 B3B| \
+B3/2e/2 B/2G/2A/2E/2 CA| \
+A3/2d/2 A/2_G/2=G/2D/2 B,G| \
+G3/2e/2 _d/2A/2B/2G/2 _DA|
+F3/2=D/2 F/2A/2d/2_d/2 =d/2e/2f/2A/2| \
+B3/2x4x/2| \
+_e3/2_d/2 =d/2A/2B/2_G/2 =G/2D/2_E/2G/2| \
+_d=d d3/2=B/2 _d/2=e/2g/2A/2|
+=D/2A/2_d/2g/2 f/2x/2_d/2x/2 =D/2x/2_d/2x/2| \
+E/2G/2_d/2a/2 g/2x/2_d/2x/2 E/2x/2_d/2x/2| \
+F/2A/2_d/2_b/2 a/2x/2_d/2x/2 F/2x/2_d/2x/2| \
+G/2B/2=d/2b/2 e/2x/2_d/2x/2 A/2x/2_d/2e/2|
+f/2=d/2A/2G/2 F/2A/2D/2C/2 =B,/2G/2d/2f/2| \
+e/2c/2G/2F/2 E/2G/2C/2_B,/2 A,/2F/2c/2_e/2| \
+d/2B/2F/2_E/2 D/2F/2B,/2A,/2 G,/2_D/2=E/2B/2| \
+A/2F/2=D/2B/2 G/2E/2_D/2E/2 A,/2G/2F/2E/2|
+=D/2A/2=B/2_d/2 =d/2f/2g/2a/2 _b/2>G/2[F/2E/2][G/2F/2]| \
+C/2G/2A/2B/2 c/2e/2f/2g/2 a/2>F/2[E/2D/2][F/2E/2]| \
+B,/2>d'/2[c'/2b/2][d'/2c'/2] g/2>b/2[a/2g/2][b/2a/2] e/2>g/2[f/2e/2][g/2f/2]| \
+_d/2>e/2[=d/2_d/2][e/2=d/2] [_d/2G/2] (3B/2A/2G/2[B/2A/2] [G/2E/2][=D/2_D/2][E/2=D/2][G/2F/2]|
+[E/2D/2]x/2A/2x/2 B/2x/2A/2x/2 G/2x/2F/2x/2| \
+C/2x/2B/2x/2 A/2x/2G/2x/2 F/2x/2E/2x/2| \
+B,/2x/2A/2x/2 G/2x/2F/2x/2 E/2x/2D/2x/2| \
+A,/2x/2F/2x/2 G/2x/2B/2x/2 A/2x/2G/2x/2|
+D/2x/2A/2x/2 _A/2x/2G/2x/2 _G/2x/2F/2x/2| \
+C/2x/2=G/2x/2 _G/2x/2F/2x/2 E/2x/2_E/2x/2| \
+B,/2x/2=E/2x/2 F/2x/2_G/2x/2 =G/2x/2_A/2x/2| \
+=A/2x/2A/2x/2 A/2x/2A/2x/2 =B/2x/2_d/2x/2|
+=d/2x/2c/2x/2 _B/2x/2B/2x/2 B/2x/2B/2x/2| \
+B/2x/2B/2x/2 A/2x/2A/2x/2 A/2x/2A/2x/2| \
+A/2x/2A/2x/2 G/2x/2G/2x/2 G/2x/2G/2x/2| \
+G/2x/2E/2x/2 A/2x/2G/2x/2 F/2x/2E/2x/2|
+x6| \
+x6| \
+x6| \
+ (3E/2_d/2b/2 (3F/2=d/2a/2  (3G/2e/2g/2 (3_A/2d/2f/2  (3=A/2d/2e/2A/2[e/2_d/2]|
+x6| \
+x6| \
+x6| \
+x6|
+x2 A3A| \
+B2 A4| \
+A2 F4| \
+G2 F2 G/2F/2E/2F/2|
+G/2E/2F/2=D/2 x4| \
+x6| \
+_D/2E/2G/2B/2 A/2G/2e/2G/2 F2-| \
+FE2<E2=D|
+D6|
+V:2
+% --------------------------------------
+%%MIDI program 40
+x2 
+% Chaconne
+% from Partita No.2 for solo Violin BWV 1004
+% J.S. Bach 
+F4| \
+G2 G4| \
+F2 F4| \
+G2 F2 x2|
+x2 F4| \
+G2 G4| \
+F2 x4| \
+E2 E3/2x2x/2|
+D3/2E<FG/2 [B/2-A/2]BA/2| \
+G3/2F<GB<AG/2| \
+F3/2E/2 F3/2x2G,/2| \
+A,x4x/2A,/2|
+D3/2E<FG/2 [B/2-A/2]BA/2| \
+G3/2F<GB<AG/2| \
+F3/2x/2 B,x2x/2B,/2| \
+A,3/2G,/2 A,4|
+Dx4x/2d/2| \
+_d2 c2 x3/2c/2| \
+=B2 _B2 x2| \
+x6|
+x4 x3/2=d/2| \
+_d2 c2 x3/2c/2| \
+=B2 _B2 x3/2_A/2| \
+=A2 A2 x2|
+x6| \
+x6| \
+x6| \
+xG, A,x3|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+fx2f gx| \
+ex2e fx| \
+=dx2d ex| \
+Ad d/2_d/2=d/2=B/2 _dx|
+fx =dx3| \
+ex cx3| \
+dx _Bx3| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+% arpeggio
+D6| \
+D4 E2| \
+D4 D2| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+D4 _D2| \
+=D2 A,4|
+D2 D2 D2| \
+G,4 A,2| \
+B,4 B,2| \
+A,2 A,4|
+D2 D4| \
+D2 D2 E2| \
+F2 _G2 =G2| \
+_A2 =A4|
+D2 B2 A2| \
+_A2 =A2 G2| \
+_G2 =G2 F2| \
+E2 F2 E2|
+D2 A2 G2| \
+G2 G2 F2| \
+F2 G2 F2| \
+E2 E4|
+D (3f/2e/2d/2 [e/2d/2][d/2c/2][c/2B/2][c/2B/2] [B/2A/2][d/2c/2][f/2e/2]D/2| \
+C (3e/2d/2c/2 [d/2c/2][c/2B/2][B/2A/2][B/2A/2] [A/2G/2][c/2B/2][_e/2d/2]C/2| \
+B, (3d/2c/2B/2 [c/2B/2][B/2A/2][A/2G/2][A/2G/2] [G/2F/2][B/2A/2][d/2c/2]B,/2| \
+ (3A,/2A/2=B/2[d/2_d/2]A,/2>G,/2[=B/2A/2][=d/2_d/2]G,/2>A,/2[=d/2_d/2][_d/2=B/2]G/2|
+F/2=E/2=D/2_D/2 =D/2F/2G/2A/2 _B/2A/2B/2G/2| \
+B2 A4| \
+A2 x4| \
+b2 a2 g2|
+g2 _g2 xf| \
+f2 e2 x_e| \
+_e2 d2 xd| \
+xd2<_d2=d|
+K:D % 2 sharps
+% D Major
+D2 D4| \
+C2 A,4| \
+B,2 G,4| \
+A,2 C4|
+D2 D3D| \
+CB,2<A,2A,| \
+B,A,2<G,2G,| \
+A,2 A,4|
+D2 D3D| \
+E2 E3G| \
+F2 G3G| \
+FD EF GE|
+FE DE FG| \
+AB cA Bc| \
+dc BA GF| \
+ED A4|
+Dx4D| \
+C/2D/2C/2B,/2 A,/2C/2E/2G/2 Fe| \
+dx4x| \
+x6|
+x6| \
+x/2a/2e/2c/2 A/2c/2A/2E/2 C/2E/2D/2C/2| \
+B,/2x4x3/2| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+xa/2a/2 a/2f/2d/2A/2 F/2D/2A,/2D/2| \
+E/2C/2x4x| \
+xa/2a/2 a/2f/2d/2B/2 d/2^g/2b/2^g/2| \
+a/2e/2x4x|
+xA/2A/2 A/2F/2D/2F/2 A/2d/2f/2x/2| \
+xA/2A/2 A/2x3A,/2| \
+B,/2D/2A/2A/2 A/2D/2B,/2D/2 ^G/2B/2d/2E/2| \
+xA/2A/2 A/2x3x/2|
+x/2A,/2A,/2A,/2 A,/2x3x/2| \
+x/2A,/2A,/2A,/2 A,/2x3x/2| \
+x/2A,/2A,/2A,/2 A,/2x3x/2| \
+x/2A,/2A,/2A,/2 A,/2x3x/2|
+x/2D/2D/2D/2 D/2A/2A/2A/2 B/2B/2c/2c/2| \
+d/2x2d/2d/2d/2 e/2e/2f/2f/2| \
+=g/2x2g/2g/2g/2 g/2f/2f/2f/2| \
+f/2e/2e/2e/2 e/2d/2d/2d/2 d/2c/2c/2c/2|
+d2 d3d| \
+d2 dc B^A| \
+B2 B=A GF| \
+G2 xG FE|
+DF BA GF| \
+GE AG FE| \
+FD Gx3| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x2 f3f| \
+f2 f3f| \
+f2 e3e| \
+ed2<d2c|
+d2 d3d| \
+d2 d3d| \
+d2 e3e| \
+ef e4|
+f2 f3f| \
+e2 f3f| \
+gd2<e2e| \
+ef gb ag|
+% arpeggio
+f2 f2 f2| \
+f2 f2 f2| \
+e2 a2 x2| \
+b2 ef g2|
+g2 f2 f2| \
+f2 e2 e2| \
+e2 e2 e2| \
+db x4|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+K:F % 1 flats
+% D minor
+f3/2D/2 G/2B/2_e/2d/2 _e/2c/2F/2A,/2| \
+B,3/2x4x/2| \
+A,G, A,3/2x2x/2|
+x2 x/2d/2x/2d/2 x/2d/2x/2d/2| \
+x2 x/2d/2x/2d/2 x/2d/2x/2d/2| \
+x2 x/2d/2x/2d/2 x/2d/2x/2d/2| \
+x2 x/2d/2x/2d/2 x/2d/2x|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x/2A/2x/2A/2 x/2A/2x/2A/2 x/2A/2x/2A/2| \
+x/2A/2x/2A/2 x/2A/2x/2A/2 x/2A/2x/2A/2| \
+x/2A/2x/2A/2 x/2A/2x/2A/2 x/2A/2x/2A/2| \
+x/2A/2x/2A/2 x/2A/2x/2A/2 x/2A/2x/2A/2|
+x/2A/2x/2A/2 x/2A/2x/2A/2 x/2A/2x/2A/2| \
+x/2A/2x/2A/2 x/2A/2x/2A/2 x/2A/2x/2A/2| \
+x/2A/2x/2A/2 x/2A/2x/2A/2 x/2A/2x/2A/2| \
+x/2A/2x/2A/2 x/2A/2x/2A/2 x/2A/2x/2A/2|
+x/2A/2x/2A/2 x/2A/2x/2A/2 x/2A/2x/2A/2| \
+x/2A/2x/2A/2 x/2A/2x/2A/2 x/2A/2x/2A/2| \
+x/2A/2x/2A/2 x/2A/2x/2A/2 x/2A/2x/2A/2| \
+x/2A/2x/2A/2 x/2A/2x/2A/2 x/2A/2x/2A/2|
+F/2A/2x4x| \
+x6| \
+x (3B,/2D/2F/2  (3D/2F/2B/2 (3F/2B/2d/2  (3G/2B/2_e/2_E/2[g/2B/2]| \
+x6|
+x6| \
+x6| \
+ (3B,/2f/2_e/2 (3d/2d/2c/2  (3B/2B/2A/2 (3G/2G/2F/2  (3=E/2E/2D/2 (3_D/2_D/2=B,/2| \
+A,/2>=B,/2[=D/2_D/2][F/2E/2] [A/2G/2][_d/2=B/2][e/2=d/2][g/2f/2] [f/2e/2][d/2_d/2][=B/2A/2][G/2F/2]|
+[E/2=D/2-]D/2x4x| \
+e2 e3e| \
+f2 d3c| \
+_B2 A2 x2|
+x2 B2 A2| \
+d2 c2 B2|
+V:3
+% Johann Sebastian Bach  (1685-1750)
+%%MIDI program 40
+x6| \
+% Chaconne
+% from Partita No.2 for solo Violin BWV 1004
+% J.S. Bach 
+B2 A4| \
+A2 x4| \
+x6|
+x6| \
+B2 A4| \
+A2 F4| \
+d2 _d3/2x2x/2|
+=d3/2x4x/2| \
+Dx _Dx3| \
+=Dx B,x3| \
+dx _dx2x/2_d/2|
+=dx4x| \
+Bx Ax3| \
+Ax4x| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x4 x3/2d/2| \
+d2 e2 x2|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x2 A,x3|
+x6| \
+x6| \
+x6| \
+x6|
+D/2x4x3/2| \
+C/2x4x3/2| \
+B,/2x4x3/2| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+% arpeggio
+F6| \
+E4 _d2| \
+=D4 A2| \
+G,4 A,2|
+D2 A,2 B,2| \
+C2 B,2 A,2| \
+B,2 A,2 G,2| \
+A,6|
+D6| \
+D6| \
+D2 E2 F2| \
+G2 A4|
+D6| \
+D6| \
+g2 f2 e2| \
+f2 _d4|
+=d2 f2 c2| \
+B4 x2| \
+x2 d2 d2| \
+d2 _d4|
+A2 =d2 c2| \
+B2 =B2 d2| \
+c2 _e2 d2| \
+f2 =e4|
+f6| \
+e6| \
+d6| \
+_d2 =d2 _d2|
+=d2 c2 d2| \
+c2 x4| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+G2 G4| \
+F2 F4| \
+G2 F2 E2|
+A2 A2 x2| \
+G2 G2 x2| \
+F2 F2 x2| \
+x2 E4|
+x6| \
+x6| \
+x6| \
+x4 x
+K:D % 2 sharps
+% D Major
+A|
+x2 BA GF| \
+E2 F/2G/2A/2G/2 FE| \
+D2 EG/2F/2 ED| \
+GF E3x|
+x6| \
+C2 A,3A,| \
+B,2 G,3G,| \
+A,2 A,3A,|
+Dx f3f| \
+e2 a3g| \
+fe gf ba| \
+gf e4|
+x4 x^G| \
+Ax4^A,| \
+B,/2C/2D/2B,/2 =G,/2B,/2D/2F/2 Ed| \
+c/2B/2=A/2B/2 c/2e/2g/2b/2 a/2g/2f/2e/2|
+f/2a/2f/2d/2 A/2d/2A/2F/2 D/2F/2E/2D/2| \
+C/2x4x3/2| \
+x/2^g/2d/2B/2 ^G/2B/2^G/2E/2 B,/2D/2C/2B,/2| \
+A,/2B,/2C/2D/2 E/2C/2A,/2C/2 E/2=G/2F/2E/2|
+F/2D/2A,/2D/2 F/2D/2A/2F/2 d/2A/2f/2d/2| \
+a/2e/2c/2e/2 a/2e/2c'/2a/2 e'/2c'/2f'/2c'/2| \
+d'/2f'/2d'/2b/2 f/2b/2d/2f/2 B/2d/2c/2B/2| \
+c/2e/2c/2A/2 E/2A/2C/2E/2 A,/2C/2E/2G/2|
+F/2D/2x4x| \
+xa/2a/2 a/2e/2c/2A/2 E/2C/2A,/2C/2| \
+D/2B,/2x4x| \
+xa/2a/2 a/2c/2e/2e/2 e/2A/2c/2G/2|
+F/2D/2A/2A/2 A/2x3B,/2| \
+C/2E/2A/2A/2 A/2E/2C/2E/2 A/2c/2e/2x/2| \
+xA/2A/2 A/2x3x/2| \
+A,/2E/2A/2A/2 A/2E/2A/2c/2 e/2c/2A/2G/2|
+F/2x4x3/2| \
+x6| \
+x3x/2B/2 B/2d/2d/2d/2| \
+c/2x4x3/2|
+x/2D/2D/2D/2 D/2x3x/2| \
+x/2D/2D/2D/2 D/2x3x/2| \
+x/2D/2D/2D/2 D/2x3x/2| \
+x6|
+x6| \
+x6| \
+x6| \
+x3b ag|
+f2 f3f| \
+e2 e3e| \
+af ba gf| \
+ed2<c2d|
+d2 A3A| \
+A2 A3A| \
+B2 B3B| \
+cd2<d2c|
+d2 d3d| \
+D2 D3D| \
+d2 A3A| \
+A2 x4|
+x2 f3f| \
+g2 a3a| \
+b2 b3b| \
+c'd' d'2 c'2|
+d'2 d'3d'| \
+c'2 =c'3=c'| \
+b2 x4| \
+x2 A,3A,|
+x2 
+% arpeggio
+D2 ^C2| \
+B,2 B,2 A,2| \
+G,2 G,2 G,2| \
+^G,2 A,2 A,2|
+D2 D2 D2| \
+=G,2 G,2 ^G,2| \
+A,2 A,2 ^A,2| \
+B,=G, =A,4|
+K:F % 1 flats
+% D minor
+D2 D4| \
+E3/2x3x/2E| \
+D3/2x4x/2| \
+x4 xE|
+D3/2x4x/2| \
+D3/2x4x/2| \
+F3/2x4x/2| \
+GF E3/2x2x/2|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+F/2x4x3/2| \
+E/2x4x3/2| \
+D/2x4x3/2| \
+E/2x4x3/2|
+F/2x4x3/2| \
+E/2x4x3/2| \
+D/2x4x3/2| \
+A,/2x/2=B,/2x/2 C/2x/2_D/2x/2 =D/2x/2E/2x/2|
+F/2x/2D/2x/2 G/2x/2F/2x/2 E/2x/2D/2x/2| \
+E/2x/2C/2x/2 F/2x/2E/2x/2 D/2x/2C/2x/2| \
+D/2x/2=B,/2x/2 E/2x/2D/2x/2 _D/2x/2=B,/2x/2| \
+_D/2x/2_D/2x/2 _D/2x/2A,/2x/2 =B,/2x/2_D/2x/2|
+=D/2x4x3/2| \
+x (3C/2E/2G/2  (3E/2G/2c/2 (3G/2c/2e/2  (3A/2c/2f/2 (3F/2c/2a/2| \
+D/2[a/2_B/2]x4x| \
+x6|
+x6| \
+ (3C/2g/2f/2 (3e/2e/2d/2  (3c/2c/2B/2 (3A/2A/2G/2  (3F/2A/2B/2c/2[_e/2d/2]| \
+x6| \
+x6|
+x2 F4| \
+D2 _D4| \
+=D2 B,4| \
+G,2 A,2 _D2|
+=Dx D2 C2| \
+B,2 A,2 G,2|
+V:4
+% Six Sonatas and Partitas for Solo Violin
+%%MIDI program 40
+x2 
+% Chaconne
+% from Partita No.2 for solo Violin BWV 1004
+% J.S. Bach 
+D4| \
+D2 _D4| \
+=D2 B,4| \
+G,2 A,2 _D2|
+=Dx D4| \
+D2 _D4| \
+=D2 B,4| \
+G,2 A,3/2x2x/2|
+x6| \
+=ex ex3| \
+fx d3/2f<ed/2| \
+x4 x3/2a/2|
+fx4x| \
+ex ex3| \
+ex d3/2f<e_d/2| \
+=d3/2e/2 d2 _d3/2=d/2|
+d3/2e<fg/2 [b/2-a/2]bf/2| \
+e3/2b<ag<a_g/2| \
+=g3/2f<ed/2 [d/2-_d/2]=de/2| \
+f3/2g<ef<ge/2|
+f3/2x4x/2| \
+x6| \
+x6| \
+x4 x3/2A,/2|
+Dx4x| \
+Dx4x| \
+Dx4x| \
+x6|
+D/2x4x3/2| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+% arpeggio
+BA GF EE|
+F6| \
+_G6| \
+=G2 F2 E2| \
+F2 E2 G2|
+F6| \
+_G6| \
+=G2 _d2 =d2| \
+d2 e4|
+f6| \
+_g6| \
+x4 A2| \
+A2 x4|
+x4 A2| \
+=G4 F2| \
+F4 G2| \
+A2 E4|
+x2 A2 x2| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x2 A,2 =B,2| \
+C2 G,2 A,2| \
+_B,2 B,2 A,2| \
+_A,2 =A,4|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+D2 _D4| \
+=D2 B,4| \
+G,2 A,2 A,2|
+D2 D2 Cx| \
+=B,2 C2 _B,x| \
+A,2 B,2 A,x| \
+_A,x =A,4|
+x6| \
+x6| \
+x6| \
+x6|
+K:D % 2 sharps
+% D Major
+F2 F3x| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x2 B3x| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x4 xB| \
+cx4c| \
+x4 x^G,| \
+A,/2x4x3/2|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x3x/2d/2 d/2A/2A/2d/2| \
+c/2x3c/2 c/2A/2A/2c/2| \
+^G/2x4x3/2| \
+x2 x/2A/2A/2A/2 B/2B/2c/2c/2|
+d/2x2A/2A/2A/2 A/2=G/2G/2G/2| \
+F/2D/2D/2D/2 D/2x3x/2| \
+x/2D/2D/2D/2 D/2x3x/2| \
+x2 x/2F/2F/2F/2 G/2A/2A/2A/2|
+D2 x4| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x2 G,x3| \
+x2 A,4|
+A,2 D3D| \
+=C2 =C4| \
+B,2 E4| \
+A,2 x4|
+x2 A3A| \
+A2 A3A| \
+G2 G3G| \
+F2 EF G2|
+FE2<D2D| \
+E2 F3F| \
+G2 ^G3^G| \
+A2 A4|
+x6| \
+x6| \
+=G2 ^G3^G| \
+A2 E3E|
+% arpeggio
+D2 D2 D2| \
+D2 D2 D2| \
+D2 E2 E2| \
+E2 E2 E2|
+D2 D2 D2| \
+D2 E2 E2| \
+E2 EF =G2| \
+FE E4|
+x2 
+K:F % 1 flats
+% D minor
+F4| \
+C3/2x3x/2C| \
+B,3/2x3x/2B,| \
+A,3/2x3x/2_D|
+x6| \
+G,3/2x4x/2| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x (3=D/2F/2A/2  (3F/2A/2d/2 (3A/2d/2f/2  (3B/2d/2g/2 (3G/2d/2b/2| \
+E/2[b/2c/2]x4x| \
+x6| \
+x6|
+ (3D/2a/2g/2 (3f/2f/2e/2  (3d/2d/2c/2 (3B/2B/2A/2  (3G/2B/2c/2d/2[f/2e/2]| \
+x6| \
+x6| \
+x6|
+x2 D4| \
+G2 G4| \
+F2 x4| \
+x6|
+x2 F2 _G2| \
+=G2 _G2 =G2| \
+x4 D2| \
+G,2 A,4|
+D6|
+V:5
+% --------------------------------------
+%%MIDI program 40
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+% Chaconne
+% from Partita No.2 for solo Violin BWV 1004
+% J.S. Bach 
+% arpeggio
+ (3F/2D/2a/2[F/2D/2][a/2D/2] [F/2D/2][a/2D/2][F/2D/2][a/2D/2] [F/2D/2][a/2D/2][F/2D/2][a/2D/2]| \
+[E/2D/2][g/2D/2][E/2D/2][g/2D/2] [E/2D/2][g/2D/2][E/2D/2][g/2D/2] [E/2D/2][g/2_d/2][_d/2E/2][g/2_d/2]| \
+[_d/2=D/2][f/2D/2][D/2D/2][f/2D/2] [D/2D/2][f/2D/2][D/2D/2][f/2D/2] [D/2D/2][f/2A/2][A/2D/2][f/2A/2]| \
+[A/2G,/2][e/2B/2][B/2G,/2][f/2A/2] [A/2G,/2][e/2G/2][G/2G,/2][d/2F/2] [F/2A,/2][d/2E/2][E/2A,/2][_d/2E/2]|
+[E/2=D/2][d/2F/2][F/2D/2][d/2F/2] [F/2A,/2][d/2F/2][F/2A,/2][d/2F/2] [F/2B,/2][d/2F/2][F/2B,/2][d/2F/2]| \
+[F/2C/2][_e/2_G/2][_G/2C/2][_e/2_G/2] [_G/2B,/2][_e/2_G/2][_G/2B,/2][_e/2_G/2] [_G/2A,/2][_e/2_G/2][_G/2A,/2][_e/2_G/2]| \
+[_G/2B,/2][d/2=G/2][G/2B,/2][d/2G/2] [G/2A,/2][d/2F/2][F/2A,/2][d/2F/2] [F/2G,/2][d/2=E/2][E/2G,/2][d/2E/2]| \
+[E/2A,/2][d/2F/2][F/2A,/2][d/2F/2] [F/2A,/2][d/2E/2][E/2A,/2][d/2E/2] [E/2A,/2][_d/2G/2][G/2A,/2][_d/2G/2]|
+[G/2=D/2][d/2F/2][F/2D/2][d/2F/2] [F/2D/2][A/2F/2][F/2D/2][A/2F/2] [F/2D/2][B/2F/2][F/2D/2][B/2F/2]| \
+[F/2D/2][c/2_G/2][_G/2D/2][c/2_G/2] [_G/2D/2][B/2_G/2][_G/2D/2][B/2_G/2] [_G/2D/2][A/2_G/2][_G/2D/2][A/2_G/2]| \
+[_G/2D/2][B/2=G/2][G/2D/2][B/2G/2] [G/2E/2][b/2_d/2][_d/2E/2][b/2_d/2] [_d/2F/2][a/2=d/2][d/2F/2][a/2d/2]| \
+[d/2G/2][g/2d/2][d/2G/2][f/2d/2] [d/2A/2][e/2d/2][d/2A/2][e/2d/2] [d/2A/2][e/2_d/2][_d/2A/2][e/2_d/2]|
+[_d/2=D/2][f/2d/2][d/2D/2][f/2d/2] d/2x/2x/2x/2 x/2x/2x/2x/2| \
+x/2x/2x/2x/2 x/2x/2x/2x/2 x/2x/2x/2x/2| \
+x/2x/2x/2x/2 x/2x/2x/2x/2 x/2x/2x/2x/2| \
+x/2x/2x/2x/2 x/2x/2x/2x/2 x/2x/2x/2x/2|
+x/2x/2x/2x/2 x/2x/2x/2x/2 x/2x/2x/2x/2| \
+x/2x/2x/2x/2 x/2x/2x/2x/2 x/2x/2x/2x/2| \
+x/2x/2x/2x/2 x/2x/2x/2x/2 x/2x/2x/2x/2| \
+x/2x/2x/2x/2 x/2x/2x/2x/2 x/2x/2x/2x/2|
+x/2x/2x/2x/2 x/2x/2x/2x/2 x/2x/2x/2x/2| \
+x/2x/2x/2x/2 x/2x/2x/2x/2 x/2x/2x/2x/2| \
+x/2x/2x/2x/2 x/2x/2x/2x/2 x/2x/2x/2x/2| \
+x/2x/2x/2x/2 x/2x/2x/2x/2 x/2x/2x/2x/2|
+x/2x/2x/2x/2 x/2x/2x/2x/2 x/2x/2x/2x/2| \
+x/2x/2x/2x/2 x/2x/2x/2x/2 x/2x/2x/2x/2| \
+x/2x/2x/2x/2 x/2x/2x/2x/2 x/2x/2x/2x/2| \
+x/2x/2x/2x/2 x/2x/2x/2x/2 x/2x/2x/2x/2|
+x/2x/2x/2x/2 x/2x/2x/2x/2 x/2x/2x/2x/2| \
+x/2x/2x/2x/2 x/2x/2x/2x/2 x/2x/2x/2x/2| \
+x/2x/2x/2x/2 x/2x/2x/2x/2 x/2x/2x/2x/2| \
+x/2x/2x/2x/2 x/2x/2x/2x/2 x/2x/2x/2x/2|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+K:D % 2 sharps
+% D Major
+% arpeggio
+D/2[f/2d/2][f/2d/2]D/2 [D/2D/2][f/2A/2][f/2A/2][D/2D/2] [D/2C/2][f/2A/2][f/2A/2][D/2C/2]| \
+[D/2B,/2][f/2B/2][f/2B/2][D/2B,/2] [D/2B,/2][f/2B/2][f/2B/2][D/2B,/2] [D/2A,/2][f/2B/2][f/2B/2][D/2A,/2]| \
+[D/2G,/2][e/2B/2][e/2B/2][D/2G,/2] [E/2G,/2][a/2c/2][a/2c/2][E/2G,/2] [E/2G,/2][c/2E/2][c/2E/2][E/2G,/2]| \
+[E/2^G,/2][b/2d/2][b/2d/2][E/2^G,/2] [E/2A,/2][e/2d/2][f/2d/2][E/2A,/2] [E/2A,/2][=g/2c/2][g/2c/2][E/2A,/2]|
+[D/2D/2][g/2d/2][g/2d/2][D/2D/2] [A/2D/2][f/2A/2][B/2D/2][f/2B/2] [=c/2D/2][f/2=c/2][f/2=c/2][=c/2D/2]| \
+[D/2G,/2][f/2B/2][f/2B/2][D/2G,/2] [E/2G,/2][e/2B/2][E/2G,/2][e/2^c/2] [E/2^G,/2][e/2d/2][e/2d/2][E/2^G,/2]| \
+[E/2A,/2][e/2d/2][e/2d/2][E/2A,/2] [E/2A,/2][e/2c/2][F/2A,/2][e/2c/2] [=G/2^A,/2][e/2c/2][e/2c/2][G/2^A,/2]|
+% Partita No. 2 in D minor - BWV 1004
+% 5th Movement: Chaconne
+% --------------------------------------
+% Sequenced with Cakewalk Pro Audio by
+% David J. Grossman - dave@unpronounceable.com
+% This and other Bach MIDI files can be found at:
+% Dave's J.S. Bach Page
+% http://www.unpronounceable.com/bach
+% --------------------------------------
+% Original Filename: vp2-5cha.mid
+% Last Modified: February 22, 1997

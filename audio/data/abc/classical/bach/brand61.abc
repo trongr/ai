@@ -1,0 +1,287 @@
+X: 1
+T: from bach/brand61.mid
+M: 4/4
+L: 1/8
+Q:1/4=110
+K:Bb % 2 flats
+% Bach's Brandenburg Concerto No. 6, 1st mov't
+V:1
+%%MIDI program 41
+% Viola I da braccio
+x8| \
+% Bach's Brandenburg Concerto No. 6, 1st mov't
+B/2A<BF/2D/2B,/2 F/2E<FD/2B,/2F,/2| \
+B,/2A,<B,F,<DB,<FD/2B-| \
+B/2F/2d/2A/2 B/2F/2D/2A,/2 B,/2F,/2D,/2F,/2 B,/2A,/2D/2C/2|
+F/2E/2D/2C/2 B,/2F/2B/2A/2 d/2c/2f/2e/2 d/2c/2B/2_A/2| \
+G/2B/2e/2d/2 c/2B/2=A/2G/2 F/2=E<FC/2A,/2F,/2| \
+C/2B,<CA,/2F,/2C,/2 F,/2=E,<F,C,/2A,-| \
+A,/2F,<CA,<FC/2A/2F/2 c/2A/2F/2C/2|
+A/2F/2C/2A,/2 F/2C/2A,/2F,/2 B,/2A,<B,F,/2D-| \
+D/2B,<FD<B_A/2G/2F/2 _E/2d/2c/2B/2| \
+=A/2c<eA/2c/2F/2 A/2C<EA,/2C/2F,/2| \
+A,/2C,<E,F,/2A,/2F,/2 C/2A,/2F/2C/2 A/2F/2c/2E/2|
+D/2F<Bd/2f/2B/2 d/2F<BD/2F/2B,/2| \
+D/2F,<B,F,/2D,/2F,/2 B,/2F,/2D/2B,/2 F/2D/2B/2G/2| \
+=E/2G<B=E/2G/2C/2 =E/2G,<B,=E,/2G,/2C,/2| \
+=E,/2G,<B,G,<=EC<G=E/2B-|
+B/2G/2A/2F/2 c/2A/2_e/2c/2 f/2A/2B/2E/2 D/2B/2C/2A/2| \
+B2 xF BB/2A/2 BB/2A/2| \
+B/2F/2D/2E/2 F/2D/2B,/2C/2 D/2F/2D/2C/2 D/2F/2D/2C/2| \
+DB,/2C/2 DD/2E/2 F/2d/2B/2A/2 B/2d/2B/2A/2|
+B/2F/2G/2A/2 B/2A/2B/2c/2 d/2f/2d/2c/2 d/2f/2d/2c/2| \
+dB xf g/2f/2e/2f/2 g/2f/2e/2d/2| \
+c/2B/2A/2B/2 c/2e/2d/2e/2 f/2e/2d/2e/2 f/2e/2d/2c/2| \
+B/2_A/2G/2_A/2 B/2d/2c/2d/2 e2- e/2c/2B/2c/2|
+d2- d/2B/2=A/2B<cd/2>B/2[B/2A/2][A/2G/2]F/2| \
+F/2=E<FC/2A,/2F,/2 C/2B,<CA,/2F,/2C,/2| \
+F,/2=E,<F,C,<A,F,<CA,/2_E-| \
+E/2C/2D/2B,/2 F/2D<_AF/2G/2E/2 B/2G/2_d-|
+_d/2c/2=d/2B/2 F/2B/2c/2=A/2 BB/2A/2 BB/2A/2| \
+B/2F/2D/2E/2 F/2D/2B,/2C/2 D/2F/2D/2C/2 D/2F/2D/2C/2| \
+DB,/2C/2 DD/2E/2 F/2d/2B/2A/2 B/2d/2B/2A/2| \
+G2 xG/2x/2 c/2e/2c/2B/2 c/2e/2c/2B/2|
+A2 xc ff/2=e/2 ff/2=e/2| \
+f/2c/2A/2B/2 c/2A/2F/2G/2 A/2c/2A/2G/2 A/2c/2A/2G/2| \
+AF,/2G,/2 A,A,/2B,/2 C/2A/2F/2=E/2 F/2A/2F/2=E/2| \
+F/2C/2D/2=E/2 F/2=E/2F/2G/2 A/2c/2A/2G/2 A/2c/2A/2G/2|
+AF xc d/2c/2B/2c/2 d/2c/2B/2A/2| \
+G/2F/2=E/2F/2 G/2B/2A/2B/2 c/2B/2A/2B/2 c/2B/2A/2G/2| \
+F/2=E/2D/2=E/2 F/2A/2G/2A/2 B2- B/2G/2F/2G/2| \
+A2- A/2B/2A/2B/2 c/2=E/2F/2G<=EF/2|
+F2 xF _ee/2d/2 ee/2d/2| \
+e/2c/2A/2B/2 c/2A/2F/2G/2 A/2F/2C/2D/2 E/2C/2A,/2C/2| \
+DB, xD cc/2B/2 cc/2B/2| \
+c/2A/2_G/2=G/2 A/2_G/2D/2=E/2 _G/2D/2A,/2B,/2 C/2A,/2_G,/2A,/2|
+B,=G, xG ff/2_e/2 ff/2e/2| \
+f/2d/2=B/2c/2 d/2=B/2G/2A/2 =B/2G/2D/2E/2 F/2D/2=B,/2D/2| \
+E/2G<cG/2E/2C/2 G/2F<GE/2C/2G,/2| \
+C/2=B,<CG,<EC<GE/2c-|
+c/2G/2e/2=B/2 c/2G/2E/2=B,/2 C/2G,/2E,/2G,/2 C/2=B,/2E/2D/2| \
+G/2F/2E/2G/2 c/2_B/2_A/2G/2 F/2E/2_A/2G/2 F/2E/2D/2C/2| \
+=B,/2D<F=B/2d/2G/2 =B/2D<F=B,/2D/2G,/2| \
+=B,/2D,<F,G,/2=B,/2G,/2 D/2=B,/2G/2D/2 =B/2G/2d/2=B/2|
+e/2=B/2c/2d/2>c/2[c/2=B/2][c/2=B/2][c/2=B/2] c2 xC| \
+_BB/2=A/2 BB/2A/2 B/2G/2=E/2F/2 G/2=E/2C/2D/2| \
+=E/2C/2G,/2A,/2 B,/2G,/2=E,/2G,/2 A,F, xA,| \
+GG/2F/2 GG/2F/2 G/2=E/2_D/2=D/2 =E/2_D/2A,/2=B,/2|
+_D/2A,/2=E,/2F,/2 G,/2=E,/2_D,/2=E,/2 F,=D, xA,| \
+DD/2_D/2 =DD/2_D/2 =D/2A,/2F,/2G,/2 A,/2F,/2D,/2=E,/2| \
+F,/2A,/2F,/2=E,/2 F,/2A,/2F,/2=E,/2 F,D,/2=E,/2 F,F,/2G,/2| \
+A,/2F/2D/2_D/2 =D/2F/2D/2_D/2 =D/2A,/2=B,/2_D/2 =D/2_D/2=D/2=E/2|
+F/2A/2F/2=E/2 F/2A/2F/2=E/2 FD/2=E/2 FF/2G/2| \
+A/2f/2d/2_d/2 =d/2f/2d/2_d/2 =dD x2| \
+x3_B c/2B/2A/2B/2 c/2B/2A/2G/2| \
+F/2_E/2D/2C/2 B,d e/2d/2c/2d/2 e/2d/2c/2B/2|
+A/2G/2_G/2=E/2 D_G =G/2F/2_E/2D/2 C/2B,/2A,/2G,/2| \
+_G,=G,/2A,/2 D,_G =GG/2_G/2 =GG/2_G/2| \
+=G/2D/2B,/2C/2 D/2B,/2G,/2A,/2 B,/2D/2B,/2A,/2 B,/2D/2B,/2A,/2| \
+B,G,/2A,/2 B,B,/2C/2 D/2B/2G/2_G/2 =G/2B/2G/2F/2|
+=E2 x=E A/2c/2A/2G/2 A/2c/2A/2G/2| \
+_G2 xA d/2c/2B/2c/2 d/2c/2B/2A/2| \
+=G/2_G/2=E/2_G/2 =G/2B/2A/2B/2 c/2B/2A/2B/2 c/2B/2A/2G/2| \
+_G/2=E/2D/2=E/2 _G/2A/2=G/2A/2 B/2A/2G/2A/2 B/2A/2G/2F/2|
+_E/2G/2_G/2=G/2 A2- A/2D/2G/2A/2>G/2[G/2_G/2][=G/2_G/2][=G/2_G/2]| \
+=G/2_G<=GD/2B,/2G,/2 D/2C<DB,/2G,/2D,/2| \
+G,/2_G,<=G,D,<B,G,<DB,/2G-| \
+G/2D/2B/2_G/2 =G/2D/2B,/2_G,/2 =G,/2D,/2B,/2G,/2 D/2=B,/2F-|
+F/2D/2E/2C/2 G/2E<cG/2_A/2E/2 c/2_A/2e-| \
+e/2c/2=A/2_G/2 c/2A/2_G/2D/2 A/2_G/2D/2A,/2 E/2C/2A,/2_G,/2| \
+D,_G/2A<d_G/2 A/2D/2_G/2A,<C_G,/2| \
+A,/2D,/2_G,/2A,/2 C/2E/2D/2C/2 _B,/2B/2A/2=G/2>G/2[G/2_G/2][=G/2_G/2][=G/2_G/2]|
+=G2 xG/2A/2 =B/2d/2=B/2A/2 =B/2d/2=B/2A/2| \
+=B2 x/2d/2=B/2c/2 d/2f/2d/2c/2 d/2c/2=B/2d/2| \
+cG xF/2G/2 A/2c/2A/2G/2 A/2c/2A/2G/2| \
+A2 x/2c/2A/2_B/2 c/2e/2c/2B/2 c/2B/2A/2c/2|
+BB, xB, _A_A/2G/2 _A_A/2G/2| \
+_A/2F/2D/2E/2 F/2D/2B,/2C/2 D/2B,/2F,/2G,/2 _A,/2F,/2D,/2F,/2| \
+G,e/2d<eB/2 G/2E/2B/2_A<BG/2| \
+E/2B,/2E/2D<EB,/2 G,/2E,/2B,/2_A,<B,G,/2|
+E3/2B,<GE<BG<_dB/2| \
+c3/2B/2 _A/2G/2F/2E/2 =D/2F<_AD/2F/2B,/2| \
+D/2F,<_A,D,/2F,/2B,/2 D/2F<_AF/2d/2B/2| \
+e/2G/2_A/2B/2 GF/2E/2 E2 xG|
+ee/2d/2 ee/2d/2 e/2c/2=A/2B/2 c/2A/2F/2G/2| \
+A/2F/2C/2D/2 E/2C/2A,/2C/2 DB, xD| \
+BB/2A/2 BB/2A/2 B/2G/2=E/2F/2 G/2=E/2C/2D/2| \
+=E/2C/2G,/2A,/2 B,/2G,/2=E,/2G,/2 A,F, x2|
+x3d _e/2d/2c/2d/2 e/2d/2c/2B/2| \
+A/2G/2F/2G/2 A/2c/2B/2c/2 d/2c/2B/2c/2 d/2c/2B/2_A/2| \
+G/2F/2E/2F/2 G/2_A/2B/2G/2 c/2B/2=A/2B/2 c/2B/2A/2G/2| \
+F/2A/2G/2A/2 B/2F/2E/2F/2 G2- G/2E/2D/2E/2|
+F2- F/2D/2C/2D/2 E2- E/2C/2B,/2C/2| \
+D/2B,<FD/2C/2B,/2 C/2A,<FE/2D/2C/2| \
+D/2B,<FD/2C/2B,/2 A,/2G,/2F, xF| \
+BB/2A/2 BB/2A/2 B/2F/2D/2E/2 F/2D/2B,/2C/2|
+D/2F/2D/2C/2 D/2F/2D/2C/2 DB,/2C/2 DD/2E/2| \
+F/2d/2B/2A/2 B/2d/2B/2A/2 B/2F/2G/2A/2 B/2A/2B/2c/2| \
+d/2f/2d/2c/2 d/2f/2d/2c/2 dB xf| \
+g/2f/2e/2f/2 g/2f/2e/2d/2 c/2B/2A/2B/2 c/2d/2e/2c/2|
+f/2e/2d/2e/2 f/2e/2d/2c/2 B/2A/2G/2A/2 B/2c/2d/2B/2| \
+e2- e/2c/2B/2c/2 d2- d/2B/2A/2B/2| \
+c/2e/2d/2c/2>d/2[d/2c/2][d/2c/2][c/2B/2] B2 x2| \
+x3B e/2d/2c/2d/2 e/2d/2c/2B/2|
+A/2G/2F/2G/2 A/2B/2c/2A/2 d/2c/2B/2c/2 d/2c/2B/2A/2| \
+G/2B/2A/2B/2 c2- c/2A/2G/2A/2 B2-| \
+B/2A/2B/2c/2>B/2[B/2A/2][B/2A/2][B/2A/2] B/2A<BF/2D/2B,/2| \
+F/2E<FD/2B,/2F,/2 B,/2A,<B,F,/2D-|
+D/2B,<FD<BF/2d/2A/2 B/2F/2D/2A,/2| \
+B,/2F,/2D,/2F,/2 B,/2A,/2D/2C/2 F/2E/2D/2C/2 B,/2F/2B/2A/2| \
+d/2c/2f/2e/2 d/2c/2B/2_A/2 G/2B/2e/2d/2 c/2B/2=A/2G/2| \
+F/2=E<FC/2A,/2F,/2 C/2B,<CA,/2F,/2C,/2|
+F,/2=E,<F,C,<A,F,<CA,/2F-| \
+F/2C/2A/2F/2 c/2A/2F/2C/2 A/2F/2C/2A,/2 F/2C/2A,/2F,/2| \
+B,/2A,<B,F,<DB,<FD/2B-| \
+B/2_A/2G/2F/2 _E/2d/2c/2B/2 =A/2c<eA/2c/2F/2|
+A/2C<EA,/2C/2F,/2 A,/2C,<E,F,/2A,/2F,/2| \
+C/2A,/2F/2C/2 A/2F/2c/2E/2 D/2F<Bd/2f/2B/2| \
+d/2F<BD/2F/2B,/2 D/2F,<B,F,/2D,/2F,/2| \
+B,/2F,/2D/2B,/2 F/2D/2B/2G/2 =E/2G<B=E/2G/2C/2|
+=E/2G,<B,=E,/2G,/2C,/2 =E,/2G,<B,G,/2=E-| \
+=E/2C<G=E<BG/2A/2F/2 c/2A/2_e/2c/2| \
+M: 5/4
+L: 1/8
+f/2A/2B/2E/2 D/2B/2C/2A/2 B4- B3/2
+V:2
+%%MIDI program 41
+% Viola II da braccio
+x8 x
+% Bach's Brandenburg Concerto No. 6, 1st mov't
+B/-1-| \
+B3/2A<BF/2 D/2B,/2F/2E<FD/2| \
+B,/2F,/2B,/2A,<B,F,<DB,<FD/2| \
+B3/2F/2 d/2A/2B/2F/2 D/2A,/2B,/2F,/2 D,/2F,/2B,/2A,/2|
+D/2C/2F/2E/2 D/2C/2B,/2F/2 B/2A/2d/2c/2 f/2e/2d/2c/2| \
+B/2_A/2G/2B/2 e/2d/2c/2B/2 =A/2G/2F/2=E<FC/2| \
+A,/2F,/2C/2B,<CA,/2 F,/2C,/2F,/2=E,<F,C,/2| \
+A,3/2F,<CA,<FC/2 A/2F/2c/2A/2|
+F/2C/2A/2F/2 C/2A,<FC/2D/2A,<B,F,/2| \
+D3/2B,<FD<B_A/2 G/2F/2_E/2D/2| \
+E/2F/2=A/2c<eA/2 c/2F/2A/2C<EA,/2| \
+C/2F,/2A,/2C,<E,F,/2 A,/2F,/2C/2A,/2 F/2C/2A/2F/2|
+B/2F/2D/2F<Bd/2 f/2B/2d/2F<BD/2| \
+F/2B,/2D/2F,<B,F,/2 D,/2F,/2B,/2F,/2 D/2B,/2F/2D/2| \
+B/2G/2=E/2G<B=E/2 G/2C/2=E/2G,<B,=E,/2| \
+G,/2C,/2=E,/2G,<B,G,<=EC<G=E/2|
+F3/2c/2 A/2F/2C/2A,<F,G/2 F/2D/2_E/2C/2| \
+D2 x6| \
+x3F BB/2A/2 BB/2A/2| \
+B/2F/2D/2E/2 F/2D/2B,/2C/2 D/2F/2D/2C/2 D/2F/2D/2C/2|
+DB,/2C/2 DD/2E/2 F/2d/2B/2A/2 B/2d/2B/2A/2| \
+BF x4 xG| \
+A/2G/2F/2G/2 A/2G/2F/2E/2 D/2C/2B,/2C/2 D/2E/2F/2D/2| \
+G/2F/2E/2F/2 G/2F/2E/2D/2 C/2E/2D/2E/2 F2-|
+F/2A/2G/2A/2 B2- B/2G/2A/2F/2>F/2[F/2=E/2][F/2=E/2][F/2=E/2]| \
+FF/2=E<FC/2 A,/2F,/2C/2B,<CA,/2| \
+F,/2C,/2F,/2=E,<F,C,<A,F,<CA,/2| \
+FB/2F/2 D/2B,/2F,/2D,/2 B,_e/2B/2 G/2E/2B,/2G,/2|
+F/2E/2F/2D/2 E/2D/2E/2C/2 DB, x2| \
+x3F BB/2A/2 BB/2A/2| \
+B/2F/2D/2E/2 F/2D/2B,/2C/2 D/2F/2D/2C/2 D/2F/2D/2C/2| \
+B,2 xB,/2x/2 E/2G/2E/2D/2 E/2G/2E/2D/2|
+C2 x6| \
+x3c ff/2=e/2 ff/2=e/2| \
+f/2c/2A/2B/2 c/2A/2F/2G/2 A/2c/2A/2G/2 A/2c/2A/2G/2| \
+AF,/2G,/2 A,A,/2B,/2 C/2A/2F/2=E/2 F/2A/2F/2=E/2|
+FC x4 xD| \
+=E/2D/2C/2D/2 =E/2D/2C/2B,/2 A,/2G,/2F,/2G,/2 A,/2B,/2C/2A,/2| \
+D/2C/2B,/2C/2 D/2C/2B,/2A,/2 G,/2B,/2A,/2B,/2 C2-| \
+C/2=E/2D/2=E/2 F2- F/2B/2A/2B<GF/2|
+FF/2=E/2 FF/2=E/2 FF FF| \
+FF FF FF FF| \
+FD/2C/2 DD/2C/2 DD DD| \
+DD DD DD DD|
+DG/2_G/2 =GG/2_G/2 =GG GG| \
+GG GG GG GG| \
+x_E/2G<cG/2 E/2C/2G/2F<GE/2| \
+C/2G,/2C/2=B,<CG,<EC<GE/2|
+c3/2G/2 e/2=B/2c/2G/2 E/2=B,/2C/2G,/2 E,/2G,/2C/2=B,/2| \
+E/2D/2G/2F/2 E/2G/2c/2_B/2 _A/2G/2F/2E/2 _A/2G/2F/2E/2| \
+D/2C/2=B,/2D<F=B/2 d/2G/2=B/2D<F=B,/2| \
+D/2G,/2=B,/2D,<F,G,/2 =B,/2G,/2D/2=B,/2 G/2D/2=B/2G/2|
+c/2_A/2G/2F/2 ED/2C/2 CC/2=B,/2 CC/2=B,/2| \
+CC CC CC CC| \
+CC CC C=A,/2G,/2 A,A,/2G,/2| \
+A,A, A,A, A,A, A,A,|
+A,A, A,A, A,2 x2| \
+x6 xA,| \
+DD/2_D/2 =DD/2_D/2 =D/2A,/2F,/2G,/2 A,/2F,/2D,/2=E,/2| \
+F,/2A,/2F,/2=E,/2 F,/2A,/2F,/2=E,/2 F,D,/2=E,/2 F,F,/2G,/2|
+A,/2F/2D/2_D/2 =D/2F/2D/2_D/2 =D/2A,/2=B,/2_D/2 =D/2_D/2=D/2=E/2| \
+F/2A/2F/2=E/2 F/2A/2F/2=E/2 FD xA| \
+_B/2A/2G/2A/2 B/2A/2G/2F/2 =E/2D/2C/2B,/2 A,c| \
+d/2c/2B/2c/2 d/2c/2B/2A/2 G/2F/2_E/2D/2 C/2B/2A/2G/2|
+_G/2=E/2D/2=E/2 _G/2=E/2D/2C/2 B,/2A,/2=G,/2F,/2 _E,/2G,/2C-| \
+C/2D/2B,/2C<A,G,/2 G,2 x2| \
+x3D GG/2_G/2 =GG/2_G/2| \
+=G/2D/2B,/2C/2 D/2B,/2G,/2A,/2 B,/2D/2B,/2A,/2 B,/2D/2B,/2A,/2|
+G,2 xG, C/2E/2C/2B,/2 C/2E/2C/2B,/2| \
+A,2 x4 xD| \
+E/2D/2C/2D/2 E/2D/2C/2B,/2 A,/2G,/2_G,/2=G,/2 A,/2B,/2C/2A,/2| \
+D/2C/2B,/2C/2 D/2C/2B,/2A,/2 G,/2A,/2B,/2A,/2 G,/2A,/2B,/2G,/2|
+C2- C/2A,/2G,/2A,/2 B,/2A,/2B,/2C/2>B,/2[B,/2A,/2][B,/2A,/2][A,/2G,/2]| \
+G,G/2_G<=GD/2 B,/2G,/2D/2C<DB,/2| \
+G,/2D,/2G,/2_G,<=G,D,<B,G,<DB,/2| \
+G3/2D/2 B/2_G/2=G/2D/2 B,/2_G,/2=G,/2D,/2 =B,/2G,/2D/2=B,/2|
+Gc/2G/2 E/2C/2G/2E<cG/2 _A/2E/2c/2_A/2| \
+_Ge/2c/2 =A/2_G/2c/2A/2 _G/2D/2A/2_G/2 C/2A,/2C-| \
+C/2_G<AD/2_G/2A,/2 C/2_G,<A,D,/2_G,/2A,/2| \
+C/2_G,/2A,/2C/2 E/2_G/2=G/2A/2 DC/2_B,/2>B,/2[B,/2A,/2][B,/2A,/2][A,/2G,/2]|
+G,2 x=B,/2C/2 D/2F/2D/2C/2 D/2F/2D/2C/2| \
+D2 x/2F/2D/2E/2 F/2_A/2F/2E/2 F/2E/2D/2F/2| \
+EC x=A,/2_B,/2 C/2E/2C/2B,/2 C/2E/2C/2B,/2| \
+C2 x/2E/2C/2D/2 E/2G/2E/2D/2 E/2D/2C/2E/2|
+DD/2C/2 DD/2C/2 DD DD| \
+FF FF FF FF| \
+e/2d<eB/2G/2E/2 B/2_A<BG/2E/2B,/2| \
+E/2D<EB,/2G,/2E,/2 B,/2_A,<B,G,/2E-|
+E/2B,<GE<BG<_dB/2G-| \
+G/2E/2_A/2G/2 c/2B/2_A/2G/2 F=D/2F<_AD/2| \
+F/2B,/2D/2F,<_A,D,/2 F,/2B,/2D/2F/2 _A/2c/2B/2_A/2| \
+G/2B/2c/2E<DE/2 EE/2D/2 Ex|
+x3G ee/2d/2 ee/2d/2| \
+e/2c/2=A/2B/2 c/2A/2F/2A/2 BB/2A/2 Bx| \
+x3D BB/2A/2 BB/2A/2| \
+B/2G/2=E/2F/2 G/2=E/2C/2=E/2 FC xc|
+d/2c/2B/2c/2 d/2c/2B/2A/2 G/2F/2_E/2F/2 G/2B/2A/2B/2| \
+c/2B/2A/2B/2 c/2B/2A/2G/2 F/2E/2D/2E/2 F/2_A/2G/2_A/2| \
+B/2_A/2G/2_A/2 B/2_A/2G/2F/2 E/2D/2C/2D/2 E2-| \
+E/2C/2B,/2C/2 D2- D/2B,/2=A,/2B,/2 C2-|
+C/2A,/2G,/2A,/2 B,2- B,/2G,/2F,/2G,/2 A,/2A,/2G,/2A,/2| \
+B,D/2B,<FD/2 A,C/2A,<FA,/2| \
+B,D/2B,<FD/2 C/2B,/2A,/2G,/2 F,x| \
+x6 xF|
+BB/2A/2 BB/2A/2 B/2F/2D/2E/2 F/2D/2B,/2C/2| \
+D/2F/2D/2C/2 D/2F/2D/2C/2 DB,/2C/2 DD/2E/2| \
+F/2d/2B/2A/2 B/2d/2B/2A/2 BF x2| \
+x3B e/2d/2c/2d/2 e/2d/2c/2B/2|
+A/2G/2F/2G/2 A/2B/2c/2A/2 d/2c/2B/2c/2 d/2c/2B/2A/2| \
+G/2B/2A/2B/2 c2- c/2A/2G/2A/2 B2-| \
+B/2A/2B/2c/2>B/2[B/2A/2][B/2A/2][B/2A/2] B2 xD| \
+G/2F/2E/2F/2 G/2F/2E/2D/2 C/2B,/2A,/2B,/2 C/2D/2E/2C/2|
+F/2E/2D/2E/2 F/2E/2D/2C/2 B,/2A,/2G,/2A,/2 B,/2C/2D/2B,/2| \
+E2- E/2C/2B,/2C/2 D2- D/2B,/2A,/2B,/2| \
+C/2E/2D/2C/2>D/2[D/2C/2][D/2C/2][C/2B,/2] B,B/2A<BF/2| \
+D/2B,/2F/2E<FD/2 B,/2F,/2B,/2A,<B,F,/2|
+D3/2B,<FD<BF/2 d/2A/2B/2F/2| \
+D/2A,/2B,/2F,/2 D,/2F,/2B,/2A,/2 D/2C/2F/2E/2 D/2C/2B,/2F/2| \
+B/2A/2d/2c/2 f/2e/2d/2c/2 B/2_A/2G/2B/2 e/2d/2c/2B/2| \
+=A/2G/2F/2=E<FC/2 A,/2F,/2C/2B,<CA,/2|
+F,/2C,/2F,/2=E,<F,C,<A,F,<CA,/2| \
+F3/2C/2 A/2F/2c/2A/2 F/2C/2A/2F/2 C/2A,/2F-| \
+F/2C/2D/2A,<B,F,<DB,<FD/2| \
+B3/2_A/2 G/2F/2_E/2D/2 E/2F/2=A/2c<eA/2|
+c/2F/2A/2C<EA,/2 C/2F,/2A,/2C,<E,F,/2| \
+A,/2F,/2C/2A,/2 F/2C/2A/2F/2 B/2F/2D/2F<Bd/2| \
+f/2B/2d/2F<BD/2 F/2B,/2D/2F,<B,F,/2| \
+D,/2F,/2B,/2F,/2 D/2B,/2F/2D/2 B/2G/2=E/2G<B=E/2|
+G/2C/2=E/2G,<B,=E,/2 G,/2C,/2=E,/2G,<B,G,/2| \
+=E3/2C<G=E<Fc/2 A/2F/2C/2A,/2| \
+M: 5/4
+L: 1/8
+F,3/2G/2 F/2D/2_E/2C/2 D4- D3/2
+V:3
+%%MIDI program 41
+% Viola I da gamba
+x8 
+% Bach's Brandenburg Concerto No. 6, 1st mov't

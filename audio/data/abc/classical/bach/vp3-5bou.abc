@@ -1,0 +1,194 @@
+X: 1
+T: from bach/vp3-5bou.mid
+M: 2/2
+L: 1/8
+Q:1/4=250
+K:E % 4 sharps
+% untitled
+% A
+% A'
+% B
+% B'
+V:1
+% Solo Violin
+%%MIDI program 40
+x6 
+% untitled
+% A
+B2| \
+c2 x6| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+fd Bc de fa|
+ge Bd ef gb| \
+x8| \
+x8| \
+ed cd ed cB|
+^AG FG ^AB cx| \
+x8| \
+x8| \
+x8|
+x6 
+% A'
+B2| \
+c2 x6| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+fd Bc de f=a|
+ge Bd ef gb| \
+x8| \
+x8| \
+ed cd ed cB|
+^AG FG ^AB cx| \
+x8| \
+x8| \
+x8|
+x6 
+% B
+f2| \
+g2 x6| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x6 B2| \
+c2 x6| \
+x8| \
+x4 =ag fg|
+eB GB E2 
+% B'
+f2| \
+g2 x6| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x6 B2| \
+c2 x6| \
+x8| \
+x4 ag fg|
+eB GB E2 
+V:2
+% --------------------------------------
+%%MIDI program 40
+x6 
+% untitled
+% A
+E2| \
+A2 AB cd e2| \
+GB e2 ed e2| \
+FG AB cA B2|
+AG FG E2 ge| \
+fd Bc de fa| \
+ge Bd ef gb| \
+x8|
+x8| \
+ed cd ed cB| \
+^AG FG ^AB cd| \
+x8|
+x6 xe| \
+dc Bc de f=A| \
+GB ed e^a bc| \
+Ed cB Fc B^A|
+BF DF B,2 
+% A'
+E2| \
+=A2 AB cd e2| \
+GB e2 ed e2| \
+FG AB cA B2|
+AG FG E2 ge| \
+fd Bc de fa| \
+ge Bd ef gb| \
+x8|
+x8| \
+ed cd ed cB| \
+^AG FG ^AB cd| \
+x8|
+x6 xe| \
+dc Bc de f=A| \
+GB ed e^a bc| \
+Ed cB Fc B^A|
+BF DF B,2 
+% B
+B2| \
+e2 ef g^a b2| \
+df b2 b^a b2| \
+ce =ac =cd gf|
+fe de ^c2 ec| \
+GA Bc =dg b=d| \
+cB AB ce ac| \
+GA Bc =dg b=d|
+cB AB ce ac| \
+=dB GF =FG B=d| \
+cA ^FE =DC =Dc| \
+Ba gf cg f=f|
+^fc Ac F2 ag| \
+^df Bc de fa| \
+gb ef ga b=d| \
+ce Ac fg af|
+e^d cd B2 E2| \
+A2 AB cd ef| \
+df af dB cA| \
+Ge b2 B2 x2|
+x6 
+% B'
+B2| \
+e2 ef g^a b2| \
+df b2 b^a b2| \
+ce =ac =cd gf|
+fe de ^c2 ec| \
+GA Bc =dg b=d| \
+cB AB ce ac| \
+GA Bc =dg b=d|
+cB AB ce ac| \
+=dB GF =FG B=d| \
+cA ^FE =DC =Dc| \
+Ba gf cg f=f|
+^fc Ac F2 ag| \
+^df Bc de fa| \
+gb ef ga b=d| \
+ce Ac fg af|
+e^d cd B2 E2| \
+A2 AB cd ef| \
+df af dB cA| \
+Ge b2 B2 
+% Johann Sebastian Bach  (1685-1750)
+% Six Sonatas and Partitas for Solo Violin
+% --------------------------------------
+% Partita No. 3 in E major - BWV 1006
+% 5th Movement: Bouree
+% --------------------------------------
+% Sequenced with Cakewalk Pro Audio by
+% David J. Grossman - dave@unpronounceable.com
+% This and other Bach MIDI files can be found at:
+% Dave's J.S. Bach Page
+% http://www.unpronounceable.com/bach
+% --------------------------------------
+% Original Filename: vp3-5bou.mid
+% Last Modified: February 22, 1997

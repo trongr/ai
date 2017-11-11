@@ -1,0 +1,184 @@
+X: 1
+T: from ./mozk219c.mid
+M: 3/4
+L: 1/8
+Q:1/4=126
+K:C % 0 sharps
+V:1
+% Mozart Violin Concerto 
+%%MIDI program 40
+K:A % 3 sharps
+x4 
+%%MIDI program 40
+c3/2d/2| \
+e2 c2 fx| \
+A2 G2 B3/2c/2| \
+e/2d3/2 cB AG|
+A3/2c/2 E2 c3/2d/2| \
+e/2x/2a ga xf/2x/2| \
+e/2x/2a ga xd/2x/2| \
+ce dc BA|
+GA ^AB x2| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x3=A/2B/2 d/2c/2B/2A/2| \
+e2- e/2f/2e/2f/2 e/2d/2c/2B/2| \
+A2 xx/2x/2 d/2c/2x/2x/2| \
+e2- e/2x/2x/2x/2 x/2x/2x/2x/2|
+A2 x2 ^D/2E/2x| \
+G/2A/2x =c/2^c/2x ^d/2e/2x| \
+g/2a/2x3 e/2f/2e/2=d/2| \
+c3e ac'|
+c'/2b3/2 ge B/2c/2B/2A/2| \
+G3e gb| \
+b/2a3/2 f^d A/2B/2A/2G/2| \
+F3^d fa|
+ag fe fe| \
+^dc ^dc BA| \
+G2 F2 x2| \
+x4 ga|
+c'/2<b/2x/2x/2 c'3b| \
+b/2<a/2x/2x/2 b3a| \
+g/2x/2x/2x/2 b/2<a/2x/2x/2 g/2<f/2x/2x/2| \
+^d/2e/2x/2x/2 B2 g/2e/2a/2f/2|
+b/2^a/2b/2g/2 c'3b| \
+=a/2g/2a/2f/2 b3a| \
+g/2a/2x/2x/2 e/2^d/2x/2x/2 g/2f/2x/2x/2| \
+^a2 b2 B/2x/2B/2x/2|
+b/2g/2e/2B/2 G/2B/2E/2B/2 G/2B/2E/2B/2| \
+F/2B/2^d/2f/2 =a/2g/2f/2e/2 ^d/2c/2B/2A/2| \
+x/2x/2x/2x/2 x/2x/2x/2x/2 x/2x/2x/2x/2| \
+F/2B/2x/2x/2 a/2g/2x/2x/2 ^d/2c/2x/2x/2|
+x/2e3/2 f2 g2| \
+a3/2x/2 b/2x/2a/2x/2 gx| \
+g/2f3/2 e2 ^d2| \
+e/2f/2g/2e/2 f/2g/2a/2f/2 g/2a/2b/2g/2|
+a/2b/2c'/2b/2 c'/2b/2c'/2a/2 gx| \
+a/2b/2>c'/2b/2 c'/2b/2c'/2a/2 gx| \
+g/2f/2a/2f/2 e2 x/2x/2x/2x/2| \
+e3g b3/2g/2|
+c'2 x2 a3/2f/2| \
+a2 x2 f3/2^d/2| \
+e3g b/2g/2b/2g/2| \
+c'4 a/2f/2a/2f/2|
+a4 f/2^d/2f/2^d/2| \
+f/2e3/2 e2 e2| \
+e6-| \
+[e/2e/2][=d/2B/2] (3G/2E/2B,/2  (3g/2e/2d/2 (3B/2G/2E/2  (3b/2g/2e/2 (3d/2B/2G/2|
+d'4 [E3/2G,3/2][F/2A,/2]| \
+[A2C2] [G2B,2] [B3/2G3/2][c/2A/2]| \
+[e2c2] [d2B2] x/2c/2d/2b/2| \
+[a4-d4-=F4-] [a3/2d3/2=F3/2]x/2|
+g^f ed c3/2d/2| \
+e2 c2 fx| \
+A2 G2 B3/2c/2| \
+e/2d3/2 cB AG|
+A3/2c/2 E2 c3/2d/2| \
+e/2x/2a ga xf/2x/2| \
+e/2x/2a ga xd/2x/2| \
+ce dc BA|
+GA ^AB x2| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x3=A/2B/2 d/2c/2B/2A/2| \
+e2- e/2f/2e/2f/2 e/2d/2c/2B/2| \
+A2 x4| \
+x6|
+F4 C2| \
+A4 GF| \
+=F/2^F/2G/2F/2 =F/2^F/2G/2F/2 =F/2^F/2G/2=F/2| \
+^F2 xc'/2x/2 c'/2x/2c'/2x/2|
+c'3/2d'/2 c'/2x/2c'/2x/2 c'/2x/2c'/2x/2| \
+c'2 f2 xa| \
+g2 b2 x=f| \
+^f2 xx/2x/2 B/2A/2x/2x/2|
+c2- c/2x/2x/2x/2 x/2x/2x/2x/2| \
+F2 x4| \
+x6| \
+D4 A,2|
+F4 ED| \
+C/2D/2E/2D/2 C/2D/2E/2D/2 C/2D/2E/2C/2| \
+D2 xa/2x/2 a/2x/2a/2x/2| \
+a3/2b/2 a/2x/2a/2x/2 a/2x/2a/2x/2|
+a2 d2 xf| \
+e2 =g2 xc| \
+d2 xf/2x/2 f/2x/2f/2x/2| \
+f3/2=g/2 f/2x/2f/2x/2 f/2x/2f/2x/2|
+f2 B2 xd| \
+c2 e2 x^A| \
+B/2d/2f/2b/2 d'4| \
+B/2d/2=g/2b/2 d'4|
+xe'/2d'/2 xd'/2c'/2 xc'/2b/2| \
+xb/2=a/2 xa/2^g/2 xg/2f/2| \
+=f/2c/2=f/2g/2 c'/2g/2=f/2c/2 c'/2g/2=f/2c/2| \
+^f/2c/2f/2a/2 c'/2a/2f/2c/2 c'/2a/2f/2c/2|
+=f/2c/2=f/2g/2 c'/2g/2=f/2c/2 c'/2g/2=f/2c/2| \
+^f/2c/2f/2a/2 c'/2a/2f/2c/2 c'/2a/2f/2c/2| \
+C2 C2 C2| \
+C4 x2|
+C4 G,2| \
+=F4 ^DC| \
+^F2- [F2-=D2] [F2C2]| \
+A2- [A2G,2] [G=C-][F=C]|
+[=F3/2^C3/2]G/2 c/2x/2c/2x/2 [c/2B/2]x/2[c/2B/2]x/2| \
+[c3/2A3/2-][d/2A/2] [cA][c/2^F/2]x/2 [c/2A/2]x/2f/2x/2| \
+[=f3/2G3/2]d/2 c[=f/2G/2]x/2 [g/2c/2]x/2[bc]| \
+[a3/2c3/2]g/2 ^f[a/2f/2]x/2 [c'/2a/2]x/2[f'/2f/2]x/2|
+[d'2b2] F2 B2| \
+d4 cB| \
+e2- [e2-c2] [e2B2]| \
+[=g2-B2] [=g2^A2] [fF-][eF]|
+d/2B/2d/2f/2 b/2f/2d/2B/2 b/2f/2d/2B/2| \
+e/2B/2e/2=g/2 b/2=g/2e/2B/2 b/2=g/2e/2B/2| \
+x/2x/2x/2x/2 x/2x/2x/2x/2 x/2x/2x/2x/2| \
+e'/2e/2=g/2b/2 e'/2b/2=g/2e/2 =g'/2e'/2b/2=g/2|
+b'2 x2 ^A/2B/2x| \
+=c/2^c/2x ^g/2=a/2x ^A/2B/2x| \
+=g/2^g/2x G/2=A/2x =f/2^f/2x| \
+=G/2^G/2x d/2e/2x [e2E2]|
+[e2F2] d=c BA| \
+G/2E/2G/2B/2 e/2f/2=g/2^g/2 b/2^c'/2^d'/2e'/2| \
+[e'2=f2] [=d'=f][=c'A] [bd][a^d]| \
+B/2=g/2^g/2b/2 ^f/2e/2f/2a/2 e/2^d/2e/2g/2|
+=d/2^c/2d/2f/2 c/2=c/2^c/2e/2 B/2^A/2B/2d/2| \
+=A/2G/2A/2B/2 G/2=G/2^G/2B/2 x/2E/2F/2d/2| \
+E2 EG, B,/2E/2G/2A/2| \
+x/2x/2x/2x/2 x/2x/2x/2x/2 x/2x/2x/2x/2|
+x/2x/2x/2x/2 x/2x/2A/2=c<^cd/2| \
+e2 c2 e/2fx/2| \
+A2 G2 B3/2c/2| \
+e/2d3/2 cB AG|
+A3/2c/2 E2 c3/2d/2| \
+ea ga xx/2x/2| \
+e/2x/2a ga xx/2x/2| \
+ce dc BA|
+GA ^AB x2| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x3=A/2B/2 d/2c/2B/2A/2| \
+e2- e/2f/2e/2f/2 e/2d/2c/2B/2| \
+A2 xx/2x/2 x/2x/2x/2x/2| \
+e2- e/2x/2x/2x/2 x/2x/2x/2x/2|
+A2 x2 ^D/2E/2x| \
+G/2A/2x =c/2^c/2x ^d/2e/2x| \
+g/2a/2x4x| \
+x6|
+x4 
+M: 2/4
+L: 1/8
+K:C % 0 sharps

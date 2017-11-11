@@ -1,0 +1,121 @@
+X: 1
+T: from bach/acttrag.mid
+M: 4/4
+L: 1/8
+Q:1/4=42
+K:C % 0 sharps
+V:1
+% Sinfonia from Kantata #106 -JS 
+%%MIDI program 74
+x8| \
+x8| \
+x8| \
+^d2 x/2^A/2^d/2=d/2 d^g/2d/2 d^g/2d/2|
+^d2 x/2^A/2^d/2^c/2 ^c^a/2^c/2 ^c^a/2^c/2| \
+=c2 x/2^A/2c/2^G/2 f^g/2f/2 fc'/2^d/2| \
+=dc/2^A/2 x/2f/2^a/2d/2 ^d/2=d<^d=d/2^d-| \
+^d/2^c<^d^c/2^d/2=c/2 ^c2 x2|
+x=g/2=c/2 cg/2c/2 c^c/2^d/2 x/2=c3/2| \
+^A2 x^a/2=d/2 d^a/2d/2 d^a/2d/2| \
+^d/2=d<^d=d/2^d2c'/2e/2 ec'/2e/2| \
+f/2e<fe<fe/2f/2g/2 x/2x/2g|
+f2 x/2g/2^g/2=g/2 ^g/2=g<^g=g/2^g/2^a/2| \
+=g2 x/2^A/2^d/2^c=c<^c=c/2^c/2^d/2| \
+=c2 x/2c/2f/2^d=d<^d=d/2^d/2f/2| \
+=d2 x/2d/2^a/2d/2 ^d/2=d<^d=d/2^d-|
+^d/2=d/2^d ^d/2=d/2^d ^d/2=d/2^d/2f<=d^d/2| \
+^d3/2x^d/2^a/2^c/2 ^c^a/2^c/2 ^c^a/2^c/2| \
+=c3/2xc/2^g/2=d/2 d^g/2d<d^d/2| \
+^d3-^d/2
+V:2
+%%MIDI program 74
+x8| \
+x8| \
+x8| \
+^d2 x/2^A/2^d/2=d/2 dx2^g/2d/2|
+^d2 x/2^A/2^d/2^c/2 ^cx2^a/2^c/2| \
+=c2 x/2^A/2c/2^G/2 fx2^g/2c/2| \
+=dc/2^A/2 x/2f/2^a/2d<^d=d<^d=d/2| \
+^d3/2^c<^d=c/2 ^c2 x2|
+x3=g/2^A/2 =A^A/2=c/2 x/2=A3/2| \
+^A2 x^a/2=d/2 dx2^a/2d/2| \
+^d3/2=d<^d=d/2 ^dx2c'/2e/2| \
+f3/2e<fe<fg/2 x/2x/2g|
+f2 x/2g/2^g/2=g<^g=g<^g=g/2| \
+g2 x/2^A/2^d/2^c<^c=c<^c=c/2| \
+c2 x/2c/2f/2^d<^d=d<^df/2| \
+=d2 x/2d/2^a/2d<^d^A<^d=d/2|
+^d3/2^A<^d=d<^df<=d^d/2| \
+^d3/2x^d/2^a/2^c/2 ^cx2^a/2^c/2| \
+=c3/2xc/2^g/2=d/2 d^g/2d<d^d/2| \
+^d3-^d/2
+V:3
+% Seq by MJ Starke
+%%MIDI program 42
+x2 
+=GG GG/2F/2 F^D/2=D/2| \
+DC/2^A,/2 ^D^D ^G^G ^G^G| \
+^G/2=G/2G G/2F/2F/2^D/2 =D^D/2F/2 x/2x/2x/2x/2| \
+^D^D GG FF FF|
+GG GG GG GG| \
+^G^G ^G^G ^G^G ^G^G| \
+FF FF =GG GG| \
+FF FF FF F/2^G/2^G/2=G/2|
+GG GG CF ^D^D| \
+=DD FF FF FF| \
+GG GG GG GG| \
+^G^G CC FF FE|
+FF CC FF FF| \
+^D^D =GG ^D^D GG| \
+^D^D ^G^G FF =AA| \
+FF FF ^D^D FF|
+=GG ^G=G FF FF| \
+GG GG GG GG| \
+^G^G ^G^G ^G^G FF| \
+=G3-G/2
+V:4
+% E-mail mjstarke@ix.netcom.com
+%%MIDI program 42
+x2 
+^A,^A, ^A,^A,/2^G,/2 ^G,=G,/2F,/2| \
+F,^A,, x^A, CC FF| \
+^A,^A, ^A,^A,/2^G,/2 ^G,=G,/2^G,/2 x/2x/2x/2x/2| \
+=G,G, ^A,^A, ^G,^G, ^G,^G,|
+^A,^A, ^A,^A, ^A,^A, ^A,^A,| \
+CF FF CC CC| \
+^A,^A, ^A,^A, ^A,^A, CC| \
+CC =A,A, ^A,^A,/2C/2 ^C/2=C/2C/2^A,/2|
+^A,^A, ^A,=G, F,F, F,F,| \
+F,F, =DD ^A,^A, ^A,^A,| \
+^A,^A, ^A,^A, CC CC| \
+CC ^G,^G, ^G,^C =CC|
+^G,^G, ^G,^G, ^A,^A, DD| \
+^A,^A, ^A,^A, ^A,^A, ^A,^A,| \
+^G,^G, CC CC CC| \
+^A,^A, ^A,^A, ^A,^A, CC|
+^A,^A, ^G,^A, CC ^A,^A,| \
+^A,^A, ^A,^A, ^A,^A, ^A,^A,| \
+^D^D ^D^D FF ^G,^G,| \
+^A,3-^A,/2
+V:5
+%%MIDI program 43
+^D,,^D,, ^D,,^D,, ^G,,^G,, ^G,,^G,,| \
+^G,,^G,, =G,,G,, F,,F, =D,D,| \
+^D,^D, ^G,,^G,, ^A,,^A,, ^A,,^A,,| \
+^D,,^D,, ^D,,^D,, ^D,,^D,, ^D,,^D,,|
+^D,,^D,, ^D,,^D,, ^D,,^D,, ^D,,^D,,| \
+^G,,^G,, ^G,,^G,, ^G,,^G,, ^G,,^G,,| \
+^G,,^G,, ^G,^G, =G,G, CC| \
+=A,A, F,F, ^A,^A, ^A,,^A,,|
+E,,E,, E,,E,, F,,F,, F,,F,,| \
+^A,,^A,, ^A,^A, ^G,^G, ^G,^G,| \
+=G,G, ^D,^D, C,C, ^A,^A,| \
+^G,^G, F,F, ^C,^A,, =C,C,|
+F,,F,, F,F, =D,D, ^A,,^A,,| \
+^D,^D, ^D,^D, =G,,G,, ^D,,^D,,| \
+^G,,^G,, ^G,,^G,, =A,,A,, F,,F,,| \
+^A,,^A,, ^G,,^G,, =G,,G,, ^G,,^G,,|
+^A,,^A,, C,C, ^G,,^G,, ^A,,^A,,| \
+^D,,^D,, ^D,,^D,, ^D,,^D,, ^D,,^D,,| \
+^D,,^D,, ^D,,^D,, ^D,,^D,, ^D,,^D,,| \
+^D,,3-^D,,/2

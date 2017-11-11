@@ -1,0 +1,148 @@
+X: 1
+T: from bach/cs5-3cou.mid
+M: 3/2
+L: 1/8
+Q:1/4=250
+K:Eb % 3 flats
+% untitled
+% Copyright \0xa9 1996 by David J. Grossman
+% David J. Grossman
+% A
+% A'
+% B
+% B'
+V:1
+% Solo Cello
+%%MIDI program 42
+x8 x3
+% untitled
+% Copyright \0xa9 1996 by David J. Grossman
+% David J. Grossman
+C,| \
+% A
+C,3D, E,F, G,A, G,F, G,E,| \
+F,3E, E,D, C,=B,,2<C,2D,| \
+G,,3C,/2=B,,/2 C,2 D,2 F,E, D,C,|
+F,,3x _B,2 C2 G,,4| \
+[G,,4C,,4] x8| \
+[E,3G,,3]x8x| \
+x12|
+E,3x8x| \
+D,x3 D2 C=B, C2 D2| \
+E3D C_B, =A,B,2<_G,2=G,| \
+=A,,_G, CD B,2 x2 D,4|
+x8 x3C,| \
+% A'
+C,3D, E,F, =G,_A, G,F, G,E,| \
+F,3E, E,D, C,=B,,2<C,2D,| \
+G,,3C,/2=B,,/2 C,2 D,2 F,E, D,C,|
+F,,3x _B,2 C2 G,,4| \
+[G,,4C,,4] x8| \
+[E,3G,,3]x8x| \
+x12|
+E,3x8x| \
+D,x3 D2 C=B, C2 D2| \
+E3D C_B, =A,B,2<_G,2=G,| \
+=A,,_G, CD B,2 x2 D,4|
+x8 x3D| \
+% B
+[D3=B,3=G,,3]E DC =B,C/2D/2 G,3_A,| \
+[F,3=A,,3]E, D,E, F,_A, [G,2=B,,2] [F,2G,,2]| \
+[F,C,]E, D,C, A,2 [G,2_B,,2] [C3E,3A,,3]_D|
+[=E,3G,,3]F, G,A, B,C _D2 [C2=E,2]| \
+[B,F,]A, G,F, _E,_D, E,C, _D,F, G,A,| \
+A,G, F,E, [E3A,3C,3]F [B,3E,3]A,| \
+A,3G, A,B, C=D2<D2C/2D/2|
+[E3G,3]B, C2 G,2 G,A, D,B,| \
+[A,E,]G, F,E, G,=A, G,=A,2<=A,2G,/2=A,/2| \
+[B,3D,3]=A, C=B, [C2E,2] [_B,F,]_A, [G,D,]F,| \
+F,3G, E,2 x2 D,3x|
+x6 [C4E,4G,,4] xD| \
+% B'
+[D3=B,3G,,3]E DC =B,C/2D/2 G,3A,| \
+[F,3=A,,3]E, D,E, F,_A, [G,2=B,,2] [F,2G,,2]| \
+[F,C,]E, D,C, A,2 [G,2_B,,2] [C3E,3A,,3]_D|
+[=E,3G,,3]F, G,A, B,C _D2 [C2=E,2]| \
+[B,F,]A, G,F, _E,_D, E,C, _D,F, G,A,| \
+A,G, F,E, [E3A,3C,3]F [B,3E,3]A,| \
+A,3G, A,B, C=D2<D2C/2D/2|
+[E3G,3]B, C2 G,2 G,A, D,B,| \
+[A,E,]G, F,E, G,=A, G,=A,2<=A,2G,/2=A,/2| \
+[B,3D,3]=A, C=B, [C2E,2] [_B,F,]_A, [G,D,]F,| \
+F,3G, E,2 x2 D,3x|
+x6 [C4E,4G,,4] 
+V:2
+% --------------------------------------
+%%MIDI program 42
+x12| \
+% untitled
+% Copyright \0xa9 1996 by David J. Grossman
+% David J. Grossman
+% A
+C,,3x8x| \
+[=B,,3D,,3]x8x| \
+E,,3x8x|
+[A,3C,3]F, x2 E,2 D,3G,| \
+E,3D, C,D, E,F, G,A, C_B,| \
+B,3A, G,F, E,D, D,E, =A,,3/2F,/2| \
+E,D, C,B,,2<B,2C B,=A, B,G,|
+C3B, B,=A, G,_G,2<=G,2=A,| \
+G,_G, =E,D, x2 F,2 _E,2 D,2| \
+[=G,3C,3]x8x| \
+x4 [D,2G,,2] C,3/2=A,/2 =A,3G,|
+G,2- G,/2F,/2E,/2D,<E,C,/2 [G,4G,,4] x2| \
+% A'
+C,,3x8x| \
+[=B,,3D,,3]x8x| \
+E,,3x8x|
+[_A,3C,3]F, x2 E,2 D,3G,| \
+E,3D, C,D, E,F, G,A, C_B,| \
+B,3A, G,F, E,D, D,E, =A,,3/2F,/2| \
+E,D, C,B,,2<B,2C B,=A, B,G,|
+C3B, B,=A, G,_G,2<=G,2=A,| \
+G,_G, =E,D, x2 F,2 _E,2 D,2| \
+[=G,3C,3]x8x| \
+x4 [D,2G,,2] C,3/2=A,/2 =A,3G,|
+G,2- G,/2F,/2E,/2D,<E,C,/2 [G,4G,,4] x2| \
+x12| \
+x12| \
+x12|
+x12| \
+x12| \
+x12| \
+x12|
+x6 
+% B
+E,2 F,2 x2| \
+x12| \
+x12| \
+=B,,2 G,,2 C,2 F,,D,2<G,,2C,|
+C,3G,,/2F,,/2 E,,/2F,,/2G,, C,,4 x2| \
+x12| \
+x12| \
+x12|
+x12| \
+x12| \
+x12| \
+x12|
+x6 
+% B'
+E,2 F,2 x2| \
+x12| \
+x12| \
+=B,,2 G,,2 C,2 F,,D,2<G,,2C,|
+C,3G,,/2F,,/2 E,,/2F,,/2G,, C,,4 
+% Johann Sebastian Bach  (1685-1750)
+% Six Suites for Solo Cello
+% --------------------------------------
+% Suite No. 5 in C minor - BWV 1011
+% 3rd Movement: Courante
+% --------------------------------------
+% Sequenced with Cakewalk Pro Audio by
+% David J. Grossman - dave@unpronounceable.com
+% This and other Bach MIDI files can be found at:
+% Dave's J.S. Bach Page
+% http://www.unpronounceable.com/bach
+% --------------------------------------
+% Original Filename: cs5-3cou.mid
+% Last Modified: February 22, 1997

@@ -1,0 +1,344 @@
+X: 1
+T: from bach/ausliebe.mid
+M: 1/4
+L: 1/16
+Q:1/4=74
+K:C % 0 sharps
+V:1
+% Soprano
+%%MIDI program 40
+x4| \
+x4| \
+x4| \
+x4|
+x4| \
+x4| \
+x4| \
+x4|
+x4| \
+x4| \
+x4| \
+x4|
+x4| \
+x4| \
+x4| \
+x4|
+x4| \
+x4| \
+x4| \
+x4|
+x4| \
+x4| \
+x4| \
+x4|
+x4| \
+x4| \
+x4| \
+x4|
+x4| \
+x4| \
+x4| \
+x4|
+x4| \
+x4| \
+x4| \
+x4|
+x4| \
+x4| \
+x4| \
+M: 3/4
+L: 1/16
+e3-e/2x/2 e8-|
+e4- eg fe fe dc| \
+Bd ce de f4 e2-| \
+e3/2x/2 d2 d2 c2 c3-c/2x/2| \
+x2 A2 f2 f2 f2 f2|
+f2 f2 f2 ^d2 ^d2 e2-| \
+ex8x3| \
+x2 A2 ^G2 B2 e2 =d2| \
+d2 ^c2 ^c3B ^c4|
+=c6 ^f2 ^d2 c2| \
+BA4-A ^G2 ^G3-^G/2x/2| \
+x2 e2 =dc BA ^f2 =g2| \
+cB c2 B2 x2 =f2 x2|
+x2 de/2f/2 fe dc ^A=A d2| \
+G2 F2 E3-E/2x4x/2| \
+x12| \
+x12|
+x12| \
+x12| \
+x12| \
+x12|
+x8 G3-G/2x/2| \
+G3-G/2x/2 G8-| \
+G4- GE G^A d2 c2| \
+c2 ^A2 ^A2 =A2 c3-c/2x/2|
+c3-c/2x/2 c8-| \
+c4- cA c^d g2 f2| \
+f2 ^d2 =d3-d/2x/2 d3-d/2x/2| \
+d3-d/2x/2 d8-|
+d6 f2 e2 f2| \
+g2 e2 d2 ^c2 B2 A2| \
+A3-A/2x/2 f8-| \
+f4 f2 e2 f3-f/2x/2|
+G3-G/2x/2 e8-| \
+e6 d2 d2 =c2| \
+cd B2 c8-| \
+c6 B2 B2 c2|
+d6 cB c2 ed| \
+e6 d^c dA de| \
+f6 e2 f3-f/2x/2| \
+x2 A2 ^G2 B2 e2 d2|
+d2 ^c2 ^c8| \
+=c6 ^f2 ^d2 c2| \
+B2 A4 ^G2 ^G3-^G/2x/2| \
+x2 B2 e2 =fe =dc BA|
+c2 B2 A2 x2 =g2 x2| \
+x2 ef/2g/2 gf ed e2 A2| \
+E2 c2 A3-A/2
+V:2
+% Flute
+%%MIDI program 73
+A3-A/2x/2| \
+M: 3/4
+L: 1/16
+e6- e/2f/2e/2d/2 e3c'| \
+d6- dx b3-b/2x/2| \
+bc' ba ba ^g^f ed cB|
+Bd cB A3-A/2x3/2A ce| \
+=fe fa c'b a=g fe f2-| \
+f^d eg ba gf e=d e2-| \
+e^c df ag fe d^c d2-|
+df ed b^g fe dB ^c2-| \
+^cB ^ce a=g ^fe ^dB =c2-| \
+cB c^d ^f^g ab c'a b2-| \
+b4- b=f e=d eB c^G|
+x/2c/2^d/2^f/2 a3^g/2^f/2 ec'2b/2a/2 ^ga| \
+a3=g/2=f/2 ea e=d db dc| \
+cB A^G AB cd ef e=g| \
+f12-|
+fc' ba ba ^g^f ed b2-| \
+bd e^G Ac e=g =fb fe| \
+dc Bc B3-B/2x4x/2| \
+x2 b3a gf ed e2-|
+e^c df ag fe d^c d2-| \
+df ed b^g fe dB ^c2-| \
+^cB ^ce a=g ^fe ^dB =c2-| \
+cB c^d ^f^g ab c'a b2|
+b3-b/2x8x/2| \
+x12| \
+x12| \
+x8 =g4-|
+g=f e=d ec eg ab c'a| \
+f6- fx d'4-| \
+d'c' ba gf ef2<d'2f| \
+e12-|
+e^d =d^d ab bc' c'^d ^d=d| \
+c2 B3^g ^g=g ff ff| \
+g/2c'/2b/2a/2 g/2c'/2c2<e2d x/2x/2x/2x/2 dc| \
+c4- cd cB ce/2f/2 ge|
+c4- cd cB ce/2f/2 ge| \
+^a3=a/2g/2 f3-f/2x/2 x/2x/2x/2x/2 ef| \
+f4- fg fe fa/2^a/2 c'=a| \
+f4- fg fe fa/2^a/2 c'=a|
+^d'3=d'/2c'/2 ^ag =a3-a/2x/2 ^g2-| \
+^g^f2<=g2^a d'c' ^a=a/2g/2 ^fg| \
+c^A c^f =ag ^f^d =dc ^A=A| \
+^A=A ^Ad ed ^cd g=a ^a2-|
+^a^g =a2 x8| \
+a6- a/2^a/2=a/2=g/2 a3d'| \
+g12-| \
+ga g=f ed ^c^A =AG FE|
+FA ^A^c de f^g =a^g ba| \
+a12-| \
+a2 ^g2 ^g2 a2 b4-| \
+b2 a^g ab =c'd' c'b a^g|
+a4- a=g fe d^c d2-| \
+d3-d/2x8x/2| \
+xf ed b^g fe dB ^c2-| \
+^cB ^ce a=g ^fe ^dB =c2-|
+cB c^d ^f^g ab c'a b2-| \
+b3-b/2x6x/2 ^G2| \
+A3c2<B2c2<^G2A| \
+A3B2<^c2=d2<e2^c|
+d3^G2<A2B2<^G2A| \
+A3-A/2x4x/2 A4| \
+e6- e/2=f/2e/2d/2 e3=c'| \
+d6- dx b3-b/2x/2|
+bc' ba ba ^g^f ed cB| \
+Bd cB A3-A/2x3/2A ce| \
+=fe fa c'b a=g fe f2-| \
+f^d eg ba gf e=d e2-|
+e^c df ag fe d^c d2-| \
+df ed b^g fe dB ^c2-| \
+^cB ^ce a=g ^fe ^dB =c2-| \
+cB c^d ^f^g ab c'a b2-|
+b4- b=f e=d eB c^G| \
+x/2c/2^d/2^f/2 a3^g/2^f/2 ec'2b/2a/2 ^ga| \
+a3
+V:3
+% Oboe I
+%%MIDI program 68
+x4 
+M: 3/4
+L: 1/16
+c3-c/2x/2 c3-c/2x/2| \
+c3-c/2x/2 B3-B/2x/2 B3-B/2x/2| \
+=d3-d/2x/2 d3-d/2x/2 d3-d/2x/2| \
+B3-B/2x/2 A3B2<e2d|
+c3B c4 c4| \
+c3-c/2x/2 B4 B4| \
+^A3-^A/2x/2 =A4 A4| \
+A3-A/2x/2 ^G4 ^G4|
+^G3-^G/2x/2 A3-A/2x/2 A3-A/2x/2| \
+A3-A/2x/2 A3-A/2x/2 A3-A/2x/2| \
+A3-A/2x/2 ^G3-^G/2x4x/2| \
+x4 A3B2<c2A|
+d3B c3-c/2x/2 A4| \
+^G3-^G/2x/2 c4 c4| \
+c3-c/2x/2 c4 B4| \
+B3-B/2x/2 B4 B4|
+B3-B/2x/2 A3B2<c2d| \
+c3B A4 A4| \
+c3-c/2x/2 B4 B4| \
+^A3-^A/2x/2 =A4 A4|
+A3-A/2x/2 B3-B/2x/2 ^G3-^G/2x/2| \
+^G3-^G/2x/2 A3-A/2x/2 A3-A/2x/2| \
+A3-A/2x/2 A3-A/2x/2 A3-A/2x/2| \
+^F3-^F/2x/2 E3-E/2x4x/2|
+x2 B2 c3d2<c2B| \
+A3=F2<B2c2<B2A| \
+=G3F G6- GF| \
+G3D E4 E4|
+E3-E/2x/2 D3-D/2x/2 D3-D/2x/2| \
+F3-F/2x/2 F3-F/2x/2 D3-D/2x/2| \
+G6- GD2<E2G| \
+c3^A =A4 A4|
+A3-A/2x/2 G3-G/2x4x/2| \
+x4 c3-c/2x/2 c3-c/2x/2| \
+x/2x/2x/2x/2 FE E3-E/2x/2 E3-E/2x/2| \
+E3-E/2x/2 E3-E/2x/2 E3-E/2x/2|
+E3-E/2x/2 E3G ^A3-^A/2x/2| \
+^A3-^A/2x/2 ^A2 =A2 A3-A/2x/2| \
+A3-A/2x/2 A3-A/2x/2 A3-A/2x/2| \
+A3-A/2x/2 A3c ^D3-^D/2x/2|
+c3-c/2x/2 ^A4 G4| \
+G3-G/2x/2 ^F4 ^F4| \
+^F3-^F/2x/2 G3=A2<G2=F| \
+E3F E3-E/2x4x/2|
+x4 F4 F4| \
+F3-F/2x/2 =D4 D4| \
+D3-D/2x/2 A3-A/2x/2 A3-A/2x/2| \
+A3-A/2x/2 A3-A/2x/2 F3-F/2x/2|
+F3-F/2x/2 ^F3-^F/2x/2 ^F3-^F/2x/2| \
+^F3-^F/2x/2 E3-E/2x/2 E3-E/2x/2| \
+E3-E/2x/2 E3-E/2x/2 E3-E/2x/2| \
+E3-E/2x/2 =F3E2<D2C|
+^A,3=A, B,3-B,/2x4x/2| \
+x4 B4 ^G4| \
+^G3-^G/2x/2 A4 A4| \
+A3-A/2x/2 A3-A/2x/2 A3-A/2x/2|
+^F3-^F/2x/2 E3-E/2x4x/2| \
+x2 D2 C3A,2<=F2D| \
+E3E2<F,2F2<E2D| \
+^C3A,2<D2B,2<=C2D|
+E3E2<A,2F2<E2F| \
+E3D C3-C/2x/2 c3-c/2x/2| \
+c3-c/2x/2 B3-B/2x/2 B3-B/2x/2| \
+d3-d/2x/2 d3-d/2x/2 d3-d/2x/2|
+B3-B/2x/2 A3B2<e2d| \
+c3B c4 c4| \
+c3-c/2x/2 B4 B4| \
+^A3-^A/2x/2 =A4 A4|
+A3-A/2x/2 ^G4 ^G4| \
+^G3-^G/2x/2 A3-A/2x/2 A3-A/2x/2| \
+A3-A/2x/2 A3-A/2x/2 A3-A/2x/2| \
+A3-A/2x/2 ^G3-^G/2x4x/2|
+x4 A3B2<c2A| \
+d3B c3-c/2
+V:4
+% Oboe II
+%%MIDI program 68
+x4 
+M: 3/4
+L: 1/16
+A3-A/2x/2 A3-A/2x/2| \
+A3-A/2x/2 A3-A/2x/2 A3-A/2x/2| \
+A3-A/2x/2 ^G3-^G/2x/2 ^G3-^G/2x/2| \
+^G3-^G/2x/2 A3B2<e2d|
+c3c A4 A4| \
+A3-A/2x/2 =G4 G4| \
+G3-G/2x/2 F4 F4| \
+F3-F/2x/2 E4 E4|
+E3-E/2x/2 E3-E/2x/2 E3-E/2x/2| \
+E3-E/2x/2 ^D3-^D/2x/2 ^D3-^D/2x/2| \
+^D3-^D/2x/2 =D3-D/2x4x/2| \
+x4 C3D E3-E/2x/2|
+E3-E/2x/2 A3-A/2x/2 C4| \
+E3-E/2x/2 A4 A4| \
+A3-A/2x/2 A4 A4| \
+A3-A/2x/2 ^G4 ^G4|
+^G3-^G/2x/2 A3B2<c2B| \
+A3^G A4 A4| \
+A3-A/2x/2 =G4 G4| \
+G3-G/2x/2 F4 F4|
+F3-F/2x/2 E3-E/2x/2 E3-E/2x/2| \
+E3-E/2x/2 E3-E/2x/2 E3-E/2x/2| \
+E3-E/2x/2 ^D3-^D/2x/2 ^D3-^D/2x/2| \
+^D3-^D/2x/2 =D3-D/2x4x/2|
+x2 ^G2 A3B2<A2=G| \
+^F3D2<G2A2<G2=F| \
+E3D2<C2E2<F2D| \
+E3G, C4 C4|
+C3-C/2x/2 C3-C/2x/2 C3-C/2x/2| \
+C3-C/2x/2 B,3-B,/2x/2 B,3-B,/2x/2| \
+B,3-B,/2x/2 C3B,2<C2D| \
+E3C ^F4 ^F4|
+^F3-^F/2x/2 =F3-F/2x4x/2| \
+x4 E3F2<G2F| \
+G,3-G,/2x/2 C4 C4| \
+C3-C/2x/2 ^A,3=A,2<^A,2C|
+^A,3=A, G,3-G,/2x/2 G3-G/2x/2| \
+C3-C/2x/2 F3-F/2x/2 F3-F/2x/2| \
+F3-F/2x/2 ^D3=D2<^D2F| \
+^D3=D C3-C/2x/2 C3-C/2x/2|
+F3-F/2x/2 ^A,4 ^A,4| \
+^A,3-^A,/2x/2 =A,4 A,4| \
+A,3-A,/2x/2 G,3F2<G2A,| \
+^A,3G, =A,3-A,/2x4x/2|
+x4 D4 D4| \
+D3-D/2x/2 B,4 B,4| \
+B,3-B,/2x/2 ^C3-^C/2x/2 ^C3-^C/2x/2| \
+^C3-^C/2x/2 D3-D/2x/2 D3-D/2x/2|
+D3-D/2x/2 ^D3-^D/2x/2 ^D3-^D/2x/2| \
+^D3-^D/2x/2 E3-E/2x/2 E3-E/2x/2| \
+E3-E/2x/2 E3-E/2x/2 E3-E/2x/2| \
+E3-E/2x/2 F3E2<=D2=C|
+^A,3=A, ^G,3-^G,/2x4x/2| \
+x4 E4 E4| \
+E3-E/2x/2 E4 E4| \
+E3-E/2x/2 ^D3-^D/2x/2 ^D3-^D/2x/2|
+^D3-^D/2x/2 =D3-D/2x4x/2| \
+x2 D2 C3A,2<F2D| \
+E3E2<F,2F2<E2D| \
+^C3A,2<D2B,2<=C2D|
+E3E2<A,2F2<E2D| \
+C3B, A,3-A,/2x/2 A3-A/2x/2| \
+A3-A/2x/2 A3-A/2x/2 A3-A/2x/2| \
+A3-A/2x/2 ^G3-^G/2x/2 ^G3-^G/2x/2|
+^G3-^G/2x/2 A3B2<e2d| \
+c3c A4 A4| \
+A3-A/2x/2 =G4 G4| \
+G3-G/2x/2 F4 F4|
+F3-F/2x/2 E4 E4| \
+E3-E/2x/2 E3-E/2x/2 E3-E/2x/2| \
+E3-E/2x/2 ^D3-^D/2x/2 ^D3-^D/2x/2| \
+^D3-^D/2x/2 =D3-D/2x4x/2|
+x4 C3D E3-E/2x/2| \
+E3-E/2x/2 A3-A/2
+% "Aus Liebe will mein
+% Heiland sterben" from the
+% St. Matthew Passion, 1729
+% by J.S. Bach (BWV244)
+% Sequenced by Ken Whitcomb \0xa91998
+% kendawl@aol.com

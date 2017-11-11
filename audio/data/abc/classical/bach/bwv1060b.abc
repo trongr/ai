@@ -1,0 +1,347 @@
+X: 1
+T: from bach/bwv1060b.mid
+M: 12/8
+L: 1/8
+Q:1/4=50
+K:C % 0 sharps
+% Adagio - Second Movement - BWV 1060 - J.S. Bach
+% MIDI Sequence Copyright 1997 Garrett W. Van Cleef
+V:1
+% Violin I
+%%MIDI program 48
+x
+% Adagio - Second Movement - BWV 1060 - J.S. Bach
+% MIDI Sequence Copyright 1997 Garrett W. Van Cleef
+^d/2x/2=d/2x3/2^d/2x/2c/2x3/2F/2x/2^A/2x3/2^A^d| \
+x=dc x^A^G x=G^A x^dc| \
+x^A=A x^AG xF=A xcf| \
+xg^d xcf x=d^A xce|
+xf^g xd=g x^dc xf^g| \
+x=g=d xc^d x=dB xGc| \
+xBf xgd x^dB xc^G| \
+x=GB x=dg x^gf xd=g|
+xgG xc^d x^g=d xB=G| \
+xCc x^d=d x^d^g x=gf| \
+x^dg xc^d x=Ac xFA| \
+x=d^A x^a^g x=g^d x^dc|
+xFf x^dc x=df xeg| \
+xf=A x^AG xCF xF^A| \
+x=AG xF^D x=D^A, x^AG| \
+xFE xF^C x=CE xGc|
+x^c^A xG=c x^GF x=GB| \
+xc^d x=A=d x^AG xc^d| \
+x=d=A xG^A x=A^F xDG| \
+x^Fc xdA x^A^F xG^D|
+x=D^F x=Ad x^dc xA=d| \
+xdD xG^A x^d=A x^F=D| \
+xG,G x^A=A x^A^d x=dc| \
+^A12-|
+^A6 =A6-| \
+A6 ^G6-| \
+^G6 =G6-| \
+G6- Gce x=f^g|
+x^Ad x^d=g x^dc x^G^D| \
+x^A=d x^dc xF^A x^A^d| \
+x=dc x^Af x^d=d x^dc| \
+x^A=d xf^a xc^G xF^A|
+x^A^A, x^D=G xcF x=d^A| \
+x^d^D xGF xGc x^A^G| \
+x=G^D x^G^A xc^d x^g=g| \
+x^g^d xc^d =A2-A/2x3x/2|
+x3 [^f2-=d2-][^f/2d/2]x/2 [=g4-B4-][g3/2B3/2]
+V:2
+% Violin II
+%%MIDI program 48
+x
+% Adagio - Second Movement - BWV 1060 - J.S. Bach
+% MIDI Sequence Copyright 1997 Garrett W. Van Cleef
+^A^G x^A^G x^A,C x=F^A| \
+xF^G x^AF x^D^A, xC=A| \
+xF^D x=D^A, xC^D xF^A,| \
+xc=G xFc x^A=d xGc|
+x^GF x=GB xcG xcf| \
+xdB xGc xBG xDG| \
+xF^G xD=G xGF xGF| \
+xDF xGC xD^G x=Gd|
+x^d=d xc^A x^GF x^Dc| \
+xcC x=G=D xGc xBd| \
+xc^d xFG xc=A xA,C| \
+xF=D xG^G x^A=G xG^D|
+xF=A x^Ac x^A=d x^AG| \
+xcC xF^D x^DC xCF| \
+xC^D xFC xF^A xGE| \
+xC^A, x^G,F x=G,C xcF|
+xG^c x=cG xF^G x=D=G| \
+x^DC x=D^F xGD xGc| \
+x=A^F xDG x^FD xA,D| \
+xC^D xA,=D xDC xDC|
+xA,C xDG, xA,^D x=DA| \
+x^A=A xG=F x^DC x^A,G| \
+xGG, x=D=A, xDG x^FA| \
+G12-|
+G6 =F6-| \
+F12-| \
+F6 ^D6-| \
+^D6- ^D^DG xcf|
+xF^A x^A^d xc^G x^DC| \
+xF^A x^A^G x^A,=D xF^A| \
+xF^G x^AF x^A^G x^A^G| \
+xF^G x^A^D xFc x^Af|
+x=gf x^d=d xc^G x=GF| \
+x^D^d x^A,F x^A,^D x=DF| \
+x^D^A, xF^D x^D^G xc^d| \
+x^dc x^Gc c2-c/2x3x/2|
+x3 [c2-=A2-][c/2A/2]x/2 [B4-=G4-][B3/2G3/2]
+V:3
+% Viola
+%%MIDI program 48
+x
+% Adagio - Second Movement - BWV 1060 - J.S. Bach
+% MIDI Sequence Copyright 1997 Garrett W. Van Cleef
+G/2x/2F/2x3/2^D/2x/2^D/2x3/2=D/2x/2F/2x3/2D/2x/2^A,/2x/2| \
+x^G,C xDF x^A,^D x^DF| \
+x=D^D xF^D x=A,C xFF,| \
+x=G,C xCA, xF=D xEG|
+xFC xA,D xG,C xCD| \
+xDG xCG, xGG, xDC| \
+x^GF xDB, x=G,D xCC| \
+xG,D xGG, xFD xDB,|
+xG,^A, xCG xD^G x^D=G| \
+x^GF xc^G xc^G x=D=G| \
+xG^D x^D^A, xFC xF^D| \
+x=dF x^A,D x^D^A, x^DG|
+xCF x^A,F xF=D xGE| \
+x=AF x^A,^A, xF=A xAF| \
+x^DG xAc x^AF xEG| \
+x^G,^A, xC^A, xE=G xEC|
+xEG xGE xC^G, xB,=D| \
+xC=G, x^F,=A, xD,G, xG,A,| \
+xA,D xGD xDD, xA,G,| \
+x^DC xA,^F, x=D,A, xG,G,|
+xD,A, xDD, xCA, xA,^F,| \
+xD^F xGd xA,^D x=D,D| \
+x^DC xG^D xG^D xA,=D| \
+D6 E6-|
+E6 ^D6-| \
+^D2=D C2A, D6-| \
+D6 ^C6-| \
+^C2=C ^A,2G, C^Gc x^Gc|
+x^A=F x=G^A x^G^D xC^G,| \
+x=DF x=G^D x=DF xD^A,| \
+x^G,C xFD x^A,F x^D^D| \
+x^A,F x^A^A, x^GF xF=D|
+x^A,D x^D^A xFc x^A,=D| \
+xC^G, x^DC x^DC xF,^A,| \
+x^A,=G, xC^A, x^G,C x^D=G| \
+x^G,^G x^D^G ^F2-^F/2x3x/2|
+x3 =D2-D/2x/2 D4-D3/2
+V:4
+% Continuo
+%%MIDI program 48
+% Adagio - Second Movement - BWV 1060 - J.S. Bach
+% MIDI Sequence Copyright 1997 Garrett W. Van Cleef
+^D,,2=F,, =G,,2^G,, ^A,,2^A, ^G,2=G,| \
+F,2^D, =D,^A,,D, ^D,G,^D, C,F,F,,| \
+^A,,2C, =D,2^D, F,,2F, ^D,2=D,| \
+C,2^A,, =A,,F,,A,, ^A,,^A,^G, =G,E,C,|
+F,2^D, =D,B,,G,, C,2^A,, ^G,,^G,F,| \
+=G,2F, ^D,2C, G,,2G, F,2^D,| \
+=D,2C, B,,G,,B,, C,2D, ^D,2F,| \
+G,,2G, F,2^D, =D,2C, B,,G,,B,,|
+C,2^A,, ^G,,2=G,, F,,2F, G,2G,,| \
+^G,,2^G, =G,2F, G,2F, G,2G,,| \
+C,2^A,, =A,,2G,, F,,2^D, =D,2C,| \
+^A,,2^G,, =G,,2F,, ^D,,2=D, C,2^A,,|
+=A,,C,A,, F,,G,,A,, ^A,,2=A,, G,,2C,| \
+F,,2^D,, =D,,2^D,, F,,2F, ^D,2=D,| \
+C,2^A,, =A,,F,,A,, ^A,,D,F, E,C,E,| \
+F,,2G,, ^G,,2^A,, C,2C ^A,2^G,|
+=G,2F, E,C,E, F,,F,^D, =D,B,,G,,| \
+C,C^A, =A,^F,D, G,,2=F,, ^D,,^D,C,| \
+=D,2C, ^A,,2G,, D,,2D, C,2^A,,| \
+=A,,2G,, ^F,,D,,^F,, G,,2A,, ^A,,2C,|
+D,2D C2^A, =A,2G, ^F,D,^F,| \
+G,2=F, ^D,2=D, C,2C,, D,,2D,| \
+^D,2^D,, =D,,2C,, D,,2C, D,2D,,| \
+G,,2A,, ^A,,=A,,G,, C,2D, E,2F,|
+G,2F, E,2C, F,,2G,, A,,2^A,,| \
+C,2^A,, =A,,2F,, ^A,,2C, D,2^D,| \
+F,2^D, =D,2^A,, ^D,,2F,, G,,2^G,,| \
+^A,,2^G,, =G,,2^D, ^G,2=G, F,2^D,|
+=D,2^A,, ^D,2^D,, ^G,,2^D, ^G,3-| \
+^G,2^G,, =G,,2^G,, ^A,,2^A, ^G,2=G,| \
+F,2^D, =D,^A,,D, ^D,2F, G,2^G,| \
+^A,,2^A, ^G,2=G, F,2^D, =D,^A,,D,|
+^D,2=D, C,2^A,, ^G,,2^G, ^A,2^A,,| \
+C,2C ^A,2^G, ^A,2^G, ^A,2^A,,| \
+^D,2^D,, F,,2=G,, ^G,,2=G,, ^G,,2^A,,| \
+C,2^G,, ^D,2C, =D,2-D,/2x3x/2|
+x3 D,,3 =G,,4-G,,3/2
+V:5
+% Harpsichord I (RH)
+%%MIDI program 6
+x12| \
+x12| \
+% Adagio - Second Movement - BWV 1060 - J.S. Bach
+% MIDI Sequence Copyright 1997 Garrett W. Van Cleef
+f3- f/2g/2f/2^d/2f/2g/2 =A3- A/2G/2A/2^A/2c/2=d/2| \
+^d/2g/2f/2^d<c'^a/2=a/2g/2f/2^d/2 =d/2f/2g/2^g<^a^c'/2=c'/2^a/2^g/2=g/2|
+^gx4x3/2=G/2c/2d<^dg/2f/2^d/2=d/2c/2| \
+B/2d/2c/2B/2=A/2G/2 gx2 x/2^g/2=g/2f/2^d/2=d/2 d'x2| \
+x6 g3- g/2^g/2=g/2f/2g/2^g/2| \
+B3- B/2A/2B/2c/2d/2^d/2 f/2^g/2=g/2f<=d'c'/2b/2a/2g/2f/2|
+^d3- ^d/2f/2^d/2=d/2^d/2f/2 =d3- d/2^d/2=d/2c/2d/2^d/2| \
+f/2^g/2=g/2f/2g/2^g/2 c3- c/2=d/2c/2B/2c/2d/2>c/2[c/2B/2][c/2B/2][c/2B/2][c/2-B/2]c/2-| \
+c3 x2^d3/2c/2f/2=g/2a/2^a/2 c'/2=d'/2c'/2^a/2c'/2=a/2| \
+fF^A df2- f/2^A/2^d/2f/2g/2^g/2 ^a/2c'/2^a/2^g/2^a/2=g/2|
+^d/2f/2^d/2=d/2^d/2c/2 =A/2c/2^A/2=A/2G/2F/2 f4^A/2=A/2^A/2g/2| \
+=Ax8 x3| \
+x12| \
+c3- c/2^c/2=c/2^A/2c/2^c/2 E3- E/2=D/2E/2F/2G/2^G/2|
+^A/2^c/2=c/2^A<=gf/2e/2g/2c/2^A/2 ^G2x4| \
+x/2=G/2=A/2^A<c^d/2=d/2c/2^A/2=A/2 ^A2x4| \
+d3- d/2^d/2=d/2c/2d/2^d/2 ^F3- ^F/2E/2^F/2G/2=A/2^A/2| \
+c/2^d/2=d/2c<=ag/2^f/2a/2d/2c/2 ^A/2d/2c/2^A/2=A/2G/2 gx2|
+x/2a/2g/2^f/2e/2d/2 d'x3Ac ^d^a/2=a3/2-| \
+a/2^a/2=a/2g/2a/2^a/2 g3 g/2=a/2g/2^f/2g/2a/2 ^A3-| \
+^A/2c/2^A/2=A/2^A/2c/2 =d/2^d/2=d/2c/2d/2^d/2 ^A3- ^A/2[^A/2=A/2][^A/2=A/2][^A/2=A/2][A/2G/2-]G/2| \
+G2x8x2|
+x4xG3/2^A/2=A/2G/2A/2^A/2 c/2=d/2c/2^A/2c/2d/2| \
+^d/2=f/2^d/2=d/2^d/2f/2 g/2x/2f/2x/2^d/2x/2 =df^g ^A2x| \
+x4xF3/2^G/2=G/2F/2G/2^G/2 ^A/2c/2^A/2^G/2^A/2c/2| \
+^c/2^d/2^c/2=c/2^c/2^d/2 f/2x/2^d/2x/2^c/2x/2 =c3- c/2^c/2=c/2^A/2c/2^G/2|
+^A3- ^A/2c/2^A/2^G/2^A/2=G/2 c3- c/2=d/2^d/2=d/2^d/2f/2| \
+^A3- ^A/2c/2^A/2^G/2^A/2c/2 =D3- D/2C/2D/2^D/2F/2=G/2| \
+^G/2c/2^A/2^G<f^d/2=d/2c/2^A/2^G/2 =G/2^A/2^G/2=G/2F/2^D/2 ^dx2| \
+x/2f/2^d/2=d/2c/2^A/2 ^ax3F^G cf2-|
+f/2=g/2f/2^d/2f/2g/2 ^d3- ^d/2f/2^d/2=d/2^d/2f/2 G3-| \
+G/2^G/2=G/2F/2G/2^G/2 ^A/2c/2^A/2^G/2^A/2c/2 =G3  (3G/2F/2G/2G/2[G/2F/2][F/2^D/2-]^D/2| \
+^D3- ^D/2f/2^d/2=d/2^d/2g/2 c3- c/2=d/2c/2B/2c/2^d/2| \
+^G3 ^G/2^A/2^G/2=G/2^G/2c/2 ^F3 x3|
+x3 [^f/2c/2][c/2B/2][c/2B/2][c/2B/2][c/2B/2][c/2B/2] [=g/2-B/2-B/2][g4-B4-][gB]
+V:6
+% Harpsichord I (LH)
+%%MIDI program 6
+x12| \
+x12| \
+% Adagio - Second Movement - BWV 1060 - J.S. Bach
+% MIDI Sequence Copyright 1997 Garrett W. Van Cleef
+^A,/2=A,/2^A,/2=F,/2C/2F,/2 =DD,^D, F,/2=A,/2C/2F/2^D/2=D/2 ^D^D,=D,| \
+C,C^A, =A,F,A, ^A,^A,,^G,, =G,,E,C,|
+F,x6C,^A,, ^G,,^G,F,| \
+=G,2x3/2F/2^D/2=D/2^D/2C/2 Gx2 x/2^D/2=D/2C/2B,/2C/2| \
+^G,^Gx2=G,/2=A,/2B,/2G,/2 C/2B,/2C/2G,/2D/2G,/2 ^D^D,F,| \
+G,/2B,/2=D/2G/2F/2^D/2 FF,^D, =D,DC B,G,B,|
+CC,^A,, ^G,,^G,=G, F,F,,F, G,G,,G,| \
+^G,^G,,^G, =G,G,,F,, G,,G,F, G,G,,G,| \
+C,C^A, =A,A,,G,, F,,A,2- A,/2^A,/2=A,/2G,/2A,/2F,/2| \
+^A,,^A,^G, =G,G,,F,, ^D,,G,2- G,/2^G,/2=G,/2F,/2G,/2^A,/2|
+CC,=A,, F,,G,,A,, ^A,,^A,=A, G,/2F,/2G,C,| \
+F,x8 x3| \
+x12| \
+F,/2E,/2F,/2C,/2G,/2C,/2 ^G,^G,,^A,, C,/2E,/2=G,/2C/2^A,/2^G,/2 ^A,^A,,^G,,|
+=G,,G,F, E,C,E, F,2x4| \
+xC,^A,, =A,,^F,=D, G,2x4| \
+D,/2^F,/2A,/2D/2C/2A,/2 ^A,^A,,G,, D,/2=A,/2C/2^D/2=D/2C/2 DC^A,| \
+=A,A,,G,, ^F,,D,,^F,, G,,G,A,, ^A,,G,,C,|
+D,x2 x/2=A,/2D/2E/2^F/2G/2 AA,x2D,/2E,/2^F,/2D,/2| \
+G,G=F ^D^D,=D, C,CC, D,DD,| \
+^D,^D^D, =D,DC DD,C, D,DD,| \
+G,2x8x2|
+x^C^A, G,E,=C, F,,F,G, =A,/2^A,/2=A,/2G,/2A,/2^A,/2| \
+C/2D/2C/2^A,/2C/2D/2 ^D/2F/2^D/2=D/2^D/2F/2 ^A,=DF ^G2x| \
+xF^D =DF^A, ^D^D,F, =G,/2^G,/2=G,/2F,/2G,/2^G,/2| \
+^A,/2C/2^A,/2^G,/2^A,/2C/2 ^C/2^D/2^C/2=C/2^C/2^D/2 ^G,^G,,=G,, F,,F,^D,|
+=D,^A,,^A, ^D,F,^D, ^G,^G,,^D, ^G,3-| \
+^G,/2=G,/2F,/2G,/2^G,/2F,/2 =G,G,,^G,, ^A,,/2=D,/2F,/2^A,/2^G,/2=G,/2 ^G,^G,,=G,,| \
+F,,F,^D, =D,^A,,D, ^D,2x3/2^G,/2=G,/2F,/2G,/2^D,/2| \
+^A,x2 x/2F,/2^A,/2=C/2=D/2^D/2 FF,x2^A,,/2C,/2=D,/2^A,,/2|
+^D,^D=D CC,^A,, ^G,,^G,^G,, ^A,,^A,^A,,| \
+C,CC, ^A,,^A,^G, ^A,^A,,^G,, ^A,,^A,^A,,| \
+^D,/2F,/2^D,/2=D,/2^D,/2=G,/2 F,/2^G,/2=G,/2F,/2G,/2^A,/2 ^G,^G,,=G,, ^G,,^G,^D,| \
+C,/2^A,/2^G,/2=G,/2^G,/2^D,/2 C/2^C/2=C/2B,/2C/2C,/2 =D,3 x3|
+x3 [=A/2D/2][A/2=G/2][A/2G/2][A/2G/2][A/2G/2][A/2G/2] [G/2-G/2D/2-G,/2-][G4-D4-G,4-][GDG,]
+V:7
+% Harpsichord II (RH)
+%%MIDI program 6
+% Adagio - Second Movement - BWV 1060 - J.S. Bach
+% MIDI Sequence Copyright 1997 Garrett W. Van Cleef
+^A3- ^A/2c/2^A/2^G/2^A/2c/2 D3- D/2C/2D/2^D/2F/2=G/2| \
+^G/2c/2^A/2^G<f^d/2=d/2c/2^A/2^G/2 =G/2^A/2^d/2f<g^a/2=a/2g/2f/2^d/2| \
+=d/2f/2^d/2=d/2c/2^A/2 ^ax2 x/2c/2^A/2=A/2G/2F/2 fx2| \
+xC^D G2<c2^A/2^G/2=G/2F/2 Ex2|
+x/2c/2=d/2^d<f^g/2=g/2f/2^d/2=d/2 ^d2x4| \
+g3- g/2^g/2=g/2f/2g/2^g/2 B3- B/2=A/2B/2c/2=d/2^d/2| \
+f/2^g/2=g/2f<=d'c'/2b/2a/2g/2f/2 ^d/2G/2F/2^D/2=D/2C/2 cx2| \
+x/2d/2c/2B/2A/2G/2 gx3DF ^G^d/2=d3/2-|
+d/2^d/2=d/2c/2d/2^d/2 c3- c/2=d/2c/2B/2c/2d/2 ^d3-| \
+^d/2f/2^d/2=d/2^d/2f/2 =g/2^g/2=g/2f/2g/2^g/2 ^d3- ^d/2[^d/2=d/2][^d/2=d/2][^d/2=d/2][d/2c/2-]c/2| \
+c/2=G/2A/2B/2c/2d/2 ^d/2f/2^d/2=d/2^d/2c/2 ACF A^d2-| \
+^d/2A/2^A/2c/2=d/2^d/2 f/2g/2f/2^d/2f/2=d/2 ^AG^A ^dg2-|
+g=Ac f^d2- ^d/2F/2G/2A/2^A/2c/2 =d/2e/2>f/2[f/2e/2][f/2e/2][e/2d/2]| \
+[f/2-e/2]f3g/2f/2^d/2f/2g/2 =A3- A/2G/2A/2^A/2c/2=d/2| \
+^d/2g/2f/2^d<c'^a/2=a/2g/2f/2^d/2 =d/2c/2^A/2c<^cf/2e/2g/2=c/2^A/2| \
+^G/2c/2^A/2^G/2=G/2F/2 fx2 x/2g/2f/2e/2d/2c/2 c'x2|
+x6 x/2c/2d/2^d<f^g/2=g/2f/2^d/2=d/2| \
+^d2x4 x/2=D/2G/2=A<^Ad/2c/2^A/2=A/2G/2| \
+^F/2A/2G/2^F/2E/2D/2 dx2 x/2^d/2=d/2c/2^A/2=A/2 ax2| \
+x6 d3- d/2^d/2=d/2c/2d/2^d/2|
+^F3- ^F/2E/2^F/2G/2A/2^A/2 c/2^d/2=d/2c<=ag/2^f/2a/2d/2c/2| \
+^A3- ^A/2c/2^A/2=A/2^A/2c/2 =A3- A/2^A/2=A/2G/2A/2^A/2| \
+c/2^d/2=d/2c/2d/2^d/2 G3- G/2=A/2G/2^F/2G/2A/2>^F/2[G/2^F/2][G/2^F/2][G/2^F/2][G/2-G/2]G/2| \
+G3 x2=F E/2F/2E/2=D/2E/2F/2 G/2^G/2=G/2F/2G/2^G/2|
+^A/2c/2^A/2^G/2^A/2c/2 ^c/2x/2=c/2x/2^A/2x/2 =Ac^d F2x| \
+x4xC3/2^D/2=D/2C/2D/2^D/2 F/2=G/2F/2^D/2F/2G/2| \
+^G/2^A/2^G/2=G/2^G/2^A/2 c/2x/2^A/2x/2^G/2x/2 =G^A^c ^D2x| \
+x4x^a3/2=c'/2^a/2^g/2^a/2=g/2 ^g3-|
+^g/2^a/2^g/2=g/2^g/2f/2 =g3- g/2^g/2=g/2f/2g/2^d/2 f/2^g/2=g/2f/2g/2^g/2| \
+=d/2^A/2^G/2=G/2F/2^D/2 ^dx2 x/2f/2^d/2=d/2c/2^A/2 ^ax2| \
+x6 ^A3- ^A/2c/2^A/2^G/2^A/2c/2| \
+D3- D/2C/2D/2^D/2F/2=G/2 ^G/2c/2^A/2^G<f^d/2=d/2c/2^A/2^G/2|
+=G3- G/2^G/2=G/2F/2G/2^G/2 F3- F/2=G/2F/2^D/2F/2G/2| \
+^G/2c/2^A/2^G/2^A/2c/2 ^D3- ^D/2F/2^D/2=D/2^D/2F/2>^D/2[^D/2=D/2][^D/2=D/2][^D/2=D/2][^D/2-=D/2]^D/2| \
+^D12-| \
+^D6- ^D/2^D/2=D/2C/2D/2E/2 ^F/2=G/2^F/2E/2^F/2G/2|
+=A/2^A/2=A/2G/2A/2B/2 c/2d/2c/2B/2c/2d/2 c4-c3/2
+V:8
+% Harpsichord II (LH)
+%%MIDI program 6
+% Adagio - Second Movement - BWV 1060 - J.S. Bach
+% MIDI Sequence Copyright 1997 Garrett W. Van Cleef
+^D,/2=D,/2^D,/2^A,,/2=F,/2^A,,/2 G,G,,^G,, ^A,,/2=D,/2F,/2^A,/2^G,/2=G,/2 ^G,^G,,=G,,| \
+F,,F,^D, =D,^A,,D, ^D,G,^D, C,F,F,,| \
+^A,,2x3/2^D/2=D/2C/2D/2^A,/2 Fx2 x/2C/2F,/2G,/2=A,/2^A,/2| \
+CC,x2F,/2G,/2=A,/2F,/2 ^A,^A,,x4|
+xF,^D, =D,B,G, CC,x4| \
+G,,/2B,,/2D,/2G,/2F,/2D,/2 ^D,^D,,C,, G,,/2=D,/2F,/2^G,/2=G,/2F,/2 G,F,^D,| \
+=D,DC B,DG, CC,D, ^D,C,^G,| \
+=G,x2 x/2=D/2G,/2=A,/2B,/2C/2 DD,x2G,,/2A,,/2B,,/2G,,/2|
+C,C^A, ^G,^G,,=G,, F,,F,F,, G,,G,G,,| \
+^G,,^G,^G,, =G,,G,F, G,G,,F,, G,,G,G,,| \
+C,C2- C/2D/2C/2^A,/2C/2^D/2 FF,^D, =D,DC| \
+^A,D2- D/2^D/2=D/2C/2D/2^A,/2 ^D,^D=D CC,^A,,|
+=A,,/2D/2C/2^A,/2C/2=A,/2 F,G,A, ^A,^A,,=A,, G,,G,C,| \
+F,/2A,/2C/2F/2^D/2C/2 =DD,^D, F,/2A,/2C/2F/2^D/2=D/2 ^D^D,=D,| \
+C,C^A, =A,F,A, ^A,/2C/2D/2E/2F/2G/2 ECE| \
+Fx2 x/2^A,/2^G,/2=G,/2^G,/2F,/2 Cx2 x/2=G,/2C/2D/2E/2F/2|
+GG,x2C/2D/2E/2C/2 FF,^D, =D,B,G,| \
+C2x4 xG,F, ^D,^DC| \
+=D2x3/2C/2^A,/2=A,/2^A,/2G,/2 Dx2 x/2^A,/2=A,/2G,/2^F,/2G,/2| \
+^D,^Dx2=D,/2E,/2^F,/2D,/2 G,/2^F,/2G,/2D,/2A,/2D,/2 ^A,^A,,C,|
+D,/2^F,/2=A,/2D/2C/2^A,/2 CC,^A,, =A,,A,G, ^F,D,^F,| \
+G,G,,=F,, ^D,,^D,=D, C,C,,C, D,D,,D,| \
+^D,^D,,^D, =D,D,,C,, D,,D,C, D,D,,D,| \
+G,,G,A, ^A,=A,G, CC,D, E,/2F,/2E,/2D,/2E,/2F,/2|
+G,/2^G,/2=G,/2F,/2G,/2^G,/2 ^A,/2C/2^A,/2^G,/2^A,/2C/2 F,=A,C ^D2x| \
+xC^A, =A,CF, ^A,^A,,C, =D,/2^D,/2=D,/2C,/2D,/2^D,/2| \
+F,/2=G,/2F,/2^D,/2F,/2G,/2 ^G,/2^A,/2^G,/2=G,/2^G,/2^A,/2 ^D,=G,^A, ^C2x| \
+x^A,^G, =G,^A,^D, ^G,,^G,=G, F,F,,^D,,|
+=D,,D,^A,, ^D,^D,,^D, ^G,4^G,,^D,| \
+^G,=D,x3/2^G,/2=G,/2F,/2G,/2^D,/2 ^A,x2 x/2F,/2^A,/2=C/2=D/2^D/2| \
+FF,x2^A,,/2C,/2=D,/2^A,,/2 ^D,/2=D,/2^D,/2^A,,/2F,/2^A,,/2 G,G,,^G,,| \
+^A,,/2=D,/2F,/2^A,/2^G,/2=G,/2 ^G,^G,,=G,, F,,F,^D, =D,^A,,D,|
+^D,^D,,=D,, C,,C^A, ^G,^G,,^G, ^A,^A,,^A,| \
+CC,C ^A,^A,,^G,, ^A,,^A,^G, ^A,^A,,^A,| \
+^D,^D,,^D, F,F,,=G,, ^G,,/2^A,/2^G,/2=G,/2^G,/2C/2 ^D,/2F,/2^D,/2=D,/2^D,/2=G,/2| \
+C,/2^C,/2=C,/2^A,,/2C,/2^G,,/2 ^D,/2^C,/2^D,/2=G,/2=C,/2^D,/2 =D,2x3/2G,/2=A,/2^A,/2=A,/2G,/2|
+^F,/2E,/2^F,/2G,/2^F,/2E,/2 x/2x/2D2 [D4-G,4-][D3/2G,3/2]

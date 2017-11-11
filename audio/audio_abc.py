@@ -34,9 +34,10 @@ FILENAME = sys.argv[1]
 DATA = open(FILENAME, 'r').read()
 
 # TODO. Replace this list with new char set if DATA contains new chars
-CHARS = ['\x93', ' ', '$', '(', ',', '0', '4', '8', '<', '@', '\xc3', 'D', 'H', 'L', 'P', 'T', 'X', '\\', '`', 'd', 'h', 'l', 'p', '\xf3', 't', 'x', '|', '\xff', '\x80', '\x94', '\x98', '#', "'", '+', '/', '3', '7', ';', '?', '\xc0', 'C', 'G', 'K', 'O', 'S', 'W', '[', '_', '\xe0', 'c', 'g', 'k', 'o', 's', 'w', '{', '\x89', '\n', '\x99', '"', '&', '\xa9', '*', '.', '2', '6', ':', '>', 'B', 'F', 'J', 'N', 'R', 'V', 'Z', '^', 'b', 'f', '\xe9', 'j', 'n', 'r', 'v', '\xf9', 'z', '~', '\t', '\x96', '!', '%', ')', '-', '1', '5', '9', '=', 'A', 'E', 'I', '\xca', 'M', 'Q', 'U', 'Y', ']', 'a', '\xe2', 'e', 'i', 'm', 'q', '\xf2', 'u', 'y', '}']
+CHARS = ['*', 'C', 'N', 'b', '0', '“', '"', 'À', ')', '–', 'Ã', '€', 'K', '<', '$', '%', 'W', 'T', 'l', 'v', 'w', '^', 'Q', '4', '|', '\x89', 'ÿ', 's', 'u', 'ù', 'a', 'E', 'Y', '©', '\x99', '7', 'A', '?', 'U', 'X', 'f', 'i', "'", 'j', 'ò', '`', '@', ']', 'e', '\x98', '{', 'k', '¸', 'h', 'p', 'M', '\x93', ' ', '(', 'V', '2', 't', '\n', 'O', '}', '-', '1', 'g', 'H', 'F', 'J', 'z', '\x94', 'ó', 'Z', '¥', '#', 'L', ',', '5', 'm', ';', 'à', '8', 'é', 'o', '\\', 'G', '/', 'c', 'd', '~', '>', 'Ê', 'r', '+', 'D', '\x96', '!', 'I', '_', 'S', '[', '=', 'P', 'q', '&', '\x80', 'â', '.', '\t', 'y', ':', 'n', '3', 'B', 'R', '6', '9', 'x']
 CHARS.extend(list(set(DATA)))
 CHARS = list(set(CHARS))
+CHARS.sort()
 print("Char set", CHARS)
 
 DATA_SIZE, VOCAB_SIZE = len(DATA), len(CHARS)
@@ -54,8 +55,8 @@ model = RNN(sess, data, {
     "SAVE_DST": "./save_abc/",
 })
 
-output_file = open("output/output.abc", "w")
 t = time.time()
+current_song = ""
 i = 0
 while True: 
     batchX, batchY = model.train_batch()
@@ -86,8 +87,8 @@ while True:
     the network generate on its own without training at the same time.
     """
     # if i % 1 == 0:
-    if i % 10 == 0:    
-    # if i % 50 == 0 and i != 0:    
+    # if i % 10 == 0:    
+    if i % 50 == 0 and i != 0:    
         sample = model.sample(100)
         sample = utils.ixes_to_string(IX_TO_CHAR, sample)
 
@@ -96,9 +97,24 @@ while True:
         print(sample)
         print("======")
 
-        output_file.write(sample)
-        output_file.write("\n")
-        output_file.flush()
+        if "X:" in sample:
+            output_file = open("output/output" + str(i) + ".abc", "w", encoding="utf-8")            
+            split = sample.split("X:")
+            """
+            sample could contain more than one X:, but we'll keep it simple and
+            just end the song at before and start a new song at the last split.
+            """
+            before = split[0]
+            after = split[-1]
+            current_song += before
+            try: 
+                output_file.write(current_song)
+                output_file.flush()
+            finally:
+                current_song = "X:" + after
+                output_file.close()
+        else:
+            current_song += sample
 
         print('Batch: {:2d}, elapsed: {:.4f}'.format(i, time.time() - t))
         t = time.time()        

@@ -1,0 +1,35 @@
+X: 22662
+Q: "Irish fedend ttipCendol'"
+U: p=!diminuendo(!
+U: q=!ciminuendo(!
+U: q=!diminuendo(!
+U: q=!diminuendo(!
+U: q=!rinurnuendo(!
+U:n=!crescendo(!) ciclloneD.
+M:3/4
+L:1/8
+K:D
+F | B> dBz A/G/A B>d | g>agf e<c'd>b | f>e g<f e<cd>e |
+| c>F c>c eG d>c | d>gf>e d>ef>d | c>dc>A G>AG>A G>GFA |\
+G>cd>B A2d2 B>AG>A | G2G2G2d2 e>fg>f g>ag>g |\
+c>ad>f a>gf>e d2B2G2d2 |\
+1 G2G2^c2 ABde fede =cBAG FFED |\
+FGFE DCDB,
+A2BAGFD2 EB,GGB, DcBA |
+G2 AG FDEF G2d2B2 |\
+c2BB cefg fdcB ABc2  ::\
+e2e2 dcBA  2 G2G2 G2 :|\
+(dd) |\
+c=def a2g2 d2d2 =f2^d2 | a2f2d2 ^c2c2c2c2 |
+  [b2d2]a4a z2d2B2 | B4 z4 |\
+G4 G2G2 | d4 G2A2 | G4 \
+g4 :|[|[1 g4 z4 :|
+V: 2 clef=bass middle=d
+|:\
+d2 d2 f2 | d2 A2 B2 | {c}B4 A4 | B2 G2 B2 ::\
+A2 |
+d2 e2 f2 | {e2}f2 g2 e2 \
+| g2 g2 g2 | g fgf d2  ::
+G2 gG G2 c2 | c4 z4 ||
+
+

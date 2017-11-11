@@ -1,0 +1,321 @@
+X: 1
+T: from bach/cs6-4sar.mid
+M: 3/2
+L: 1/8
+Q:1/4=110
+K:D % 2 sharps
+% untitled
+% Copyright \0xa9 1995 by David Grossman
+% David Grossman
+% A
+% A'
+% B
+% B'
+V:1
+% Solo Cello
+%%MIDI program 42
+% untitled
+% Copyright \0xa9 1995 by David Grossman
+% David Grossman
+% A
+A,4 A,6 x2| \
+G,4 F,6 x2| \
+F,4 E,6 x2| \
+D,4 x8|
+D,4 x8| \
+E,4 E,6 x2| \
+E,4 D,4 E,4| \
+E,4 x8|
+% A'
+A,4 A,6 x2| \
+G,4 F,6 x2| \
+F,4 E,6 x2| \
+D,4 x8|
+D,4 x8| \
+E,4 E,6 x2| \
+E,4 D,4 E,4| \
+E,4 x8|
+% B
+E,4 E,6 x2| \
+F,2 x8 x2| \
+^D,2 x8 ^D,2| \
+E,4 x8|
+A,4 x2 =D2 E2 G,2| \
+F,2 E2 D2 =c2 B4| \
+B,,4 =C,4 D,4| \
+D,4 x8|
+G,2 B,2 B,2 x6| \
+x12| \
+F,2 A,2 A,2 x6| \
+x12|
+E,2 F,2 F,2 E,2 E,2 D,2| \
+D,2 E,2 E,2 D,2 D,2 ^C,2| \
+C,2 x6 D,2 x2| \
+E,2 x8 G,2|
+F,2 A,2 A,2 F,2 F,2 E,2| \
+E,2 G,2 G,2 E,2 E,2 =F,2| \
+=F,2 A,2 A,2 =F,2 =F,2 E,2| \
+E,2 x2 ^F,6 x2|
+F,2 x6 =C2 x2| \
+G,,2 x8 x2| \
+G,,4 A,,4 x4| \
+A,,4 x8|
+% B'
+E,4 E,6 x2| \
+F,2 x8 x2| \
+^D,2 x8 ^D,2| \
+E,4 x8|
+A,4 x2 =D2 E2 G,2| \
+F,2 E2 D2 =c2 B4| \
+B,,4 =C,4 D,4| \
+D,4 x8|
+G,2 B,2 B,2 x6| \
+x12| \
+F,2 A,2 A,2 x6| \
+x12|
+E,2 F,2 F,2 E,2 E,2 D,2| \
+D,2 E,2 E,2 D,2 D,2 ^C,2| \
+C,2 x6 D,2 x2| \
+E,2 x8 G,2|
+F,2 A,2 A,2 F,2 F,2 E,2| \
+E,2 G,2 G,2 E,2 E,2 =F,2| \
+=F,2 A,2 A,2 =F,2 =F,2 E,2| \
+E,2 x2 ^F,6 x2|
+F,2 x6 =C2 x2| \
+G,,2 x8 x2| \
+G,,4 A,,4 x4| \
+A,,4 
+V:2
+% --------------------------------------
+%%MIDI program 42
+% untitled
+% Copyright \0xa9 1995 by David Grossman
+% David Grossman
+% A
+F4 F6 G2| \
+E2 ^C4<D4 B2| \
+A2 F4<G4 A2| \
+G2 F2 G2 E2 F4|
+F4 ^G6 A2| \
+B2 x8 x2| \
+x12| \
+x12|
+% A'
+F4 F6 =G2| \
+E2 C4<D4 B2| \
+A2 F4<G4 A2| \
+G2 F2 G2 E2 F4|
+F4 ^G6 A2| \
+B2 x8 x2| \
+x12| \
+x12|
+% B
+C4 C6 x2| \
+A,2 x8 x2| \
+=C2 A,2 B,2 F=G A2 x2| \
+A2 F4<G4 G2|
+G2 F2 =c4 x4| \
+x8 D4| \
+D2 E2 E2 F2 F2 G2| \
+G4 G6 B2|
+B2 G2 G2 E2 E2 ^C2| \
+C2 A,2 A,2 G,2 G,2 A2| \
+A2 F2 F2 D2 D2 B,2| \
+B,2 G,2 G,2 F,2 F,2 G2|
+G2 x8 x2| \
+G2 x8 x2| \
+x2 G2 G2 F2 F2 ^G2| \
+^G2 A2 A6 x2|
+A2 F2 F2 D2 D2 C2| \
+C2 x2 C6 D2| \
+D2 x8 x2| \
+x4 C6 x2|
+x12| \
+B,2 A,2 A,2 =G,2 G,2 F,2| \
+F,2 E,2 E,2 G,2 G,2 F,2| \
+F,4 F,8|
+% B'
+C4 C6 x2| \
+A,2 x8 x2| \
+=C2 A,2 B,2 FG A2 x2| \
+A2 F4<G4 G2|
+G2 F2 =c4 x4| \
+x8 D4| \
+D2 E2 E2 F2 F2 G2| \
+G4 G6 B2|
+B2 G2 G2 E2 E2 ^C2| \
+C2 A,2 A,2 G,2 G,2 A2| \
+A2 F2 F2 D2 D2 B,2| \
+B,2 G,2 G,2 F,2 F,2 G2|
+G2 x8 x2| \
+G2 x8 x2| \
+x2 G2 G2 F2 F2 ^G2| \
+^G2 A2 A6 x2|
+A2 F2 F2 D2 D2 C2| \
+C2 x2 C6 D2| \
+D2 x8 x2| \
+x4 C6 x2|
+x12| \
+B,2 A,2 A,2 =G,2 G,2 F,2| \
+F,2 E,2 E,2 G,2 G,2 F,2| \
+F,4 F,8|
+V:3
+% Johann Sebastian Bach  (1685-1750)
+%%MIDI program 42
+% untitled
+% Copyright \0xa9 1995 by David Grossman
+% David Grossman
+% A
+D,4 x8| \
+G,,4 x8| \
+A,,4 x8| \
+x12|
+B,,4 x8| \
+D2 C4<D4 E2| \
+D2 C2 C2 B,2 B,2 D2| \
+D2 C2 C8|
+% A'
+D,4 x8| \
+G,,4 x8| \
+A,,4 x8| \
+x12|
+B,,4 x8| \
+D2 C4<D4 E2| \
+D2 C2 C2 B,2 B,2 D2| \
+D2 C2 C8|
+% B
+E4 E6 E2| \
+E2 C2 ^D2 A,B, =C2 E,2| \
+F2 x8 x2| \
+B,4 B,6 x2|
+x12| \
+x8 G,4| \
+E,4 E,4 A,4| \
+=C2 A,2 B,6 x2|
+B,2 x8 x2| \
+x12| \
+B,2 x8 x2| \
+x12|
+^C2 =D2 D2 C2 C2 B,2| \
+B,2 C2 C2 B,2 B,2 A,2| \
+A,2 x2 A,4 B,2 x2| \
+C2 x2 C6 C2|
+D2 x8 x2| \
+A2 x8 x2| \
+A2 =F2 =F2 D2 D2 C2| \
+C2 DE E6 D2|
+D2 E^F/2G/2 G2 F2 F2 E2| \
+E2 F2 F2 E2 E2 D2| \
+D4 D4 C4| \
+C2 D2 D8|
+% B'
+E4 E6 E2| \
+E2 C2 ^D2 A,B, =C2 E,2| \
+F2 x8 x2| \
+B,4 B,6 x2|
+x12| \
+x8 G,4| \
+E,4 E,4 A,4| \
+=C2 A,2 B,6 x2|
+B,2 x8 x2| \
+x12| \
+B,2 x8 x2| \
+x12|
+^C2 =D2 D2 C2 C2 B,2| \
+B,2 C2 C2 B,2 B,2 A,2| \
+A,2 x2 A,4 B,2 x2| \
+C2 x2 C6 C2|
+D2 x8 x2| \
+A2 x8 x2| \
+A2 =F2 =F2 D2 D2 C2| \
+C2 DE E6 D2|
+D2 E^F/2G/2 G2 F2 F2 E2| \
+E2 F2 F2 E2 E2 D2| \
+D4 D4 C4| \
+C2 D2 D8|
+V:4
+% Six Suites for Solo Cello
+%%MIDI program 42
+x12| \
+% untitled
+% Copyright \0xa9 1995 by David Grossman
+% David Grossman
+% A
+B,4 x8| \
+D4 C6 x2| \
+A,4 x8|
+B,4 D6 x2| \
+^G,,4 x8| \
+A,,4 x8| \
+A,,4 x8|
+x12| \
+% A'
+B,4 x8| \
+D4 C6 x2| \
+A,4 x8|
+B,4 D6 x2| \
+^G,,4 x8| \
+A,,4 x8| \
+A,,4 x8|
+% B
+A,,4 F,,6 x2| \
+x12| \
+x12| \
+x12|
+x12| \
+x12| \
+x12| \
+=G,,4 x8|
+x12| \
+x12| \
+x12| \
+x12|
+x12| \
+x8 x2 E,2| \
+E,2 x2 D,4 B,,2 x2| \
+A,,2 x8 x2|
+A,,2 x8 x2| \
+A,,2 x8 x2| \
+A,,2 x8 x2| \
+A,,2 x2 ^A,,6 x2|
+B,,2 x6 D,2 x2| \
+G,2 x8 x2| \
+x12| \
+D,,4 x8|
+% B'
+=A,,4 F,,6 x2| \
+x12| \
+x12| \
+x12|
+x12| \
+x12| \
+x12| \
+G,,4 x8|
+x12| \
+x12| \
+x12| \
+x12|
+x12| \
+x8 x2 E,2| \
+E,2 x2 D,4 B,,2 x2| \
+A,,2 x8 x2|
+A,,2 x8 x2| \
+A,,2 x8 x2| \
+A,,2 x8 x2| \
+A,,2 x2 ^A,,6 x2|
+B,,2 x6 D,2 x2| \
+G,2 x8 x2| \
+x12| \
+D,,4 
+% --------------------------------------
+% Suite No. 6 in D major - BWV 1012
+% 4th Movement: Sarabande
+% --------------------------------------
+% Sequenced with Cakewalk Pro Audio by
+% David J. Grossman - dave@unpronounceable.com
+% This and other Bach MIDI files can be found at:
+% Dave's J.S. Bach Page
+% http://www.unpronounceable.com/bach
+% --------------------------------------
+% Original Filename: cs6-4sar.mid
+% Last Modified: February 22, 1997

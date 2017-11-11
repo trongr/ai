@@ -1,0 +1,68 @@
+X: 1
+T: from bach/bwv792.mid
+M: 4/4
+L: 1/8
+Q:1/4=120
+K:E % 4 sharps
+V:1
+% harpsichord: John Sankey
+%%MIDI program 6
+%%MIDI program 6
+%%MIDI program 6
+%%MIDI program 6
+%%MIDI program 6
+%%MIDI program 6
+%%MIDI program 6
+%%MIDI program 6
+%%MIDI program 6
+%%MIDI program 6
+%%MIDI program 6
+%%MIDI program 6
+% Track 1
+x/2
+E-[FE-][GE-][AE-][BE-][cE][BD-][c/2-D/2-]| \
+[c/2D/2-][AD][BG-E-][cG-E-][dG-E][eG-C-][fG-C-][gGC][f/2-^A/2-F/2-]| \
+[f/2^A/2-F/2-][g^A-F-][e/2-^A/2-F/2-] [e/2d/2-B/2-^A/2F/2B,/2-][d/2-B/2-B,/2][d-B-C] [dB-D][c-B-E] [c-B-F][c-BG]| \
+[c-=A-F][c-A-G] [cA-E][B-A-D] [B-A-E][B-AF] [B-G-E][B-G-F]|
+[BG-D][A-G-C] [A-G-D][A-GE] [A-F-D][A-F-E] [AF-C][G-F-B,]| \
+[G/2-F/2-C/2-][G/2-F/2-D/2-C/2][G/2-F/2-D/2][G/2-F/2E/2-C/2-] [G/2-E/2-C/2][G-E-D][G-E-B,][c/2-G/2E/2-A,/2-][c/2-E/2A,/2-][c-FA,-][c-GA,][c/2-A/2-F,/2-]| \
+[c/2A/2F,/2-][BF,-][cF,][d-BB,-][d-cB,-][dAB,][e-G-E,][e-G-F,][e/2-G/2-G,/2-]| \
+[e/2-G/2G,/2][e-F-A,][e-F-B,][eF-C][d-F-B,][d-F-C][d-FA,][d-E-G,][d/2-E/2-A,/2-]|
+[d/2-E/2-B,/2-A,/2][d/2-E/2-B,/2][d/2c/2-E/2-A,/2-][c/2-E/2-A,/2] [c-E-B,][c-E-G,] [c/2-E/2D/2-F,/2-][c/2-D/2-F,/2][c-D-G,] [cD-A,][=c-DG,-]| \
+[=c-EG,-][=cFG,] [^c-GE,-][c-AE,-] [c-BE,][c-AF,-] [c-BF,-][c-GF,]| \
+[cF-D,-][dF-D,-] [eFD,-][f=C-D,-] [g=C-D,-][a=C-D,] [g=C-G,-][a/2-=C/2-G,/2-][a/2f/2-=C/2-G,/2-]| \
+[f/2=C/2-G,/2-][e/2-^C/2-=C/2G,/2^C,/2-][e/2C/2-C,/2-][gC-C,-][dC-C,-][eC-C,-][gC-C,-][=c^CC,][cE,-][e/2-E,/2-]|
+[e/2-E,/2-][e-GE,][e-^AF,-][e-cF,-][e-GF,-][e^AF,-][cF,-][=F^F,][e/2-F/2-]| \
+[e/2-F/2][e-^A-][e-^A-C][e-^A-D][e-^A-F][e/2-^A/2-C/2-][e/2d/2-B/2-^A/2D/2-C/2][d/2-B/2-D/2] [d-B-F][d-B^A,]| \
+[d-F-B,][d-F-D] [d-FF,][d-E-G,] [d-E-B,][dE-F,] [c-E-G,][c-E-B,]| \
+[cED,][B-D-E,] [B-D-G,][B-DD,] [B-E-C,][B-E-E,] [BE-B,,][^A-E-C,]|
+[^A-E-E,][^AE-G,,] [c-E-^A,,][c/2-E/2-C,/2-][c/2-E/2-C,/2E,,/2-] [c/2-E/2-E,,/2][c-EF,,-][c-FF,,-][c/2-G/2-F,,/2][c/2-G/2][c/2^A/2-E,/2-]| \
+[^A/2E,/2-][BE,-][cE,]Bc^A[bB-D,-][^aB-D,-][g/2-B/2-D,/2-]| \
+[g/2B/2-D,/2][fB-E,-][eB-E,-][dBE,][e^A-F,-][c^A-F,-][f^AF,][B-B,,][B/2-C,/2-]| \
+[B/2-C,/2][B-D,][B-E,][B/2-F,/2-][B/2-G,/2-F,/2][B/2-G,/2] [B/2F,/2-]F,/2G, E,[B,D,]|
+[CE,][DF,] [EG,][FF,] [GE,][F=A,-] [GA,-][EA,-]| \
+[FD-A,-][GD-A,-] [ADA,][B=F-G,-] [c=F-G,-][=d=F-G,] [c=F-C-][=d=F-C-]| \
+[B=FC][A^F-F,-] [BF-F,-][c/2-F/2-F,/2-][=d/2-c/2F/2-B,/2-F,/2] [=d/2F/2-B,/2-][eF-B,-][fF-B,-][e/2-G/2-F/2B,/2-][e/2G/2-B,/2-][f/2-G/2-B,/2-]| \
+[f/2G/2-B,/2-][=dGB,][cA-A,][^dAG,][eF,][fE,][gD,][aC,][g/2-=C,/2-]|
+[g/2=C,/2][a^C,][fD,][e-cC,-][e-BC,-][e-AC,-][e-GC,-][e-FC,-][e/2-E/2-C,/2-]| \
+[e/2-E/2C,/2-][e-FC,-][e/2-E/2-C,/2] [e/2-E/2][e/2-G/2-][e/2-A/2-G/2F,/2-][e/2A/2-F,/2-] [eA-F,-][dA-F,-] [cA-F,-][BAF,-]| \
+[AF,-][BF,-] [A/2-F,/2]A/2-[cA-] [d-A-B,][d-A-A,] [d-A-G,][dA-F,]| \
+[eA-E,][fA-D,] [gA-E,][fA-D,] [aA-F,][B/2-A/2G,/2-][B/2-G,/2-] [B-GG,-][B-FG,-]|
+[B-EG,-][B-=DG,-] [B-CG,-][B/2-=D/2-G,/2-][B/2-=D/2B,/2-G,/2-] [B/2-B,/2G,/2-][B-CG,-][B/2A/2-C/2-G,/2-] [A/2-C/2G,/2-][A-^DG,-][A/2-E/2-G,/2-]| \
+[A/2-E/2G,/2][A-DF,-][A-EF,-][ACF,-][G-B,F,-][G-CF,-][G-DF,][G-CE,-][G/2-D/2-E,/2-]| \
+[G/2-D/2E,/2-][GB,E,-][F-A,E,-][F-B,E,-][F-CE,][F-B,D,-][F-CD,-][F-A,D,][F/2-G,/2-E,/2-]| \
+[F/2-G,/2-E,/2][F-G,-D,][F/2-G,/2-C,/2-] [F/2E/2-G,/2-C,/2B,,/2-][E/2-G,/2-B,,/2][E-G,-A,,] [EG,-G,,][D/2-G,/2F,/2-A,,/2-][D/2-F,/2-A,,/2] [D-F,-G,,][D-F,-B,,]|
+[D-F,=C,,-][D-D,=C,,-] [D-E,=C,,-][D-F,=C,,-] [D-G,=C,,-][D-A,=C,,-] [D-G,=C,,][D-A,]| \
+[D-F,][D/2E,/2-^C,,/2-][E,/2-C,,/2-] [CE,-C,,-][DE,C,,-] [EC-C,,-][FC-C,,-] [GC-C,,][F/2-C/2-][G/2-F/2C/2-]| \
+[G/2C/2-][EC-][A-C-F,,-][A/2-C/2A,/2-F,,/2-][A/2-A,/2F,,/2-][A-B,F,,-][A-CF,,-][A-DF,,-][A-EF,,][A/2-D/2-]| \
+[A/2-D/2][A-E][A-C][A/2B,/2-D,,/2-][B,/2-D,,/2-][FB,-D,,-][GB,D,,-][AF-D,,-][BF-D,,-][c/2-F/2-D,,/2-]|
+[c/2F/2-D,,/2][BF-][cF-][AF-][e2-F2-A,,2-][e/2-F/2-A,,/2-] [e/2d/2-F/2-A,,/2-][d3/2-F3/2-A,,3/2-]| \
+[d2F2A,,2-] A,,/2x3/2 [eE,G,,-][dF,G,,-] [cG,G,,-][BA,G,,-]| \
+[AB,G,,-][GCG,,] [AB,][GC] [BA,][c-=G,-^A,,] [c-=G,-C,][c-=G,-D,]| \
+[c/2-=G,/2E,/2-][c/2-E,/2][c-F,] [c-=G,][c-F,] [c-=G,][c/2-E,/2-][b/2-c/2E,/2D,/2-] [b/2D,/2-][=aF,D,-][^g/2-G,/2-D,/2-]|
+[g/2G,/2D,/2-][fA,D,-][eB,D,-][dCD,-][eB,D,][dC][f-A,][f/2G,/2-E,/2-][e/2G,/2-E,/2-][d/2G,/2-E,/2-]| \
+[c/2G,/2-E,/2-][g-G,E,][g/2A,/2-F,/2-] [f/2A,/2-F,/2-][e/2A,/2-F,/2-][d/2A,/2-F,/2-][a-A,F,][a/2B,/2-G,/2-][g/2B,/2-G,/2-][f/2B,/2-G,/2-] [e/2B,/2-G,/2-][b-B,G,][b/2-C/2-A,/2-]| \
+[b/2C/2A,/2-][BDA,-][cEA,-][dFA,-][eGA,-][fAA,][eG][fA][d/2-F/2-]| \
+[d/2F/2][e-G-][e-G-B,][e-G-F,][e-G-G,][e/2-G/2-][e/2G/2D,/2-]D,/2 E,[F-C-^A,,-]|
+[F/2-C/2^A,,/2][F3/2-D3/2-B,,3/2-] [=A/2-F/2D/2-B,,/2-B,,,/2-][A3/2D3/2-B,,3/2-B,,,3/2] [D/2B,,/2-][G/2-E/2-B,,/2E,,/2-][G3-E3-E,,3-]|[G8-E8-E,,8-]|[GEE,,]
+% MIDI

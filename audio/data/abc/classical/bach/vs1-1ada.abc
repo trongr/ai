@@ -1,0 +1,123 @@
+X: 1
+T: from bach/vs1-1ada.mid
+M: 4/4
+L: 1/8
+Q:1/4=26
+K:F % 1 flats
+% untitled
+V:1
+% Solo Violin
+%%MIDI program 40
+% untitled
+g2- g/2[f/2_e/2][d/2c/2][B/2A/2] G_G3/2[=E/2D/2][_G/2E/2][A/2=G/2]| \
+c3/2B/2 [c/2-c/2]c/2d/2A<BG/2 _eB| \
+B/2A/2_e/2d/2 db/2_g/2 =g[_e/2d/2][c/2B/2]  (3B/2_G/2=G/2[_E/2D/2]x/2| \
+g_g ac B/2d/2_g/2a/2 =gB|
+A/2>b/2f [f/2-=e/2]f/2A f/2d/2_e b/2g/2g/2_e/2| \
+_e/2_d/2a F[a/2g/2][f/2=e/2] [=d/2E/2]d/2g/2e/2 d/2_d/2A/2g/2| \
+=D/2g/2f/2>g/2 [f/2-e/2]f/2A A/2D/2G/2f/2 ex/2x/2| \
+d_d [G/2F/2]x/2F/2=d/2 d/2 (3=B/2_d/2=d/2[f/2e/2] _d3/2=d/2|
+d2- d/2[d/2c/2]_B/2B/2 c/2>_e/2[_e/2-d/2]_e[_e/2d/2][c/2B/2]c/2| \
+[A/2A/2]B[B/2G/2] [g/2d/2][f/2_e/2][d/2c/2]B/2 G_G F (3=G/2F/2_E/2| \
+=B/2d/2d/2c/2 _e/2d/2d/2_e/2 d[c/2_B/2][_e/2d/2] _a/2B/2D/2_a/2| \
+_E/2_a/2g _d (3_E/2G/2B/2 [_d/2_A,/2]c/2_a/2>g/2 [f/2_e/2-]_e/2=d|
+[_e/2-_e/2]_e3/2  (3=B,/2D/2F/2[=B/2_A/2][f/2d/2] gx/2x/2 [G/2_G/2]_e/2d/2c/2| \
+c (3=G/2F/2_E/2 [D/2C/2][C/2=B,/2][C/2G,/2][G/2_E/2] [c/2D/2]c/2[f/2=B/2-]=B[=A/2G/2][=B/2A/2][d/2c/2]| \
+f2- f/2[_a/2g/2][g/2f/2][f/2_e/2] [_e/2-d/2]_e/2x/2c/2 _a_e| \
+_e/2d/2_a/2g/2 g_e/2=B/2 c[_B/2_A/2][_A/2G/2] [f/2c/2][g/2_e/2][f/2-f/2]f/2|
+g2 ff  (3G/2=B/2d/2[_a/2f/2]g/2 _e_e| \
+_e[d/2c/2]d/2 _B/2x/2 (3G/2D/2B,/2 [C/2G,/2][B/2_E/2][_A/2-G/2]_A/2 _e/2c/2_a/2_g/2| \
+ (3_g/2=g/2=a/2[_g/2d/2-]d/2 B,[d/2c/2][B/2A/2] A,/2=G/2c/2A/2 G/2_G/2D/2c/2| \
+=G,[c/2B/2]c/2 [B/2-A/2]B/2[A,/2G,/2]C/2 [C/2B,/2]D/2_E/2G/2 _A/2=B/2c/2_e/2|
+g_g _b/2x/2=g g[c/2B/2][=e/2d/2] _g/2x/2=g/2_g/2| \
+=g8|
+V:2
+% --------------------------------------
+%%MIDI program 40
+% untitled
+B2 x2 c2 x2| \
+_g2 x2 =gx2G| \
+Fx2d dx3| \
+d2 x2 G,/2x2x/2G,|
+_Dx2=D G/2x2x/2B/2G/2| \
+Gx6x| \
+x3C B,x3| \
+G2 x2 Ex3|
+D2 x2 _G/2x3/2 _gx| \
+=gx3 =A2 =Bx| \
+D_E FG Fx3| \
+x4 xc Fx|
+_G2 x2 c/2x3x/2| \
+x8| \
+=B2 x2 =Gx2_A| \
+Fx2g gx3|
+c=B dd x3g| \
+=a2 x4 xc/2A/2| \
+Ax6x| \
+x8|
+A2 xA Ax3| \
+_B8|
+V:3
+% Johann Sebastian Bach  (1685-1750)
+%%MIDI program 40
+% untitled
+D2 x6| \
+Dx3 Dx3| \
+x3D _Ex3| \
+D2 xD D/2x2x/2F|
+=Ex3 B/2x3x/2| \
+x8| \
+x8| \
+A,2 x2 A,x3|
+x4 A,/2x3x/2| \
+Dx3 D2 G,x| \
+C/2x3x/2 _A,x3| \
+x4 xF B,x|
+=A,2 x2 _E/2x3x/2| \
+x8| \
+D2 x2 Cx2C| \
+B,x2G _Ex3|
+Dx2G x3G| \
+_Gx6x| \
+Dx6x| \
+x8|
+D2 x=E Dx3| \
+D8|
+V:4
+% Six Sonatas and Partitas for Solo Violin
+%%MIDI program 40
+% untitled
+=G,2 x2 A,2 x2| \
+x4 G,x3| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+G,x6x| \
+x8| \
+x8|
+x8| \
+x8| \
+G,2 x6| \
+x3G, _A,x3|
+G,x2=B, Cx2C| \
+x8| \
+x8| \
+x8|
+C2 x_D x4| \
+G,8|
+% --------------------------------------
+% Sonata No. 1 in G minor - BWV 1001
+% 1st Movement: Adagio
+% --------------------------------------
+% Sequenced with Cakewalk Pro Audio by
+% David J. Grossman - dave@unpronounceable.com
+% This and other Bach MIDI files can be found at:
+% Dave's J.S. Bach Page
+% http://www.unpronounceable.com/bach
+% --------------------------------------
+% Original Filename: vs1-1ada.mid
+% Last Modified: February 22, 1997

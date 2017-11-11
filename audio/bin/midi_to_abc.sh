@@ -1,5 +1,5 @@
 # USAGE
-# bash midi_2_abc.sh SRC_DIR_1 SRC_DIR_2 ...
+# bash midi_to_abc.sh SRC_DIR_1 SRC_DIR_2 ...
 # 
 # Converts all midi files (ending in .mid) in source dirs into abc files in the 
 # same directories.

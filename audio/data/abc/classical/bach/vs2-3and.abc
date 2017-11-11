@@ -1,0 +1,299 @@
+X: 1
+T: from bach/vs2-3and.mid
+M: 3/4
+L: 1/8
+Q:1/4=27
+K:C % 0 sharps
+% untitled
+% Copyright \0xa9 1995 by David Grossman
+% David Grossman
+% A
+% 1.
+% A'
+% 2.
+% B
+% 1.
+% B'
+% 2.
+V:1
+% Solo Violin
+%%MIDI program 40
+% untitled
+% Copyright \0xa9 1995 by David Grossman
+% David Grossman
+% A
+E2 xE F/2E/2D/2C/2| \
+G/2D/2F2A G/2F/2E/2D/2| \
+E/2G/2A/2B/2 cx3| \
+x3e/2d/2 e/2d/2c/2B/2|
+A2 xd/2e/2 d/2c/2B/2A/2| \
+B/2d/2e/2f/2 gx3| \
+x/2c/2d/2A/2 B/2c/2d/2e/2 f/2a/2g/2f/2| \
+ex3/2d/2c/2B/2 A/2G/2>^F/2[G/2E/2]|
+^F/2D/2E/2^F/2>G/2[B/2A/2][c/2B/2][d/2c/2] [e/2d/2-]d3/2| \
+x2 B3/2A/2 [c/2-B/2]c/2A| \
+% 1.
+G2 x/2G/2=F/2E/2 D/2A/2G/2F/2| \
+% A'
+E2 xE F/2E/2D/2C/2|
+G/2D/2F2A G/2F/2E/2D/2| \
+E/2G/2A/2B/2 cx3| \
+x3e/2d/2 e/2d/2c/2B/2| \
+A2 xd/2e/2 d/2c/2B/2A/2|
+B/2d/2e/2f/2 gx3| \
+x/2c/2d/2A/2 B/2c/2d/2e/2 f/2a/2g/2f/2| \
+ex3/2d/2c/2B/2 A/2G/2>^F/2[G/2E/2]| \
+^F/2D/2E/2^F/2>G/2[B/2A/2][c/2B/2][d/2c/2] [e/2d/2-]d3/2|
+x2 B3/2A/2 [c/2-B/2]c/2A| \
+% 2.
+G6| \
+d2 xd e/2d/2c/2B/2| \
+% B
+e/2B/2d2=f e/2d/2c/2B/2|
+c/2d/2e2e d/2c/2B/2A/2| \
+a/2^f/2^g x^g/2b/2 b/2^g/2^g/2e/2| \
+a2- a/2b/2a/2=g/2 ^f/2e/2^d/2e/2| \
+a/2b/2c'2c'/2b/2 a/2g/2a/2^f/2|
+g/2e/2^d/2e/2 ba a/2g/2a/2^f/2| \
+^fe xe/2=f/2 g/2a/2^a-| \
+^a=a xg g/2f/2g/2e/2| \
+ef x=d/2e/2 f/2g/2a|
+Bc xc e/2d/2e/2c/2| \
+B2 x/2B/2c/2B/2 A/2G/2F/2E/2| \
+F/2^d/2=d/2c/2 B/2c/2^g/2=g/2 ^f/2>c/2[c/2B/2]^f/2| \
+g[a/2g/2]=f/2 [g/2c/2-]c[B/2A/2] [B/2-B/2]BA/2|
+% 1.
+[c/2-B/2]c3/2 x4| \
+B/2c/2d xd e/2d/2c/2B/2| \
+% B'
+e/2B/2d2f e/2d/2c/2B/2| \
+c/2d/2e2e d/2c/2B/2A/2|
+a/2^f/2^g x^g/2b/2 b/2^g/2^g/2e/2| \
+a2- a/2b/2a/2=g/2 ^f/2e/2^d/2e/2| \
+a/2b/2c'2c'/2b/2 a/2g/2a/2^f/2| \
+g/2e/2^d/2e/2 ba a/2g/2a/2^f/2|
+^fe xe/2=f/2 g/2a/2^a-| \
+^a=a xg g/2f/2g/2e/2| \
+ef x=d/2e/2 f/2g/2a| \
+Bc xc e/2d/2e/2c/2|
+B2 x/2B/2c/2B/2 A/2G/2F/2E/2| \
+F/2^d/2=d/2c/2 B/2c/2^g/2=g/2 ^f/2>c/2[c/2B/2]^f/2| \
+g[a/2g/2]=f/2 [g/2c/2-]c[B/2A/2] [B/2-B/2]BA/2| \
+% 2.
+[c/2-B/2]c4-c3/2|
+V:2
+% --------------------------------------
+%%MIDI program 40
+x6| \
+x6| \
+x2 x/2
+% untitled
+% Copyright \0xa9 1995 by David Grossman
+% David Grossman
+% A
+G/2A/2E/2 ^F/2A/2B/2c/2| \
+B/2A/2G x4|
+x6| \
+x2 x/2d/2e/2B/2 c/2e/2a/2g/2| \
+=fx3 BB| \
+cx2E Ex|
+x4 G2| \
+x6| \
+x6| \
+x6|
+x6| \
+x2 x/2
+% 1.
+% A'
+G/2A/2E/2 ^F/2A/2B/2c/2| \
+B/2A/2G x4| \
+x6|
+x2 x/2d/2e/2B/2 c/2e/2a/2g/2| \
+=fx3 BB| \
+cx2E Ex| \
+x4 G2|
+x6| \
+x6| \
+x6| \
+x3
+% 2.
+% B
+d Bx|
+x6| \
+BB x4| \
+x6| \
+^F^F x4|
+Bx ex3| \
+x6| \
+x6| \
+x4 AB|
+x6| \
+x6| \
+x4 c/2x3/2| \
+cx4x|
+% 1.
+EE EE ^F^F| \
+GG GG GG| \
+x3
+% B'
+d Bx| \
+x6|
+BB x4| \
+x6| \
+^F^F x4| \
+Bx ex3|
+x6| \
+x6| \
+x4 AB| \
+x6|
+x6| \
+x4 c/2x3/2| \
+c
+V:3
+% Johann Sebastian Bach  (1685-1750)
+%%MIDI program 40
+% untitled
+% Copyright \0xa9 1995 by David Grossman
+% David Grossman
+% A
+CC CC CC| \
+B,B, B,B, B,B,| \
+CC A,A, DD| \
+G,G, GG GG|
+GG =FF FF| \
+FF EE AA| \
+DD GG G,G,| \
+CC CC CC|
+Cx3 B,2| \
+C/2>e/2[d/2c/2][e/2d/2] D4| \
+% 1.
+G,G, A,A, B,B,| \
+% A'
+CC CC CC|
+B,B, B,B, B,B,| \
+CC A,A, DD| \
+G,G, GG GG| \
+GG FF FF|
+FF EE AA| \
+DD GG G,G,| \
+CC CC CC| \
+Cx3 B,2|
+C/2>e/2[d/2c/2][e/2d/2] D4| \
+% 2.
+G,6| \
+GG GG GG| \
+% B
+^G^G ^G^G ^G^G|
+AA FF FF| \
+EE dd dd| \
+cc cc cA| \
+^d^d ^d^d BB|
+E^F =GA BB| \
+ee =dd dd| \
+^c^c AA AA| \
+dd DD DD|
+EE ^F^F ^F^F| \
+GG GG G,G,| \
+^G,/2x3x/2 A,/2x3/2| \
+=G,x G,2 x2|
+% 1.
+=CC B,B, A,A,| \
+G,G, x4| \
+% B'
+^G^G ^G^G ^G^G| \
+AA =FF FF|
+EE dd dd| \
+cc cc cA| \
+^d^d ^d^d BB| \
+E^F =GA BB|
+ee =dd dd| \
+^c^c AA AA| \
+dd DD DD| \
+EE ^F^F ^F^F|
+GG GG G,G,| \
+^G,/2x3x/2 A,/2x3/2| \
+=G,x G,2 x2| \
+% 2.
+=C6|
+V:4
+% Six Sonatas and Partitas for Solo Violin
+%%MIDI program 40
+x6| \
+x6| \
+x2 
+% untitled
+% Copyright \0xa9 1995 by David Grossman
+% David Grossman
+% A
+G/2x3x/2| \
+Dx4x|
+x6| \
+x2 d/2x3x/2| \
+c/2x3x/2 DD| \
+Gx4x|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x2 
+% 1.
+% A'
+G/2x3x/2| \
+Dx4x| \
+x6|
+x2 d/2x3x/2| \
+c/2x3x/2 DD| \
+Gx4x| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x4 
+% 2.
+% B
+D/2x3/2| \
+Ex D2 x2|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x4 
+% 1.
+% B'
+D/2x3/2| \
+Ex D2 x2| \
+% 2.
+E6|
+% --------------------------------------
+% Sonata No. 2 in A minor - BWV 1003
+% 3rd Movement: Andante
+% --------------------------------------
+% Sequenced with Cakewalk Pro Audio by
+% David J. Grossman - dave@unpronounceable.com
+% This and other Bach MIDI files can be found at:
+% Dave's J.S. Bach Page
+% http://www.unpronounceable.com/bach
+% --------------------------------------
+% Original Filename: vs2-3and.mid
+% Last Modified: February 22, 1997

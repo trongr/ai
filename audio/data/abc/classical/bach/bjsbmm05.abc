@@ -1,0 +1,620 @@
+X: 1
+T: from bach/bjsbmm05.mid
+M: 1/4
+L: 1/16
+Q:1/4=96
+K:A % 3 sharps
+%     Mass in B Minor          Johann Sebastion Bach  No. 5, Aria for Soprano,  Laudamus te    seq by David Siu  dss@po.cwru.edu      
+% Instrument  1
+%%MIDI program 40
+V:1
+% Vln solo
+%%MIDI program 40
+x4| \
+%     Mass in B Minor          Johann Sebastion Bach  No. 5, Aria for Soprano,  Laudamus te    seq by David Siu  dss@po.cwru.edu      
+M: 1/8
+L: 1/16
+Ex| \
+M: 4/4
+L: 1/16
+A3B/2c/2 Bc BG A2 GF Ex ex| \
+dc/2x/2 BA/2x/2 dx cx c2 Bx3 B2|
+c/2x/2A2B/2c/2 B/2x/2G2A/2B/2 A/2x/2F2G/2A/2 G/2F/2E/2x/2 B/2A/2G/2x/2| \
+e8- ef/2e/2 ^d/2c/2B2c/2B/2 A/2G/2F/2E/2| \
+c/2B/2A/2x/2 ^d/2c/2B/2x/2 e/2^d/2c f/2e/2^d/2x/2 g/2f/2e/2x/2 a/2g/2f/2x/2 b/2a/2g/2x/2 c'/2b/2a/2x/2| \
+^d'/2c'/2b/2x/2 e'^d'/2c'/2 ba/2g/2 ag/2f/2 ex Ex3 Bx|
+^AB/2x/2 Bc/2x/2 F/2x/2e2=d/2c/2 d/2x/2c/2B/2 ^A/2B/2c2B/2^A/2 B/2c/2d/2x/2| \
+G=A/2x/2 AB/2x/2 E/2x/2d2c/2B/2 c/2x/2B/2A/2 G/2A/2B A=G/2F/2 E/2F/2=G| \
+FD x/2C/2D D/2^G<ed/2c/2B/2 AD x/2C/2D D/2B/2f2e/2d/2| \
+c/2B/2A d/2c/2B A2 G/2G/2G/2<A/2 A^D/2E/2 FF/2G/2 AA/2B/2 =c2-|
+=c/2B/2A/2G/2 A/2=c<^de/2f/2e/2 ^d/2=c/2B/2A/2 G/2E/2=D/2^C/2 D/2G<BA/2G/2F/2 E/2D/2C/2B,/2| \
+C/2F/2^D2E/2A,/2 C2 B,/2B,/2B,/2<A,/2 A,/2x/2C/2E/2 A/2c/2e/2g/2 ax3| \
+x16| \
+x16|
+x12 x2 ex| \
+=dc/2x/2 BA/2x/2 dx cx B2- B/2x3x/2 B2| \
+c/2x/2A2B/2c/2 B/2x/2G2A/2B/2 A/2x/2F2G/2A/2 G/2F/2E/2x/2 B/2A/2G/2x/2| \
+e8- ef/2e/2 ^d/2c<Be/2^d/2c/2 B/2A/2G/2F/2|
+G/2F/2E/2x/2 B/2A/2G/2x/2 A/2G/2F/2x/2 ^d/2c/2B/2x/2 e2 x6| \
+x12 x2 Bx| \
+e3f/2g/2 fg f^d ex ^dc B2 cB| \
+AG/2x/2 FE/2x/2 Ax Gx F2- F/2x3x/2 B2|
+c/2x/2A2B/2c/2 B/2x/2G2A/2B/2 A/2x/2F2G/2A/2 G/2F/2E/2x/2 B/2A/2G/2x/2| \
+e8- ef/2e/2 ^d/2c/2B2c/2B/2 A/2G/2F/2E/2| \
+c/2B/2A/2x/2 ^d/2c/2B/2x/2 e/2^d/2c f/2e/2^d/2x/2 g/2f/2e/2x/2 a/2g/2f/2x/2 b/2a/2g/2x/2 c'/2b/2a/2x/2| \
+^d'/2c'/2b/2x/2 e'^d'/2c'/2 ba/2g/2 ag/2f/2 e4 x2 =D2|
+CA, x/2G,/2A, A,/2^D<BA/2G/2F/2 EA, x/2G,/2A, A,/2F/2c2B/2A/2| \
+G/2F/2E A/2G/2F E2 ^D/2^D/2^D/2<E/2 E^A/2B/2 cc/2^d/2 ee/2f/2 =g2-| \
+=g/2f/2e/2^d/2 e/2=g<^AB/2c/2B/2 ^A/2=G/2F/2E/2 ^D/2B/2=A/2^G/2 A/2^d<fe/2^d/2c/2 B/2A/2G/2F/2| \
+G/2c/2^A2B/2E/2 G2 F/2F/2F/2<E/2 E/2x/2F/2G/2 =A/2B/2c/2^d/2 ex3|
+x6 ef/2=g/2 =gf/2x4x/2 =f^f/2^g/2| \
+gf/2x4x/2 ^d=f/2^f/2 f=f/2x6x/2| \
+x2 =dc/2x/2 cB/2x/2 BA/2x/2 AG/2x/2 GA/2x/2 A^A/2x/2 ^AB/2x/2| \
+B^A/2x/2 ^AB/2x/2 Bc/2x/2 cd/2x/2 de/2x/2 ed/2x/2 dc/2x/2 c^f/2x/2|
+f=a/2x/2 ag/2x/2 gf/2x/2 f=f/2x/2 =fx6x| \
+x12 x2 c2| \
+d/2x/2B2c/2d/2 c/2x/2A2B/2c/2 B/2x/2G2A/2B/2 A/2G/2^F/2x/2 c/2B/2A/2x/2| \
+f8- fg/2f/2 =f/2^d<c=d/2c/2B/2 A/2G/2^F/2E/2|
+D/2C/2B,/2x/2 =F/2^D/2C/2x/2 ^F/2=F/2^D G/2^F/2=F/2x/2 A/2G/2^F/2x/2 B/2A/2G/2x/2 c/2B/2A/2x/2 =d/2c/2B/2x/2| \
+=f/2^d/2c/2x/2 ^fe/2=d/2 cB/2A/2 BA/2G/2 F4 x4| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x16|
+x16| \
+x12 x2 ex| \
+a3b/2c'/2 bc' bg a2 gf ex ex| \
+dc/2x/2 BA/2x/2 dx cx B2- B/2x3x/2 B2|
+c/2x/2A2B/2c/2 B/2x/2G2A/2B/2 A/2x/2F2G/2A/2 G/2F/2E/2x/2 B/2A/2G/2x/2| \
+e8- ef/2e/2 ^d/2c/2B2c/2B/2 A/2G/2F/2E/2| \
+^AB/2x/2 Bc/2x/2 F/2x/2e2=d/2c/2 d/2x/2c/2B/2 ^A/2B/2c2B/2^A/2 B/2c/2d/2x/2| \
+G=A/2x/2 AB/2x/2 E/2x/2d2c/2B/2 c/2x/2B/2A/2 G/2A/2B A=G/2F/2 E/2F/2=G|
+F/2x/2D2E/2F/2 E/2x/2C2D/2E/2 D/2x/2B,2C/2D/2 C/2B,/2A,/2x/2 E/2D/2C/2x/2| \
+A8- Ab/2a/2 ^g/2f/2e2f/2e/2 d/2c/2B/2A/2| \
+f/2e/2d/2x/2 g/2f/2e/2x/2 a/2g/2f b/2a/2g/2x/2 c'/2b/2a/2x/2 d'/2c'/2b/2x/2 e'/2d'/2c'/2x/2 f'/2e'/2d'/2x/2| \
+g'/2f'/2e'/2x/2 a'g'/2f'/2 e'd'/2c'/2 d'c'/2b/2 ax A3=G/2F/2 E/2F/2=G/2x/2|
+FD x/2C/2D D/2^G<ed/2c/2B/2 AD x/2C/2D D/2B/2f2e/2d/2| \
+c/2B/2A d/2c/2B A2 G/2G/2G/2<A/2 A^d/2e/2 ff/2g/2 aa/2b/2 =c'2-| \
+=c'/2b/2a/2g/2 a/2=c'<^de/2f/2e/2 ^d/2=c/2B/2A/2 G/2e/2=d/2^c/2 d/2g<ba/2g/2f/2 e/2d/2c/2B/2| \
+c/2f/2^d2e/2A/2 c2 B3/2A/2 A8|
+V:2
+% Vln I
+%%MIDI program 49
+x16| \
+x4| \
+%     Mass in B Minor          Johann Sebastion Bach  No. 5, Aria for Soprano,  Laudamus te    seq by David Siu  dss@po.cwru.edu      
+M: 1/8
+L: 1/16
+M: 4/4
+L: 1/16
+ex =dc/2x/2| \
+BA/2x/2 dx cx8x3|
+x12 Bx c/2x/2A-| \
+AB/2c/2 B/2x/2G2A/2B/2 A/2x/2F2G/2A/2 Gx Bx Ax| \
+x4 Ax Gx4x Gx Fx| \
+e4 ^dx e=d/2x/2 dc/2x/2 cB/2x/2 B^A/2x/2 ^Ax|
+x4 cx dx4x dx Gx| \
+x4 Bx cx4x Ex Fx| \
+x2 Gx3 =Ax3 Bx4x| \
+Ax Bx Gx Ax =cx ^Dx4x|
+fx Ax4x Bx =Dx4x| \
+Ax ^Cx B,2 A,6 x4| \
+AG/2x/2 GB/2x/2 BA/2x/2 Ac/2x/2 cB/2x/2 Bd/2x/2 dc/2x/2 ce/2x/2| \
+ed/2x/2 df/2x/2 fe/2x/2 e8- ex|
+dc dx Gx A2 Ex3 ex dc/2x/2| \
+BA/2x/2 dx cx B4 x6| \
+x12 Bx c/2x/2A-| \
+AB/2c/2 B/2x/2G2A/2B/2 A/2x/2F2G/2A/2 Gx4x|
+E^D/2x/2 ^DF/2x/2 FE/2x/2 EG/2x/2 GF/2x/2 FA/2x/2 AG/2x/2 GB/2x/2| \
+BA/2x/2 Ac/2x/2 cB/2x/2 B8- Bx| \
+Gx Ax Fx Gx Ax Bx cB AG/2x/2| \
+FE/2x/2 Ax Gx F4 x6|
+x12 Bx c/2x/2A-| \
+AB/2c/2 B/2x/2G2A/2B/2 A/2x/2F2G/2A/2 Gx4x| \
+x16| \
+x8 FE/2x/2 E=D/2x/2 DC/2x/2 Cx|
+x2 ^Dx3 Ex3 Fx4x| \
+Ex Fx ^Dx Ex =Gx ^A,x4x| \
+cx Ex4x fx =Ax4x| \
+ex ^G/2x3/2 Fx E6 x4|
+Ex =Dx4x Dx Cx4x| \
+cx =Fx4x BA/2x/2 AG/2x/2 G^F/2x/2 Fx| \
+x8 =F^F/2x/2 FC/2x/2 CD/2x/2 DC/2x/2| \
+CD/2x/2 DE/2x/2 ED/2x/2 D^A/2x/2 ^AB/2x/2 Bc/2x/2 c^d/2x/2 ^df/2x/2|
+f=f/2x/2 =f^d/2x/2 ^dc/2x/2 cx8x| \
+x16| \
+x12 =Ax B/2x/2G-| \
+GA/2B/2 A/2x/2^F2G/2A/2 G/2x/2=F2^F/2G/2 Fx cx Bx|
+x4 Bx Ax4x Ax Gx| \
+F4 =Fx ^F4 x6| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x16|
+AG/2x/2 GB/2x/2 BA/2x/2 Ac/2x/2 cB/2x/2 B=d/2x/2 dc/2x/2 ce/2x/2| \
+ed/2x/2 df/2x/2 fe/2x/2 e8- ex| \
+dc dx gx a2 ex3 ex dc/2x/2| \
+BA/2x/2 dx cx B4 x6|
+x12 Bx c/2x/2A-| \
+AB/2c/2 B/2x/2G2A/2B/2 A/2x/2F2G/2A/2 Gx4x| \
+x4 ex dx8x| \
+x4 dx cx8x|
+x12 c2 d/2x/2B-| \
+Bc/2d/2 c/2x/2A2B/2c/2 B/2x/2G2A/2B/2 Ax4x| \
+x16| \
+x8 CD/2x/2 DE/2x/2 EF/2x/2 Fx|
+x2 Gx3 Ax3 Bx4x| \
+Ax Bx Gx Ax =cx ^Dx4x| \
+fx Ax4x bx =dx4x| \
+ax ^cx B2 A8 
+V:3
+% Vln II
+%%MIDI program 49
+x16| \
+x4| \
+%     Mass in B Minor          Johann Sebastion Bach  No. 5, Aria for Soprano,  Laudamus te    seq by David Siu  dss@po.cwru.edu      
+M: 1/8
+L: 1/16
+M: 4/4
+L: 1/16
+Bx A2| \
+Ex Gx Ax G4 x6|
+x12 Gx A/2x/2F-| \
+FG/2A/2 G/2x/2E2F/2G/2 F/2x/2^D2E/2F/2 Ex Ex Ex| \
+x4 Fx Ex4x Ex B,x| \
+Bx Bx Bx B4 x2 Fx Ex|
+x4 ^Ax Bx4x Fx Ex| \
+x4 Gx =Ax4x Cx =Dx| \
+x2 Dx3 Dx3 Dx4x| \
+A,x Fx Ex ^Dx4x Ex Fx|
+x4 Fx Ex4x B,x A,x| \
+A,x A,x G,2 A,6 x4| \
+x8 AG/2x/2 GB/2x/2 BA/2x/2 Ac/2x/2| \
+cB/2x/2 B=d/2x/2 dc/2x/2 c8- c2-|
+c2 Fx Bx E2 Cx3 Bx A2| \
+Ex Gx Ax G4 x6| \
+x12 Gx A/2x/2F-| \
+FG/2A/2 G/2x/2E2F/2G/2 F/2x/2^D2E/2F/2 Ex4x|
+x8 E^D/2x/2 ^DF/2x/2 FE/2x/2 EG/2x/2| \
+GF/2x/2 FA/2x/2 AG/2x/2 GE/2x/2 E^D/2x/2 ^DF/2x/2 FE/2x/2 Ex| \
+Ex ^Dx Fx B,x A,x G,x ^Dx E2| \
+B,x ^Dx Ex ^D4 x6|
+x12 Gx A/2x/2F-| \
+FG/2A/2 G/2x/2E2F/2G/2 F/2x/2^D2E/2F/2 Ex4x| \
+x16| \
+x8 =DC/2x/2 CB,/2x/2 B,A,/2x/2 A,x|
+x2 A,x3 A,x3 A,x4x| \
+Cx Cx B,x ^A,x4x B,x Cx| \
+x4 Cx B,x4x Fx Ex| \
+Ex E/2x3/2 ^Dx E6 x4|
+Cx B,x4x G,x =A,x4x| \
+Cx B,x4x =F^F/2x/2 F=F/2x/2 =F^F/2x/2 Fx| \
+x8 B,C/2x/2 Cx4x| \
+CB,/2x/2 B,x4x C=D/2x/2 Dx4x|
+=c^c/2x/2 c^d/2x/2 ^dG/2x/2 Gx8x| \
+x16| \
+x12 Cx =D/2x/2B,-| \
+B,C/2D/2 C/2x/2A,2B,/2C/2 B,/2x/2G,2A,/2B,/2 A,x Fx Fx|
+x4 Gx Fx4x Fx Cx| \
+Cx Cx Cx C4 x6| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x16|
+x8 AG/2x/2 GB/2x/2 BA/2x/2 Ac/2x/2| \
+cB/2x/2 Bd/2x/2 dc/2x/2 c8- c2-| \
+c2 Fx Bx e2 cx3 Bx A2| \
+Ex Gx Ax G4 x6|
+x12 Gx A/2x/2F-| \
+FG/2A/2 G/2x/2E2F/2G/2 F/2x/2^D2E/2F/2 Ex4x| \
+x4 cx Bx8x| \
+x4 Bx Ax8x|
+x12 E2 F/2x/2=D-| \
+DE/2F/2 E/2x/2C2D/2E/2 D/2x/2B,2C/2D/2 Cx4x| \
+x16| \
+x8 =GF/2x/2 FE/2x/2 ED/2x/2 Dx|
+x2 Dx3 Dx3 Dx4x| \
+A,x Fx Ex ^Dx4x Ex Fx| \
+x4 Fx Ex4x Bx Ax| \
+Ax Ax ^G2 E8 
+V:4
+% Vla
+%%MIDI program 49
+x16| \
+x4| \
+%     Mass in B Minor          Johann Sebastion Bach  No. 5, Aria for Soprano,  Laudamus te    seq by David Siu  dss@po.cwru.edu      
+M: 1/8
+L: 1/16
+M: 4/4
+L: 1/16
+Ex E2| \
+Cx =Dx Ex E4 x6|
+x12 Ex A,x| \
+Cx Ex B,x B,x B,x B,x B,x Cx| \
+x4 B,x B,x4x Cx Fx| \
+Gx Gx Fx G4 x2 B,x Cx|
+x4 Fx Fx4x B,x B,x| \
+x4 Ex Ex4x A,x A,x| \
+x2 E,x3 A,x3 G,x4x| \
+Dx Dx B,x A,x4x A,x A,x|
+x4 B,x B,x4x B,x E,x| \
+E,x F,x G,2 C,6 x4| \
+CB,/2x/2 B,D/2x/2 DC/2x/2 C2 Ex E2 Gx E2| \
+Cx D2 A,x A,8- A,2-|
+A,2 A,x Dx C2 Ex3 Ex E2| \
+Cx Dx Ex E4 x6| \
+x12 Ex A,x| \
+Cx Ex B,x B,x B,x B,x4x|
+G,F,/2x/2 F,A,/2x/2 A,G,/2x/2 G,B,/2x/2 B,A,/2x/2 A,C/2x/2 CB,/2x/2 B,2| \
+E4 ^D2 EB,/2x/2 B,A,/2x/2 A,^D/2x/2 ^DB,/2x/2 B,x| \
+E,x F,x A,x G,x B,x Ex A,x B,2| \
+G,x A,x B,x B,4 x6|
+x12 E,x E,x| \
+Cx Ex Ex Cx B,x B,x4x| \
+x16| \
+x8 G,2 A,2 B,2 E,x|
+x2 B,x3 E,x3 ^D,x4x| \
+A,x A,x F,x E,x4x E,x E,x| \
+x4 F,x F,x4x B,x B,x| \
+B,x C/2x3/2 F,x G,6 x4|
+^A,x B,x4x =F,x ^F,x4x| \
+=A,x G,x4x G,A,/2x/2 A,B,/2x/2 B,C/2x/2 Cx| \
+x8 G,C,/2x/2 C,x4x| \
+CF,/2x/2 F,x4x E,F,/2x/2 F,x4x|
+^D,G,/2x/2 G,=C/2x/2 =C^C/2x/2 Cx8x| \
+x16| \
+x12 Fx B,x| \
+=Dx Fx Cx Cx Cx Cx Cx F,x|
+x4 Cx Cx4x Dx G,x| \
+A,x A,x G,x A,4 x6| \
+x16| \
+x16|
+x16| \
+x16| \
+x16| \
+x16|
+CB,/2x/2 B,D/2x/2 DC/2x/2 C2 Ex E2 Gx E2| \
+Cx D2 A,x A,8- A,2-| \
+A,2 A,x Dx C2 Ex3 Ex E2| \
+Cx Dx Ex E4 x6|
+x12 Ex A,x| \
+Cx Ex B,x B,x B,x B,x4x| \
+x4 Fx Fx8x| \
+x4 Ex Ex8x|
+x12 A,2 A,x| \
+F,x A,x E,x E,x E,x E,x4x| \
+x16| \
+x8 ED/2x/2 Dx A,x A,x|
+x2 E,x3 A,x3 G,x4x| \
+Dx Dx B,x A,x4x A,x A,x| \
+x4 B,x B,x4x Ex Ex| \
+Ex Fx B,2 C8 
+V:5
+% Vc
+%%MIDI program 49
+x4 
+%     Mass in B Minor          Johann Sebastion Bach  No. 5, Aria for Soprano,  Laudamus te    seq by David Siu  dss@po.cwru.edu      
+M: 1/8
+L: 1/16
+A,,-2-| \
+A,,2-| \
+A,,B,,| \
+M: 4/4
+L: 1/16
+C,x A,,x E,x D,x C,x B,,x C,x G,,x|
+A,,x C,x B,,x A,,x E,x F,x G,x E,x| \
+A,x F,x G,x E,x F,x B,,x E,x D,x| \
+C,x A,,x E,x G,x B,x B,,x E,x G,,x| \
+A,,x B,,x C,x ^D,x E,x F,x G,x A,2-|
+A,x G,A, B,x B,,x E,,x E,F, E,x =D,x| \
+C,x B,,x ^A,,x F,,x B,,x C,x D,x B,,x| \
+E,x F,x G,x E,x =A,,x B,,x C,x A,,x| \
+D,x B,,x E,x C,x F,x F,,x G,,x E,,x|
+A,,x F,,x D,,x E,,x F,,x4x E,x| \
+^D,x4x B,,x E,x4x G,,x| \
+A,,x C,,x =D,,x E,,x A,,4 x4| \
+x16|
+x6 D,,2 A,,C,/2x/2 C,B,,/2x/2 B,,D,/2x/2 D,C,/2x/2| \
+C,x A,,x D,x B,,x C,2 B,,A,, G,,x E,,x| \
+A,,x C,x B,,x A,,x E,x F,x G,x E,x| \
+A,x F,x G,x E,x F,x B,,x E,x D,x|
+C,x A,,x E,x G,x B,x B,,x E,x3| \
+x8 E,,4 x4| \
+E,,4 x4 E,,8-| \
+E,,8- E,,x F,,x G,,x F,,x|
+E,,x G,,x F,,x E,,x B,,x C,^D, E,x E,,x| \
+A,,x A,x G,x Cx F,x B,x E,x E,,x| \
+A,,x A,x E,x C,x F,x B,,x E,x E,,x| \
+A,,x B,,x C,x ^D,x E,x F,x G,x A,2-|
+A,x G,A, B,x B,,x E,x E,,x F,,x G,,x| \
+A,,x F,,x B,,x G,,x C,x C,x ^D,x B,,x| \
+E,x C,x A,,x B,,x C,x4x B,,x| \
+^A,,x4x F,,x B,,x4x ^D,x|
+E,x G,,x =A,,x B,,x E,4 x2 E,x| \
+=D,x4x ^A,,x B,,x4x C,x| \
+=A,,x4x F,,x C,,x C,3B,,/2x/2 B,,A,,/2x/2| \
+A,,B,,/2x/2 B,,A,,/2x/2 A,,G,,/2x/2 G,,F,,/2x/2 F,,x F,3E,/2x/2 E,D,/2x/2|
+D,E,/2x/2 E,D,/2x/2 D,C,/2x/2 C,B,,/2x/2 B,,x B,3A,/2x/2 A,G,/2x/2| \
+G,x G,,x G,,x G,,x C,B,,/2x/2 B,,A,,/2x/2 A,,G,,/2x/2 G,,F,,/2x/2| \
+F,,x B,,x C,x C,,x F,,x G,,x A,,x F,,x| \
+B,,x F,x A,,x F,x G,,x =F,x ^F,x E,x|
+D,x B,,x F,,x A,,x C,x C,,x F,,x A,,x| \
+B,,x C,x ^D,x =F,x ^F,x G,x A,x B,2-| \
+B,x A,B, Cx C,x F,,x C,x F,x E,=D,| \
+C,x E,x A,,x C,x D,x E,F, E,D, C,B,,|
+^A,,x C,x F,,x ^A,,x B,,3^A,, B,,C, D,2-| \
+D,x C,B,, =A,,x A,3x G,F, G,x C,x| \
+F,6 E,^D, E,x C,x A,,x C,x| \
+^D,,x C,x =C,x ^D,x F,x ^D,x E,x ^C,x|
+G,x F,x G,x G,,x C,4 x4| \
+x16| \
+x6 =D,,2 A,,C,/2x/2 C,B,,/2x/2 B,,D,/2x/2 D,C,/2x/2| \
+C,x A,,x D,x B,,x C,2 B,,A,, G,,x E,,x|
+A,,x C,x B,,x A,,x E,x F,x G,x E,x| \
+A,x F,x G,x E,x F,x B,,x E,x E,,x| \
+A,,x A,x E,x G,x B,x B,,x E,,x E,D,| \
+C,x B,,x ^A,,x F,,x B,,x F,x B,x D,C,|
+B,,x =A,,x G,,x E,,x A,,x E,x A,x A,,x| \
+D,,x D,x C,x F,x B,,x E,x A,,x A,x| \
+Dx D,x C,x F,x B,,x E,,x A,,x C,x| \
+D,x E,x F,x G,x A,x B,x Cx D2-|
+Dx CD Ex E,x A,x A,,x B,,x C,x| \
+D,x B,,x E,x C,x F,x F,,x G,,x E,,x| \
+A,,x F,,x D,,x E,,x F,,x4x E,x| \
+^D,x4x B,,x E,x4x G,x|
+A,x C,x =D,x E,x A,,8|
+V:6
+% Soprano
+%%MIDI program 53
+x16| \
+x4| \
+x4| \
+x4|
+x4| \
+x4| \
+x4| \
+x4|
+x4| \
+x4| \
+x4| \
+x4|
+x4| \
+x4| \
+x4| \
+x4|
+x4| \
+x4| \
+x4| \
+x4|
+x4| \
+x4| \
+x4| \
+x4|
+x4| \
+x4| \
+x4| \
+x4|
+x4| \
+x4| \
+x4| \
+x4|
+x4| \
+x4| \
+x4| \
+x4|
+x4| \
+x4| \
+x4| \
+x4|
+x4| \
+x4| \
+x4| \
+x4|
+x4| \
+x4| \
+%     Mass in B Minor          Johann Sebastion Bach  No. 5, Aria for Soprano,  Laudamus te    seq by David Siu  dss@po.cwru.edu      
+M: 1/8
+L: 1/16
+M: 4/4
+L: 1/16
+E2 B/2<A/2G| \
+AB c/2<B/2A Bc d/2<c/2B cd e/2<d/2c de ec|
+A3=G FA A/2<=G/2F2<=G2F2<=G2E| \
+F=G F2 D2 E4 x^G Be dc| \
+BA d2 c2 B4 x6| \
+x12 B2 cA-|
+AB/2c/2 BG2A/2B/2 AF2G/2A/2 G/2x/2E GB e2| \
+B4 AB E4 x6| \
+x2 E4- EG/2x/2 GF/2x/2 FA AG GB| \
+BA2c cB B8- B2-|
+B6- BA/2x/2 AG/2x/2 GF/2x/2 G4| \
+F3G2<E2^D ^DE E/2x/2B2c/2=d/2 cA-| \
+AB/2c/2 Bx ec AG A2 Gx BG EF-| \
+FG2A2B2c2^d2e ^dc B2|
+E2 GF E^D E4 x6| \
+x16| \
+x16| \
+x16|
+x12 G^A B2| \
+c/2B/2^A B2 c2 =dx cB =AB G2 cF| \
+=F^F BG/2x/2 AF G=F C2 c2 x4| \
+=F2 ^F2 G2 A2 B/2A/2G A2 x4|
+F2 B^A/2x/2 ^AB/2x/2 B4 xF =F^F =c2-| \
+=c4 ^c/2=c/2^A/2=c/2 ^c2 G2 F=F/2x/2 B2 =Ad| \
+cB Ax Gx ^F4 x6| \
+x16|
+x16| \
+x16| \
+x8 x3/2B/2 AG A/2x/2[c/2A/2-][d/2A/2] e2-| \
+ed cB A=G Fx F3/2-[B/2F/2] ^A3B =GF|
+E3^A/2B/2 cE2C D2 dx B2 ^G2| \
+=AB cd/2e/2 dc B4 x2 c2 BA| \
+GF G4- G/2A/2G/2F/2 Gc2B AG F/2G/2F/2=F/2| \
+^FA2G FE ^D=c2^c2B/2A/2 GF E2|
+F4 ^D/2C/2^D C4 x2 E2 B/2<A/2G| \
+AB c/2<B/2A Bc =d/2<c/2B cd e/2<d/2c de ec| \
+A3=G FA A/2<=G/2F2<=G2F2<=G2E| \
+F=G F2 D2 E4 x^G Be dc|
+BA d2 c2 B4 x6| \
+x12 B2 cA-| \
+AB/2c/2 BG2A/2B/2 AF2G/2A/2 G/2x/2E GB ed/2x/2| \
+dc/2x/2 cB/2x/2 B^A/2x/2 Bc/2x/2 cd/2x/2 dx FF d2|
+cB Bx =AG AB/2x/2 Bc/2x/2 cx c2 c2| \
+B3c A2 AG GA A/2x/2E2F/2=G/2 FD-| \
+DE/2F/2 Ex AF DC D2 Cx A3B-| \
+Bc2d2e e6 dc B^G|
+e2 A2 BG A4 
+V:7
+% Harpsichord
+%%MIDI program 6
+x4 
+%     Mass in B Minor          Johann Sebastion Bach  No. 5, Aria for Soprano,  Laudamus te    seq by David Siu  dss@po.cwru.edu      
+M: 1/8
+L: 1/16
+[E-2-C-2-]| \
+[E2-C2-]| \
+[E2C2]| \
+M: 4/4
+L: 1/16
+[A4E4A,4] [G4E4B,4] [A2E2] [G2D2] [A2E2C2] [B2E2]|
+[c2E2-] [A2E2] [G2D2] [A4E4C4] [G2E2B,2] x2 [B2G2]| \
+[c4A4] [B4E4-] [A2-E2] [A2^D2] [G4E4]| \
+[A4E4A,4] [G4E4-] [A2E2] [A2^D2] [G2E2-] [B2E2]| \
+[A2-E2C2] [A2-^D2B,2] [A2E2A,2-] [B2F2A,2] [G2E2G,2] [A2E2A,2] [B2E2B,2] [c2E2C2]|
+[^d2B2F2] [e2B2E2] [B2G2E2] [A2F2^D2] [G4E4] [c2G2] [B2F2]| \
+[^A4E4] [F4E4C4] [F2-=D2B,2] [F2^A,2] [F2B,2] D2| \
+[G4E4D4] [B4E4D4] [=A2E2C2] [G2D2] [A2E2] [=G2E2C2]| \
+[F4D4B,4] [^G4D4B,4] [A4F4-D4-] [B2-F2D2] [B2G2E2]|
+[c2A2E2] [d2A2F2] [d2B2A2] [B2G2] [A2^D2] x4 [=c2-A2-]| \
+[=cA-][BA] x4 [A2F2] [G2E2] x4 [E2=D2]| \
+[E2^C2] [A2E2] [c2A2F2] [B2G2] [A4E4C4] x4| \
+x16|
+x6 [A2F2] [=G4-E4C4A,4] [=G4-D4B,4]| \
+[=G2E2A,2] [E2C2] [F2D2] [^G2D2] [A4E4] [B4G4E4]| \
+[c2E2-] [A2E2] [G2D2] [A2E2C2] [G4E4B,4] x2 [B2G2]| \
+[c4A4] [B4E4-] [A2-E2] [A2^D2] [G4E4]|
+[A4E4A,4] [G4E4-] [A2E2] [A2^D2] [G2E2] x2| \
+x8 [E4B,4G,4] x4| \
+[G4E4B,4] x12| \
+x8 [E4B,4G,4] [B2E2] [A2^D2]|
+AG FE [A2^D2B,2] [G2E2] [F2^D2] [E2A,2] [B,4G,4]| \
+[G2C2-] [F2-C2] [F2B,2-] [E2-B,2] [E2A,2-] [^D2A,2] [E2G,2] [G2E2]| \
+[A4C4] [B4G4E4] [A2F2C2] [F2^D2] [G2E2] [B,2G,2]| \
+[EC-][F-C] [F^D-][G-^D] [GE-][A-E] [AF-][B-F] [BG-][c-G] [cA-][^d-A] [^dB-][eB] [e2c2A2]|
+[^d4B4F4] [e2B2G2] [B2^D2] [G2E2] [F2=D2] [E2C2] [E2D2B,2]| \
+[E2C2] x2 [F2^D2] x2 [A2E2] x2 [B2F2] x2| \
+[G2E2B,2] [A2E2A,2] [F2C2A,2] [^D2B,2A,2] [E2^A,2=G,2] x4 [=G2-E2-B,2]| \
+[=G2E2C2] x4 [E2C2] [^D2B,2] x4 [B2-=A2]|
+[B2^G2] [E2B,2] [F2E2A,2] [^D2B,2] [E4B,4G,4] x4| \
+x16| \
+x8 x2 [B2G2] [A2F2] [G2=F2C2]| \
+[A2^F2] [=F2=D2] [^F2C2] [=F2B,2] [^F2A,2] [=F2B,2G,2] [^F2C2A,2] [^A2F2]|
+[B2F2] [^A2F2] [B2F2] [^A2E2] [B2D2] [^A2E2C2] [B2F2D2] [=A2E2C2]| \
+[G2^D2-=C2-] [A2^D2=C2] [G2=F2^C2] [^F2^D2] [=F4C4] [^F2C2] [=F2B,2]| \
+[^F2-A,2] [F2G,2] [F2A,2] [=F3/2-G,3/2-][=F/2C/2-A,/2-G,/2] [^F4C4A,4] [F2C2F,2] [A2C2]| \
+[B4F4=D4] [A4F4C4] [G4=F4B,4] [^F4C4A,4]|
+[F4D4B,4] [F4C4A,4] [F2B,2-G,2-] [=F2B,2G,2] [^F4C4A,4]| \
+[D2B,2F,2] [=F2B,2G,2] [^F2^D2B,2] [G2B,2] [A2F2C2A,2] [B2F2=D2] [c2A2F2] [d2B2F2]| \
+[c2-G2=F2] [c2^F2] [A2F2] [G2=F2] [^F6A,6] x2| \
+[A2E2] [G2E2] [A2C2] [=G2A,2] [F4D4A,4] [F2C2A,2] [D2B,2]|
+[C2=G,2-] [E2-=G,2] [E2^A,2] [E2-F,2] [E2B,2-] [D2B,2] [F2D2] [B2F2]| \
+[^G2E2] [=A2E2] [E4C4] [D4B,4] [=F4B,4]| \
+[^F4-C4A,4] [F4^D4=C4G,4] [E4^C4G,4] [G4E4C4]| \
+[C2A,2] [B,2A,2] [A,2F,2] [C2A,2] [^D2-=C2-G,2] [^D2=C2F,2] [^C2G,2] [E2C2]|
+[E4C4] [^D4=C4G,4] x8| \
+x16| \
+x6 [A2F2] [=G4-E4^C4A,4] [=G4-=D4B,4]| \
+[=G2E2-A,2] [E2C2] [F2D2] [^G2D2] [A4E4] [B4G4E4]|
+[c2E2-] [A2E2] [G2D2] [A2E2C2] [G4E4B,4] x2 [B2G2]| \
+[c4A4] [B4E4-] [A2-E2] [A2^D2] [G4E4]| \
+[A4E4A,4] [G4E4-] [A2E2] [A2^D2] [G4E4]| \
+[E4^A,4] [F2C2F,2] [E2C2^A,2] [=D2B,2] [F2^A,2] [F2D2] [B2F2]|
+[D4G,4] [E2B,2E,2] [D2B,2G,2] [C4=A,4] [A4E4C4]| \
+[F2-C2] [F2B,2-] [E2-B,2] [E2A,2-] [D2-A,2] [D2G,2] [C2A,2] [E2C2]| \
+[F4D4] [A4-E4] [A2D2-] [G2D2] [A2C2] [E2A,2]| \
+[AF-][B-F] [BG-][c-G] [cA-][d-A] [dB-][e-B] [ec-][f-c] [fd-][g-d] [ge-][ae] [a2f2d2]|
+[g2e2B2] [a2e2A2] [c2A2E2] [B2G2E2] [A6E6C6] [=G2E2]| \
+[F4D4B,4] [^G4D4B,4] [A4F4-D4-] [B2-F2D2] [B2G2E2]| \
+[c2A2E2] [d2A2F2] [d2B2A2] [B2G2] [A2^D2] x4 [=c2-A2-]| \
+[=cA-][BA] x4 [A2F2] [G2E2] x4 [E2-=D2]|
+[E2^C2] [A2E2] [c2A2F2] [B2G2] [A8E8C8]|
+V:8
+% Harpsichord lh
+%%MIDI program 6
+x4 
+%     Mass in B Minor          Johann Sebastion Bach  No. 5, Aria for Soprano,  Laudamus te    seq by David Siu  dss@po.cwru.edu      
+M: 1/8
+L: 1/16
+A,,-2-| \
+A,,2-| \
+A,,B,,| \
+M: 4/4
+L: 1/16
+C,x A,,x E,x D,x C,x B,,x C,x G,,x|
+A,,x C,x B,,x A,,x E,x F,x G,x E,x| \
+A,x F,x G,x E,x F,x B,,x E,x D,x| \
+C,x A,,x E,x G,x B,x B,,x E,x G,,x| \
+A,,x B,,x C,x ^D,x E,x F,x G,x A,2-|
+A,x G,A, B,x B,,x E,,x E,F, E,x =D,x| \
+C,x B,,x ^A,,x F,,x B,,x C,x D,x B,,x| \
+E,x F,x G,x E,x =A,,x B,,x C,x A,,x| \
+D,x B,,x E,x C,x F,x F,,x G,,x E,,x|
+A,,x F,,x D,,x E,,x F,,x4x E,x| \
+^D,x4x B,,x E,x4x G,,x| \
+A,,x C,,x =D,,x E,,x A,,4 x4| \
+x16|
+x6 D,,2 A,,C,/2x/2 C,B,,/2x/2 B,,D,/2x/2 D,C,/2x/2| \
+C,x A,,x D,x B,,x C,2 B,,A,, G,,x E,,x| \
+A,,x C,x B,,x A,,x E,x F,x G,x E,x| \
+A,x F,x G,x E,x F,x B,,x E,x D,x|
+C,x A,,x E,x G,x B,x B,,x E,x3| \
+x8 [E,4E,,4] x4| \
+E,,4 x12| \
+x8 E,,x F,,x G,,x F,,x|
+[EE,,]x [B,G,,]x F,,x E,,x B,,x C,^D, E,x E,,x| \
+A,,x A,x G,x Cx F,x B,x E,x E,,x| \
+A,,x A,x E,x C,x F,x B,,x E,x E,,x| \
+A,,x B,,x C,x ^D,x E,x F,x G,x A,2-|
+A,x G,A, B,x B,,x E,x E,,x F,,x G,,x| \
+A,,x F,,x B,,x G,,x C,x C,x ^D,x B,,x| \
+E,x C,x A,,x B,,x C,x4x B,,x| \
+^A,,x4x F,,x B,,x4x ^D,x|
+E,x G,,x =A,,x B,,x E,4 x2 [B,G,E,]x| \
+[B,F,=D,]x4x [F,E,^A,,]x [F,D,B,,]x4x [G,=F,C,]x| \
+[^F,C,=A,,]x4x [A,F,F,,]x [G,=F,C,,]x C,3B,,/2x/2 B,,A,,/2x/2| \
+A,,B,,/2x/2 B,,A,,/2x/2 A,,G,,/2x/2 G,,^F,,/2x/2 F,,x F,3E,/2x/2 E,D,/2x/2|
+D,E,/2x/2 E,D,/2x/2 D,C,/2x/2 C,B,,/2x/2 B,,x B,3A,/2x/2 A,G,/2x/2| \
+G,x G,,x G,,x G,,x C,B,,/2x/2 B,,A,,/2x/2 A,,G,,/2x/2 G,,F,,/2x/2| \
+F,,x B,,x C,x C,,x F,,x G,,x A,,x F,,x| \
+B,,x F,x A,,x F,x G,,x =F,x ^F,x E,x|
+D,x B,,x F,,x A,,x C,x C,,x F,,x A,,x| \
+B,,x C,x ^D,x =F,x ^F,x G,x A,x B,2-| \
+B,x A,B, Cx C,x F,,x C,x F,x E,=D,| \
+C,x E,x A,,x C,x D,x E,F, E,D, C,B,,|
+^A,,x C,x F,,x ^A,,x B,,3^A,, B,,C, D,2-| \
+D,x C,B,, =A,,x A,3x G,F, G,x C,x| \
+F,6 E,^D, E,x C,x A,,x C,x| \
+^D,,x C,x =C,x ^D,x F,x ^D,x E,x ^C,x|
+G,x F,x G,x G,,x [C4G,4E,4C,4] x4| \
+x16| \
+x6 =D,,2 A,,C,/2x/2 C,B,,/2x/2 B,,D,/2x/2 D,C,/2x/2| \
+C,x A,,x D,x B,,x C,2 B,,A,, G,,x E,,x|
+A,,x C,x B,,x A,,x E,x F,x G,x E,x| \
+A,x F,x G,x E,x F,x B,,x E,x E,,x| \
+A,,x A,x E,x G,x B,x B,,x E,,x E,D,| \
+C,x B,,x ^A,,x F,,x B,,x F,x B,x D,C,|
+B,,x =A,,x G,,x E,,x A,,x E,x A,x A,,x| \
+D,,x D,x C,x F,x B,,x E,x A,,x A,x| \
+Dx D,x C,x F,x B,,x E,,x A,,x C,x| \
+D,x E,x F,x G,x A,x B,x Cx D2-|
+Dx CD Ex E,x A,x A,,x B,,x C,x| \
+D,x B,,x E,x C,x F,x F,,x G,,x E,,x| \
+A,,x F,,x D,,x E,,x F,,x4x E,x| \
+^D,x4x B,,x E,x4x G,x|
+A,x C,x =D,x E,x [A,8A,,8]|

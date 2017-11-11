@@ -1,0 +1,255 @@
+X: 1
+T: from bach/vs2-4alg.mid
+M: 4/4
+L: 1/8
+Q:1/4=90
+K:C % 0 sharps
+% untitled
+% Copyright \0xa9 1996 by David J. Grossman
+% David J. Grossman
+% A
+% A'
+% B
+% B'
+V:1
+% Solo Violin
+%%MIDI program 40
+% untitled
+% Copyright \0xa9 1996 by David J. Grossman
+% David J. Grossman
+% A
+A/2c/2e/2a/2 e/2d/2c/2B/2 x4| \
+A/2>c/2[e/2d/2]E/2 A/2c/2e/2^G/2 x4| \
+A/2>B/2[d/2c/2]c/2 [c/2B/2]d/2[f/2e/2]e/2 [e/2d/2]a/2f/2d/2 e/2d/2c/2B/2| \
+x8|
+A/2c/2e/2a/2 c'/2e/2c/2A/2 ^G/2B/2e/2^g/2 b/2d/2c/2B/2| \
+x8| \
+A/2c/2e/2=g/2 f/2c/2B/2A/2 G/2B/2d/2f/2 e/2B/2A/2G/2| \
+F/2A/2c/2e/2 d/2c/2B/2A/2 ^G/2e/2B/2^G/2 E/2F/2D/2E/2|
+^C/2A/2e/2=G/2 F/2D/2F/2=C/2 B,/2G/2d/2F/2 E/2C/2E/2B,/2| \
+A,/2F/2c/2E/2 D/2B,/2D/2A,/2 ^G,/2E/2B/2D/2 C/2A,/2D/2B,/2| \
+E/2C/2A,/2C/2 E/2A/2c/2E/2 ^D/2c/2B/2A/2 ^f/2A/2=G/2^F/2| \
+E/2B,/2G,/2B,/2 E/2G/2B/2=D/2 ^C/2B/2A/2G/2 e/2g/2^f/2e/2|
+^d/2A/2^F/2A/2 ^d/2^f/2a/2=c/2 B/2^F/2^D/2^F/2 B/2^d/2^f/2a/2| \
+g/2>b/2[a/2g/2]^f/2 e/2c'/2A/2>B/2 [c/2=D/2]a/2[g/2^f/2]e/2 d/2b/2G/2>A/2| \
+[B/2C/2]g/2[^f/2e/2]d/2 c/2>a/2[g/2^f/2]e/2 ^d/2>^f/2[^d/2B/2]A/2 G/2e/2^F/2=d/2| \
+E/2>d/2[B/2G/2]=F/2 E/2c/2D/2B/2 C/2>B/2[G/2E/2]D/2 C/2A/2B,/2G/2|
+A,/2>B,/2[D/2C/2]C/2 [C/2B,/2]D/2[F/2E/2]E/2 [E/2D/2]^F/2[A/2G/2]G/2 [G/2^F/2]A/2[c/2B/2]B/2| \
+[^f/2A/2]c/2^D/2c/2 B/2A/2G/2^F/2 G/2A/2B/2c<^FE/2| \
+E/2>^C/2[E/2=D/2]A/2 ^F/2>^D/2[^F/2E/2]B/2 G/2>E/2[G/2^F/2]=c/2 A/2>^F/2[A/2G/2]=d/2| \
+B/2G/2B/2^d/2 e/2g/2b/2=d/2 c/2A/2c/2e/2 =f/2a/2c'/2e/2|
+B/2^d/2^f/2b/2 ^f/2e/2^d/2^c/2 B/2^d/2^f/2a/2 ^f/2e/2^d/2^c/2| \
+B/2^d/2e/2g/2 e/2=d/2=c/2B/2 A/2B/2c/2^f/2 c/2B/2A/2G/2| \
+^F/2G/2A/2c/2 A/2G/2^F/2E/2 ^D/2^F/2A/2c/2 B/2A/2G/2^F/2| \
+G/2>B/2[G/2E/2]B,/2 ^F/2A/2e/2^d/2 e4|
+% A'
+A/2c/2e/2a/2 e/2=d/2c/2B/2 x4| \
+A/2>c/2[e/2d/2]E/2 A/2c/2e/2^G/2 x4| \
+A/2>B/2[d/2c/2]c/2 [c/2B/2]d/2[=f/2e/2]e/2 [e/2d/2]a/2f/2d/2 e/2d/2c/2B/2| \
+x8|
+A/2c/2e/2a/2 c'/2e/2c/2A/2 ^G/2B/2e/2^g/2 b/2d/2c/2B/2| \
+x8| \
+A/2c/2e/2=g/2 f/2c/2B/2A/2 G/2B/2d/2f/2 e/2B/2A/2G/2| \
+F/2A/2c/2e/2 d/2c/2B/2A/2 ^G/2e/2B/2^G/2 E/2F/2D/2E/2|
+^C/2A/2e/2=G/2 F/2D/2F/2=C/2 B,/2G/2d/2F/2 E/2C/2E/2B,/2| \
+A,/2F/2c/2E/2 D/2B,/2D/2A,/2 ^G,/2E/2B/2D/2 C/2A,/2D/2B,/2| \
+E/2C/2A,/2C/2 E/2A/2c/2E/2 ^D/2c/2B/2A/2 ^f/2A/2=G/2^F/2| \
+E/2B,/2G,/2B,/2 E/2G/2B/2=D/2 ^C/2B/2A/2G/2 e/2g/2^f/2e/2|
+^d/2A/2^F/2A/2 ^d/2^f/2a/2=c/2 B/2^F/2^D/2^F/2 B/2^d/2^f/2a/2| \
+g/2>b/2[a/2g/2]^f/2 e/2c'/2A/2>B/2 [c/2=D/2]a/2[g/2^f/2]e/2 d/2b/2G/2>A/2| \
+[B/2C/2]g/2[^f/2e/2]d/2 c/2>a/2[g/2^f/2]e/2 ^d/2>^f/2[^d/2B/2]A/2 G/2e/2^F/2=d/2| \
+E/2>d/2[B/2G/2]=F/2 E/2c/2D/2B/2 C/2>B/2[G/2E/2]D/2 C/2A/2B,/2G/2|
+A,/2>B,/2[D/2C/2]C/2 [C/2B,/2]D/2[F/2E/2]E/2 [E/2D/2]^F/2[A/2G/2]G/2 [G/2^F/2]A/2[c/2B/2]B/2| \
+[^f/2A/2]c/2^D/2c/2 B/2A/2G/2^F/2 G/2A/2B/2c<^FE/2| \
+E/2>^C/2[E/2=D/2]A/2 ^F/2>^D/2[^F/2E/2]B/2 G/2>E/2[G/2^F/2]=c/2 A/2>^F/2[A/2G/2]=d/2| \
+B/2G/2B/2^d/2 e/2g/2b/2=d/2 c/2A/2c/2e/2 =f/2a/2c'/2e/2|
+B/2^d/2^f/2b/2 ^f/2e/2^d/2^c/2 B/2^d/2^f/2a/2 ^f/2e/2^d/2^c/2| \
+B/2^d/2e/2g/2 e/2=d/2=c/2B/2 A/2B/2c/2^f/2 c/2B/2A/2G/2| \
+^F/2G/2A/2c/2 A/2G/2^F/2E/2 ^D/2^F/2A/2c/2 B/2A/2G/2^F/2| \
+G/2>B/2[G/2E/2]B,/2 ^F/2A/2e/2^d/2 e4|
+% B
+E/2e/2g/2b/2 g/2e/2^d/2e/2 x4| \
+E/2>G/2[B/2A/2]B,/2 E/2G/2B/2^D/2 x4| \
+E/2>^F/2[A/2G/2]G/2 [G/2^F/2]A/2[c/2B/2]B/2 [B/2A/2]G/2[B/2A/2]^c/2 [e/2^d/2]B/2[A/2G/2]^F/2| \
+x8|
+E/2G/2B/2e/2 g/2b/2g/2e/2 ^d/2^f/2^d/2B/2 ^F/2A/2G/2^F/2| \
+x8| \
+E/2G/2B/2=d/2 =c/2G/2^F/2E/2 D/2^F/2A/2c/2 B/2^F/2E/2D/2| \
+C/2E/2G/2B/2 A/2G/2^F/2E/2 ^D/2B/2^F/2^D/2 B,/2C/2A,/2B,/2|
+G,/2>E/2[G/2^F/2]B/2 e/2^f/2=d/2e/2 c/2>e/2[d/2c/2]B/2 A/2B/2G/2A/2| \
+^F/2>D/2[^F/2E/2]A/2 d/2e/2c/2d/2 B/2>G/2[B/2A/2]d/2 g/2a/2^f/2g/2| \
+e/2g/2e/2B/2 c/2E/2G/2c/2 d/2g/2d/2A/2 B/2D/2G/2B/2| \
+c/2g/2c/2A/2 D/2>^f/2[a/2g/2]c/2 B/2g/2d/2B/2 G/2A/2=F/2G/2|
+E/2c/2g/2^A/2 =A/2F/2A/2E/2 D/2B/2f/2A/2 G/2E/2G/2D/2| \
+C/2A/2e/2G/2 F/2E/2F/2C/2 B,/2G/2d/2F/2 E/2C/2F/2D/2| \
+G/2E/2C/2E/2 G/2E/2A/2F/2 ^A/2G/2E/2G/2 ^A/2G/2c/2G/2| \
+=A/2F/2A/2c/2 f/2d/2a/2c/2 B/2G/2B/2d/2 g/2e/2b/2d/2|
+c/2A/2c/2e/2 a/2f/2c'/2e/2 d/2B/2d/2g/2 b/2g/2d'/2f/2| \
+e/2>g/2[f/2e/2]f/2 [a/2g/2]B/2[d/2c/2]e/2 [g/2f/2]A/2[c/2B/2]d/2 [f/2e/2]G/2[B/2A/2]c/2| \
+[e/2d/2]C/2[E/2D/2]F/2 [A/2G/2]F/2d/2F/2 G,/2F/2B/2d/2 c/2B/2A/2G/2| \
+F/2>E/2[E/2D/2]c/2 G,/2D/2c/2B/2 c/2>e/2[c/2G/2]F/2 E/2>G/2[E/2C/2]^A,/2|
+=A,/2G/2^c/2G/2 ^c/2G/2e/2G/2 F/2>d/2[A/2F/2]E/2 D/2>A/2[F/2D/2]=C/2| \
+B,/2A/2^d/2A/2 ^d/2A/2^f/2A/2 ^G/2>e/2[B/2^G/2]^F/2 E/2>B/2[^G/2E/2]=D/2| \
+ (3C/2e/2d/2[c/2B/2]c/2 [d/2c/2]B/2[A/2^G/2] (3A/2B/2^C/2[A/2=G/2][=F/2E/2]F/2 [G/2F/2]E/2[D/2^C/2]D/2| \
+[E/2D/2]f/2[e/2d/2]=c/2 B/2d/2G/2>A/2 [B/2C/2]e/2[d/2c/2]B/2 A/2c/2F/2>G/2|
+[A/2B,/2]d/2[c/2B/2]A/2 ^G/2d/2b/2d/2 c/2>A/2[c/2B/2]f/2 B/2>=G/2[B/2A/2]e/2| \
+A/2>F/2[A/2G/2]^c/2 d/2>B/2[d/2=c/2]f/2 ^g/2>e/2[^g/2^f/2]b/2 d'/2>b/2[^g/2e/2]^g/2| \
+[c'/2b/2]e'/2[c'/2a/2]=g/2 =f/2d'/2e/2c'/2 d/2>c'/2[a/2f/2]e/2 d/2b/2c/2a/2| \
+B/2>f/2[d/2B/2]A/2 ^G/2d/2^F/2d/2 E/2^G/2B/2d/2 =f/2>e/2[d/2c/2]B/2|
+c/2^G/2A/2^D/2 E/2>c/2[B/2A/2]^G/2 A/2>F/2[A/2=G/2]F/2 E/2=D/2C/2B,/2| \
+ (3C/2E/2^F/2[A/2^G/2]E/2 D/2C/2B,/2A,/2>B,/2[D/2C/2][=F/2E/2]E/2 D/2B/2f/2A/2| \
+ (3^G/2A/2B/2[d/2c/2]c/2 B/2>^g/2[b/2a/2]d/2>c/2[^f/2e/2][a/2^g/2]c/2 E/2B/2a/2^g/2| \
+A/2^c/2=g/2e/2 A/2d/2^f/2d/2 ^G/2d/2=f/2d/2 =G/2^c/2e/2^c/2|
+^F/2A/2e/2A/2 =F/2d/2a/2d/2 E/2d/2b/2a/2 ^g/2^f/2e/2d/2| \
+=c/2>e/2[c/2A/2]E/2 B/2d/2a/2^g/2 A,4| \
+% B'
+E/2e/2=g/2b/2 g/2e/2^d/2e/2 x4| \
+E/2>G/2[B/2A/2]B,/2 E/2G/2B/2^D/2 x4|
+E/2>^F/2[A/2G/2]G/2 [G/2^F/2]A/2[c/2B/2]B/2 [B/2A/2]G/2[B/2A/2]^c/2 [e/2^d/2]B/2[A/2G/2]^F/2| \
+x8| \
+E/2G/2B/2e/2 g/2b/2g/2e/2 ^d/2^f/2^d/2B/2 ^F/2A/2G/2^F/2| \
+x8|
+E/2G/2B/2=d/2 =c/2G/2^F/2E/2 D/2^F/2A/2c/2 B/2^F/2E/2D/2| \
+C/2E/2G/2B/2 A/2G/2^F/2E/2 ^D/2B/2^F/2^D/2 B,/2C/2A,/2B,/2| \
+G,/2>E/2[G/2^F/2]B/2 e/2^f/2=d/2e/2 c/2>e/2[d/2c/2]B/2 A/2B/2G/2A/2| \
+^F/2>D/2[^F/2E/2]A/2 d/2e/2c/2d/2 B/2>G/2[B/2A/2]d/2 g/2a/2^f/2g/2|
+e/2g/2e/2B/2 c/2E/2G/2c/2 d/2g/2d/2A/2 B/2D/2G/2B/2| \
+c/2g/2c/2A/2 D/2>^f/2[a/2g/2]c/2 B/2g/2d/2B/2 G/2A/2=F/2G/2| \
+E/2c/2g/2^A/2 =A/2F/2A/2E/2 D/2B/2f/2A/2 G/2E/2G/2D/2| \
+C/2A/2e/2G/2 F/2E/2F/2C/2 B,/2G/2d/2F/2 E/2C/2F/2D/2|
+G/2E/2C/2E/2 G/2E/2A/2F/2 ^A/2G/2E/2G/2 ^A/2G/2c/2G/2| \
+=A/2F/2A/2c/2 f/2d/2a/2c/2 B/2G/2B/2d/2 g/2e/2b/2d/2| \
+c/2A/2c/2e/2 a/2f/2c'/2e/2 d/2B/2d/2g/2 b/2g/2d'/2f/2| \
+e/2>g/2[f/2e/2]f/2 [a/2g/2]B/2[d/2c/2]e/2 [g/2f/2]A/2[c/2B/2]d/2 [f/2e/2]G/2[B/2A/2]c/2|
+[e/2d/2]C/2[E/2D/2]F/2 [A/2G/2]F/2d/2F/2 G,/2F/2B/2d/2 c/2B/2A/2G/2| \
+F/2>E/2[E/2D/2]c/2 G,/2D/2c/2B/2 c/2>e/2[c/2G/2]F/2 E/2>G/2[E/2C/2]^A,/2| \
+=A,/2G/2^c/2G/2 ^c/2G/2e/2G/2 F/2>d/2[A/2F/2]E/2 D/2>A/2[F/2D/2]=C/2| \
+B,/2A/2^d/2A/2 ^d/2A/2^f/2A/2 ^G/2>e/2[B/2^G/2]^F/2 E/2>B/2[^G/2E/2]=D/2|
+ (3C/2e/2d/2[c/2B/2]c/2 [d/2c/2]B/2[A/2^G/2] (3A/2B/2^C/2[A/2=G/2][=F/2E/2]F/2 [G/2F/2]E/2[D/2^C/2]D/2| \
+[E/2D/2]f/2[e/2d/2]=c/2 B/2d/2G/2>A/2 [B/2C/2]e/2[d/2c/2]B/2 A/2c/2F/2>G/2| \
+[A/2B,/2]d/2[c/2B/2]A/2 ^G/2d/2b/2d/2 c/2>A/2[c/2B/2]f/2 B/2>=G/2[B/2A/2]e/2| \
+A/2>F/2[A/2G/2]^c/2 d/2>B/2[d/2=c/2]f/2 ^g/2>e/2[^g/2^f/2]b/2 d'/2>b/2[^g/2e/2]^g/2|
+[c'/2b/2]e'/2[c'/2a/2]=g/2 =f/2d'/2e/2c'/2 d/2>c'/2[a/2f/2]e/2 d/2b/2c/2a/2| \
+B/2>f/2[d/2B/2]A/2 ^G/2d/2^F/2d/2 E/2^G/2B/2d/2 =f/2>e/2[d/2c/2]B/2| \
+c/2^G/2A/2^D/2 E/2>c/2[B/2A/2]^G/2 A/2>F/2[A/2=G/2]F/2 E/2=D/2C/2B,/2| \
+ (3C/2E/2^F/2[A/2^G/2]E/2 D/2C/2B,/2A,/2>B,/2[D/2C/2][=F/2E/2]E/2 D/2B/2f/2A/2|
+ (3^G/2A/2B/2[d/2c/2]c/2 B/2>^g/2[b/2a/2]d/2>c/2[^f/2e/2][a/2^g/2]c/2 E/2B/2a/2^g/2| \
+A/2^c/2=g/2e/2 A/2d/2^f/2d/2 ^G/2d/2=f/2d/2 =G/2^c/2e/2^c/2| \
+^F/2A/2e/2A/2 =F/2d/2a/2d/2 E/2d/2b/2a/2 ^g/2^f/2e/2d/2| \
+=c/2>e/2[c/2A/2]E/2 B/2d/2a/2^g/2 A,4|
+V:2
+% --------------------------------------
+%%MIDI program 40
+x4 
+% untitled
+% Copyright \0xa9 1996 by David J. Grossman
+% David J. Grossman
+% A
+A/2c/2e/2a/2 e/2d/2c/2B/2| \
+x4 A/2>c/2[e/2d/2]E/2 A/2c/2e/2^G/2| \
+x8| \
+A/2>B/2[d/2c/2]c/2 [c/2B/2]d/2[=f/2e/2]e/2 [e/2d/2]a/2f/2d/2 e/2d/2c/2B/2|
+x8| \
+A/2c/2e/2a/2 c'/2e/2c/2A/2 ^G/2B/2e/2^g/2 b/2d/2c/2B/2| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x6 B,2| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x4 
+% A'
+A/2c/2e/2a/2 e/2d/2c/2B/2| \
+x4 A/2>c/2[e/2d/2]E/2 A/2c/2e/2^G/2| \
+x8| \
+A/2>B/2[d/2c/2]c/2 [c/2B/2]d/2[f/2e/2]e/2 [e/2d/2]a/2f/2d/2 e/2d/2c/2B/2|
+x8| \
+A/2c/2e/2a/2 c'/2e/2c/2A/2 ^G/2B/2e/2^g/2 b/2d/2c/2B/2| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x6 B,2| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x4 
+% B
+E/2e/2=g/2b/2 g/2e/2^d/2e/2| \
+x4 E/2>G/2[B/2A/2]B,/2 E/2G/2B/2^D/2| \
+x8| \
+E/2>^F/2[A/2G/2]G/2 [G/2^F/2]A/2[c/2B/2]B/2 [B/2A/2]G/2[B/2A/2]^c/2 [e/2^d/2]B/2[A/2G/2]^F/2|
+x8| \
+E/2G/2B/2e/2 g/2b/2g/2e/2 ^d/2^f/2^d/2B/2 ^F/2A/2G/2^F/2| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x4 
+% B'
+E/2e/2g/2b/2 g/2e/2^d/2e/2| \
+x4 E/2>G/2[B/2A/2]B,/2 E/2G/2B/2^D/2|
+x8| \
+E/2>^F/2[A/2G/2]G/2 [G/2^F/2]A/2[=c/2B/2]B/2 [B/2A/2]G/2[B/2A/2]^c/2 [e/2^d/2]B/2[A/2G/2]^F/2| \
+x8| \
+E/2G/2B/2e/2 g/2b/2g/2e/2 ^d/2^f/2^d/2B/2 ^F/2A/2G/2^F/2|
+% Johann Sebastian Bach  (1685-1750)
+% Six Sonatas and Partitas for Solo Violin
+% --------------------------------------
+% Sonata No. 2 in A minor - BWV 1003
+% 4th Movement: Allegro
+% --------------------------------------
+% Sequenced with Cakewalk Pro Audio by
+% David J. Grossman - dave@unpronounceable.com
+% This and other Bach MIDI files can be found at:
+% Dave's J.S. Bach Page
+% http://www.unpronounceable.com/bach
+% --------------------------------------
+% Original Filename: vs2-4alg.mid
+% Last Modified: February 22, 1997

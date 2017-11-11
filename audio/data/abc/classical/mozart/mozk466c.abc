@@ -1,0 +1,2069 @@
+X: 1
+T: from ./mozk466c.mid
+M: 4/4
+L: 1/8
+Q:1/4=220
+K:D % 2 sharps
+V:1
+% Mozart Piano Concerto
+%%MIDI program 0
+K:F % 1 flats
+x8| \
+x3
+%%MIDI program 0
+D FA df| \
+a2 [d2A2F2] [_d2G2E2] [=d2F2D2]| \
+[b6g6e6] ag|
+[gD-][fD-] [eD-][dD] [_d_A-B,-][=d_A-B,-] [_d_A-B,-][=d_AB,]| \
+[e2_d2=A2A,2] x=D FA df| \
+a2 [d2A2F2] [_d2G2E2] [=d2F2D2]| \
+[b6g6e6] ag|
+[gD-][fD-] [eD-][dD] [d2_G2-C2-] [d2_G2C2]| \
+d2 d'4 c'b| \
+[bF-][aF-] [=gF-][fF] [fG-][eG-] [dG-][_dG]| \
+[eF-][=dF-] [_dF-][=dF] [d2_G2-] [d2_G2]|
+[d2=G2-] [d'2-G2] [d'2E2-D2-] [c'/2E/2-D/2-][E/2-D/2-][b/2E/2-D/2-][E/2D/2]| \
+[bF-D-][aF-D-] [gF-D-][fFD] [e2G2-_D2-] [a2G2_D2]| \
+=d2 xD FA df| \
+a2 d2 _d2 =d2|
+[b6g6e6] ag| \
+g_g ed =g2 g2| \
+[_e'6c'6a6] d'c'| \
+c'b ag [d'2b2=e2] [d'2b2f2]|
+[d'2b2g2-] [c'4g4-] [b2g2]| \
+a2 xF Ac fa| \
+[c'2f2-] [b2-f2] b2 a2| \
+[g2d2B2] _dE GB eg|
+[b2e2-] [a4e4] [g2e2A2]| \
+[f2=d2] xD _GA d_g| \
+[=g2d2] xD G=B dg| \
+[_a2e2=B2] xE G=B e_a|
+[=ae]A aa gf ed| \
+_da aa gf e=d| \
+_dA AA GF E=D| \
+AA, A,A, A,A, A,A,|
+x8| \
+aA aA aA aA| \
+_BA BA BA BA| \
+=BA =BA cA cA|
+_dA _dA _dA _dA| \
+=dA dA _eA _eA| \
+=eA eA _gA _gA| \
+=gA gA [_af]=A [_af]=A|
+[ae]A [ae]A [g_d]A [g_d]A| \
+f=d x6| \
+x8| \
+d4 x4|
+x8| \
+dd' dd' dd' dd'| \
+[_d'=d]d' [_d'=d]d' [c'd]d' [c'd]d'| \
+[=bd]d' [=bd]d' [_bd]d' [bd]d'|
+[aB]d' [aB]d' [aB]d' [aB]d'| \
+[ge]e' ge' ge' ge'| \
+fd' fd' fd' fd'| \
+[be]d' [be]d' [ae]_d' [ae]_d'|
+[=d'8f8d8]| \
+[_e'4c'4f4] [_e3c3F3][_ecF]| \
+[d8B8F8]| \
+[_e'4c'4_g4] [_e3c3_G3][_ec_G]|
+[d8B8=G8]| \
+[f'4d'4_a4] [_a3f3d3][_afd]| \
+[=a2=e2] [g2e2A2] x2 [f2d2A2]| \
+x2 [e2B2G2] x2 [_d2G2]|
+[=d2A2F2] fe dc BA| \
+BA GF ED CB,| \
+A,2 x2 [_d'2a2e2] x2| \
+[=d'4a4f4] x4|
+[a4F4D4] [_d4G4E4]| \
+[=d2A2F2] x4 x3/2d/2| \
+[d'4-B4G4] [d'2-c2-A2-] [d'/2c/2-A/2-][c'/2c/2-A/2-][b/2c/2-A/2-][a/2c/2A/2]| \
+[g2d2B2] x6|
+[g4E4A,4-] [_a4f4D4=A,4]| \
+[a2e2_D2A,2] x4 xe/2x/2| \
+[f/2F/2-=D/2-][F/2-D/2-][_d/2F/2-=D/2-][F/2D/2] d/2x/2f/2x/2 [g/2G/2-E/2-][G/2-E/2-][_e/2G/2-=E/2-][G/2E/2] e/2x/2f/2x/2| \
+[a2A2F2] x3/2d/2 d'4|
+x_e =ef _g=g ab| \
+[bF-A,-][aF-A,-] [gF-A,-][fFA,-] [fG-A,-][eG-A,-] [dG-A,-][_dGA,]| \
+[=d2F2D2] xD FA df| \
+a2 [d2A2F2] [_d2G2E2] [=d2F2D2]|
+[b6g6e6] ag| \
+gf ed [_d_A-B,-][=d_A-B,-] [_d_A-B,-][=d_AB,]| \
+[e2_d2=A2A,2] x=D FA df| \
+a2 [d2A2F2] [_d2G2E2] [=d2F2D2]|
+[b6g6e6] bg| \
+ec BG E2 [c'2g2e2c2]| \
+[c'6a6f6c6] c'a| \
+fc AF C2 [d'2a2_g2d2]|
+[d'4b4=g4d4] xd d'c'| \
+bd' ba gd' gf| \
+eg ed cg cB| \
+Ac fc Ac AF|
+EG ED CG CB,| \
+A,C FC A,C A,F,| \
+C2 x2 G,C EG| \
+c2 xE Gc eg|
+[c'2c2] x6| \
+[c'8c8]| \
+[_d'8_d8]| \
+[c'2c2] _ax [b2B2] gx|
+[_a2_A2] fx [g2G2] ex| \
+f2- [f2-_A2F2C2] [f2_A2F2C2] [g_A-F-C-][_a_AFC]| \
+[gG-E-C-][cGEC] =de fg _ab| \
+[c'_A-F-][_a_AF] [f_A-F-][_a_AF] [c'_A-F-][_a_AF] c'_a|
+[_d'B-G-E-][bBGE] [gB-G-E-][bBGE] [_d'B-G-E-][bBGE] _d'b| \
+[c'_A-F-][_a_AF] c'_a [bG-B,-][gGB,] bg| \
+[_a_A-C-][f_AC] _af [gB-C-][eBC] ge| \
+[f=B-F-_D-][g=B-F-_D-] [f=B-F-_D-][e=B-F-_D-] [f=B-F-_D-][g=B-F-_D-] [f=B-F-_D-][g=BF-_D]|
+[_ac-F-C-][_bc-F-C-] [_ac-F-C-][gc-F-C-] [_ac-F-C-][bc-FC-] [gc-E-C-][_acEC]| \
+[f=B-F-_D-][g=B-F-_D-] [f=B-F-_D-][e=B-F-_D-] [f=B-F-_D-][g=B-F-_D-] [f=B-F-_D-][g=BF-_D]| \
+[_ac-F-C-][_bc-F-C-] [_ac-F-C-][gc-F-C-] [_ac-F-C-][bc-FC-] [gc-E-C-][_acEC]| \
+[f=B-F-_D-][g=B-F-_D-] [f=B-F-_D-][e=B-F-_D-] [f=B-F-_D-][g=B-F-_D-] [f=B-F-_D-][e=BF_D]|
+[f=B-F-=D-][g=B-F-D-] [f=B-F-D-][e=B-F-D-] [f=B-F-D-][g=B-F-D-] [f=B-F-D-][g=BFD]| \
+[=ac-F-C-][_bc-F-C-] [ac-F-C-][gc-F-C-] [ac-F-C-][bc-F-C-] [ac-F-C-][gc-F-C-]| \
+[ac-F-C-][bc-F-C-] [c'c-F-C-][ac-F-C-] [gc-B-F-E-C-][ac-B-F-E-C-] [bc-B-F-E-C-][gcBFEC]| \
+[f2A2F2] fg ab c'a|
+[d'B][_e'c] [c'A][d'B] [bG][c'A] [aF][bG]| \
+[g=E-][aE-] [gE-][_gE] =ga bg| \
+[c'A][d'B] [bG][c'A] [aF][bG] [gE][aF]| \
+[fD-][gD-] [fD-][eD] fg af|
+[bG][d'B] [c'A][d'B] [bG][c'A] [aF][bG]| \
+[gE][bG] [aF][bG] [gE][aF] [fD][gE]| \
+[eC][fD] [dB,][eC] cd Bc| \
+Ac fa c'2 A2|
+Bd fb d'2 =B2| \
+cf ac' f'2 f2| \
+[g/2C/2-][a/2C/2][g/2_B/2-][a/2B/2] [g/2E/2-][a/2E/2][g/2B/2-][a/2B/2] [g/2C/2-][a/2C/2][g/2B/2-][a/2B/2] [g/2E/2-][a/2E/2][f/2B/2-][g/2B/2]| \
+[f-F][fE] FG AG [c'A][aF]|
+d'-[d'B] c'-[c'A] b-[bG] a-[aF]| \
+[gE][_g_E] [=g=E][a_G] [b=G][a_G] [b=G][gE]| \
+c'-[c'A] b-[bG] a-[aF] g-[gE]| \
+[fD][e_D] [f=D][gE] [aF][gE] [aF][fD]|
+b-[bG] a-[aF] g2 f2| \
+ee' dd' cc' Bb| \
+Aa Gg Ff Ee| \
+x_A, =B,D F_A =Bd|
+f_a =bd' f'd' =b_a| \
+fd =B_A FD =B,_A,| \
+F,2 x2 [d'2_a2f2d2] x2| \
+[c'=A-C-][fA-C-] [cA-C-][fA-C-] [c'A-C-][fAC-] [=b_A-C-][f_AC]|
+[c'=A-C-][fA-C-] [cA-C-][fA-C-] [c'A-C-][fAC-] [=b_A-C-][f_AC]| \
+[c'=A-C-][fAC] d'f e'f f'f| \
+[g/2C/2-][a/2C/2][g/2_B/2-][a/2B/2] [g/2E/2-][a/2E/2][g/2B/2-][a/2B/2] [g/2C/2-][a/2C/2][g/2B/2-][a/2B/2] [g/2E/2-][b/2E/2][f/2B/2-][g/2B/2]| \
+[f2A2F2] x6|
+[c'6c6] g2| \
+g2 ax f4| \
+a2 bx g4| \
+c'=b c'd' c'2 x2|
+[c'6c6] g2| \
+g2 ax f4-| \
+f2 a2 _b2 g2| \
+g2 f2 fx3|
+[c'-B,][c'-G] [c'-C][c'-G] [c'-B,][c'G] [g-C][gG]| \
+[g-A,][gF] [aC]F [f-A,][f-F] [f-C][fF]| \
+[a-B,][aF] [bD]F [g-=B,][g-F] [g-D][gF]| \
+[c'C][=bG] [c'E][d'G] [c'C]G EG|
+[c'-C][c'-G] [c'-E][c'-G] [c'-C][c'G] [g-E][gG]| \
+[g-C][gA] [aF]A [f-F][f-=B] [f-_A][f-=B]| \
+[f-F][fc] [=a-A][ac] [_b-E][bc] [g-A][gc]| \
+[fA-F-][gAF] fe fg ab|
+c'd' c'=b c'=b _bg| \
+fg fe fg ab| \
+c'd' c'=b c'=b _bg| \
+fg fe fg ab|
+c'd' c'=b c'=b _bg| \
+f2 x3F Ac| \
+fA cf ac fa| \
+[_d'2g2e2] x3G _de|
+g_d eg be gb| \
+[=d'2b2g2] x3B dg| \
+bd gb d'g bd'| \
+[e'2a2g2] x2 g'/2e'/2_d'/2b/2 g/2e/2_d/2B/2|
+A/2E/2x6x| \
+x4 G/2A/2_d/2e/2 g/2a/2_d'/2e'/2| \
+g'/2e'/2b'/2a'/2 g'/2f'/2e'/2g'/2 f'/2e'/2=d'/2_d'/2 e'/2=d'/2_d'/2b/2| \
+a/2g/2b/2a/2 g/2f/2e/2g/2 f/2e/2=d/2_d/2 e/2=d/2_d/2B/2|
+A/2G/2F/2E/2 B/2x/2A/2x/2 G/2x/2F/2x/2 E/2x/2=D/2x/2| \
+_D3-[=D_D] FA =df| \
+a2 [d2A2F2] [_d2G2E2] [=d2F2D2]| \
+[b6g6e6] ag|
+gf ed [_d_A-][=d_A-] [_d_A-][=d_A]| \
+[e2_d2=A2] x=D FA df| \
+a2 [d2A2F2] [_d2G2E2] [=d2F2D2]| \
+[b6g6e6] ag|
+gf ed d2 d2| \
+d2 d'4 c'b| \
+[bF-][aF-] [gF-][fF] [fG-][eG-] [dG-][_dG]| \
+[eF-][=dF-] [_dF-][=dF] [d2_G2-] [d2_G2]|
+[d2=G2-] [d'2-G2] [d'2E2-D2-] [c'E-D-][bED]| \
+[bF-D-][aF-D-] [gF-D-][fFD] [e2G2-_D2-] [a2G2_D2]| \
+=d2 xD FA df| \
+a2 d2 _d2 =d2|
+[=b2d2] [=b4d4] [=b2-d2-]| \
+[=b2d2] [d4=B4] [d2-=B2-]| \
+[d2=B2] [c4A4] [c2-A2-]| \
+[c2A2] [a4f4c4] [c'2-a2f2]|
+[c'2f2-] [_b4f4-] [b2-f2-]| \
+[b2-f2] [b4b4d4] [a2c2]| \
+[_a2=B2] xE/2x/2 _A/2x/2=B/2x/2 e/2x/2_a/2x/2| \
+[=a2c2] xE Ac ea|
+[=b2_a2] x_A =Be _a=b| \
+[c'2=a2] [c'2a2] [_e'2a2] [_e'2a2]| \
+[=e'=b_a]e [e'=b_a]e [e'c'=a]e [e'c'a]e| \
+[e'=b_a]e [e'=b_a]e [e'c'=a]e [e'c'a]e|
+[e'2=b2_a2] e2 e2 e2| \
+e4 x4| \
+e4 _A4| \
+=A2 x4 xA|
+[a4-F4D4] [a2G2-E2-] [G/2-E/2-][g/2G/2-E/2-][f/2G/2-E/2-][e/2G/2E/2]| \
+[d2A2F2] x6| \
+d4 [_e4c4]| \
+[=e2=B2] x4 x=B|
+c_A =Ac d_B =Bd| \
+e2 x3/2A/2 a4| \
+x_B =Bc _d=d ef| \
+fe dc c=B A_A|
+=A2 xA, CE Ac| \
+e2 A2 _A2 =A2| \
+[f6d6=B6] ed| \
+dc =BA _A=A _A=A|
+[=B2_A2] x=A ce ac'| \
+e'2 a2 _a2 =a2| \
+[f'4d'4=b4f4] xf' d'f'| \
+=bd' f=b df cf|
+=B4 xF =BF| \
+d=B fd =bf d'=b| \
+_e'4 x_e' c'_e'| \
+ac' _ea c_e _B_e|
+A4 x_E A_E| \
+cA _ec a_e c'a| \
+_d'4 x_d' b_d'| \
+gb _dg B_d A_d|
+GA B_G =GA B_G| \
+=GA BA cB AG| \
+[=d4A4_G4] x2 [_g2d2A2]| \
+[=g4d4B4] x2 [b2g2d2]|
+[d'4a4_g4] x2 [_g2d2A2]| \
+[=g4d4B4] x4| \
+[d'2a2_g2d2] D2 D2 D2| \
+D2 x6|
+d4 _G4| \
+=G2 x4 x3/2G/2| \
+[g4-_E4C4] [g2F2-D2-] [F/2-D/2-][f/2F/2-D/2-][_e/2F/2-D/2-][d/2F/2D/2]| \
+[c2G2_E2] x6|
+c4 [_d4B4]| \
+[=d2A2] x4 xA| \
+B_G =GB c_A =Ac| \
+d2 x4 xd|
+_d_A =A_d =dB =Bd| \
+=eA _de ag fe| \
+=d2 x6| \
+[d'4d4] [c'4c4]|
+[_b2B2] x6| \
+g6 x/2f/2e/2d/2| \
+_d2 x6| \
+[a4A4] [g4G4]|
+[f2F2] x4 xe| \
+[fF-=D-][eFD] [fF-D-][dFD] [gG-E-][fGE] [gG-E-][eGE]| \
+[a2A2D2] x4 xg| \
+[a_G-D-][d_GD] [_g_G-D-][a_GD] [d'd-_G-][c'd_G] [bd-_G-][ad_G]|
+[a2d2=G2] x4 xc| \
+[dD-B,-][GDB,] [BD-B,-][dDB,] [gG-=B,-][fG=B,] [eG-=B,-][dG=B,]| \
+[e2G2C2] x4 xf| \
+[gE-C-][cEC] [eE-C-][gEC] [c'c-E-][_bcE] [ac-E-][gcE]|
+[a2c2F2] x4 xB| \
+cF Ac f_e dc| \
+d2 x4 x_e| \
+[fD-B,-][BDB,] [dD-B,-][fDB,] [bB-D-][aBD] [gB-D-][fBD]|
+[g2B2=E2] x4 xa| \
+[bG-E-][eGE] [gG-E-][bGE] [e'e-_A-][d'e_A] [_d'e-_A-][=be_A]| \
+[_d'2e2=A2] x4 x=d| \
+[e_D-A,-][A_DA,] [_d_D-A,-][e_DA,] [aA-_D-][gA_D] [fA-_D-][eA_D]|
+[fA-=D-][dA-D-] [fA-D-][aAD] [d'd-F-][c'd-F-] [_bd-F-][ad-F]| \
+[bd-G-][c'd-G-] [bd-G-][adG] [gD-B,-][fD-B,-] [eD-B,-][dDB,]| \
+[_dE-A,-][eE-A,-] [_dE-A,-][BEA,] Ae AG| \
+FA =dA FA FD|
+x8| \
+x8| \
+x8| \
+A2 x_D EA _de|
+[a2A2] x6| \
+[a8A8]| \
+[b8B8]| \
+[a2A2] fx [g2G2] ex|
+[f2F2] =dx [e2E2] _dx| \
+=d6 ef| \
+eA =B_d =de fg| \
+[aF-D-][d'FD] [_d'F-=D-][d'FD] [_d'F-=D-][d'FD] _d'=d'|
+[c'G-E-_D-][_bGE_D] [e'G-E-_D-][bGE_D] [e'G-E-_D-][bGE_D] e'b| \
+[aF-=D-][f'FD] d'a ge' bg| \
+fd' af e_d' ge| \
+[=d_A-D-][e_A-D-] [d_A-D-][_d_A-=D-] [d_A-D-][e_A-D-] [d_A-D-][e_AD]|
+[f=A-D-][gA-D-] [fA-D-][eA-D-] [fA-D-][gA-D] [eA-_D-][fA_D]| \
+[=d_A-D-][e_A-D-] [d_A-D-][_d_A-=D-] [d_A-D-][e_A-D-] [d_A-D-][e_AD]| \
+[f=A-D-][gA-D-] [fA-D-][eA-D-] [fA-D-][gA-D] [eA-_D-][fA_D]| \
+=dd' _d=d' dd' ed'|
+fd' _gd' =gd' _ad'| \
+=ad' fa gb eg| \
+fa df eg _de| \
+=d_d =de fg af|
+[bG][c'A] [aF][bG] [gE][aF] [fD][gE]| \
+[eC][_e'=B] [=e'c][_e'=B] [f'c][d'_B] [c'A][bG]| \
+[aF][bG] [g=E][aF] [fD][gE] [eC][fD]| \
+[BB,][_d'A] [=d'B][_d'A] [=d'B][c'A] [bG][aF]|
+[gE][bG] [aF][bG] ga fg| \
+eg fg eg de| \
+_de Bg Ag Ge| \
+FA =df a2 _G2|
+=GB dg b2 _A2| \
+=Ad fa d'2 d2| \
+[e/2A,/2-][f/2A,/2][e/2G/2-][f/2G/2] [e/2_D/2-][f/2_D/2][e/2G/2-][f/2G/2] [e/2A,/2-][f/2A,/2][e/2G/2-][f/2G/2] [e/2_D/2-][f/2_D/2][e/2G/2-][f/2G/2]| \
+[=d2F2D2] x6|
+[a6A6] e2| \
+e2 fx d4| \
+_g2 =gx e4| \
+a_a =a=b a2 x2|
+[a6A6] e2| \
+e2 fx d4-| \
+d2 f2 g2 e2| \
+e2 d2 dx3|
+[a-E][a-A] [a-G][a-A] [a-_D][aA] [e-G][eA]| \
+[e-=D][eA] [fF]A [d-D][d-A] [d-_G][dA]| \
+[_g-D][_g=B] [=gG]=B [e-E][e-=B] [e-_A][e=B]| \
+[=aE][_a_d] [=aA][=b_d] [aE]_d A_d|
+[a-_D][a-A] [a-G][a-A] [a-E][aA] [e-G][eA]| \
+[e-=D][eA] [fF]A [d-D][d-_A] [d-F][d-_A]| \
+[d-D][d=A] [f-F][fA] [g-C][gA] [e-G][e_B]| \
+[dF-D-][_dF=D] de fg af|
+b2 a2 g2 f2| \
+ee' dd' cc' Bb| \
+a2 g2 f2 e2| \
+dd' cc' Bb Aa|
+g2 f2 e2 d2| \
+c_d' Bb Aa Gg| \
+Ff Ee =Dd Cc| \
+x4 =B,E F_A|
+=Bd f_a =bd' f'd'| \
+=b_a fd =B_A FD| \
+=B,2 x2 [d'2=b2f2d2] x2| \
+x=A _BA =BA cA|
+_dA =dA _eA =eA| \
+fA _gA =gA _a=A| \
+aA _bA =bA c'A| \
+_d'2 A2 =d'2 A2|
+e'2 A2 f'2 d2| \
+[e/2A,/2-][f/2A,/2][e/2G/2-][f/2G/2] [e/2_D/2-][f/2_D/2][e/2G/2-][f/2G/2] [e/2A,/2-][f/2A,/2][e/2G/2-][f/2G/2] [e/2_D/2-][f/2_D/2][e/2G/2-][f/2G/2]| \
+[e/2A,/2-][f/2A,/2][e/2G/2-][f/2G/2] [e/2_D/2-][f/2_D/2][e/2G/2-][f/2G/2] [e/2A,/2-][f/2A,/2][e/2G/2-][f/2G/2] [e/2_D/2-][f/2_D/2][=d/2G/2-][e/2G/2]| \
+[d2F2D2_B,2] x6|
+[_e'4c'4f4] [_e3c3F3][_ecF]| \
+[d8B8F8]| \
+[_e'4c'4_g4] [_e3c3_G3][_ec_G]| \
+[d8B8=G8]|
+[f'4=b4_a4] [_a3f3d3][_af=B]| \
+[=a2=e2A2] [g2e2A2] x2 [f2d2A2]| \
+x2 [_b2g2d2] x2 [d'2b2f2]| \
+A6 x2|
+x6 DF| \
+A2 x3D FG| \
+d2 xA, DF Ad| \
+fx DF Ad fa|
+[b8-f8-d8-]| \
+[b2f2d2] [b2f2d2] [b2f2d2] [b2f2d2]| \
+[b2-g2-e2-c2-] [b-g-e-c-C][bgecE] Gc eg| \
+c'2 [b2g2e2c2] [b2g2e2c2] [b2g2e2c2]|
+[a8-f8-e8-c8-]| \
+[a2f2e2c2] [a2f2e2c2] [a2f2e2c2] [a2f2e2c2]| \
+[a2-f2-d2-B2-] [a-f-d-B-B,][afdBD] FB df| \
+b2 [a2f2d2B2] [a2f2d2B2] [a2f2d2B2]|
+[g8-e8-d8-B8-]| \
+[g2e2d2B2] [g2e2d2B2] [g2e2d2B2] [g2e2d2B2]| \
+[g2-e2-_d2-A2-] [g-e-_d-A-A,][ge_dA_D] EA _de| \
+a2 [g2e2_d2A2] [g2e2_d2A2] [g2e2_d2A2]|
+fA _A=A =BA _dA| \
+=dA eA fA gA| \
+[a4F4D4] [_d/2G/2-E/2-][=d/2G/2-E/2-][_d/2G/2-E/2-][=d/2G/2-E/2-] [_d/2G/2-E/2-][=d/2G/2-E/2-][=B/2G/2-E/2-][_d/2G/2E/2]| \
+[=d4-A4F4] [d4c4A4]|
+x/2x/2d'3- [d'/2_g/2]=g/2_g/2=g/2 _g/2=g/2e/2_g/2| \
+[=g4-d4=B4] [g4f4d4]| \
+x/2x/2g3- [g/2=B/2]c/2=B/2c/2 =B/2c/2A/2=B/2| \
+[c4G4E4] [_B4G4]|
+x/2x/2c'3- [c'/2e/2B/2-G/2-][f/2B/2-G/2-][e/2B/2-G/2-][f/2B/2-G/2-] [e/2B/2-G/2-][f/2B/2-G/2-][d/2B/2-G/2-][e/2B/2G/2]| \
+[f4c4A4] [_e4c4]| \
+xd [gB-][=eB] [dA-][_dA] [gB-][eB]| \
+[=dA-][_dA] [gB-][eB] [=dA-][_dA] [gB-][eB]|
+[=dA]_d [b=d]g [f_d]e [b=d]g| \
+[f_d]f [b=d]g [f_d]e [b=d]g| \
+[g_d]e [e'g]b [g_d]e [e'g]b| \
+[g_d]e [e'g]b [g_d]e [e'g]b|
+[g_d]e e'=d' _d'b a_a| \
+=a_a =ab ag fe| \
+fg fe =df ga| \
+[bG][c'A] [aF][bG] [gE][bF] [fD][gE]|
+ef _g=g _a=a c'g| \
+ab ga fg ef| \
+de f_g =g_a =af| \
+ga fg ef de|
+_d=d ef ga [=bG-][_d'G]| \
+[=d'A-F-][dAF] [c'G-E-][cGE] [_bF-D-][BFD] [aE-C-][AEC]| \
+gG fF eE dD| \
+_d_D BB, AA, _A_A,|
+=AA, GG, FF, EE,| \
+xF, A,=D FA df| \
+x_G, A,D _GA d_g| \
+x=G, =B,D G=B eg|
+x_A, DF _Ad f_a| \
+[=a8f8d8A8]| \
+x8| \
+x_D =DF DF _A=B|
+[=AA,][_d_D] [=dD][fF] [dD][fF] [_a_A][=b=B]| \
+[=aA][_d'_d] [=d'd][f'f] [e'e][d'd] [_d'_d][=d'd]| \
+[fF][d'd] [_d'_d][=d'd] [gG][d'd] [_d'_d][=d'd]| \
+[aA][_d'_d] [=d'd][f'f] [e'e][d'd] [_d'_d][=d'd]|
+[_bB][d'd] [_d'_d][=d'd] [_a_A][d'd] [_d'_d][=d'd]| \
+[=aA][_d'_d] [=d'd][f'f] [e'e][d'd] [_d'_d][=d'd]| \
+[fF][d'd] [_d'_d][=d'd] [gG][d'd] [_d'_d][=d'd]| \
+[aA][_d'_d] [=d'd][f'f] [e'e][d'd] [_d'_d][=d'd]|
+[bB][d'd] [_d'_d][=d'd] [_a_A][d'd] [_d'_d][=d'd]| \
+[=aA][_d'_d] [=d'd][f'f] [e'e][d'd] [_d'_d][=d'd]| \
+[bB][d'd] [_d'_d][=d'd] [_a_A][d'd] [_d'_d][=d'd]| \
+[=a8f8d8A8]|
+A/2=B/2_d/2=d/2 e/2f/2g/2a/2 =b/2_d'/2=d'/2e'/2 f'/2e'/2_e'/2d'/2| \
+_d'/2c'/2=b/2_b/2 a/2_a/2g/2_g/2 f/2=e/2_e/2=d/2 c/2=B/2=g/2=e/2| \
+d/2-d/2d/2-d/2 d/2-d/2d/2-d/2 d/2-d/2d/2-d/2 d/2-d/2d/2-d/2| \
+_d/2-_d/2-_d/2-_d/2- _d/2-_d/2-_d/2-_d/2- _d/2-_d/2-_d/2-_d/2- _d/2-_d/2-_d/2-_d/2-|
+[_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2-] [_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2-] [_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2-] [_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2]| \
+[_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2-] [_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2-] [_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2-] [_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2]| \
+[_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2-] [_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2-] [_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2-] [_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2]| \
+[_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2-] [_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2-] [_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2-] [_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2]|
+[_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2-] [_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2-] [_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2-] [_d/2-_d/2-][_d/2-_d/2-][_d/2-_d/2-][_d/2_d/2]| \
+=d2 f2 e2 d2-| \
+d2 xD F=A df| \
+a2 [d2A2F2] [_d2G2E2] [=d2F2D2]|
+[_b6g6e6] ag| \
+gf ed _d=d _d=d| \
+[e2_d2A2] x=D FA df| \
+a2 [d2A2F2] [_d2G2E2] [=d2F2D2]|
+[=b2f2d2] x3/2[d'/2=b/2f/2] [d'2=b2f2] x3/2[f'/2d'/2=b/2]| \
+[f'2d'2=b2] x6| \
+x8| \
+K:D % 2 sharps
+a4 G2- [e2G2]|
+[e2F2-] [fF-]F [d4A4]| \
+[f2c2-] [gc-]c [e4^G4]| \
+A/2a/2^g ab a2 a2| \
+a4- [a2=G2-] [e2G2]|
+[e2F2-] [fF-]F [d4-^G4=F4]| \
+[d2A2-=F2-] [^f2A2=F2] [=g2c2] [e2G2]| \
+dc de ^fe fg| \
+[a-A,][a-G] [a-E][a-G] [a-A,][aG] [e-C][eG]|
+[e-A,][eF] [fD]F [d-A,][d-F] [d-D][dF]| \
+[f-B,][fG] [gD]G [e-B,][e-^G] [e-D][e^G]| \
+[aC][^gA] [aE][bA] [a-C][aA] [a-E][aA]| \
+[a-A,][a-E] [a-C][a-E] [a-A,][a=G] [e-E][eG]|
+[e-A,][eF] [fD]F [d-D][d-^G] [d-=F][d-^G]| \
+[d-D][dA] [^f-F][fA] [=g-C][gA] [e-G][eA]| \
+[d2F2D2] xd xd xd| \
+gd cd bd cd|
+ad cd d'd cd| \
+gd cd bd cd| \
+ad cd d'd cd| \
+gd cd bd cd|
+xA df af dA| \
+xG ce ge cG| \
+xF Bd fd BF| \
+xE GB eB GE|
+xD FA dA FD| \
+xC EG cG EC| \
+D2 xd xd xd| \
+gd cd bd cd|
+ad cd d'd cd| \
+gd cd bd cd| \
+ad cd d'd cd| \
+gd cd bd cd|
+xA df af dA| \
+xG ce ge cG| \
+xF Bd fd BF| \
+xE GB eB GE|
+xD FA dA FD| \
+xC EG cG EC| \
+A,F DF AF DF| \
+A,G EG AG EG|
+A,F DF AF DF| \
+A,E CE AE CE| \
+A,F DF AF DF| \
+A,G EG AG EG|
+A,F DF AF DF| \
+x8| \
+x8| \
+A,G EG AG EG|
+A,F DF AF DF| \
+A,E CE AE CE| \
+A,F DF AF DF| \
+A,G EG AG EG|
+A,F DF AF DF| \
+x8| \
+x4 CD EF| \
+GA Bc de fg|
+a2 x2 [d'4a4f4d4]| \
+x4 [c'4a4e4c4]| \
+x4 CD EF| \
+GA Bc de fg|
+a2 x2 [d'4a4f4d4]| \
+x4 [c'4a4e4c4]| \
+A,F CF AF CF| \
+B,G DG BG DG|
+F=c A=c f=c A=c| \
+Gd Bd gd Bd| \
+^cf =cf af =cf| \
+Bg dg bg dg|
+[^c'4g4e4] cd ef| \
+gf ef ga bc'| \
+[d'2d2] x6| \
+[a2e2c2A2] x6|
+x/2[f2d2A2F2]
+V:2
+% K466c - #20
+%%MIDI program 0
+K:F % 1 flats
+x8| \
+x8| \
+x8| \
+%%MIDI program 0
+[_D8_D,8]|
+x8| \
+x8| \
+x8| \
+[_D8_D,8]|
+x8| \
+[G4B,4] [E4G,4]| \
+A,8| \
+B,4 [C4A,4]|
+[B,4G,4] G,4| \
+A,8| \
+[F2=D2] x6| \
+x2 [A2F2] [G2E2] [F2D2]|
+[_D8_D,8]| \
+[=D2D,2] [C2C,2] [B,2B,,2] [G,2G,,2]| \
+[_G,8_G,,8]| \
+[=G,2G,,2] [B,2B,,2] [G,2G,,2] [F,2F,,2]|
+[E,2E,,2] xC, E,G, CE| \
+F2 F,4 E,2| \
+D,2 xB,, D,F, B,D| \
+F2 E2 x2 D2|
+_D2 xA,, _D,E, A,_D| \
+=D2 D,4 C,2| \
+=B,,2 G,4 F,2| \
+E,2 E4 D2|
+_D2 A,2 =D2 _B,2| \
+A,2 _D,2 =D,2 B,,2| \
+A,,2 A,2 G,F, E,D,| \
+A,,2 x6|
+B,A, B,A, B,A, B,A,| \
+=B,A, =B,A, CA, CA,| \
+_DA, _DA, _DA, _DA,| \
+=DA, DA, _EA, _EA,|
+=EA, EA, EA, EA,| \
+FA, FA, _GA, _GA,| \
+=GA, GA, _EA, _EA,| \
+=EA, EA, DA, DA,|
+_DA, _DA, EA, EA,| \
+=D,x DD DD DD| \
+_D=D _D=D CD CD| \
+=B,D =B,D _B,D B,D|
+[_DA,]=D [_DA,]=D [CA,]D [CA,]D| \
+[=B,G,]D [=B,G,]D [_B,G,]D [B,G,]D| \
+[A,_G,]D [A,_G,]D [_G,D,]D [_G,D,]D| \
+[=B,=G,]D [=B,G,]D [_B,G,]D [B,G,]D|
+[A,_G,]D [A,_G,]D [A,F,]D [A,F,]D| \
+[E2E,2] [D2D,2] [_D2_D,2] [A,2A,,2]| \
+x2 [=DD,]x [B,B,,]x [F,2F,,2]| \
+[=G,4G,,4] [A,4A,,4]|
+[A,2B,,2] F,x D,x B,,2| \
+A,,2 C,2 F,2 A,2| \
+B,2 F,2 D,2 B,,2| \
+A,,2 C,2 _G,2 A,2|
+B,2 =G,2 D,2 B,,2| \
+D,2 _A,2 =B,2 D2| \
+_D2 x2 =D2 x2| \
+[G,2G,,2] x2 [=A,2A,,2] x2|
+[D2D,2] x2 DC _B,A,| \
+B,A, G,F, E,D, C,B,,| \
+A,,2 x2 [A,2A,,2] x2| \
+[D,4D,,4] x4|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x6 x3/2_G,/2|
+=G,4 x4| \
+x8| \
+x8| \
+x8|
+[_D8_D,8]| \
+=D4 x4| \
+x8| \
+x8|
+[C8C,8]| \
+x6 [B,2B,,2]| \
+[A,8A,,8]| \
+x6 [C2C,2]|
+[B,4B,,4] x4| \
+[B,4B,,4] [=B,4=B,,4]| \
+[C4C,4] x4| \
+x8|
+E,G, E,D, C,G, C,_B,,| \
+A,,C, F,C, A,,C, A,,F,,| \
+[C,2C,,2] x[E,E,,] G,,C, E,G,| \
+C2 xE, G,C EG|
+x8| \
+[_A,2F,2] [_A,2F,2] [_A,2F,2] x2| \
+[B,2G,2E,2] [B,2G,2E,2] [B,2G,2E,2] x2| \
+[_A,2F,2] x2 [G,2B,,2] x2|
+[F,2C,2] x2 [E,2C,2] x2| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x4 =A,B, G,A,| \
+F,4 x2 [_E2_E,2]|
+[D4D,4] x2 [_D2_D,2]| \
+[C4C,4] x4| \
+x8| \
+x8|
+B,x A,x G,x F,x| \
+x8| \
+A,x G,x F,x =E,x| \
+x8|
+G,x F,x E,E =D,D| \
+C,C B,,B, A,,A, G,,G,| \
+F,,F, E,,E, D,,D, C,,C,| \
+[=B,,8_A,,8F,,8D,,8=B,,,8]|
+x8| \
+x8| \
+x4 [=B,2=B,,2] x2| \
+x8|
+x8| \
+x8| \
+x8| \
+x2 [C2=A,2F,2] [C2A,2F,2] [C2A,2F,2]|
+E,2 [C2G,2] C,2 [C2G,2]| \
+F,2 [C2A,2] D,2 [C2A,2]| \
+G,2 [D2_B,2] F,2 [D2=B,2]| \
+E,2 [C2G,2] C,2 [C2G,2]|
+E,2 [C2G,2] C,2 [C2G,2]| \
+F,2 [C2A,2] D,2 [=B,2_A,2]| \
+C,2 [C2=A,2F,2] C,2 [C2_B,2E,2]| \
+F,2 [C2A,2] F,,2 x2|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+C,2 x6| \
+F,2 x6| \
+C,2 x6| \
+F,2 x6|
+C,2 x6| \
+[F,2C,2A,,2F,,2] x6| \
+x8| \
+[E,2E,,2] x6|
+x8| \
+[D,2D,,2] x6| \
+x8| \
+[_D,2_D,,2] x6|
+x_D/2B,/2 G,/2E,/2_D,/2B,,/2 G,,/2E,,/2_D,,/2B,,,/2 G,,,_D,,/2E,,/2| \
+G,,/2A,,/2_D,/2E,/2 G,/2A,/2_D/2E/2 x4| \
+x8| \
+x8|
+x8| \
+[G,4E,4A,,4] x4| \
+x8| \
+[_D8_D,8]|
+=D4 B,4| \
+A,2 x6| \
+x8| \
+[_D8_D,8]|
+=D4 [_G4C4]| \
+[=G4B,4] [E4G,4]| \
+A,8| \
+B,4 [C4A,4]|
+[B,4G,4] G,4| \
+A,8| \
+[F2D2] x6| \
+x2 [F2D2] [G2E2] [A2F2]|
+[E2_A,2] xE, _A,=B, E_A| \
+=B2 E2 _E2 =E2| \
+F2 xF,, =A,,C, F,A,| \
+C2 F,2 E,2 F,2|
+D,2 xD, F,_B, DB,| \
+F2 [E2_D2] [F2=D2] [_G2_E2]| \
+=E2 E,2 x2 [D2E,2]| \
+[C2A,2E,2] E,2 x2 [C2A,2E,2]|
+[=B,2_A,2E,2] E,2 x2 [E2E,2]| \
+[E2C2=A,2E,2] [E2C2A,2E,2] [E2C2A,2F,2F,2] [E2C2A,2F,2F,2]| \
+[E2=B,2_A,2E,2] [E,2E,,2] [=A,2A,,2] [C2C,2]| \
+[E2=B,2_A,2E,2] [E,2E,,2] [=A,2A,,2] [C2C,2]|
+[E2=B,2_A,2E,2] [E,2E,,2] [E,2E,,2] [E,2E,,2]| \
+[E,4E,,4] x4| \
+[C4=A,4] [D4=B,4]| \
+[E2C2] x6|
+x8| \
+x8| \
+[=B,4E,4-] [A,4E,4]| \
+[_A,2E,2] x6|
+[C2=A,2] x2 [D2=B,2] x2| \
+[E2C2] x4 x3/2_D,/2| \
+=D,4 x4| \
+[C4E,4-] [D4E,4]|
+[C2A,2] x6| \
+x2 [E2C2] [D2=B,2] [C2A,2]| \
+[_A,8_A,,8]| \
+=A,4 [_E4F,4]|
+[=E2E,2] x6| \
+x2 [E2C2] [D2=B,2] [C2A,2]| \
+[_A,4_A,,4] x4| \
+x8|
+[=G,4D,4=B,,4G,,4] x4| \
+x8| \
+[_G,4C,4=A,,4_G,,4] x4| \
+x8|
+[_E,4C,4A,,4F,,4] x4| \
+x8| \
+[=E,4_B,,4=G,,4E,,4] x4| \
+x8|
+[_D4G,4_E,4] [_D4G,4_E,4]| \
+[_D8G,8_E,8]| \
+=D,D _D=D CD A,D| \
+D,D _D=D B,D G,D|
+D,D _D=D CD A,D| \
+D,D CD B,D G,D| \
+D,2 [D,2D,,2] [D,2D,,2] [D,2D,,2]| \
+[D,2D,,2] x6|
+[B,4G,4] [C4A,4]| \
+[D2B,2] x6| \
+x8| \
+x8|
+[A,4D,4-] [G,4D,4]| \
+[_G,2D,2] x6| \
+[B,2=G,2] x2 [C2A,2] x2| \
+[D2B,2] x6|
+[_D2A,2] x2 [=D2=B,2] x2| \
+[=E2_D2] x6| \
+x8| \
+[A,4F,4] [=D4_G,4]|
+[D2=G,2] x6| \
+[D4_B,4-] [G4B,4]| \
+[E2A,2] x6| \
+[_D,4A,,4] [A,4_D,4]|
+[A,2=D,2] x6| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+[A,2F,2] [A,2F,2] [F2A,2] [F2A,2]| \
+[F2B,2] x6| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+[_D_D,][EE,] [_D_D,][B,B,,] [A,A,,][EE,] [A,A,,][G,G,,]| \
+[F,F,,][A,A,,] [=DD,][A,A,,] [F,F,,][A,A,,] [F,F,,][D,D,,]| \
+[A,2A,,2] x[_D,_D,,] [E,E,,][A,A,,] [_D_D,][EE,]| \
+A,2 x_D, E,A, _DE|
+x8| \
+[F,2=D,2] [F,2D,2] [F,2D,2] x2| \
+[G,2E,2_D,2] [G,2E,2_D,2] [G,2E,2_D,2] x2| \
+[F,2=D,2] x2 [E2G,2] x2|
+[D2A,2] x2 [_D2A,2] x2| \
+x2 [F2=D2A,2] [F2D2A,2] [F2D2A,2]| \
+[E2_D2A,2] x6| \
+x8|
+x8| \
+x4 [E2G,2] x2| \
+[=D2A,2] x2 [_D2A,2] x2| \
+B,8|
+A,8| \
+B,8| \
+A,8| \
+B,8|
+=B,8| \
+A,2 x6| \
+A,,2 x6| \
+=D,2 x6|
+x8| \
+x8| \
+x8| \
+x8|
+x4 EF DE| \
+_DE =DE _D=D =B,_D| \
+A,_D G,E F,=D E,_D| \
+E,4 x2 C,2|
+_B,,4 x2 =B,,2| \
+A,,4 x4| \
+x8| \
+x2 [=D2A,2F,2] [D2A,2F,2] [D2A,2F,2]|
+A,,2 [_D2A,2G,2] [_D2A,2G,2] [_D2A,2G,2]| \
+=D,2 [D2A,2F,2] C,2 [D2A,2_G,2]| \
+=B,,2 [D2=B,2=G,2] D,2 [E2=B,2_A,2]| \
+_D,2 [E2=A,2] A,,2 [_D2A,2]|
+_D,2 [E2A,2G,2] [E2A,2G,2] [E2A,2G,2]| \
+=D,2 [D2A,2F,2] _B,,2 [D2_A,2F,2]| \
+=A,,2 [D2A,2F,2] A,,2 [_D2A,2G,2]| \
+[_D2A,2G,2=D,2] [D2F,2] [DF,]x3|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+G,G F,F E,E D,D| \
+C2 B,2 A,2 G,2| \
+F,F E,E D,D C,C| \
+B,2 A,2 G,2 F,2|
+E,E D,D _D,_D =B,,=B,| \
+A,,A, G,,G, F,,F, E,,E,| \
+=D,,D, C,,C, _B,,,B,, A,,,A,,| \
+[_A,,-_A,,,-][D,_A,,-_A,,,-] [F,_A,,-_A,,,-][_A,_A,,-_A,,,-] [_A,,4_A,,,4]|
+x8| \
+x8| \
+x4 [_A,2_A,,2] x2| \
+[=A,4A,,4] x4|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+B,2 F,x D,x B,,x|
+A,,x C,x F,x A,x| \
+B,x F,x D,x B,,x| \
+A,,x C,x _G,x A,x| \
+B,x =G,x D,x B,,x|
+D,x _A,x =B,x Dx| \
+_Dx3 =Dx3| \
+[G,2G,,2] x2 [_A,2_A,,2] x2| \
+[=A,6A,,6] x2|
+x3D, F,A, x2| \
+x3F, A,x3| \
+x8| \
+x8|
+x2 G,,_B,, D,G, B,D| \
+G2 x6| \
+x8| \
+x8|
+x2 F,,A,, C,F, A,C| \
+F2 x6| \
+x8| \
+x8|
+x2 E,,G,, B,,E, G,B,| \
+E2 x6| \
+x8| \
+x8|
+[D,2D,,2] x6| \
+x8| \
+x8| \
+[D,4D,,4] _G,,/2=G,,/2_G,,/2=G,,/2 _G,,/2=G,,/2E,,/2_G,,/2|
+x=G,,2x [C4A,4]| \
+[G,4G,,4] B,,/2C,/2B,,/2C,/2 B,,/2C,/2A,,/2B,,/2| \
+xC,2x [F4D4]| \
+[C4C,4] [E,/2A,,/2-][F,/2A,,/2-][E,/2A,,/2-][F,/2A,,/2-] [E,/2A,,/2-][F,/2A,,/2-][D,/2A,,/2-][E,/2A,,/2]|
+xF,2x4x| \
+[F,4F,,4] A,,/2B,,/2A,,/2B,,/2 A,,/2B,,/2G,,/2A,,/2| \
+B,,2 x6| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+DD B,C A,B, G,A,| \
+F,G, E,F, D,E, C,D,| \
+B,,C, A,,B,, G,,A,, F,,G,,| \
+E,,F,, D,,E,, _D,,=D,, =B,,,_D,,|
+[A,,2A,,,2] x6| \
+x8| \
+[=D2_B,2] [C2A,2] [B,2G,2] [A,2F,2]| \
+[G,2E,2] [F,2D,2] [E,2_D,2] [=D,2=B,,2]|
+[E,_D,]x [A,,2A,,,2] [=B,,2=B,,,2] [_D,2_D,,2]| \
+[=D,2D,,2] x6| \
+[C,4C,,4] x4| \
+[=B,,4=B,,,4] x4|
+[_B,,4B,,,4] x4| \
+[A,,8A,,,8]| \
+[A,,A,,,][_D,_D,,] [=D,D,,][F,F,,] [D,D,,][F,F,,] [_A,_A,,][=B,=B,,]| \
+[=A,A,,]_D, =D,F, D,F, _A,=B,|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x3=A,,, _D,,E,, A,,_D,| \
+E,2 xA,, _D,E, A,_D| \
+E2 x_D, E,A, _DE| \
+_D/2-_D/2-_D/2-_D/2- _D/2-_D/2-_D/2-_D/2- _D/2-_D/2-_D/2-_D/2- _D/2-_D/2-_D/2-_D/2-|
+[_D/2-_D/2-][_D/2-_D/2-][_D/2-_D/2-][_D/2-_D/2-] [_D/2-_D/2-][_D/2-_D/2-][_D/2-_D/2-][_D/2-_D/2-] [_D/2-_D/2-][_D/2-_D/2-][_D/2-_D/2-][_D/2-_D/2-] [_D/2-_D/2-][_D/2-_D/2-][_D/2-_D/2-][_D/2_D/2]| \
+F2 A2 G2 [F2-=D2-]| \
+[F2D2] x6| \
+x8|
+[_D8_D,8]| \
+=D4 [_A4_B,4]| \
+=A,2 x6| \
+x8|
+[_A,2_A,,2] x2 [_A,2_A,,2] x2| \
+[_A,2_A,,2] x6| \
+K:D % 2 sharps
+A,,2 A,2 ^G,2 A,2| \
+C2 A,2 C2 A,2|
+D2 A,2 F2 A,2| \
+E2 A,2 D2 A,2| \
+C2 A,2 E,2 C,2| \
+A,,2 A,2 C2 A,2|
+D2 D,2 B,,2 B,2| \
+A,,2 A,2 A,,2 A,2| \
+[D2D,2] x6| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x2 [DD,]x [DD,]x [DD,]x| \
+B,,D, C,D, =G,,D, C,D,|
+F,,D, C,D, D,,D, C,D,| \
+B,,D, C,D, G,,D, C,D,| \
+F,,D, C,D, D,,D, C,D,| \
+B,,D, C,D, G,,E, C,E,|
+[D2A,2F,2D,2] x6| \
+[^A,2E,2C,2^A,,2] x6| \
+[B,2F,2D,2B,,2] x6| \
+[G,2E,2B,,2G,,2] x6|
+[=A,2F,2D,2A,,2] x6| \
+[G,2E,2C,2A,,2] x6| \
+D,2 [DD,]x [DD,]x [DD,]x| \
+B,,D, C,D, G,,D, C,D,|
+F,,D, C,D, D,,D, C,D,| \
+B,,D, C,D, G,,D, C,D,| \
+F,,D, C,D, D,,D, C,D,| \
+B,,D, C,D, G,,D, C,D,|
+[D2A,2F,2D,2] x6| \
+[^A,2E,2C,2^A,,2] x6| \
+[B,2F,2D,2B,,2] x6| \
+[G,2E,2B,,2G,,2] x6|
+[=A,2F,2D,2A,,2] x6| \
+[G,2E,2C,2A,,2] x6| \
+D,8| \
+C,8|
+D,8| \
+G,8| \
+F,8| \
+C,8|
+D,8| \
+[E,A,,-][CA,,-] [G,A,,-][CA,,-] [EA,,-][CA,,-] [G,A,,-][CA,,]| \
+[D,D,,-][A,D,,-] [F,D,,-][A,D,,-] [DD,,-][A,D,,-] [F,D,,-][A,D,,]| \
+C,8|
+D,8| \
+G,8| \
+F,8| \
+C,8|
+D,8| \
+[E,A,,-][CA,,-] [G,A,,-][CA,,-] [EA,,-][CA,,-] [G,A,,-][CA,,]| \
+[F,D,,][G,E,,] [A,F,,][B,G,,] A,,B,, C,D,| \
+E,F, G,A, B,C DE|
+F2 x6| \
+[A,4A,,4] x4| \
+[F,D,,][G,E,,] [A,F,,][B,G,,] A,,B,, C,D,| \
+E,F, G,A, B,C DF|
+F2 x6| \
+[A,4A,,4] x4| \
+E,,D, C,D, E,D, C,D,| \
+D,,D, C,D, E,D, C,D,|
+D,,D, C,D, E,D, C,D,| \
+D,,D, C,D, E,D, C,D,| \
+D,,D, C,D, E,D, C,D,| \
+D,,D, C,D, E,D, C,D,|
+D,,4 x4| \
+[A,,G,,D,,]C, [A,,G,,D,,]C, [A,,G,,D,,]C, [A,,G,,D,,]C,| \
+[D,2A,,2F,,2D,,2] x6| \
+[C2E,2A,,2] x6|
+x/2[D2F,2D,2]
+V:3
+% Midi by:
+%%MIDI program 48
+K:F % 1 flats
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x3
+%%MIDI program 48
+D FA df| \
+a2 [d2A2] [_d2G2] [=d2F2]|
+[b6g6e6] ag| \
+g_g ed =g2 [g2d2B2]| \
+[_e'6c'6a6] d'c'| \
+c'b ag [d'2b2=e2] [d'2b2f2]|
+[d'2b2g2-] [c'4g4-] [b2g2]| \
+a2 xF Ac [f-f][af-]| \
+[c'2f2-] [b2-f2] b2 [a2d2-B2-]| \
+[g2d2B2] _dE GB eg|
+[b2e2-] [a4e4] [g2e2A2]| \
+[f2=d2] xD _GA d_g| \
+[=g2d2] xD G=B dg| \
+[_a2e2=B2] xE G=B e_a|
+[=ae]A aa gf ed| \
+_da aa gf e=d| \
+_dA AA GF E=D| \
+AA, A,A, A,A, A,A,|
+_B,A, A,A, A,A, A,A,| \
+aA AA AA AA| \
+BA AA AA AA| \
+=BA =BA =BA =BA|
+_dA AA AA AA| \
+=dA dA _eA _eA| \
+=eA eA _gA _gA| \
+=gA gA [_af]=A [_af]=A|
+[ae]A [ae]A [g_d]A [g_d]A| \
+f=d x6| \
+x8| \
+[d-d][d-D] d-[dD] xD xD|
+_D=D xD xD xD| \
+=B,D d'd d'd d'd| \
+[_d'a=d]d' [_d'a=d]d' [c'_gd]d' [c'_gd]d'| \
+[=b=gd]d' [=bgd]d' [_bgd]d' [bg]d'|
+[ad]d' [ad]d' [ad]d' [ad]d'| \
+[ge]e' [ge]e' [ge]e' [ge]e'| \
+[fe]d' [fe]d' [fd]d' [fd]d'| \
+[be]d' [be]d' [ae]_d' [ae]_d'|
+[=d'8f8d8]| \
+[_e'4c'4f4] [_e3c3F3][_ecF]| \
+[d8B8F8]| \
+[_e'4c'4_g4] [_e3c3_G3][_ec_G]|
+[d8B8=G8]| \
+[f'4d'4_a4] [_a3f3d3][_afd]| \
+[=a2=e2A2] [g2e2A2] x2 [f2d2A2]| \
+x2 [e2B2G2] x2 [_d2A2G2]|
+[=d2A2F2] fe dc BA| \
+BA GF ED CB,| \
+A,2 x2 [_d'2e2_d2] x2| \
+[=d'4f4d4] x4|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+[B8-G8-E8-]| \
+[B6G6E6] [G2E2]| \
+[c8-A8-F8-]| \
+[c6A6F6] [A2_G2D2]|
+[d8-=G8-D8-]| \
+[d4G4D4-] [G4F4D4]| \
+[G2E2C2] x2 [e2E2] x2| \
+[f2F2] x2 [a2A2] x2|
+[c'2c2] x2 E2 x2| \
+F2 x2 A2 x2| \
+c2 x6| \
+x8|
+[c2G2E2] x6| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+[c'8c8]|
+[_d'8_d8]| \
+[c'2c2] _ax [b2B2] gx| \
+[_a2_A2] fx [g2G2] ex| \
+[f8-=B8]|
+[c'2-f2c2-] [c'4c4-] [e2c2]| \
+[f2-f2=B2-] [f6-=B6]| \
+[c'2-f2c2-] [c'4c4-] [e2c2]| \
+[f8=B8]|
+[f'8-=b8_a8]| \
+[f'4e'4c'4=a4] [a4f4c4]| \
+[a4f4A4] [_B4E4]| \
+[f2A2F2] x6|
+[=d'B]x [c'A]x [bG]x [aF]x| \
+[g2E2] G2 B2 G2| \
+[c'A]x [bG]x [aF]x [gE]x| \
+[f2D2] F2 A2 F2|
+b4- [b2G2-] [a2G2-]| \
+[g2-G2] [g2-A2] [g2B2] [g2=B2]| \
+[e2c2] [d2E2] [c2F2] [_B2E2]| \
+[A4F4] x2 [c2A2F2]|
+[f4B4F4] x2 [_a2f2=B2]| \
+[=a4f4c4] x4| \
+x8| \
+x8|
+dx cx _Bx Ax| \
+B/2d'3-d'/2 b2 g2| \
+d2 B2 A2 G2| \
+A/2c'3-c'/2 a2 f2|
+[bB]x [aA]x [gG]x [fF]x| \
+[eE]x [d'd]x [c'c]x [bB]x| \
+[aA]x [gG]x [fF]x [eE]x| \
+[d4_A4-F4-D4-] [=B4_A4F4D4]|
+[d4_A4-F4-D4-=B,4-] [f4_A4-F4-D4-=B,4-]| \
+[_a4_A4-F4-D4-=B,4-] [=b4_A4-F4-D4-=B,4-]| \
+[d'2-_A2F2D2=B,2] d'2 f'4| \
+[=A2F2] [F2A,2] x4|
+[A2F2] [F2A,2] x4| \
+[A2F2C2] [A2F2C2] [A2F2C2] [A2F2C2]| \
+[G2E2_B,2] [G2E2B,2] [G2E2B,2] [G2E2B,2]| \
+[F2C2A,2] x6|
+[c'6c6] [g2G2]| \
+[g2G2] [aA]x [f4F4]| \
+[a2A2] [bB]x [g4G4]| \
+[c'c-][=bc] c'd' c'2 x2|
+[c'6c6] [g2G2]| \
+[g2G2] [aA]x [f4-F4-]| \
+[f2F2] a2 _b2 g2| \
+[g2G2] [f2F2] [fF]x3|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x2 [A2F2C2] [A2F2C2] [A2F2C2]|
+x2 [B2E2C2] [B2E2C2] [B2E2C2]| \
+c2- [c2-A2F2C2] [c2-A2F2C2] [c2-A2F2C2]| \
+c2- [c2-B2E2C2] [c2-B2E2C2] [c2-B2E2C2]| \
+c2- [c2-A2F2C2] [c2-A2F2C2] [c2-A2F2C2]|
+c2- [c2-B2E2C2] [c2-B2E2C2] [c2B2E2C2]| \
+[A2F2C2] x6| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x3D FA df| \
+a2 [d2F2] [_d2G2] [=d2A2]|
+[=b2d2] [=b4d4] [=b2-d2-]| \
+[=b2d2=B2] [d2-=B2-_A2-E2-] [d2=B2_A2E2_E2] [d2-=B2-_A2-]| \
+[d2=B2_A2F2-] [c4=A4F4-] [c2-A2-F2]| \
+[c2A2] [a4f4c4] [c'2-a2f2]|
+[c'2f2d2-] [_b4f4d4] [b2-f2-d2-]| \
+[b2f2d2] [b4d4] [a2c2]| \
+[_a2=B2] x=E _A=B e_a| \
+[=a2c2] xE Ac ea|
+[=b2_a2] x_A =Be _a=b| \
+[c'2=a2] [c'2a2] [_e'2a2] [_e'2a2]| \
+[=e'=b_a]e [e'=b_a]e [e'c'=a]e [e'c'a]e| \
+[e'=b_a]e [e'=b_a]e [e'c'=a]e [e'c'a]e|
+[e'2=b2_a2] e2 e2 e2| \
+E4 x4| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x3=B df =bd'| \
+f'2 f2 d2 f2|
+f'2 x6| \
+x8| \
+x3=A c_e ac'| \
+_e'2 _e2 c2 _e2|
+_e'2 x6| \
+x8| \
+x3G _B_d gb| \
+_d'2 _d2 B2 _d2|
+_d'2 x2 g4| \
+b4 [_d4G4]| \
+[=d2A2_G2] xF Ad _ga| \
+[d'4b4=g4] b2 g2|
+[_g2d2A2] xF Ad _ga| \
+[d'4=g4-] [b2g2-] [g2g2]| \
+[_g2d2A2] [d2A2_G2] [d2A2_G2] [d2A2_G2]| \
+[d4A4_G4] x4|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+[a4F4D4] [_d4=G4=E4]| \
+[=d2A2F2] x4 xd|
+[d'4-B4G4] [d'2c2-A2-] [c/2-A/2-][c'/2c/2-A/2-][b/2c/2-A/2-][a/2c/2A/2]| \
+[g2d2B2] x6| \
+[g4_d4] [_a4=B4]| \
+[=a2A2] x4 xe|
+[fF-=D-][eFD] [fF-D-][dFD] [gG-E-][fGE] [gG-E-][eGE]| \
+[a2A2F2] x4 xe| \
+[_g_G-D-][e_GD] [_g_G-D-][d_GD] [=gG-E-][_g=GE] [gG-E-][eGE]| \
+[a2A2_G2] x4 xa|
+[_bB-=G-][aBG] [bB-G-][gBG] [c'c-A-][bcA] [c'c-A-][acA]| \
+[d'2d2B2] x4 xd| \
+[eE-C-][dEC] [eE-C-][cEC] [fF-D-][eFD] [fF-D-][dFD]| \
+[f2G2E2] x4 xg|
+[aA-F-][gAF] [aA-F-][fAF] [bB-G-][aBG] [bB-G-][gBG]| \
+[c'2c2A2] x4 xc| \
+[dD-B,-][cDB,] [dD-B,-][BDB,] [_e_E-C-][d_EC] [_e_E-C-][c_EC]| \
+[f2F2D2] x4 xf|
+[gG-=E-][fGE] [gG-E-][eGE] [aA-F-][gAF] [aA-F-][fAF]| \
+[b2B2G2] x4 xb| \
+_d'=b _d'a =d'_d' =d'=b| \
+e'2 x6|
+x8| \
+x8| \
+[A2A,2] x2 [_d2_D2] x2| \
+[=d2D2] x2 [f2F2] x2|
+[a2A2] x2 _D2 x2| \
+=D2 x2 F2 x2| \
+A2 x6| \
+x8|
+[_d2A2E2] x6| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+[a2A2] fx [g2G2] ex| \
+[f2F2] =dx [e2E2] _dx| \
+[=d8-_A8]|
+[=a2-d2A2-] [a4A4-] [_d2A2]| \
+[=d2-d2_A2-] [d6-_A6]| \
+[=a2-d2A2-] [a4A4-] [_d2A2]| \
+=d8|
+[d'6-d6] [d'2-e2]| \
+[d'2f2] x2 [e'2g2] x2| \
+[d'2f2] x2 [_d'2e2] x2| \
+[=d'2d2] x6|
+[_bG]x [aF]x [gE]x [fD]x| \
+[e2C2] E2 G2 E2| \
+[bF]x [aE]x [fD]x [eC]x| \
+[d2B,2] D2 F2 D2|
+g4- [g2E2-] [f2E2-]| \
+[e2-E2] [e2-F2] [e2G2] [d2_A2]| \
+[_d2=A2] [B2_D2] [A2=D2] [G2_D2]| \
+[F4=D4] x2 [A2_G2D2]|
+[d4=G4D4] x2 [f2d2_A2]| \
+[f4d4=A4] x4| \
+x8| \
+x8|
+[a6A6] e2| \
+e2 fx d4| \
+_g2 =gx e4| \
+[aA]_a =a=b a2 x2|
+[a6A6] e2| \
+e2 fx d4-| \
+[d2A2] [f2F2] [g2G2] [e2G2]| \
+[e2G2] [d2F2] [d2F2] [F2D2]|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+[e2-E2] e2 f2 g2| \
+[a2A2] x6| \
+[d2-D2] d2 e2 f2|
+[g2G2] x6| \
+[_d2-_D2] _d2 =d2 e2| \
+[f2F2] E2 D2 C2| \
+[F4-D4-=B,4-] [_A4F4D4=B,4]|
+=B4 d4| \
+f4 =b4| \
+d'4 f'4| \
+=A,4 x4|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+[d4_B4-F4-D4-] [B4F4D4]|
+[_e'4c'4f4] [=e3c3F3][ecF]| \
+[d8B8F8]| \
+[_e'4c'4_g4] [_e3c3_G3][_ec_G]| \
+[d8B8=G8]|
+[f'4=b4_a4] [_a3f3d3][_af=B]| \
+[=a2=e2A2] [g2e2A2] x2 [f2d2A2]| \
+x2 [_b2g2d2] x2 [d'2b2f2d2]| \
+A,6 x2|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+K:D % 2 sharps
+a4 x2 e2|
+[e2F2-] [fF-]F [d4A4]| \
+[f2c2-] [gc-]c [e4^G4]| \
+A/2a/2^g ab a2 a2| \
+a4- [a2=G2-] [e2G2]|
+[e2F2-] [fF-]F [d4-^G4=F4]| \
+d2 ^f2 =g2 e2| \
+[d2F2] x6| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+d'd x[dD] x[dD] x[dD]| \
+x[gG] xd x[bB] xd|
+x[gG] xd x[d'B] xd| \
+x[aA] xd x[bd] xd| \
+x[gG] xd x[d'B] xd| \
+x[gG] xd xb xd|
+[a8f8A8]| \
+[g8e8]| \
+[f8d8]| \
+[b8e8]|
+[d8A8F8D8]| \
+[c8G8E8C8]| \
+d'd x[dD] x[dD] x[dD]| \
+x[gG] xd x[bB] xd|
+x[aA] xd x[d'd] xd| \
+x[gG] xd x[bB] xd| \
+x[aA] xd x[d'd] xd| \
+x[gG] xd x[bB] xd|
+[a8f8A8]| \
+[g8e8]| \
+[f8d8]| \
+[b8e8]|
+[d8A8F8D8]| \
+[c8G8E8C8]| \
+[d2F2D2] x6| \
+[a6A6] e2|
+e2 fx d4| \
+[a6A6] x2| \
+d'c' d'e' [f'2f2] x2| \
+[a6A6] e2|
+e2 fx d4| \
+[A2A,2] [A2A,2] [A2A,2] [A2A,2]| \
+F4 D4| \
+[a6A6] e2|
+[e2A2] fx d4| \
+[a6A6] c'2| \
+[d'a]c' d'e' [f'2f2] x2| \
+[a6A6] e2|
+[e2A2] fx d4| \
+A2 A2 A2 A2| \
+F4 D4| \
+[a2A2] [a2A2] [a2A2] [a2A2]|
+[f4F4] [d'4a4f4d4]| \
+x4 [c'4a4e4c4]| \
+x8| \
+[a2A2] [a2A2] [a2A2] [a2A2]|
+[f4F4] [d'4a4f4d4]| \
+x4 [c'4a4e4c4]| \
+[F4D4] D4| \
+G2 G2 G2 G2|
+[d2F2-] [d2F2] [d2D2-] [d2D2]| \
+[g2B2-] [g2B2] [g2G2-] [g2G2]| \
+[d'2f2-] [d'2f2] [d'2d2-] [d'2d2-]| \
+[b4d4-] [g4d4G4]|
+cB AB cd ef| \
+gf ef ga bc'| \
+[d'2d2] x6| \
+[a2e2c2A2] x6|
+x/2[f2d2A2F2]
+V:4
+% B.Fisher
+%%MIDI program 48
+K:F % 1 flats
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x2 
+%%MIDI program 48
+[F2F,2] [E2E,2] [D2D,2]|
+[_D8_D,8]| \
+[=D2D,2] [C2C,2] [B,2B,,2] [G,2G,,2]| \
+[_G,8_G,,8]| \
+[=G,2G,,2] [B,2B,,2] [G,2G,,2] [F,2F,,2]|
+[E,2E,,2] xC, E,G, CE| \
+F2 [F,4F,,4] [E,2E,,2]| \
+[D,2D,,2] xB,, D,F, B,D| \
+[F2F,2] [E4E,4] [D2D,2]|
+[_D2_D,2] xA,, _D,E, A,_D| \
+[=D2D,2] [D,4D,,4] [C,2C,,2]| \
+[=B,,2_B,,,2] [G,4G,,4] [F,2F,,2]| \
+[E,2E,,2] [E4E,4] [D2D,2]|
+[_D2-_D,2] [_D2A,2-] [=D2A,2D,2] [B,2B,,2]| \
+[A,2A,,2] [_D2_D,2] [=D2D,2] [_A,2B,,2]| \
+[=A,2A,,2] A,A, G,F, E,D,| \
+[A,2A,,2] x6|
+x8| \
+=B,A, =B,A, CA, CA,| \
+_DA, _DA, _DA, _DA,| \
+=DA, DA, _EA, _EA,|
+=EA, EA, EA, EA,| \
+FA, FA, _GA, _GA,| \
+=GA, GA, _EA, _EA,| \
+=EA, EA, DA, DA,|
+_DA, _DA, EA, EA,| \
+[=D,D,,]x [DD,]D [DD,]D [DD,]D| \
+[_D_D,]=D [_D=D,]D [CC,]D [CD,]D| \
+[=B,=B,,]x [DD,]x [_B,B,,]x [DD,]x|
+[A,A,,]x [DD,]x [CD,]x [DD,]x| \
+[G,2G,,2] [D=B,D,]x [D_B,D,]x [DB,D,]x| \
+[_G,2_G,,2] [D2D,2] [_G,2D,,2] [D2D,2]| \
+[=G,2G,,2] [D2D,2] [D2D,2] [D2D,2]|
+[_G,2_G,,2] [D2D,2] [F,2F,,2] [D2D,2]| \
+[E,2E,,2] [D2D,2] [_D2_D,2] [A,2A,,2]| \
+x2 [=DD,]x [B,B,,]x [F,2F,,2]| \
+[=G,4G,,4] [A,4A,,4]|
+[A,2B,,2] [F,2F,,2] [D,2D,,2] [B,,2B,,,2]| \
+[A,,2A,,,2] [C,2C,,2] [F,2F,,2] [A,2A,,2]| \
+[B,2B,,2] [F,2F,,2] [D,2D,,2] [B,,2B,,,2]| \
+[A,,2A,,,2] [C,2C,,2] [_G,2_G,,2] [A,2A,,2]|
+[B,2B,,2] [=G,2G,,2] [D,2D,,2] [B,,2B,,,2]| \
+[D,2D,,2] [_A,2_A,,2] [=B,2=B,,2] [D2D,2]| \
+[_D2_D,2] x2 [=D2D,2] x2| \
+[G,2G,,2] x2 [=A,2A,,2] x2|
+[D2D,2] F,E, D,C, _B,,A,,| \
+B,,A,, G,,F,, E,,D,, C,,B,,,| \
+A,,,2 x2 [A,2A,,2] x2| \
+[D,4D,,4] x4|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+[C,8-C,,8-]| \
+[C,6C,,6] [B,,2B,,,2]| \
+[A,,8-A,,,8-]| \
+[A,,6A,,,6] [C,2C,,2]|
+[B,,8-B,,,8-]| \
+[B,,4B,,,4] [=B,,4=B,,,4]| \
+[C,2C,,2] x6| \
+x8|
+[C,2C,,2] x2 [E,2E,,2] x2| \
+[G,2F,,2] x2 [A,2A,,2] x2| \
+[C2C,2] x6| \
+[C2G,2E,2C,2C,,2] x6|
+[C,2C,,2] x6| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x4 [C_A,F,]x [C_A,F,]x|
+[_D_B,G,E,]x3 [_DB,G,E,]x [_DB,G,E,]x| \
+[C_A,F,]x3 [_D2G,2B,,2] x2| \
+[C2_A,2F,2C,2] x2 [C2G,2E,2C,2] x2| \
+_D8|
+C8| \
+_D8| \
+C8| \
+[_A8_D8]|
+=D8| \
+C8| \
+C,8| \
+F,2 x6|
+x8| \
+x2 E,2 G,2 E,2| \
+x8| \
+x2 D,2 F,2 D,2|
+[G6G,6-] [F2G,2]| \
+[E6C6-] [D2C2]| \
+[C2C,2-] [B,2C,2-] [=A,2C,2-] [G,2C,2]| \
+F,4 x2 [_E,2_E,,2]|
+[D,4D,,4] x2 [_D,2_D,,2]| \
+[C,4C,,4] x4| \
+x8| \
+x8|
+B,x A,x G,x F,x| \
+[G2=E,2] x2 G2 E2| \
+A,2 G,2 F,2 E,2| \
+[F2=D,2] x2 F2 D2|
+[GG,]x [FF,]x [EE,]x [DD,]x| \
+[CC,]x [B,B,,]x [A,A,,]x [G,G,,]x| \
+[F,F,,]x [E,E,,]x [D,D,,]x [C,C,,]x| \
+[=B,,4=B,,,4] x4|
+x8| \
+x8| \
+x8| \
+[C4C,4] x4|
+[C4C,4] x4| \
+C,8| \
+[C,8C,,8]| \
+[F,2F,,2] [C2A,2F,2] [C2A,2F,2] [C2A,2F,2]|
+E,2 [C2_B,2E,2] [C2B,2E,2] [C2B,2E,2]| \
+F,2 [C2A,2] D,2 [C2A,2]| \
+G,2 [D2B,2] F,2 [D2=B,2]| \
+E,2 [C2G,2] C,2 [C2G,2]|
+E,2 [C2G,2] E,2 [C2_B,2]| \
+F,2 [C2A,2] [=B,2_A,2D,2] [=B,2_A,2]| \
+[C2-=A,2C,2] [C2-F,2] [C2C,2] [C2_B,2E,2]| \
+F,2 [C2A,2] F,,2 [A,2F,2]|
+[E,2E,,2] x2 [C,2C,,2] x2| \
+[F,2F,,2] x2 [_E,2_E,,2] x2| \
+[D,2D,,2] x2 [F,2F,,2] x2| \
+[=E,2E,,2] x2 [C,2C,,2] x2|
+x4 [E,2E,,2] x2| \
+[F,2F,,2] x2 [D,2D,,2] x2| \
+[C,2C,,2] x2 [C,2C,,2] x2| \
+[F,2F,,2] x6|
+[C,2C,,2] x6| \
+[F,2F,,2] x6| \
+[C,2C,,2] x6| \
+[F,2F,,2] x6|
+[C,2C,,2] x6| \
+[F,2F,,2] x6| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x2 [D2D,2] [E2E,2] [F2F,2]|
+[_A,2E,2_A,,2] xE, _A,=B, E_A| \
+x8| \
+x3F,, =A,,C, F,A,| \
+C2 F,2 E,2 F,2|
+D,2 xD, F,_B, DB,| \
+F2 [E2_D2] [F2=D2] [_G2_E2]| \
+=E2 E,2 x2 [E2D2E,2]| \
+[E2C2A,2E,2] E,2 x2 [E2C2A,2E,2]|
+[E2=B,2_A,2E,2] E,2 x2 [E2E,2]| \
+[E2C2=A,2E,2] [E2C2A,2E,2] [E2C2A,2F,2F,2] [E2C2A,2F,2F,2]| \
+[E2=B,2_A,2E,2] [E,2E,,2] [=A,2A,,2] [C2C,2]| \
+[E2=B,2_A,2E,2] [E,2E,,2] [=A,2A,,2] [C2C,2]|
+[E2=B,2_A,2E,2] [E,2E,,2] [E,2E,,2] [E,2E,,2]| \
+[E,4E,,4] x4| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+[F8-D8-=B,8-_A,8-]| \
+[F8-D8-=B,8-_A,8]|
+[F2-D2-=B,2-=G,2] [F-D-=B,-][F-D-=B,-G,,] [F-D-=B,-=B,,][F-D-=B,-D,] [F-D-=B,-G,][FD=B,=B,]| \
+D2 G,2 _G,2 =G,2| \
+[_E8-C8-=A,8-_G,8-]| \
+[_E8-C8-A,8-_G,8]|
+[_E2-C2-A,2-F,2] [_E-C-A,-][_E-C-A,-F,,] [_E-C-A,-A,,][_E-C-A,-C,] [_E-C-A,-F,][_ECA,A,]| \
+C2 F,2 =E,2 F,2| \
+[_D8-_B,8-=G,8-E,8-]| \
+[_D8-B,8-G,8-E,8]|
+[_D2-B,2-G,2-_E,2] [_D-B,-G,-][_D-B,-G,-_E,,] [_D-B,-G,-G,,][_D-B,-G,-B,,] [_D-B,-G,-_E,][_DB,G,G,]| \
+B,2 _E,2 =D,2 _E,2| \
+[D,8-D,,8-]| \
+[D,2D,,2] xG,, B,,D, G,B,|
+[D4D,4-] [C2D,2-] [A,2D,2]| \
+[B,2G,2D,2] xG,, B,,D, G,B,| \
+[D2D,2] [D2D,2] [D2D,2] [D2D,2]| \
+[D4D,4] x4|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+[G4=E4A,4-] [F4D4A,4-]| \
+[E2_D2A,2] x6|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+[_D2A,2] [_D2A,2] [=D2=B,2] [D2=B,2]| \
+[E2_D2] x6|
+x8| \
+x8| \
+x8| \
+x8|
+[A,,2A,,,2] x2 [_D,2_D,,2] x2| \
+[=D,2D,,2] x2 [F,2F,,2] x2| \
+[A,2A,,2] x6| \
+[_D2A,2E,2A,,2A,,,2] x6|
+[A,2A,,2] x6| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x4 [A,F,=D,]x [A,F,D,]x|
+[_B,2G,2E,2_D,2] x2 [B,G,E,_D,]x [B,G,E,_D,]x| \
+[A,F,=D,]x6x| \
+[D2A,2] x2 [_D2E,2A,,2] x2| \
+B,8|
+A,8| \
+B,8| \
+A,8| \
+[=D8-B,8]|
+[D8-=B,8]| \
+[D2A,2-] A,2- [_B2A,2-] A,2| \
+A2 x2 G2 x2| \
+[F2D,2] x6|
+x8| \
+x2 C,2 E,2 C,2| \
+x8| \
+x2 B,,2 D,2 B,,2|
+[E6E,6-] [D2E,2]| \
+[_D6A,6-] [=B,2A,2]| \
+[A,2A,,2-] [G,2A,,2-] [F,2A,,2-] [E,2A,,2]| \
+[=D,4D,,4] x2 [C,2C,,2]|
+[_B,,4B,,,4] x2 [=B,,2=B,,,2]| \
+[A,,4_B,,,4] x4| \
+x8| \
+x2 [D2A,2F,2] [D2A,2F,2] [D2A,2F,2]|
+A,,2 [_D2A,2G,2] [_D2A,2G,2] [_D2A,2G,2]| \
+=D,2 [D2A,2F,2] C,2 [D2A,2_G,2]| \
+=B,,2 [D2=B,2=G,2] D,2 [E2=B,2_A,2]| \
+_D,2 [E2=A,2] A,,2 [_D2A,2]|
+_D,2 [E2A,2G,2] [E2A,2G,2] [E2A,2G,2]| \
+=D,2 [D2A,2F,2] _B,,2 [D2_A,2F,2]| \
+=A,,2 [D2A,2] A,,2 [_D2A,2]| \
+[_D2A,2-=D,2] [D2A,2] Dx3|
+[_D,2_D,,2] x2 [A,,2A,,,2] x2| \
+[=D,2D,,2] x2 [C,2C,,2] x2| \
+[B,,2B,,,2] x2 [D,2D,,2] x2| \
+[_D,2_D,,2] x2 [A,,2A,,,2] x2|
+x4 [_D2_D,2] x2| \
+[=D2D,2] x2 [B,2B,,2] x2| \
+[A,2A,,2] x2 [A,,2A,,,2] x2| \
+[D,2D,,2] x6|
+[B,4A,,4] [C2A,,2] [D2B,,2]| \
+[C2-C,2] C2 D2 E2| \
+[F,2F,,2-] F,,2 [B,2G,,2] [C2A,,2]| \
+[B,2-B,,2] B,2 C2 D2|
+[E,2E,,2-] E,,2 [A,2F,,2] [=B,2G,,2]| \
+[A,2-A,,2] A,2 =B,2 _D2| \
+[=D2D,2] C,2 _B,,2 A,,2| \
+[_A,2-_A,,2] _A,6-|
+[F8-D8-=B,8-_A,8-]| \
+[F8-D8-=B,8-_A,8-]| \
+[F2D2=B,2_A,2] x6| \
+[=A,,4A,,,4] x4|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+[_B,2B,,2] [F,2F,,2] [D,2D,,2] [B,,2B,,,2]|
+[A,,2A,,,2] [C,2C,,2] [F,2F,,2] [A,2A,,2]| \
+[B,2B,,2] [F,2F,,2] [D,2D,,2] [B,,2B,,,2]| \
+[A,,2A,,,2] [C,2C,,2] [_G,2_G,,2] [A,2A,,2]| \
+[B,2B,,2] [=G,2G,,2] [D,2D,,2] [B,,2B,,,2]|
+[D,2D,,2] [_A,2_A,,2] [=B,2=B,,2] [D2D,2]| \
+[_D2_D,2] x2 [=D2D,2] x2| \
+[G,2G,,2] x2 [_A,2_A,,2] x2| \
+[=A,,6A,,,6] x2|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+x8| \
+K:D % 2 sharps
+[A,,2-A,,2] [A,2A,,2-] [^G,2A,,2-] [A,2A,,2]| \
+C2 [A,2-A,2] [C2A,2] [A,2A,2]|
+D2 [A,2-A,2] [F2A,2] [A,2A,2]| \
+E2 [A,2-A,2] [D2A,2] [A,2A,2]| \
+C2 A,2 E,2 C,2| \
+[A,,2-A,,2] [A,2A,,2] C2 A,2|
+D2 [A,2D,2] B,,2 B,2| \
+A,,2 [D2D2] [C2A,2-] [=G2A,2]| \
+[D2F,2D,2] x6| \
+[C,2C,,2] x2 [A,,2A,,,2] x2|
+[D,2D,,2] x2 [=C,2=C,,2] x2| \
+[B,,2B,,,2] x2 [D,2D,,2] x2| \
+[^C,2C,,2] x2 [A,,2A,,,2] x2| \
+x4 [C2C,2] x2|
+[D2D,2] x2 [B,2B,,2] x2| \
+[A,2A,,2] x2 [A,,2A,,,2] x2| \
+[D,D,,]x [DD,]x [DD,]x [DD,]x| \
+[B,B,,]x [DD,]x [G,G,,]x [DD,]x|
+[F,F,,]x [DD,]x [D,D,,]x [DD,]x| \
+[B,B,,]x [DD,]x [G,G,,]x [DD,]x| \
+[F,F,,]x [DD,]x [D,D,,]x [DD,]x| \
+[B,B,,]x [DD,]x [G,G,,]x [DD,]x|
+[D,2D,,2] x6| \
+[G8E8]| \
+[F8D8]| \
+[G8E8G,8]|
+[A,8-F,8A,,8-]| \
+[A,8E,8A,,8]| \
+[D,D,,]x [DD,]x [DD,]x [DD,]x| \
+[B,B,,]x [DD,]x [G,G,,]x [DD,]x|
+[F,G,,]x [DD,]x [D,D,,]x [DD,]x| \
+[B,B,,]x [DD,]x [G,G,,]x [DD,]x| \
+[F,F,,]x [DD,]x [D,D,,]x [DD,]x| \
+[B,B,,]x [DD,]x [G,G,,]x [DD,]x|
+[D,2D,,2] x6| \
+[G8E8]| \
+[F8D8]| \
+[G8E8G,8]|
+[A,8-F,8A,,8-]| \
+[A,8E,8A,,8]| \
+[D,8D,,8]| \
+[C,8C,,8]|
+[D,8D,,8]| \
+[G,8G,,8]| \
+[F,8F,,8]| \
+[C,8C,,8]|
+[D,8D,,8]| \
+[A,,8A,,,8]| \
+F,4 D,4| \
+[C,2C,,2] A,2 A2 A,2|
+[D,2D,,2] A,2 A2 A,2| \
+[G,2G,,2] A,2 A2 A,2| \
+[F,2F,,2] A,2 A2 A,2| \
+[C,2C,,2] A,2 A2 A,2|
+[D,2D,,2] A,2 A2 A,2| \
+[A,,2A,,,2] A,2 A,2 A,2| \
+F,4 D,4| \
+[A,2A,,2] [A,2A,,2] [A,2A,,2] [A,2A,,2]|
+[F,4F,,4] [D,4D,,4]| \
+[A2A,2] [A2A,2] [A2A,2] [A2A,2]| \
+[F4F,4] [D4D,4]| \
+[A,2A,,2] [A,2A,,2] [A,2A,,2] [A,2A,,2]|
+[F,4F,,4] [D,4D,,4]| \
+[A2A,2] [A2A,2] [A2A,2] [A2A,2]| \
+[D,2D,,2-] [D,2D,,2-] [D,2D,,2-] [D,2D,,2-]| \
+[B,,4D,,4-] [G,,4D,,4-]|
+[D,4-D,,4-] [F,4D,4-D,,4]| \
+[G,4D,4-] [B,4D,4-]| \
+[=C4D,4-] [A,4D,4-]| \
+[G,4D,4-] [B,4D,4]|
+[A,,G,,D,,]^C, [A,,G,,D,,]C, [A,,G,,D,,]C, [A,,G,,D,,]C,| \
+[A,,G,,D,,]C, [A,,G,,D,,]C, [A,,G,,D,,]C, [A,,G,,D,,]C,| \
+[D,2A,,2F,,2D,,2] x6| \
+[E,/2-A,,/2-][C3/2-E,3/2A,,3/2] C/2x4x3/2|
+x/2[D2F,2]

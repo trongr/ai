@@ -1,0 +1,124 @@
+X: 1
+T: from bach/lttlef.mid
+M: 4/4
+L: 1/8
+Q:1/4=120
+K:C % 0 sharps
+V:1
+% Little Fuge in G Minor
+%%MIDI program 48
+G3/2x/2 d3/2x/2 ^A2- ^A/2x/2=A| \
+G^A =AG ^FA D3/2x/2| \
+GD AD ^A=A/2G/2 AD| \
+GD/2G/2 AD/2A/2 ^A=A/2G/2 A/2D/2d/2c/2|
+^A/2=A/2G/2^A/2 =A/2G/2^F/2A/2 G/2D/2G/2A/2 ^A/2c/2d/2e/2| \
+=f/2e/2d/2f/2 e/2d/2^c/2e/2 d=A de| \
+f/2g/2f/2g/2 x/2x/2x/2x/2 a/2g/2a/2^a/2 =a/2g/2f/2e/2| \
+f/2a/2g/2a/2 ^c/2a/2g/2a/2 d/2a/2g/2a/2 ^c/2a/2g/2a/2|
+f/2d/2^c/2d/2 g/2d/2^c/2d/2 a/2d/2^c/2d/2 g/2d/2^c/2d/2| \
+Af Ge FA df| \
+^da x^d =dg xd| \
+=c/2^A/2c/2d/2 c/2=a/2g/2a/2 ^A/2g/2^f/2g/2 =A/2^f/2e/2^f/2|
+g3x4x| \
+x4 ^A/2d/2c/2d/2 ^F/2d/2c/2d/2| \
+G/2d/2c/2d/2 ^F/2d/2c/2d/2 ^A3/2x/2 c3/2x/2| \
+d3/2x/2 c3/2x3/2^A x=A|
+xD G/2A/2^A/2G/2 =Ad ^ce| \
+M: 2/4
+L: 1/8
+a/2^a/2=a/2g/2 =f/2e/2d/2^c/2| \
+dx ax| \
+M: 4/4
+L: 1/8
+ex2a x/2x/2x/2x/2 x/2x/2x/2x/2|
+x/2x/2x/2x/2 x/2x/2x/2x/2 x/2x/2x/2x/2 x/2x/2x/2x/2| \
+x/2x/2x/2x/2 x/2x/2x/2x/2 a/2g/2a/2^a/2 =a/2g/2f/2e/2| \
+M: 2/4
+L: 1/8
+f[fA] [fd][f=c]| \
+^Ad gf|
+M: 4/4
+L: 1/8
+^d3x ^dc f^d| \
+=d3/2x/2 d/2g/2^f/2g/2 c3/2x/2 c/2B/2=A/2c/2| \
+B/2A/2G/2B/2 A/2G/2^F/2A/2 G/2D/2^D/2=F/2 G/2=D/2G/2A/2| \
+^A/2G/2^A/2c/2 d/2=A/2d/2c/2 ^A2- ^A/2x/2=A|
+G^A =AG ^FA D3/2x/2| \
+GD AD ^A=A/2G/2 AD| \
+GD/2G/2 AD/2A/2 ^A=A/2G/2 A/2D/2d/2c/2| \
+^A/2=A/2G/2^A/2 =A/2G/2^F/2A/2 G/2^A/2c/2d/2 ^d/2^A/2=A/2G/2|
+^F/2A/2^A/2c/2 =d/2=A/2G/2=F/2 ^D/2G/2A/2^A/2 c/2G/2F/2E/2| \
+=D/2F/2G/2=A/2 ^A/2d/2c/2^A/2 =A/2c/2d/2^d/2 f/2g/2f/2^d/2| \
+=d/2f/2^d/2=d/2 c/2^A/2=A/2c/2 ^A/2F/2G/2=A/2 ^A/2c/2^A/2c/2| \
+d/2e/2d/2e/2 x/2x/2x/2x/2 f/2^d/2f/2g/2 f/2^d/2=d/2c/2|
+d/2f/2^d/2f/2 =A/2f/2^d/2f/2 ^A/2f/2^d/2f/2 =A/2f/2^d/2f/2| \
+=d/2^A/2=A/2^A/2 ^d/2^A/2=A/2^A/2 f/2^A/2=A/2^A/2 ^d/2^A/2=A/2c/2| \
+^A/2c/2=d/2^A/2 ^d/2=d/2c/2^d/2 =d/2c/2d/2^d/2 =d/2c/2^A/2d/2| \
+c/2^A/2c/2d/2 c/2^A/2=A/2c/2 ^A/2=A/2^A/2c/2 ^A/2=A/2G/2^A/2|
+=Af x^G =G^d xG| \
+F=d xA G/2A/2c/2^A/2 =A/2G/2F/2^D/2| \
+=D/2^D/2F/2G/2 A/2^A/2c/2=A/2 ^A/2F/2G/2=A/2 ^A/2c/2^A/2c/2| \
+e/2=d/2e/2d/2 x/2x/2x/2x/2 f/2^d/2f/2g/2 ff|
+x/2x/2x/2x/2 x/2x/2x/2x/2 x/2x/2x/2x/2 x/2x/2x/2x/2| \
+x/2x/2x/2x/2 x/2x/2x/2x/2 x/2x/2x/2x/2 x/2x/2x/2x/2| \
+f/2^d/2f/2g<c=a/2 ^a/2=a/2^a/2c'/2 ^a/2=a/2g/2f/2| \
+^d/2=d/2^d/2f/2 ^d/2=d/2c/2^A/2 =a/2g/2a/2^a/2 =a/2g/2f/2^d/2|
+=d/2c/2d/2^d/2 =d/2c/2^A/2=A/2 g/2f/2g/2^g/2 =g/2f/2^d/2=d/2| \
+c/2B/2c/2d/2 c/2d/2^d/2c/2 f3/2x/2 f/2^g/2=g/2f/2| \
+^d3x ^d/2c/2=d/2^d/2 f/2g/2^g/2f/2| \
+^A/2c/2=d/2^A/2 =Gx c3/2x/2 g3/2x/2|
+^d2- ^d/2x/2=d c^d =dc| \
+Bd G3/2x/2 cG dG| \
+^d=d/2c/2 dG cG/2c/2 dG/2d/2| \
+^d=d/2c/2 d/2G/2g/2f/2 ^d/2=d/2c/2^d/2 =d/2c/2B/2d/2|
+c/2g/2^d/2g/2 c/2^d/2G/2^A/2 =A/2c/2A/2c/2 F/2A/2C/2^D/2| \
+=D/2f/2d/2f/2 ^A/2d/2F/2=A/2 G/2^A/2G/2^A/2 ^D/2G/2^A,/2=D/2| \
+C/2^d/2c/2^d/2 =A/2c/2E/2G/2 ^F/2A/2^F/2=D/2 E/2A,/2C/2x/2| \
+^A,G =A,^F G3/2x2x/2|
+G/2^A/2=A/2G/2 d/2A/2D/2c/2 ^A/2d/2c/2^A/2 =f/2c/2F/2^d/2| \
+=d/2f/2^d/2=d/2 g/2d/2G/2f/2 e/2g/2f/2e/2 =a/2e/2A/2g/2| \
+M: 1/4
+L: 1/8
+f3/2x/2| \
+M: 3/4
+L: 1/8
+ga ^a3x|
+M: 4/4
+L: 1/8
+[^a3/2^d3/2-]^d/2- [=a3/2-^d3/2]a/2- [a3/2=d3/2-]d/2- [g3/2d3/2]x/2| \
+[g3/2c3/2-]c/2- [^f3/2c3/2]x/2 g3/2x2x/2| \
+xd ga ^a/2=a/2g/2a/2 ^f/2g/2^f/2g/2| \
+M: 1/4
+L: 1/8
+a/2g/2^f/2e/2|
+M: 3/4
+L: 1/8
+d/2c/2^A/2=A/2 ^A/2d/2c/2d/2 ^F/2d/2c/2d/2| \
+M: 4/4
+L: 1/8
+^A/2d/2c/2d/2 ^F/2d/2c/2d/2 ^A/2G/2^F/2G/2 c/2G/2^F/2G/2| \
+d/2G/2^F/2G/2 c/2G/2^F/2G/2 ^Ag =A^f| \
+g6- g/2
+V:2
+% By J. S. Bach
+%%MIDI program 48
+x8| \
+x8| \
+x8| \
+x8|
+x8| \
+D3/2x/2 A3/2x/2 =F2- F/2x/2E| \
+DF ED ^CE A,3/2x/2| \
+DA, EA, FE/2D/2 EA,|
+DA,/2D/2 EA,/2E/2 FE/2D/2 E/2A,/2A/2G/2| \
+F/2E/2D/2F/2 E/2D/2^C/2E/2 D/2A,/2D/2E/2 F/2G/2A/2B/2| \
+=c/2^A/2c/2d/2 c/2^A/2=A/2c/2 ^A/2=A/2^A/2c/2 ^A/2=A/2G/2^A/2| \
+=AG ^FD G3/2x2x/2|
+xD GA ^A/2c/2^A/2c/2 x/2x/2x/2x/2| \
+d/2c/2d/2^d/2 =d/2c/2^A/2=A/2 Dx Dx| \
+Dx Cx G/2^F/2G/2xG/2^F/2G/2| \
+x/2G/2^F/2G/2 xG/2^F/2 G/2D3/2 x/2C3/2|
+^A,3/2x6x/2| \
+x4 
+M: 2/4
+L: 1/8

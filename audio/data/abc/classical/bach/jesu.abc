@@ -1,0 +1,863 @@
+X: 1
+T: from bach/jesu.mid
+M: 9/8
+L: 1/8
+Q:1/4=115
+K:G % 1 sharps
+% JESU        
+V:1
+% Jesu, Joy of Man's
+%%MIDI program 50
+x
+% JESU        
+GA Bdc ced| \
+dgf gdB GAB| \
+cde dcB ABG| \
+FGA DFA cBA|
+BGA Bdc ced| \
+dgf gdB GAB| \
+Edc BAG DGF| \
+GBd gdB GBd|
+[B4-G4-D4-][B3/2G3/2D3/2]x/2 [c3G3E3C3]| \
+d4-d3/2x/2 [d3B3F3D3]| \
+c4-c3/2x/2 [B3G3D3]| \
+[AF]DE [AF]AG AcB|
+cAF DFA cBA| \
+[B4-G4-][B3/2G3/2]x/2 [c3G3E3C3]| \
+[d4-G4-D4-][d3/2G3/2D3/2]x/2 [B3G3E3]| \
+A2B/2c/2 [B3F3D3] [A3F3C3]|
+GBA Bdc ced| \
+dgf gdB GAB| \
+cde dcB ABG| \
+FGA DFA cBA|
+BGA Bdc ced| \
+dgf gdB GAB| \
+Edc BAG DGF| \
+[B4-G4-][B3/2G3/2]x/2 [c3G3E3C3]|
+d4-d3/2x/2 [d3B3F3D3]| \
+c4-c3/2x/2 [B3G3D3]| \
+[AF]DE [AF]AG AcB| \
+cAF DFA cBA|
+[B4-G4-][B3/2G3/2]x/2 [c3G3E3C3]| \
+[d4-G4-D4-][d3/2G3/2D3/2]x/2 [B3G3E3]| \
+A2B/2c/2 [B3F3D3] [A3F3C3]| \
+GBA Bdc ced|
+dgf gdB GAB| \
+cde dcB ABG| \
+FGA DFA cBA| \
+BGA Bdc ced|
+dgf gdB GAB| \
+Edc BAG DGF| \
+GBd gdB G3| \
+[A4-F4-][A3/2F3/2]x/2 [B3^G3D3]|
+[c4-A4-E4-][c3/2A3/2E3/2]x/2 [c3A3E3]| \
+B4-B/2x/2c/2d/2 [B3^G3]| \
+A3 Aed d=fe| \
+ea^g aec ABc|
+=fed cBA EA[^GD]| \
+[c4-A4-E4-][c3/2A3/2E3/2]x/2 [d3=G3D3]| \
+[e4-c4-][e3/2c3/2]x/2 [e3c3G3]| \
+d4-d/2x/2e/2=f/2 d3|
+[c3E3] cec GA^A| \
+=AcB cA^F DEF| \
+ECD EGF GBA| \
+[B4-G4-][B3/2G3/2]x/2 [c3G3E3C3]|
+[d4-G4-D4-][d3/2G3/2D3/2]x/2 [d3G3D3]| \
+[c3A3E3] B4-B3/2x/2| \
+[AF]DE FAG AcB| \
+cAF DFA cBA|
+[B4-G4-][B3/2G3/2]x/2 [c3G3E3C3]| \
+[d4-G4-D4-][d3/2G3/2D3/2]x/2 [B3G3E3]| \
+A3/2x/2B/2c/2 B3 A3| \
+GBd gdB GBd|
+=fdB GBd ecA| \
+^FAc dBG EGB| \
+cAF DFA cBA| \
+BGA Bdc ced|
+dgf gdB GAB| \
+cde dcB ABG| \
+FGA DFA cBA| \
+BGA Bdc ced|
+dgf gdB GAB| \
+Edc BAG DGF| \
+[G6-D6-B,6-G,6-] [G3/2D3/2B,3/2G,3/2]x3/2| \
+xGA Bdc ced|
+dgf gdB GAB| \
+cde dcB ABG| \
+FGA DFA cBA| \
+BGA Bdc ced|
+dgf gdB GAB| \
+Edc BAG DGF| \
+GBd gdB GBd| \
+[B4-G4-D4-][B3/2G3/2D3/2]x/2 [c3G3E3C3]|
+d4-d3/2x/2 [d3B3F3D3]| \
+c4-c3/2x/2 [B3G3D3]| \
+[AF]DE [AF]AG AcB| \
+cAF DFA cBA|
+[B4-G4-][B3/2G3/2]x/2 [c3G3E3C3]| \
+[d4-G4-D4-][d3/2G3/2D3/2]x/2 [B3G3E3]| \
+A2B/2c/2 [B3F3D3] [A3F3C3]| \
+GBA Bdc ced|
+dgf gdB GAB| \
+cde dcB ABG| \
+FGA DFA cBA| \
+BGA Bdc ced|
+dgf gdB GAB| \
+Edc BAG DGF| \
+[B4-G4-][B3/2G3/2]x/2 [c3G3E3C3]| \
+d4-d3/2x/2 [d3B3F3D3]|
+c4-c3/2x/2 [B3G3D3]| \
+[AF]DE [AF]AG AcB| \
+cAF DFA cBA| \
+[B4-G4-][B3/2G3/2]x/2 [c3G3E3C3]|
+[d4-G4-D4-][d3/2G3/2D3/2]x/2 [B3G3E3]| \
+A2B/2c/2 [B3F3D3] [A3F3C3]| \
+GBA Bdc ced| \
+dgf gdB GAB|
+cde dcB ABG| \
+FGA DFA cBA| \
+BGA Bdc ced| \
+dgf gdB GAB|
+Edc BAG DGF| \
+GBd gdB G3| \
+[A4-F4-][A3/2F3/2]x/2 [B3^G3D3]| \
+[c4-A4-E4-][c3/2A3/2E3/2]x/2 [c3A3E3]|
+B4-B/2x/2c/2d/2 [B3^G3]| \
+A3 Aed d=fe| \
+ea^g aec ABc| \
+=fed cBA EA[^GD]|
+[c4-A4-E4-][c3/2A3/2E3/2]x/2 [d3=G3D3]| \
+[e4-c4-][e3/2c3/2]x/2 [e3c3G3]| \
+d4-d/2x/2e/2=f/2 d3| \
+[c3E3] cec GA^A|
+=AcB cA^F DEF| \
+ECD EGF GBA| \
+[B4-G4-][B3/2G3/2]x/2 [c3G3E3C3]| \
+[d4-G4-D4-][d3/2G3/2D3/2]x/2 [d3G3D3]|
+[c3A3E3] B4-B3/2x/2| \
+[AF]DE FAG AcB| \
+cAF DFA cBA| \
+[B4-G4-][B3/2G3/2]x/2 [c3G3E3C3]|
+[d4-G4-D4-][d3/2G3/2D3/2]x/2 [B3G3E3]| \
+A3/2x/2B/2c/2 B3 A3| \
+GBd gdB GBd| \
+=fdB GBd ecA|
+^FAc dBG EGB| \
+cAF DFA cBA| \
+BGA Bdc ced| \
+dgf gdB GAB|
+cde dcB ABG| \
+FGA DFA cBA| \
+BGA Bdc ced| \
+dgf gdB GAB|
+Edc BAG DGF| \
+[G6-D6-B,6-G,6-] [G3/2D3/2B,3/2G,3/2]
+V:2
+% Desiring
+%%MIDI program 63
+x
+% JESU        
+GA2<G2 G3| \
+G3 G3 GAB| \
+cde dcB ABG| \
+FGA DFA cBA|
+BGA2<G2 G3| \
+G3 G3 x3| \
+x8x| \
+x8x|
+x8x| \
+[A3F3D3] G3 x3| \
+[G3E3C3] [A3D3] x3| \
+x8x|
+x8x| \
+x8x| \
+x8x| \
+[G3E3] [B3F3D3] [A3F3C3]|
+x3 G3 G3| \
+G3 G3 x3| \
+x8x| \
+x8x|
+x3 G3 G3| \
+G3 G3 x3| \
+x8x| \
+x8x|
+[A3F3D3] G3 x3| \
+[A3E3C3] [A3D3] x3| \
+x8x| \
+x8x|
+x8x| \
+x8x| \
+[G3E3] [B3F3D3] [A3F3C3]| \
+x3 G3 G3|
+G3 G3 x3| \
+x8x| \
+x8x| \
+x3 G3 G3|
+G3 G3 x3| \
+x8x| \
+x8x| \
+x8x|
+x8x| \
+[A4-D4-][A3/2D3/2]x3x/2| \
+x6 A3| \
+A3 A3 x3|
+A3 F3 x3| \
+x8x| \
+G3 A3 x3| \
+=F4-=F3/2x3x/2|
+x8x| \
+x8x| \
+x8x| \
+x8x|
+x8x| \
+x3 D3 E3| \
+x8x| \
+x8x|
+x8x| \
+x8x| \
+[G3E3] x6| \
+x8x|
+x8x| \
+x8x| \
+x8x| \
+x3 G3 G3|
+G3 G3 x3| \
+x8x| \
+x8x| \
+x3 G3 G3|
+G3 G3 x3| \
+x8x| \
+x8x| \
+xGA2<G2 G3|
+G3 G3 GAB| \
+cde dcB ABG| \
+^FGA DFA cBA| \
+BGA2<G2 G3|
+G3 G3 x3| \
+x8x| \
+x8x| \
+x8x|
+[A3F3D3] G3 x3| \
+[G3E3C3] [A3D3] x3| \
+x8x| \
+x8x|
+x8x| \
+x8x| \
+[G3E3] [B3F3D3] [A3F3C3]| \
+x3 G3 G3|
+G3 G3 x3| \
+x8x| \
+x8x| \
+x3 G3 G3|
+G3 G3 x3| \
+x8x| \
+x8x| \
+[A3F3D3] G3 x3|
+[A3E3C3] [A3D3] x3| \
+x8x| \
+x8x| \
+x8x|
+x8x| \
+[G3E3] [B3F3D3] [A3F3C3]| \
+x3 G3 G3| \
+G3 G3 x3|
+x8x| \
+x8x| \
+x3 G3 G3| \
+G3 G3 x3|
+x8x| \
+x8x| \
+x8x| \
+x8x|
+[A4-D4-][A3/2D3/2]x3x/2| \
+x6 A3| \
+A3 A3 x3| \
+A3 F3 x3|
+x8x| \
+G3 A3 x3| \
+=F4-=F3/2x3x/2| \
+x8x|
+x8x| \
+x8x| \
+x8x| \
+x8x|
+x3 D3 E3| \
+x8x| \
+x8x| \
+x8x|
+x8x| \
+[G3E3] x6| \
+x8x| \
+x8x|
+x8x| \
+x8x| \
+x3 G3 G3| \
+G3 G3 x3|
+x8x| \
+x8x| \
+x3 G3 G3| \
+G3 G3 
+V:3
+% by J.S. Bach
+%%MIDI program 63
+% JESU        
+[G,3G,,3] [G,3D,3] [C3E,3]| \
+[G,3B,,3] [B,3E,3] [E3B,3]| \
+[E3A,3] [G3B,3] [G3C3]| \
+[A,4-E,4-][A,3/2E,3/2]x/2 ^F,3|
+[G,3G,,3] [D3G,3] [C3E,3]| \
+[G,3B,,3] [B,3E,3] [E3B,3]| \
+[A,4-E,4-][A,3/2E,3/2]x/2 [C3A,3D,3]| \
+[D8-B,8-G,8-][DB,G,]|
+[G,3G,,3] [F,3F,,3] [E,3E,,3]| \
+[F,3F,,3] [E,3E,,3] [D,3D,,3]| \
+[E,3E,,3] [F,3F,,3] [G,3G,,3]| \
+[D,8-D,,8-][D,D,,]|
+[F,8-D,8-][F,D,]| \
+[G,3G,,3] [F,3F,,3] [E,3E,,3]| \
+[B,3B,,3] [B,,3B,,,3] [E,3E,,3]| \
+[C,3C,,3] [D,4-D,,4-][D,3/2D,,3/2]x/2|
+[G,3G,,3] [D3G,3] [C3E,3]| \
+[G,3B,,3] [B,3E,3] [E3B,3]| \
+[E3A,3] [G3B,3] [E3C3]| \
+[A,4-D,4-][A,3/2D,3/2]x/2 F,3|
+[G,3G,,3] [D3G,3] [C3E,3]| \
+[G,3B,,3] [B,3E,3] [E3B,3]| \
+[A,4-C,4-][A,3/2C,3/2]x/2 [C3A,3E,3]| \
+[G,3G,,3] [F,3F,,3] [E,3E,,3]|
+[F,3F,,3] [E,3E,,3] [D,3D,,3]| \
+[E,3E,,3] [F,3F,,3] [G,3G,,3]| \
+[D,8-D,,8-][D,D,,]| \
+[F,8-D,8-][F,D,]|
+[G,3G,,3] [F,3F,,3] [E,3E,,3]| \
+[B,3B,,3] [B,,3B,,,3] [E,3E,,3]| \
+[C,3C,,3] [D,4-D,,4-][D,3/2D,,3/2]x/2| \
+[G,3G,,3] [D3G,3] [C3E,3]|
+[G,3B,,3] [B,3E,3] [E3B,3]| \
+[E3A,3] [G3B,3] [G3C3]| \
+[A,4-D,4-][A,3/2D,3/2]x/2 F,3| \
+[G,3G,,3] [D3G,3] [C3E,3]|
+[G,3B,,3] [B,3E,3] [E3B,3]| \
+[A,4-C,4-][A,3/2C,3/2]x/2 [C3A,3D,3]| \
+[D4-B,4-G,4-][D3/2B,3/2G,3/2]x/2 G,B,^C| \
+D3 =C3 B,3|
+A,3  (3A,2G,2=F,2E,x| \
+x/2=F,3B,,3[D2-D,2-][D/2-D,/2-]| \
+[D/2D,/2][C3A,3][E3C3A,3][D2-=F,2-][D/2-=F,/2-]| \
+[D/2=F,/2][A,3C,3][C3=F,3][C2-E,2-][C/2-E,/2-]|
+[C/2E,/2]D,3^D,3E,2-E,/2-| \
+E,/2A,,3A,3[B,2-B,,2-][B,/2-B,,/2-]| \
+[B,/2B,,/2][C4-C,4-][C3/2C,3/2] x/2[C2-E,2-][C/2-E,/2-]| \
+[C/2E,/2]=F,3=D,3[G,2-G,,2-][G,/2-G,,/2-]|
+[G,/2G,,/2][G,3C,3]E,3C2-C/2-| \
+C/2[C4-=F,4-][C3/2=F,3/2] x/2[G,2-B,,2-][G,/2-B,,/2-]| \
+[G,/2B,,/2][G,4-C,4-][G,3/2C,3/2] x/2B,2-B,/2-| \
+B,/2[D3G,3]G,,3[E,2-E,,2-][E,/2-E,,/2-]|
+[E,/2E,,/2][B,3B,,3][E,3E,,3][B,2-E,2-][B,/2-E,/2-]| \
+[B,/2E,/2][^F,3F,,3][G,3B,,3]C,2-C,/2-| \
+C,/2[D,8-D,,8-][D,/2-D,,/2-]| \
+[D,/2D,,/2][F,8-D,8-][F,/2-D,/2-]|
+[F,/2D,/2][G,3G,,3][F,3F,,3][E,2-E,,2-][E,/2-E,,/2-]| \
+[E,/2E,,/2][G,3B,,3][B,,3B,,,3]E,2-E,/2-| \
+E,/2[C,3C,,3][D,4-D,,4-][D,3/2D,,3/2]| \
+x/2[G,3G,,3]B,3D,2-D,/2-|
+D,/2[B,4-G,4-][B,3/2G,3/2] x/2[C2-G,2-][C/2-G,/2-]| \
+[C/2G,/2][A,3G,3]B,3D2-D/2-| \
+D/2G,,4-G,,3/2 x/2[F,2-G,,2-][F,/2-G,,/2-]| \
+[F,/2G,,/2][G,3G,,3][D3G,3][C2-E,2-][C/2-E,/2-]|
+[C/2E,/2][G,3B,,3][B,3E,3][E2-B,2-][E/2-B,/2-]| \
+[E/2B,/2][E3A,3][G3B,3][C2-A,2-][C/2-A,/2-]| \
+[C/2A,/2][A,4-D,4-][A,3/2D,3/2] x/2F,2-F,/2-| \
+F,/2[G,3G,,3][D3G,3][C2-E,2-][C/2-E,/2-]|
+[C/2E,/2][G,3B,,3][B,3E,3][E2-B,2-][E/2-B,/2-]| \
+[E/2B,/2][A,4-C,4-][A,3/2C,3/2] x/2[C2-A,2-D,2-][C/2-A,/2-D,/2-]| \
+[C/2A,/2D,/2][G,,8-G,,,8-][G,,/2-G,,,/2-]| \
+[G,/2-G,,/2-G,,/2G,,,/2][G,2-G,,2-][G,/2G,,/2] [G,3D,3] [C3E,3]|
+[G,3B,,3] [B,3E,3] [E3B,3]| \
+[E3A,3] [G3B,3] [G3C3]| \
+[A,4-E,4-][A,3/2E,3/2]x/2 F,3| \
+[G,3G,,3] [D3G,3] [C3E,3]|
+[G,3B,,3] [B,3E,3] [E3B,3]| \
+[A,4-E,4-][A,3/2E,3/2]x/2 [C3A,3D,3]| \
+[D8-B,8-G,8-][DB,G,]| \
+[G,3G,,3] [F,3F,,3] [E,3E,,3]|
+[F,3F,,3] [E,3E,,3] [D,3D,,3]| \
+[E,3E,,3] [F,3F,,3] [G,3G,,3]| \
+[D,8-D,,8-][D,D,,]| \
+[F,8-D,8-][F,D,]|
+[G,3G,,3] [F,3F,,3] [E,3E,,3]| \
+[B,3B,,3] [B,,3B,,,3] [E,3E,,3]| \
+[C,3C,,3] [D,4-D,,4-][D,3/2D,,3/2]x/2| \
+[G,3G,,3] [D3G,3] [C3E,3]|
+[G,3B,,3] [B,3E,3] [E3B,3]| \
+[E3A,3] [G3B,3] [E3C3]| \
+[A,4-D,4-][A,3/2D,3/2]x/2 F,3| \
+[G,3G,,3] [D3G,3] [C3E,3]|
+[G,3B,,3] [B,3E,3] [E3B,3]| \
+[A,4-C,4-][A,3/2C,3/2]x/2 [C3A,3E,3]| \
+[G,3G,,3] [F,3F,,3] [E,3E,,3]| \
+[F,3F,,3] [E,3E,,3] [D,3D,,3]|
+[E,3E,,3] [F,3F,,3] [G,3G,,3]| \
+[D,8-D,,8-][D,D,,]| \
+[F,8-D,8-][F,D,]| \
+[G,3G,,3] [F,3F,,3] [E,3E,,3]|
+[B,3B,,3] [B,,3B,,,3] [E,3E,,3]| \
+[C,3C,,3] [D,4-D,,4-][D,3/2D,,3/2]x/2| \
+[G,3G,,3] [D3G,3] [C3E,3]| \
+[G,3B,,3] [B,3E,3] [E3B,3]|
+[E3A,3] [G3B,3] [G3C3]| \
+[A,4-D,4-][A,3/2D,3/2]x/2 F,3| \
+[G,3G,,3] [D3G,3] [C3E,3]| \
+[G,3B,,3] [B,3E,3] [E3B,3]|
+[A,4-C,4-][A,3/2C,3/2]x/2 [C3A,3D,3]| \
+[D4-B,4-G,4-][D3/2B,3/2G,3/2]x/2 G,B,^C| \
+D3 =C3 B,3| \
+A,3  (3A,2G,2=F,2E,x|
+x/2=F,3B,,3[D2-D,2-][D/2-D,/2-]| \
+[D/2D,/2][C3A,3][E3C3A,3][D2-=F,2-][D/2-=F,/2-]| \
+[D/2=F,/2][A,3C,3][C3=F,3][C2-E,2-][C/2-E,/2-]| \
+[C/2E,/2]D,3^D,3E,2-E,/2-|
+E,/2A,,3A,3[B,2-B,,2-][B,/2-B,,/2-]| \
+[B,/2B,,/2][C4-C,4-][C3/2C,3/2] x/2[C2-E,2-][C/2-E,/2-]| \
+[C/2E,/2]=F,3=D,3[G,2-G,,2-][G,/2-G,,/2-]| \
+[G,/2G,,/2][G,3C,3]E,3C2-C/2-|
+C/2[C4-=F,4-][C3/2=F,3/2] x/2[G,2-B,,2-][G,/2-B,,/2-]| \
+[G,/2B,,/2][G,4-C,4-][G,3/2C,3/2] x/2B,2-B,/2-| \
+B,/2[D3G,3]G,,3[E,2-E,,2-][E,/2-E,,/2-]| \
+[E,/2E,,/2][B,3B,,3][E,3E,,3][B,2-E,2-][B,/2-E,/2-]|
+[B,/2E,/2][^F,3F,,3][G,3B,,3]C,2-C,/2-| \
+C,/2[D,8-D,,8-][D,/2-D,,/2-]| \
+[D,/2D,,/2][F,8-D,8-][F,/2-D,/2-]| \
+[F,/2D,/2][G,3G,,3][F,3F,,3][E,2-E,,2-][E,/2-E,,/2-]|
+[E,/2E,,/2][G,3B,,3][B,,3B,,,3]E,2-E,/2-| \
+E,/2[C,3C,,3][D,4-D,,4-][D,3/2D,,3/2]| \
+x/2[G,3G,,3]B,3D,2-D,/2-| \
+D,/2[B,4-G,4-][B,3/2G,3/2] x/2[C2-G,2-][C/2-G,/2-]|
+[C/2G,/2][A,3G,3]B,3D2-D/2-| \
+D/2G,,4-G,,3/2 x/2[F,2-G,,2-][F,/2-G,,/2-]| \
+[F,/2G,,/2][G,3G,,3][D3G,3][C2-E,2-][C/2-E,/2-]| \
+[C/2E,/2][G,3B,,3][B,3E,3][E2-B,2-][E/2-B,/2-]|
+[E/2B,/2][E3A,3][G3B,3][C2-A,2-][C/2-A,/2-]| \
+[C/2A,/2][A,4-D,4-][A,3/2D,3/2] x/2F,2-F,/2-| \
+F,/2[G,3G,,3][D3G,3][C2-E,2-][C/2-E,/2-]| \
+[C/2E,/2][G,3B,,3][B,3E,3][E2-B,2-][E/2-B,/2-]|
+[E/2B,/2][A,4-C,4-][A,3/2C,3/2] x/2[C2-A,2-D,2-][C/2-A,/2-D,/2-]| \
+[C/2A,/2D,/2][G,,8-G,,,8-][G,,/2-G,,,/2-]|[G,,/2G,,,/2]
+V:4
+% Arranged by
+%%MIDI program 6
+x
+% JESU        
+GA Bdc ced| \
+dgf gdB GAB| \
+cde dcB ABG| \
+FGA DFA cBA|
+BGA Bdc ced| \
+dgf gdB GAB| \
+Edc BAG DGF| \
+GBd gdB GBd|
+[B4-G4-D4-][B3/2G3/2D3/2]x/2 [c3G3E3C3]| \
+d4-d3/2x/2 [d3B3F3D3]| \
+c4-c3/2x/2 [B3G3D3]| \
+[AF]DE [AF]AG AcB|
+cAF DFA cBA| \
+[B4-G4-][B3/2G3/2]x/2 [c3G3E3C3]| \
+[d4-G4-D4-][d3/2G3/2D3/2]x/2 [B3G3E3]| \
+A2B/2c/2 [B3F3D3] [A3F3C3]|
+GBA Bdc ced| \
+dgf gdB GAB| \
+cde dcB ABG| \
+FGA DFA cBA|
+BGA Bdc ced| \
+dgf gdB GAB| \
+Edc BAG DGF| \
+[B4-G4-][B3/2G3/2]x/2 [c3G3E3C3]|
+d4-d3/2x/2 [d3B3F3D3]| \
+c4-c3/2x/2 [B3G3D3]| \
+[AF]DE [AF]AG AcB| \
+cAF DFA cBA|
+[B4-G4-][B3/2G3/2]x/2 [c3G3E3C3]| \
+[d4-G4-D4-][d3/2G3/2D3/2]x/2 [B3G3E3]| \
+A2B/2c/2 [B3F3D3] [A3F3C3]| \
+GBA Bdc ced|
+dgf gdB GAB| \
+cde dcB ABG| \
+FGA DFA cBA| \
+BGA Bdc ced|
+dgf gdB GAB| \
+Edc BAG DGF| \
+GBd gdB G3| \
+[A4-F4-][A3/2F3/2]x/2 [B3^G3D3]|
+[c4-A4-E4-][c3/2A3/2E3/2]x/2 [c3A3E3]| \
+B4-B/2x/2c/2d/2 [B3^G3]| \
+=G3 Ged d=fe| \
+ea^g aec ABc|
+=fed cBA EA[^GD]| \
+[c4-A4-E4-][c3/2A3/2E3/2]x/2 [d3=G3D3]| \
+[e4-c4-][e3/2c3/2]x/2 [e3c3G3]| \
+d4-d/2x/2e/2=f/2 d3|
+[c3E3] cec GA^A| \
+=AcB cA^F DEF| \
+ECD EGF GBA| \
+[B4-G4-][B3/2G3/2]x/2 [c3G3E3C3]|
+[d4-G4-D4-][d3/2G3/2D3/2]x/2 [d3G3D3]| \
+[c3A3E3] B4-B3/2x/2| \
+[AF]DE FAG AcB| \
+cAF DFA cBA|
+[B4-G4-][B3/2G3/2]x/2 [c3G3E3C3]| \
+[d4-G4-D4-][d3/2G3/2D3/2]x/2 [B3G3E3]| \
+A3/2x/2B/2c/2 B3 A3| \
+GBd gdB GBd|
+=fdB GBd ecA| \
+^FAc dBG EGB| \
+cAF DFA cBA| \
+BGA Bdc ced|
+dgf gdB GAB| \
+cde dcB ABG| \
+FGA DFA cBA| \
+BGA Bdc ced|
+dgf gdB GAB| \
+Edc BAG DGF| \
+[G6-D6-B,6-G,6-] [G3/2D3/2B,3/2G,3/2]x3/2| \
+xGA Bdc ced|
+dgf gdB GAB| \
+cde dcB ABG| \
+FGA DFA cBA| \
+BGA Bdc ced|
+dgf gdB GAB| \
+Edc BAG DGF| \
+GBd gdB GBd| \
+[B4-G4-D4-][B3/2G3/2D3/2]x/2 [c3G3E3C3]|
+d4-d3/2x/2 [d3B3F3D3]| \
+c4-c3/2x/2 [B3G3D3]| \
+[AF]DE [AF]AG AcB| \
+cAF DFA cBA|
+[B4-G4-][B3/2G3/2]x/2 [c3G3E3C3]| \
+[d4-G4-D4-][d3/2G3/2D3/2]x/2 [B3G3E3]| \
+A2B/2c/2 [B3F3D3] [A3F3C3]| \
+GBA Bdc ced|
+dgf gdB GAB| \
+cde dcB ABG| \
+FGA DFA cBA| \
+BGA Bdc ced|
+dgf gdB GAB| \
+Edc BAG DGF| \
+[B4-G4-][B3/2G3/2]x/2 [c3G3E3C3]| \
+d4-d3/2x/2 [d3B3F3D3]|
+c4-c3/2x/2 [B3G3D3]| \
+[AF]DE [AF]AG AcB| \
+cAF DFA cBA| \
+[B4-G4-][B3/2G3/2]x/2 [c3G3E3C3]|
+[d4-G4-D4-][d3/2G3/2D3/2]x/2 [B3G3E3]| \
+A2B/2c/2 [B3F3D3] [A3F3C3]| \
+GBA Bdc ced| \
+dgf gdB GAB|
+cde dcB ABG| \
+FGA DFA cBA| \
+BGA Bdc ced| \
+dgf gdB GAB|
+Edc BAG DGF| \
+GBd gdB G3| \
+[A4-F4-][A3/2F3/2]x/2 [B3^G3D3]| \
+[c4-A4-E4-][c3/2A3/2E3/2]x/2 [c3A3E3]|
+B4-B/2x/2c/2d/2 [B3^G3]| \
+=G3 Ged d=fe| \
+ea^g aec ABc| \
+=fed cBA EA[^GD]|
+[c4-A4-E4-][c3/2A3/2E3/2]x/2 [d3=G3D3]| \
+[e4-c4-][e3/2c3/2]x/2 [e3c3G3]| \
+d4-d/2x/2e/2=f/2 d3| \
+[c3E3] cec GA^A|
+=AcB cA^F DEF| \
+ECD EGF GBA| \
+[B4-G4-][B3/2G3/2]x/2 [c3G3E3C3]| \
+[d4-G4-D4-][d3/2G3/2D3/2]x/2 [d3G3D3]|
+[c3A3E3] B4-B3/2x/2| \
+[AF]DE FAG AcB| \
+cAF DFA cBA| \
+[B4-G4-][B3/2G3/2]x/2 [c3G3E3C3]|
+[d4-G4-D4-][d3/2G3/2D3/2]x/2 [B3G3E3]| \
+A3/2x/2B/2c/2 B3 A3| \
+GBd gdB GBd| \
+=fdB GBd ecA|
+^FAc dBG EGB| \
+cAF DFA cBA| \
+BGA Bdc ced| \
+dgf gdB GAB|
+cde dcB ABG| \
+FGA DFA cBA| \
+BGA Bdc ced| \
+dgf gdB GAB|
+Edc BAG DGF| \
+[G6-D6-B,6-G,6-] [G3/2D3/2B,3/2G,3/2]
+V:5
+% John Renfro Davis
+%%MIDI program 52
+x8x| \
+x8x| \
+x8x| \
+x8x|
+x8x| \
+x8x| \
+x8x| \
+x8x|
+% JESU        
+B4-B3/2x/2 c3| \
+d4-d3/2x/2 d3| \
+c4-c3/2x/2 B3| \
+A3 A3 x3|
+x8x| \
+B4-B3/2x/2 c3| \
+d4-d3/2x/2 B3| \
+A3/2x/2B/2c/2 B3 A3|
+G4-G3/2x3x/2| \
+x8x| \
+x8x| \
+x8x|
+x8x| \
+x8x| \
+x8x| \
+B4-B3/2x/2 c3|
+d4-d3/2x/2 d3| \
+c4-c3/2x/2 B3| \
+A3 A3 x3| \
+x8x|
+B4-B3/2x/2 c3| \
+d4-d3/2x/2 B3| \
+A3/2x/2B/2c/2 B3 A3| \
+G4-G3/2x3x/2|
+x8x| \
+x8x| \
+x8x| \
+x8x|
+x8x| \
+x8x| \
+x8x| \
+A4-A3/2x/2 B3|
+c4-c3/2x/2 c3| \
+B4-B/2x/2c/2d/2 B3| \
+A3 A3 x3| \
+x8x|
+x8x| \
+c4-c3/2x/2 d3| \
+e4-e3/2x/2 e3| \
+d4-d/2x/2e/2=f/2 d3|
+c3 c3 x3| \
+x8x| \
+x8x| \
+B4-B3/2x/2 c3|
+d4-d3/2x/2 d3| \
+c3 B4-B3/2x/2| \
+A4-A3/2x3x/2| \
+x8x|
+B4-B3/2x/2 c3| \
+d4-d3/2x/2 B3| \
+A3/2x/2B/2c/2 B3 A3| \
+G4-G3/2x3x/2|
+x8x| \
+x8x| \
+x8x| \
+x8x|
+x8x| \
+x8x| \
+x8x| \
+x8x|
+x8x| \
+x8x| \
+x8x| \
+x8x|
+x8x| \
+x8x| \
+x8x| \
+x8x|
+x8x| \
+x8x| \
+x8x| \
+B4-B3/2x/2 c3|
+d4-d3/2x/2 d3| \
+c4-c3/2x/2 B3| \
+A3 A3 x3| \
+x8x|
+B4-B3/2x/2 c3| \
+d4-d3/2x/2 B3| \
+A3/2x/2B/2c/2 B3 A3| \
+G4-G3/2x3x/2|
+x8x| \
+x8x| \
+x8x| \
+x8x|
+x8x| \
+x8x| \
+B4-B3/2x/2 c3| \
+d4-d3/2x/2 d3|
+c4-c3/2x/2 B3| \
+A3 A3 x3| \
+x8x| \
+B4-B3/2x/2 c3|
+d4-d3/2x/2 B3| \
+A3/2x/2B/2c/2 B3 A3| \
+G4-G3/2x3x/2| \
+x8x|
+x8x| \
+x8x| \
+x8x| \
+x8x|
+x8x| \
+x8x| \
+A4-A3/2x/2 B3| \
+c4-c3/2x/2 c3|
+B4-B/2x/2c/2d/2 B3| \
+A3 A3 x3| \
+x8x| \
+x8x|
+c4-c3/2x/2 d3| \
+e4-e3/2x/2 e3| \
+d4-d/2x/2e/2=f/2 d3| \
+c3 c3 x3|
+x8x| \
+x8x| \
+B4-B3/2x/2 c3| \
+d4-d3/2x/2 d3|
+c3 B4-B3/2x/2| \
+A4-A3/2x3x/2| \
+x8x| \
+B4-B3/2x/2 c3|
+d4-d3/2x/2 B3| \
+A3/2x/2B/2c/2 B3 A3| \
+G4-G3/2
+V:6
+% Cut-N-Shoot, Tx
+%%MIDI program 52
+x8x| \
+x8x| \
+x8x| \
+x8x|
+x8x| \
+x8x| \
+x8x| \
+x8x|
+% JESU        
+B,4-B,3/2x/2 C3| \
+D4-D3/2x/2 D3| \
+C4-C3/2x/2 B,3| \
+A,3 A,3 x3|
+x8x| \
+B,4-B,3/2x/2 C3| \
+D4-D3/2x/2 B,3| \
+A,3/2x/2B,/2C/2 B,3 A,3|
+G,4-G,3/2x3x/2| \
+x8x| \
+x8x| \
+x8x|
+x8x| \
+x8x| \
+x8x| \
+B,4-B,3/2x/2 C3|
+D4-D3/2x/2 D3| \
+C4-C3/2x/2 B,3| \
+A,3 A,3 x3| \
+x8x|
+B,4-B,3/2x/2 C3| \
+D4-D3/2x/2 B,3| \
+A,3/2x/2B,/2C/2 B,3 A,3| \
+G,4-G,3/2x3x/2|
+x8x| \
+x8x| \
+x8x| \
+x8x|
+x8x| \
+x8x| \
+x8x| \
+A,4-A,3/2x/2 B,3|
+C4-C3/2x/2 C3| \
+B,4-B,/2x/2C/2D/2 B,3| \
+A,3 A,3 x3| \
+x8x|
+x8x| \
+C4-C3/2x/2 D3| \
+E4-E3/2x/2 E3| \
+D4-D/2x/2E/2=F/2 D3|
+C3 C3 x3| \
+x8x| \
+x8x| \
+B,4-B,3/2x/2 C3|
+D4-D3/2x/2 D3| \
+C3 B,4-B,3/2x/2| \
+A,4-A,3/2x3x/2| \
+x8x|
+B,4-B,3/2x/2 C3| \
+D4-D3/2x/2 B,3| \
+A,3/2x/2B,/2C/2 B,3 A,3| \
+G,4-G,3/2x3x/2|
+x8x| \
+x8x| \
+x8x| \
+x8x|
+x8x| \
+x8x| \
+x8x| \
+x8x|
+x8x| \
+x8x| \
+x8x| \
+x8x|
+x8x| \
+x8x| \
+x8x| \
+x8x|
+x8x| \
+x8x| \
+x8x| \
+B,4-B,3/2x/2 C3|
+D4-D3/2x/2 D3| \
+C4-C3/2x/2 B,3| \
+A,3 A,3 x3| \
+x8x|
+B,4-B,3/2x/2 C3| \
+D4-D3/2x/2 B,3| \
+A,3/2x/2B,/2C/2 B,3 A,3| \
+G,4-G,3/2x3x/2|
+x8x| \
+x8x| \
+x8x| \
+x8x|
+x8x| \
+x8x| \
+B,4-B,3/2x/2 C3| \
+D4-D3/2x/2 D3|
+C4-C3/2x/2 B,3| \
+A,3 A,3 x3| \
+x8x| \
+B,4-B,3/2x/2 C3|
+D4-D3/2x/2 B,3| \
+A,3/2x/2B,/2C/2 B,3 A,3| \
+G,4-G,3/2x3x/2| \
+x8x|
+x8x| \
+x8x| \
+x8x| \
+x8x|
+x8x| \
+x8x| \
+A,4-A,3/2x/2 B,3| \
+C4-C3/2x/2 C3|
+B,4-B,/2x/2C/2D/2 B,3| \
+A,3 A,3 x3| \
+x8x| \
+x8x|
+C4-C3/2x/2 D3| \
+E4-E3/2x/2 E3| \
+D4-D/2x/2E/2=F/2 D3| \
+C3 C3 x3|
+x8x| \
+x8x| \
+B,4-B,3/2x/2 C3| \
+D4-D3/2x/2 D3|
+C3 B,4-B,3/2x/2| \
+A,4-A,3/2x3x/2| \
+x8x| \
+B,4-B,3/2x/2 C3|
+D4-D3/2x/2 B,3| \
+A,3/2x/2B,/2C/2 B,3 A,3| \
+G,4-G,3/2
+%           [74046,757]

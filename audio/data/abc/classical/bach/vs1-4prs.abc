@@ -1,0 +1,872 @@
+X: 1
+T: from bach/vs1-4prs.mid
+M: 3/8
+L: 1/16
+Q:1/4=125
+K:F % 1 flats
+% untitled
+% A
+% A'
+% B
+% B'
+V:1
+% Solo Violin
+%%MIDI program 40
+% untitled
+% A
+gb gd gd| \
+Bd BG BG| \
+DG DB, DB,| \
+G,B, DG Bd|
+gd cB AG| \
+_GD _GA d_g| \
+a_e dc BA| \
+=GD GB dg|
+bg _ec _eg| \
+af dB df| \
+g_e cA c_e| \
+Dg _g=g ac|
+Gc Bc dF| \
+Cf =ef gB| \
+FB AB c_E| \
+B,_e d_e f_A|
+_EB, _EG _EG| \
+cG c_e c_e| \
+FC F=A FA| \
+dA df df|
+GD GB GB| \
+_eB _eg _eg| \
+AF Ac Ac| \
+fc fa fa|
+Bc db ab| \
+cd _eb ab| \
+d_e fb ab| \
+_ef gb ab|
+Ac _eg f_e| \
+dB _eB f_A| \
+G=A BD CA| \
+B,D CB, A,G,|
+A,G _G=E Dc| \
+BA =Gf ed| \
+_db ag fe| \
+f=d gd ac|
+Ba gf ed| \
+ec fc gB| \
+Ag fe d_d| \
+=dB eB fA|
+Gf ed _d=B| \
+_dA =dA eG| \
+Fd _BG Ec| \
+DB GE CA|
+B,G E_D A,F| \
+G,F E=D _D=B,| \
+A,=D _DE =DF| \
+A,E DF EG|
+A,F EG FA| \
+_B,G _GA =GB| \
+_DB AG FE| \
+F=D FA df|
+ad A2 _d2| \
+=d6| \
+% A'
+gb gd gd| \
+Bd BG BG|
+DG DB, DB,| \
+G,B, DG Bd| \
+gd cB AG| \
+_GD _GA d_g|
+a_e dc BA| \
+=GD GB dg| \
+bg _ec _eg| \
+af dB df|
+g_e cA c_e| \
+Dg _g=g ac| \
+Gc Bc dF| \
+Cf =ef gB|
+FB AB c_E| \
+B,_e d_e f_A| \
+_EB, _EG _EG| \
+cG c_e c_e|
+FC F=A FA| \
+dA df df| \
+GD GB GB| \
+_eB _eg _eg|
+AF Ac Ac| \
+fc fa fa| \
+Bc db ab| \
+cd _eb ab|
+d_e fb ab| \
+_ef gb ab| \
+Ac _eg f_e| \
+dB _eB f_A|
+G=A BD CA| \
+B,D CB, A,G,| \
+A,G _G=E Dc| \
+BA =Gf ed|
+_db ag fe| \
+f=d gd ac| \
+Ba gf ed| \
+ec fc gB|
+Ag fe d_d| \
+=dB eB fA| \
+Gf ed _d=B| \
+_dA =dA eG|
+Fd _BG Ec| \
+DB GE CA| \
+B,G E_D A,F| \
+G,F E=D _D=B,|
+A,=D _DE =DF| \
+A,E DF EG| \
+A,F EG FA| \
+_B,G _GA =GB|
+_DB AG FE| \
+F=D FA df| \
+ad A2 _d2| \
+=d6|
+% B
+DA, D_G D_G| \
+A_G Ad Ad| \
+_gd _ga _ga| \
+d'a _gd A_G|
+DE _G=G AB| \
+c_e cA cA| \
+_GD _GA dc| \
+Bd B=G DB,|
+G,A, B,C D_E| \
+F_A FD FD| \
+=B,G, =B,D GF| \
+_EC _EG cd|
+_ec _AF _Ac| \
+d_B G_E GB| \
+c_A FD F_A| \
+G,c =Bc dF|
+Cf _ef g_B| \
+FB _AB c_E| \
+B,_e d_e f_A| \
+_E_A G_A B_D|
+_A,C F_A GF| \
+=B,=D F_A GF| \
+C=E F_A GF| \
+DF =Bc dF|
+_EG cd _ec| \
+_ag f_e dc| \
+gd _ec G=B| \
+CF _ED C_B,|
+=A,C FC FA| \
+FA cA c_e| \
+c_e ag f_e| \
+dc Bc d=e|
+_ga c'a _ga| \
+_gc _gc Ac| \
+A_G A_G Dc| \
+B=G BG Ed|
+cA cA _G_e| \
+dB dB =Gf| \
+_ec _ec Ag| \
+_gd =e_g =ga|
+bd gb c_e| \
+af dB df| \
+gB _eg Ac| \
+fd BG Bd|
+_eG c_e FA| \
+dB G=E GB| \
+cA BG _GA| \
+DE _G=G AB|
+c_e dg _gb| \
+a=g _g=e dc| \
+B_e dB cA| \
+Fd cA B=G|
+_Ec BG A_G| \
+DB A_G =G_E| \
+CA G=E _GD| \
+B,d cB A=G|
+_ed cb ag| \
+_g=g ad _ec| \
+F=B d_A GF| \
+=EG ce g_B|
+_E=A cG F_E| \
+DF Bd f_A| \
+G_e BG _ED| \
+C_e cB =AG|
+_Gd A_G DC| \
+B,d BA =GF| \
+=EC GB, A,G| \
+_GD AC B,A|
+=G_E BD CB| \
+AF c_E Dc| \
+BG dF =Ed| \
+cA _eG _G_e|
+dB =gB Ac| \
+BG _GA DC| \
+B,=G _GA =GB| \
+CA GB Ac|
+DB Ac Bd| \
+_Ec =Bd c_e| \
+_G_e dc _BA| \
+Bd =gb gd|
+BG D2 _g2| \
+=g6| \
+% B'
+DA, D_G D_G| \
+A_G Ad Ad|
+_gd _ga _ga| \
+d'a _gd A_G| \
+D=E _G=G AB| \
+c_e cA cA|
+_GD _GA dc| \
+Bd B=G DB,| \
+G,A, B,C D_E| \
+F_A FD FD|
+=B,G, =B,D GF| \
+_EC _EG cd| \
+_ec _AF _Ac| \
+d_B G_E GB|
+c_A FD F_A| \
+G,c =Bc dF| \
+Cf _ef g_B| \
+FB _AB c_E|
+B,_e d_e f_A| \
+_E_A G_A B_D| \
+_A,C F_A GF| \
+=B,=D F_A GF|
+C=E F_A GF| \
+DF =Bc dF| \
+_EG cd _ec| \
+_ag f_e dc|
+gd _ec G=B| \
+CF _ED C_B,| \
+=A,C FC FA| \
+FA cA c_e|
+c_e ag f_e| \
+dc Bc d=e| \
+_ga c'a _ga| \
+_gc _gc Ac|
+A_G A_G Dc| \
+B=G BG Ed| \
+cA cA _G_e| \
+dB dB =Gf|
+_ec _ec Ag| \
+_gd =e_g =ga| \
+bd gb c_e| \
+af dB df|
+gB _eg Ac| \
+fd BG Bd| \
+_eG c_e FA| \
+dB G=E GB|
+cA BG _GA| \
+DE _G=G AB| \
+c_e dg _gb| \
+a=g _g=e dc|
+B_e dB cA| \
+Fd cA B=G| \
+_Ec BG A_G| \
+DB A_G =G_E|
+CA G=E _GD| \
+B,d cB A=G| \
+_ed cb ag| \
+_g=g ad _ec|
+F=B d_A GF| \
+=EG ce g_B| \
+_E=A cG F_E| \
+DF Bd f_A|
+G_e BG _ED| \
+C_e cB =AG| \
+_Gd A_G DC| \
+B,d BA =GF|
+=EC GB, A,G| \
+_GD AC B,A| \
+=G_E BD CB| \
+AF c_E Dc|
+BG dF =Ed| \
+cA _eG _G_e| \
+dB =gB Ac| \
+BG _GA DC|
+B,=G _GA =GB| \
+CA GB Ac| \
+DB Ac Bd| \
+_Ec =Bd c_e|
+_G_e dc _BA| \
+Bd =gb gd| \
+BG D2 _g2| \
+=g6|
+V:2
+% --------------------------------------
+%%MIDI program 40
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x2 
+% untitled
+% A
+A2 G2| \
+_G6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x2 
+% A'
+A2 =G2| \
+_G6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x4 
+% B
+c2| \
+B6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x4 
+% B'
+c2| \
+B6|
+V:3
+% Johann Sebastian Bach  (1685-1750)
+%%MIDI program 40
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x4 
+% untitled
+% A
+A,2| \
+D6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x4 
+% A'
+A,2| \
+D6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x4 
+% B
+D2| \
+[D6=G,6]| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x6| \
+x6|
+x6| \
+x6| \
+x4 
+% B'
+D2| \
+[D6G,6]|
+% Six Sonatas and Partitas for Solo Violin
+% --------------------------------------
+% Sonata No. 1 in G minor - BWV 1001
+% 4th Movement: Presto
+% --------------------------------------
+% Sequenced with Cakewalk Pro Audio by
+% David J. Grossman - dave@unpronounceable.com
+% This and other Bach MIDI files can be found at:
+% Dave's J.S. Bach Page
+% http://www.unpronounceable.com/bach
+% --------------------------------------
+% Original Filename: vs1-4prs.mid
+% Last Modified: February 22, 1997
