@@ -1,3 +1,4 @@
+# coding: utf-8
 """
 Generate ABC training data by running:
 
@@ -34,7 +35,7 @@ FILENAME = sys.argv[1]
 DATA = open(FILENAME, 'r').read()
 
 # TODO. Replace this list with new char set if DATA contains new chars
-CHARS = ['*', 'C', 'N', 'b', '0', '“', '"', 'À', ')', '–', 'Ã', '€', 'K', '<', '$', '%', 'W', 'T', 'l', 'v', 'w', '^', 'Q', '4', '|', '\x89', 'ÿ', 's', 'u', 'ù', 'a', 'E', 'Y', '©', '\x99', '7', 'A', '?', 'U', 'X', 'f', 'i', "'", 'j', 'ò', '`', '@', ']', 'e', '\x98', '{', 'k', '¸', 'h', 'p', 'M', '\x93', ' ', '(', 'V', '2', 't', '\n', 'O', '}', '-', '1', 'g', 'H', 'F', 'J', 'z', '\x94', 'ó', 'Z', '¥', '#', 'L', ',', '5', 'm', ';', 'à', '8', 'é', 'o', '\\', 'G', '/', 'c', 'd', '~', '>', 'Ê', 'r', '+', 'D', '\x96', '!', 'I', '_', 'S', '[', '=', 'P', 'q', '&', '\x80', 'â', '.', '\t', 'y', ':', 'n', '3', 'B', 'R', '6', '9', 'x']
+CHARS = ['\t', '\n', ' ', '!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ':', ';', '<', '=', '>', '?', '@', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '[', '\\', ']', '^', '_', '`', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '{', '|', '}', '~', '\x80', '\x89', '\x93', '\x94', '\x96', '\x98', '\x99', '\xc2\xa5', '\xc2\xa9', '\xc2\xb8', '\xc3\x80', '\xc3\x83', '\xc3\x8a', '\xc3\xa0', '\xc3\xa2', '\xc3\xa9', '\xc3\xb2', '\xc3\xb3', '\xc3\xb9', '\xc3\xbf', '\xe2\x80\x93', '\xe2\x80\x9c', '\xe2\x82\xac']
 CHARS.extend(list(set(DATA)))
 CHARS = list(set(CHARS))
 CHARS.sort()
@@ -77,14 +78,14 @@ while True:
         t = time.time()
 
     """
-    GENERATE AUDIO.
+    GENERATE AUDIO
+    ==============
+    Once the network has learned enough, generate a music sample every iteration
+    and see if it's simply repeating (with slight variation) what is currently
+    being trained right now.
 
-    Once the network has learned enough, generate a music sample every iteration and 
-    see if it's simply repeating (with slight variation) what is currently being trained
-    right now.
-
-    Another test to try: once the network has learned enough, let
-    the network generate on its own without training at the same time.
+    Another test to try: once the network has learned enough, let the network
+    generate on its own without training at the same time.
     """
     # if i % 1 == 0:
     # if i % 10 == 0:    
