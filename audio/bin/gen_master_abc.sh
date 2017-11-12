@@ -12,14 +12,18 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 echo "Removing master*.abc"
 rm master*.abc
 
-echo "Concatenating abc files into master_tmp_all.abc"
+echo "Concatenating abc files into one master file"
 cat $(find $SRC_DIR -type f | grep "\.abc") > master_tmp_all.abc
 
-echo "Preprocessing master_tmp_all.abc by removing metadata"
+echo "Preprocessing...."
+echo "Removing metadata"
 python $SCRIPT_DIR/preprocess_abc.py master_tmp_all.abc > master_tmp_preprocessed.abc
 
-echo "Randomizing preprocessed file and outputting master.abc"
-python $SCRIPT_DIR/randomize_training_data.py master_tmp_preprocessed.abc > master.abc
+echo "Reshaping voices"
+python $SCRIPT_DIR/reshape_abc_voices.py master_tmp_preprocessed.abc > master_tmp_reshaped.abc
+
+echo "Randomizing preprocessed file, retitles, and outputting master.abc"
+python $SCRIPT_DIR/randomize_training_data.py master_tmp_reshaped.abc > master.abc
 
 # echo "Truncating training data to first 10000 lines"
 # head -10000 master_tmp_random.abc > master.abc
