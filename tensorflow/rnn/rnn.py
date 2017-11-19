@@ -20,12 +20,22 @@ class RNN(object):
         self.NUM_LSTM_CELLS = opts["NUM_LSTM_CELLS"]
         self.NUM_CLASSES = opts["NUM_CLASSES"]
         self.SAVE_DST = opts["SAVE_DST"] # this must end in "/"
+        """
+        SEED_DATA is used to seed the sequence to be generated. E.g. use this to
+        continue generating a song from the SEED_DATA
+        """
+        self.SEED_DATA = opts["SEED"] 
 
         self.SIZE_DATA = len(self.DATA) - self.SEQ_LENGTH - 1 # - SEQ_LENGTH - 1 to avoid clipping (short strings) near the end
         self.NUM_TRAIN = int(0.8 * self.SIZE_DATA) # 80-20 train-test split
         self.batch_ptr = random.randint(0, self.NUM_TRAIN) # start training at a random place, then go to the end and loop around
-        self.running_sample = list(self.DATA[100000:100000 + 1000])
+
+        if self.SEED_DATA:
+            self.running_sample = self.SEED_DATA
+        else:
+            self.running_sample = list(self.DATA[100000:100000 + 1000])
         self.running_sample = self.running_sample[-self.SEQ_LENGTH:]
+
         self.sess = sess
 
         """
@@ -110,6 +120,9 @@ class RNN(object):
             self.X: self.batchX, self.Y: self.batchY, self.InitState: self.state
         })
         return self.batchX, self.batchY
+
+    def get_running_sample(self):
+        return self.running_sample        
 
     def sample(self, GEN_STR_LEN, show_every=None):
         output = []    
