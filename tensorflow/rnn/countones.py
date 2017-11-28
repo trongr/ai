@@ -161,7 +161,7 @@ output = [
     ...
 ]
 """
-NUM_CELL_UNITS = 25  # poij. Adjust hyperparam
+NUM_CELL_UNITS = 25  # Adjust hyperparam
 Cell = tf.contrib.rnn.BasicLSTMCell(NUM_CELL_UNITS, state_is_tuple=True)
 Cells = tf.contrib.rnn.MultiRNNCell([Cell] * NUM_LSTM_CELLS)
 

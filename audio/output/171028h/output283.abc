@@ -1,0 +1,103 @@
+X: 1
+T: from output/171028h/output283.mid
+M: 3/4
+L: 1/8
+Q:1/4=120
+K:G % 1 sharps
+% note track
+V:1
+% note track
+% note track
+G2 BA G2| \
+Ac Ac c2-| \
+cA2A G2| \
+AG2c d^c|
+df2A A2| \
+AG2A B2| \
+AA/2G/2 GF2[GF]| \
+GF EA2G|
+G2 FE GA| \
+B2 BB =cd| \
+B3/2B/2 d4| \
+B/2AGGDED/2-|
+D/2EAB2de/2-| \
+e/2cdeGdg/2-| \
+g/2AGAGFE/2-| \
+E/2BGGEFG/2-|
+G/2G4-G3/2-| \
+G/2GAcBdF/2-| \
+F/2AcdcBA/2-| \
+A/2Bcd2ed/2-|
+d/2ed^cddd/2-| \
+d/2ffdBd/2f/2B/2-| \
+B3/2g3/2f/2efx/2| \
+x/2ede2d3/2-|
+d3/2bgef^d/2-| \
+^d/2fe^dfa=c/2-| \
+c/2ABc=dcd/2-| \
+d/2efgbab/2-|
+b/2agc'b2d/2-| \
+d/2abaedf/2-| \
+f/2ggaf2G/2-| \
+G3/2AFBGA/2-|
+A3/2F3GF/2-| \
+F/2AAefeg/2-| \
+g/2dedaba/2-| \
+a/2f2f3g/2-|
+g/2g2e2d3/2-| \
+d/2e2A2d3/2-| \
+d/2gdbfaf/2-| \
+f/2g4-g3/2-|
+g/2e2fggf/2-| \
+f/2e2f2x3/2| \
+x/2eccB2B/2-| \
+B3/2B2
+V:2
+% gchord track
+x3
+% note track
+D,, x[A,F,D,]| \
+xA,, x[GE^CA,] D,,x| \
+[A,F,D,]x [^D=CA,=F,]x G,,x| \
+[=DB,G,]x [DB,G,]x B,,x|
+[^FDB,]x [A,F,D,]x D,,x| \
+[A,F,D,]C,, x[G,E,C,] C,,x| \
+[G,E,C,]x G,,x [DB,G,]x| \
+G,,x [DB,G,]x [GE^CA,]x|
+=C,,x [G,E,C,]x [G,E,C,]x| \
+G,,x [DB,G,]x [DB,G,]x| \
+D,,x G,,x [DB,G,]x| \
+[DB,G,]x/2G,,x[DB,G,]x[D/2-B,/2-G,/2-]|
+[D/2B,/2G,/2]x2G,,x[DB,G,]x/2| \
+x/2[DB,G,]xG,,x[DB,G,]x/2| \
+x/2[DB,G,]xG,,x[DB,G,]x/2| \
+x/2[DB,G,]xG,,x[DB,G,]x/2|
+x/2[DB,G,]x4x/2| \
+x/2G,,x[DB,G,]x[DB,G,]x/2| \
+x/2G,,x[DB,G,]x[DB,G,]x/2| \
+x2 x/2D,,xE,,x/2|
+x/2E,,xE,,xE,,x/2| \
+x/2E,,xE,,xE,,E,,/2-| \
+E,,/2xE,,xE,,E,,x/2| \
+x/2E,,xE,,xE,,x/2|
+x/2E,,xE,,xE,,x/2| \
+x/2E,,xE,,xE,,x/2| \
+x/2E,,xE,,xC,,x/2| \
+x/2[G,E,C,]x[G,E,C,]x=F,,x/2|
+x/2[CA,=F,]x[CA,=F,]=F,,x[C/2-A,/2-=F,/2-]| \
+[C/2A,/2=F,/2]x[CA,=F,]xA,,x[G/2-E/2-^C/2-A,/2-]| \
+[G/2E/2^C/2A,/2]x[GE^CA,]xD,,x[=C/2-A,/2-^F,/2-D,/2-]| \
+[C/2A,/2F,/2D,/2]x[CA,F,D,]xD,,x[C/2-A,/2-F,/2-D,/2-]|
+[C/2A,/2F,/2D,/2]x[CA,F,D,]x3D,,/2-| \
+D,,/2A,,x[ECA,]x[ECA,]x/2| \
+x/2D,,x[CA,F,D,]x[CA,F,D,]x/2| \
+x/2D,,x[A,F,D,]x[A,F,D,]x/2|
+x/2D,,x[A,F,D,]x[A,F,D,]x/2| \
+x/2C,,x[A,F,D,]x[A,F,D,]x/2| \
+x/2G,,x[DB,G,]x[DB,G,]x/2| \
+x/2E,,x[DB,^G,E,]x[DB,^G,E,]x/2|
+x/2E,,x[B,=G,E,]x[B,G,E,]x/2| \
+x/2G,,x[D^A,G,]x[D^A,G,]x/2| \
+x/2F,,x[^C=A,F,]G,,x[D/2-B,/2-G,/2-]| \
+[D/2B,/2G,/2]x[DB,G,]xD,,x[=C/2-A,/2-F,/2-D,/2-]|
+[C/2A,/2F,/2D,/2]
