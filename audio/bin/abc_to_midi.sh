@@ -5,10 +5,15 @@
 # same directories.
 
 SRC_DIR="$@"
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 FILES=$(find $SRC_DIR -type f | grep "\.abc")
-MIDI2ABC=$SCRIPT_DIR/abctools-win-20170826/abc2midi.exe # windows
-# MIDI2ABC=$SCRIPT_DIR/abcmidi/abc2midi # mac
+
+# windows. For some reason this doesn't need pwd
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")")"
+MIDI2ABC=$SCRIPT_DIR/abctools-win-20170826/abc2midi.exe 
+
+# mac
+# SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# MIDI2ABC=$SCRIPT_DIR/abcmidi/abc2midi 
 
 for file in $FILES; do
     output=$(basename "$file" .abc).mid
