@@ -4,6 +4,8 @@ from keras import backend as K
 from keras.datasets import mnist
 import numpy as np
 from keras.callbacks import TensorBoard
+from keras.models import load_model
+import os.path
 
 (x_train, _), (x_test, _) = mnist.load_data()
 
@@ -31,17 +33,22 @@ x = Conv2D(16, (3, 3), activation='relu')(x)
 x = UpSampling2D((2, 2))(x)
 decoded = Conv2D(1, (3, 3), activation='sigmoid', padding='same')(x)
 
-autoencoder = Model(input_img, decoded)
-autoencoder.compile(optimizer='adadelta', loss='binary_crossentropy')
+MODEL_SAVE_PATH = 'convautoencoder_model.h5'
+if os.path.isfile(filepath):
+    model = load_model(MODEL_SAVE_PATH)
+else:
+    model = Model(input_img, decoded)
 
-autoencoder.fit(x_train, x_train,
+model.compile(optimizer='adadelta', loss='binary_crossentropy')
+
+model.fit(x_train, x_train,
                 epochs=50,
                 batch_size=128,
                 shuffle=True,
                 validation_data=(x_test, x_test),
                 callbacks=[TensorBoard(log_dir='/tmp/autoencoder')])
 
-decoded_imgs = autoencoder.predict(x_test)
+decoded_imgs = model.predict(x_test)
 
 n = 10
 plt.figure(figsize=(20, 4))
@@ -61,6 +68,7 @@ for i in range(n):
     ax.get_yaxis().set_visible(False)
 plt.show()
 
+# Display encoding
 n = 10
 plt.figure(figsize=(20, 8))
 for i in range(n):
@@ -70,3 +78,5 @@ for i in range(n):
     ax.get_xaxis().set_visible(False)
     ax.get_yaxis().set_visible(False)
 plt.show()
+
+model.save(MODEL_SAVE_PATH) 
