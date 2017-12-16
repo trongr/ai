@@ -6,6 +6,7 @@ import numpy as np
 from keras.callbacks import TensorBoard
 from keras.models import load_model
 import os.path
+import matplotlib.pyplot as plt
 
 (x_train, _), (x_test, _) = mnist.load_data()
 
@@ -33,35 +34,39 @@ x = Conv2D(16, (3, 3), activation='relu')(x)
 x = UpSampling2D((2, 2))(x)
 decoded = Conv2D(1, (3, 3), activation='sigmoid', padding='same')(x)
 
-MODEL_SAVE_PATH = 'convautoencoder_model.h5'
-if os.path.isfile(filepath):
-    model = load_model(MODEL_SAVE_PATH)
+ENCODER_MODEL_SAVE_PATH = 'convautoencoder_encoder.h5'
+AUTOENCODER_MODEL_SAVE_PATH = 'convautoencoder_autoencoder.h5'
+if os.path.isfile(AUTOENCODER_MODEL_SAVE_PATH):
+    encoder = load_model(ENCODER_MODEL_SAVE_PATH)
+    autoencoder = load_model(AUTOENCODER_MODEL_SAVE_PATH)
 else:
-    model = Model(input_img, decoded)
+    encoder = Model(input_img, encoded)
+    autoencoder = Model(input_img, decoded)
+    autoencoder.compile(optimizer='adadelta', loss='binary_crossentropy')
+    autoencoder.fit(x_train, x_train,
+                    epochs=50, # TODO adjust
+                    batch_size=128,
+                    shuffle=True,
+                    validation_data=(x_test, x_test),
+                    callbacks=[TensorBoard(log_dir='/tmp/autoencoder')])
+    encoder.save(ENCODER_MODEL_SAVE_PATH)
+    autoencoder.save(AUTOENCODER_MODEL_SAVE_PATH)
 
-model.compile(optimizer='adadelta', loss='binary_crossentropy')
-
-model.fit(x_train, x_train,
-                epochs=50,
-                batch_size=128,
-                shuffle=True,
-                validation_data=(x_test, x_test),
-                callbacks=[TensorBoard(log_dir='/tmp/autoencoder')])
-
-decoded_imgs = model.predict(x_test)
+encoded_imgs = encoder.predict(x_test)
+decoded_imgs = autoencoder.predict(x_test)
 
 n = 10
 plt.figure(figsize=(20, 4))
 for i in range(n):
     # display original
-    ax = plt.subplot(2, n, i)
+    ax = plt.subplot(2, n, i + 1)
     plt.imshow(x_test[i].reshape(28, 28))
     plt.gray()
     ax.get_xaxis().set_visible(False)
     ax.get_yaxis().set_visible(False)
 
     # display reconstruction
-    ax = plt.subplot(2, n, i + n)
+    ax = plt.subplot(2, n, i + n + 1)
     plt.imshow(decoded_imgs[i].reshape(28, 28))
     plt.gray()
     ax.get_xaxis().set_visible(False)
@@ -72,11 +77,10 @@ plt.show()
 n = 10
 plt.figure(figsize=(20, 8))
 for i in range(n):
-    ax = plt.subplot(1, n, i)
+    ax = plt.subplot(1, n, i + 1)
     plt.imshow(encoded_imgs[i].reshape(4, 4 * 8).T)
     plt.gray()
     ax.get_xaxis().set_visible(False)
     ax.get_yaxis().set_visible(False)
 plt.show()
 
-model.save(MODEL_SAVE_PATH) 
