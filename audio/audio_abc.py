@@ -84,12 +84,12 @@ while True:
     and see if it's simply repeating (with slight variation) what is currently
     being trained right now.
 
-    Another test to try: once the network has learned enough, let the network
-    generate on its own without training at the same time.
+    Another test to try: once the network has learned enough, let it generate on
+    its own without training at the same time.
     """
     # if i % 1 == 0:
-    # if i % 10 == 0:    
-    if i % 50 == 0 and i != 0:    
+    if i % 10 == 0:    
+    # if i % 50 == 0 and i != 0:    
         sample = model.sample(100)
         sample = utils.ixes_to_string(IX_TO_CHAR, sample)
 

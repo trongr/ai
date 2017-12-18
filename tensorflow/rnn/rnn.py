@@ -24,7 +24,8 @@ class RNN(object):
         SEED_DATA is used to seed the sequence to be generated. E.g. use this to
         continue generating a song from the SEED_DATA
         """
-        self.SEED_DATA = opts["SEED"] 
+        self.SEED_DATA = opts.get("SEED")
+        is_test = opts.get("is_test")
 
         self.SIZE_DATA = len(self.DATA) - self.SEQ_LENGTH - 1 # - SEQ_LENGTH - 1 to avoid clipping (short strings) near the end
         self.NUM_TRAIN = int(0.8 * self.SIZE_DATA) # 80-20 train-test split
@@ -101,8 +102,9 @@ class RNN(object):
         if glob.glob(self.SAVE_DST + "*"):
             self.Saver.restore(self.sess, tf.train.latest_checkpoint(self.SAVE_DST))
 
-        batchX, _ = self.nextTrainBatch()
-        self.state = self.sess.run(self.InitState, {self.X: batchX})
+        if not is_test:
+            batchX, _ = self.nextTrainBatch()
+            self.state = self.sess.run(self.InitState, {self.X: batchX})
 
     @staticmethod
     def lstm_cell(NUM_CELL_UNITS):

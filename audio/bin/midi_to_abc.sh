@@ -5,11 +5,18 @@
 # same directories.
 
 SRC_DIR="$@"
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# For Windows
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")")"
+
+# For Mac
+# SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
 FILES=$(find $SRC_DIR -type f | grep "\.mid")
 MIDI2ABC=$SCRIPT_DIR/abctools-win-20170826/midi2abc.exe
 
 for file in $FILES; do
     output=$(basename "$file" .mid).abc
-    $MIDI2ABC $file > $output
+    output_dir=$(dirname $file)
+    $MIDI2ABC $file > $output_dir/$output
 done

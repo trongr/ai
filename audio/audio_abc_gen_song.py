@@ -44,10 +44,11 @@ model = RNN(sess, data, {
     "NUM_LSTM_CELLS": 3, # This is ignored. Hardcoding num cells in RNN lib for now.
     "NUM_CLASSES": VOCAB_SIZE,
     "SAVE_DST": "./save_abc/",
-    "SEED": data
+    "SEED": data,
+    "is_test": True
 })
 
-sample = model.sample(1000)
+sample = model.sample(2000)
 sample = utils.ixes_to_string(IX_TO_CHAR, sample)
 
 print("SAMPLE")
