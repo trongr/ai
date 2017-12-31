@@ -199,8 +199,7 @@ def decode_sequence(input_seq):
         sampled_char = reverse_target_char_index[sampled_token_index]
         decoded_sentence += sampled_char
 
-        # Exit condition: either hit max length
-        # or find stop character.
+        # Exit condition: either hit max length or find stop character.
         if (sampled_char == '\n' or len(decoded_sentence) > max_decoder_seq_length):
             stop_condition = True
 
