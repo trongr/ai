@@ -20,6 +20,8 @@ from keras.layers.convolutional import Convolution2D, MaxPooling2D, ZeroPadding2
 from keras.optimizers import SGD, RMSprop
 from keras.preprocessing import image
 
+K.set_image_dim_ordering('th')
+
 FILES_PATH = 'http://files.fast.ai/models/'
 CLASS_FILE='imagenet_class_index.json'
 # Keras' get_file() is a handy function that downloads files, and caches them
@@ -42,7 +44,7 @@ def FCBlock(model):
     model.add(Dropout(0.5))
 
 # Mean of each channel as provided by VGG researchers
-# vgg_mean = np.array([123.68, 116.779, 103.939]).reshape((3,1,1))
+vgg_mean = np.array([123.68, 116.779, 103.939]).reshape((3,1,1))
 
 def vgg_preprocess(x):
     x = x - vgg_mean     # subtract mean
