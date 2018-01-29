@@ -145,3 +145,28 @@ def style_loss_test(correct):
     print('Error is {:.3f}'.format(error))
 
 style_loss_test(answers['sl_out'])
+
+def tv_loss(img, tv_weight):
+    """
+    Compute total variation loss.
+    
+    Inputs:
+    - img: Tensor of shape (1, H, W, 3) holding an input image.
+    - tv_weight: Scalar giving the weight w_t to use for the TV loss.
+    
+    Returns:
+    - loss: Tensor holding a scalar giving the total variation loss
+      for img weighted by tv_weight.
+    """
+    h = reduce_sum_squared_difference(img[:,:,:-1,:], img[:,:,1:,:])
+    v = reduce_sum_squared_difference(img[:,:-1,:,:], img[:,1:,:,:])
+    return tv_weight * (h + v)
+
+def tv_loss_test(correct):
+    tv_weight = 2e-2
+    t_loss = tv_loss(model.image, tv_weight)
+    student_output = sess.run(t_loss, {model.image: content_img_test})
+    error = rel_error(correct, student_output)
+    print('Error is {:.3f}'.format(error))
+
+tv_loss_test(answers['tv_out'])
