@@ -36,6 +36,9 @@ style_img_test = preprocess_image(load_image('styles/starry_night.jpg', size=192
 answers = np.load('style-transfer-checks-tf.npz')
 print(answers) # <numpy.lib.npyio.NpzFile object at 0x00000092F73B6DD8>
 
+def reduce_sum_squared_difference(a, b):
+    return tf.reduce_sum(tf.squared_difference(a, b))
+
 def content_loss(content_weight, content_current, content_original):
     """
     Compute the content loss for style transfer.
@@ -48,8 +51,7 @@ def content_loss(content_weight, content_current, content_original):
     Returns:
     - scalar content loss
     """
-    s = tf.squared_difference(content_current, content_original)
-    r = tf.reduce_sum(s)
+    r = reduce_sum_squared_difference(content_current, content_original)
     return tf.multiply(content_weight, r)
 
 def content_loss_test(correct):
@@ -95,3 +97,51 @@ def gram_matrix_test(correct):
     print('Maximum error is {:.3f}'.format(error))
 
 gram_matrix_test(answers['gm_out'])
+
+def style_loss(feats, style_layers, style_targets, style_weights):
+    """
+    Computes the style loss at a set of layers.
+
+    Inputs:
+    - feats: list of the features at every layer of the current image, as
+      produced by the extract_features function.
+    - style_layers: List of layer indices into feats giving the layers to
+      include in the style loss.
+    - style_targets: List of the same length as style_layers, where
+      style_targets[i] is a Tensor giving the Gram matrix the source style image
+      computed at layer style_layers[i].
+    - style_weights: List of the same length as style_layers, where
+      style_weights[i] is a scalar giving the weight for the style loss at layer
+      style_layers[i].
+
+    Returns:
+    - style_loss: A Tensor contataining the scalar style loss.
+    """
+    L = tf.Variable(0.0)
+    sess.run(L.initializer)    
+    for i, l in enumerate(style_layers):
+        G = gram_matrix(feats[l], normalize=True)
+        A = style_targets[i]
+        w = tf.cast(style_weights[i], tf.float32)
+        r = reduce_sum_squared_difference(G, A)
+        Ll = tf.multiply(w, r)
+        L = tf.assign_add(L, Ll)        
+    return L
+
+def style_loss_test(correct):
+    style_layers = [1, 4, 6, 7]
+    style_weights = [300000, 1000, 15, 3]
+    
+    feats = model.extract_features()
+    style_target_vars = []
+    for idx in style_layers:
+        style_target_vars.append(gram_matrix(feats[idx]))
+    style_targets = sess.run(style_target_vars,
+                             {model.image: style_img_test})
+                             
+    s_loss = style_loss(feats, style_layers, style_targets, style_weights)
+    student_output = sess.run(s_loss, {model.image: content_img_test})
+    error = rel_error(correct, student_output)
+    print('Error is {:.3f}'.format(error))
+
+style_loss_test(answers['sl_out'])
