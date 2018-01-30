@@ -98,7 +98,7 @@ def gram_matrix_test(correct):
 
 gram_matrix_test(answers['gm_out'])
 
-def style_loss(feats, style_layers, style_targets, style_weights):
+def style_loss(feats, style_layers, style_targets, style_weights, normalize=True):
     """
     Computes the style loss at a set of layers.
 
@@ -117,15 +117,13 @@ def style_loss(feats, style_layers, style_targets, style_weights):
     Returns:
     - style_loss: A Tensor contataining the scalar style loss.
     """
-    L = tf.Variable(0.0)
-    sess.run(L.initializer)    
+    L = tf.constant(0.0)
     for i, l in enumerate(style_layers):
-        G = gram_matrix(feats[l], normalize=True)
+        w = tf.cast(style_weights[i], tf.float32)        
+        G = gram_matrix(feats[l], normalize)
         A = style_targets[i]
-        w = tf.cast(style_weights[i], tf.float32)
-        r = reduce_sum_squared_difference(G, A)
-        Ll = tf.multiply(w, r)
-        L = tf.assign_add(L, Ll)        
+        Ll = w * reduce_sum_squared_difference(G, A)
+        L += Ll
     return L
 
 def style_loss_test(correct):
@@ -172,7 +170,8 @@ def tv_loss_test(correct):
 tv_loss_test(answers['tv_out'])
 
 def style_transfer(content_image, style_image, image_size, style_size, content_layer, content_weight,
-                   style_layers, style_weights, tv_weight, init_random = False):
+                   style_layers, style_weights, tv_weight, init_random = False,
+                   max_iter = 1000):
     """Run style transfer!
     
     Inputs:
@@ -189,13 +188,14 @@ def style_transfer(content_image, style_image, image_size, style_size, content_l
     """
     # Extract features from the content image
     content_img = preprocess_image(load_image(content_image, size=image_size))
-    feats = model.extract_features(model.image)
-    content_target = sess.run(feats[content_layer],
+    content_feats = model.extract_features(model.image)
+    content_target = sess.run(content_feats[content_layer],
                               {model.image: content_img[None]})
 
     # Extract features from the style image
     style_img = preprocess_image(load_image(style_image, size=style_size))
-    style_feat_vars = [feats[idx] for idx in style_layers]
+    style_feats = model.extract_features(model.image)    
+    style_feat_vars = [style_feats[idx] for idx in style_layers]
     style_target_vars = []
     # Compute list of TensorFlow Gram matrices
     for style_feat_var in style_feat_vars:
@@ -204,17 +204,16 @@ def style_transfer(content_image, style_image, image_size, style_size, content_l
     style_targets = sess.run(style_target_vars, {model.image: style_img[None]})
 
     # Initialize generated image to content image
-    
     if init_random:
         img_var = tf.Variable(tf.random_uniform(content_img[None].shape, 0, 1), name="image")
     else:
         img_var = tf.Variable(content_img[None], name="image")
 
     # Extract features on generated image
-    feats = model.extract_features(img_var)
+    img_feats = model.extract_features(img_var)
     # Compute loss
-    c_loss = content_loss(content_weight, feats[content_layer], content_target)
-    s_loss = style_loss(feats, style_layers, style_targets, style_weights)
+    c_loss = content_loss(content_weight, img_feats[content_layer], content_target)
+    s_loss = style_loss(img_feats, style_layers, style_targets, style_weights)
     t_loss = tv_loss(img_var, tv_weight)
     loss = c_loss + s_loss + t_loss
     
@@ -222,7 +221,6 @@ def style_transfer(content_image, style_image, image_size, style_size, content_l
     initial_lr = 3.0
     decayed_lr = 0.1
     decay_lr_at = 180
-    max_iter = 200
 
     # Create and initialize the Adam optimizer
     lr_var = tf.Variable(initial_lr, name="lr")
@@ -235,6 +233,7 @@ def style_transfer(content_image, style_image, image_size, style_size, content_l
     # Create an op that will clamp the image values when run
     clamp_image_op = tf.assign(img_var, tf.clip_by_value(img_var, -1.5, 1.5))
     
+    # Show content and source image
     f, axarr = plt.subplots(1,2)
     axarr[0].axis('off')
     axarr[1].axis('off')
@@ -249,33 +248,54 @@ def style_transfer(content_image, style_image, image_size, style_size, content_l
     for t in range(max_iter):
         # Take an optimization step to update img_var
         sess.run(train_op)
+        Lc, Ls, Lt = sess.run([c_loss, s_loss, t_loss])
+        print("Loss:", Lc, Ls, Lt)
         if t < decay_lr_at:
             sess.run(clamp_image_op)
         if t == decay_lr_at:
             sess.run(tf.assign(lr_var, decayed_lr))
-        if t % 100 == 0:
+        if t % 10 == 0:
             print('Iteration {}'.format(t))
             img = sess.run(img_var)
             plt.imshow(deprocess_image(img[0], rescale=True))
             plt.axis('off')
             plt.show()
-    print('Iteration {}'.format(t))
-    img = sess.run(img_var)        
-    plt.imshow(deprocess_image(img[0], rescale=True))
-    plt.axis('off')
-    plt.show()
 
-# Composition VII + Tubingen
-params1 = {
-    'content_image' : 'styles/tubingen.jpg',
-    'style_image' : 'styles/composition_vii.jpg',
-    'image_size' : 192,
-    'style_size' : 512,
-    'content_layer' : 3,
-    'content_weight' : 5e-2, 
-    'style_layers' : (1, 4, 6, 7),
-    'style_weights' : (20000, 500, 12, 1),
-    'tv_weight' : 5e-2
+# # Composition VII + Tubingen
+# params1 = {
+#     'content_image': 'styles/tubingen.jpg',
+#     'style_image': 'styles/composition_vii.jpg',
+#     'image_size': 192,
+#     'style_size': 512,
+#     'content_layer': 3,
+#     'content_weight': 5e-2, 
+#     # 'style_layers': [1, 4, 6, 7],
+#     # 'style_weights': [200000, 800, 12, 1],
+#     'style_layers':  [1, 2, 3, 4, 5, 6, 7],
+#     'style_weights': [100000, 10000, 1000, 100, 10, 1, 1e-1],
+#     'tv_weight': 5e-1,
+#     "init_random": False,
+#     "max_iter": 1000  
+# }
+# style_transfer(**params1)
+
+# Scream + Tubingen
+params2 = {
+    'content_image':'styles/tubingen.jpg',
+    # 'style_image':'styles/the_scream.jpg',    
+    'style_image':'styles/starry_night.jpg',    
+    'image_size': 240,
+    'style_size': 240,
+    'content_layer': 3,
+    'content_weight': 3e-2,
+    # 'style_layers': [1, 4, 6, 7],
+    # 'style_weights': [200000, 800, 12, 1],
+    # 'style_layers':  [1, 2, 3, 4, 5, 6, 7],
+    # 'style_weights': [100000, 10000, 1000, 100, 10, 1, 1e-1],
+    'style_layers':  [1, 4, 6, 7],
+    'style_weights': [100000, 100, 10, 1],
+    'tv_weight': 2e-2,
+    "init_random": True,
+    "max_iter": 200
 }
-
-style_transfer(**params1)
+style_transfer(**params2)
