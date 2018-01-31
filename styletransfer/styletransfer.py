@@ -256,10 +256,10 @@ def style_transfer(content_image, style_image, image_size, style_size, content_l
             sess.run(tf.assign(lr_var, decayed_lr))
         if t % 10 == 0:
             print('Iteration {}'.format(t))
-            img = sess.run(img_var)
-            plt.imshow(deprocess_image(img[0], rescale=True))
-            plt.axis('off')
-            plt.show()
+    img = sess.run(img_var)
+    plt.imshow(deprocess_image(img[0], rescale=True))
+    plt.axis('off')
+    plt.show()
 
 # # Composition VII + Tubingen
 # params1 = {
@@ -293,9 +293,12 @@ params2 = {
     # 'style_layers':  [1, 2, 3, 4, 5, 6, 7],
     # 'style_weights': [100000, 10000, 1000, 100, 10, 1, 1e-1],
     'style_layers':  [1, 4, 6, 7],
-    'style_weights': [100000, 100, 10, 1],
-    'tv_weight': 2e-2,
-    "init_random": True,
-    "max_iter": 200
+    # 'style_weights': [100000, 100, 10, 1],
+    'style_weights': [0, 0, 0, 0],
+    # 'tv_weight': 2e-2,
+    
+    'tv_weight': 0,
+    "init_random": False,
+    "max_iter": 10000
 }
 style_transfer(**params2)
