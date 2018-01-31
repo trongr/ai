@@ -57,4 +57,25 @@ from tensorflow.examples.tutorials.mnist import input_data
 mnist = input_data.read_data_sets('./cs231n/datasets/MNIST_data', one_hot=False)
 
 # show a batch
-show_images(mnist.train.next_batch(16)[0])
+# show_images(mnist.train.next_batch(16)[0])
+
+def leaky_relu(x, alpha=0.01):
+    """Compute the leaky ReLU activation function.
+    
+    Inputs:
+    - x: TensorFlow Tensor with arbitrary shape
+    - alpha: leak parameter for leaky ReLU
+    
+    Returns:
+    TensorFlow Tensor with the same shape as x
+    """
+    return tf.maximum(alpha * x, x)
+
+def test_leaky_relu(x, y_true):
+    tf.reset_default_graph()
+    with get_session() as sess:
+        y_tf = leaky_relu(tf.constant(x))
+        y = sess.run(y_tf)
+        print('Maximum error: %g'%rel_error(y_true, y))
+
+test_leaky_relu(answers['lrelu_x'], answers['lrelu_y'])
