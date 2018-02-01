@@ -112,3 +112,44 @@ def test_sample_noise():
         print("All tests passed!")
     
 test_sample_noise()
+
+def discriminator(x):
+    """Compute discriminator score for a batch of input images.
+    
+    Inputs:
+    - x: TensorFlow Tensor of flattened input images, shape [batch_size, 784]
+    
+    Returns:
+    TensorFlow Tensor with shape [batch_size, 1], containing the score 
+    for an image being real for each input image.
+    """
+    with tf.variable_scope("discriminator"):
+        alpha = 0.01
+
+        # poij refactor these two layers. Maybe use tf building fully 
+        # connected layer.
+        w1 = tf.Variable(tf.random_normal([784, 256], mean=0, stddev=0.01))
+        b1 = tf.Variable(tf.random_normal([1, 256], mean=0, stddev=0.01))
+        fc1 = leaky_relu(tf.matmul(x, w1) + b1, alpha)
+
+        w2 = tf.Variable(tf.random_normal([256, 256], mean=0, stddev=0.01))
+        b2 = tf.Variable(tf.random_normal([1, 256], mean=0, stddev=0.01))
+        fc2 = leaky_relu(tf.matmul(fc1, w2) + b2, alpha)
+
+        w3 = tf.Variable(tf.random_normal([256, 1], mean=0, stddev=0.01))
+        b3 = tf.Variable(tf.random_normal([1, 1], mean=0, stddev=0.01))
+        logits = tf.matmul(fc2, w3) + b3
+        
+        return logits
+
+def test_discriminator(true_count=267009):
+    tf.reset_default_graph()
+    with get_session() as sess:
+        y = discriminator(tf.ones((2, 784)))
+        cur_count = count_params()
+        if cur_count != true_count:
+            print('Incorrect number of parameters in discriminator. {0} instead of {1}. Check your achitecture.'.format(cur_count,true_count))
+        else:
+            print('Correct number of parameters in discriminator.')
+        
+test_discriminator()
