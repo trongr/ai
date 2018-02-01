@@ -79,3 +79,36 @@ def test_leaky_relu(x, y_true):
         print('Maximum error: %g'%rel_error(y_true, y))
 
 test_leaky_relu(answers['lrelu_x'], answers['lrelu_y'])
+
+def sample_noise(batch_size, dim):
+    """Generate random uniform noise from -1 to 1.
+    
+    Inputs:
+    - batch_size: integer giving the batch size of noise to generate
+    - dim: integer giving the dimension of the the noise to generate
+    
+    Returns:
+    TensorFlow Tensor containing uniform noise in [-1, 1] with shape [batch_size, dim]
+    """
+    return tf.random_uniform([batch_size, dim], minval=-1, maxval=1, 
+                             dtype=tf.float32)
+
+def test_sample_noise():
+    batch_size = 3
+    dim = 4
+    tf.reset_default_graph()
+    with get_session() as sess:
+        z = sample_noise(batch_size, dim)
+        # Check z has the correct shape
+        assert z.get_shape().as_list() == [batch_size, dim]
+        # Make sure z is a Tensor and not a numpy array
+        assert isinstance(z, tf.Tensor)
+        # Check that we get different noise for different evaluations
+        z1 = sess.run(z)
+        z2 = sess.run(z)
+        assert not np.array_equal(z1, z2)
+        # Check that we get the correct range
+        assert np.all(z1 >= -1.0) and np.all(z1 <= 1.0)
+        print("All tests passed!")
+    
+test_sample_noise()
