@@ -124,22 +124,27 @@ def discriminator(x):
     for an image being real for each input image.
     """
     with tf.variable_scope("discriminator"):
-        alpha = 0.01
+        fc1 = tf.contrib.layers.fully_connected(
+            x, num_outputs=256, 
+            activation_fn=leaky_relu,
+            weights_initializer=tf.contrib.layers.xavier_initializer(),
+            biases_initializer=tf.constant_initializer(0.1),
+            trainable=True) # poij Should this be True?
 
-        # poij refactor these two layers. Maybe use tf building fully 
-        # connected layer.
-        w1 = tf.Variable(tf.random_normal([784, 256], mean=0, stddev=0.01))
-        b1 = tf.Variable(tf.random_normal([1, 256], mean=0, stddev=0.01))
-        fc1 = leaky_relu(tf.matmul(x, w1) + b1, alpha)
+        fc2 = tf.contrib.layers.fully_connected(
+            fc1, num_outputs=256, 
+            activation_fn=leaky_relu,
+            weights_initializer=tf.contrib.layers.xavier_initializer(),
+            biases_initializer=tf.constant_initializer(0.1),
+            trainable=True) # poij Should this be True?
 
-        w2 = tf.Variable(tf.random_normal([256, 256], mean=0, stddev=0.01))
-        b2 = tf.Variable(tf.random_normal([1, 256], mean=0, stddev=0.01))
-        fc2 = leaky_relu(tf.matmul(fc1, w2) + b2, alpha)
+        logits = tf.contrib.layers.fully_connected(
+            fc2, num_outputs=1, 
+            activation_fn=None,
+            weights_initializer=tf.contrib.layers.xavier_initializer(),
+            biases_initializer=tf.constant_initializer(0.1),
+            trainable=True) # poij Should this be True?
 
-        w3 = tf.Variable(tf.random_normal([256, 1], mean=0, stddev=0.01))
-        b3 = tf.Variable(tf.random_normal([1, 1], mean=0, stddev=0.01))
-        logits = tf.matmul(fc2, w3) + b3
-        
         return logits
 
 def test_discriminator(true_count=267009):
@@ -153,3 +158,77 @@ def test_discriminator(true_count=267009):
             print('Correct number of parameters in discriminator.')
         
 test_discriminator()
+
+def generator(z):
+    """Generate images from a random noise vector.
+    
+    Inputs:
+    - z: TensorFlow Tensor of random noise with shape [batch_size, noise_dim]
+    
+    Returns:
+    TensorFlow Tensor of generated images, with shape [batch_size, 784].
+    """
+    with tf.variable_scope("generator"):
+        fc1 = tf.contrib.layers.fully_connected(
+            z, num_outputs=1024, 
+            activation_fn=leaky_relu,
+            weights_initializer=tf.contrib.layers.xavier_initializer(),
+            biases_initializer=tf.constant_initializer(0.1),
+            trainable=True) # poij Should this be True?
+
+        fc2 = tf.contrib.layers.fully_connected(
+            fc1, num_outputs=1024, 
+            activation_fn=leaky_relu,
+            weights_initializer=tf.contrib.layers.xavier_initializer(),
+            biases_initializer=tf.constant_initializer(0.1),
+            trainable=True) # poij Should this be True?
+
+        img = tf.contrib.layers.fully_connected(
+            fc2, num_outputs=784, 
+            activation_fn=tf.tanh,
+            weights_initializer=tf.contrib.layers.xavier_initializer(),
+            biases_initializer=tf.constant_initializer(0.1),
+            trainable=True) # poij Should this be True?
+
+        return img
+
+def test_generator(true_count=1858320):
+    tf.reset_default_graph()
+    with get_session() as sess:
+        y = generator(tf.ones((1, 4)))
+        cur_count = count_params()
+        if cur_count != true_count:
+            print('Incorrect number of parameters in generator. {0} instead of {1}. Check your achitecture.'.format(cur_count,true_count))
+        else:
+            print('Correct number of parameters in generator.')
+        
+test_generator()
+
+def gan_loss(logits_real, logits_fake):
+    """Compute the GAN loss.
+    
+    Inputs:
+    - logits_real: Tensor, shape [batch_size, 1], output of discriminator
+        Log probability that the image is real for each real image
+    - logits_fake: Tensor, shape[batch_size, 1], output of discriminator
+        Log probability that the image is real for each fake image
+    
+    Returns:
+    - D_loss: discriminator loss scalar
+    - G_loss: generator loss scalar
+    """
+    # TODO: compute D_loss and G_loss
+    D_loss = None
+    G_loss = None
+    pass
+    return D_loss, G_loss
+
+def test_gan_loss(logits_real, logits_fake, d_loss_true, g_loss_true):
+    tf.reset_default_graph()
+    with get_session() as sess:
+        d_loss, g_loss = sess.run(gan_loss(tf.constant(logits_real), tf.constant(logits_fake)))
+    print("Maximum error in d_loss: %g"%rel_error(d_loss_true, d_loss))
+    print("Maximum error in g_loss: %g"%rel_error(g_loss_true, g_loss))
+
+test_gan_loss(answers['logits_real'], answers['logits_fake'],
+              answers['d_loss_true'], answers['g_loss_true'])
