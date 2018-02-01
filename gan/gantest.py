@@ -217,10 +217,24 @@ def gan_loss(logits_real, logits_fake):
     - D_loss: discriminator loss scalar
     - G_loss: generator loss scalar
     """
-    # TODO: compute D_loss and G_loss
-    D_loss = None
-    G_loss = None
-    pass
+    labels_ones_g = tf.ones_like(logits_fake)
+    labels_ones_d = tf.ones_like(logits_real)
+    labels_zero_d = tf.zeros_like(logits_fake)
+
+    G_loss = tf.reduce_mean(
+                tf.nn.sigmoid_cross_entropy_with_logits(
+                    labels=labels_ones_g, 
+                    logits=logits_fake))
+
+    D_loss = tf.reduce_mean(
+                tf.nn.sigmoid_cross_entropy_with_logits(
+                    labels=labels_ones_d, 
+                    logits=logits_real)) \
+           + tf.reduce_mean(
+                tf.nn.sigmoid_cross_entropy_with_logits(
+                    labels=labels_zero_d, 
+                    logits=logits_fake))
+
     return D_loss, G_loss
 
 def test_gan_loss(logits_real, logits_fake, d_loss_true, g_loss_true):
