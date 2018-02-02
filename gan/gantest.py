@@ -246,3 +246,19 @@ def test_gan_loss(logits_real, logits_fake, d_loss_true, g_loss_true):
 
 test_gan_loss(answers['logits_real'], answers['logits_fake'],
               answers['d_loss_true'], answers['g_loss_true'])
+
+def get_solvers(learning_rate=1e-3, beta1=0.5):
+    """Create solvers for GAN training.
+    
+    Inputs:
+    - learning_rate: learning rate to use for both solvers
+    - beta1: beta1 parameter for both solvers (first moment decay)
+    
+    Returns:
+    - D_solver: instance of tf.train.AdamOptimizer with correct learning_rate and beta1
+    - G_solver: instance of tf.train.AdamOptimizer with correct learning_rate and beta1
+    """
+    D_solver = tf.train.AdamOptimizer(learning_rate=learning_rate, beta1=beta1)
+    G_solver = tf.train.AdamOptimizer(learning_rate=learning_rate, beta1=beta1)
+    return D_solver, G_solver
+
