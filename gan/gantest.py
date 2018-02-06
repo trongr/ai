@@ -243,6 +243,34 @@ def test_gan_loss(logits_real, logits_fake, d_loss_true, g_loss_true):
 test_gan_loss(answers['logits_real'], answers['logits_fake'],
               answers['d_loss_true'], answers['g_loss_true'])
 
+def lsgan_loss(score_real, score_fake):
+    """Compute the Least Squares GAN loss.
+    
+    Inputs:
+    - score_real: Tensor, shape [batch_size, 1], output of discriminator
+        score for each real image
+    - score_fake: Tensor, shape[batch_size, 1], output of discriminator
+        score for each fake image    
+          
+    Returns:
+    - D_loss: discriminator loss scalar
+    - G_loss: generator loss scalar
+    """
+    D_loss = 0.5 * tf.reduce_mean((score_real - 1) ** 2) \
+           + 0.5 * tf.reduce_mean(score_fake ** 2)
+    G_loss = 0.5 * tf.reduce_mean((score_fake - 1) ** 2)
+    return D_loss, G_loss
+
+def test_lsgan_loss(score_real, score_fake, d_loss_true, g_loss_true):
+    with get_session() as sess:
+        d_loss, g_loss = sess.run(
+            lsgan_loss(tf.constant(score_real), tf.constant(score_fake)))
+    print("lsgan Maximum error in d_loss: %g"%rel_error(d_loss_true, d_loss))
+    print("lsgan Maximum error in g_loss: %g"%rel_error(g_loss_true, g_loss))
+
+test_lsgan_loss(answers['logits_real'], answers['logits_fake'],
+                answers['d_loss_lsgan_true'], answers['g_loss_lsgan_true'])
+
 def get_solvers(learning_rate=1e-3, beta1=0.5):
     """Create solvers for GAN training.
     
@@ -287,7 +315,9 @@ G_vars = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, 'generator')
 D_solver, G_solver = get_solvers()
 
 # get our loss
+# TODO. Try different losses here
 D_loss, G_loss = gan_loss(logits_real, logits_fake)
+# D_loss, G_loss = lsgan_loss(logits_real, logits_fake)
 
 # setup training steps
 D_train_step = D_solver.minimize(D_loss, var_list=D_vars)
@@ -317,7 +347,7 @@ def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_
         # every so often, show a sample result
         if it % show_every == 0:
             samples = sess.run(G_sample)
-            fig = show_images(samples[:16])
+            fig = show_images(samples[:49])
             plt.show()
             print()
         # run a batch of data through the network
@@ -333,7 +363,7 @@ def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_
     print('Final images')
     samples = sess.run(G_sample)
 
-    fig = show_images(samples[:16])
+    fig = show_images(samples[:49])
     plt.show()
 
 with get_session() as sess:
