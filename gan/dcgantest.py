@@ -9,6 +9,11 @@ plt.rcParams['figure.figsize'] = (10.0, 8.0) # set default size of plots
 plt.rcParams['image.interpolation'] = 'nearest'
 plt.rcParams['image.cmap'] = 'gray'
 
+# number of images for each batch
+batch_size = 128
+# our noise dimension
+noise_dim = 96
+
 # A bunch of utility functions
 
 def show_images(images):
@@ -161,7 +166,73 @@ def generator(z):
     TensorFlow Tensor of generated images, with shape [batch_size, 784].
     """
     with tf.variable_scope("generator"):
-        pass
+        fc1 = tf.contrib.layers.fully_connected(z, num_outputs=1024, 
+                activation_fn=tf.nn.relu) 
+        bn1 = tf.layers.batch_normalization(
+                fc1,
+                axis=-1,
+                momentum=0.99, # use default
+                epsilon=0.001, # use default
+                center=True, # enable beta
+                scale=True, # enable gamma
+                training=True) 
+        # Adversarial is always training, unless you're using generator to
+        # generate images (which you can also do during training).
+
+        in_channels_1 = 128
+        fc2 = tf.contrib.layers.fully_connected(bn1, 
+                num_outputs=7 * 7 * in_channels_1, 
+                activation_fn=tf.nn.relu) 
+        bn2 = tf.layers.batch_normalization(
+                fc2,
+                axis=-1,
+                momentum=0.99, # use default
+                epsilon=0.001, # use default
+                center=True, # enable beta
+                scale=True, # enable gamma
+                training=True)
+        rs1 = tf.reshape(bn2, [-1, 7, 7, in_channels_1])
+
+        in_channels_2 = 64
+        ct1_filter = tf.get_variable(
+                        "ct1_filter",
+                        shape=(4, 4, in_channels_2, in_channels_1),
+                        dtype=tf.float32,
+                        initializer=tf.truncated_normal_initializer(),
+                        trainable=True)
+        ct1_filter = tf.ones((4, 4, in_channels_2, in_channels_1),
+                        dtype=tf.float32)
+        ct1 = tf.nn.relu(tf.nn.conv2d_transpose(
+                rs1,
+                filter=ct1_filter,
+                output_shape=(batch_size, 14, 14, in_channels_2),
+                strides=(1, 2, 2, 1),
+                padding='SAME',
+                data_format='NHWC'))
+
+        bn3 = tf.layers.batch_normalization(
+                ct1,
+                axis=-1, # batch normalize over channels (alt: axis=3)
+                momentum=0.99, # use default
+                epsilon=0.001, # use default
+                center=True, # enable beta
+                scale=True, # enable gamma
+                training=True)
+
+        ct2_filter = tf.get_variable(
+                        "ct2_filter",
+                        shape=(4, 4, 1, in_channels_2),
+                        dtype=tf.float32,
+                        initializer=tf.truncated_normal_initializer(),
+                        trainable=True)
+        img = tf.tanh(tf.nn.conv2d_transpose(
+                bn3,
+                filter=ct2_filter,
+                output_shape=(batch_size, 28, 28, 1),
+                strides=(1, 2, 2, 1),
+                padding='SAME',
+                data_format='NHWC'))
+
         return img
 
 def test_generator(true_count):
@@ -243,7 +314,7 @@ def test_lsgan_loss(score_real, score_fake, d_loss_true, g_loss_true):
 test_lsgan_loss(answers['logits_real'], answers['logits_fake'],
                 answers['d_loss_lsgan_true'], answers['g_loss_lsgan_true'])
 
-def get_solvers(learning_rate=1e-3, beta1=0.5):
+def get_solvers(dlr=1e-7, glr=1e-3, beta1=0.5):
     """Create solvers for GAN training.
     
     Inputs:
@@ -254,20 +325,15 @@ def get_solvers(learning_rate=1e-3, beta1=0.5):
     - D_solver: instance of tf.train.AdamOptimizer with correct learning_rate and beta1
     - G_solver: instance of tf.train.AdamOptimizer with correct learning_rate and beta1
     """
-    D_solver = tf.train.AdamOptimizer(learning_rate=learning_rate, beta1=beta1)
-    G_solver = tf.train.AdamOptimizer(learning_rate=learning_rate, beta1=beta1)
+    D_solver = tf.train.AdamOptimizer(learning_rate=dlr, beta1=beta1)
+    G_solver = tf.train.AdamOptimizer(learning_rate=glr, beta1=beta1)
     return D_solver, G_solver
 
 tf.reset_default_graph()
 
-# number of images for each batch
-batch_size = 128
-# our noise dimension
-noise_dim = 96
-
 # placeholder for images from the training dataset
 x = tf.placeholder(tf.float32, [None, 784])
-# random noise fed into our generator
+# random noise fed into our (generator)
 z = sample_noise(batch_size, noise_dim)
 # generated images
 G_sample = generator(z)
@@ -277,7 +343,7 @@ with tf.variable_scope("") as scope:
     logits_real = discriminator(preprocess_img(x))
     # Re-use discriminator weights on new inputs
     scope.reuse_variables()
-    logits_fake = discriminator(G_sample)
+    logits_fake = discriminator(G_sample) 
 
 # Get the list of variables for the discriminator and generator
 D_vars = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, 'discriminator')
@@ -288,14 +354,17 @@ D_solver, G_solver = get_solvers()
 
 # get our loss
 # TODO. Try different losses here
-D_loss, G_loss = gan_loss(logits_real, logits_fake)
-# D_loss, G_loss = lsgan_loss(logits_real, logits_fake)
+# D_loss, G_loss = gan_loss(logits_real, logits_fake)
+D_loss, G_loss = lsgan_loss(logits_real, logits_fake)
 
 # setup training steps
-D_train_step = D_solver.minimize(D_loss, var_list=D_vars)
-G_train_step = G_solver.minimize(G_loss, var_list=G_vars)
 D_extra_step = tf.get_collection(tf.GraphKeys.UPDATE_OPS, 'discriminator')
+with tf.control_dependencies(D_extra_step):
+    D_train_step = D_solver.minimize(D_loss, var_list=D_vars)        
+
 G_extra_step = tf.get_collection(tf.GraphKeys.UPDATE_OPS, 'generator')
+with tf.control_dependencies(G_extra_step):
+    G_train_step = G_solver.minimize(G_loss, var_list=G_vars)
 
 # a giant helper function
 def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_extra_step,\
