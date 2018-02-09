@@ -28,3 +28,4 @@ audio/output/*/*.wav
 *.mscz,
 audio/output/History/
 audio/output/*/History/
+gan/dcgansave/
