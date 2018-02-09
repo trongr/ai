@@ -10,9 +10,14 @@ plt.rcParams['figure.figsize'] = (10.0, 8.0) # set default size of plots
 plt.rcParams['image.interpolation'] = 'nearest'
 plt.rcParams['image.cmap'] = 'gray'
 
+# number of images for each batch
+batch_size = 128
+# our noise dimension
+noise_dim = 96
+
 # A bunch of utility functions
 
-def save_images(dir, images, i):
+def save_images(dir, images, it):
     images = np.reshape(images, [images.shape[0], -1])  # images reshape to (batch_size, D)
     sqrtn = int(np.ceil(np.sqrt(images.shape[0])))
     sqrtimg = int(np.ceil(np.sqrt(images.shape[1])))
@@ -28,7 +33,9 @@ def save_images(dir, images, i):
         ax.set_yticklabels([])
         ax.set_aspect('equal')
         plt.imshow(img.reshape([sqrtimg,sqrtimg]))
-    fig.savefig(dir + "/" + str(i).zfill(6) + ".jpg")
+    imgpath = dir + "/" + str(it).zfill(10) + ".jpg"
+    print("Saving img " + imgpath)    
+    fig.savefig(imgpath)
     plt.close(fig)
     return
 
@@ -147,7 +154,8 @@ def test_discriminator(true_count=267009):
         else:
             print('Correct number of parameters in discriminator.')
         
-test_discriminator()
+# test_discriminator(1102721) # valid padding in conv2d
+test_discriminator(3265409) # same padding in conv2d
 
 def generator(z):
     """Generate images from a random noise vector.
@@ -238,7 +246,7 @@ def test_generator(true_count=1858320):
         else:
             print('Correct number of parameters in generator.')
         
-test_generator()
+test_generator(6595521)
 
 def gan_loss(logits_real, logits_fake):
     """Compute the GAN loss.
@@ -307,7 +315,7 @@ def test_lsgan_loss(score_real, score_fake, d_loss_true, g_loss_true):
 test_lsgan_loss(answers['logits_real'], answers['logits_fake'],
                 answers['d_loss_lsgan_true'], answers['g_loss_lsgan_true'])
 
-def get_solvers(learning_rate=1e-3, beta1=0.5):
+def get_solvers(dlr=1e-7, glr=1e-3, beta1=0.5):
     """Create solvers for GAN training.
     
     Inputs:
@@ -318,16 +326,11 @@ def get_solvers(learning_rate=1e-3, beta1=0.5):
     - D_solver: instance of tf.train.AdamOptimizer with correct learning_rate and beta1
     - G_solver: instance of tf.train.AdamOptimizer with correct learning_rate and beta1
     """
-    D_solver = tf.train.AdamOptimizer(learning_rate=learning_rate, beta1=beta1)
-    G_solver = tf.train.AdamOptimizer(learning_rate=learning_rate, beta1=beta1)
+    D_solver = tf.train.AdamOptimizer(learning_rate=dlr, beta1=beta1)
+    G_solver = tf.train.AdamOptimizer(learning_rate=glr, beta1=beta1)
     return D_solver, G_solver
 
 tf.reset_default_graph()
-
-# number of images for each batch
-batch_size = 128
-# our noise dimension
-noise_dim = 96
 
 # placeholder for images from the training dataset
 x = tf.placeholder(tf.float32, [None, 784])
@@ -352,14 +355,17 @@ D_solver, G_solver = get_solvers()
 
 # get our loss
 # TODO. Try different losses here
-D_loss, G_loss = gan_loss(logits_real, logits_fake)
-# D_loss, G_loss = lsgan_loss(logits_real, logits_fake)
+# D_loss, G_loss = gan_loss(logits_real, logits_fake)
+D_loss, G_loss = lsgan_loss(logits_real, logits_fake)
 
 # setup training steps
-D_train_step = D_solver.minimize(D_loss, var_list=D_vars)
-G_train_step = G_solver.minimize(G_loss, var_list=G_vars)
 D_extra_step = tf.get_collection(tf.GraphKeys.UPDATE_OPS, 'discriminator')
+with tf.control_dependencies(D_extra_step):
+    D_train_step = D_solver.minimize(D_loss, var_list=D_vars)
+
 G_extra_step = tf.get_collection(tf.GraphKeys.UPDATE_OPS, 'generator')
+with tf.control_dependencies(G_extra_step):
+    G_train_step = G_solver.minimize(G_loss, var_list=G_vars)
 
 # a giant helper function
 def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_extra_step,\
@@ -377,9 +383,9 @@ def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_
     Returns:
         Nothing
     """
-    SAVE_DST = "dcgansave/"
+    SAVE_DST = "dcgansave"
     Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1) 
-    if glob.glob(SAVE_DST + "*"):
+    if glob.glob(SAVE_DST + "/*"):
         Saver.restore(sess, tf.train.latest_checkpoint(SAVE_DST))
 
     # compute the number of iterations we need
@@ -402,10 +408,10 @@ def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_
             print('Iter: {}, D: {:.4}, G: {:.4}'.format(it, D_loss_curr, 
                 G_loss_curr))
 
-        if it % 200 == 0:
-            Saver.save(sess, SAVE_DST, global_step=it)
+        if it % 10 == 0:
+            Saver.save(sess, SAVE_DST + "/dcgan", global_step=it)
 
 with get_session() as sess:
     sess.run(tf.global_variables_initializer())
     run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, 
-            G_extra_step, D_extra_step)
+            G_extra_step, D_extra_step, show_every=200, num_epoch=1000)
