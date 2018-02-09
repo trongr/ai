@@ -1,6 +1,7 @@
 from __future__ import print_function, division
 import tensorflow as tf
 import numpy as np
+import glob
 
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
@@ -11,7 +12,7 @@ plt.rcParams['image.cmap'] = 'gray'
 
 # A bunch of utility functions
 
-def show_images(images):
+def save_images(dir, images, i):
     images = np.reshape(images, [images.shape[0], -1])  # images reshape to (batch_size, D)
     sqrtn = int(np.ceil(np.sqrt(images.shape[0])))
     sqrtimg = int(np.ceil(np.sqrt(images.shape[1])))
@@ -27,7 +28,8 @@ def show_images(images):
         ax.set_yticklabels([])
         ax.set_aspect('equal')
         plt.imshow(img.reshape([sqrtimg,sqrtimg]))
-    plt.show()
+    fig.savefig(dir + "/" + str(i).zfill(6) + ".jpg")
+    plt.close(fig)
     return
 
 def preprocess_img(x):
@@ -55,9 +57,6 @@ answers = np.load('gan-checks-tf.npz')
 
 from tensorflow.examples.tutorials.mnist import input_data
 mnist = input_data.read_data_sets('./cs231n/datasets/MNIST_data', one_hot=False)
-
-# show a batch
-# show_images(mnist.train.next_batch(16)[0])
 
 def leaky_relu(x, alpha=0.01):
     """Compute the leaky ReLU activation function.
@@ -124,27 +123,18 @@ def discriminator(x):
     for an image being real for each input image.
     """
     with tf.variable_scope("discriminator"):
-        fc1 = tf.contrib.layers.fully_connected(
-            x, num_outputs=256, 
-            activation_fn=leaky_relu,
-            weights_initializer=tf.contrib.layers.xavier_initializer(),
-            biases_initializer=tf.constant_initializer(0.1),
-            trainable=True) 
-
-        fc2 = tf.contrib.layers.fully_connected(
-            fc1, num_outputs=256, 
-            activation_fn=leaky_relu,
-            weights_initializer=tf.contrib.layers.xavier_initializer(),
-            biases_initializer=tf.constant_initializer(0.1),
-            trainable=True) 
-
-        logits = tf.contrib.layers.fully_connected(
-            fc2, num_outputs=1, 
-            activation_fn=None,
-            weights_initializer=tf.contrib.layers.xavier_initializer(),
-            biases_initializer=tf.constant_initializer(0.1),
-            trainable=True) 
-
+        input_layer = tf.reshape(x, [-1, 28, 28, 1])
+        c1 = tf.layers.conv2d(inputs=input_layer, filters=32, 
+                kernel_size=5, strides=1, padding='same', 
+                activation=leaky_relu)
+        p1 = tf.layers.max_pooling2d(inputs=c1, pool_size=2, strides=2)
+        c2 = tf.layers.conv2d(inputs=p1, filters=64, kernel_size=5, strides=1, 
+                padding='same', activation=leaky_relu)
+        p2 = tf.layers.max_pooling2d(inputs=c2, pool_size=2, strides=2)
+        f1 = tf.reshape(p2, [-1, 7 * 7 * 64]) # For same padding
+        # f1 = tf.reshape(p2, [-1, 4 * 4 * 64]) # For valid padding
+        fc1 = tf.layers.dense(inputs=f1, units=1024, activation=leaky_relu)
+        logits = tf.layers.dense(inputs=fc1, units=1)
         return logits
 
 def test_discriminator(true_count=267009):
@@ -169,29 +159,75 @@ def generator(z):
     TensorFlow Tensor of generated images, with shape [batch_size, 784].
     """
     with tf.variable_scope("generator"):
-        fc1 = tf.contrib.layers.fully_connected(
-            z, num_outputs=1024, 
-            activation_fn=leaky_relu,
-            weights_initializer=tf.contrib.layers.xavier_initializer(),
-            biases_initializer=tf.constant_initializer(0.1),
-            trainable=True) 
+        fc1 = tf.contrib.layers.fully_connected(z, num_outputs=1024, 
+                activation_fn=tf.nn.relu) 
+        bn1 = tf.layers.batch_normalization(
+                fc1,
+                axis=-1,
+                momentum=0.99, # use default
+                epsilon=0.001, # use default
+                center=True, # enable beta
+                scale=True, # enable gamma
+                training=True) 
+        # Adversarial is always training, unless you're using generator to
+        # generate images (which you can also do during training).
 
-        fc2 = tf.contrib.layers.fully_connected(
-            fc1, num_outputs=1024, 
-            activation_fn=leaky_relu,
-            weights_initializer=tf.contrib.layers.xavier_initializer(),
-            biases_initializer=tf.constant_initializer(0.1),
-            trainable=True) 
+        in_channels_1 = 128
+        fc2 = tf.contrib.layers.fully_connected(bn1, 
+                num_outputs=7 * 7 * in_channels_1, 
+                activation_fn=tf.nn.relu) 
+        bn2 = tf.layers.batch_normalization(
+                fc2,
+                axis=-1,
+                momentum=0.99, # use default
+                epsilon=0.001, # use default
+                center=True, # enable beta
+                scale=True, # enable gamma
+                training=True)
+        rs1 = tf.reshape(bn2, [-1, 7, 7, in_channels_1])
 
-        img = tf.contrib.layers.fully_connected(
-            fc2, num_outputs=784, 
-            activation_fn=tf.tanh,
-            weights_initializer=tf.contrib.layers.xavier_initializer(),
-            biases_initializer=tf.constant_initializer(0.1),
-            trainable=True) 
+        in_channels_2 = 64
+        ct1_filter = tf.get_variable(
+                        "ct1_filter",
+                        shape=(4, 4, in_channels_2, in_channels_1),
+                        dtype=tf.float32,
+                        initializer=tf.truncated_normal_initializer(),
+                        trainable=True)
+        ct1_filter = tf.ones((4, 4, in_channels_2, in_channels_1),
+                        dtype=tf.float32)
+        ct1 = tf.nn.relu(tf.nn.conv2d_transpose(
+                rs1,
+                filter=ct1_filter,
+                output_shape=(batch_size, 14, 14, in_channels_2),
+                strides=(1, 2, 2, 1),
+                padding='SAME',
+                data_format='NHWC'))
+
+        bn3 = tf.layers.batch_normalization(
+                ct1,
+                axis=-1, # batch normalize over channels (alt: axis=3)
+                momentum=0.99, # use default
+                epsilon=0.001, # use default
+                center=True, # enable beta
+                scale=True, # enable gamma
+                training=True)
+
+        ct2_filter = tf.get_variable(
+                        "ct2_filter",
+                        shape=(4, 4, 1, in_channels_2),
+                        dtype=tf.float32,
+                        initializer=tf.truncated_normal_initializer(),
+                        trainable=True)
+        img = tf.tanh(tf.nn.conv2d_transpose(
+                bn3,
+                filter=ct2_filter,
+                output_shape=(batch_size, 28, 28, 1),
+                strides=(1, 2, 2, 1),
+                padding='SAME',
+                data_format='NHWC'))
 
         return img
-
+        
 def test_generator(true_count=1858320):
     tf.reset_default_graph()
     with get_session() as sess:
@@ -341,20 +377,19 @@ def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_
     Returns:
         Nothing
     """
-    SAVE_DST = "dcgansave"
+    SAVE_DST = "dcgansave/"
     Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1) 
-        if glob.glob(SAVE_DST + "*"):
-            Saver.restore(sess, tf.train.latest_checkpoint(SAVE_DST))
+    if glob.glob(SAVE_DST + "*"):
+        Saver.restore(sess, tf.train.latest_checkpoint(SAVE_DST))
 
     # compute the number of iterations we need
     max_iter = int(mnist.train.num_examples*num_epoch/batch_size)
     for it in range(max_iter):
-        # every so often, show a sample result
+        # every so often, save a sample to disk
         if it % show_every == 0:
             samples = sess.run(G_sample)
-            fig = show_images(samples[:49])
-            plt.show()
-            print()
+            save_images("dcganimgs01", samples[:49], it)
+
         # run a batch of data through the network
         minibatch_x, minbatch_y = mnist.train.next_batch(batch_size)
         _, D_loss_curr = sess.run([D_train_step, D_loss], 
@@ -364,16 +399,11 @@ def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_
         # print loss every so often.
         # We want to make sure D_loss doesn't go to 0
         if it % print_every == 0:
-            print('Iter: {}, D: {:.4}, G:{:.4}'.format(it,D_loss_curr,G_loss_curr))
+            print('Iter: {}, D: {:.4}, G: {:.4}'.format(it, D_loss_curr, 
+                G_loss_curr))
 
         if it % 200 == 0:
-            Saver.save(sess, SAVE_DST, global_step=i)
-
-    print('Final images')
-    samples = sess.run(G_sample)
-
-    fig = show_images(samples[:49])
-    plt.show()
+            Saver.save(sess, SAVE_DST, global_step=it)
 
 with get_session() as sess:
     sess.run(tf.global_variables_initializer())
