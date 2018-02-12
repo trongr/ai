@@ -315,7 +315,7 @@ def test_lsgan_loss(score_real, score_fake, d_loss_true, g_loss_true):
 test_lsgan_loss(answers['logits_real'], answers['logits_fake'],
                 answers['d_loss_lsgan_true'], answers['g_loss_lsgan_true'])
 
-def get_solvers(dlr=1e-7, glr=1e-3, beta1=0.5):
+def get_solvers(dlr=5e-7, glr=1e-3, beta1=0.5):
     """Create solvers for GAN training.
     
     Inputs:
