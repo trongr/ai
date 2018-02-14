@@ -80,23 +80,26 @@ def D(X):
 
 
 G_sample = G(z)
-
 D_real = D(X)
 D_fake = D(G_sample)
 
 D_target = 1./mb_size
-G_target = 1./(mb_size*2)
+G_target = 1./mb_size
 
-Z = tf.reduce_sum(tf.exp(-D_real)) + tf.reduce_sum(tf.exp(-D_fake))
-
-D_loss = tf.reduce_sum(D_target * D_real) + log(Z)
-G_loss = tf.reduce_sum(G_target * D_real) + tf.reduce_sum(G_target * D_fake) 
+"""
+Don't need the first term in G_loss:
+G_loss = tf.reduce_sum(G_target * D_real) 
+            + tf.reduce_sum(G_target * D_fake) 
             + log(Z)
+"""
+Z = tf.reduce_sum(tf.exp(-D_real)) + tf.reduce_sum(tf.exp(-D_fake))
+D_loss = tf.reduce_sum(D_target * D_real) + log(Z)
+G_loss = tf.reduce_sum(G_target * D_fake) + log(Z)
 
-D_solver = tf.train.AdamOptimizer(learning_rate=lr)
-            .minimize(D_loss, var_list=theta_D)
-G_solver = tf.train.AdamOptimizer(learning_rate=lr)
-            .minimize(G_loss, var_list=theta_G)
+D_solver = (tf.train.AdamOptimizer(learning_rate=lr)
+            .minimize(D_loss, var_list=theta_D))
+G_solver = (tf.train.AdamOptimizer(learning_rate=lr)
+            .minimize(G_loss, var_list=theta_G))
 
 sess = tf.Session()
 sess.run(tf.global_variables_initializer())
@@ -112,7 +115,7 @@ for it in range(1000000):
 
     _, D_loss_curr = sess.run([D_solver, D_loss], feed_dict={X: X_mb, z: z_mb})
     _, G_loss_curr = sess.run([G_solver, G_loss], feed_dict={X: X_mb, z: z_mb})
-
+    
     if it % 1000 == 0:
         print('Iter: {}; D_loss: {:.4}; G_loss: {:.4}'
               .format(it, D_loss_curr, G_loss_curr))
