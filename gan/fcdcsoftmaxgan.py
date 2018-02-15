@@ -113,14 +113,14 @@ def generator(z):
     with tf.variable_scope("generator"):
         fc1 = tf.contrib.layers.fully_connected(
             z, num_outputs=1024, 
-            activation_fn=tf.nn.relu,
+            activation_fn=leaky_relu,
             weights_initializer=tf.contrib.layers.xavier_initializer(),
             biases_initializer=tf.constant_initializer(0.1),
             trainable=True) 
 
         fc2 = tf.contrib.layers.fully_connected(
             fc1, num_outputs=1024, 
-            activation_fn=tf.nn.relu,
+            activation_fn=leaky_relu,
             weights_initializer=tf.contrib.layers.xavier_initializer(),
             biases_initializer=tf.constant_initializer(0.1),
             trainable=True) 
@@ -134,21 +134,6 @@ def generator(z):
 
         return img    
  
-def get_solvers(dlr=5e-7, glr=1e-3, beta1=0.5):
-    """Create solvers for GAN training.
-    
-    Inputs:
-    - learning_rate: learning rate to use for both solvers
-    - beta1: beta1 parameter for both solvers (first moment decay)
-    
-    Returns:
-    - D_solver: instance of tf.train.AdamOptimizer with correct learning_rate and beta1
-    - G_solver: instance of tf.train.AdamOptimizer with correct learning_rate and beta1
-    """
-    D_solver = tf.train.AdamOptimizer(learning_rate=dlr, beta1=beta1)
-    G_solver = tf.train.AdamOptimizer(learning_rate=glr, beta1=beta1)
-    return D_solver, G_solver
-
 def log(x):
     return tf.log(x + 1e-8)
 
@@ -175,7 +160,11 @@ Z = tf.reduce_sum(tf.exp(-D_real)) + tf.reduce_sum(tf.exp(-D_fake))
 D_loss = tf.reduce_sum(D_target * D_real) + log(Z)
 G_loss = tf.reduce_sum(G_target * D_fake) + log(Z)
 
-D_solver, G_solver = get_solvers()
+dlr, glr = 1e-4, 1e-3
+beta1 = 0.5
+D_solver = tf.train.AdamOptimizer(learning_rate=dlr, beta1=beta1)
+G_solver = tf.train.AdamOptimizer(learning_rate=glr, beta1=beta1)
+
 D_extra_step = tf.get_collection(tf.GraphKeys.UPDATE_OPS, 'discriminator')
 with tf.control_dependencies(D_extra_step):
     D_train_step = D_solver.minimize(D_loss, var_list=D_vars)
@@ -206,12 +195,12 @@ def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_
     Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1) 
     if glob.glob(save_dir + "/*"):
         Saver.restore(sess, tf.train.latest_checkpoint(save_dir))
-
+    
     # compute the number of iterations we need
     max_iter = int(mnist.train.num_examples*num_epoch/batch_size)
     for it in range(max_iter):
         minibatch_x, minbatch_y = mnist.train.next_batch(batch_size)
-        z_noise = sample_z(batch_size, noise_dim)  
+        z_noise = sample_z(batch_size, noise_dim)          
 
         if it % show_every == 0:
             samples = sess.run(G_sample, feed_dict={z: z_noise})

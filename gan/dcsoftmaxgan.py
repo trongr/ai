@@ -187,21 +187,6 @@ def generator(z):
                 data_format='NHWC'))
 
         return img
- 
-def get_solvers(dlr=5e-7, glr=1e-3, beta1=0.5):
-    """Create solvers for GAN training.
-    
-    Inputs:
-    - learning_rate: learning rate to use for both solvers
-    - beta1: beta1 parameter for both solvers (first moment decay)
-    
-    Returns:
-    - D_solver: instance of tf.train.AdamOptimizer with correct learning_rate and beta1
-    - G_solver: instance of tf.train.AdamOptimizer with correct learning_rate and beta1
-    """
-    D_solver = tf.train.AdamOptimizer(learning_rate=dlr, beta1=beta1)
-    G_solver = tf.train.AdamOptimizer(learning_rate=glr, beta1=beta1)
-    return D_solver, G_solver
 
 def log(x):
     return tf.log(x + 1e-8)
@@ -229,7 +214,11 @@ Z = tf.reduce_sum(tf.exp(-D_real)) + tf.reduce_sum(tf.exp(-D_fake))
 D_loss = tf.reduce_sum(D_target * D_real) + log(Z)
 G_loss = tf.reduce_sum(G_target * D_fake) + log(Z)
 
-D_solver, G_solver = get_solvers()
+dlr, glr = 1e-3, 1e-3
+beta1 = 0.5
+D_solver = tf.train.AdamOptimizer(learning_rate=dlr, beta1=beta1)
+G_solver = tf.train.AdamOptimizer(learning_rate=glr, beta1=beta1)
+
 D_extra_step = tf.get_collection(tf.GraphKeys.UPDATE_OPS, 'discriminator')
 with tf.control_dependencies(D_extra_step):
     D_train_step = D_solver.minimize(D_loss, var_list=D_vars)
