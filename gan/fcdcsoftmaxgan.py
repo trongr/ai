@@ -39,7 +39,6 @@ def save_images(dir, images, it):
     print("Saving img " + imgpath)    
     fig.savefig(imgpath)
     plt.close(fig)
-    return
 
 def preprocess_img(x):
     return 2 * x - 1.0

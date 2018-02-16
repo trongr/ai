@@ -1,4 +1,6 @@
 from __future__ import print_function, division
+import os
+import glob
 import tensorflow as tf
 import numpy as np
 
@@ -9,9 +11,11 @@ plt.rcParams['figure.figsize'] = (10.0, 8.0) # set default size of plots
 plt.rcParams['image.interpolation'] = 'nearest'
 plt.rcParams['image.cmap'] = 'gray'
 
-# A bunch of utility functions
+def mkdir_p(dir):
+    if not os.path.exists(dir):
+        os.makedirs(dir)
 
-def show_images(images):
+def save_images(dir, images, it):
     images = np.reshape(images, [images.shape[0], -1])  # images reshape to (batch_size, D)
     sqrtn = int(np.ceil(np.sqrt(images.shape[0])))
     sqrtimg = int(np.ceil(np.sqrt(images.shape[1])))
@@ -27,8 +31,10 @@ def show_images(images):
         ax.set_yticklabels([])
         ax.set_aspect('equal')
         plt.imshow(img.reshape([sqrtimg,sqrtimg]))
-    plt.show()
-    return
+    imgpath = dir + "/" + str(it).zfill(10) + ".jpg"
+    print("Saving img " + imgpath)    
+    fig.savefig(imgpath)
+    plt.close(fig)
 
 def preprocess_img(x):
     return 2 * x - 1.0
@@ -55,9 +61,6 @@ answers = np.load('gan-checks-tf.npz')
 
 from tensorflow.examples.tutorials.mnist import input_data
 mnist = input_data.read_data_sets('./cs231n/datasets/MNIST_data', one_hot=False)
-
-# show a batch
-# show_images(mnist.train.next_batch(16)[0])
 
 def leaky_relu(x, alpha=0.01):
     """Compute the leaky ReLU activation function.
@@ -288,44 +291,31 @@ def get_solvers(learning_rate=1e-3, beta1=0.5):
 
 tf.reset_default_graph()
 
-# number of images for each batch
 batch_size = 128
-# our noise dimension
 noise_dim = 96
 
-# placeholder for images from the training dataset
 x = tf.placeholder(tf.float32, [None, 784])
-# random noise fed into our generator
 z = sample_noise(batch_size, noise_dim)
-# generated images
 G_sample = generator(z)
 
 with tf.variable_scope("") as scope:
-    #scale images to be -1 to 1
     logits_real = discriminator(preprocess_img(x))
     # Re-use discriminator weights on new inputs
     scope.reuse_variables()
     logits_fake = discriminator(G_sample)
 
-# Get the list of variables for the discriminator and generator
 D_vars = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, 'discriminator')
 G_vars = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, 'generator') 
 
-# get our solver
 D_solver, G_solver = get_solvers()
-
-# get our loss
-# TODO. Try different losses here
 D_loss, G_loss = gan_loss(logits_real, logits_fake)
 # D_loss, G_loss = lsgan_loss(logits_real, logits_fake)
 
-# setup training steps
 D_train_step = D_solver.minimize(D_loss, var_list=D_vars)
 G_train_step = G_solver.minimize(G_loss, var_list=G_vars)
 D_extra_step = tf.get_collection(tf.GraphKeys.UPDATE_OPS, 'discriminator')
 G_extra_step = tf.get_collection(tf.GraphKeys.UPDATE_OPS, 'generator')
 
-# a giant helper function
 def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_extra_step,\
               show_every=250, print_every=50, batch_size=128, num_epoch=10):
     """Train a GAN for a certain number of epochs.
@@ -341,32 +331,34 @@ def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_
     Returns:
         Nothing
     """
-    # compute the number of iterations we need
+    out_dir = "out"
+    save_dir = "save"
+    mkdir_p(out_dir)
+    mkdir_p(save_dir)
+
+    Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1) 
+    if glob.glob(save_dir + "/*"):
+        Saver.restore(sess, tf.train.latest_checkpoint(save_dir))
+
     max_iter = int(mnist.train.num_examples*num_epoch/batch_size)
     for it in range(max_iter):
-        # every so often, show a sample result
         if it % show_every == 0:
             samples = sess.run(G_sample)
-            fig = show_images(samples[:49])
-            plt.show()
-            print()
-        # run a batch of data through the network
+            save_images(out_dir, samples[:49], it)
+
         minibatch_x, minbatch_y = mnist.train.next_batch(batch_size)
         _, D_loss_curr = sess.run([D_train_step, D_loss], 
                             feed_dict={x: minibatch_x})
         _, G_loss_curr = sess.run([G_train_step, G_loss])
 
-        # print loss every so often.
-        # We want to make sure D_loss doesn't go to 0
-        if it % print_every == 0:
-            print('Iter: {}, D: {:.4}, G:{:.4}'.format(it,D_loss_curr,G_loss_curr))
-    print('Final images')
-    samples = sess.run(G_sample)
+        if it % print_every == 0: # We want to make sure D_loss doesn't go to 0
+            print('Iter: {}, D: {:.4}, G: {:.4}'.format(it, D_loss_curr, 
+                G_loss_curr))
 
-    fig = show_images(samples[:49])
-    plt.show()
+        if it % 10 == 0:
+            Saver.save(sess, save_dir + "/gan", global_step=it)
 
 with get_session() as sess:
     sess.run(tf.global_variables_initializer())
     run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, 
-            G_extra_step, D_extra_step)
+            G_extra_step, D_extra_step, show_every=200, num_epoch=1000)
