@@ -295,7 +295,7 @@ batch_size = 128
 noise_dim = 96
 
 x = tf.placeholder(tf.float32, [None, 784])
-z = sample_noise(batch_size, noise_dim)
+z = sample_noise(batch_size, noise_dim) # This generates new values every iteration
 G_sample = generator(z)
 
 with tf.variable_scope("") as scope:
@@ -347,8 +347,7 @@ def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_
             save_images(out_dir, samples[:49], it)
 
         minibatch_x, minbatch_y = mnist.train.next_batch(batch_size)
-        _, D_loss_curr = sess.run([D_train_step, D_loss], 
-                            feed_dict={x: minibatch_x})
+        _, D_loss_curr = sess.run([D_train_step, D_loss], feed_dict={x: minibatch_x})
         _, G_loss_curr = sess.run([G_train_step, G_loss])
 
         if it % print_every == 0: # We want to make sure D_loss doesn't go to 0
