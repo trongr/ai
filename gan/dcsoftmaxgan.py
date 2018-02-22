@@ -13,7 +13,8 @@ plt.rcParams['image.cmap'] = 'gray'
 
 batch_size = 128
 x_dim = 784 # 28 * 28, dimension of each image
-noise_dim = 96
+# noise_dim = 96 # TODO. Adjust
+noise_dim = 32
 
 def mkdir_p(dir):
     if not os.path.exists(dir):
