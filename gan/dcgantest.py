@@ -145,8 +145,6 @@ def generator(z):
                         dtype=tf.float32,
                         initializer=tf.truncated_normal_initializer(),
                         trainable=True)
-        ct1_filter = tf.ones((4, 4, in_channels_2, in_channels_1),
-                        dtype=tf.float32)
         ct1 = tf.nn.relu(tf.nn.conv2d_transpose(
                 rs1,
                 filter=ct1_filter,
@@ -154,7 +152,6 @@ def generator(z):
                 strides=(1, 2, 2, 1),
                 padding='SAME',
                 data_format='NHWC'))
-
         bn3 = tf.layers.batch_normalization(
                 ct1,
                 axis=-1, # batch normalize over channels (alt: axis=3)
