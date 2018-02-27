@@ -136,9 +136,12 @@ def generator(z):
                 kernel_size=5, strides=1, padding='same', 
                 activation=leaky_relu)
 
+        # We don't actually need another layer to turn the (N, 28, 28, 1) img
+        # into (N, 784). But verify just to be sure. In any case another layer 
+        # might help the network learn.
+        #
         # img = tf.reduce_mean(c2, axis=3, keep_dims=True)
-        # print("poij img shape", img.get_shape())
-        
+        #
         avg = tf.reduce_mean(c2, axis=3, keep_dims=True)
         rs2 = tf.reshape(x, [-1, x_dim]) # Reshape cause we want ~ (N, 784) instead of ~ (N, 28, 28, 1)
         # Need this last FC layer cause for some reason you can't have reshape
