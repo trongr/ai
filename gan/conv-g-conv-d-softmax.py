@@ -137,7 +137,6 @@ def generator(z):
                 activation=leaky_relu)
 
         # img = tf.reduce_mean(c2, axis=3, keep_dims=True)
-        # print("poij img shape", img.get_shape())
         
         avg = tf.reduce_mean(c2, axis=3, keep_dims=True)
         rs2 = tf.reshape(x, [-1, x_dim]) # Reshape cause we want ~ (N, 784) instead of ~ (N, 28, 28, 1)
@@ -200,7 +199,7 @@ def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_
         z_noise = sample_z(batch_size, noise_dim)          
 
         if it % show_every == 0:
-            samples = sess.run(G_sample, feed_dict={z: z_noise})
+            samples = sess.run(G_sample, feed_dict={x: xmb, z: z_noise})
             save_images(out_dir, samples[:49], it)
 
         _, D_loss_curr = sess.run([D_train_step, D_loss], 
