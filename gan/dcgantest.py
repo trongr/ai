@@ -239,10 +239,10 @@ D_vars = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, 'discriminator')
 G_vars = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, 'generator') 
 
 beta1 = 0.5
-D_solver = tf.train.AdamOptimizer(learning_rate=5e-7, beta1=beta1)
+D_solver = tf.train.AdamOptimizer(learning_rate=1e-3, beta1=beta1)
 G_solver = tf.train.AdamOptimizer(learning_rate=1e-3, beta1=beta1)
-# D_loss, G_loss = gan_loss(logits_real, logits_fake)
-D_loss, G_loss = lsgan_loss(logits_real, logits_fake)
+D_loss, G_loss = gan_loss(logits_real, logits_fake)
+# D_loss, G_loss = lsgan_loss(logits_real, logits_fake)
 
 D_extra_step = tf.get_collection(tf.GraphKeys.UPDATE_OPS, 'discriminator')
 with tf.control_dependencies(D_extra_step):

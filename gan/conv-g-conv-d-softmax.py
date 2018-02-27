@@ -136,7 +136,16 @@ def generator(z):
                 kernel_size=5, strides=1, padding='same', 
                 activation=leaky_relu)
 
-        img = tf.reduce_mean(c2, axis=3, keep_dims=True)
+        # img = tf.reduce_mean(c2, axis=3, keep_dims=True)
+        # print("poij img shape", img.get_shape())
+        
+        avg = tf.reduce_mean(c2, axis=3, keep_dims=True)
+        rs2 = tf.reshape(x, [-1, x_dim]) # Reshape cause we want ~ (N, 784) instead of ~ (N, 28, 28, 1)
+        # Need this last FC layer cause for some reason you can't have reshape
+        # as the last layer cause it has no gradient.
+        img = tf.contrib.layers.fully_connected(rs2, num_outputs=x_dim, 
+                activation_fn=tf.tanh) 
+
         return img 
  
 def log(x):
