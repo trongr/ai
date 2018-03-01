@@ -82,17 +82,27 @@ def discriminator(x):
     for an image being real for each input image.
     """
     with tf.variable_scope("discriminator"):
-        input_layer = tf.reshape(x, [-1, 28, 28, 1])
-        c1 = tf.layers.conv2d(inputs=input_layer, filters=32, 
-                kernel_size=5, strides=1, padding='same', 
-                activation=leaky_relu)
-        c2 = tf.layers.conv2d(inputs=c1, filters=64, kernel_size=5, strides=1, 
-                padding='same', activation=leaky_relu)
+        fc1 = tf.contrib.layers.fully_connected(
+            x, num_outputs=256, 
+            activation_fn=leaky_relu,
+            weights_initializer=tf.contrib.layers.xavier_initializer(),
+            biases_initializer=tf.constant_initializer(0.1),
+            trainable=True) 
 
-        f1 = tf.reshape(c2, [-1, 7 * 7 * 64])
-        fc1 = tf.layers.dense(inputs=f1, units=1024, activation=leaky_relu)
-        logits = tf.layers.dense(inputs=fc1, units=1)
-        
+        fc2 = tf.contrib.layers.fully_connected(
+            fc1, num_outputs=256, 
+            activation_fn=leaky_relu,
+            weights_initializer=tf.contrib.layers.xavier_initializer(),
+            biases_initializer=tf.constant_initializer(0.1),
+            trainable=True) 
+
+        logits = tf.contrib.layers.fully_connected(
+            fc2, num_outputs=1, 
+            activation_fn=None,
+            weights_initializer=tf.contrib.layers.xavier_initializer(),
+            biases_initializer=tf.constant_initializer(0.1),
+            trainable=True) 
+
         return logits
 
 def generator(z):
