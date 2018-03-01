@@ -1,5 +1,6 @@
 from __future__ import print_function, division
 import os
+import time
 import tensorflow as tf
 import numpy as np
 import glob
@@ -198,22 +199,21 @@ def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_
         Saver.restore(sess, tf.train.latest_checkpoint(save_dir))
     
     max_iter = int(mnist.train.num_examples * num_epoch / batch_size)
+    t = time.time()
     for it in range(max_iter):
         xmb, _ = mnist.train.next_batch(batch_size)
         z_noise = sample_z(batch_size, noise_dim)          
 
         if it % show_every == 0:
-            samples = sess.run(G_sample, feed_dict={x: xmb, z: z_noise})
+            samples = sess.run(G_sample, feed_dict={z: z_noise})
             save_images(out_dir, samples[:49], it)
 
-        _, D_loss_curr = sess.run([D_train_step, D_loss], 
-                            feed_dict={x: xmb, z: z_noise})
-        _, G_loss_curr = sess.run([G_train_step, G_loss], 
-                            feed_dict={x: xmb, z: z_noise})
+        _, D_loss_curr = sess.run([D_train_step, D_loss], feed_dict={x: xmb, z: z_noise})
+        _, G_loss_curr = sess.run([G_train_step, G_loss], feed_dict={x: xmb, z: z_noise})
 
         if it % print_every == 0: # We want to make sure D_loss doesn't go to 0
-            print('Iter: {}, D: {:.4}, G: {:.4}'.format(it, D_loss_curr, 
-                G_loss_curr))
+            print('Iter: {}, D: {:.4}, G: {:.4}, Elapsed: {:.4f}'.format(it, D_loss_curr, G_loss_curr, time.time() - t))
+            t = time.time()
 
         if it % 10 == 0:
             Saver.save(sess, save_dir + "/gan", global_step=it)
