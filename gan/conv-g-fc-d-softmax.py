@@ -79,17 +79,9 @@ def discriminator(x):
     for an image being real for each input image.
     """
     with tf.variable_scope("discriminator"):
-        input_layer = tf.reshape(x, [-1, 28, 28, 1])
-        c1 = tf.layers.conv2d(inputs=input_layer, filters=32, 
-                kernel_size=5, strides=1, padding='same', 
-                activation=leaky_relu)
-        p1 = tf.layers.max_pooling2d(inputs=c1, pool_size=2, strides=2)
-        c2 = tf.layers.conv2d(inputs=p1, filters=64, kernel_size=5, strides=1, 
-                padding='same', activation=leaky_relu)
-        p2 = tf.layers.max_pooling2d(inputs=c2, pool_size=2, strides=2)
-        f1 = tf.reshape(p2, [-1, 7 * 7 * 64])
-        fc1 = tf.layers.dense(inputs=f1, units=1024, activation=leaky_relu)
-        logits = tf.layers.dense(inputs=fc1, units=1)
+        fc1 = tf.layers.dense(inputs=x, units=1024, activation=leaky_relu)
+        fc2 = tf.layers.dense(inputs=fc1, units=1024, activation=leaky_relu)
+        logits = tf.layers.dense(inputs=fc2, units=1)
         return logits
 
 def generator(z):
@@ -137,12 +129,6 @@ def generator(z):
                 kernel_size=5, strides=1, padding='same', 
                 activation=leaky_relu)
 
-        # We don't actually need another layer to turn the (N, 28, 28, 1) img
-        # into (N, 784). But verify just to be sure. In any case another layer 
-        # might help the network learn.
-        #
-        # img = tf.reduce_mean(c2, axis=3, keep_dims=True)
-        #
         avg = tf.reduce_mean(c2, axis=3, keep_dims=True)
         rs2 = tf.reshape(x, [-1, x_dim]) # Reshape cause we want ~ (N, 784) instead of ~ (N, 28, 28, 1)
         # Need this last FC layer cause for some reason you can't have reshape
@@ -187,8 +173,9 @@ with tf.control_dependencies(D_extra_step):
 with tf.control_dependencies(G_extra_step):
     G_train_step = G_solver.minimize(G_loss, var_list=G_vars)
 
-def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_extra_step,\
-              show_every=250, print_every=50, batch_size=128, num_epoch=10):
+def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, 
+            D_extra_step, show_every=250, print_every=50, batch_size=128, 
+            num_epoch=10):
     out_dir = "out"
     save_dir = "save"
     mkdir_p(out_dir)
@@ -199,7 +186,7 @@ def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_
         Saver.restore(sess, tf.train.latest_checkpoint(save_dir))
     
     max_iter = int(mnist.train.num_examples * num_epoch / batch_size)
-    t = time.time()    
+    t = time.time()
     for it in range(max_iter):
         xmb, _ = mnist.train.next_batch(batch_size)
         z_noise = sample_z(batch_size, noise_dim)          
@@ -212,11 +199,11 @@ def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_
         _, G_loss_curr = sess.run([G_train_step, G_loss], feed_dict={x: xmb, z: z_noise})
 
         if it % print_every == 0: # We want to make sure D_loss doesn't go to 0
-            print('Iter: {}, D: {:.4}, G: {:.4}, Elapsed: {:.4}'.format(it, D_loss_curr, G_loss_curr, time.time() - t))            
+            print('Iter: {}, D: {:.4}, G: {:.4}, Elapsed: {:.4}'.format(it, D_loss_curr, G_loss_curr, time.time() - t))
             t = time.time()
 
-        if it % 10 == 0:
-            Saver.save(sess, save_dir + "/gan", global_step=it)
+        if it % 100 == 0:
+            Saver.save(sess, save_dir + "/" + os.path.basename(__file__), global_step=it)
 
 with get_session() as sess:
     sess.run(tf.global_variables_initializer())
