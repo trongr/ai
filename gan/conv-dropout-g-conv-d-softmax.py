@@ -113,30 +113,30 @@ def generator(z, keep_prob):
         dr1 = tf.nn.dropout(z, keep_prob)
         fc1 = tf.contrib.layers.fully_connected(dr1, num_outputs=1024, 
                 activation_fn=leaky_relu) 
-        # bn1 = tf.layers.batch_normalization(
-        #         fc1,
-        #         axis=-1,
-        #         momentum=0.99, # use default
-        #         epsilon=0.001, # use default
-        #         center=True, # enable beta
-        #         scale=True, # enable gamma
-        #         training=True) 
+        bn1 = tf.layers.batch_normalization(
+                fc1,
+                axis=-1,
+                momentum=0.99, # use default
+                epsilon=0.001, # use default
+                center=True, # enable beta
+                scale=True, # enable gamma
+                training=True) 
         # # Adversarial is always training, unless you're using generator to
         # # generate images (which you can also do during training).
 
-        dr2 = tf.nn.dropout(fc1, keep_prob)        
+        dr2 = tf.nn.dropout(bn1, keep_prob)        
         fc2 = tf.contrib.layers.fully_connected(dr2, 
                 num_outputs=2 * 2 * 28 * 28, 
                 activation_fn=leaky_relu) 
-        # bn2 = tf.layers.batch_normalization(
-        #         fc2,
-        #         axis=-1,
-        #         momentum=0.99, # use default
-        #         epsilon=0.001, # use default
-        #         center=True, # enable beta
-        #         scale=True, # enable gamma
-        #         training=True)
-        rs1 = tf.reshape(fc2, [-1, 2 * 28, 2 * 28, 1])
+        bn2 = tf.layers.batch_normalization(
+                fc2,
+                axis=-1,
+                momentum=0.99, # use default
+                epsilon=0.001, # use default
+                center=True, # enable beta
+                scale=True, # enable gamma
+                training=True)
+        rs1 = tf.reshape(bn2, [-1, 2 * 28, 2 * 28, 1])
 
         c1 = tf.layers.conv2d(inputs=rs1, filters=16, 
                 kernel_size=5, strides=1, padding='same', 
