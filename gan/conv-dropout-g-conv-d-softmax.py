@@ -123,8 +123,8 @@ def generator(z, keep_prob):
         # # Adversarial is always training, unless you're using generator to
         # # generate images (which you can also do during training).
 
-        dr2 = tf.nn.dropout(bn1, keep_prob)        
-        fc2 = tf.contrib.layers.fully_connected(dr2, 
+        # dr2 = tf.nn.dropout(bn1, keep_prob)        
+        fc2 = tf.contrib.layers.fully_connected(bn1, 
                 num_outputs=2 * 2 * 2 * 2 * 28 * 28, 
                 activation_fn=leaky_relu) 
         bn2 = tf.layers.batch_normalization(
@@ -156,8 +156,8 @@ def generator(z, keep_prob):
         rs2 = tf.reshape(x, [-1, x_dim])
         # Need this last FC layer cause for some reason you can't have reshape
         # as the last layer cause it has no gradient.
-        dr3 = tf.nn.dropout(rs2, keep_prob)                
-        img = tf.contrib.layers.fully_connected(dr3, num_outputs=x_dim, 
+        # dr3 = tf.nn.dropout(rs2, keep_prob)                
+        img = tf.contrib.layers.fully_connected(rs2, num_outputs=x_dim, 
                 activation_fn=tf.tanh) 
 
         return img 
