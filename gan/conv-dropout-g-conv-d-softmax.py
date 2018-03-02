@@ -81,15 +81,21 @@ def discriminator(x):
     """
     with tf.variable_scope("discriminator"):
         input_layer = tf.reshape(x, [-1, 28, 28, 1])
+
         c1 = tf.layers.conv2d(inputs=input_layer, filters=32, 
                 kernel_size=5, strides=1, padding='same', 
                 activation=leaky_relu)
         p1 = tf.layers.max_pooling2d(inputs=c1, pool_size=2, strides=2)
+
         c2 = tf.layers.conv2d(inputs=p1, filters=64, kernel_size=5, strides=1, 
                 padding='same', activation=leaky_relu)
         p2 = tf.layers.max_pooling2d(inputs=c2, pool_size=2, strides=2)
-        f1 = tf.reshape(p2, [-1, 7 * 7 * 64])
-        fc1 = tf.layers.dense(inputs=f1, units=1024, activation=leaky_relu)
+
+        c3 = tf.layers.conv2d(inputs=p2, filters=64, kernel_size=5, strides=1, 
+                padding='same', activation=leaky_relu)
+
+        rs1 = tf.reshape(c3, [-1, 7 * 7 * 64])
+        fc1 = tf.layers.dense(inputs=rs1, units=1024, activation=leaky_relu)
         logits = tf.layers.dense(inputs=fc1, units=1)
         return logits
 
@@ -212,10 +218,10 @@ def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_
             save_images(out_dir, samples[:49], it)
 
         _, D_loss_curr = sess.run([D_train_step, D_loss], feed_dict={
-            x: xmb, z: z_noise, keep_prob: 0.6
+            x: xmb, z: z_noise, keep_prob: 0.4
         })
         _, G_loss_curr = sess.run([G_train_step, G_loss], feed_dict={
-            x: xmb, z: z_noise, keep_prob: 0.6
+            x: xmb, z: z_noise, keep_prob: 0.4
         })
 
         if math.isnan(D_loss_curr) or math.isnan(G_loss_curr):
