@@ -110,32 +110,32 @@ def generator(z, keep_prob):
     TensorFlow Tensor of generated images, with shape [batch_size, 784].
     """
     with tf.variable_scope("generator"):
-        fc1 = tf.contrib.layers.fully_connected(z, num_outputs=1024, 
+        fc1 = tf.contrib.layers.fully_connected(z, num_outputs=2048, 
                 activation_fn=leaky_relu) 
-        # bn1 = tf.layers.batch_normalization(
-        #         fc1,
-        #         axis=-1,
-        #         momentum=0.99, # use default
-        #         epsilon=0.001, # use default
-        #         center=True, # enable beta
-        #         scale=True, # enable gamma
-        #         training=True) 
+        bn1 = tf.layers.batch_normalization(
+                fc1,
+                axis=-1,
+                momentum=0.99, # use default
+                epsilon=0.001, # use default
+                center=True, # enable beta
+                scale=True, # enable gamma
+                training=True) 
         # # Adversarial is always training, unless you're using generator to
         # # generate images (which you can also do during training).
 
-        dr2 = tf.nn.dropout(fc1, keep_prob)        
+        dr2 = tf.nn.dropout(bn1, keep_prob)        
         fc2 = tf.contrib.layers.fully_connected(dr2, 
-                num_outputs=2 * 2 * 28 * 28, 
+                num_outputs=2 * 2 * 2 * 2 * 28 * 28, 
                 activation_fn=leaky_relu) 
-        # bn2 = tf.layers.batch_normalization(
-        #         fc2,
-        #         axis=-1,
-        #         momentum=0.99, # use default
-        #         epsilon=0.001, # use default
-        #         center=True, # enable beta
-        #         scale=True, # enable gamma
-        #         training=True)
-        rs1 = tf.reshape(fc2, [-1, 2 * 28, 2 * 28, 1])
+        bn2 = tf.layers.batch_normalization(
+                fc2,
+                axis=-1,
+                momentum=0.99, # use default
+                epsilon=0.001, # use default
+                center=True, # enable beta
+                scale=True, # enable gamma
+                training=True)
+        rs1 = tf.reshape(bn2, [-1, 2 * 2 * 28, 2 * 2 * 28, 1])
 
         c1 = tf.layers.conv2d(inputs=rs1, filters=16, 
                 kernel_size=5, strides=1, padding='same', 
@@ -145,8 +145,13 @@ def generator(z, keep_prob):
         c2 = tf.layers.conv2d(inputs=p1, filters=32, 
                 kernel_size=5, strides=1, padding='same', 
                 activation=leaky_relu)
+        p2 = tf.layers.max_pooling2d(inputs=c2, pool_size=2, strides=2)         
 
-        avg = tf.reduce_mean(c2, axis=3, keep_dims=True)
+        c3 = tf.layers.conv2d(inputs=p2, filters=64, 
+                kernel_size=5, strides=1, padding='same', 
+                activation=leaky_relu)
+
+        avg = tf.reduce_mean(c3, axis=3, keep_dims=True)
         # Reshape cause we want ~ (N, 784) instead of ~ (N, 28, 28, 1)
         rs2 = tf.reshape(x, [-1, x_dim])
         # Need this last FC layer cause for some reason you can't have reshape
