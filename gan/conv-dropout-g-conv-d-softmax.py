@@ -1,6 +1,7 @@
 from __future__ import print_function, division
 import os
 import time
+import math
 import tensorflow as tf
 import numpy as np
 import glob
@@ -216,6 +217,9 @@ def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_
         _, G_loss_curr = sess.run([G_train_step, G_loss], feed_dict={
             x: xmb, z: z_noise, keep_prob: 0.6
         })
+
+        if math.isnan(D_loss_curr) or math.isnan(G_loss_curr):
+            exit()
 
         if it % print_every == 0: # We want to make sure D_loss doesn't go to 0
             print('Iter: {}, D: {:.4}, G: {:.4}, Elapsed: {:.4}'.format(it, D_loss_curr, G_loss_curr, time.time() - t))            
