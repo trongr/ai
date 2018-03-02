@@ -1,6 +1,7 @@
 from __future__ import print_function, division
 import os
 import time
+import math
 import tensorflow as tf
 import numpy as np
 import glob
@@ -80,47 +81,79 @@ def discriminator(x):
     """
     with tf.variable_scope("discriminator"):
         input_layer = tf.reshape(x, [-1, 28, 28, 1])
+
         c1 = tf.layers.conv2d(inputs=input_layer, filters=32, 
                 kernel_size=5, strides=1, padding='same', 
                 activation=leaky_relu)
-        c2 = tf.layers.conv2d(inputs=c1, filters=64, kernel_size=5, strides=1, 
+        p1 = tf.layers.max_pooling2d(inputs=c1, pool_size=2, strides=2)
+
+        c2 = tf.layers.conv2d(inputs=p1, filters=64, kernel_size=5, strides=1, 
+                padding='same', activation=leaky_relu)
+        p2 = tf.layers.max_pooling2d(inputs=c2, pool_size=2, strides=2)
+
+        c3 = tf.layers.conv2d(inputs=p2, filters=64, kernel_size=5, strides=1, 
                 padding='same', activation=leaky_relu)
 
-        f1 = tf.reshape(c2, [-1, 7 * 7 * 64])
-        fc1 = tf.layers.dense(inputs=f1, units=1024, activation=leaky_relu)
+        rs1 = tf.reshape(c3, [-1, 7 * 7 * 64])
+        fc1 = tf.layers.dense(inputs=rs1, units=1024, activation=leaky_relu)
         logits = tf.layers.dense(inputs=fc1, units=1)
-        
         return logits
 
-def generator(z):
+def generator(z, keep_prob):
     """Generate images from a random noise vector.
     
     Inputs:
     - z: TensorFlow Tensor of random noise with shape [batch_size, noise_dim]
+    - keep_prob: for dropout.
     
     Returns:
     TensorFlow Tensor of generated images, with shape [batch_size, 784].
     """
     with tf.variable_scope("generator"):
-        fc1 = tf.contrib.layers.fully_connected(z, num_outputs=1024, 
-                activation_fn=tf.nn.relu) 
-        fc2 = tf.contrib.layers.fully_connected(fc1, 
+        dr1 = tf.nn.dropout(z, keep_prob)
+        fc1 = tf.contrib.layers.fully_connected(dr1, num_outputs=1024, 
+                activation_fn=leaky_relu) 
+        bn1 = tf.layers.batch_normalization(
+                fc1,
+                axis=-1,
+                momentum=0.99, # use default
+                epsilon=0.001, # use default
+                center=True, # enable beta
+                scale=True, # enable gamma
+                training=True) 
+        # # Adversarial is always training, unless you're using generator to
+        # # generate images (which you can also do during training).
+
+        dr2 = tf.nn.dropout(bn1, keep_prob)        
+        fc2 = tf.contrib.layers.fully_connected(dr2, 
                 num_outputs=2 * 2 * 28 * 28, 
-                activation_fn=tf.nn.relu) 
-        rs1 = tf.reshape(fc2, [-1, 2 * 28, 2 * 28, 1])
+                activation_fn=leaky_relu) 
+        bn2 = tf.layers.batch_normalization(
+                fc2,
+                axis=-1,
+                momentum=0.99, # use default
+                epsilon=0.001, # use default
+                center=True, # enable beta
+                scale=True, # enable gamma
+                training=True)
+        rs1 = tf.reshape(bn2, [-1, 2 * 28, 2 * 28, 1])
 
         c1 = tf.layers.conv2d(inputs=rs1, filters=16, 
                 kernel_size=5, strides=1, padding='same', 
                 activation=leaky_relu)
-        c2 = tf.layers.conv2d(inputs=c1, filters=32, 
+        p1 = tf.layers.max_pooling2d(inputs=c1, pool_size=2, strides=2) 
+
+        c2 = tf.layers.conv2d(inputs=p1, filters=32, 
                 kernel_size=5, strides=1, padding='same', 
                 activation=leaky_relu)
 
         avg = tf.reduce_mean(c2, axis=3, keep_dims=True)
-        rs2 = tf.reshape(x, [-1, x_dim]) # Reshape cause we want ~ (N, 784) instead of ~ (N, 28, 28, 1)
+        # Reshape cause we want ~ (N, 784) instead of ~ (N, 28, 28, 1)
+        rs2 = tf.reshape(x, [-1, x_dim])
         # Need this last FC layer cause for some reason you can't have reshape
         # as the last layer cause it has no gradient.
-        img = tf.contrib.layers.fully_connected(rs2, num_outputs=x_dim, 
+        dr3 = tf.nn.dropout(rs2, keep_prob)                
+        img = tf.contrib.layers.fully_connected(dr3, num_outputs=x_dim, 
                 activation_fn=tf.tanh) 
 
         return img 
@@ -128,55 +161,29 @@ def generator(z):
 def log(x):
     return tf.log(x + 1e-8)
 
-def wgangp_loss(D_real, D_fake, x, G_sample):
-    """
-    Compute the WGAN-GP loss.
-
-    Inputs:
-    - D_real: Tensor, shape [batch_size, 1], output of discriminator
-        Log probability that the image is real for each real image
-    - D_fake: Tensor, shape[batch_size, 1], output of discriminator
-        Log probability that the image is real for each fake image
-    - x: the input (real) images for this batch
-    - G_sample: the generated (fake) images for this batch
-    
-    Returns:
-    - D_loss: discriminator loss scalar
-    - G_loss: generator loss scalar
-    """
-    LAMBDA = 10
-    G_loss = -tf.reduce_mean(D_fake)
-    D_loss = tf.reduce_mean(D_fake) - tf.reduce_mean(D_real)
-
-    alpha = tf.random_uniform(shape=[batch_size, 1], minval=0., maxval=1.)
-    differences = G_sample - x
-    interpolates = x + (alpha * differences)
-
-    with tf.variable_scope('', reuse=True) as scope:
-        gradients = tf.gradients(discriminator(interpolates), [interpolates])[0]
-        slopes = tf.sqrt(tf.reduce_sum(tf.square(gradients), reduction_indices=[1]))
-        gradient_penalty = tf.reduce_mean((slopes - 1.)**2)
-
-    D_loss += LAMBDA * gradient_penalty
-
-    return D_loss, G_loss
-
 tf.reset_default_graph()
 
 x = tf.placeholder(tf.float32, shape=[None, x_dim])
 z = tf.placeholder(tf.float32, shape=[None, noise_dim])
-G_sample = generator(z)
+keep_prob = tf.placeholder(tf.float32, name='keep_prob')
+G_sample = generator(z, keep_prob)
 
 with tf.variable_scope("") as scope:
     D_real = discriminator(preprocess_img(x)) # scale images to be -1 to 1
     scope.reuse_variables() # Re-use discriminator weights on new inputs
     D_fake = discriminator(G_sample)
 
-D_loss, G_loss = wgangp_loss(D_real, D_fake, x, G_sample)
 D_vars = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, 'discriminator')
 G_vars = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, 'generator') 
 
-dlr, glr, beta1 = 1e-3, 1e-3, 0.5
+D_target = 1. / batch_size
+G_target = 1. / batch_size
+Z = tf.reduce_sum(tf.exp(-D_real)) + tf.reduce_sum(tf.exp(-D_fake))
+D_loss = tf.reduce_sum(D_target * D_real) + log(Z)
+G_loss = tf.reduce_sum(G_target * D_fake) + log(Z)
+
+dlr, glr = 1e-3, 1e-3
+beta1 = 0.5
 D_solver = tf.train.AdamOptimizer(learning_rate=dlr, beta1=beta1)
 G_solver = tf.train.AdamOptimizer(learning_rate=glr, beta1=beta1)
 
@@ -199,26 +206,35 @@ def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_
         Saver.restore(sess, tf.train.latest_checkpoint(save_dir))
     
     max_iter = int(mnist.train.num_examples * num_epoch / batch_size)
-    t = time.time()
+    t = time.time()    
     for it in range(max_iter):
         xmb, _ = mnist.train.next_batch(batch_size)
         z_noise = sample_z(batch_size, noise_dim)          
 
         if it % show_every == 0:
-            samples = sess.run(G_sample, feed_dict={z: z_noise})
+            samples = sess.run(G_sample, feed_dict={
+                x: xmb, z: z_noise, keep_prob: 1.0
+            })
             save_images(out_dir, samples[:49], it)
 
-        _, D_loss_curr = sess.run([D_train_step, D_loss], feed_dict={x: xmb, z: z_noise})
-        _, G_loss_curr = sess.run([G_train_step, G_loss], feed_dict={x: xmb, z: z_noise})
+        _, D_loss_curr = sess.run([D_train_step, D_loss], feed_dict={
+            x: xmb, z: z_noise, keep_prob: 0.4
+        })
+        _, G_loss_curr = sess.run([G_train_step, G_loss], feed_dict={
+            x: xmb, z: z_noise, keep_prob: 0.4
+        })
+
+        if math.isnan(D_loss_curr) or math.isnan(G_loss_curr):
+            exit()
 
         if it % print_every == 0: # We want to make sure D_loss doesn't go to 0
-            print('Iter: {}, D: {:.4}, G: {:.4}, Elapsed: {:.4f}'.format(it, D_loss_curr, G_loss_curr, time.time() - t))
+            print('Iter: {}, D: {:.4}, G: {:.4}, Elapsed: {:.4}'.format(it, D_loss_curr, G_loss_curr, time.time() - t))            
             t = time.time()
 
         if it % 10 == 0:
-            Saver.save(sess, save_dir + "/gan", global_step=it)
+            Saver.save(sess, save_dir + "/conv-dropout-g-conv-d-softmax", global_step=it)
 
 with get_session() as sess:
     sess.run(tf.global_variables_initializer())
     run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, 
-            G_extra_step, D_extra_step, show_every=200, num_epoch=1000)
+            G_extra_step, D_extra_step, show_every=50, num_epoch=1000)

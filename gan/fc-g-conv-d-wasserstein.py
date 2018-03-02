@@ -4,9 +4,9 @@ import time
 import tensorflow as tf
 import numpy as np
 import glob
+
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
-from tensorflow.examples.tutorials.mnist import input_data
 
 plt.rcParams['figure.figsize'] = (10.0, 8.0) # set default size of plots
 plt.rcParams['image.interpolation'] = 'nearest'
@@ -15,8 +15,6 @@ plt.rcParams['image.cmap'] = 'gray'
 batch_size = 128
 x_dim = 784 # 28 * 28, dimension of each image
 noise_dim = 96
-
-mnist = input_data.read_data_sets('./cs231n/datasets/MNIST_data', one_hot=False)
 
 def mkdir_p(dir):
     if not os.path.exists(dir):
@@ -38,7 +36,6 @@ def save_images(dir, images, it):
         ax.set_yticklabels([])
         ax.set_aspect('equal')
         plt.imshow(img.reshape([sqrtimg,sqrtimg]))
-
     imgpath = dir + "/" + str(it).zfill(10) + ".jpg"
     print("Saving img " + imgpath)    
     fig.savefig(imgpath)
@@ -47,11 +44,17 @@ def save_images(dir, images, it):
 def preprocess_img(x):
     return 2 * x - 1.0
 
+def deprocess_img(x):
+    return (x + 1.0) / 2.0
+
 def get_session():
     config = tf.ConfigProto()
     config.gpu_options.allow_growth = True
     session = tf.Session(config=config)
     return session
+
+from tensorflow.examples.tutorials.mnist import input_data
+mnist = input_data.read_data_sets('./cs231n/datasets/MNIST_data', one_hot=False)
 
 def leaky_relu(x, alpha=0.01):
     """Compute the leaky ReLU activation function.
@@ -93,37 +96,29 @@ def discriminator(x):
         return logits
 
 def generator(z):
-    """Generate images from a random noise vector.
-    
-    Inputs:
-    - z: TensorFlow Tensor of random noise with shape [batch_size, noise_dim]
-    
-    Returns:
-    TensorFlow Tensor of generated images, with shape [batch_size, 784].
-    """
     with tf.variable_scope("generator"):
-        fc1 = tf.contrib.layers.fully_connected(z, num_outputs=1024, 
-                activation_fn=tf.nn.relu) 
-        fc2 = tf.contrib.layers.fully_connected(fc1, 
-                num_outputs=2 * 2 * 28 * 28, 
-                activation_fn=tf.nn.relu) 
-        rs1 = tf.reshape(fc2, [-1, 2 * 28, 2 * 28, 1])
+        fc1 = tf.contrib.layers.fully_connected(
+            z, num_outputs=1024, 
+            activation_fn=leaky_relu,
+            weights_initializer=tf.contrib.layers.xavier_initializer(),
+            biases_initializer=tf.constant_initializer(0.1),
+            trainable=True) 
 
-        c1 = tf.layers.conv2d(inputs=rs1, filters=16, 
-                kernel_size=5, strides=1, padding='same', 
-                activation=leaky_relu)
-        c2 = tf.layers.conv2d(inputs=c1, filters=32, 
-                kernel_size=5, strides=1, padding='same', 
-                activation=leaky_relu)
+        fc2 = tf.contrib.layers.fully_connected(
+            fc1, num_outputs=1024, 
+            activation_fn=leaky_relu,
+            weights_initializer=tf.contrib.layers.xavier_initializer(),
+            biases_initializer=tf.constant_initializer(0.1),
+            trainable=True) 
 
-        avg = tf.reduce_mean(c2, axis=3, keep_dims=True)
-        rs2 = tf.reshape(x, [-1, x_dim]) # Reshape cause we want ~ (N, 784) instead of ~ (N, 28, 28, 1)
-        # Need this last FC layer cause for some reason you can't have reshape
-        # as the last layer cause it has no gradient.
-        img = tf.contrib.layers.fully_connected(rs2, num_outputs=x_dim, 
-                activation_fn=tf.tanh) 
+        img = tf.contrib.layers.fully_connected(
+            fc2, num_outputs=784, 
+            activation_fn=tf.tanh,
+            weights_initializer=tf.contrib.layers.xavier_initializer(),
+            biases_initializer=tf.constant_initializer(0.1),
+            trainable=True) 
 
-        return img 
+        return img    
  
 def log(x):
     return tf.log(x + 1e-8)
@@ -182,10 +177,12 @@ G_solver = tf.train.AdamOptimizer(learning_rate=glr, beta1=beta1)
 
 D_extra_step = tf.get_collection(tf.GraphKeys.UPDATE_OPS, 'discriminator')
 G_extra_step = tf.get_collection(tf.GraphKeys.UPDATE_OPS, 'generator')
-with tf.control_dependencies(D_extra_step):
-    D_train_step = D_solver.minimize(D_loss, var_list=D_vars)
-with tf.control_dependencies(G_extra_step):
-    G_train_step = G_solver.minimize(G_loss, var_list=G_vars)
+D_train_step = D_solver.minimize(D_loss, var_list=D_vars)
+G_train_step = G_solver.minimize(G_loss, var_list=G_vars)
+# with tf.control_dependencies(D_extra_step):
+#     D_train_step = D_solver.minimize(D_loss, var_list=D_vars)
+# with tf.control_dependencies(G_extra_step):
+#     G_train_step = G_solver.minimize(G_loss, var_list=G_vars)
 
 def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_extra_step,\
               show_every=250, print_every=50, batch_size=128, num_epoch=10):
@@ -198,18 +195,20 @@ def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_
     if glob.glob(save_dir + "/*"):
         Saver.restore(sess, tf.train.latest_checkpoint(save_dir))
     
-    max_iter = int(mnist.train.num_examples * num_epoch / batch_size)
-    t = time.time()
+    max_iter = int(mnist.train.num_examples*num_epoch/batch_size)
+    t = time.time()    
     for it in range(max_iter):
-        xmb, _ = mnist.train.next_batch(batch_size)
+        minibatch_x, minbatch_y = mnist.train.next_batch(batch_size)
         z_noise = sample_z(batch_size, noise_dim)          
 
         if it % show_every == 0:
             samples = sess.run(G_sample, feed_dict={z: z_noise})
             save_images(out_dir, samples[:49], it)
 
-        _, D_loss_curr = sess.run([D_train_step, D_loss], feed_dict={x: xmb, z: z_noise})
-        _, G_loss_curr = sess.run([G_train_step, G_loss], feed_dict={x: xmb, z: z_noise})
+        _, D_loss_curr = sess.run([D_train_step, D_loss], feed_dict={
+                            x: minibatch_x, z: z_noise})
+        _, G_loss_curr = sess.run([G_train_step, G_loss], feed_dict={
+                            x: minibatch_x, z: z_noise})
 
         if it % print_every == 0: # We want to make sure D_loss doesn't go to 0
             print('Iter: {}, D: {:.4}, G: {:.4}, Elapsed: {:.4f}'.format(it, D_loss_curr, G_loss_curr, time.time() - t))
