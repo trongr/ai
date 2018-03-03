@@ -123,8 +123,8 @@ def generator(z, keep_prob):
         # # Adversarial is always training, unless you're using generator to
         # # generate images (which you can also do during training).
 
-        # dr2 = tf.nn.dropout(bn1, keep_prob)        
-        fc2 = tf.contrib.layers.fully_connected(bn1, 
+        dr2 = tf.nn.dropout(bn1, keep_prob)        
+        fc2 = tf.contrib.layers.fully_connected(dr2, 
                 num_outputs=2 * 2 * 2 * 2 * 28 * 28, 
                 activation_fn=leaky_relu) 
         bn2 = tf.layers.batch_normalization(
@@ -156,8 +156,8 @@ def generator(z, keep_prob):
         rs2 = tf.reshape(x, [-1, x_dim])
         # Need this last FC layer cause for some reason you can't have reshape
         # as the last layer cause it has no gradient.
-        # dr3 = tf.nn.dropout(rs2, keep_prob)                
-        img = tf.contrib.layers.fully_connected(rs2, num_outputs=x_dim, 
+        dr3 = tf.nn.dropout(rs2, keep_prob)                
+        img = tf.contrib.layers.fully_connected(dr3, num_outputs=x_dim, 
                 activation_fn=tf.tanh) 
 
         return img 
@@ -167,9 +167,10 @@ def log(x):
 
 tf.reset_default_graph()
 
-x = tf.placeholder(tf.float32, shape=[None, x_dim])
-z = tf.placeholder(tf.float32, shape=[None, noise_dim])
-keep_prob = tf.placeholder(tf.float32, name='keep_prob')
+with tf.name_scope('input'):
+    x = tf.placeholder(tf.float32, shape=[None, x_dim], name="x-input")
+    z = tf.placeholder(tf.float32, shape=[None, noise_dim], name="z-input")
+    keep_prob = tf.placeholder(tf.float32, name='keep_prob')
 G_sample = generator(z, keep_prob)
 
 with tf.variable_scope("") as scope:
@@ -186,6 +187,10 @@ Z = tf.reduce_sum(tf.exp(-D_real)) + tf.reduce_sum(tf.exp(-D_fake))
 D_loss = tf.reduce_sum(D_target * D_real) + log(Z)
 G_loss = tf.reduce_sum(G_target * D_fake) + log(Z)
 
+tf.summary.scalar("D_loss", D_loss)
+tf.summary.scalar("G_loss", G_loss)
+summary_op = tf.summary.merge_all()
+
 dlr, glr = 1e-3, 1e-3
 beta1 = 0.5
 D_solver = tf.train.AdamOptimizer(learning_rate=dlr, beta1=beta1)
@@ -201,7 +206,10 @@ with tf.control_dependencies(G_extra_step):
 def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_extra_step,\
               show_every=250, print_every=50, batch_size=128, num_epoch=10):
     out_dir = "out"
+    prefix = "conv-dropout-g-conv-d-softmax"
     save_dir = "save"
+    save_dir_prefix = save_dir + "/" + prefix
+    logs_path = "logs/" + prefix
     mkdir_p(out_dir)
     mkdir_p(save_dir)
 
@@ -209,8 +217,10 @@ def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_
     if glob.glob(save_dir + "/*"):
         Saver.restore(sess, tf.train.latest_checkpoint(save_dir))
     
+    writer = tf.summary.FileWriter(logs_path, graph=tf.get_default_graph())
+    
     max_iter = int(mnist.train.num_examples * num_epoch / batch_size)
-    t = time.time()    
+    t = time.time()        
     for it in range(max_iter):
         xmb, _ = mnist.train.next_batch(batch_size)
         z_noise = sample_z(batch_size, noise_dim)          
@@ -221,12 +231,14 @@ def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_
             })
             save_images(out_dir, samples[:49], it)
 
-        _, D_loss_curr = sess.run([D_train_step, D_loss], feed_dict={
-            x: xmb, z: z_noise, keep_prob: 0.5
-        })
-        _, G_loss_curr = sess.run([G_train_step, G_loss], feed_dict={
-            x: xmb, z: z_noise, keep_prob: 0.5
-        })
+        _, D_loss_curr, summary = sess.run([D_train_step, D_loss, summary_op], 
+            feed_dict={
+                x: xmb, z: z_noise, keep_prob: 0.5
+            })
+        _, G_loss_curr = sess.run([G_train_step, G_loss], 
+            feed_dict={
+                x: xmb, z: z_noise, keep_prob: 0.5
+            })
 
         if math.isnan(D_loss_curr) or math.isnan(G_loss_curr):
             exit()
@@ -236,7 +248,8 @@ def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_
             t = time.time()
 
         if it % 10 == 0:
-            Saver.save(sess, save_dir + "/conv-dropout-g-conv-d-softmax", global_step=it)
+            writer.add_summary(summary, global_step=it)
+            Saver.save(sess, save_dir_prefix, global_step=it)
 
 with get_session() as sess:
     sess.run(tf.global_variables_initializer())

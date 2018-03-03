@@ -1,3 +1,5 @@
 # Tensorboard
 
-tensorboard --logdir=/tmp/autoencoder
+```
+tensorboard --logdir=logs/ --port 6006
+```
