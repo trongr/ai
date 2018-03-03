@@ -30,7 +30,7 @@ def save_images(dir, images, it):
 
     fig = plt.figure(figsize=(sqrtn, sqrtn))
     gs = gridspec.GridSpec(sqrtn, sqrtn)
-    gs.update(wspace=0.05, hspace=0.05)
+    gs.update(left=0, right=1, top=1, bottom=0, wspace=0, hspace=0)
 
     for i, img in enumerate(images):
         ax = plt.subplot(gs[i])
@@ -112,30 +112,30 @@ def generator(z, keep_prob):
     with tf.variable_scope("generator"):
         fc1 = tf.contrib.layers.fully_connected(z, num_outputs=2048, 
                 activation_fn=leaky_relu) 
-        bn1 = tf.layers.batch_normalization(
-                fc1,
-                axis=-1,
-                momentum=0.99, # use default
-                epsilon=0.001, # use default
-                center=True, # enable beta
-                scale=True, # enable gamma
-                training=True) 
-        # # Adversarial is always training, unless you're using generator to
-        # # generate images (which you can also do during training).
+        # bn1 = tf.layers.batch_normalization(
+        #         fc1,
+        #         axis=-1,
+        #         momentum=0.99, # use default
+        #         epsilon=0.001, # use default
+        #         center=True, # enable beta
+        #         scale=True, # enable gamma
+        #         training=True) 
+        # # # Adversarial is always training, unless you're using generator to
+        # # # generate images (which you can also do during training).
 
-        dr2 = tf.nn.dropout(bn1, keep_prob)        
+        dr2 = tf.nn.dropout(fc1, keep_prob)        
         fc2 = tf.contrib.layers.fully_connected(dr2, 
                 num_outputs=2 * 2 * 2 * 2 * 28 * 28, 
                 activation_fn=leaky_relu) 
-        bn2 = tf.layers.batch_normalization(
-                fc2,
-                axis=-1,
-                momentum=0.99, # use default
-                epsilon=0.001, # use default
-                center=True, # enable beta
-                scale=True, # enable gamma
-                training=True)
-        rs1 = tf.reshape(bn2, [-1, 2 * 2 * 28, 2 * 2 * 28, 1])
+        # bn2 = tf.layers.batch_normalization(
+        #         fc2,
+        #         axis=-1,
+        #         momentum=0.99, # use default
+        #         epsilon=0.001, # use default
+        #         center=True, # enable beta
+        #         scale=True, # enable gamma
+        #         training=True)
+        rs1 = tf.reshape(fc2, [-1, 2 * 2 * 28, 2 * 2 * 28, 1])
 
         c1 = tf.layers.conv2d(inputs=rs1, filters=16, 
                 kernel_size=5, strides=1, padding='same', 
@@ -203,22 +203,22 @@ with tf.control_dependencies(D_extra_step):
 with tf.control_dependencies(G_extra_step):
     G_train_step = G_solver.minimize(G_loss, var_list=G_vars)
 
+out_dir = "out"
+prefix = "conv-dropout-g-conv-d-softmax"
+save_dir = "save"
+save_dir_prefix = save_dir + "/" + prefix
+logs_path = "logs/" + prefix
+mkdir_p(out_dir)
+mkdir_p(save_dir)
+
+writer = tf.summary.FileWriter(logs_path, graph=tf.get_default_graph())
+
 def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_extra_step,\
               show_every=250, print_every=50, batch_size=128, num_epoch=10):
-    out_dir = "out"
-    prefix = "conv-dropout-g-conv-d-softmax"
-    save_dir = "save"
-    save_dir_prefix = save_dir + "/" + prefix
-    logs_path = "logs/" + prefix
-    mkdir_p(out_dir)
-    mkdir_p(save_dir)
-
     Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1) 
     if glob.glob(save_dir + "/*"):
         Saver.restore(sess, tf.train.latest_checkpoint(save_dir))
-    
-    writer = tf.summary.FileWriter(logs_path, graph=tf.get_default_graph())
-    
+
     max_iter = int(mnist.train.num_examples * num_epoch / batch_size)
     t = time.time()        
     for it in range(max_iter):
@@ -229,7 +229,7 @@ def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_
             samples = sess.run(G_sample, feed_dict={
                 x: xmb, z: z_noise, keep_prob: 1.0
             })
-            save_images(out_dir, samples[:49], it)
+            save_images(out_dir, samples[:121], it)
 
         _, D_loss_curr, summary = sess.run([D_train_step, D_loss, summary_op], 
             feed_dict={
