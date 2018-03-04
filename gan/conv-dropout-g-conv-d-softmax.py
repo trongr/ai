@@ -181,9 +181,6 @@ with tf.variable_scope("") as scope:
     scope.reuse_variables() # Re-use discriminator weights on new inputs        
     D_fake = discriminator(G_sample)
 
-D_vars = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, 'discriminator')
-G_vars = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, 'generator') 
-
 D_target = 1. / batch_size
 G_target = 1. / batch_size
 Z = tf.reduce_sum(tf.exp(-D_real)) + tf.reduce_sum(tf.exp(-D_fake))
@@ -195,6 +192,8 @@ tf.summary.scalar("G_loss", G_loss)
 summary_op = tf.summary.merge_all()
 
 dlr, glr, beta1 = 1e-3, 1e-3, 0.5
+D_vars = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, 'discriminator')
+G_vars = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, 'generator') 
 with tf.control_dependencies(tf.get_collection(tf.GraphKeys.UPDATE_OPS)):
     D_solver = tf.train.AdamOptimizer(learning_rate=dlr, beta1=beta1)
     D_train_step = D_solver.minimize(D_loss, var_list=D_vars)

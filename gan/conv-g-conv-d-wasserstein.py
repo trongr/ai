@@ -129,21 +129,6 @@ def log(x):
     return tf.log(x + 1e-8)
 
 def wgangp_loss(D_real, D_fake, x, G_sample):
-    """
-    Compute the WGAN-GP loss.
-
-    Inputs:
-    - D_real: Tensor, shape [batch_size, 1], output of discriminator
-        Log probability that the image is real for each real image
-    - D_fake: Tensor, shape[batch_size, 1], output of discriminator
-        Log probability that the image is real for each fake image
-    - x: the input (real) images for this batch
-    - G_sample: the generated (fake) images for this batch
-    
-    Returns:
-    - D_loss: discriminator loss scalar
-    - G_loss: generator loss scalar
-    """
     LAMBDA = 10
     G_loss = -tf.reduce_mean(D_fake)
     D_loss = tf.reduce_mean(D_fake) - tf.reduce_mean(D_real)
