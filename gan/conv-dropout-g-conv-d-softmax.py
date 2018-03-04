@@ -231,7 +231,7 @@ def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_
             samples = sess.run(G_sample, feed_dict={
                 x: xmb, z: z_noise, keep_prob: 1.0
             })
-            save_images(out_dir, samples[:121], it)
+            save_images(out_dir, samples[:100], it)
 
         _, D_loss_curr, summary = sess.run([D_train_step, D_loss, summary_op], 
             feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})

@@ -96,26 +96,6 @@ def sample_noise(batch_size, dim):
     return tf.random_uniform([batch_size, dim], minval=-1, maxval=1, 
                              dtype=tf.float32)
 
-def test_sample_noise():
-    batch_size = 3
-    dim = 4
-    tf.reset_default_graph()
-    with get_session() as sess:
-        z = sample_noise(batch_size, dim)
-        # Check z has the correct shape
-        assert z.get_shape().as_list() == [batch_size, dim]
-        # Make sure z is a Tensor and not a numpy array
-        assert isinstance(z, tf.Tensor)
-        # Check that we get different noise for different evaluations
-        z1 = sess.run(z)
-        z2 = sess.run(z)
-        assert not np.array_equal(z1, z2)
-        # Check that we get the correct range
-        assert np.all(z1 >= -1.0) and np.all(z1 <= 1.0)
-        print("All tests passed!")
-    
-test_sample_noise()
-
 def discriminator(x):
     """Compute discriminator score for a batch of input images.
     
@@ -150,18 +130,6 @@ def discriminator(x):
 
         return logits
 
-def test_discriminator(true_count=267009):
-    tf.reset_default_graph()
-    with get_session() as sess:
-        y = discriminator(tf.ones((2, 784)))
-        cur_count = count_params()
-        if cur_count != true_count:
-            print('Incorrect number of parameters in discriminator. {0} instead of {1}. Check your achitecture.'.format(cur_count,true_count))
-        else:
-            print('Correct number of parameters in discriminator.')
-        
-test_discriminator()
-
 def generator(z):
     """Generate images from a random noise vector.
     
@@ -195,18 +163,6 @@ def generator(z):
 
         return img
 
-def test_generator(true_count=1858320):
-    tf.reset_default_graph()
-    with get_session() as sess:
-        y = generator(tf.ones((1, 4)))
-        cur_count = count_params()
-        if cur_count != true_count:
-            print('Incorrect number of parameters in generator. {0} instead of {1}. Check your achitecture.'.format(cur_count,true_count))
-        else:
-            print('Correct number of parameters in generator.')
-        
-test_generator()
-
 def gan_loss(logits_real, logits_fake):
     """Compute the GAN loss.
     
@@ -236,16 +192,6 @@ def gan_loss(logits_real, logits_fake):
 
     return D_loss, G_loss
 
-def test_gan_loss(logits_real, logits_fake, d_loss_true, g_loss_true):
-    tf.reset_default_graph()
-    with get_session() as sess:
-        d_loss, g_loss = sess.run(gan_loss(tf.constant(logits_real), tf.constant(logits_fake)))
-    print("Maximum error in d_loss: %g"%rel_error(d_loss_true, d_loss))
-    print("Maximum error in g_loss: %g"%rel_error(g_loss_true, g_loss))
-
-test_gan_loss(answers['logits_real'], answers['logits_fake'],
-              answers['d_loss_true'], answers['g_loss_true'])
-
 def lsgan_loss(score_real, score_fake):
     """Compute the Least Squares GAN loss.
     
@@ -263,16 +209,6 @@ def lsgan_loss(score_real, score_fake):
            + 0.5 * tf.reduce_mean(score_fake ** 2)
     G_loss = 0.5 * tf.reduce_mean((score_fake - 1) ** 2)
     return D_loss, G_loss
-
-def test_lsgan_loss(score_real, score_fake, d_loss_true, g_loss_true):
-    with get_session() as sess:
-        d_loss, g_loss = sess.run(
-            lsgan_loss(tf.constant(score_real), tf.constant(score_fake)))
-    print("lsgan Maximum error in d_loss: %g"%rel_error(d_loss_true, d_loss))
-    print("lsgan Maximum error in g_loss: %g"%rel_error(g_loss_true, g_loss))
-
-test_lsgan_loss(answers['logits_real'], answers['logits_fake'],
-                answers['d_loss_lsgan_true'], answers['g_loss_lsgan_true'])
 
 def get_solvers(learning_rate=1e-3, beta1=0.5):
     """Create solvers for GAN training.
