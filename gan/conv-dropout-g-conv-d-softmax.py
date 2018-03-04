@@ -137,12 +137,14 @@ def generator(z, keep_prob):
         #         training=True)
         rs1 = tf.reshape(fc2, [-1, 2 * 2 * 28, 2 * 2 * 28, 1])
 
-        c1 = tf.layers.conv2d(inputs=rs1, filters=16, 
+        dr2_1 = tf.nn.dropout(rs1, keep_prob)   
+        c1 = tf.layers.conv2d(inputs=dr2_1, filters=16, 
                 kernel_size=5, strides=1, padding='same', 
                 activation=leaky_relu)
         p1 = tf.layers.max_pooling2d(inputs=c1, pool_size=2, strides=2) 
 
-        c2 = tf.layers.conv2d(inputs=p1, filters=32, 
+        dr2_2 = tf.nn.dropout(p1, keep_prob)   
+        c2 = tf.layers.conv2d(inputs=dr2_2, filters=32, 
                 kernel_size=5, strides=1, padding='same', 
                 activation=leaky_relu)
         p2 = tf.layers.max_pooling2d(inputs=c2, pool_size=2, strides=2)         
@@ -156,7 +158,7 @@ def generator(z, keep_prob):
         rs2 = tf.reshape(x, [-1, x_dim])
         # Need this last FC layer cause for some reason you can't have reshape
         # as the last layer cause it has no gradient.
-        dr3 = tf.nn.dropout(rs2, keep_prob)                
+        dr3 = tf.nn.dropout(rs2, keep_prob) # poij try taking this out           
         img = tf.contrib.layers.fully_connected(dr3, num_outputs=x_dim, 
                 activation_fn=tf.tanh) 
 
@@ -232,19 +234,16 @@ def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_
             save_images(out_dir, samples[:121], it)
 
         _, D_loss_curr, summary = sess.run([D_train_step, D_loss, summary_op], 
-            feed_dict={
-                x: xmb, z: z_noise, keep_prob: 0.5
-            })
+            feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})
         _, G_loss_curr = sess.run([G_train_step, G_loss], 
-            feed_dict={
-                x: xmb, z: z_noise, keep_prob: 0.5
-            })
+            feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})
 
         if math.isnan(D_loss_curr) or math.isnan(G_loss_curr):
             exit()
 
         if it % print_every == 0: # We want to make sure D_loss doesn't go to 0
-            print('Iter: {}, D: {:.4}, G: {:.4}, Elapsed: {:.4}'.format(it, D_loss_curr, G_loss_curr, time.time() - t))            
+            print('Iter: {}, D: {:.4}, G: {:.4}, Elapsed: {:.4}'
+                .format(it, D_loss_curr, G_loss_curr, time.time() - t))            
             t = time.time()
 
         if it % 10 == 0:
