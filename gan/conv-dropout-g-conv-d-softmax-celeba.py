@@ -8,14 +8,23 @@ import glob
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 from scipy import misc
+from tensorflow.examples.tutorials.mnist import input_data
+mnist = input_data.read_data_sets('./cs231n/datasets/MNIST_data', one_hot=False)
 
 batch_size = 128
-img_w = 178
-img_h = 218
-img_c = 3
+img_w = 28
+img_h = 28
+img_c = 1
 w_to_h = 1.0 * img_w / img_h
-x_dim = 116412 # 218, 178, 3 dimension of each image
+x_dim = 784 # 218, 178, 3 dimension of each image
 noise_dim = 96
+# batch_size = 128
+# img_w = 178
+# img_h = 218
+# img_c = 3
+# w_to_h = 1.0 * img_w / img_h
+# x_dim = 116412 # 218, 178, 3 dimension of each image
+# noise_dim = 96
 
 def load_images(img_dir):
     img_paths = []    
@@ -52,7 +61,9 @@ def save_images(dir, images, it):
         ax.set_xticklabels([])
         ax.set_yticklabels([])
         # ax.set_aspect('equal')
-        plt.imshow(img.reshape([img_h, img_w, img_c]))
+        # poij
+        # plt.imshow(img.reshape([img_h, img_w, img_c]))
+        plt.imshow(img.reshape([img_h, img_w]))
 
     imgpath = dir + "/" + str(it).zfill(10) + ".jpg"
     print("Saving img " + imgpath)    
@@ -164,7 +175,9 @@ with tf.name_scope('input'):
 
 with tf.variable_scope("") as scope:
     G_sample = generator(z, keep_prob)    
-    D_real = discriminator(preprocess_img(x)) # scale images to be -1 to 1
+    # poij
+    # D_real = discriminator(preprocess_img(x)) # scale images to be -1 to 1
+    D_real = discriminator(x) # scale images to be -1 to 1
     scope.reuse_variables() # Re-use discriminator weights on new inputs        
     D_fake = discriminator(G_sample)
 
@@ -205,11 +218,16 @@ def train(sess, G_train_step, G_loss, D_train_step, D_loss,
     if glob.glob(save_dir + "/*"):
         Saver.restore(sess, tf.train.latest_checkpoint(save_dir))
 
-    batches = load_images(img_dir)
     t = time.time()        
     for it in range(max_iter):
-        xmb = batches.next()
-        z_noise = sample_z(batch_size, noise_dim)          
+        xmb, _ = mnist.train.next_batch(batch_size)
+        z_noise = sample_z(batch_size, noise_dim)   
+
+    # batches = load_images(img_dir)
+    # t = time.time()        
+    # for it in range(max_iter):
+    #     xmb = batches.next()
+    #     z_noise = sample_z(batch_size, noise_dim)          
 
         if it % show_every == 0:
             samples = sess.run(G_sample, feed_dict={

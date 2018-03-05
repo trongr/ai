@@ -8,6 +8,7 @@ import glob
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 from tensorflow.examples.tutorials.mnist import input_data
+mnist = input_data.read_data_sets('./cs231n/datasets/MNIST_data', one_hot=False)
 
 plt.rcParams['figure.figsize'] = (10.0, 8.0) # set default size of plots
 plt.rcParams['image.interpolation'] = 'nearest'
@@ -16,8 +17,6 @@ plt.rcParams['image.cmap'] = 'gray'
 batch_size = 128
 x_dim = 784 # 28 * 28, dimension of each image
 noise_dim = 96
-
-mnist = input_data.read_data_sets('./cs231n/datasets/MNIST_data', one_hot=False)
 
 def mkdir_p(dir):
     if not os.path.exists(dir):
