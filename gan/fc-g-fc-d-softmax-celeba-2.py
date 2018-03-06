@@ -143,8 +143,15 @@ def generator(z, keep_prob):
             biases_initializer=tf.constant_initializer(0.1),
             trainable=True)
 
+        fc3 = tf.contrib.layers.fully_connected(
+            fc2, num_outputs=64,
+            activation_fn=leaky_relu,
+            weights_initializer=tf.contrib.layers.xavier_initializer(),
+            biases_initializer=tf.constant_initializer(0.1),
+            trainable=True)
+
         img = tf.contrib.layers.fully_connected(
-            fc2, num_outputs=x_dim,
+            fc3, num_outputs=x_dim,
             activation_fn=tf.sigmoid,
             weights_initializer=tf.contrib.layers.xavier_initializer(),
             biases_initializer=tf.constant_initializer(0.1),
