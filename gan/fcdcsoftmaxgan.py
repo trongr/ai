@@ -36,7 +36,7 @@ def save_images(dir, images, it):
         ax.set_aspect('equal')
         plt.imshow(img.reshape([sqrtimg,sqrtimg]))
     imgpath = dir + "/" + str(it).zfill(10) + ".jpg"
-    print("Saving img " + imgpath)    
+    print("Saving img " + imgpath)
     fig.savefig(imgpath)
     plt.close(fig)
 
@@ -57,11 +57,11 @@ mnist = input_data.read_data_sets('./cs231n/datasets/MNIST_data', one_hot=False)
 
 def leaky_relu(x, alpha=0.01):
     """Compute the leaky ReLU activation function.
-    
+
     Inputs:
     - x: TensorFlow Tensor with arbitrary shape
     - alpha: leak parameter for leaky ReLU
-    
+
     Returns:
     TensorFlow Tensor with the same shape as x
     """
@@ -72,34 +72,34 @@ def sample_z(m, n):
 
 def sample_noise(batch_size, dim):
     """Generate random uniform noise from -1 to 1.
-    
+
     Inputs:
     - batch_size: integer giving the batch size of noise to generate
     - dim: integer giving the dimension of the the noise to generate
-    
+
     Returns:
     TensorFlow Tensor containing uniform noise in [-1, 1] with shape [batch_size, dim]
     """
-    return tf.random_uniform([batch_size, dim], minval=-1, maxval=1, 
+    return tf.random_uniform([batch_size, dim], minval=-1, maxval=1,
                              dtype=tf.float32)
 
 def discriminator(x):
     """Compute discriminator score for a batch of input images.
-    
+
     Inputs:
     - x: TensorFlow Tensor of flattened input images, shape [batch_size, x_dim]
-    
+
     Returns:
-    TensorFlow Tensor with shape [batch_size, 1], containing the score 
+    TensorFlow Tensor with shape [batch_size, 1], containing the score
     for an image being real for each input image.
     """
     with tf.variable_scope("discriminator"):
         input_layer = tf.reshape(x, [-1, 28, 28, 1])
-        c1 = tf.layers.conv2d(inputs=input_layer, filters=32, 
-                kernel_size=5, strides=1, padding='same', 
+        c1 = tf.layers.conv2d(inputs=input_layer, filters=32,
+                kernel_size=5, strides=1, padding='same',
                 activation=leaky_relu)
         p1 = tf.layers.max_pooling2d(inputs=c1, pool_size=2, strides=2)
-        c2 = tf.layers.conv2d(inputs=p1, filters=64, kernel_size=5, strides=1, 
+        c2 = tf.layers.conv2d(inputs=p1, filters=64, kernel_size=5, strides=1,
                 padding='same', activation=leaky_relu)
         p2 = tf.layers.max_pooling2d(inputs=c2, pool_size=2, strides=2)
         f1 = tf.reshape(p2, [-1, 7 * 7 * 64]) # For same padding
@@ -111,28 +111,28 @@ def discriminator(x):
 def generator(z):
     with tf.variable_scope("generator"):
         fc1 = tf.contrib.layers.fully_connected(
-            z, num_outputs=1024, 
+            z, num_outputs=1024,
             activation_fn=leaky_relu,
             weights_initializer=tf.contrib.layers.xavier_initializer(),
             biases_initializer=tf.constant_initializer(0.1),
-            trainable=True) 
+            trainable=True)
 
         fc2 = tf.contrib.layers.fully_connected(
-            fc1, num_outputs=1024, 
+            fc1, num_outputs=1024,
             activation_fn=leaky_relu,
             weights_initializer=tf.contrib.layers.xavier_initializer(),
             biases_initializer=tf.constant_initializer(0.1),
-            trainable=True) 
+            trainable=True)
 
         img = tf.contrib.layers.fully_connected(
-            fc2, num_outputs=784, 
+            fc2, num_outputs=784,
             activation_fn=tf.tanh,
             weights_initializer=tf.contrib.layers.xavier_initializer(),
             biases_initializer=tf.constant_initializer(0.1),
-            trainable=True) 
+            trainable=True)
 
-        return img    
- 
+        return img
+
 def log(x):
     return tf.log(x + 1e-8)
 
@@ -149,32 +149,28 @@ with tf.variable_scope("") as scope:
     scope.reuse_variables()
     D_fake = discriminator(G_sample)
 
-# Get the list of variables for the discriminator and generator
-D_vars = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, 'discriminator')
-G_vars = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, 'generator') 
-
 D_target = 1. / batch_size
 G_target = 1. / batch_size
 Z = tf.reduce_sum(tf.exp(-D_real)) + tf.reduce_sum(tf.exp(-D_fake))
 D_loss = tf.reduce_sum(D_target * D_real) + log(Z)
 G_loss = tf.reduce_sum(G_target * D_fake) + log(Z)
 
-dlr, glr = 1e-4, 1e-3
-beta1 = 0.5
+dlr, glr, beta1 = 1e-3, 1e-3, 0.5
 D_solver = tf.train.AdamOptimizer(learning_rate=dlr, beta1=beta1)
 G_solver = tf.train.AdamOptimizer(learning_rate=glr, beta1=beta1)
-
 D_extra_step = tf.get_collection(tf.GraphKeys.UPDATE_OPS, 'discriminator')
+G_extra_step = tf.get_collection(tf.GraphKeys.UPDATE_OPS, 'generator')
+D_vars = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, 'discriminator')
+G_vars = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, 'generator')
 with tf.control_dependencies(D_extra_step):
     D_train_step = D_solver.minimize(D_loss, var_list=D_vars)
-G_extra_step = tf.get_collection(tf.GraphKeys.UPDATE_OPS, 'generator')
 with tf.control_dependencies(G_extra_step):
     G_train_step = G_solver.minimize(G_loss, var_list=G_vars)
 
 def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_extra_step,\
               show_every=250, print_every=50, batch_size=128, num_epoch=10):
     """Train a GAN for a certain number of epochs.
-    
+
     Inputs:
     - sess: A tf.Session that we want to use to run our data
     - G_train_step: A training step for the Generator
@@ -191,15 +187,15 @@ def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_
     mkdir_p(out_dir)
     mkdir_p(save_dir)
 
-    Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1) 
+    Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1)
     if glob.glob(save_dir + "/*"):
         Saver.restore(sess, tf.train.latest_checkpoint(save_dir))
-    
+
     # compute the number of iterations we need
     max_iter = int(mnist.train.num_examples*num_epoch/batch_size)
     for it in range(max_iter):
         minibatch_x, minbatch_y = mnist.train.next_batch(batch_size)
-        z_noise = sample_z(batch_size, noise_dim)          
+        z_noise = sample_z(batch_size, noise_dim)
 
         if it % show_every == 0:
             samples = sess.run(G_sample, feed_dict={z: z_noise})
@@ -211,7 +207,7 @@ def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_
                             x: minibatch_x, z: z_noise})
 
         if it % print_every == 0: # We want to make sure D_loss doesn't go to 0
-            print('Iter: {}, D: {:.4}, G: {:.4}'.format(it, D_loss_curr, 
+            print('Iter: {}, D: {:.4}, G: {:.4}'.format(it, D_loss_curr,
                 G_loss_curr))
 
         if it % 10 == 0:
@@ -219,5 +215,5 @@ def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_
 
 with get_session() as sess:
     sess.run(tf.global_variables_initializer())
-    run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, 
+    run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss,
             G_extra_step, D_extra_step, show_every=200, num_epoch=1000)

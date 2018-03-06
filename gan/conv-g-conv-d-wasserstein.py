@@ -40,7 +40,7 @@ def save_images(dir, images, it):
         plt.imshow(img.reshape([sqrtimg,sqrtimg]))
 
     imgpath = dir + "/" + str(it).zfill(10) + ".jpg"
-    print("Saving img " + imgpath)    
+    print("Saving img " + imgpath)
     fig.savefig(imgpath)
     plt.close(fig)
 
@@ -55,11 +55,11 @@ def get_session():
 
 def leaky_relu(x, alpha=0.01):
     """Compute the leaky ReLU activation function.
-    
+
     Inputs:
     - x: TensorFlow Tensor with arbitrary shape
     - alpha: leak parameter for leaky ReLU
-    
+
     Returns:
     TensorFlow Tensor with the same shape as x
     """
@@ -70,61 +70,61 @@ def sample_z(m, n):
 
 def discriminator(x):
     """Compute discriminator score for a batch of input images.
-    
+
     Inputs:
     - x: TensorFlow Tensor of flattened input images, shape [batch_size, x_dim]
-    
+
     Returns:
-    TensorFlow Tensor with shape [batch_size, 1], containing the score 
+    TensorFlow Tensor with shape [batch_size, 1], containing the score
     for an image being real for each input image.
     """
     with tf.variable_scope("discriminator"):
         input_layer = tf.reshape(x, [-1, 28, 28, 1])
-        c1 = tf.layers.conv2d(inputs=input_layer, filters=32, 
-                kernel_size=5, strides=1, padding='same', 
+        c1 = tf.layers.conv2d(inputs=input_layer, filters=32,
+                kernel_size=5, strides=1, padding='same',
                 activation=leaky_relu)
-        c2 = tf.layers.conv2d(inputs=c1, filters=64, kernel_size=5, strides=1, 
+        c2 = tf.layers.conv2d(inputs=c1, filters=64, kernel_size=5, strides=1,
                 padding='same', activation=leaky_relu)
 
         f1 = tf.reshape(c2, [-1, 7 * 7 * 64])
         fc1 = tf.layers.dense(inputs=f1, units=1024, activation=leaky_relu)
         logits = tf.layers.dense(inputs=fc1, units=1)
-        
+
         return logits
 
 def generator(z):
     """Generate images from a random noise vector.
-    
+
     Inputs:
     - z: TensorFlow Tensor of random noise with shape [batch_size, noise_dim]
-    
+
     Returns:
     TensorFlow Tensor of generated images, with shape [batch_size, 784].
     """
     with tf.variable_scope("generator"):
-        fc1 = tf.contrib.layers.fully_connected(z, num_outputs=1024, 
-                activation_fn=tf.nn.relu) 
-        fc2 = tf.contrib.layers.fully_connected(fc1, 
-                num_outputs=2 * 2 * 28 * 28, 
-                activation_fn=tf.nn.relu) 
+        fc1 = tf.contrib.layers.fully_connected(z, num_outputs=1024,
+                activation_fn=tf.nn.relu)
+        fc2 = tf.contrib.layers.fully_connected(fc1,
+                num_outputs=2 * 2 * 28 * 28,
+                activation_fn=tf.nn.relu)
         rs1 = tf.reshape(fc2, [-1, 2 * 28, 2 * 28, 1])
 
-        c1 = tf.layers.conv2d(inputs=rs1, filters=16, 
-                kernel_size=5, strides=1, padding='same', 
+        c1 = tf.layers.conv2d(inputs=rs1, filters=16,
+                kernel_size=5, strides=1, padding='same',
                 activation=leaky_relu)
-        c2 = tf.layers.conv2d(inputs=c1, filters=32, 
-                kernel_size=5, strides=1, padding='same', 
+        c2 = tf.layers.conv2d(inputs=c1, filters=32,
+                kernel_size=5, strides=1, padding='same',
                 activation=leaky_relu)
 
         avg = tf.reduce_mean(c2, axis=3, keep_dims=True)
         rs2 = tf.reshape(x, [-1, x_dim]) # Reshape cause we want ~ (N, 784) instead of ~ (N, 28, 28, 1)
         # Need this last FC layer cause for some reason you can't have reshape
         # as the last layer cause it has no gradient.
-        img = tf.contrib.layers.fully_connected(rs2, num_outputs=x_dim, 
-                activation_fn=tf.tanh) 
+        img = tf.contrib.layers.fully_connected(rs2, num_outputs=x_dim,
+                activation_fn=tf.tanh)
 
-        return img 
- 
+        return img
+
 def log(x):
     return tf.log(x + 1e-8)
 
@@ -158,36 +158,35 @@ with tf.variable_scope("") as scope:
     D_fake = discriminator(G_sample)
 
 D_loss, G_loss = wgangp_loss(D_real, D_fake, x, G_sample)
-D_vars = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, 'discriminator')
-G_vars = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, 'generator') 
 
 dlr, glr, beta1 = 1e-3, 1e-3, 0.5
 D_solver = tf.train.AdamOptimizer(learning_rate=dlr, beta1=beta1)
 G_solver = tf.train.AdamOptimizer(learning_rate=glr, beta1=beta1)
-
 D_extra_step = tf.get_collection(tf.GraphKeys.UPDATE_OPS, 'discriminator')
 G_extra_step = tf.get_collection(tf.GraphKeys.UPDATE_OPS, 'generator')
+D_vars = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, 'discriminator')
+G_vars = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, 'generator')
 with tf.control_dependencies(D_extra_step):
     D_train_step = D_solver.minimize(D_loss, var_list=D_vars)
 with tf.control_dependencies(G_extra_step):
     G_train_step = G_solver.minimize(G_loss, var_list=G_vars)
 
-def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_extra_step,\
-              show_every=250, print_every=50, batch_size=128, num_epoch=10):
+def train(sess, G_train_step, G_loss, D_train_step, D_loss,
+        show_every=250, print_every=50, batch_size=128, num_epoch=10):
     out_dir = "out"
     save_dir = "save"
     mkdir_p(out_dir)
     mkdir_p(save_dir)
 
-    Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1) 
+    Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1)
     if glob.glob(save_dir + "/*"):
         Saver.restore(sess, tf.train.latest_checkpoint(save_dir))
-    
+
     max_iter = int(mnist.train.num_examples * num_epoch / batch_size)
     t = time.time()
     for it in range(max_iter):
         xmb, _ = mnist.train.next_batch(batch_size)
-        z_noise = sample_z(batch_size, noise_dim)          
+        z_noise = sample_z(batch_size, noise_dim)
 
         if it % show_every == 0:
             samples = sess.run(G_sample, feed_dict={z: z_noise})
@@ -205,5 +204,5 @@ def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_
 
 with get_session() as sess:
     sess.run(tf.global_variables_initializer())
-    run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, 
-            G_extra_step, D_extra_step, show_every=200, num_epoch=1000)
+    train(sess, G_train_step, G_loss, D_train_step, D_loss,
+        show_every=200, num_epoch=1000)
