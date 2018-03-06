@@ -7,28 +7,48 @@ import numpy as np
 import glob
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
+from scipy import misc
 from tensorflow.examples.tutorials.mnist import input_data
 mnist = input_data.read_data_sets('./cs231n/datasets/MNIST_data', one_hot=False)
 
 plt.rcParams['figure.figsize'] = (10.0, 8.0) # set default size of plots
 plt.rcParams['image.interpolation'] = 'nearest'
-plt.rcParams['image.cmap'] = 'gray'
 
 batch_size = 128
-x_dim = 784 # 28 * 28, dimension of each image
+img_w = 178
+img_h = 218
+img_c = 3
+w_to_h = 1.0 * img_w / img_h
+x_dim = 116412 # 218, 178, 3 dimension of each image
 noise_dim = 96
+
+def load_images(img_dir):
+    img_paths = []
+    for img in os.listdir(img_dir):
+        img_paths.append(os.path.join(img_dir, img))
+    total = len(img_paths)
+    i = 0
+    while (True):
+        if i + batch_size >= total:
+            i = 0
+            continue
+        images = []
+        for j in range(batch_size):
+            images.append(misc.imread(img_paths[i + j]))
+        images = np.reshape(np.asarray(images), [batch_size, -1])
+        yield(images)
+        i = (i + batch_size) % total
 
 def mkdir_p(dir):
     if not os.path.exists(dir):
         os.makedirs(dir)
 
 def save_images(dir, images, it):
-    images = np.reshape(images, [images.shape[0], -1])  # images reshape to (batch_size, D)
+    images = np.reshape(images, [images.shape[0], -1]) # images reshape to (batch_size, D)
     sqrtn = int(np.ceil(np.sqrt(images.shape[0])))
-    sqrtimg = int(np.ceil(np.sqrt(images.shape[1])))
 
-    fig = plt.figure(figsize=(sqrtn, sqrtn))
-    gs = gridspec.GridSpec(sqrtn, sqrtn)
+    fig = plt.figure(figsize=(10 * w_to_h, 10))
+    gs = gridspec.GridSpec(10, 10)
     gs.update(left=0, right=1, top=1, bottom=0, wspace=0, hspace=0)
 
     for i, img in enumerate(images):
@@ -36,8 +56,8 @@ def save_images(dir, images, it):
         plt.axis('off')
         ax.set_xticklabels([])
         ax.set_yticklabels([])
-        ax.set_aspect('equal')
-        plt.imshow(img.reshape([sqrtimg,sqrtimg]))
+        # ax.set_aspect('equal')
+        plt.imshow(img.reshape([img_h, img_w, img_c]))
 
     imgpath = dir + "/" + str(it).zfill(10) + ".jpg"
     print("Saving img " + imgpath)
@@ -124,8 +144,8 @@ def generator(z, keep_prob):
             trainable=True)
 
         img = tf.contrib.layers.fully_connected(
-            fc1, num_outputs=x_dim,
-            activation_fn=tf.tanh,
+            fc2, num_outputs=x_dim,
+            activation_fn=tf.sigmoid,
             weights_initializer=tf.contrib.layers.xavier_initializer(),
             biases_initializer=tf.constant_initializer(0.1),
             trainable=True)
@@ -134,6 +154,23 @@ def generator(z, keep_prob):
 
 def log(x):
     return tf.log(x + 1e-8)
+
+def gan_loss(logits_real, logits_fake):
+    G_loss = tf.reduce_mean(
+                tf.nn.sigmoid_cross_entropy_with_logits(
+                    labels=tf.ones_like(logits_fake),
+                    logits=logits_fake))
+
+    D_loss = tf.reduce_mean(
+                tf.nn.sigmoid_cross_entropy_with_logits(
+                    labels=tf.ones_like(logits_real),
+                    logits=logits_real)) \
+           + tf.reduce_mean(
+                tf.nn.sigmoid_cross_entropy_with_logits(
+                    labels=tf.zeros_like(logits_fake),
+                    logits=logits_fake))
+
+    return D_loss, G_loss
 
 tf.reset_default_graph()
 
@@ -144,16 +181,18 @@ with tf.name_scope('input'):
 
 with tf.variable_scope("") as scope:
     G_sample = generator(z, keep_prob)
-    D_real = discriminator(preprocess_img(x)) # scale images to be -1 to 1
-    # D_real = discriminator(x) # scale images to be -1 to 1
+    # D_real = discriminator(preprocess_img(x)) # scale images to be -1 to 1
+    D_real = discriminator(x) # real images between 0 and 1
     scope.reuse_variables() # Re-use discriminator weights on new inputs
     D_fake = discriminator(G_sample)
 
-D_target = 1. / batch_size
-G_target = 1. / batch_size
-Z = tf.reduce_sum(tf.exp(-D_real)) + tf.reduce_sum(tf.exp(-D_fake))
-D_loss = tf.reduce_sum(D_target * D_real) + log(Z)
-G_loss = tf.reduce_sum(G_target * D_fake) + log(Z)
+D_loss, G_loss = gan_loss(D_real, D_fake)
+
+# D_target = 1. / batch_size
+# G_target = 1. / batch_size
+# Z = tf.reduce_mean(tf.exp(-D_real)) + tf.reduce_mean(tf.exp(-D_fake))
+# D_loss = tf.reduce_mean(D_target * D_real) + log(Z)
+# G_loss = tf.reduce_mean(G_target * D_fake) + log(Z)
 
 dlr, glr, beta1 = 1e-3, 1e-3, 0.5
 D_solver = tf.train.AdamOptimizer(learning_rate=dlr, beta1=beta1)
@@ -167,6 +206,7 @@ with tf.control_dependencies(D_extra_step):
 with tf.control_dependencies(G_extra_step):
     G_train_step = G_solver.minimize(G_loss, var_list=G_vars)
 
+img_dir = "./data/img_align_celeba/"
 out_dir = "out"
 prefix = "conv-dropout-g-conv-d-softmax"
 save_dir = "save"
@@ -181,15 +221,16 @@ summary_op = tf.summary.merge_all()
 writer = tf.summary.FileWriter(logs_path, graph=tf.get_default_graph())
 
 def train(sess, G_train_step, G_loss, D_train_step, D_loss,
-              show_every=250, print_every=50, batch_size=128, num_epoch=10):
+    show_every=250, print_every=50, max_iter=1000000):
     Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1)
     if glob.glob(save_dir + "/*"):
         Saver.restore(sess, tf.train.latest_checkpoint(save_dir))
 
-    max_iter = int(mnist.train.num_examples * num_epoch / batch_size)
+    batches = load_images(img_dir)
     t = time.time()
     for it in range(max_iter):
-        xmb, _ = mnist.train.next_batch(batch_size)
+        # xmb = batches.next()
+        xmb = next(batches)
         z_noise = sample_z(batch_size, noise_dim)
 
         if it % show_every == 0:
@@ -204,6 +245,7 @@ def train(sess, G_train_step, G_loss, D_train_step, D_loss,
             feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})
 
         if math.isnan(D_loss_curr) or math.isnan(G_loss_curr):
+            print("D or G loss is nan", D_loss_curr, G_loss_curr)
             exit()
 
         if it % print_every == 0: # We want to make sure D_loss doesn't go to 0
@@ -218,4 +260,4 @@ def train(sess, G_train_step, G_loss, D_train_step, D_loss,
 with get_session() as sess:
     sess.run(tf.global_variables_initializer())
     train(sess, G_train_step, G_loss, D_train_step, D_loss,
-        show_every=50, num_epoch=1000)
+        show_every=50, max_iter=1000000)
