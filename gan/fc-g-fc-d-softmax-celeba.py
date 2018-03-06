@@ -165,7 +165,6 @@ with tf.name_scope('input'):
 
 with tf.variable_scope("") as scope:
     G_sample = generator(z, keep_prob)
-    # poij
     # D_real = discriminator(preprocess_img(x)) # scale images to be -1 to 1
     D_real = discriminator(x) # scale images to be -1 to 1
     scope.reuse_variables() # Re-use discriminator weights on new inputs

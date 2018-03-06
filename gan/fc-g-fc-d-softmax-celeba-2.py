@@ -91,8 +91,15 @@ def discriminator(x):
             biases_initializer=tf.constant_initializer(0.1),
             trainable=True)
 
+        fc4 = tf.contrib.layers.fully_connected(
+            fc3, num_outputs=64,
+            activation_fn=leaky_relu,
+            weights_initializer=tf.contrib.layers.xavier_initializer(),
+            biases_initializer=tf.constant_initializer(0.1),
+            trainable=True)
+
         logits = tf.contrib.layers.fully_connected(
-            fc3, num_outputs=1,
+            fc4, num_outputs=1,
             activation_fn=None,
             weights_initializer=tf.contrib.layers.xavier_initializer(),
             biases_initializer=tf.constant_initializer(0.1),
@@ -137,8 +144,8 @@ with tf.name_scope('input'):
 
 with tf.variable_scope("") as scope:
     G_sample = generator(z, keep_prob)
-    # D_real = discriminator(preprocess_img(x)) # scale images to be -1 to 1
-    D_real = discriminator(x) # scale images to be -1 to 1
+    D_real = discriminator(preprocess_img(x)) # scale images to be -1 to 1
+    # D_real = discriminator(x) # scale images to be -1 to 1
     scope.reuse_variables() # Re-use discriminator weights on new inputs
     D_fake = discriminator(G_sample)
 
