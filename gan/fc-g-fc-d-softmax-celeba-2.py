@@ -141,7 +141,7 @@ def generator(z, keep_prob):
 
         img = tf.contrib.layers.fully_connected(
             fc3, num_outputs=x_dim,
-            activation_fn=tf.sigmoid,
+            activation_fn=tf.tanh,
             weights_initializer=tf.contrib.layers.xavier_initializer(),
             biases_initializer=tf.constant_initializer(0.1),
             trainable=True)
@@ -235,6 +235,9 @@ def train(sess, G_train_step, G_loss, D_train_step, D_loss,
             save_images(out_dir, samples[:100], it)
 
         _, D_loss_curr, summary = sess.run([D_train_step, D_loss, summary_op],
+            feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})
+        # train G twice for every D train step. see if that helps learning.
+        _, G_loss_curr = sess.run([G_train_step, G_loss],
             feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})
         _, G_loss_curr = sess.run([G_train_step, G_loss],
             feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})
