@@ -10,13 +10,14 @@ import matplotlib.gridspec as gridspec
 from scipy import misc
 from tensorflow.examples.tutorials.mnist import input_data
 mnist = input_data.read_data_sets('./cs231n/datasets/MNIST_data', one_hot=False)
+import utils
 
 plt.rcParams['figure.figsize'] = (10.0, 8.0) # set default size of plots
 plt.rcParams['image.interpolation'] = 'nearest'
 
-batch_size = 128
-img_w = 178
+batch_size = 100
 img_h = 218
+img_w = 178
 img_c = 3
 w_to_h = 1.0 * img_w / img_h
 x_dim = 116412 # 218, 178, 3 dimension of each image
@@ -35,7 +36,9 @@ def load_images(img_dir):
         images = []
         for j in range(batch_size):
             images.append(misc.imread(img_paths[i + j]))
-        images = np.reshape(np.asarray(images), [batch_size, -1])
+        images = np.reshape(np.asarray(images), [-1, x_dim])
+        images = utils.preprocess_img_rgb(images)
+        assert not np.any(np.isnan(images)), "Images should not contain nan's"
         yield(images)
         i = (i + batch_size) % total
 
@@ -44,9 +47,6 @@ def mkdir_p(dir):
         os.makedirs(dir)
 
 def save_images(dir, images, it):
-    images = np.reshape(images, [images.shape[0], -1]) # images reshape to (batch_size, D)
-    sqrtn = int(np.ceil(np.sqrt(images.shape[0])))
-
     fig = plt.figure(figsize=(10 * w_to_h, 10))
     gs = gridspec.GridSpec(10, 10)
     gs.update(left=0, right=1, top=1, bottom=0, wspace=0, hspace=0)
@@ -57,15 +57,13 @@ def save_images(dir, images, it):
         ax.set_xticklabels([])
         ax.set_yticklabels([])
         # ax.set_aspect('equal')
+        img = utils.deprocess_img(img)
         plt.imshow(img.reshape([img_h, img_w, img_c]))
 
     imgpath = dir + "/" + str(it).zfill(10) + ".jpg"
     print("Saving img " + imgpath)
     fig.savefig(imgpath)
     plt.close(fig)
-
-def preprocess_img(x):
-    return 2 * x - 1.0
 
 def get_session():
     config = tf.ConfigProto()
@@ -74,15 +72,6 @@ def get_session():
     return session
 
 def leaky_relu(x, alpha=0.01):
-    """Compute the leaky ReLU activation function.
-
-    Inputs:
-    - x: TensorFlow Tensor with arbitrary shape
-    - alpha: leak parameter for leaky ReLU
-
-    Returns:
-    TensorFlow Tensor with the same shape as x
-    """
     return tf.maximum(alpha * x, x)
 
 def sample_z(m, n):
@@ -145,10 +134,10 @@ def generator(z, keep_prob):
 
         fc3 = tf.contrib.layers.fully_connected(
             fc2, num_outputs=64,
-            activation_fn=leaky_relu,
-            weights_initializer=tf.contrib.layers.xavier_initializer(),
-            biases_initializer=tf.constant_initializer(0.1),
-            trainable=True)
+             activation_fn=leaky_relu,
+             weights_initializer=tf.contrib.layers.xavier_initializer(),
+             biases_initializer=tf.constant_initializer(0.1),
+             trainable=True)
 
         img = tf.contrib.layers.fully_connected(
             fc3, num_outputs=x_dim,
@@ -188,18 +177,17 @@ with tf.name_scope('input'):
 
 with tf.variable_scope("") as scope:
     G_sample = generator(z, keep_prob)
-    # D_real = discriminator(preprocess_img(x)) # scale images to be -1 to 1
-    D_real = discriminator(x) # real images between 0 and 1
+    D_real = discriminator(x)
     scope.reuse_variables() # Re-use discriminator weights on new inputs
     D_fake = discriminator(G_sample)
 
-D_loss, G_loss = gan_loss(D_real, D_fake)
+# D_loss, G_loss = gan_loss(D_real, D_fake)
 
-# D_target = 1. / batch_size
-# G_target = 1. / batch_size
-# Z = tf.reduce_mean(tf.exp(-D_real)) + tf.reduce_mean(tf.exp(-D_fake))
-# D_loss = tf.reduce_mean(D_target * D_real) + log(Z)
-# G_loss = tf.reduce_mean(G_target * D_fake) + log(Z)
+D_target = 1. / batch_size
+G_target = 1. / batch_size
+Z = tf.reduce_sum(tf.exp(-D_real)) + tf.reduce_sum(tf.exp(-D_fake))
+D_loss = tf.reduce_sum(D_target * D_real) + log(Z)
+G_loss = tf.reduce_sum(G_target * D_fake) + log(Z)
 
 dlr, glr, beta1 = 1e-3, 1e-3, 0.5
 D_solver = tf.train.AdamOptimizer(learning_rate=dlr, beta1=beta1)
@@ -215,7 +203,7 @@ with tf.control_dependencies(G_extra_step):
 
 img_dir = "./data/img_align_celeba/"
 out_dir = "out"
-prefix = "conv-dropout-g-conv-d-softmax"
+prefix = "fc-g-fc-d-softmax"
 save_dir = "save"
 save_dir_prefix = save_dir + "/" + prefix
 logs_path = "logs/" + prefix
@@ -228,7 +216,7 @@ summary_op = tf.summary.merge_all()
 writer = tf.summary.FileWriter(logs_path, graph=tf.get_default_graph())
 
 def train(sess, G_train_step, G_loss, D_train_step, D_loss,
-    show_every=250, print_every=50, max_iter=1000000):
+    save_img_every=250, print_every=50, max_iter=1000000):
     Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1)
     if glob.glob(save_dir + "/*"):
         Saver.restore(sess, tf.train.latest_checkpoint(save_dir))
@@ -236,11 +224,11 @@ def train(sess, G_train_step, G_loss, D_train_step, D_loss,
     batches = load_images(img_dir)
     t = time.time()
     for it in range(max_iter):
-        # xmb = batches.next()
+        # xmb = batches.next() # TODO. Remove
         xmb = next(batches)
         z_noise = sample_z(batch_size, noise_dim)
 
-        if it % show_every == 0:
+        if it % save_img_every == 0:
             samples = sess.run(G_sample, feed_dict={
                 x: xmb, z: z_noise, keep_prob: 1.0
             })
@@ -267,4 +255,4 @@ def train(sess, G_train_step, G_loss, D_train_step, D_loss,
 with get_session() as sess:
     sess.run(tf.global_variables_initializer())
     train(sess, G_train_step, G_loss, D_train_step, D_loss,
-        show_every=50, max_iter=1000000)
+        save_img_every=25, print_every=1, max_iter=1000000)
