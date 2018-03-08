@@ -81,17 +81,16 @@ def discriminator(x):
     with tf.variable_scope("discriminator"):
         input_layer = tf.reshape(x, [-1, img_h, img_w, img_c])
 
-        # poij bring back filters to 16 if not enough MEM
-        c1 = tf.layers.conv2d(inputs=input_layer, filters=32,
+        c1 = tf.layers.conv2d(inputs=input_layer, filters=16,
                 kernel_size=5, strides=1, padding='same',
                 activation=leaky_relu)
         p1 = tf.layers.max_pooling2d(inputs=c1, pool_size=2, strides=2)
 
-        c2 = tf.layers.conv2d(inputs=p1, filters=32, kernel_size=5, strides=1,
+        c2 = tf.layers.conv2d(inputs=p1, filters=16, kernel_size=5, strides=1,
                 padding='same', activation=leaky_relu)
         p2 = tf.layers.max_pooling2d(inputs=c2, pool_size=2, strides=2)
 
-        flat1 = tf.reshape(p2, [-1, 54 * 44 * 32])
+        flat1 = tf.reshape(p2, [-1, 54 * 44 * 16])
         logits = tf.layers.dense(inputs=flat1, units=1)
 
         return logits
@@ -196,6 +195,7 @@ summary_op = tf.summary.merge_all()
 writer = tf.summary.FileWriter(logs_path, graph=tf.get_default_graph())
 
 def train(sess, G_train_step, G_loss, D_train_step, D_loss,
+    D_extra_step, G_extra_step,
     save_img_every=250, print_every=50, max_iter=1000000):
     Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1)
     if glob.glob(save_dir + "/*"):
@@ -214,13 +214,23 @@ def train(sess, G_train_step, G_loss, D_train_step, D_loss,
             })
             save_images(out_dir, samples[:25], it)
 
-        _, D_loss_curr, summary = sess.run([D_train_step, D_loss, summary_op],
-            feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})
+        _, D_loss_curr, summary, _ = sess.run([
+            D_train_step, D_loss, summary_op, D_extra_step
+        ], feed_dict={
+            x: xmb, z: z_noise, keep_prob: 0.3
+        })
+
         # train G twice for every D train step. see if that helps learning.
-        _, G_loss_curr = sess.run([G_train_step, G_loss],
-            feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})
-        _, G_loss_curr = sess.run([G_train_step, G_loss],
-            feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})
+        _, G_loss_curr, _ = sess.run([
+            G_train_step, G_loss, G_extra_step
+        ], feed_dict={
+            x: xmb, z: z_noise, keep_prob: 0.3
+        })
+        _, G_loss_curr, _ = sess.run([
+            G_train_step, G_loss, G_extra_step
+        ], feed_dict={
+            x: xmb, z: z_noise, keep_prob: 0.3
+        })
 
         if math.isnan(D_loss_curr) or math.isnan(G_loss_curr):
             print("D or G loss is nan", D_loss_curr, G_loss_curr)
@@ -238,4 +248,5 @@ def train(sess, G_train_step, G_loss, D_train_step, D_loss,
 with get_session() as sess:
     sess.run(tf.global_variables_initializer())
     train(sess, G_train_step, G_loss, D_train_step, D_loss,
+        D_extra_step, G_extra_step,
         save_img_every=25, print_every=1, max_iter=1000000)
