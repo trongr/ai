@@ -81,17 +81,17 @@ def discriminator(x):
     with tf.variable_scope("discriminator"):
         input_layer = tf.reshape(x, [-1, img_h, img_w, img_c])
 
-        # poij try kernel size 5 here and next layer
-        c1 = tf.layers.conv2d(inputs=input_layer, filters=16,
-                kernel_size=3, strides=1, padding='same',
+        # poij bring back filters to 16 if not enough MEM
+        c1 = tf.layers.conv2d(inputs=input_layer, filters=32,
+                kernel_size=5, strides=1, padding='same',
                 activation=leaky_relu)
         p1 = tf.layers.max_pooling2d(inputs=c1, pool_size=2, strides=2)
 
-        c2 = tf.layers.conv2d(inputs=p1, filters=16, kernel_size=3, strides=1,
+        c2 = tf.layers.conv2d(inputs=p1, filters=32, kernel_size=5, strides=1,
                 padding='same', activation=leaky_relu)
         p2 = tf.layers.max_pooling2d(inputs=c2, pool_size=2, strides=2)
 
-        flat1 = tf.reshape(p2, [-1, 54 * 44 * 16])
+        flat1 = tf.reshape(p2, [-1, 54 * 44 * 32])
         logits = tf.layers.dense(inputs=flat1, units=1)
 
         return logits
