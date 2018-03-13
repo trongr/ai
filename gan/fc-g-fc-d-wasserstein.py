@@ -10,7 +10,7 @@ import matplotlib.gridspec as gridspec
 
 plt.rcParams['figure.figsize'] = (10.0, 8.0) # set default size of plots
 plt.rcParams['image.interpolation'] = 'nearest'
-plt.rcParams['image.cmap'] = 'gray'
+# plt.rcParams['image.cmap'] = 'gray'
 
 batch_size = 128
 x_dim = 784 # 28 * 28, dimension of each image
@@ -57,30 +57,12 @@ from tensorflow.examples.tutorials.mnist import input_data
 mnist = input_data.read_data_sets('./cs231n/datasets/MNIST_data', one_hot=False)
 
 def leaky_relu(x, alpha=0.01):
-    """Compute the leaky ReLU activation function.
-
-    Inputs:
-    - x: TensorFlow Tensor with arbitrary shape
-    - alpha: leak parameter for leaky ReLU
-
-    Returns:
-    TensorFlow Tensor with the same shape as x
-    """
     return tf.maximum(alpha * x, x)
 
 def sample_z(m, n):
     return np.random.uniform(-1., 1., size=[m, n])
 
 def discriminator(x):
-    """Compute discriminator score for a batch of input images.
-
-    Inputs:
-    - x: TensorFlow Tensor of flattened input images, shape [batch_size, x_dim]
-
-    Returns:
-    TensorFlow Tensor with shape [batch_size, 1], containing the score
-    for an image being real for each input image.
-    """
     with tf.variable_scope("discriminator"):
         fc1 = tf.contrib.layers.fully_connected(
             x, num_outputs=256,
@@ -134,21 +116,6 @@ def log(x):
     return tf.log(x + 1e-8)
 
 def wgangp_loss(D_real, D_fake, x, G_sample):
-    """
-    Compute the WGAN-GP loss.
-
-    Inputs:
-    - D_real: Tensor, shape [batch_size, 1], output of discriminator
-        Log probability that the image is real for each real image
-    - D_fake: Tensor, shape[batch_size, 1], output of discriminator
-        Log probability that the image is real for each fake image
-    - x: the input (real) images for this batch
-    - G_sample: the generated (fake) images for this batch
-
-    Returns:
-    - D_loss: discriminator loss scalar
-    - G_loss: generator loss scalar
-    """
     LAMBDA = 10
     G_loss = -tf.reduce_mean(D_fake)
     D_loss = tf.reduce_mean(D_fake) - tf.reduce_mean(D_real)
@@ -170,9 +137,9 @@ tf.reset_default_graph()
 
 x = tf.placeholder(tf.float32, shape=[None, x_dim])
 z = tf.placeholder(tf.float32, shape=[None, noise_dim])
-G_sample = generator(z)
 
 with tf.variable_scope("") as scope:
+    G_sample = generator(z)
     D_real = discriminator(preprocess_img(x)) # scale images to be -1 to 1
     scope.reuse_variables() # Re-use discriminator weights on new inputs
     D_fake = discriminator(G_sample)
