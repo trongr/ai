@@ -15,13 +15,13 @@ import utils
 plt.rcParams['figure.figsize'] = (10.0, 8.0) # set default size of plots
 plt.rcParams['image.interpolation'] = 'nearest'
 
-batch_size = 100
+batch_size = 64
 img_h = 218
 img_w = 178
 img_c = 3
 w_to_h = 1.0 * img_w / img_h
-x_dim = 116412 # 218, 178, 3 dimension of each image
-noise_dim = 96
+x_dim = 116412 # 218 * 178 * 3 dimension of each image
+noise_dim = 64
 
 def load_images(img_dir):
     img_paths = []
@@ -78,40 +78,38 @@ def sample_z(m, n):
     return np.random.uniform(-1., 1., size=[m, n])
 
 def discriminator(x):
+    # x ~ (N, x_dim)
     with tf.variable_scope("discriminator"):
-        input_layer = tf.reshape(x, [-1, img_h, img_w, img_c])
+        fc0 = tf.layers.dense(inputs=x, units=16 * 16, activation=leaky_relu)
+        input_layer = tf.reshape(fc0, [-1, 16, 16, 1])
 
-        c1 = tf.layers.conv2d(inputs=input_layer, filters=16, kernel_size=5,
-                strides=1, padding='same', activation=leaky_relu)
+        c1 = tf.layers.conv2d(inputs=fc0, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
         p1 = tf.layers.max_pooling2d(inputs=c1, pool_size=2, strides=2)
+        # p1 ~ (8, 8, 16)
 
-        c2 = tf.layers.conv2d(inputs=p1, filters=16, kernel_size=5, strides=1,
-                padding='same', activation=leaky_relu)
+        c2 = tf.layers.conv2d(inputs=p1, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
         p2 = tf.layers.max_pooling2d(inputs=c2, pool_size=2, strides=2)
+        # p1 ~ (4, 4, 16)
 
-        f1 = tf.reshape(p2, [-1, 54 * 44 * 16])
-        fc1 = tf.layers.dense(inputs=f1, units=512, activation=leaky_relu)
+        rs1 = tf.reshape(p2, [-1, 4 * 4 * 16])
+        fc1 = tf.layers.dense(inputs=rs1, units=256, activation=leaky_relu)
         logits = tf.layers.dense(inputs=fc1, units=1)
 
         return logits
 
 def generator(z, keep_prob):
+    # z ~ (N, noise_dim) = 64
     with tf.variable_scope("generator"):
-        input_layer = tf.reshape(x, [-1, img_h, img_w, img_c])
+        rs0 = tf.reshape(z, [-1, 8, 8, 1])
 
-        c1 = tf.layers.conv2d(inputs=rs1, filters=16, kernel_size=5, strides=1,
-                padding='same', activation=leaky_relu)
-        p1 = tf.layers.max_pooling2d(inputs=c1, pool_size=2, strides=2)
+        c1 = tf.layers.conv2d(inputs=fc0, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
+        p1 = tf.layers.max_pooling2d(inputs=c1, pool_size=2, strides=2) # (-1, 4, 4, 16)
 
-        c2 = tf.layers.conv2d(inputs=p1, filters=16, kernel_size=5, strides=1,
-                padding='same', activation=leaky_relu)
-        p2 = tf.layers.max_pooling2d(inputs=c2, pool_size=2, strides=2)
+        c2 = tf.layers.conv2d(inputs=p1, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
+        p2 = tf.layers.max_pooling2d(inputs=c2, pool_size=2, strides=2) # (-1, 2, 2, 16)
 
-        avg = tf.reduce_mean(p2, axis=3, keep_dims=True)
-        rs2 = tf.reshape(x, [-1, x_dim])
-        img = tf.contrib.layers.fully_connected(rs2, num_outputs=x_dim,
-                activation_fn=tf.tanh)
-
+        rs2 = tf.reshape(p2, [-1, 2 * 2 * 16])
+        img = tf.layers.dense(inputs=rs2, units=x_dim, activation=tf.tanh)
         return img
 
 def log(x):
