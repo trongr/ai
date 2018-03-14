@@ -84,12 +84,10 @@ def discriminator(x):
         rs0 = tf.reshape(fc0, [-1, 16, 16, 1])
 
         c1 = tf.layers.conv2d(inputs=rs0, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
-        p1 = tf.layers.max_pooling2d(inputs=c1, pool_size=2, strides=2)
-        # p1 ~ (8, 8, 16)
+        p1 = tf.layers.max_pooling2d(inputs=c1, pool_size=2, strides=2) # (-1, 8, 8, 16)
 
         c2 = tf.layers.conv2d(inputs=p1, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
-        p2 = tf.layers.max_pooling2d(inputs=c2, pool_size=2, strides=2)
-        # p1 ~ (4, 4, 16)
+        p2 = tf.layers.max_pooling2d(inputs=c2, pool_size=2, strides=2) # (-1, 4, 4, 16)
 
         rs1 = tf.reshape(p2, [-1, 4 * 4 * 16])
         fc1 = tf.layers.dense(inputs=rs1, units=256, activation=leaky_relu)
