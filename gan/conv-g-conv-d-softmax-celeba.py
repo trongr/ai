@@ -81,9 +81,9 @@ def discriminator(x):
     # x ~ (N, x_dim)
     with tf.variable_scope("discriminator"):
         fc0 = tf.layers.dense(inputs=x, units=16 * 16, activation=leaky_relu)
-        input_layer = tf.reshape(fc0, [-1, 16, 16, 1])
+        rs0 = tf.reshape(fc0, [-1, 16, 16, 1])
 
-        c1 = tf.layers.conv2d(inputs=fc0, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
+        c1 = tf.layers.conv2d(inputs=rs0, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
         p1 = tf.layers.max_pooling2d(inputs=c1, pool_size=2, strides=2)
         # p1 ~ (8, 8, 16)
 
@@ -102,7 +102,7 @@ def generator(z, keep_prob):
     with tf.variable_scope("generator"):
         rs0 = tf.reshape(z, [-1, 8, 8, 1])
 
-        c1 = tf.layers.conv2d(inputs=fc0, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
+        c1 = tf.layers.conv2d(inputs=rs0, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
         p1 = tf.layers.max_pooling2d(inputs=c1, pool_size=2, strides=2) # (-1, 4, 4, 16)
 
         c2 = tf.layers.conv2d(inputs=p1, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
