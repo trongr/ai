@@ -47,8 +47,8 @@ def mkdir_p(dir):
         os.makedirs(dir)
 
 def save_images(dir, images, it):
-    fig = plt.figure(figsize=(10 * w_to_h, 10))
-    gs = gridspec.GridSpec(10, 10)
+    fig = plt.figure(figsize=(8 * w_to_h, 8))
+    gs = gridspec.GridSpec(8, 8)
     gs.update(left=0, right=1, top=1, bottom=0, wspace=0, hspace=0)
 
     for i, img in enumerate(images):
@@ -196,7 +196,7 @@ def train(sess, G_train_step, G_loss, D_train_step, D_loss,
             samples = sess.run(G_sample, feed_dict={
                 x: xmb, z: z_noise, keep_prob: 1.0
             })
-            save_images(out_dir, samples[:100], it)
+            save_images(out_dir, samples[:64], it)
 
         _, D_loss_curr, summary = sess.run([D_train_step, D_loss, summary_op],
             feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})
