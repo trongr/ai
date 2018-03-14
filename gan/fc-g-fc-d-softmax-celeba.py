@@ -168,19 +168,6 @@ def gan_loss(logits_real, logits_fake):
 
     return D_loss, G_loss
 
-def Discriminator_Regularizer(D_real, x, D_fake, G_sample):
-    D1 = tf.nn.sigmoid(D_real)
-    D2 = tf.nn.sigmoid(D_fake)
-    grad_D_real = tf.gradients(D_real, x)[0]
-    grad_D_fake = tf.gradients(D_fake, G_sample)[0]
-    grad_D_real_norm = tf.norm(tf.reshape(grad_D_real, [batch_size, -1]), axis=1, keep_dims=True)
-    grad_D_fake_norm = tf.norm(tf.reshape(grad_D_fake, [batch_size, -1]), axis=1, keep_dims=True)
-
-    reg_D1 = tf.multiply(tf.square(1.0 - D1), tf.square(grad_D_real_norm))
-    reg_D2 = tf.multiply(tf.square(D2), tf.square(grad_D_fake_norm))
-    disc_regularizer = tf.reduce_mean(reg_D1 + reg_D2)
-    return disc_regularizer
-
 tf.reset_default_graph()
 
 with tf.name_scope('input'):
@@ -199,12 +186,7 @@ with tf.variable_scope("") as scope:
 D_target = 1. / batch_size
 G_target = 1. / batch_size
 Z = tf.reduce_sum(tf.exp(-D_real)) + tf.reduce_sum(tf.exp(-D_fake))
-
-# Apply regularization on D loss
-gamma = 2.0 # try 0.1
-D_regu = gamma / 2.0 * Discriminator_Regularizer(D_real, x, D_fake, G_sample)
-D_loss = tf.reduce_sum(D_target * D_real) + log(Z) + D_regu
-
+D_loss = tf.reduce_sum(D_target * D_real) + log(Z)
 G_loss = tf.reduce_sum(G_target * D_fake) + log(Z)
 
 dlr, glr, beta1 = 1e-3, 1e-3, 0.5

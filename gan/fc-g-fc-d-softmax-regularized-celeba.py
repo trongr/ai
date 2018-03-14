@@ -79,38 +79,72 @@ def sample_z(m, n):
 
 def discriminator(x):
     with tf.variable_scope("discriminator"):
-        input_layer = tf.reshape(x, [-1, img_h, img_w, img_c])
+        fc1 = tf.contrib.layers.fully_connected(
+            x, num_outputs=64,
+            activation_fn=leaky_relu,
+            weights_initializer=tf.contrib.layers.xavier_initializer(),
+            biases_initializer=tf.constant_initializer(0.1),
+            trainable=True)
 
-        c1 = tf.layers.conv2d(inputs=input_layer, filters=16, kernel_size=5,
-                strides=1, padding='same', activation=leaky_relu)
-        p1 = tf.layers.max_pooling2d(inputs=c1, pool_size=2, strides=2)
+        fc2 = tf.contrib.layers.fully_connected(
+            fc1, num_outputs=64,
+            activation_fn=leaky_relu,
+            weights_initializer=tf.contrib.layers.xavier_initializer(),
+            biases_initializer=tf.constant_initializer(0.1),
+            trainable=True)
 
-        c2 = tf.layers.conv2d(inputs=p1, filters=16, kernel_size=5, strides=1,
-                padding='same', activation=leaky_relu)
-        p2 = tf.layers.max_pooling2d(inputs=c2, pool_size=2, strides=2)
+        fc3 = tf.contrib.layers.fully_connected(
+            fc2, num_outputs=64,
+            activation_fn=leaky_relu,
+            weights_initializer=tf.contrib.layers.xavier_initializer(),
+            biases_initializer=tf.constant_initializer(0.1),
+            trainable=True)
 
-        f1 = tf.reshape(p2, [-1, 54 * 44 * 16])
-        fc1 = tf.layers.dense(inputs=f1, units=512, activation=leaky_relu)
-        logits = tf.layers.dense(inputs=fc1, units=1)
+        fc4 = tf.contrib.layers.fully_connected(
+            fc3, num_outputs=64,
+            activation_fn=leaky_relu,
+            weights_initializer=tf.contrib.layers.xavier_initializer(),
+            biases_initializer=tf.constant_initializer(0.1),
+            trainable=True)
+
+        logits = tf.contrib.layers.fully_connected(
+            fc4, num_outputs=1,
+            activation_fn=None,
+            weights_initializer=tf.contrib.layers.xavier_initializer(),
+            biases_initializer=tf.constant_initializer(0.1),
+            trainable=True)
 
         return logits
 
 def generator(z, keep_prob):
     with tf.variable_scope("generator"):
-        input_layer = tf.reshape(x, [-1, img_h, img_w, img_c])
+        fc1 = tf.contrib.layers.fully_connected(
+            z, num_outputs=64,
+            activation_fn=leaky_relu,
+            weights_initializer=tf.contrib.layers.xavier_initializer(),
+            biases_initializer=tf.constant_initializer(0.1),
+            trainable=True)
 
-        c1 = tf.layers.conv2d(inputs=rs1, filters=16, kernel_size=5, strides=1,
-                padding='same', activation=leaky_relu)
-        p1 = tf.layers.max_pooling2d(inputs=c1, pool_size=2, strides=2)
+        fc2 = tf.contrib.layers.fully_connected(
+            fc1, num_outputs=64,
+            activation_fn=leaky_relu,
+            weights_initializer=tf.contrib.layers.xavier_initializer(),
+            biases_initializer=tf.constant_initializer(0.1),
+            trainable=True)
 
-        c2 = tf.layers.conv2d(inputs=p1, filters=16, kernel_size=5, strides=1,
-                padding='same', activation=leaky_relu)
-        p2 = tf.layers.max_pooling2d(inputs=c2, pool_size=2, strides=2)
+        fc3 = tf.contrib.layers.fully_connected(
+            fc2, num_outputs=64,
+             activation_fn=leaky_relu,
+             weights_initializer=tf.contrib.layers.xavier_initializer(),
+             biases_initializer=tf.constant_initializer(0.1),
+             trainable=True)
 
-        avg = tf.reduce_mean(p2, axis=3, keep_dims=True)
-        rs2 = tf.reshape(x, [-1, x_dim])
-        img = tf.contrib.layers.fully_connected(rs2, num_outputs=x_dim,
-                activation_fn=tf.tanh)
+        img = tf.contrib.layers.fully_connected(
+            fc3, num_outputs=x_dim,
+            activation_fn=tf.tanh,
+            weights_initializer=tf.contrib.layers.xavier_initializer(),
+            biases_initializer=tf.constant_initializer(0.1),
+            trainable=True)
 
         return img
 
@@ -134,6 +168,19 @@ def gan_loss(logits_real, logits_fake):
 
     return D_loss, G_loss
 
+def Discriminator_Regularizer(D_real, x, D_fake, G_sample):
+    D1 = tf.nn.sigmoid(D_real)
+    D2 = tf.nn.sigmoid(D_fake)
+    grad_D_real = tf.gradients(D_real, x)[0]
+    grad_D_fake = tf.gradients(D_fake, G_sample)[0]
+    grad_D_real_norm = tf.norm(tf.reshape(grad_D_real, [batch_size, -1]), axis=1, keep_dims=True)
+    grad_D_fake_norm = tf.norm(tf.reshape(grad_D_fake, [batch_size, -1]), axis=1, keep_dims=True)
+
+    reg_D1 = tf.multiply(tf.square(1.0 - D1), tf.square(grad_D_real_norm))
+    reg_D2 = tf.multiply(tf.square(D2), tf.square(grad_D_fake_norm))
+    disc_regularizer = tf.reduce_mean(reg_D1 + reg_D2)
+    return disc_regularizer
+
 tf.reset_default_graph()
 
 with tf.name_scope('input'):
@@ -152,7 +199,12 @@ with tf.variable_scope("") as scope:
 D_target = 1. / batch_size
 G_target = 1. / batch_size
 Z = tf.reduce_sum(tf.exp(-D_real)) + tf.reduce_sum(tf.exp(-D_fake))
-D_loss = tf.reduce_sum(D_target * D_real) + log(Z)
+
+# Apply regularization on D loss
+gamma = 0.1
+D_regu = gamma / 2.0 * Discriminator_Regularizer(D_real, x, D_fake, G_sample)
+D_loss = tf.reduce_sum(D_target * D_real) + log(Z) + D_regu
+
 G_loss = tf.reduce_sum(G_target * D_fake) + log(Z)
 
 dlr, glr, beta1 = 1e-3, 1e-3, 0.5
@@ -182,6 +234,7 @@ summary_op = tf.summary.merge_all()
 writer = tf.summary.FileWriter(logs_path, graph=tf.get_default_graph())
 
 def train(sess, G_train_step, G_loss, D_train_step, D_loss,
+    D_extra_step, G_extra_step,
     save_img_every=250, print_every=50, max_iter=1000000):
     Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1)
     if glob.glob(save_dir + "/*"):
@@ -200,13 +253,22 @@ def train(sess, G_train_step, G_loss, D_train_step, D_loss,
             })
             save_images(out_dir, samples[:100], it)
 
-        _, D_loss_curr, summary = sess.run([D_train_step, D_loss, summary_op],
-            feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})
         # train G twice for every D train step. see if that helps learning.
-        _, G_loss_curr = sess.run([G_train_step, G_loss],
-            feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})
-        _, G_loss_curr = sess.run([G_train_step, G_loss],
-            feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})
+        _, D_loss_curr, summary, _ = sess.run([
+            D_train_step, D_loss, summary_op, D_extra_step
+        ], feed_dict={
+            x: xmb, z: z_noise, keep_prob: 0.3
+        })
+        _, G_loss_curr, _ = sess.run([
+            G_train_step, G_loss, G_extra_step
+        ], feed_dict={
+            x: xmb, z: z_noise, keep_prob: 0.3
+        })
+        _, G_loss_curr, _ = sess.run([
+            G_train_step, G_loss, G_extra_step
+        ], feed_dict={
+            x: xmb, z: z_noise, keep_prob: 0.3
+        })
 
         if math.isnan(D_loss_curr) or math.isnan(G_loss_curr):
             print("D or G loss is nan", D_loss_curr, G_loss_curr)
@@ -224,4 +286,5 @@ def train(sess, G_train_step, G_loss, D_train_step, D_loss,
 with get_session() as sess:
     sess.run(tf.global_variables_initializer())
     train(sess, G_train_step, G_loss, D_train_step, D_loss,
+        D_extra_step, G_extra_step,
         save_img_every=25, print_every=1, max_iter=1000000)
