@@ -65,9 +65,8 @@ def sample_z(m, n):
 def discriminator(x):
     # x ~ (N, x_dim) = 28 * 28 = 784
     with tf.variable_scope("discriminator"):
-        # fc0 = tf.layers.dense(inputs=x, units=16 * 16, activation=leaky_relu)
-        # rs0 = tf.reshape(fc0, [-1, 16, 16, 1])
-        rs0 = tf.reshape(x, [-1, 28, 28, 1])
+        fc0 = tf.layers.dense(inputs=x, units=16 * 16, activation=leaky_relu)
+        rs0 = tf.reshape(fc0, [-1, 16, 16, 1])
 
         c1 = tf.layers.conv2d(inputs=rs0, filters=32, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
         p1 = tf.layers.max_pooling2d(inputs=c1, pool_size=2, strides=2) # (-1, 14, 14, 32)

@@ -40,7 +40,7 @@ def save_images(dir, images, it):
         plt.imshow(img.reshape([sqrtimg,sqrtimg]))
 
     imgpath = dir + "/" + str(it).zfill(10) + ".jpg"
-    print("Saving img " + imgpath)    
+    print("Saving img " + imgpath)
     fig.savefig(imgpath)
     plt.close(fig)
 
@@ -55,11 +55,11 @@ def get_session():
 
 def leaky_relu(x, alpha=0.01):
     """Compute the leaky ReLU activation function.
-    
+
     Inputs:
     - x: TensorFlow Tensor with arbitrary shape
     - alpha: leak parameter for leaky ReLU
-    
+
     Returns:
     TensorFlow Tensor with the same shape as x
     """
@@ -70,12 +70,12 @@ def sample_z(m, n):
 
 def discriminator(x):
     """Compute discriminator score for a batch of input images.
-    
+
     Inputs:
     - x: TensorFlow Tensor of flattened input images, shape [batch_size, x_dim]
-    
+
     Returns:
-    TensorFlow Tensor with shape [batch_size, 1], containing the score 
+    TensorFlow Tensor with shape [batch_size, 1], containing the score
     for an image being real for each input image.
     """
     with tf.variable_scope("discriminator"):
@@ -86,16 +86,16 @@ def discriminator(x):
 
 def generator(z):
     """Generate images from a random noise vector.
-    
+
     Inputs:
     - z: TensorFlow Tensor of random noise with shape [batch_size, noise_dim]
-    
+
     Returns:
     TensorFlow Tensor of generated images, with shape [batch_size, 784].
     """
     with tf.variable_scope("generator"):
-        fc1 = tf.contrib.layers.fully_connected(z, num_outputs=1024, 
-                activation_fn=tf.nn.relu) 
+        fc1 = tf.contrib.layers.fully_connected(z, num_outputs=1024,
+                activation_fn=tf.nn.relu)
         bn1 = tf.layers.batch_normalization(
                 fc1,
                 axis=-1,
@@ -103,13 +103,13 @@ def generator(z):
                 epsilon=0.001, # use default
                 center=True, # enable beta
                 scale=True, # enable gamma
-                training=True) 
+                training=True)
         # Adversarial is always training, unless you're using generator to
         # generate images (which you can also do during training).
 
-        fc2 = tf.contrib.layers.fully_connected(bn1, 
-                num_outputs=2 * 2 * 28 * 28, 
-                activation_fn=tf.nn.relu) 
+        fc2 = tf.contrib.layers.fully_connected(bn1,
+                num_outputs=2 * 2 * 28 * 28,
+                activation_fn=tf.nn.relu)
         bn2 = tf.layers.batch_normalization(
                 fc2,
                 axis=-1,
@@ -120,24 +120,24 @@ def generator(z):
                 training=True)
         rs1 = tf.reshape(bn2, [-1, 2 * 28, 2 * 28, 1])
 
-        c1 = tf.layers.conv2d(inputs=rs1, filters=16, 
-                kernel_size=5, strides=1, padding='same', 
+        c1 = tf.layers.conv2d(inputs=rs1, filters=16,
+                kernel_size=5, strides=1, padding='same',
                 activation=leaky_relu)
-        p1 = tf.layers.max_pooling2d(inputs=c1, pool_size=2, strides=2) 
+        p1 = tf.layers.max_pooling2d(inputs=c1, pool_size=2, strides=2)
 
-        c2 = tf.layers.conv2d(inputs=p1, filters=32, 
-                kernel_size=5, strides=1, padding='same', 
+        c2 = tf.layers.conv2d(inputs=p1, filters=32,
+                kernel_size=5, strides=1, padding='same',
                 activation=leaky_relu)
 
         avg = tf.reduce_mean(c2, axis=3, keep_dims=True)
-        rs2 = tf.reshape(x, [-1, x_dim]) # Reshape cause we want ~ (N, 784) instead of ~ (N, 28, 28, 1)
+        rs2 = tf.reshape(avg, [-1, x_dim]) # Reshape cause we want ~ (N, 784) instead of ~ (N, 28, 28, 1)
         # Need this last FC layer cause for some reason you can't have reshape
         # as the last layer cause it has no gradient.
-        img = tf.contrib.layers.fully_connected(rs2, num_outputs=x_dim, 
-                activation_fn=tf.tanh) 
+        img = tf.contrib.layers.fully_connected(rs2, num_outputs=x_dim,
+                activation_fn=tf.tanh)
 
-        return img 
- 
+        return img
+
 def log(x):
     return tf.log(x + 1e-8)
 
@@ -153,7 +153,7 @@ with tf.variable_scope("") as scope:
     D_fake = discriminator(G_sample)
 
 D_vars = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, 'discriminator')
-G_vars = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, 'generator') 
+G_vars = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, 'generator')
 
 D_target = 1. / batch_size
 G_target = 1. / batch_size
@@ -173,23 +173,23 @@ with tf.control_dependencies(D_extra_step):
 with tf.control_dependencies(G_extra_step):
     G_train_step = G_solver.minimize(G_loss, var_list=G_vars)
 
-def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, 
-            D_extra_step, show_every=250, print_every=50, batch_size=128, 
+def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step,
+            D_extra_step, show_every=250, print_every=50, batch_size=128,
             num_epoch=10):
     out_dir = "out"
     save_dir = "save"
     mkdir_p(out_dir)
     mkdir_p(save_dir)
 
-    Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1) 
+    Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1)
     if glob.glob(save_dir + "/*"):
         Saver.restore(sess, tf.train.latest_checkpoint(save_dir))
-    
+
     max_iter = int(mnist.train.num_examples * num_epoch / batch_size)
     t = time.time()
     for it in range(max_iter):
         xmb, _ = mnist.train.next_batch(batch_size)
-        z_noise = sample_z(batch_size, noise_dim)          
+        z_noise = sample_z(batch_size, noise_dim)
 
         if it % show_every == 0:
             samples = sess.run(G_sample, feed_dict={x: xmb, z: z_noise})
@@ -207,5 +207,5 @@ def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step,
 
 with get_session() as sess:
     sess.run(tf.global_variables_initializer())
-    run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, 
+    run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss,
             G_extra_step, D_extra_step, show_every=200, num_epoch=1000)
