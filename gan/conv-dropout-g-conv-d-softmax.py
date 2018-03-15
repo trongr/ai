@@ -54,15 +54,6 @@ def get_session():
     return session
 
 def leaky_relu(x, alpha=0.01):
-    """Compute the leaky ReLU activation function.
-
-    Inputs:
-    - x: TensorFlow Tensor with arbitrary shape
-    - alpha: leak parameter for leaky ReLU
-
-    Returns:
-    TensorFlow Tensor with the same shape as x
-    """
     return tf.maximum(alpha * x, x)
 
 def sample_z(m, n):

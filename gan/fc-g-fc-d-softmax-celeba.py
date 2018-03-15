@@ -230,35 +230,20 @@ def train(sess, G_train_step, G_loss, D_train_step, D_loss,
         z_noise = sample_z(batch_size, noise_dim)
 
         if it % save_img_every == 0:
-            samples = sess.run(G_sample, feed_dict={
-                x: xmb, z: z_noise, keep_prob: 1.0
-            })
+            samples = sess.run(G_sample, feed_dict={x: xmb, z: z_noise, keep_prob: 1.0})
             save_images(out_dir, samples[:100], it)
 
         # train G twice for every D train step. see if that helps learning.
-        _, D_loss_curr, summary, _ = sess.run([
-            D_train_step, D_loss, summary_op, D_extra_step
-        ], feed_dict={
-            x: xmb, z: z_noise, keep_prob: 0.3
-        })
-        _, G_loss_curr, _ = sess.run([
-            G_train_step, G_loss, G_extra_step
-        ], feed_dict={
-            x: xmb, z: z_noise, keep_prob: 0.3
-        })
-        _, G_loss_curr, _ = sess.run([
-            G_train_step, G_loss, G_extra_step
-        ], feed_dict={
-            x: xmb, z: z_noise, keep_prob: 0.3
-        })
+        _, D_loss_curr, summary, _ = sess.run([D_train_step, D_loss, summary_op, D_extra_step], feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})
+        _, G_loss_curr, _ = sess.run([G_train_step, G_loss, G_extra_step], feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})
+        _, G_loss_curr, _ = sess.run([G_train_step, G_loss, G_extra_step], feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})
 
         if math.isnan(D_loss_curr) or math.isnan(G_loss_curr):
             print("D or G loss is nan", D_loss_curr, G_loss_curr)
             exit()
 
         if it % print_every == 0: # We want to make sure D_loss doesn't go to 0
-            print('Iter: {}, D: {:.4}, G: {:.4}, Elapsed: {:.4}'
-                .format(it, D_loss_curr, G_loss_curr, time.time() - t))
+            print('Iter: {}, D: {:.4}, G: {:.4}, Elapsed: {:.4}'.format(it, D_loss_curr, G_loss_curr, time.time() - t))
             t = time.time()
 
         if it % 10 == 0:
@@ -267,6 +252,4 @@ def train(sess, G_train_step, G_loss, D_train_step, D_loss,
 
 with get_session() as sess:
     sess.run(tf.global_variables_initializer())
-    train(sess, G_train_step, G_loss, D_train_step, D_loss,
-        D_extra_step, G_extra_step,
-        save_img_every=25, print_every=1, max_iter=1000000)
+    train(sess, G_train_step, G_loss, D_train_step, D_loss, D_extra_step, G_extra_step, save_img_every=25, print_every=1, max_iter=1000000)
