@@ -117,7 +117,7 @@ def generator(z):
                 activation=leaky_relu)
 
         avg = tf.reduce_mean(c2, axis=3, keep_dims=True)
-        rs2 = tf.reshape(x, [-1, x_dim]) # Reshape cause we want ~ (N, 784) instead of ~ (N, 28, 28, 1)
+        rs2 = tf.reshape(avg, [-1, x_dim]) # Reshape cause we want ~ (N, 784) instead of ~ (N, 28, 28, 1)
         # Need this last FC layer cause for some reason you can't have reshape
         # as the last layer cause it has no gradient.
         img = tf.contrib.layers.fully_connected(rs2, num_outputs=x_dim,
