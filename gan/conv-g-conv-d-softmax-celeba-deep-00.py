@@ -113,6 +113,7 @@ def discriminator(x):
 def generator(z, keep_prob):
     # z ~ (N, noise_dim) = 64
     with tf.variable_scope("generator"):
+        # Cluster 1
         rs0 = tf.reshape(z, [-1, 8, 8, 1])
 
         c1 = tf.layers.conv2d(inputs=rs0, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
@@ -121,8 +122,23 @@ def generator(z, keep_prob):
         c2 = tf.layers.conv2d(inputs=p1, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
         p2 = tf.layers.max_pooling2d(inputs=c2, pool_size=2, strides=2) # (-1, 2, 2, 16)
 
-        rs2 = tf.reshape(p2, [-1, 2 * 2 * 16])
-        img = tf.layers.dense(inputs=rs2, units=x_dim, activation=tf.tanh)
+        rs3 = tf.reshape(p2, [-1, 2 * 2 * 16])
+
+        # Cluster 2
+        fc4 = tf.layers.dense(inputs=rs3, units=8 * 8, activation=leaky_relu)
+        rs4 = tf.reshape(fc4, [-1, 8, 8, 1])
+
+        c5 = tf.layers.conv2d(inputs=rs4, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
+        p5 = tf.layers.max_pooling2d(inputs=c5, pool_size=2, strides=2) # (-1, 4, 4, 16)
+
+        c6 = tf.layers.conv2d(inputs=p5, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
+        p6 = tf.layers.max_pooling2d(inputs=c6, pool_size=2, strides=2) # (-1, 2, 2, 16)
+
+        rs7 = tf.reshape(p6, [-1, 2 * 2 * 16])
+
+        # Tail cluster 3
+        fc7 = tf.layers.dense(inputs=rs7, units=16 * 16, activation=leaky_relu)
+        img = tf.layers.dense(inputs=fc7, units=x_dim, activation=tf.tanh)
         return img
 
 def log(x):
