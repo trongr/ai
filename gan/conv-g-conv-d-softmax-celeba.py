@@ -80,7 +80,6 @@ def sample_z(m, n):
 def discriminator(x):
     # x ~ (N, x_dim)
     with tf.variable_scope("discriminator"):
-        # Cluster 1
         fc0 = tf.layers.dense(inputs=x, units=16 * 16, activation=leaky_relu)
         rs0 = tf.reshape(fc0, [-1, 16, 16, 1])
 
@@ -90,23 +89,9 @@ def discriminator(x):
         c2 = tf.layers.conv2d(inputs=p1, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
         p2 = tf.layers.max_pooling2d(inputs=c2, pool_size=2, strides=2) # (-1, 4, 4, 16)
 
-        rs3 = tf.reshape(p2, [-1, 4 * 4 * 16])
-
-        # Cluster 2
-        fc4 = tf.layers.dense(inputs=rs3, units=16 * 16, activation=leaky_relu)
-        rs4 = tf.reshape(fc4, [-1, 16, 16, 1])
-
-        c5 = tf.layers.conv2d(inputs=rs4, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
-        p5 = tf.layers.max_pooling2d(inputs=c5, pool_size=2, strides=2) # (-1, 8, 8, 16)
-
-        c6 = tf.layers.conv2d(inputs=p5, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
-        p6 = tf.layers.max_pooling2d(inputs=c6, pool_size=2, strides=2) # (-1, 4, 4, 16)
-
-        rs7 = tf.reshape(p6, [-1, 4 * 4 * 16])
-
-        # Tail cluster 3
-        fc7 = tf.layers.dense(inputs=rs7, units=16 * 16, activation=leaky_relu)
-        logits = tf.layers.dense(inputs=fc7, units=1)
+        rs1 = tf.reshape(p2, [-1, 4 * 4 * 16])
+        fc1 = tf.layers.dense(inputs=rs1, units=256, activation=leaky_relu)
+        logits = tf.layers.dense(inputs=fc1, units=1)
 
         return logits
 
@@ -180,7 +165,7 @@ with tf.control_dependencies(G_extra_step):
 
 img_dir = "./data/img_align_celeba/"
 out_dir = "out"
-prefix = "fc-g-fc-d-softmax"
+prefix = "conv-g-conv-d-softmax-celeba"
 save_dir = "save"
 save_dir_prefix = save_dir + "/" + prefix
 logs_path = "logs/" + prefix
