@@ -8,8 +8,8 @@ import glob
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 from scipy import misc
-from tensorflow.examples.tutorials.mnist import input_data
-mnist = input_data.read_data_sets('./cs231n/datasets/MNIST_data', one_hot=False)
+# from tensorflow.examples.tutorials.mnist import input_data
+# mnist = input_data.read_data_sets('./cs231n/datasets/MNIST_data', one_hot=False)
 import utils
 
 plt.rcParams['figure.figsize'] = (10.0, 8.0) # set default size of plots
