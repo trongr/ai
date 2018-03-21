@@ -180,7 +180,8 @@ D_target = 1. / batch_size
 G_target = 1. / batch_size
 Z = tf.reduce_sum(tf.exp(-D_real)) + tf.reduce_sum(tf.exp(-D_fake))
 D_loss = tf.reduce_sum(D_target * D_real) + log(Z)
-G_loss = tf.reduce_sum(G_target * D_fake) + log(Z)
+# G_loss = tf.reduce_sum(G_target * D_fake) + log(Z)
+G_loss = tf.reduce_sum(G_target * D_fake) + tf.reduce_sum(G_target * D_real) + log(Z)
 
 dlr, glr, beta1 = 1e-3, 1e-3, 0.5
 D_solver = tf.train.AdamOptimizer(learning_rate=dlr, beta1=beta1)
