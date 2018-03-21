@@ -179,8 +179,8 @@ with tf.variable_scope("") as scope:
 Z = tf.reduce_sum(tf.exp(-D_real)) + tf.reduce_sum(tf.exp(-D_fake))
 reduce_real = tf.reduce_sum(1. / batch_size * D_real)
 reduce_fake = tf.reduce_sum(1. / batch_size * D_fake)
-D_loss =   reduce_real - reduce_fake + log(Z)
-G_loss = - reduce_real + reduce_fake + log(Z)
+D_loss = reduce_real + log(Z)
+G_loss = reduce_real + reduce_fake + log(Z)
 
 dlr, glr, beta1 = 1e-3, 1e-3, 0.5
 D_solver = tf.train.AdamOptimizer(learning_rate=dlr, beta1=beta1)
