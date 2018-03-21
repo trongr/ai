@@ -176,11 +176,10 @@ with tf.variable_scope("") as scope:
 
 # D_loss, G_loss = gan_loss(D_real, D_fake)
 
-D_target = 1. / batch_size
-G_target = 1. / batch_size
-Z = tf.reduce_sum(tf.exp(-D_real)) + tf.reduce_sum(tf.exp(-D_fake))
-D_loss = tf.reduce_sum(D_target * D_real) + log(Z)
-G_loss = tf.reduce_sum(G_target * D_fake) + log(Z)
+reduce_fake = tf.reduce_sum(1. / batch_size * D_fake)
+reduce_real = tf.reduce_sum(1. / batch_size * D_real)
+D_loss = reduce_real - reduce_fake
+G_loss = reduce_fake
 
 dlr, glr, beta1 = 1e-3, 1e-3, 0.5
 D_solver = tf.train.AdamOptimizer(learning_rate=dlr, beta1=beta1)
