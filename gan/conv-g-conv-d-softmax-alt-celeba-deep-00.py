@@ -180,6 +180,7 @@ Z = tf.reduce_sum(tf.exp(-D_real)) + tf.reduce_sum(tf.exp(-D_fake))
 reduce_real = tf.reduce_sum(1. / batch_size * D_real)
 reduce_fake = tf.reduce_sum(1. / batch_size * D_fake)
 D_loss = reduce_real + log(Z)
+# Extra real term here doesn't affect learning, or protect against adversarial attacks
 G_loss = reduce_real + reduce_fake + log(Z)
 
 dlr, glr, beta1 = 1e-3, 1e-3, 0.5
