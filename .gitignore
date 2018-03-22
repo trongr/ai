@@ -10,6 +10,7 @@ logs
 test
 tmp
 MNIST_data
+MNIST-data
 text8.zip
 save/
 tensorflow/rnn/opus/

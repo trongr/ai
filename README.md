@@ -2,6 +2,7 @@
 
 # References
 
++ Explaining and harnessing adversarial examples
 + Improved Techniques for Training GANs
 + Stabilizing Training of Generative Adversarial Networks through Regularization
 + Unrolled Generative Adversarial Networks
