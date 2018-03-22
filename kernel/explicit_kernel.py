@@ -25,6 +25,18 @@ eval_input_fn = get_input_fn(data.validation, batch_size=5000)
 # Specify the feature(s) to be used by the estimator.
 image_column = tf.contrib.layers.real_valued_column('images', dimension=784)
 estimator = tf.contrib.learn.LinearClassifier(feature_columns=[image_column], n_classes=10)
+""""Alternate estimator"""
+# optimizer = tf.train.FtrlOptimizer(learning_rate=5.0, l2_regularization_strength=1.0)
+# estimator = tf.contrib.learn.LinearClassifier(feature_columns=[image_column], n_classes=10, optimizer=optimizer)
+
+"""Missing tf.contrib.kernel_methods"""
+# # Specify the feature(s) to be used by the estimator. This is identical to the
+# # code used for the LinearClassifier.
+# image_column = tf.contrib.layers.real_valued_column('images', dimension=784)
+# optimizer = tf.train.FtrlOptimizer(learning_rate=50.0, l2_regularization_strength=0.001)
+# kernel_mapper = tf.contrib.kernel_methods.RandomFourierFeatureMapper(input_dim=784, output_dim=2000, stddev=5.0, name='rffm')
+# kernel_mappers = {image_column: [kernel_mapper]}
+# estimator = tf.contrib.kernel_methods.KernelLinearClassifier(n_classes=10, optimizer=optimizer, kernel_mappers=kernel_mappers)
 
 # Train.
 start = time.time()
@@ -35,3 +47,4 @@ print('Elapsed time: {} seconds'.format(end - start))
 # Evaluate and report metrics.
 eval_metrics = estimator.evaluate(input_fn=eval_input_fn, steps=1)
 print(eval_metrics)
+
