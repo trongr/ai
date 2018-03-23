@@ -21,7 +21,8 @@ img_w = 178
 img_c = 3
 w_to_h = 1.0 * img_w / img_h
 x_dim = 116412 # 218 * 178 * 3 dimension of each image
-noise_dim = 64 + x_dim
+noise_dim = 64
+D_input_dim = noise_dim + x_dim
 
 def load_images(img_dir):
     img_paths = []
@@ -111,7 +112,7 @@ def discriminator(x):
         return logits
 
 def generator(z, keep_prob):
-    # z ~ (N, noise_dim) = 64 + 218 * 178 * 3 = 116476 = 4 * 37 * 787
+    # z ~ (N, D_input_dim) = 64 + 218 * 178 * 3 = 116476 = 4 * 37 * 787
     with tf.variable_scope("generator"):
         # Cluster 1
         fc0 = tf.layers.dense(inputs=z, units=8 * 8, activation=leaky_relu) # reduce input dimension otw it'll blow up MEM
@@ -166,7 +167,7 @@ tf.reset_default_graph()
 
 with tf.name_scope('input'):
     x = tf.placeholder(tf.float32, shape=[None, x_dim], name="x-input")
-    z = tf.placeholder(tf.float32, shape=[None, noise_dim], name="z-input")
+    z = tf.placeholder(tf.float32, shape=[None, D_input_dim], name="z-input")
     keep_prob = tf.placeholder(tf.float32, name='keep_prob')
 
 with tf.variable_scope("") as scope:
@@ -214,21 +215,26 @@ def train(sess, G_train_step, G_loss, D_train_step, D_loss, D_extra_step, G_extr
     if glob.glob(save_dir + "/*"):
         Saver.restore(sess, tf.train.latest_checkpoint(save_dir))
 
+    samples = None
     batches = load_images(img_dir)
     t = time.time()
     for it in range(max_iter):
-        # xmb = batches.next() # TODO. Remove
+        # xmb = batches.next()
         xmb = next(batches)
-        z_noise = sample_z(batch_size, noise_dim)
-
-        if it % save_img_every == 0:
-            samples = sess.run(G_sample, feed_dict={x: xmb, z: z_noise, keep_prob: 1.0})
-            save_images(out_dir, samples[:64], it)
+        if samples is None: # Create all noise in the beginning
+            z_noise = sample_z(batch_size, D_input_dim)
+        else: # Every iteration afterwards add samples to noise
+            z_noise = sample_z(batch_size, noise_dim)
+            z_noise = np.hstack((z_noise, samples))
 
         # train G twice for every D train step. see if that helps learning.
         _, D_loss_curr, _, summary = sess.run([D_train_step, D_loss, D_extra_step, summary_op], feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})
         _, G_loss_curr, _ = sess.run([G_train_step, G_loss, D_extra_step], feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})
         _, G_loss_curr, _ = sess.run([G_train_step, G_loss, D_extra_step], feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})
+        samples = sess.run(G_sample, feed_dict={x: xmb, z: z_noise, keep_prob: 1.0})
+
+        if it % save_img_every == 0:
+            save_images(out_dir, samples[:64], it)
 
         if math.isnan(D_loss_curr) or math.isnan(G_loss_curr):
             print("D or G loss is nan", D_loss_curr, G_loss_curr)
