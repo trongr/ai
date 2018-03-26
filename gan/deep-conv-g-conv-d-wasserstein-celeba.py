@@ -25,7 +25,7 @@ noise_dim = 64
 
 img_dir = "./data/img_align_celeba/"
 out_dir = "out"
-prefix = "recursive-conv-g-conv-d-softmax-celeba-01"
+prefix = "deep-conv-g-conv-d-wasserstein-celeba"
 save_dir = "save"
 save_dir_prefix = save_dir + "/" + prefix
 logs_path = "logs/" + prefix
@@ -125,8 +125,8 @@ def discriminator(x):
         return logits
 
 
-def generator(z, samples_input, keep_prob):
-    # z ~ (N, noise_dim)
+def generator(z, keep_prob):
+    # z ~ (N, noise_dim) = 64
     with tf.variable_scope("generator"):
         # Cluster 1
         rs0 = tf.reshape(z, [-1, 8, 8, 1])
@@ -150,10 +150,9 @@ def generator(z, samples_input, keep_prob):
         p6 = tf.layers.max_pooling2d(inputs=c6, pool_size=2, strides=2)  # (-1, 2, 2, 16)
 
         rs7 = tf.reshape(p6, [-1, 2 * 2 * 16])
-        hs7 = tf.concat([rs7, samples_input], 1)
 
         # Tail cluster 3
-        fc7 = tf.layers.dense(inputs=hs7, units=16 * 16, activation=leaky_relu)
+        fc7 = tf.layers.dense(inputs=rs7, units=16 * 16, activation=leaky_relu)
         img = tf.layers.dense(inputs=fc7, units=x_dim, activation=tf.tanh)
         return img
 
@@ -162,21 +161,20 @@ def log(x):
     return tf.log(x + 1e-8)
 
 
-def wgangp_loss(D_real, D_fake, x, G_sample):
-    LAMBDA = 10
-    G_loss = -tf.reduce_mean(D_fake)
-    D_loss = tf.reduce_mean(D_fake) - tf.reduce_mean(D_real)
+def gan_loss(logits_real, logits_fake):
+    G_loss = tf.reduce_mean(
+        tf.nn.sigmoid_cross_entropy_with_logits(
+            labels=tf.ones_like(logits_fake),
+            logits=logits_fake))
 
-    alpha = tf.random_uniform(shape=[batch_size, 1], minval=0., maxval=1.)
-    differences = G_sample - x
-    interpolates = x + (alpha * differences)
-
-    with tf.variable_scope('', reuse=True) as scope:
-        gradients = tf.gradients(discriminator(interpolates), [interpolates])[0]
-        slopes = tf.sqrt(tf.reduce_sum(tf.square(gradients), reduction_indices=[1]))
-        gradient_penalty = tf.reduce_mean((slopes - 1.)**2)
-
-    D_loss += LAMBDA * gradient_penalty
+    D_loss = tf.reduce_mean(
+        tf.nn.sigmoid_cross_entropy_with_logits(
+            labels=tf.ones_like(logits_real),
+            logits=logits_real)) \
+        + tf.reduce_mean(
+        tf.nn.sigmoid_cross_entropy_with_logits(
+            labels=tf.zeros_like(logits_fake),
+            logits=logits_fake))
 
     return D_loss, G_loss
 
@@ -186,16 +184,15 @@ tf.reset_default_graph()
 with tf.name_scope('input'):
     x = tf.placeholder(tf.float32, shape=[None, x_dim], name="x-input")
     z = tf.placeholder(tf.float32, shape=[None, noise_dim], name="z-input")
-    samples_input = tf.placeholder(tf.float32, shape=[None, x_dim], name="samples-input")
     keep_prob = tf.placeholder(tf.float32, name='keep_prob')
 
 with tf.variable_scope("") as scope:
-    G_sample = generator(z, samples_input, keep_prob)
+    G_sample = generator(z, keep_prob)
     D_real = discriminator(x)
     scope.reuse_variables()  # Re-use discriminator weights on new inputs
     D_fake = discriminator(G_sample)
 
-D_loss, G_loss = wgangp_loss(D_real, D_fake, x, G_sample)
+D_loss, G_loss = gan_loss(D_real, D_fake)
 
 dlr, glr, beta1 = 1e-3, 1e-3, 0.5
 D_solver = tf.train.AdamOptimizer(learning_rate=dlr, beta1=beta1)
@@ -223,21 +220,21 @@ def train(sess, G_train_step, G_loss, D_train_step, D_loss, D_extra_step, G_extr
     if glob.glob(save_dir + "/*"):
         Saver.restore(sess, tf.train.latest_checkpoint(save_dir))
 
-    samples = None
     batches = load_images(img_dir)
     t = time.time()
     for it in range(max_iter):
+        # xmb = batches.next() # TODO. Remove
         xmb = next(batches)
         z_noise = sample_z(batch_size, noise_dim)
-        if samples is None:
-            samples = sample_z(batch_size, x_dim)
-
-        _, D_loss_curr, _, summary = sess.run([D_train_step, D_loss, D_extra_step, summary_op], feed_dict={x: xmb, z: z_noise, samples_input: samples, keep_prob: 0.3})
-        _, G_loss_curr, _ = sess.run([G_train_step, G_loss, D_extra_step], feed_dict={x: xmb, z: z_noise, samples_input: samples, keep_prob: 0.3})
-        samples = sess.run(G_sample, feed_dict={x: xmb, z: z_noise, samples_input: samples, keep_prob: 1.0})
 
         if it % save_img_every == 0:
+            samples = sess.run(G_sample, feed_dict={x: xmb, z: z_noise, keep_prob: 1.0})
             save_images(out_dir, samples[:64], it)
+
+        # train G twice for every D train step. see if that helps learning.
+        _, D_loss_curr, _, summary = sess.run([D_train_step, D_loss, D_extra_step, summary_op], feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})
+        _, G_loss_curr, _ = sess.run([G_train_step, G_loss, D_extra_step], feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})
+        _, G_loss_curr, _ = sess.run([G_train_step, G_loss, D_extra_step], feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})
 
         if math.isnan(D_loss_curr) or math.isnan(G_loss_curr):
             print("D or G loss is nan", D_loss_curr, G_loss_curr)
