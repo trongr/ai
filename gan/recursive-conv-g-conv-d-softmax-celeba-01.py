@@ -162,25 +162,6 @@ def log(x):
     return tf.log(x + 1e-8)
 
 
-def wgangp_loss(D_real, D_fake, x, G_sample):
-    LAMBDA = 10
-    G_loss = -tf.reduce_mean(D_fake)
-    D_loss = tf.reduce_mean(D_fake) - tf.reduce_mean(D_real)
-
-    alpha = tf.random_uniform(shape=[batch_size, 1], minval=0., maxval=1.)
-    differences = G_sample - x
-    interpolates = x + (alpha * differences)
-
-    with tf.variable_scope('', reuse=True) as scope:
-        gradients = tf.gradients(discriminator(interpolates), [interpolates])[0]
-        slopes = tf.sqrt(tf.reduce_sum(tf.square(gradients), reduction_indices=[1]))
-        gradient_penalty = tf.reduce_mean((slopes - 1.)**2)
-
-    D_loss += LAMBDA * gradient_penalty
-
-    return D_loss, G_loss
-
-
 tf.reset_default_graph()
 
 with tf.name_scope('input'):
@@ -195,7 +176,11 @@ with tf.variable_scope("") as scope:
     scope.reuse_variables()  # Re-use discriminator weights on new inputs
     D_fake = discriminator(G_sample)
 
-D_loss, G_loss = wgangp_loss(D_real, D_fake, x, G_sample)
+D_target = 1. / batch_size
+G_target = 1. / batch_size
+Z = tf.reduce_sum(tf.exp(-D_real)) + tf.reduce_sum(tf.exp(-D_fake))
+D_loss = tf.reduce_sum(D_target * D_real) + log(Z)
+G_loss = tf.reduce_sum(G_target * D_fake) + log(Z)
 
 dlr, glr, beta1 = 1e-3, 1e-3, 0.5
 D_solver = tf.train.AdamOptimizer(learning_rate=dlr, beta1=beta1)

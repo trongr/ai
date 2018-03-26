@@ -99,24 +99,16 @@ def discriminator(x):
         rs0 = tf.reshape(fc0, [-1, 16, 16, 1])
 
         c1 = tf.layers.conv2d(inputs=rs0, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
-        p1 = tf.layers.max_pooling2d(inputs=c1, pool_size=2, strides=2)  # (-1, 8, 8, 16)
-
-        c2 = tf.layers.conv2d(inputs=p1, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
-        p2 = tf.layers.max_pooling2d(inputs=c2, pool_size=2, strides=2)  # (-1, 4, 4, 16)
-
-        rs3 = tf.reshape(p2, [-1, 4 * 4 * 16])
+        c2 = tf.layers.conv2d(inputs=c1, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
+        rs3 = tf.reshape(c2, [-1, 16 * 16 * 16])
 
         # Cluster 2
         fc4 = tf.layers.dense(inputs=rs3, units=16 * 16, activation=leaky_relu)
         rs4 = tf.reshape(fc4, [-1, 16, 16, 1])
 
         c5 = tf.layers.conv2d(inputs=rs4, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
-        p5 = tf.layers.max_pooling2d(inputs=c5, pool_size=2, strides=2)  # (-1, 8, 8, 16)
-
-        c6 = tf.layers.conv2d(inputs=p5, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
-        p6 = tf.layers.max_pooling2d(inputs=c6, pool_size=2, strides=2)  # (-1, 4, 4, 16)
-
-        rs7 = tf.reshape(p6, [-1, 4 * 4 * 16])
+        c6 = tf.layers.conv2d(inputs=c5, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
+        rs7 = tf.reshape(c6, [-1, 16 * 16 * 16])
 
         # Tail cluster 3
         fc7 = tf.layers.dense(inputs=rs7, units=16 * 16, activation=leaky_relu)
@@ -161,20 +153,21 @@ def log(x):
     return tf.log(x + 1e-8)
 
 
-def gan_loss(logits_real, logits_fake):
-    G_loss = tf.reduce_mean(
-        tf.nn.sigmoid_cross_entropy_with_logits(
-            labels=tf.ones_like(logits_fake),
-            logits=logits_fake))
+def wgangp_loss(D_real, D_fake, x, G_sample):
+    LAMBDA = 10
+    G_loss = -tf.reduce_mean(D_fake)
+    D_loss = tf.reduce_mean(D_fake) - tf.reduce_mean(D_real)
 
-    D_loss = tf.reduce_mean(
-        tf.nn.sigmoid_cross_entropy_with_logits(
-            labels=tf.ones_like(logits_real),
-            logits=logits_real)) \
-        + tf.reduce_mean(
-        tf.nn.sigmoid_cross_entropy_with_logits(
-            labels=tf.zeros_like(logits_fake),
-            logits=logits_fake))
+    alpha = tf.random_uniform(shape=[batch_size, 1], minval=0., maxval=1.)
+    differences = G_sample - x
+    interpolates = x + (alpha * differences)
+
+    with tf.variable_scope('', reuse=True) as scope:
+        gradients = tf.gradients(discriminator(interpolates), [interpolates])[0]
+        slopes = tf.sqrt(tf.reduce_sum(tf.square(gradients), reduction_indices=[1]))
+        gradient_penalty = tf.reduce_mean((slopes - 1.)**2)
+
+    D_loss += LAMBDA * gradient_penalty
 
     return D_loss, G_loss
 
@@ -192,7 +185,7 @@ with tf.variable_scope("") as scope:
     scope.reuse_variables()  # Re-use discriminator weights on new inputs
     D_fake = discriminator(G_sample)
 
-D_loss, G_loss = gan_loss(D_real, D_fake)
+D_loss, G_loss = wgangp_loss(D_real, D_fake, x, G_sample)
 
 dlr, glr, beta1 = 1e-3, 1e-3, 0.5
 D_solver = tf.train.AdamOptimizer(learning_rate=dlr, beta1=beta1)
