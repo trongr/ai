@@ -22,7 +22,6 @@ img_c = 3
 w_to_h = 1.0 * img_w / img_h
 x_dim = 116412  # 218 * 178 * 3 dimension of each image
 noise_dim = 64
-D_input_dim = noise_dim + x_dim
 
 
 def load_images(img_dir):
@@ -119,12 +118,11 @@ def discriminator(x):
         return logits
 
 
-def generator(z, keep_prob):
-    # z ~ (N, D_input_dim). D_input_dim = 64 + 218 * 178 * 3 = 116476 = 4 * 37 * 787
+def generator(z, samples_input, keep_prob):
+    # z ~ (N, noise_dim)
     with tf.variable_scope("generator"):
         # Cluster 1
-        fc0 = tf.layers.dense(inputs=z, units=8 * 8, activation=leaky_relu)  # reduce input dimension otw it'll blow up MEM
-        rs0 = tf.reshape(fc0, [-1, 8, 8, 1])
+        rs0 = tf.reshape(z, [-1, 8, 8, 1])
 
         c1 = tf.layers.conv2d(inputs=rs0, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
         p1 = tf.layers.max_pooling2d(inputs=c1, pool_size=2, strides=2)  # (-1, 4, 4, 16)
@@ -145,9 +143,10 @@ def generator(z, keep_prob):
         p6 = tf.layers.max_pooling2d(inputs=c6, pool_size=2, strides=2)  # (-1, 2, 2, 16)
 
         rs7 = tf.reshape(p6, [-1, 2 * 2 * 16])
+        hs7 = tf.concat([rs7, samples_input], 1)
 
         # Tail cluster 3
-        fc7 = tf.layers.dense(inputs=rs7, units=16 * 16, activation=leaky_relu)
+        fc7 = tf.layers.dense(inputs=hs7, units=16 * 16, activation=leaky_relu)
         img = tf.layers.dense(inputs=fc7, units=x_dim, activation=tf.tanh)
         return img
 
@@ -156,38 +155,19 @@ def log(x):
     return tf.log(x + 1e-8)
 
 
-def gan_loss(logits_real, logits_fake):
-    G_loss = tf.reduce_mean(
-        tf.nn.sigmoid_cross_entropy_with_logits(
-            labels=tf.ones_like(logits_fake),
-            logits=logits_fake))
-
-    D_loss = tf.reduce_mean(
-        tf.nn.sigmoid_cross_entropy_with_logits(
-            labels=tf.ones_like(logits_real),
-            logits=logits_real)) \
-        + tf.reduce_mean(
-        tf.nn.sigmoid_cross_entropy_with_logits(
-            labels=tf.zeros_like(logits_fake),
-            logits=logits_fake))
-
-    return D_loss, G_loss
-
-
 tf.reset_default_graph()
 
 with tf.name_scope('input'):
     x = tf.placeholder(tf.float32, shape=[None, x_dim], name="x-input")
-    z = tf.placeholder(tf.float32, shape=[None, D_input_dim], name="z-input")
+    z = tf.placeholder(tf.float32, shape=[None, noise_dim], name="z-input")
+    samples_input = tf.placeholder(tf.float32, shape=[None, x_dim], name="samples-input")
     keep_prob = tf.placeholder(tf.float32, name='keep_prob')
 
 with tf.variable_scope("") as scope:
-    G_sample = generator(z, keep_prob)
+    G_sample = generator(z, samples_input, keep_prob)
     D_real = discriminator(x)
     scope.reuse_variables()  # Re-use discriminator weights on new inputs
     D_fake = discriminator(G_sample)
-
-# D_loss, G_loss = gan_loss(D_real, D_fake)
 
 D_target = 1. / batch_size
 G_target = 1. / batch_size
@@ -231,19 +211,14 @@ def train(sess, G_train_step, G_loss, D_train_step, D_loss, D_extra_step, G_extr
     batches = load_images(img_dir)
     t = time.time()
     for it in range(max_iter):
-        # xmb = batches.next()
         xmb = next(batches)
-        if samples is None:  # Create all noise in the beginning
-            z_noise = sample_z(batch_size, D_input_dim)
-        else:  # Every iteration afterwards add samples to noise
-            z_noise = sample_z(batch_size, noise_dim)
-            z_noise = np.hstack((z_noise, samples))
+        z_noise = sample_z(batch_size, noise_dim)
+        if samples is None:
+            samples = sample_z(batch_size, x_dim)
 
-        # train G twice for every D train step. see if that helps learning.
-        _, D_loss_curr, _, summary = sess.run([D_train_step, D_loss, D_extra_step, summary_op], feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})
-        _, G_loss_curr, _ = sess.run([G_train_step, G_loss, D_extra_step], feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})
-        _, G_loss_curr, _ = sess.run([G_train_step, G_loss, D_extra_step], feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})
-        samples = sess.run(G_sample, feed_dict={x: xmb, z: z_noise, keep_prob: 1.0})
+        _, D_loss_curr, _, summary = sess.run([D_train_step, D_loss, D_extra_step, summary_op], feed_dict={x: xmb, z: z_noise, samples_input: samples, keep_prob: 0.3})
+        _, G_loss_curr, _ = sess.run([G_train_step, G_loss, D_extra_step], feed_dict={x: xmb, z: z_noise, samples_input: samples, keep_prob: 0.3})
+        samples = sess.run(G_sample, feed_dict={x: xmb, z: z_noise, samples_input: samples, keep_prob: 1.0})
 
         if it % save_img_every == 0:
             save_images(out_dir, samples[:64], it)
