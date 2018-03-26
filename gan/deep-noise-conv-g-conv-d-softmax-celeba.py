@@ -25,7 +25,7 @@ noise_dim = 64
 
 img_dir = "./data/img_align_celeba/"
 out_dir = "out"
-prefix = "conv-g-conv-d-softmax-celeba-deep-00"
+prefix = "deep-noise-conv-g-conv-d-softmax-celeba"
 save_dir = "save"
 save_dir_prefix = save_dir + "/" + prefix
 logs_path = "logs/" + prefix
@@ -91,11 +91,22 @@ def sample_z(m, n):
     return np.random.uniform(-1., 1., size=[m, n])
 
 
+def add_small_random_noise(x, mean=0.0, stddev=0.1):
+    return x + tf.random_normal(tf.shape(x), mean=mean, stddev=stddev, dtype=tf.float32)
+
+
 def discriminator(x):
     # x ~ (N, x_dim)
     with tf.variable_scope("discriminator"):
+        # poij another thing to try is randomly add random noise, so that
+        # sometimes you add noise and sometimes you don't, so that at least
+        # the model can learn from clean examples as well.
+
+        # Add random noise to see if it helps against adversarial attacks from G
+        n0 = add_small_random_noise(x, mean=0.0, stddev=0.1)  # poij adjust stddev
+
         # Cluster 1
-        fc0 = tf.layers.dense(inputs=x, units=16 * 16, activation=leaky_relu)
+        fc0 = tf.layers.dense(inputs=n0, units=16 * 16, activation=leaky_relu)
         rs0 = tf.reshape(fc0, [-1, 16, 16, 1])
 
         c1 = tf.layers.conv2d(inputs=rs0, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
