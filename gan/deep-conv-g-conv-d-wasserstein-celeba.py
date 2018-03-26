@@ -124,24 +124,16 @@ def generator(z, keep_prob):
         rs0 = tf.reshape(z, [-1, 8, 8, 1])
 
         c1 = tf.layers.conv2d(inputs=rs0, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
-        p1 = tf.layers.max_pooling2d(inputs=c1, pool_size=2, strides=2)  # (-1, 4, 4, 16)
-
-        c2 = tf.layers.conv2d(inputs=p1, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
-        p2 = tf.layers.max_pooling2d(inputs=c2, pool_size=2, strides=2)  # (-1, 2, 2, 16)
-
-        rs3 = tf.reshape(p2, [-1, 2 * 2 * 16])
+        c2 = tf.layers.conv2d(inputs=c1, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
+        rs3 = tf.reshape(c2, [-1, 8 * 8 * 16])
 
         # Cluster 2
         fc4 = tf.layers.dense(inputs=rs3, units=8 * 8, activation=leaky_relu)
         rs4 = tf.reshape(fc4, [-1, 8, 8, 1])
 
         c5 = tf.layers.conv2d(inputs=rs4, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
-        p5 = tf.layers.max_pooling2d(inputs=c5, pool_size=2, strides=2)  # (-1, 4, 4, 16)
-
-        c6 = tf.layers.conv2d(inputs=p5, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
-        p6 = tf.layers.max_pooling2d(inputs=c6, pool_size=2, strides=2)  # (-1, 2, 2, 16)
-
-        rs7 = tf.reshape(p6, [-1, 2 * 2 * 16])
+        c6 = tf.layers.conv2d(inputs=c5, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
+        rs7 = tf.reshape(c6, [-1, 8 * 8 * 16])
 
         # Tail cluster 3
         fc7 = tf.layers.dense(inputs=rs7, units=16 * 16, activation=leaky_relu)
@@ -216,7 +208,6 @@ def train(sess, G_train_step, G_loss, D_train_step, D_loss, D_extra_step, G_extr
     batches = load_images(img_dir)
     t = time.time()
     for it in range(max_iter):
-        # xmb = batches.next() # TODO. Remove
         xmb = next(batches)
         z_noise = sample_z(batch_size, noise_dim)
 
