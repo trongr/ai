@@ -12,7 +12,7 @@ from scipy import misc
 # mnist = input_data.read_data_sets('./cs231n/datasets/MNIST_data', one_hot=False)
 import utils
 
-plt.rcParams['figure.figsize'] = (10.0, 8.0) # set default size of plots
+plt.rcParams['figure.figsize'] = (10.0, 8.0)  # set default size of plots
 plt.rcParams['image.interpolation'] = 'nearest'
 
 batch_size = 64
@@ -20,8 +20,9 @@ img_h = 218
 img_w = 178
 img_c = 3
 w_to_h = 1.0 * img_w / img_h
-x_dim = 116412 # 218 * 178 * 3 dimension of each image
+x_dim = 116412  # 218 * 178 * 3 dimension of each image
 noise_dim = 64
+
 
 def load_images(img_dir):
     img_paths = []
@@ -42,9 +43,11 @@ def load_images(img_dir):
         yield(images)
         i = (i + batch_size) % total
 
+
 def mkdir_p(dir):
     if not os.path.exists(dir):
         os.makedirs(dir)
+
 
 def save_images(dir, images, it):
     fig = plt.figure(figsize=(8 * w_to_h, 8))
@@ -65,17 +68,21 @@ def save_images(dir, images, it):
     fig.savefig(imgpath)
     plt.close(fig)
 
+
 def get_session():
     config = tf.ConfigProto()
     config.gpu_options.allow_growth = True
     session = tf.Session(config=config)
     return session
 
+
 def leaky_relu(x, alpha=0.01):
     return tf.maximum(alpha * x, x)
 
+
 def sample_z(m, n):
     return np.random.uniform(-1., 1., size=[m, n])
+
 
 def discriminator(x):
     # x ~ (N, x_dim)
@@ -85,10 +92,10 @@ def discriminator(x):
         rs0 = tf.reshape(fc0, [-1, 16, 16, 1])
 
         c1 = tf.layers.conv2d(inputs=rs0, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
-        p1 = tf.layers.max_pooling2d(inputs=c1, pool_size=2, strides=2) # (-1, 8, 8, 16)
+        p1 = tf.layers.max_pooling2d(inputs=c1, pool_size=2, strides=2)  # (-1, 8, 8, 16)
 
         c2 = tf.layers.conv2d(inputs=p1, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
-        p2 = tf.layers.max_pooling2d(inputs=c2, pool_size=2, strides=2) # (-1, 4, 4, 16)
+        p2 = tf.layers.max_pooling2d(inputs=c2, pool_size=2, strides=2)  # (-1, 4, 4, 16)
 
         rs3 = tf.reshape(p2, [-1, 4 * 4 * 16])
 
@@ -97,10 +104,10 @@ def discriminator(x):
         rs4 = tf.reshape(fc4, [-1, 16, 16, 1])
 
         c5 = tf.layers.conv2d(inputs=rs4, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
-        p5 = tf.layers.max_pooling2d(inputs=c5, pool_size=2, strides=2) # (-1, 8, 8, 16)
+        p5 = tf.layers.max_pooling2d(inputs=c5, pool_size=2, strides=2)  # (-1, 8, 8, 16)
 
         c6 = tf.layers.conv2d(inputs=p5, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
-        p6 = tf.layers.max_pooling2d(inputs=c6, pool_size=2, strides=2) # (-1, 4, 4, 16)
+        p6 = tf.layers.max_pooling2d(inputs=c6, pool_size=2, strides=2)  # (-1, 4, 4, 16)
 
         rs7 = tf.reshape(p6, [-1, 4 * 4 * 16])
 
@@ -110,6 +117,7 @@ def discriminator(x):
 
         return logits
 
+
 def generator(z, keep_prob):
     # z ~ (N, noise_dim) = 64
     with tf.variable_scope("generator"):
@@ -117,10 +125,10 @@ def generator(z, keep_prob):
         rs0 = tf.reshape(z, [-1, 8, 8, 1])
 
         c1 = tf.layers.conv2d(inputs=rs0, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
-        p1 = tf.layers.max_pooling2d(inputs=c1, pool_size=2, strides=2) # (-1, 4, 4, 16)
+        p1 = tf.layers.max_pooling2d(inputs=c1, pool_size=2, strides=2)  # (-1, 4, 4, 16)
 
         c2 = tf.layers.conv2d(inputs=p1, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
-        p2 = tf.layers.max_pooling2d(inputs=c2, pool_size=2, strides=2) # (-1, 2, 2, 16)
+        p2 = tf.layers.max_pooling2d(inputs=c2, pool_size=2, strides=2)  # (-1, 2, 2, 16)
 
         rs3 = tf.reshape(p2, [-1, 2 * 2 * 16])
 
@@ -129,10 +137,10 @@ def generator(z, keep_prob):
         rs4 = tf.reshape(fc4, [-1, 8, 8, 1])
 
         c5 = tf.layers.conv2d(inputs=rs4, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
-        p5 = tf.layers.max_pooling2d(inputs=c5, pool_size=2, strides=2) # (-1, 4, 4, 16)
+        p5 = tf.layers.max_pooling2d(inputs=c5, pool_size=2, strides=2)  # (-1, 4, 4, 16)
 
         c6 = tf.layers.conv2d(inputs=p5, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
-        p6 = tf.layers.max_pooling2d(inputs=c6, pool_size=2, strides=2) # (-1, 2, 2, 16)
+        p6 = tf.layers.max_pooling2d(inputs=c6, pool_size=2, strides=2)  # (-1, 2, 2, 16)
 
         rs7 = tf.reshape(p6, [-1, 2 * 2 * 16])
 
@@ -141,25 +149,28 @@ def generator(z, keep_prob):
         img = tf.layers.dense(inputs=fc7, units=x_dim, activation=tf.tanh)
         return img
 
+
 def log(x):
     return tf.log(x + 1e-8)
 
+
 def gan_loss(logits_real, logits_fake):
     G_loss = tf.reduce_mean(
-                tf.nn.sigmoid_cross_entropy_with_logits(
-                    labels=tf.ones_like(logits_fake),
-                    logits=logits_fake))
+        tf.nn.sigmoid_cross_entropy_with_logits(
+            labels=tf.ones_like(logits_fake),
+            logits=logits_fake))
 
     D_loss = tf.reduce_mean(
-                tf.nn.sigmoid_cross_entropy_with_logits(
-                    labels=tf.ones_like(logits_real),
-                    logits=logits_real)) \
-           + tf.reduce_mean(
-                tf.nn.sigmoid_cross_entropy_with_logits(
-                    labels=tf.zeros_like(logits_fake),
-                    logits=logits_fake))
+        tf.nn.sigmoid_cross_entropy_with_logits(
+            labels=tf.ones_like(logits_real),
+            logits=logits_real)) \
+        + tf.reduce_mean(
+        tf.nn.sigmoid_cross_entropy_with_logits(
+            labels=tf.zeros_like(logits_fake),
+            logits=logits_fake))
 
     return D_loss, G_loss
+
 
 tf.reset_default_graph()
 
@@ -171,7 +182,7 @@ with tf.name_scope('input'):
 with tf.variable_scope("") as scope:
     G_sample = generator(z, keep_prob)
     D_real = discriminator(x)
-    scope.reuse_variables() # Re-use discriminator weights on new inputs
+    scope.reuse_variables()  # Re-use discriminator weights on new inputs
     D_fake = discriminator(G_sample)
 
 D_loss, G_loss = gan_loss(D_real, D_fake)
@@ -202,6 +213,7 @@ tf.summary.scalar("G_loss", G_loss)
 summary_op = tf.summary.merge_all()
 writer = tf.summary.FileWriter(logs_path, graph=tf.get_default_graph())
 
+
 def train(sess, G_train_step, G_loss, D_train_step, D_loss, D_extra_step, G_extra_step, save_img_every=250, print_every=50, max_iter=1000000):
     Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1)
     if glob.glob(save_dir + "/*"):
@@ -220,20 +232,21 @@ def train(sess, G_train_step, G_loss, D_train_step, D_loss, D_extra_step, G_extr
 
         # train G twice for every D train step. see if that helps learning.
         _, D_loss_curr, _, summary = sess.run([D_train_step, D_loss, D_extra_step, summary_op], feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})
-        _, G_loss_curr, _ = sess.run([G_train_step, G_loss, D_extra_step], feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})
-        _, G_loss_curr, _ = sess.run([G_train_step, G_loss, D_extra_step], feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})
+        _, G_loss_curr, _ = sess.run([G_train_step, G_loss, G_extra_step], feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})
+        _, G_loss_curr, _ = sess.run([G_train_step, G_loss, G_extra_step], feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})
 
         if math.isnan(D_loss_curr) or math.isnan(G_loss_curr):
             print("D or G loss is nan", D_loss_curr, G_loss_curr)
             exit()
 
-        if it % print_every == 0: # We want to make sure D_loss doesn't go to 0
+        if it % print_every == 0:  # We want to make sure D_loss doesn't go to 0
             print('Iter: {}, D: {:.4}, G: {:.4}, Elapsed: {:.4}'.format(it, D_loss_curr, G_loss_curr, time.time() - t))
             t = time.time()
 
         if it % 10 == 0:
             writer.add_summary(summary, global_step=it)
             Saver.save(sess, save_dir_prefix, global_step=it)
+
 
 with get_session() as sess:
     sess.run(tf.global_variables_initializer())
