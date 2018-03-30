@@ -218,7 +218,7 @@ def train(sess, G_train_step, G_loss, D_train_step, D_loss, D_extra_step, G_extr
             samples = sample_z(batch_size, x_dim)
 
         _, D_loss_curr, _, summary = sess.run([D_train_step, D_loss, D_extra_step, summary_op], feed_dict={x: xmb, z: z_noise, samples_input: samples, keep_prob: 0.3})
-        _, G_loss_curr, _ = sess.run([G_train_step, G_loss, D_extra_step], feed_dict={x: xmb, z: z_noise, samples_input: samples, keep_prob: 0.3})
+        _, G_loss_curr, _ = sess.run([G_train_step, G_loss, G_extra_step], feed_dict={x: xmb, z: z_noise, samples_input: samples, keep_prob: 0.3})
         samples = sess.run(G_sample, feed_dict={x: xmb, z: z_noise, samples_input: samples, keep_prob: 1.0})
 
         if it % save_img_every == 0:
