@@ -106,10 +106,11 @@ def log(x):
     return tf.log(x + 1e-8)
 
 
-# poij
+# How else can you compare two images are visually similar? This is just a pixel
+# by pixel comparison. Not sure if it'll be able to learn more nuanced
+# differences.
 def loss(x, G_sample):
-    pass
-    return None
+    return tf.reduce_mean((G_sample - x) ** 2)
 
 
 tf.reset_default_graph()
