@@ -120,9 +120,6 @@ def log(x):
 
 
 def softmax_loss(D_real, D_fake):
-    Z = tf.reduce_sum(tf.exp(-D_real)) + tf.reduce_sum(tf.exp(-D_fake))
-    D_loss = tf.reduce_sum(D_target * D_real) + log(Z)
-    G_loss = tf.reduce_sum(G_target * D_fake) + log(Z)
     D_target = 1. / batch_size
     G_target = 1. / batch_size
     Z = tf.reduce_sum(tf.exp(-D_real)) + tf.reduce_sum(tf.exp(-D_fake))
