@@ -1,4 +1,4 @@
-# poij run
+# poij Add the missing term to softmax and see if we still get nan and inf losses.
 from __future__ import print_function, division
 import os
 import time

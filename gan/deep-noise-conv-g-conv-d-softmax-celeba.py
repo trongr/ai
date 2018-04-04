@@ -98,12 +98,9 @@ def add_small_random_noise(x, mean=0.0, stddev=0.1):
 def discriminator(x):
     # x ~ (N, x_dim)
     with tf.variable_scope("discriminator"):
-        # poij another thing to try is randomly add random noise, so that
-        # sometimes you add noise and sometimes you don't, so that at least
-        # the model can learn from clean examples as well.
-
-        # Add random noise to see if it helps against adversarial attacks from G
-        n0 = add_small_random_noise(x, mean=0.0, stddev=0.1)  # poij adjust stddev
+        # Add random noise to see if it helps against adversarial attacks from G.
+        # ... Doesn't help as far as I can see.
+        n0 = add_small_random_noise(x, mean=0.0, stddev=0.1)
 
         # Cluster 1
         fc0 = tf.layers.dense(inputs=n0, units=16 * 16, activation=leaky_relu)
