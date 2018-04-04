@@ -1,4 +1,3 @@
-# poij Add the missing term to softmax and see if we still get nan and inf losses.
 from __future__ import print_function, division
 import os
 import time
@@ -120,6 +119,15 @@ def log(x):
     return tf.log(x + 1e-8)
 
 
+def softmax_loss(D_real, D_fake):
+    D_target = 1. / batch_size
+    G_target = 1. / batch_size
+    Z = tf.reduce_sum(tf.exp(-D_real)) + tf.reduce_sum(tf.exp(-D_fake))
+    D_loss = tf.reduce_sum(D_target * D_real) + log(Z)
+    G_loss = tf.reduce_sum(G_target * D_fake) + tf.reduce_sum(G_target * D_real) + log(Z)
+    return D_loss, G_loss
+
+
 tf.reset_default_graph()
 
 with tf.name_scope('input'):
@@ -133,11 +141,7 @@ with tf.variable_scope("") as scope:
     scope.reuse_variables()
     D_fake = discriminator(G_sample)
 
-D_target = 1. / batch_size
-G_target = 1. / batch_size
-Z = tf.reduce_sum(tf.exp(-D_real)) + tf.reduce_sum(tf.exp(-D_fake))
-D_loss = tf.reduce_sum(D_target * D_real) + log(Z)
-G_loss = tf.reduce_sum(G_target * D_fake) + log(Z)
+D_loss, G_loss = softmax_loss(D_real, D_fake)
 
 dlr, glr, beta1 = 1e-3, 1e-3, 0.5
 D_solver = tf.train.AdamOptimizer(learning_rate=dlr, beta1=beta1)
