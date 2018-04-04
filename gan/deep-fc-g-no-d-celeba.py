@@ -1,4 +1,3 @@
-# poij run
 from __future__ import print_function, division
 import os
 import time
@@ -107,10 +106,21 @@ def log(x):
     return tf.log(x + 1e-8)
 
 
-# How else can you compare two images are visually similar? This is just a pixel
-# by pixel comparison. Not sure if it'll be able to learn more nuanced
-# differences.
+"""
+A generator-only network trained on mean squared loss does exactly what you'd
+expect: it'll learn the pixel-average face. How does adding a discriminator and
+changing the loss function make a difference? It makes a difference in that the
+generator now has fewer constraints: one binary value (real or fake) telling it
+what sort of images to generate, so it has more degrees of freedom. I think this
+is also the reason behind the color bleeding (adversarial generated images):
+more freedom meaning G can be more creative and come up with strange examples.
+"""
+
+
 def loss(x, G_sample):
+    # How else can you compare two images are visually similar? This is just a
+    # pixel by pixel comparison. Not sure if it'll be able to learn more nuanced
+    # differences.
     return tf.reduce_mean((G_sample - x) ** 2)
 
 
