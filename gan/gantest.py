@@ -7,13 +7,15 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 
-plt.rcParams['figure.figsize'] = (10.0, 8.0) # set default size of plots
+plt.rcParams['figure.figsize'] = (10.0, 8.0)  # set default size of plots
 plt.rcParams['image.interpolation'] = 'nearest'
 plt.rcParams['image.cmap'] = 'gray'
+
 
 def mkdir_p(dir):
     if not os.path.exists(dir):
         os.makedirs(dir)
+
 
 def save_images(dir, images, it):
     images = np.reshape(images, [images.shape[0], -1])  # images reshape to (batch_size, D)
@@ -30,20 +32,24 @@ def save_images(dir, images, it):
         ax.set_xticklabels([])
         ax.set_yticklabels([])
         ax.set_aspect('equal')
-        plt.imshow(img.reshape([sqrtimg,sqrtimg]))
+        plt.imshow(img.reshape([sqrtimg, sqrtimg]))
     imgpath = dir + "/" + str(it).zfill(10) + ".jpg"
     print("Saving img " + imgpath)
     fig.savefig(imgpath)
     plt.close(fig)
 
+
 def preprocess_img(x):
     return 2 * x - 1.0
+
 
 def deprocess_img(x):
     return (x + 1.0) / 2.0
 
-def rel_error(x,y):
+
+def rel_error(x, y):
     return np.max(np.abs(x - y) / (np.maximum(1e-8, np.abs(x) + np.abs(y))))
+
 
 def count_params():
     """Count the number of parameters in the current TensorFlow graph """
@@ -57,10 +63,12 @@ def get_session():
     session = tf.Session(config=config)
     return session
 
+
 answers = np.load('gan-checks-tf.npz')
 
 from tensorflow.examples.tutorials.mnist import input_data
 mnist = input_data.read_data_sets('./cs231n/datasets/MNIST_data', one_hot=False)
+
 
 def leaky_relu(x, alpha=0.01):
     """Compute the leaky ReLU activation function.
@@ -74,14 +82,17 @@ def leaky_relu(x, alpha=0.01):
     """
     return tf.maximum(alpha * x, x)
 
+
 def test_leaky_relu(x, y_true):
     tf.reset_default_graph()
     with get_session() as sess:
         y_tf = leaky_relu(tf.constant(x))
         y = sess.run(y_tf)
-        print('Maximum error: %g'%rel_error(y_true, y))
+        print('Maximum error: %g' % rel_error(y_true, y))
+
 
 test_leaky_relu(answers['lrelu_x'], answers['lrelu_y'])
+
 
 def sample_noise(batch_size, dim):
     """Generate random uniform noise from -1 to 1.
@@ -95,6 +106,7 @@ def sample_noise(batch_size, dim):
     """
     return tf.random_uniform([batch_size, dim], minval=-1, maxval=1,
                              dtype=tf.float32)
+
 
 def discriminator(x):
     """Compute discriminator score for a batch of input images.
@@ -130,6 +142,7 @@ def discriminator(x):
 
         return logits
 
+
 def generator(z):
     """Generate images from a random noise vector.
 
@@ -163,13 +176,14 @@ def generator(z):
 
         return img
 
-def gan_loss(logits_real, logits_fake):
+
+def gan_loss(D_real, D_fake):
     """Compute the GAN loss.
 
     Inputs:
-    - logits_real: Tensor, shape [batch_size, 1], output of discriminator
+    - D_real: Tensor, shape [batch_size, 1], output of discriminator
         Log probability that the image is real for each real image
-    - logits_fake: Tensor, shape[batch_size, 1], output of discriminator
+    - D_fake: Tensor, shape[batch_size, 1], output of discriminator
         Log probability that the image is real for each fake image
 
     Returns:
@@ -177,20 +191,21 @@ def gan_loss(logits_real, logits_fake):
     - G_loss: generator loss scalar
     """
     G_loss = tf.reduce_mean(
-                tf.nn.sigmoid_cross_entropy_with_logits(
-                    labels=tf.ones_like(logits_fake),
-                    logits=logits_fake))
+        tf.nn.sigmoid_cross_entropy_with_logits(
+            labels=tf.ones_like(D_fake),
+            logits=D_fake))
 
     D_loss = tf.reduce_mean(
-                tf.nn.sigmoid_cross_entropy_with_logits(
-                    labels=tf.ones_like(logits_real),
-                    logits=logits_real)) \
-           + tf.reduce_mean(
-                tf.nn.sigmoid_cross_entropy_with_logits(
-                    labels=tf.zeros_like(logits_fake),
-                    logits=logits_fake))
+        tf.nn.sigmoid_cross_entropy_with_logits(
+            labels=tf.ones_like(D_real),
+            logits=D_real)) \
+        + tf.reduce_mean(
+        tf.nn.sigmoid_cross_entropy_with_logits(
+            labels=tf.zeros_like(D_fake),
+            logits=D_fake))
 
     return D_loss, G_loss
+
 
 def lsgan_loss(score_real, score_fake):
     """Compute the Least Squares GAN loss.
@@ -206,9 +221,10 @@ def lsgan_loss(score_real, score_fake):
     - G_loss: generator loss scalar
     """
     D_loss = 0.5 * tf.reduce_mean((score_real - 1) ** 2) \
-           + 0.5 * tf.reduce_mean(score_fake ** 2)
+        + 0.5 * tf.reduce_mean(score_fake ** 2)
     G_loss = 0.5 * tf.reduce_mean((score_fake - 1) ** 2)
     return D_loss, G_loss
+
 
 tf.reset_default_graph()
 
@@ -216,17 +232,17 @@ batch_size = 128
 noise_dim = 96
 
 x = tf.placeholder(tf.float32, [None, 784])
-z = sample_noise(batch_size, noise_dim) # This generates new values every iteration
+z = sample_noise(batch_size, noise_dim)  # This generates new values every iteration
 G_sample = generator(z)
 
 with tf.variable_scope("") as scope:
-    logits_real = discriminator(preprocess_img(x))
+    D_real = discriminator(preprocess_img(x))
     # Re-use discriminator weights on new inputs
     scope.reuse_variables()
-    logits_fake = discriminator(G_sample)
+    D_fake = discriminator(G_sample)
 
-D_loss, G_loss = gan_loss(logits_real, logits_fake)
-# D_loss, G_loss = lsgan_loss(logits_real, logits_fake)
+D_loss, G_loss = gan_loss(D_real, D_fake)
+# D_loss, G_loss = lsgan_loss(D_real, D_fake)
 
 dlr, glr, beta1 = 1e-3, 1e-3, 0.5
 D_solver = tf.train.AdamOptimizer(learning_rate=dlr, beta1=beta1)
@@ -240,7 +256,8 @@ with tf.control_dependencies(D_extra_step):
 with tf.control_dependencies(G_extra_step):
     G_train_step = G_solver.minimize(G_loss, var_list=G_vars)
 
-def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_extra_step,\
+
+def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_extra_step,
               show_every=250, print_every=50, batch_size=128, num_epoch=10):
     """Train a GAN for a certain number of epochs.
 
@@ -264,7 +281,7 @@ def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_
     if glob.glob(save_dir + "/*"):
         Saver.restore(sess, tf.train.latest_checkpoint(save_dir))
 
-    max_iter = int(mnist.train.num_examples*num_epoch/batch_size)
+    max_iter = int(mnist.train.num_examples * num_epoch / batch_size)
     for it in range(max_iter):
         if it % show_every == 0:
             samples = sess.run(G_sample)
@@ -274,14 +291,15 @@ def run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss, G_extra_step, D_
         _, D_loss_curr = sess.run([D_train_step, D_loss], feed_dict={x: minibatch_x})
         _, G_loss_curr = sess.run([G_train_step, G_loss])
 
-        if it % print_every == 0: # We want to make sure D_loss doesn't go to 0
+        if it % print_every == 0:  # We want to make sure D_loss doesn't go to 0
             print('Iter: {}, D: {:.4}, G: {:.4}'.format(it, D_loss_curr,
-                G_loss_curr))
+                                                        G_loss_curr))
 
         if it % 10 == 0:
             Saver.save(sess, save_dir + "/gan", global_step=it)
 
+
 with get_session() as sess:
     sess.run(tf.global_variables_initializer())
     run_a_gan(sess, G_train_step, G_loss, D_train_step, D_loss,
-            G_extra_step, D_extra_step, show_every=200, num_epoch=1000)
+              G_extra_step, D_extra_step, show_every=200, num_epoch=1000)
