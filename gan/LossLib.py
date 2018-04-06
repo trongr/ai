@@ -13,14 +13,14 @@ def LeastSquaresLoss(score_real, score_fake):
     return D_loss, G_loss
 
 
-def SoftmaxLoss(D_real, D_fake):
+def SoftmaxLoss(D_real, D_fake, batch_size):
     Z = tf.reduce_sum(tf.exp(-D_real)) + tf.reduce_sum(tf.exp(-D_fake))
     D_loss = tf.reduce_sum(1. / batch_size * D_real) + log(Z)
     G_loss = tf.reduce_sum(1. / batch_size * D_fake) + tf.reduce_sum(1. / batch_size * D_real) + log(Z)
     return D_loss, G_loss
 
 
-def WGANLoss(D_real, D_fake, x, G_sample, LAMBDA=10):
+def WGANLoss(discriminator, D_real, D_fake, x, G_sample, batch_size, LAMBDA=10):
     G_loss = -tf.reduce_mean(D_fake)
     D_loss = tf.reduce_mean(D_fake) - tf.reduce_mean(D_real)
     alpha = tf.random_uniform(shape=[batch_size, 1], minval=0., maxval=1.)
