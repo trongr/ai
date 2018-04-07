@@ -107,8 +107,7 @@ def discriminator(x):
         rs7 = tf.reshape(c6, [-1, 16 * 16 * 16])
 
         # Tail cluster 3
-        # poij rename to rs7
-        fc7 = tf.layers.dense(inputs=rs3, units=16 * 16, activation=leaky_relu)
+        fc7 = tf.layers.dense(inputs=rs7, units=16 * 16, activation=leaky_relu)
         logits = tf.layers.dense(inputs=fc7, units=1)
         return logits
 
