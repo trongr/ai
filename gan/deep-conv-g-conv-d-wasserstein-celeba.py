@@ -146,7 +146,7 @@ def log(x):
 
 
 def wgangp_loss(D_real, D_fake, x, G_sample):
-    LAMBDA = 10
+    LAMBDA = 1  # poij adjust
     G_loss = -tf.reduce_mean(D_fake)
     D_loss = tf.reduce_mean(D_fake) - tf.reduce_mean(D_real)
 
