@@ -1,5 +1,5 @@
 # Tensorboard
 
 ```
-tensorboard --logdir=logs/ --port 6006
+tensorboard --debug --logdir=logs/ --port 6006
 ```
