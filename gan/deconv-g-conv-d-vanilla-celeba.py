@@ -99,13 +99,12 @@ def discriminator(x):
         c2 = tf.layers.conv2d(inputs=c1, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
         rs3 = tf.reshape(c2, [-1, 16 * 16 * 16])
 
-        # poij turn this back on
-        # # # Cluster 2
-        # fc4 = tf.layers.dense(inputs=rs3, units=16 * 16, activation=leaky_relu)
-        # rs4 = tf.reshape(fc4, [-1, 16, 16, 1])
-        # c5 = tf.layers.conv2d(inputs=rs4, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
-        # c6 = tf.layers.conv2d(inputs=c5, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
-        # rs7 = tf.reshape(c6, [-1, 16 * 16 * 16])
+        # # Cluster 2
+        fc4 = tf.layers.dense(inputs=rs3, units=16 * 16, activation=leaky_relu)
+        rs4 = tf.reshape(fc4, [-1, 16, 16, 1])
+        c5 = tf.layers.conv2d(inputs=rs4, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
+        c6 = tf.layers.conv2d(inputs=c5, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
+        rs7 = tf.reshape(c6, [-1, 16 * 16 * 16])
 
         # Tail cluster 3
         # poij rename to rs7
@@ -119,18 +118,14 @@ def generator(z, keep_prob):
         fc0 = tf.layers.dense(inputs=z, units=1024, activation=leaky_relu)
         bn0 = tf.layers.batch_normalization(fc0, axis=-1, momentum=0.99, epsilon=0.001, center=True, scale=True, training=True)
 
-        in_channels_1 = 128
-        fc1 = tf.layers.dense(inputs=bn0, units=7 * 7 * in_channels_1, activation=leaky_relu)
+        fc1 = tf.layers.dense(inputs=bn0, units=7 * 7 * 128, activation=leaky_relu)
         bn1 = tf.layers.batch_normalization(fc1, axis=-1, momentum=0.99, epsilon=0.001, center=True, scale=True, training=True)
-        rs1 = tf.reshape(bn1, [-1, 7, 7, in_channels_1])
+        rs1 = tf.reshape(bn1, [-1, 7, 7, 128])
 
-        in_channels_2 = 64
-        ct2_filter = tf.get_variable("ct2_filter", shape=(4, 4, in_channels_2, in_channels_1), dtype=tf.float32, initializer=tf.truncated_normal_initializer(), trainable=True)
-        ct2 = tf.nn.relu(tf.nn.conv2d_transpose(rs1, filter=ct2_filter, output_shape=(batch_size, 14, 14, in_channels_2), strides=(1, 2, 2, 1), padding='SAME', data_format='NHWC'))
-        bn2 = tf.layers.batch_normalization(ct2, axis=-1, momentum=0.99, epsilon=0.001, center=True, scale=True, training=True)
+        ct2 = tf.layers.conv2d_transpose(rs1, filters=64, kernel_size=5, strides=2, padding='SAME', data_format='channels_last', activation=leaky_relu, use_bias=True)  # (N, 14, 14, 64)
+        bn2 = tf.layers.batch_normalization(ct2, axis=-1, momentum=0.99, epsilon=0.001, center=True, scale=True, training=True)  # Same as previous
 
-        ct3_filter = tf.get_variable("ct3_filter", shape=(4, 4, 1, in_channels_2), dtype=tf.float32, initializer=tf.truncated_normal_initializer(), trainable=True)
-        ct3 = tf.nn.relu(tf.nn.conv2d_transpose(bn2, filter=ct3_filter, output_shape=(batch_size, 28, 28, 1), strides=(1, 2, 2, 1), padding='SAME', data_format='NHWC'))
+        ct3 = tf.layers.conv2d_transpose(bn2, filters=1, kernel_size=5, strides=2, padding='SAME', data_format='channels_last', activation=leaky_relu, use_bias=True)  # (N, 28, 28, 1)
 
         rs4 = tf.reshape(ct3, [-1, 28 * 28])
         img = tf.layers.dense(inputs=rs4, units=x_dim, activation=tf.tanh)
