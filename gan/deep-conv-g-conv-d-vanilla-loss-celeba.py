@@ -1,5 +1,6 @@
 from __future__ import print_function, division
 import os
+import sys
 import time
 import math
 import tensorflow as tf
@@ -8,9 +9,10 @@ import glob
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 from scipy import misc
-# from tensorflow.examples.tutorials.mnist import input_data
-# mnist = input_data.read_data_sets('./cs231n/datasets/MNIST_data', one_hot=False)
 import utils
+import LossLib
+sys.path.append("../utils/")
+import MathLib
 
 plt.rcParams['figure.figsize'] = (10.0, 8.0)  # set default size of plots
 plt.rcParams['image.interpolation'] = 'nearest'
@@ -22,6 +24,12 @@ img_c = 3
 w_to_h = 1.0 * img_w / img_h
 x_dim = 116412  # 218 * 178 * 3 dimension of each image
 noise_dim = 64
+img_dir = "./data/img_align_celeba/"
+out_dir = "out"
+prefix = "deep-conv-g-conv-d-vanilla-celeba"
+save_dir = "save"
+save_dir_prefix = save_dir + "/" + prefix
+logs_path = "logs/" + prefix
 
 
 def load_images(img_dir):
@@ -76,100 +84,55 @@ def get_session():
     return session
 
 
-def leaky_relu(x, alpha=0.01):
-    return tf.maximum(alpha * x, x)
-
-
-def sample_z(m, n):
-    return np.random.uniform(-1., 1., size=[m, n])
-
-
-def discriminator(x):
-    # x ~ (N, x_dim)
+def discriminator(x):  # x ~ (N, x_dim)
     with tf.variable_scope("discriminator"):
         # Cluster 1
-        fc0 = tf.layers.dense(inputs=x, units=16 * 16, activation=leaky_relu)
+        fc0 = tf.layers.dense(inputs=x, units=16 * 16, activation=MathLib.leaky_relu)
         rs0 = tf.reshape(fc0, [-1, 16, 16, 1])
-
-        c1 = tf.layers.conv2d(inputs=rs0, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
+        c1 = tf.layers.conv2d(inputs=rs0, filters=16, kernel_size=5, strides=1, padding='same', activation=MathLib.leaky_relu, use_bias=True)
         p1 = tf.layers.max_pooling2d(inputs=c1, pool_size=2, strides=2)  # (-1, 8, 8, 16)
-
-        c2 = tf.layers.conv2d(inputs=p1, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
+        c2 = tf.layers.conv2d(inputs=p1, filters=16, kernel_size=5, strides=1, padding='same', activation=MathLib.leaky_relu, use_bias=True)
         p2 = tf.layers.max_pooling2d(inputs=c2, pool_size=2, strides=2)  # (-1, 4, 4, 16)
-
         rs3 = tf.reshape(p2, [-1, 4 * 4 * 16])
 
         # Cluster 2
-        fc4 = tf.layers.dense(inputs=rs3, units=16 * 16, activation=leaky_relu)
+        fc4 = tf.layers.dense(inputs=rs3, units=16 * 16, activation=MathLib.leaky_relu)
         rs4 = tf.reshape(fc4, [-1, 16, 16, 1])
-
-        c5 = tf.layers.conv2d(inputs=rs4, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
+        c5 = tf.layers.conv2d(inputs=rs4, filters=16, kernel_size=5, strides=1, padding='same', activation=MathLib.leaky_relu, use_bias=True)
         p5 = tf.layers.max_pooling2d(inputs=c5, pool_size=2, strides=2)  # (-1, 8, 8, 16)
-
-        c6 = tf.layers.conv2d(inputs=p5, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
+        c6 = tf.layers.conv2d(inputs=p5, filters=16, kernel_size=5, strides=1, padding='same', activation=MathLib.leaky_relu, use_bias=True)
         p6 = tf.layers.max_pooling2d(inputs=c6, pool_size=2, strides=2)  # (-1, 4, 4, 16)
-
         rs7 = tf.reshape(p6, [-1, 4 * 4 * 16])
 
         # Tail cluster 3
-        fc7 = tf.layers.dense(inputs=rs7, units=16 * 16, activation=leaky_relu)
+        fc7 = tf.layers.dense(inputs=rs7, units=16 * 16, activation=MathLib.leaky_relu)
         logits = tf.layers.dense(inputs=fc7, units=1)
-
         return logits
 
 
-def generator(z, keep_prob):
-    # z ~ (N, noise_dim) = 64
+def generator(z, keep_prob):  # z ~ (N, noise_dim) = 64
     with tf.variable_scope("generator"):
         # Cluster 1
         rs0 = tf.reshape(z, [-1, 8, 8, 1])
-
-        c1 = tf.layers.conv2d(inputs=rs0, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
+        c1 = tf.layers.conv2d(inputs=rs0, filters=16, kernel_size=5, strides=1, padding='same', activation=MathLib.leaky_relu, use_bias=True)
         p1 = tf.layers.max_pooling2d(inputs=c1, pool_size=2, strides=2)  # (-1, 4, 4, 16)
-
-        c2 = tf.layers.conv2d(inputs=p1, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
+        c2 = tf.layers.conv2d(inputs=p1, filters=16, kernel_size=5, strides=1, padding='same', activation=MathLib.leaky_relu, use_bias=True)
         p2 = tf.layers.max_pooling2d(inputs=c2, pool_size=2, strides=2)  # (-1, 2, 2, 16)
-
         rs3 = tf.reshape(p2, [-1, 2 * 2 * 16])
 
         # Cluster 2
-        fc4 = tf.layers.dense(inputs=rs3, units=8 * 8, activation=leaky_relu)
+        fc4 = tf.layers.dense(inputs=rs3, units=8 * 8, activation=MathLib.leaky_relu)
         rs4 = tf.reshape(fc4, [-1, 8, 8, 1])
-
-        c5 = tf.layers.conv2d(inputs=rs4, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
+        c5 = tf.layers.conv2d(inputs=rs4, filters=16, kernel_size=5, strides=1, padding='same', activation=MathLib.leaky_relu, use_bias=True)
         p5 = tf.layers.max_pooling2d(inputs=c5, pool_size=2, strides=2)  # (-1, 4, 4, 16)
-
-        c6 = tf.layers.conv2d(inputs=p5, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
+        c6 = tf.layers.conv2d(inputs=p5, filters=16, kernel_size=5, strides=1, padding='same', activation=MathLib.leaky_relu, use_bias=True)
         p6 = tf.layers.max_pooling2d(inputs=c6, pool_size=2, strides=2)  # (-1, 2, 2, 16)
-
         rs7 = tf.reshape(p6, [-1, 2 * 2 * 16])
 
         # Tail cluster 3
-        fc7 = tf.layers.dense(inputs=rs7, units=16 * 16, activation=leaky_relu)
+        fc7 = tf.layers.dense(inputs=rs7, units=16 * 16, activation=MathLib.leaky_relu)
         img = tf.layers.dense(inputs=fc7, units=x_dim, activation=tf.tanh)
         return img
-
-
-def log(x):
-    return tf.log(x + 1e-8)
-
-
-def gan_loss(logits_real, logits_fake):
-    G_loss = tf.reduce_mean(
-        tf.nn.sigmoid_cross_entropy_with_logits(
-            labels=tf.ones_like(logits_fake),
-            logits=logits_fake))
-
-    D_loss = tf.reduce_mean(
-        tf.nn.sigmoid_cross_entropy_with_logits(
-            labels=tf.ones_like(logits_real),
-            logits=logits_real)) \
-        + tf.reduce_mean(
-        tf.nn.sigmoid_cross_entropy_with_logits(
-            labels=tf.zeros_like(logits_fake),
-            logits=logits_fake))
-
-    return D_loss, G_loss
 
 
 tf.reset_default_graph()
@@ -185,7 +148,7 @@ with tf.variable_scope("") as scope:
     scope.reuse_variables()  # Re-use discriminator weights on new inputs
     D_fake = discriminator(G_sample)
 
-D_loss, G_loss = gan_loss(D_real, D_fake)
+D_loss, G_loss = LossLib.VanillaGANLoss(D_real, D_fake)
 
 dlr, glr, beta1 = 1e-3, 1e-3, 0.5
 D_solver = tf.train.AdamOptimizer(learning_rate=dlr, beta1=beta1)
@@ -199,12 +162,6 @@ with tf.control_dependencies(D_extra_step):
 with tf.control_dependencies(G_extra_step):
     G_train_step = G_solver.minimize(G_loss, var_list=G_vars)
 
-img_dir = "./data/img_align_celeba/"
-out_dir = "out"
-prefix = "conv-g-conv-d-softmax-celeba-deep-00"
-save_dir = "save"
-save_dir_prefix = save_dir + "/" + prefix
-logs_path = "logs/" + prefix
 mkdir_p(out_dir)
 mkdir_p(save_dir)
 
@@ -222,29 +179,27 @@ def train(sess, G_train_step, G_loss, D_train_step, D_loss, D_extra_step, G_extr
     batches = load_images(img_dir)
     t = time.time()
     for it in range(max_iter):
-        # xmb = batches.next() # TODO. Remove
         xmb = next(batches)
-        z_noise = sample_z(batch_size, noise_dim)
+        z_noise = MathLib.sample_z(batch_size, noise_dim)
 
         if it % save_img_every == 0:
             samples = sess.run(G_sample, feed_dict={x: xmb, z: z_noise, keep_prob: 1.0})
             save_images(out_dir, samples[:64], it)
 
-        # train G twice for every D train step. see if that helps learning.
         _, D_loss_curr, _, summary = sess.run([D_train_step, D_loss, D_extra_step, summary_op], feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})
-        _, G_loss_curr, _ = sess.run([G_train_step, G_loss, G_extra_step], feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})
         _, G_loss_curr, _ = sess.run([G_train_step, G_loss, G_extra_step], feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})
 
         if math.isnan(D_loss_curr) or math.isnan(G_loss_curr):
             print("D or G loss is nan", D_loss_curr, G_loss_curr)
             exit()
 
-        if it % print_every == 0:  # We want to make sure D_loss doesn't go to 0
+        if it % print_every == 0:
             print('Iter: {}, D: {:.4}, G: {:.4}, Elapsed: {:.4}'.format(it, D_loss_curr, G_loss_curr, time.time() - t))
             t = time.time()
 
         if it % 10 == 0:
             writer.add_summary(summary, global_step=it)
+        if it % 100 == 0:
             Saver.save(sess, save_dir_prefix, global_step=it)
 
 
