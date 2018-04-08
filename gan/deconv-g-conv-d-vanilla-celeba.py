@@ -205,6 +205,7 @@ def train(sess, G_train_step, G_loss, D_train_step, D_loss, D_extra_step, G_extr
 
         if it % 10 == 0:
             writer.add_summary(summary, global_step=it)
+        if it % 100 == 0:
             Saver.save(sess, save_dir_prefix, global_step=it)
 
 
