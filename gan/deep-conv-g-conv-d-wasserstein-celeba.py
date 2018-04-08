@@ -146,7 +146,7 @@ def log(x):
 
 
 def wgangp_loss(D_real, D_fake, x, G_sample):
-    LAMBDA = 10
+    LAMBDA = 1  # poij adjust
     G_loss = -tf.reduce_mean(D_fake)
     D_loss = tf.reduce_mean(D_fake) - tf.reduce_mean(D_real)
 
@@ -230,6 +230,7 @@ def train(sess, G_train_step, G_loss, D_train_step, D_loss, D_extra_step, G_extr
 
         if it % 10 == 0:
             writer.add_summary(summary, global_step=it)
+        if it % 100 == 0:
             Saver.save(sess, save_dir_prefix, global_step=it)
 
 
