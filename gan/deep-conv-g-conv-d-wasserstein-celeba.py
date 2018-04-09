@@ -97,23 +97,18 @@ def discriminator(x):
         # Cluster 1
         fc0 = tf.layers.dense(inputs=x, units=16 * 16, activation=leaky_relu)
         rs0 = tf.reshape(fc0, [-1, 16, 16, 1])
-
         c1 = tf.layers.conv2d(inputs=rs0, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
         c2 = tf.layers.conv2d(inputs=c1, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
         rs3 = tf.reshape(c2, [-1, 16 * 16 * 16])
-
         # Cluster 2
         fc4 = tf.layers.dense(inputs=rs3, units=16 * 16, activation=leaky_relu)
         rs4 = tf.reshape(fc4, [-1, 16, 16, 1])
-
         c5 = tf.layers.conv2d(inputs=rs4, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
         c6 = tf.layers.conv2d(inputs=c5, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
         rs7 = tf.reshape(c6, [-1, 16 * 16 * 16])
-
         # Tail cluster 3
         fc7 = tf.layers.dense(inputs=rs7, units=16 * 16, activation=leaky_relu)
         logits = tf.layers.dense(inputs=fc7, units=1)
-
         return logits
 
 
@@ -122,19 +117,15 @@ def generator(z, keep_prob):
     with tf.variable_scope("generator"):
         # Cluster 1
         rs0 = tf.reshape(z, [-1, 8, 8, 1])
-
         c1 = tf.layers.conv2d(inputs=rs0, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
         c2 = tf.layers.conv2d(inputs=c1, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
         rs3 = tf.reshape(c2, [-1, 8 * 8 * 16])
-
         # Cluster 2
         fc4 = tf.layers.dense(inputs=rs3, units=8 * 8, activation=leaky_relu)
         rs4 = tf.reshape(fc4, [-1, 8, 8, 1])
-
         c5 = tf.layers.conv2d(inputs=rs4, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
         c6 = tf.layers.conv2d(inputs=c5, filters=16, kernel_size=5, strides=1, padding='same', activation=leaky_relu)
         rs7 = tf.reshape(c6, [-1, 8 * 8 * 16])
-
         # Tail cluster 3
         fc7 = tf.layers.dense(inputs=rs7, units=16 * 16, activation=leaky_relu)
         img = tf.layers.dense(inputs=fc7, units=x_dim, activation=tf.tanh)
@@ -146,7 +137,7 @@ def log(x):
 
 
 def wgangp_loss(D_real, D_fake, x, G_sample):
-    LAMBDA = 1  # poij adjust
+    LAMBDA = 10
     G_loss = -tf.reduce_mean(D_fake)
     D_loss = tf.reduce_mean(D_fake) - tf.reduce_mean(D_real)
 
