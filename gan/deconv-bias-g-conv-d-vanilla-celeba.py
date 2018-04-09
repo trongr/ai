@@ -11,6 +11,7 @@ import utils
 import LossLib
 sys.path.append("../utils/")
 import MathLib
+import TensorFlowLib
 
 batch_size = 100
 img_h = 218
@@ -19,21 +20,12 @@ img_c = 3
 x_dim = 116412  # 218, 178, 3 dimension of each image
 noise_dim = 64
 
-# poij
 img_dir = "./data/img_align_celeba/"
-# img_dir = "./data/img_align_celeba_small/"
 out_dir = "out"
 prefix = os.path.basename(__file__)
 save_dir = "save"
 save_dir_prefix = save_dir + "/" + prefix
 logs_path = "logs/" + prefix
-
-
-def get_session():
-    config = tf.ConfigProto()
-    config.gpu_options.allow_growth = True
-    session = tf.Session(config=config)
-    return session
 
 
 def discriminator(x):
@@ -116,7 +108,8 @@ def train(sess, G_train_step, G_loss, D_train_step, D_loss, D_extra_step, G_extr
     if glob.glob(save_dir + "/*"):
         Saver.restore(sess, tf.train.latest_checkpoint(save_dir))
 
-    batches = utils.load_images(batch_size, x_dim, img_dir)
+    # poij remove total=10000 if network doesn't train any faster than default:
+    batches = utils.load_images(batch_size, x_dim, img_dir, total=10000)
     t = time.time()
     for it in range(max_iter):
         xmb = next(batches)
@@ -143,6 +136,6 @@ def train(sess, G_train_step, G_loss, D_train_step, D_loss, D_extra_step, G_extr
             Saver.save(sess, save_dir_prefix, global_step=it)
 
 
-with get_session() as sess:
+with TensorFlowLib.get_session() as sess:
     sess.run(tf.global_variables_initializer())
     train(sess, G_train_step, G_loss, D_train_step, D_loss, D_extra_step, G_extra_step, save_img_every=25, print_every=1, max_iter=1000000)
