@@ -21,7 +21,7 @@ img_h = 218
 img_w = 178
 img_c = 3
 x_dim = 116412  # 218, 178, 3 dimension of each image
-noise_dim = 64
+noise_dim = 64  # NOTE. Generator hardcodes this so change that if this changes
 img_dir = "./data/img_align_celeba/"
 out_dir = "out"
 prefix = os.path.basename(__file__)
@@ -50,21 +50,22 @@ def discriminator(x):
         return logits
 
 
-def generator(z, keep_prob):
+def generator(z, keep_prob):  # z ~ (N, noise_dim) = 64
     with tf.variable_scope("generator"):
-        fc0 = tf.layers.dense(inputs=z, units=1024, activation=MathLib.leaky_relu)
-        bn0 = tf.layers.batch_normalization(fc0, axis=-1, momentum=0.99, epsilon=0.001, center=True, scale=True, training=True)
-
-        fc1 = tf.layers.dense(inputs=bn0, units=7 * 7 * 128, activation=MathLib.leaky_relu)
-        bn1 = tf.layers.batch_normalization(fc1, axis=-1, momentum=0.99, epsilon=0.001, center=True, scale=True, training=True)
-        rs1 = tf.reshape(bn1, [-1, 7, 7, 128])
-
-        ct2 = tf.layers.conv2d_transpose(rs1, filters=64, kernel_size=5, strides=2, padding='SAME', data_format='channels_last', activation=MathLib.leaky_relu, use_bias=True)  # (N, 14, 14, 64)
-        bn2 = tf.layers.batch_normalization(ct2, axis=-1, momentum=0.99, epsilon=0.001, center=True, scale=True, training=True)  # Same as previous
-        ct3 = tf.layers.conv2d_transpose(bn2, filters=1, kernel_size=5, strides=2, padding='SAME', data_format='channels_last', activation=MathLib.leaky_relu, use_bias=True)  # (N, 28, 28, 1)
-
-        rs4 = tf.reshape(ct3, [-1, 28 * 28])
-        img = tf.layers.dense(inputs=rs4, units=x_dim, activation=tf.tanh)
+        # Cluster 1
+        rs0 = tf.reshape(z, [-1, 8, 8, 1])
+        c1 = tf.layers.conv2d(inputs=rs0, filters=16, kernel_size=5, strides=1, padding='same', activation=MathLib.leaky_relu)
+        c2 = tf.layers.conv2d(inputs=c1, filters=16, kernel_size=5, strides=1, padding='same', activation=MathLib.leaky_relu)
+        rs3 = tf.reshape(c2, [-1, 8 * 8 * 16])
+        # Cluster 2
+        fc4 = tf.layers.dense(inputs=rs3, units=8 * 8, activation=MathLib.leaky_relu)
+        rs4 = tf.reshape(fc4, [-1, 8, 8, 1])
+        c5 = tf.layers.conv2d(inputs=rs4, filters=16, kernel_size=5, strides=1, padding='same', activation=MathLib.leaky_relu)
+        c6 = tf.layers.conv2d(inputs=c5, filters=16, kernel_size=5, strides=1, padding='same', activation=MathLib.leaky_relu)
+        rs7 = tf.reshape(c6, [-1, 8 * 8 * 16])
+        # Tail cluster 3
+        fc7 = tf.layers.dense(inputs=rs7, units=16 * 16, activation=MathLib.leaky_relu)
+        img = tf.layers.dense(inputs=fc7, units=x_dim, activation=tf.tanh)
         return img
 
 
