@@ -13,6 +13,9 @@ sys.path.append("../utils/")
 import MathLib
 import TensorFlowLib
 
+tf.app.flags.DEFINE_integer("train_size", None, "How many images to train on. Omit to train on all images.")
+FLAGS = tf.app.flags.FLAGS
+
 batch_size = 100
 img_h = 218
 img_w = 178
@@ -94,8 +97,7 @@ def train(sess, G_train_step, G_loss, D_train_step, D_loss, D_extra_step, G_extr
     Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1)
     if glob.glob(save_dir + "/*"):
         Saver.restore(sess, tf.train.latest_checkpoint(save_dir))
-    # poij remove total=10000 if network doesn't train any faster than default:
-    batches = utils.load_images(batch_size, x_dim, img_dir, total=10000)
+    batches = utils.load_images(batch_size, x_dim, img_dir, total=FLAGS.train_size)
     t = time.time()
     for it in range(max_iter):
         xmb = next(batches)

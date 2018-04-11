@@ -36,12 +36,11 @@ def load_images(batch_size, x_dim, img_dir, total=None):
     Pass in total=10000 to train only on the first 10000 training points.
     Hopefully training a network on a smaller dataset in the beginning will help
     it converge faster, much like learning in small chunks instead of all at
-    once helps in human learning. poij toggle line below if that doesn't work.
+    once helps in human learning.
     """
     img_paths = []
     for img in os.listdir(img_dir):
         img_paths.append(os.path.join(img_dir, img))
-    # total = len(img_paths) # poij toggle if doesn't work
     if total is None:
         total = len(img_paths)
     i = 0
