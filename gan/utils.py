@@ -41,6 +41,7 @@ def load_images(batch_size, x_dim, img_dir, total=None):
     img_paths = []
     for img in os.listdir(img_dir):
         img_paths.append(os.path.join(img_dir, img))
+    np.random.shuffle(img_paths)
     if total is None:
         total = len(img_paths)
     i = 0

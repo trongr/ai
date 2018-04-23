@@ -84,6 +84,7 @@ with tf.variable_scope("") as scope:
 
 D_loss, G_loss = LossLib.VanillaGANLoss(D_real, D_fake)
 
+# poij refactor this too
 dlr, glr, beta1 = 1e-3, 1e-3, 0.5
 D_solver = tf.train.AdamOptimizer(learning_rate=dlr, beta1=beta1)
 G_solver = tf.train.AdamOptimizer(learning_rate=glr, beta1=beta1)
