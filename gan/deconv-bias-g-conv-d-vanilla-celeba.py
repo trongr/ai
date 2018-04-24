@@ -14,6 +14,7 @@ import MathLib
 import TensorFlowLib
 
 tf.app.flags.DEFINE_integer("train_size", None, "How many images to train on. Omit to train on all images.")
+tf.app.flags.DEFINE_boolean("train", False, "True for training, False for testing, default False.")
 FLAGS = tf.app.flags.FLAGS
 
 batch_size = 100
@@ -104,10 +105,7 @@ summary_op = tf.summary.merge_all()
 writer = tf.summary.FileWriter(logs_path, graph=tf.get_default_graph())
 
 
-def train(sess, G_train_step, G_loss, D_train_step, D_loss, D_extra_step, G_extra_step, save_img_every=250, print_every=50, max_iter=1000000):
-    Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1)
-    if glob.glob(save_dir + "/*"):
-        Saver.restore(sess, tf.train.latest_checkpoint(save_dir))
+def train(Saver, sess, G_train_step, G_loss, D_train_step, D_loss, D_extra_step, G_extra_step, save_img_every=250, print_every=50, max_iter=1000000):
     batches = utils.load_images(batch_size, x_dim, img_dir, total=FLAGS.train_size)
     t = time.time()
     for it in range(max_iter):
@@ -130,6 +128,20 @@ def train(sess, G_train_step, G_loss, D_train_step, D_loss, D_extra_step, G_extr
             Saver.save(sess, save_dir_prefix, global_step=it)
 
 
+def test(Saver, sess):
+    z_noise = MathLib.sample_z(batch_size, noise_dim)
+    samples = sess.run(G_sample, feed_dict={z: z_noise, keep_prob: 1.0})
+    utils.save_images(out_dir, samples[:100], img_w, img_h, img_c, 0)
+
+
 with TensorFlowLib.get_session() as sess:
     sess.run(tf.global_variables_initializer())
-    train(sess, G_train_step, G_loss, D_train_step, D_loss, D_extra_step, G_extra_step, save_img_every=25, print_every=1, max_iter=1000000)
+
+    Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1)
+    if glob.glob(save_dir + "/*"):
+        Saver.restore(sess, tf.train.latest_checkpoint(save_dir))
+
+    if FLAGS.train is True:
+        train(Saver, sess, G_train_step, G_loss, D_train_step, D_loss, D_extra_step, G_extra_step, save_img_every=25, print_every=1, max_iter=1000000)
+    else:
+        test(Saver, sess)
