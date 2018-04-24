@@ -129,9 +129,10 @@ def train(Saver, sess, G_train_step, G_loss, D_train_step, D_loss, D_extra_step,
 
 
 def test(Saver, sess):
+    batch_size = 1
     z_noise = MathLib.sample_z(batch_size, noise_dim)
     samples = sess.run(G_sample, feed_dict={z: z_noise, keep_prob: 1.0})
-    utils.save_images(out_dir, samples[:100], img_w, img_h, img_c, 0)
+    utils.save_images(out_dir, samples, img_w, img_h, img_c, 0)
 
 
 with TensorFlowLib.get_session() as sess:
