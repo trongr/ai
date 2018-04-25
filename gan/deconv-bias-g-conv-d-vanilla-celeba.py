@@ -13,6 +13,9 @@ sys.path.append("../utils/")
 import MathLib
 import TensorFlowLib
 
+# poij take a list of random floats. If None, generate random img.
+# https://stackoverflow.com/questions/6507431/join-float-list-into-space-separated-string-in-python
+# ALT. use flags.DEFINE_list
 tf.app.flags.DEFINE_integer("train_size", None, "How many images to train on. Omit to train on all images.")
 tf.app.flags.DEFINE_boolean("train", False, "True for training, False for testing, default False.")
 FLAGS = tf.app.flags.FLAGS
