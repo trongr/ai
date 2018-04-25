@@ -13,12 +13,14 @@ sys.path.append("../utils/")
 import MathLib
 import TensorFlowLib
 
-# poij take a list of random floats. If None, generate random img.
-# https://stackoverflow.com/questions/6507431/join-float-list-into-space-separated-string-in-python
-# ALT. use flags.DEFINE_list
 tf.app.flags.DEFINE_integer("train_size", None, "How many images to train on. Omit to train on all images.")
 tf.app.flags.DEFINE_boolean("train", False, "True for training, False for testing, default False.")
+tf.app.flags.DEFINE_string("noise_input", None, "List of random inputs [None]. Omit to create random image.")
 FLAGS = tf.app.flags.FLAGS
+
+noise_input = None
+if FLAGS.noise_input is not None:
+    noise_input = [float(x) for x in FLAGS.noise_input.split(",")]
 
 batch_size = 100
 img_h = 218
@@ -54,17 +56,17 @@ def discriminator(x):
         return logits
 
 
-def generator(z, keep_prob):
+def generator(z, keep_prob, training=False):
     with tf.variable_scope("generator"):
         fc0 = tf.layers.dense(inputs=z, units=1024, activation=MathLib.leaky_relu)
-        bn0 = tf.layers.batch_normalization(fc0, axis=-1, momentum=0.99, epsilon=0.001, center=True, scale=True, training=True)
+        bn0 = tf.layers.batch_normalization(fc0, axis=-1, momentum=0.99, epsilon=0.001, center=True, scale=True, training=training)
 
         fc1 = tf.layers.dense(inputs=bn0, units=7 * 7 * 128, activation=MathLib.leaky_relu)
-        bn1 = tf.layers.batch_normalization(fc1, axis=-1, momentum=0.99, epsilon=0.001, center=True, scale=True, training=True)
+        bn1 = tf.layers.batch_normalization(fc1, axis=-1, momentum=0.99, epsilon=0.001, center=True, scale=True, training=training)
         rs1 = tf.reshape(bn1, [-1, 7, 7, 128])
 
         ct2 = tf.layers.conv2d_transpose(rs1, filters=64, kernel_size=5, strides=2, padding='SAME', data_format='channels_last', activation=MathLib.leaky_relu, use_bias=True)  # (N, 14, 14, 64)
-        bn2 = tf.layers.batch_normalization(ct2, axis=-1, momentum=0.99, epsilon=0.001, center=True, scale=True, training=True)  # Same as previous
+        bn2 = tf.layers.batch_normalization(ct2, axis=-1, momentum=0.99, epsilon=0.001, center=True, scale=True, training=training)  # Same as previous
         ct3 = tf.layers.conv2d_transpose(bn2, filters=1, kernel_size=5, strides=2, padding='SAME', data_format='channels_last', activation=MathLib.leaky_relu, use_bias=True)  # (N, 28, 28, 1)
 
         rs4 = tf.reshape(ct3, [-1, 28 * 28])
@@ -78,9 +80,10 @@ with tf.name_scope('input'):
     x = tf.placeholder(tf.float32, shape=[None, x_dim], name="x-input")
     z = tf.placeholder(tf.float32, shape=[None, noise_dim], name="z-input")
     keep_prob = tf.placeholder(tf.float32, name='keep_prob')
+    training = tf.placeholder(tf.bool, name="training")
 
 with tf.variable_scope("") as scope:
-    G_sample = generator(z, keep_prob)
+    G_sample = generator(z, keep_prob, training)
     D_real = discriminator(x)
     scope.reuse_variables()
     D_fake = discriminator(G_sample)
@@ -114,10 +117,10 @@ def train(Saver, sess, G_train_step, G_loss, D_train_step, D_loss, D_extra_step,
     for it in range(max_iter):
         xmb = next(batches)
         z_noise = MathLib.sample_z(batch_size, noise_dim)
-        _, D_loss_curr, summary, _ = sess.run([D_train_step, D_loss, summary_op, D_extra_step], feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})
-        _, G_loss_curr, _ = sess.run([G_train_step, G_loss, G_extra_step], feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})
+        _, D_loss_curr, summary, _ = sess.run([D_train_step, D_loss, summary_op, D_extra_step], feed_dict={x: xmb, z: z_noise, keep_prob: 0.3, training: True})
+        _, G_loss_curr, _ = sess.run([G_train_step, G_loss, G_extra_step], feed_dict={x: xmb, z: z_noise, keep_prob: 0.3, training: True})
         if it % save_img_every == 0:
-            samples = sess.run(G_sample, feed_dict={x: xmb, z: z_noise, keep_prob: 1.0})
+            samples = sess.run(G_sample, feed_dict={x: xmb, z: z_noise, keep_prob: 1.0, training: True})  # TODO. Should this be False?
             utils.save_images(out_dir, samples[:100], img_w, img_h, img_c, it)
         if math.isnan(D_loss_curr) or math.isnan(G_loss_curr):
             print("D or G loss is nan", D_loss_curr, G_loss_curr)
@@ -132,10 +135,14 @@ def train(Saver, sess, G_train_step, G_loss, D_train_step, D_loss, D_extra_step,
 
 
 def test(Saver, sess):
-    batch_size = 1
-    z_noise = MathLib.sample_z(batch_size, noise_dim)
-    samples = sess.run(G_sample, feed_dict={z: z_noise, keep_prob: 1.0})
+    if noise_input is None:
+        batch_size = 1
+        z_noise = MathLib.sample_z(batch_size, noise_dim)
+    else:
+        z_noise = np.array([noise_input])
+    samples = sess.run(G_sample, feed_dict={z: z_noise, keep_prob: 1.0, training: False})
     utils.save_images(out_dir, samples, img_w, img_h, img_c, 0)
+    print("z_noise:", ",".join(map(str, z_noise[0])))
 
 
 with TensorFlowLib.get_session() as sess:
