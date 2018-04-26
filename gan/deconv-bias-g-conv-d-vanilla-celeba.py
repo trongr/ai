@@ -58,6 +58,8 @@ def discriminator(x):
 
 
 def generator(z, keep_prob, training=False):
+    # poij Might have to set the layers to trainable=False depending on whether
+    # training is t|f. There might be a way to do that for all layers at once.
     with tf.variable_scope("generator"):
         fc0 = tf.layers.dense(inputs=z, units=1024, activation=MathLib.leaky_relu)
         bn0 = tf.layers.batch_normalization(fc0, axis=-1, momentum=0.99, epsilon=0.001, center=True, scale=True, training=training)
@@ -112,46 +114,58 @@ summary_op = tf.summary.merge_all()
 writer = tf.summary.FileWriter(logs_path, graph=tf.get_default_graph())
 
 
-def train(Saver, sess, G_train_step, G_loss, D_train_step, D_loss, D_extra_step, G_extra_step, save_img_every=250, print_every=50, max_iter=1000000):
-    batches = utils.load_images(batch_size, x_dim, img_dir, total=FLAGS.train_size)
-    t = time.time()
-    for it in range(max_iter):
-        xmb = next(batches)
-        z_noise = MathLib.sample_z(batch_size, noise_dim)
-        _, D_loss_curr, summary, _ = sess.run([D_train_step, D_loss, summary_op, D_extra_step], feed_dict={x: xmb, z: z_noise, keep_prob: 0.3, training: True})
-        _, G_loss_curr, _ = sess.run([G_train_step, G_loss, G_extra_step], feed_dict={x: xmb, z: z_noise, keep_prob: 0.3, training: True})
-        if it % save_img_every == 0:
-            samples = sess.run(G_sample, feed_dict={x: xmb, z: z_noise, keep_prob: 0.3, training: True})  # TODO. Should this be False?
-            utils.save_images(out_dir, samples[:100], img_w, img_h, img_c, it)
-        if math.isnan(D_loss_curr) or math.isnan(G_loss_curr):
-            print("D or G loss is nan", D_loss_curr, G_loss_curr)
-            exit()
-        if it % print_every == 0:
-            print('Iter: {}, D: {:.4}, G: {:.4}, Elapsed: {:.4}'.format(it, D_loss_curr, G_loss_curr, time.time() - t))
-            t = time.time()
-        if it % 10 == 0:
-            writer.add_summary(summary, global_step=it)
-        if it % 100 == 0:
-            Saver.save(sess, save_dir_prefix, global_step=it)
+def train(G_train_step, G_loss, D_train_step, D_loss, D_extra_step, G_extra_step, save_img_every=250, print_every=50, max_iter=1000000):
+    with TensorFlowLib.get_session() as sess:
+        sess.run(tf.global_variables_initializer())
+        Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1)
+        if glob.glob(save_dir + "/*"):
+            Saver.restore(sess, tf.train.latest_checkpoint(save_dir))
+
+        batches = utils.load_images(batch_size, x_dim, img_dir, total=FLAGS.train_size)
+        t = time.time()
+        for it in range(max_iter):
+            xmb = next(batches)
+            z_noise = MathLib.sample_z(batch_size, noise_dim)
+            _, D_loss_curr, summary, _ = sess.run([D_train_step, D_loss, summary_op, D_extra_step], feed_dict={x: xmb, z: z_noise, keep_prob: 0.3, training: True})
+            _, G_loss_curr, _ = sess.run([G_train_step, G_loss, G_extra_step], feed_dict={x: xmb, z: z_noise, keep_prob: 0.3, training: True})
+            if it % save_img_every == 0:
+                samples = sess.run(G_sample, feed_dict={x: xmb, z: z_noise, keep_prob: 0.3, training: True})  # TODO. Should this be False?
+                utils.save_images(out_dir, samples[:100], img_w, img_h, img_c, it)
+            if math.isnan(D_loss_curr) or math.isnan(G_loss_curr):
+                print("D or G loss is nan", D_loss_curr, G_loss_curr)
+                exit()
+            if it % print_every == 0:
+                print('Iter: {}, D: {:.4}, G: {:.4}, Elapsed: {:.4}'.format(it, D_loss_curr, G_loss_curr, time.time() - t))
+                t = time.time()
+            if it % 10 == 0:
+                writer.add_summary(summary, global_step=it)
+            if it % 100 == 0:
+                Saver.save(sess, save_dir_prefix, global_step=it)
 
 
-def test(Saver, sess):
-    if noise_input is None:
-        batch_size = 1
-        z_noise = MathLib.sample_z(batch_size, noise_dim)
-    else:
-        z_noise = np.array([noise_input])
-    samples = sess.run(G_sample, feed_dict={z: z_noise, keep_prob: 1.0, training: False})
-    utils.save_images(out_dir, samples, img_w, img_h, img_c, FLAGS.output)
-    print("z_noise:", ",".join(map(str, z_noise[0])))
+def test(noise_input):
+    with TensorFlowLib.get_session() as sess:
+        sess.run(tf.global_variables_initializer())
+        Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1)
+        if glob.glob(save_dir + "/*"):
+            Saver.restore(sess, tf.train.latest_checkpoint(save_dir))
+
+        if noise_input is None:
+            batch_size = 1
+            z_noise = MathLib.sample_z(batch_size, noise_dim)
+        else:
+            z_noise = np.array([noise_input])
+        samples = sess.run(G_sample, feed_dict={z: z_noise, keep_prob: 1.0, training: False})
+        utils.save_images(out_dir, samples, img_w, img_h, img_c, FLAGS.output)
+        print("z_noise:", ",".join(map(str, z_noise[0])))
 
 
-with TensorFlowLib.get_session() as sess:
-    sess.run(tf.global_variables_initializer())
-    Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1)
-    if glob.glob(save_dir + "/*"):
-        Saver.restore(sess, tf.train.latest_checkpoint(save_dir))
+def main():
     if FLAGS.train is True:
-        train(Saver, sess, G_train_step, G_loss, D_train_step, D_loss, D_extra_step, G_extra_step, save_img_every=25, print_every=1, max_iter=1000000)
+        train(G_train_step, G_loss, D_train_step, D_loss, D_extra_step, G_extra_step, save_img_every=25, print_every=1, max_iter=1000000)
     else:
-        test(Saver, sess)
+        test(noise_input)
+
+
+if __name__ == "__main__":
+    main()
