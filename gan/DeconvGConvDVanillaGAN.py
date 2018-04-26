@@ -1,3 +1,10 @@
+"""
+USAGE.
+======
+python DeconvGConvDVanillaGAN.py --train False --noise_input=0.381935094072,0.993223977256,-0.917976787045,-0.738318301788,0.983937322845,0.568823153852,0.799077259729,0.308355393499,-0.273507900704,0.99261561491,-0.301363411266,-0.378580213994,0.553637597003,0.655594412744,-0.10589809701,-0.445392174697,0.127209381136,0.279231318717,-0.767187890619,0.517912382384,-0.982118335871,0.68021891118,0.550204859767,-0.405170726768,-0.209793820516,0.32421283446,0.655606459433,0.455121130887,0.444072844148,-0.723755365999,-0.876505903235,0.154755187644,0.103318084893,-0.813127115237,0.882995313363,-0.195894568946,-0.761815096228,0.991532449875,0.0581586407051,0.240098388243,0.905119550972,-0.593938262809,-0.0490899453885,-0.505825671087,-0.86150670744,-0.969691452214,0.265612969146,-0.67898421121,-0.849759991117,0.396833010409,-0.936391424904,-0.573455737039,-0.667525119719,-0.278111298132,-0.155129912759,0.979012054522,-0.31859680795,0.542003448302,-0.984675780767,0.223453406233,-0.825112411321,0.735301118248,-0.587375611399,-0.100033493553 --output output-00000001
+Alternatively, import and use either train() or test().
+"""
+
 from __future__ import print_function, division
 import os
 import sys
@@ -58,8 +65,6 @@ def discriminator(x):
 
 
 def generator(z, keep_prob, training=False):
-    # poij Might have to set the layers to trainable=False depending on whether
-    # training is t|f. There might be a way to do that for all layers at once.
     with tf.variable_scope("generator"):
         fc0 = tf.layers.dense(inputs=z, units=1024, activation=MathLib.leaky_relu)
         bn0 = tf.layers.batch_normalization(fc0, axis=-1, momentum=0.99, epsilon=0.001, center=True, scale=True, training=training)
@@ -143,7 +148,7 @@ def train(G_train_step, G_loss, D_train_step, D_loss, D_extra_step, G_extra_step
                 Saver.save(sess, save_dir_prefix, global_step=it)
 
 
-def test(noise_input):
+def test(noise_input, output):
     with TensorFlowLib.get_session() as sess:
         sess.run(tf.global_variables_initializer())
         Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1)
@@ -156,7 +161,7 @@ def test(noise_input):
         else:
             z_noise = np.array([noise_input])
         samples = sess.run(G_sample, feed_dict={z: z_noise, keep_prob: 1.0, training: False})
-        utils.save_images(out_dir, samples, img_w, img_h, img_c, FLAGS.output)
+        utils.save_images(out_dir, samples, img_w, img_h, img_c, output)
         print("z_noise:", ",".join(map(str, z_noise[0])))
 
 
@@ -164,7 +169,7 @@ def main():
     if FLAGS.train is True:
         train(G_train_step, G_loss, D_train_step, D_loss, D_extra_step, G_extra_step, save_img_every=25, print_every=1, max_iter=1000000)
     else:
-        test(noise_input)
+        test(noise_input, FLAGS.output)
 
 
 if __name__ == "__main__":
