@@ -60,6 +60,12 @@ def load_images(batch_size, x_dim, img_dir, total=None):
         i = (i + batch_size) % total
 
 
+def loadImage(path, x_dim):
+    """Returns img ~ (1, x_dim), e.g. [[-0.1 . . . 0.9]]"""
+    img = np.reshape(np.array(misc.imread(path)), [-1, x_dim])
+    return preprocess_img_rgb(img)
+
+
 def mkdir_p(dir):
     if not os.path.exists(dir):
         os.makedirs(dir)

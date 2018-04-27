@@ -20,10 +20,11 @@ sys.path.append("../utils/")
 import MathLib
 import TensorFlowLib
 
-tf.app.flags.DEFINE_integer("train_size", None, "How many images to train on. Omit to train on all images.")
-tf.app.flags.DEFINE_boolean("train", False, "True for training, False for testing, default False.")
+tf.app.flags.DEFINE_integer("train_size", None, "How many images to train on [None]. Omit to train on all images.")
+tf.app.flags.DEFINE_boolean("train", False, "True for training, False for testing [False].")
 tf.app.flags.DEFINE_string("noise_input", None, "List of random inputs [None]. Omit to create random image.")
 tf.app.flags.DEFINE_string("output", "output", "Name of the output image [output].")
+tf.app.flags.DEFINE_boolean("find_encoding", False, "Whether to find encoding of a ground-truth image [False].")
 FLAGS = tf.app.flags.FLAGS
 
 noise_input = None
@@ -62,6 +63,18 @@ def discriminator(x):
         fc7 = tf.layers.dense(inputs=rs7, units=16 * 16, activation=MathLib.leaky_relu)
         logits = tf.layers.dense(inputs=fc7, units=1)
         return logits
+
+
+def encodingDiscriminator(x):
+    """Discriminator used to find the encoding of a real image in backprop on input z."""
+    fc0 = tf.layers.dense(inputs=x, units=16 * 16, activation=MathLib.leaky_relu)
+    rs0 = tf.reshape(fc0, [-1, 16, 16, 1])
+    c1 = tf.layers.conv2d(inputs=rs0, filters=16, kernel_size=5, strides=1, padding='same', activation=MathLib.leaky_relu, use_bias=True)
+    c2 = tf.layers.conv2d(inputs=c1, filters=16, kernel_size=5, strides=1, padding='same', activation=MathLib.leaky_relu, use_bias=True)
+    rs3 = tf.reshape(c2, [-1, 16 * 16 * 16])
+    fc7 = tf.layers.dense(inputs=rs3, units=16 * 16, activation=MathLib.leaky_relu)
+    logits = tf.layers.dense(inputs=fc7, units=1)
+    return logits
 
 
 def generator(z, keep_prob, training=False):
@@ -165,8 +178,61 @@ def test(noise_input, output):
         print("z_noise:", ",".join(map(str, z_noise[0])))
 
 
+def optimistic_restore(session, save_file):
+    reader = tf.train.NewCheckpointReader(save_file)
+    saved_shapes = reader.get_variable_to_shape_map()
+    var_names = sorted([(var.name, var.name.split(':')[0]) for var in tf.global_variables()
+                        if var.name.split(':')[0] in saved_shapes])
+    restore_vars = []
+    name2var = dict(zip(map(lambda x: x.name.split(':')[0], tf.global_variables()), tf.global_variables()))
+    with tf.variable_scope('', reuse=True):
+        for var_name, saved_var_name in var_names:
+            curr_var = name2var[saved_var_name]
+            var_shape = curr_var.get_shape().as_list()
+            if var_shape == saved_shapes[saved_var_name]:
+                restore_vars.append(curr_var)
+    saver = tf.train.Saver(restore_vars)
+    saver.restore(session, save_file)
+
+
+def backpropOnInputFromImage():
+    """Find an approximate encoding z of the image by gradient descent on a random input z."""
+    path = "./data/faces/evanrachelwood.jpg"
+    image = utils.loadImage(path, x_dim)
+
+    D_real = encodingDiscriminator(x)
+    D_fake = encodingDiscriminator(G_sample)
+    D_loss, _ = LossLib.VanillaGANLoss(D_real, D_fake)
+    D_train_step = tf.train.AdamOptimizer(learning_rate=1e-3, beta1=0.5).minimize(D_loss)
+
+    Loss = tf.reduce_mean((image - G_sample) ** 2)
+    zGrad = tf.gradients(Loss, z)[0]
+
+    with TensorFlowLib.get_session() as sess:
+        sess.run(tf.global_variables_initializer())
+
+        optimistic_restore(sess, tf.train.latest_checkpoint(save_dir))
+        # Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1)
+        # if glob.glob(save_dir + "/*"):
+        #     Saver.restore(sess, tf.train.latest_checkpoint(save_dir))
+
+        alpha = 0.1
+        batch_size = 1
+        max_iter = 1000
+        z_noise = MathLib.sample_z(batch_size, noise_dim)
+        for it in range(max_iter):
+            _, D_loss_curr = sess.run([D_train_step, D_loss], feed_dict={x: image, z: z_noise, keep_prob: 0.3, training: True})
+            LossValue, zGradValue = sess.run([Loss, zGrad], feed_dict={z: z_noise, keep_prob: 1.0, training: False})
+            z_noise -= alpha * zGradValue
+            print('Iter: {}, Loss: {:.4}, D: {:.4}'.format(it, LossValue, D_loss_curr))
+        print("Encoding:", ",".join(map(str, z_noise[0])))
+        print("z shape", z_noise.shape)
+
+
 def main():
-    if FLAGS.train is True:
+    if FLAGS.find_encoding is True:
+        backpropOnInputFromImage()
+    elif FLAGS.train is True:
         train(G_train_step, G_loss, D_train_step, D_loss, D_extra_step, G_extra_step, save_img_every=25, print_every=1, max_iter=1000000)
     else:
         test(noise_input, FLAGS.output)
