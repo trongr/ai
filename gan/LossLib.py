@@ -15,7 +15,7 @@ def LeastSquaresLoss(score_real, score_fake):
 
 def SoftmaxLoss(D_real, D_fake, batch_size):
     Z = tf.reduce_sum(tf.exp(-D_real)) + tf.reduce_sum(tf.exp(-D_fake))
-    D_loss = tf.reduce_sum(1. / batch_size * D_real) + log(Z)
+    D_loss = tf.reduce_sum(1. / batch_size * D_real) + tf.log(Z)
     G_loss = tf.reduce_sum(1. / batch_size * D_fake) + tf.reduce_sum(1. / batch_size * D_real) + log(Z)
     return D_loss, G_loss
 

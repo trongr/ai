@@ -203,10 +203,7 @@ def backpropOnInputFromImage():
     D_real = encodingDiscriminator(x)
     D_fake = encodingDiscriminator(G_sample)
     D_loss, _ = LossLib.VanillaGANLoss(D_real, D_fake)
-    D_train_step = tf.train.AdamOptimizer(learning_rate=1e-3, beta1=0.5).minimize(D_loss)
-
-    Loss = tf.reduce_mean((image - G_sample) ** 2)
-    zGrad = tf.gradients(Loss, z)[0]
+    zGrad = tf.gradients(D_loss, z)[0]
 
     with TensorFlowLib.get_session() as sess:
         sess.run(tf.global_variables_initializer())
@@ -221,10 +218,10 @@ def backpropOnInputFromImage():
         max_iter = 1000
         z_noise = MathLib.sample_z(batch_size, noise_dim)
         for it in range(max_iter):
-            _, D_loss_curr = sess.run([D_train_step, D_loss], feed_dict={x: image, z: z_noise, keep_prob: 0.3, training: True})
-            LossValue, zGradValue = sess.run([Loss, zGrad], feed_dict={z: z_noise, keep_prob: 1.0, training: False})
+            D_loss_value = sess.run(D_loss, feed_dict={x: image, z: z_noise, keep_prob: 0.3, training: True})
+            zGradValue = sess.run(zGrad, feed_dict={z: z_noise, keep_prob: 1.0, training: False})
             z_noise -= alpha * zGradValue
-            print('Iter: {}, Loss: {:.4}, D: {:.4}'.format(it, LossValue, D_loss_curr))
+            print('Iter: {}, D: {:.4}'.format(it, D_loss_value))
         print("Encoding:", ",".join(map(str, z_noise[0])))
         print("z shape", z_noise.shape)
 
