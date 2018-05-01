@@ -65,18 +65,6 @@ def discriminator(x):
         return logits
 
 
-def encodingDiscriminator(x):
-    """Discriminator used to find the encoding of a real image in backprop on input z."""
-    fc0 = tf.layers.dense(inputs=x, units=16 * 16, activation=MathLib.leaky_relu)
-    rs0 = tf.reshape(fc0, [-1, 16, 16, 1])
-    c1 = tf.layers.conv2d(inputs=rs0, filters=16, kernel_size=5, strides=1, padding='same', activation=MathLib.leaky_relu, use_bias=True)
-    c2 = tf.layers.conv2d(inputs=c1, filters=16, kernel_size=5, strides=1, padding='same', activation=MathLib.leaky_relu, use_bias=True)
-    rs3 = tf.reshape(c2, [-1, 16 * 16 * 16])
-    fc7 = tf.layers.dense(inputs=rs3, units=16 * 16, activation=MathLib.leaky_relu)
-    logits = tf.layers.dense(inputs=fc7, units=1)
-    return logits
-
-
 def generator(z, keep_prob, training=False):
     with tf.variable_scope("generator"):
         fc0 = tf.layers.dense(inputs=z, units=1024, activation=MathLib.leaky_relu)
@@ -178,50 +166,28 @@ def test(noise_input, output):
         print("z_noise:", ",".join(map(str, z_noise[0])))
 
 
-def optimistic_restore(session, save_file):
-    reader = tf.train.NewCheckpointReader(save_file)
-    saved_shapes = reader.get_variable_to_shape_map()
-    var_names = sorted([(var.name, var.name.split(':')[0]) for var in tf.global_variables()
-                        if var.name.split(':')[0] in saved_shapes])
-    restore_vars = []
-    name2var = dict(zip(map(lambda x: x.name.split(':')[0], tf.global_variables()), tf.global_variables()))
-    with tf.variable_scope('', reuse=True):
-        for var_name, saved_var_name in var_names:
-            curr_var = name2var[saved_var_name]
-            var_shape = curr_var.get_shape().as_list()
-            if var_shape == saved_shapes[saved_var_name]:
-                restore_vars.append(curr_var)
-    saver = tf.train.Saver(restore_vars)
-    saver.restore(session, save_file)
-
-
 def backpropOnInputFromImage():
+    # Can't get this to work yet.
     """Find an approximate encoding z of the image by gradient descent on a random input z."""
     path = "./data/faces/evanrachelwood.jpg"
     image = utils.loadImage(path, x_dim)
 
-    D_real = encodingDiscriminator(x)
-    D_fake = encodingDiscriminator(G_sample)
-    D_loss, _ = LossLib.VanillaGANLoss(D_real, D_fake)
-    zGrad = tf.gradients(D_loss, z)[0]
+    Loss = LossLib.MeanSquaredDiff(image, G_sample)
+    zGrad = tf.gradients(Loss, z)[0]
 
     with TensorFlowLib.get_session() as sess:
         sess.run(tf.global_variables_initializer())
-
-        optimistic_restore(sess, tf.train.latest_checkpoint(save_dir))
-        # Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1)
-        # if glob.glob(save_dir + "/*"):
-        #     Saver.restore(sess, tf.train.latest_checkpoint(save_dir))
+        TensorFlowLib.optimistic_restore(sess, tf.train.latest_checkpoint(save_dir))
 
         alpha = 0.1
         batch_size = 1
         max_iter = 1000
         z_noise = MathLib.sample_z(batch_size, noise_dim)
         for it in range(max_iter):
-            D_loss_value = sess.run(D_loss, feed_dict={x: image, z: z_noise, keep_prob: 0.3, training: True})
+            LossValue = sess.run(Loss, feed_dict={x: image, z: z_noise, keep_prob: 0.3, training: True})
             zGradValue = sess.run(zGrad, feed_dict={z: z_noise, keep_prob: 1.0, training: False})
             z_noise -= alpha * zGradValue
-            print('Iter: {}, D: {:.4}'.format(it, D_loss_value))
+            print('Iter: {}, Loss: {:.8}'.format(it, LossValue))
         print("Encoding:", ",".join(map(str, z_noise[0])))
         print("z shape", z_noise.shape)
 
