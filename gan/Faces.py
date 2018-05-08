@@ -1,5 +1,6 @@
 import numpy as np
 import DeconvGConvDVanillaGAN as GAN
+import MathLib
 
 
 def TestRangeEachDimension():
@@ -13,11 +14,20 @@ def TestRangeEachDimension():
         noise_input_copy = np.array([noise_input, ] * batch_size)
         for i in range(len(steps)):
             noise_input_copy[i][axis] = steps[i]
-        GAN.test(noise_input_copy, str(axis))
+        GAN.TestGAN(noise_input_copy, axis)
+
+
+def TestRandomFaces():
+    batch_size = 100
+    noise_dim = 64
+    for it in range(1000):
+        noise_input = MathLib.sample_z(batch_size, noise_dim)
+        GAN.TestGAN(noise_input, it)
 
 
 def main():
-    TestRangeEachDimension()
+    # TestRangeEachDimension()
+    TestRandomFaces()
 
 
 if __name__ == "__main__":

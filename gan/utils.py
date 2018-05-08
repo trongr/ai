@@ -88,7 +88,15 @@ def save_images(dir, images, img_w, img_h, img_c, it):
         img = deprocess_img(img)
         plt.imshow(img.reshape([img_h, img_w, img_c]))
 
-    imgpath = dir + "/" + str(it).zfill(10) + ".jpg"
-    print("Saving img " + imgpath)
+    output = it if isinstance(it, str) else str(it).zfill(10)
+    imgpath = dir + "/" + output + ".jpg"
+    print("Saving img: " + imgpath)
     fig.savefig(imgpath)
     plt.close(fig)
+
+
+def saveEncoding(dir, encoding, output):
+    output = output if isinstance(output, str) else str(output).zfill(10)
+    filename = dir + "/" + output + ".txt"
+    print("Saving encoding: " + filename)
+    np.savetxt(filename, encoding)
