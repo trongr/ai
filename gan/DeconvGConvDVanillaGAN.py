@@ -170,7 +170,6 @@ def TestGAN(noise_input, output):
         samples = sess.run(G_sample, feed_dict={z: z_noise, keep_prob: 1.0, training: False})
         utils.save_images(out_dir, samples, img_w, img_h, img_c, output)
         utils.saveEncoding(out_dir, z_noise, output)
-        # print("z_noise:", ",".join(map(str, z_noise[0]))) # TODO. Remove
 
 
 def backpropOnInputFromImage():
