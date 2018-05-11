@@ -34,3 +34,4 @@ gan/dcgansave/
 gan/dcganimgs01/
 gan/out/
 gan/data/
+node_modules

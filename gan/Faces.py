@@ -1,3 +1,4 @@
+#!\Users\trong\Anaconda3\envs\tensorflow\python.exe
 import numpy as np
 import tensorflow as tf
 import DeconvGConvDVanillaGAN as GAN
@@ -15,7 +16,7 @@ def TestRangeEachDimension():
         noise_input_copy = np.array([noise_input, ] * batch_size)
         for i in range(len(steps)):
             noise_input_copy[i][axis] = steps[i]
-        GAN.TestGAN(noise_input_copy, "TestRangeEachDimension" + str(axis))
+        GAN.TestGAN(noise_input_copy, "TestRangeEachDimension-" + str(axis))
 
 
 def TestRangeTwoDimensions():
@@ -35,15 +36,16 @@ def TestRangeTwoDimensions():
                 for j in range(len(steps2)):
                     noise_input_copy[i * 10 + j][axis1] = steps1[i]
                     noise_input_copy[i * 10 + j][axis2] = steps2[j]
-            GAN.TestGAN(noise_input_copy, "TestRangeEachDimension-" + str(axis1) + "-" + str(axis2))
+            GAN.TestGAN(noise_input_copy, "TestRangeTwoDimensions-" + str(axis1) + "-" + str(axis2))
 
 
 def TestRandomFaces():
+    """Generate random faces"""
     batch_size = 100
     noise_dim = 64
     for it in range(1000):
         noise_input = MathLib.sample_z(batch_size, noise_dim)
-        GAN.TestGAN(noise_input, "TestRandomFaces" + str(it))
+        GAN.TestGAN(noise_input, "TestRandomFaces-" + str(it))
 
 
 def main():
