@@ -1,0 +1,23 @@
+body {
+    padding: 50px;
+    font: 1em "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+
+.Center {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+}
+
+.Huge {
+    font-size: 5em;
+}

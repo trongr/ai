@@ -1,4 +1,3 @@
-#!\Users\trong\Anaconda3\envs\tensorflow\python.exe
 import numpy as np
 import tensorflow as tf
 import DeconvGConvDVanillaGAN as GAN
