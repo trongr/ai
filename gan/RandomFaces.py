@@ -1,0 +1,2 @@
+import Faces
+Faces.TestRandomFaces()

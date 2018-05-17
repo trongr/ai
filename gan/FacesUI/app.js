@@ -26,14 +26,12 @@ app.use(function (req, res, next) {
 });
 
 // error handler
-app.use(function (err, req, res, next) {
-    // set locals, only providing error in development
-    res.locals.message = err.message;
-    res.locals.error = req.app.get('env') === 'development' ? err : {};
-
-    // render the error page
-    res.status(err.status || 500);
-    res.render('error');
+app.use(function (er, req, res, next) {
+    res.locals.message = er.error; // set locals, only providing error in development
+    res.locals.error = req.app.get('env') === 'development' ? er : {};
+    console.error("ErrorHandler", er)
+    const status = er.status || 520 // 520 Unknown Error
+    res.status(status).send({ status, error: er.error })
 });
 
 module.exports = app;

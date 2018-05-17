@@ -42,15 +42,16 @@ def TestRandomFaces():
     """Generate random faces"""
     batch_size = 100
     noise_dim = 64
-    for it in range(1000):
+    # for it in range(1000):
+    for it in range(1):
         noise_input = MathLib.sample_z(batch_size, noise_dim)
         GAN.TestGAN(noise_input, "TestRandomFaces-" + str(it))
 
 
 def main():
     # TestRangeEachDimension()
-    TestRangeTwoDimensions()
-    # TestRandomFaces()
+    # TestRangeTwoDimensions()
+    TestRandomFaces()
 
 
 if __name__ == "__main__":
