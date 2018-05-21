@@ -138,7 +138,7 @@ def train(G_train_step, G_loss, D_train_step, D_loss, D_extra_step, G_extra_step
             _, G_loss_curr, _ = sess.run([G_train_step, G_loss, G_extra_step], feed_dict={x: xmb, z: z_noise, keep_prob: 0.3, training: True})
             if it % save_img_every == 0:
                 samples = sess.run(G_sample, feed_dict={x: xmb, z: z_noise, keep_prob: 0.3, training: True})  # TODO. Should this be False?
-                utils.save_images(out_dir, samples[:100], img_w, img_h, img_c, it)
+                utils.saveImages(out_dir, samples[:100], img_w, img_h, img_c, it)
             if math.isnan(D_loss_curr) or math.isnan(G_loss_curr):
                 print("D or G loss is nan", D_loss_curr, G_loss_curr)
                 exit()
@@ -168,8 +168,31 @@ def TestGAN(noise_input, output):
         else:
             z_noise = np.array(noise_input)
         samples = sess.run(G_sample, feed_dict={z: z_noise, keep_prob: 1.0, training: False})
-        utils.save_images(out_dir, samples, img_w, img_h, img_c, output)
+        utils.saveImages(out_dir, samples, img_w, img_h, img_c, output)
         utils.saveEncoding(out_dir, z_noise, output)
+
+
+def TestGANSingleImgOutput(noise_input, outputDir, imgFilename, txtFilename):
+    """
+    - noise_input: Two dimensional numpy array. If None, generate a single random image.
+    - outputDir: output directory
+    - imgFilename: output img filename, includes .jpg
+    - txtFilename: output txt encoding filename, includes .txt
+    """
+    utils.mkdir_p(outputDir)
+    with TensorFlowLib.get_session() as sess:
+        sess.run(tf.global_variables_initializer())
+        Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1)
+        if glob.glob(save_dir + "/*"):
+            Saver.restore(sess, tf.train.latest_checkpoint(save_dir))
+        if noise_input is None:
+            batch_size = 1
+            z_noise = MathLib.sample_z(batch_size, noise_dim)
+        else:
+            z_noise = np.array(noise_input)
+        samples = sess.run(G_sample, feed_dict={z: z_noise, keep_prob: 1.0, training: False})
+        utils.saveImages(outputDir, samples, img_w, img_h, img_c, imgFilename)
+        utils.saveEncoding(outputDir, z_noise, txtFilename)
 
 
 def backpropOnInputFromImage():

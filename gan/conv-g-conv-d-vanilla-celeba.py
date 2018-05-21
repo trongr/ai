@@ -107,7 +107,7 @@ def train(sess, G_train_step, G_loss, D_train_step, D_loss, D_extra_step, G_extr
         _, G_loss_curr, _ = sess.run([G_train_step, G_loss, G_extra_step], feed_dict={x: xmb, z: z_noise, keep_prob: 0.3})
         if it % save_img_every == 0:
             samples = sess.run(G_sample, feed_dict={x: xmb, z: z_noise, keep_prob: 1.0})
-            utils.save_images(out_dir, samples[:100], img_w, img_h, img_c, it)
+            utils.saveImages(out_dir, samples[:100], img_w, img_h, img_c, it)
         if math.isnan(D_loss_curr) or math.isnan(G_loss_curr):
             print("D or G loss is nan", D_loss_curr, G_loss_curr)
             exit()

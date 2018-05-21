@@ -71,12 +71,9 @@ def mkdir_p(dir):
         os.makedirs(dir)
 
 
-def save_images(dir, images, img_w, img_h, img_c, it):
+def saveImages(outputDir, images, img_w, img_h, img_c, it):
     fig = plt.figure(figsize=(10.0 * img_w / img_h, 10))
-    if len(images) is 1:  # In test mode we just have one image
-        gs = gridspec.GridSpec(1, 1)
-    else:
-        gs = gridspec.GridSpec(10, 10)
+    gs = gridspec.GridSpec(1, 1) if len(images) is 1 else gridspec.GridSpec(10, 10)  # In test mode we just have one image
     gs.update(left=0, right=1, top=1, bottom=0, wspace=0, hspace=0)
 
     for i, img in enumerate(images):
@@ -89,14 +86,18 @@ def save_images(dir, images, img_w, img_h, img_c, it):
         plt.imshow(img.reshape([img_h, img_w, img_c]))
 
     output = it if isinstance(it, str) else str(it).zfill(10)
-    imgpath = dir + "/" + output + ".jpg"
+    extension = "" if output.endswith(".jpg") else ".jpg"
+    trailingSlash = "" if outputDir.endswith("/") else "/"
+    imgpath = outputDir + trailingSlash + output + extension
     print("Saving img: " + imgpath)
     fig.savefig(imgpath)
     plt.close(fig)
 
 
-def saveEncoding(dir, encoding, output):
+def saveEncoding(outputDir, encoding, output):
     output = output if isinstance(output, str) else str(output).zfill(10)
-    filename = dir + "/" + output + ".txt"
+    extension = "" if output.endswith(".txt") else ".txt"
+    trailingSlash = "" if outputDir.endswith("/") else "/"
+    filename = outputDir + trailingSlash + output + extension
     print("Saving encoding: " + filename)
     np.savetxt(filename, encoding)
