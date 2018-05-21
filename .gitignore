@@ -23,6 +23,7 @@ audio/save_abc/
 audio/data/abc/master*.abc
 audio/data/abc/master_processed.abc
 # audio/data/abc/*.mid
+out
 audio/output/output.abc
 audio/output/*/*.wav
 # audio/output/*/*.flp

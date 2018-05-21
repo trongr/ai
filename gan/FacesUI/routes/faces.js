@@ -1,15 +1,15 @@
 const express = require('express');
 const async = require('async');
 const Faces = require("../lib/Faces.js")
+const FS = require("../core/FS.js")
+const Time = require("../core/Time.js")
 const router = express.Router();
 
 router.get('/', getRandomFaces)
 
 function getRandomFaces(req, res, next) {
     const tag = "Faces.getRandomFaces"
-    // poij add date time for dir too, so you can just remove it at the end of the request.
-    const dir = "FacesUI/out/" // ai/gan/FacesUI/out/
-    // poij add date time for img filenames
+    const dir = "FacesUI/out/getRandomFaces-" + Time.getTimeYYYYMMDDHHMMSSMS() // ai/gan/FacesUI/out/getRandomFaces-2018-05-21-01-49-44-862-xDhYP
     const imgFilename = "getRandomFaces.jpg"
     const txtFilename = "getRandomFaces.txt"
     async.waterfall([
@@ -23,7 +23,8 @@ function getRandomFaces(req, res, next) {
     ], (er) => {
         if (er) next({ status: 500, error: "Cannot create random faces", er })
         else res.send({ status: 200 })
-        // poij remove the output dir
+        // poij
+        // FS.rmdirf(dir)
     })
 }
 

@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "test": "debug=true mocha --timeout 10000 --recursive ./**/**.test.js",
+    "spec": "debug=true mocha --timeout 10000 --recursive ./**/**.spec.js"
   },
   "dependencies": {
     "async": "^2.6.0",
@@ -12,6 +14,11 @@
     "ejs": "~2.5.7",
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
-    "morgan": "~1.9.0"
+    "morgan": "~1.9.0",
+    "randomstring": "^1.1.5",
+    "rimraf": "^2.6.2"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2"
   }
 }
