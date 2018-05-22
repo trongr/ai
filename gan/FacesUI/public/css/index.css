@@ -21,3 +21,8 @@ a {
 .Huge {
     font-size: 5em;
 }
+
+#RandomFacesImg {
+    width: 100%;
+    height: 100%;
+}
