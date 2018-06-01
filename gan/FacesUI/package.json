@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "PORT=8000 node ./bin/www",
     "test": "debug=true mocha --timeout 10000 --recursive ./**/**.test.js",
     "spec": "debug=true mocha --timeout 10000 --recursive ./**/**.spec.js"
   },
