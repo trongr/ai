@@ -3,7 +3,7 @@ module.exports = {
         "ecmaVersion": 6
     },
     "env": {
-        "node": true
+        "node": true,
     },
     "extends": "eslint:recommended",
     "rules": {
