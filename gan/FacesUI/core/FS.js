@@ -21,7 +21,10 @@ FS.mkdirp = (dirname, done) => {
  * @param {*} done
  */
 FS.rmdirf = (dirname, done) => {
-    rimraf(dirname, er => done ? done(er) : console.error("FS.rmdirf. Cannot remove dir", er))
+    rimraf(dirname, er => {
+        if (done) done(er)
+        else if (er) console.error("FS.rmdirf. Cannot remove dir", er)
+    })
 }
 
 /**
