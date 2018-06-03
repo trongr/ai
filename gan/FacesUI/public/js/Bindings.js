@@ -16,7 +16,7 @@ const Bindings = (() => {
      * Generate random faces
      */
     function bindGenerateRandomFacesButton() {
-        $("#GenerateRandomFaces").click(async function (e) {
+        $("#GenerateRandomFacesButton").click(async function (e) {
             try {
                 const { status, img, encodings } = await API.getRandomFaces()
                 Views.loadImgFromBase64("RandomFacesImg", img)
@@ -45,7 +45,16 @@ const Bindings = (() => {
             const j = parseInt(rawX / cellWidth)
             const i = parseInt(rawY / cellHeight)
             const encoding = RandomFacesGrid.getEncoding(i, j)
-            console.log("poij", encoding)
+            console.log("DEBUG. Clicking cell", i, j)
+            try {
+                const { status, img } = await API.getFaceByEncoding(encoding)
+                // poij scroll down to current face
+                console.log("poij get face by encoding response", status, img)
+                Views.loadImgFromBase64("CurrentFace", img)
+                CurrentFace.saveEncoding(encoding)
+            } catch (er) {
+                console.error("bindRandomFacesGridClick", er)
+            }
         })
     }
 

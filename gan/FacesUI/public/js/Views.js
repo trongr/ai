@@ -1,6 +1,10 @@
 const Views = (() => {
     const Views = {}
 
+    Views.init = () => {
+        Views.initCurrentFaceSliders()
+    }
+
     /**
      * Load the random faces img into the random faces grid.
      * @param {*} id The id of the image element, doesn't contain #.
@@ -8,6 +12,19 @@ const Views = (() => {
      */
     Views.loadImgFromBase64 = (id, img) => {
         document.getElementById(id).src = img
+    }
+
+    // poij set these values when we load a new face.
+    Views.initCurrentFaceSliders = () => {
+        const NUM_SLIDERS = 64 // TODO. Right now we're using 64 params for the z-encoding
+        for (let i = 0; i < NUM_SLIDERS; i++) {
+            const paddedIndex = (i < 10 ? "0" + i : i) // So it aligns a little better.
+            $("#CurrentFaceSlidersList").append(paddedIndex + ". \
+                <input \
+                    id='CurrentFaceSlider" + i + "' \
+                    class='CurrentFaceSliderInput' \
+                    type='range' min='-1' max='1' step='0.01'> ")
+        }
     }
 
     return Views

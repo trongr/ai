@@ -1,13 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Makeface</title>
+<title>MakeFace</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 <link rel='stylesheet' href='/css/index.css' />
 <script src="/js/jquery-3.3.1.js"></script>
 <script src="/models/RandomFacesGrid.js"></script>
+<script src="/models/CurrentFace.js"></script>
 <script src="/js/API.js"></script>
 <script src="/js/Views.js"></script>
 <script src="/js/Bindings.js"></script>
@@ -15,14 +16,34 @@
 </head>
 <body>
 <div class="Center">
-    <h1 class="Huge">Makeface</h1>
+    <h1 class="Huge">MakeFace</h1>
     <div id="App">
         <div>
-            <button id="GenerateRandomFaces" class="btn btn-primary btn-lg" type="button">
-                Generate random faces</button>
-            <div class="Help">[ 1. Clicking this button will generate random faces below. ]</div>
+            <div class="Help">[ 1. Click this button to generate random faces below. ]</div><br>
+            <button id="GenerateRandomFacesButton" class="btn btn-primary btn-lg" type="button">
+                Generate random faces
+            </button>
+            <br><br>
         </div>
-        <img id="RandomFacesImg"/>
+
+        <div class="Help">[ 2. Click on any face to customize it. ]</div><br>
+        <div><img id="RandomFacesImg"/></div><br>
+
+        <!-- <div id="CellPosition" class="Debug"></div> -->
+        <div class="Help">[ 3. Use the sliders to customize and click RENDER. ]</div><br>
+        <div id="CurrentFaceBox">
+            <div id="CurrentFaceSlidersBox">
+                <div id="CurrentFaceSlidersList"></div>
+                <div id="CurrentFaceRenderBox">
+                    <button id="RenderCurrentFace" class="btn btn-primary btn-lg" type="button">
+                        RENDER
+                    </button>
+                </div>
+            </div>
+            <div id="CurrentFaceImgBox">
+                <img id="CurrentFace">
+            </div>
+        </div>
     </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

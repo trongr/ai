@@ -1,4 +1,5 @@
 const Main = async () => {
+    Views.init()
     Bindings.init()
 }
 

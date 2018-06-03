@@ -19,7 +19,7 @@ const RandomFacesGrid = (() => {
         nencodings.map((e, idx) => {
             const i = parseInt(idx / NUM_CELLS_ROWS) // However many multiples is the row number i
             const j = idx - (i * NUM_CELLS_ROWS) // Whatever remains is the column number j
-            if (j == 0) encodings.push([])
+            if (j == 0) encodings.push([]) // Create a new row
             encodings[i][j] = e
         })
         RandomFacesGrid.encodings = encodings
