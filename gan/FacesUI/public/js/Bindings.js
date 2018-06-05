@@ -36,21 +36,23 @@ const Bindings = (() => {
      */
     function bindRandomFacesGridClick() {
         $("#RandomFacesImg").click(async function (e) {
-            // TODO. Let the server tell you how many cells there are instead of
-            // hardcoding it here
-            const cellWidth = $(this).width() / FACES_GRID_NUM_CELLS_COLS
-            const cellHeight = $(this).height() / FACES_GRID_NUM_CELLS_ROWS
-            const rawX = e.pageX - $(this).offset().left
-            const rawY = e.pageY - $(this).offset().top
-            const j = parseInt(rawX / cellWidth)
-            const i = parseInt(rawY / cellHeight)
-            const encoding = RandomFacesGrid.getEncoding(i, j)
-            console.log("DEBUG. Clicking cell", i, j)
             try {
+                // TODO. Let the server tell you how many cells there are instead of
+                // hardcoding it here
+                const cellWidth = $(this).width() / FACES_GRID_NUM_CELLS_COLS
+                const cellHeight = $(this).height() / FACES_GRID_NUM_CELLS_ROWS
+                const rawX = e.pageX - $(this).offset().left
+                const rawY = e.pageY - $(this).offset().top
+                const j = parseInt(rawX / cellWidth)
+                const i = parseInt(rawY / cellHeight)
+                const encoding = RandomFacesGrid.getEncoding(i, j)
+                console.log("DEBUG. Clicking cell", i, j)
+
                 const { status, img } = await API.getFaceByEncoding(encoding)
                 Views.loadImgFromBase64("CurrentFace", img)
                 Views.scrollTo("CurrentFace")
                 CurrentFace.saveEncoding(encoding)
+                Views.loadEncodingIntoCurrentFaceSliders(encoding)
             } catch (er) {
                 console.error("bindRandomFacesGridClick", er)
             }
