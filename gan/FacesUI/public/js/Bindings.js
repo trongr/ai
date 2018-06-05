@@ -10,6 +10,7 @@ const Bindings = (() => {
     Bindings.init = () => {
         bindGenerateRandomFacesButton()
         bindRandomFacesGridClick()
+        bindCurrentFaceRenderButton()
     }
 
     /**
@@ -46,13 +47,20 @@ const Bindings = (() => {
                 const j = parseInt(rawX / cellWidth)
                 const i = parseInt(rawY / cellHeight)
                 const encoding = RandomFacesGrid.getEncoding(i, j)
+                Loaders.loadEncodingIntoCurrentFace(encoding)
                 console.log("DEBUG. Clicking cell", i, j)
+            } catch (er) {
+                console.error("bindRandomFacesGridClick", er)
+            }
+        })
+    }
 
-                const { status, img } = await API.getFaceByEncoding(encoding)
-                Views.loadImgFromBase64("CurrentFace", img)
-                Views.scrollTo("CurrentFace")
-                CurrentFace.saveEncoding(encoding)
-                Views.loadEncodingIntoCurrentFaceSliders(encoding)
+    function bindCurrentFaceRenderButton() {
+        $("#RenderCurrentFaceButton").click(async function (e) {
+            try {
+                const encoding = Views.getCurrentFaceEncodingFromSliders()
+                if (!encoding) return console.error("No encoding to render")
+                Loaders.loadEncodingIntoCurrentFace(encoding)
             } catch (er) {
                 console.error("bindRandomFacesGridClick", er)
             }

@@ -44,10 +44,20 @@ const Views = (() => {
      * @param {*} encoding
      */
     Views.loadEncodingIntoCurrentFaceSliders = (encoding) => {
-        console.log("poij encoding", encoding)
         for (let i = 0; i < NUM_SLIDERS; i++) {
             $("#" + CURRENT_FACE_SLIDER_ID_PREFIX + i).val(encoding[i])
         }
+    }
+
+    /**
+     * Get the encoding from the current face sliders
+     */
+    Views.getCurrentFaceEncodingFromSliders = () => {
+        let encoding = []
+        for (let i = 0; i < NUM_SLIDERS; i++) {
+            encoding[i] = parseFloat($("#" + CURRENT_FACE_SLIDER_ID_PREFIX + i).val())
+        }
+        return encoding
     }
 
     return Views
