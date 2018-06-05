@@ -27,5 +27,15 @@ const Views = (() => {
         }
     }
 
+    /**
+     * Smooth scrolling to element
+     * @param {*} elementID
+     */
+    Views.scrollTo = (elementID) => {
+        $('html,body').animate({
+            scrollTop: $("#" + elementID).offset().top
+        })
+    }
+
     return Views
 })();

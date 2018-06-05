@@ -48,9 +48,8 @@ const Bindings = (() => {
             console.log("DEBUG. Clicking cell", i, j)
             try {
                 const { status, img } = await API.getFaceByEncoding(encoding)
-                // poij scroll down to current face
-                console.log("poij get face by encoding response", status, img)
                 Views.loadImgFromBase64("CurrentFace", img)
+                Views.scrollTo("CurrentFace")
                 CurrentFace.saveEncoding(encoding)
             } catch (er) {
                 console.error("bindRandomFacesGridClick", er)
