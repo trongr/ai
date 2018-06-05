@@ -17,7 +17,9 @@ const Views = (() => {
         document.getElementById(id).src = img
     }
 
-    // poij set these values when we load a new face.
+    /**
+     * Init sliders for CurrentFace config
+     */
     Views.initCurrentFaceSliders = () => {
         for (let i = 0; i < NUM_SLIDERS; i++) {
             const paddedIndex = (i < 10 ? "0" + i : i) // So it aligns a little better.

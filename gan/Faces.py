@@ -48,10 +48,14 @@ def TestRandomFaces(outputDir, imgFilename, txtFilename):
     GAN.TestGANSingleImgOutput(noise_input, outputDir, imgFilename, txtFilename)
 
 
+def MakeFaceByEncoding(encoding, outputDir, imgFilename, txtFilename):
+    """Make a single face from encoding and put it in the outputDir, etc.
+    - encoding: a list of floats."""
+    GAN.TestGANSingleImgOutput([encoding], outputDir, imgFilename, txtFilename)
+
 # def main():
 #     # TestRangeEachDimension()
 #     # TestRangeTwoDimensions()
-
 
 # if __name__ == "__main__":
 #     main()

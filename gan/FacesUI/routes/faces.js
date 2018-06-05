@@ -4,6 +4,7 @@ const async = require('async');
 const Faces = require("../lib/Faces.js")
 const FS = require("../core/FS.js")
 const Time = require("../core/Time.js")
+const Validate = require("../core/Validate.js")
 const router = express.Router();
 
 router.get('/', getFaces)
@@ -19,8 +20,9 @@ router.get('/', getFaces)
  * @param {*} next
  */
 function getFaces(req, res, next) {
-    const { encoding } = req.body
+    let { encoding } = req.body
     if (encoding) {
+        encoding = Validate.sanitizeEncoding(encoding)
         getFaceByEncoding(encoding, (er, img) => {
             if (er) next({ status: 500, error: "Cannot get face by encoding", er })
             else res.send({ status: 200, img })
@@ -109,33 +111,16 @@ function convertTextToEncodings(txt) {
  * @param {*} done(er, img)
  */
 function getFaceByEncoding(encoding, done) {
-    // // const tag = "Faces.getFaceByEncoding"
-    // const nodeRootDir = "out/getFaceByEncoding-" + Time.getTimeYYYYMMDDHHMMSSMS() // out/getFaceByEncoding-2018-05-21-01-49-44-862-xDhYP
-    // const pythonRootDir = "FacesUI/" + nodeRootDir // python cwd is ai/gan/FacesUI/, one above node's root
-    // const imgFilename = "getFaceByEncoding.jpg"
-    // const txtFilename = "getFaceByEncoding.txt"
-    // const imgFilepath = nodeRootDir + "/" + imgFilename
-    // async.waterfall([
-    //     (done) => {
-    //         // poij get real face by encoding
-    //         Faces.makeRandomFaces(pythonRootDir, imgFilename, txtFilename, done)
-    //     }, (done) => {
-    //         FS.readImgFileAsBase64(imgFilepath, done)
-    //     }, (img, done) => {
-    //         done(null, img)
-    //     }
-    // ], (er, img) => {
-    //     if (er) done(er)
-    //     else done(null, img)
-    //     FS.rmdirf(nodeRootDir)
-    // })
-
-    // const tag = "Faces.getRandomFaces"
-    const nodeRootDir = "out/getRandomFaces-2018-06-01-06-15-21-145-iX3xw"
-    const imgFilename = "getRandomFaces.jpg"
+    // const tag = "Faces.getFaceByEncoding"
+    const nodeRootDir = "out/getFaceByEncoding-" + Time.getTimeYYYYMMDDHHMMSSMS() // out/getFaceByEncoding-2018-05-21-01-49-44-862-xDhYP
+    const pythonRootDir = "FacesUI/" + nodeRootDir // python cwd is ai/gan/FacesUI/, one above node's root
+    const imgFilename = "getFaceByEncoding.jpg"
+    const txtFilename = "getFaceByEncoding.txt"
     const imgFilepath = nodeRootDir + "/" + imgFilename
     async.waterfall([
         (done) => {
+            Faces.makeFaceByEncoding(encoding, pythonRootDir, imgFilename, txtFilename, done)
+        }, (done) => {
             FS.readImgFileAsBase64(imgFilepath, done)
         }, (img, done) => {
             done(null, img)
@@ -143,7 +128,23 @@ function getFaceByEncoding(encoding, done) {
     ], (er, img) => {
         if (er) done(er)
         else done(null, img)
+        // FS.rmdirf(nodeRootDir) // poij
     })
+    // poij remove
+    // // const tag = "Faces.getRandomFaces"
+    // const nodeRootDir = "out/getRandomFaces-2018-06-01-06-15-21-145-iX3xw"
+    // const imgFilename = "getRandomFaces.jpg"
+    // const imgFilepath = nodeRootDir + "/" + imgFilename
+    // async.waterfall([
+    //     (done) => {
+    //         FS.readImgFileAsBase64(imgFilepath, done)
+    //     }, (img, done) => {
+    //         done(null, img)
+    //     }
+    // ], (er, img) => {
+    //     if (er) done(er)
+    //     else done(null, img)
+    // })
 }
 
 module.exports = router;
