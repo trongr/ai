@@ -8,6 +8,7 @@ const Validate = require("../core/Validate.js")
 const router = express.Router();
 
 router.get('/', getFaces)
+router.get('/similar', getSimilarFaces)
 
 /**
  * TODO. Make getFaceByEncoding a POST, otw people can snoop the encoding in
@@ -57,6 +58,31 @@ function getRandomFaces(done) {
     ], (er) => {
         if (er) done(er)
         else done(null, img, encodings)
+    })
+}
+
+// poij replace this with actual method below once we make network server
+function getSimilarFaces(req, res, next) {
+    // const tag = "Faces.getSimilarFaces"
+    const nodeRootDir = "out/getRandomFaces-2018-06-01-06-15-21-145-iX3xw"
+    const imgFilename = "getRandomFaces.jpg"
+    const txtFilename = "getRandomFaces.txt"
+    const imgFilepath = nodeRootDir + "/" + imgFilename
+    const txtFilepath = nodeRootDir + "/" + txtFilename
+    let img, encodings
+    async.waterfall([
+        (done) => {
+            FS.readImgFileAsBase64(imgFilepath, done)
+        }, (nimg, done) => {
+            img = nimg
+            FS.readTxtFile(txtFilepath, done)
+        }, (txt, done) => {
+            encodings = convertTextToEncodings(txt)
+            done()
+        }
+    ], (er) => {
+        if (er) next({ status: 500, error: "Cannot get similar faces", er })
+        else res.send({ status: 200, img, encodings })
     })
 }
 

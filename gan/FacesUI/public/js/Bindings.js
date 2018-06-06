@@ -1,16 +1,14 @@
 const Bindings = (() => {
     const Bindings = {}
 
-    const FACES_GRID_NUM_CELLS_COLS = 10
-    const FACES_GRID_NUM_CELLS_ROWS = 10
-
     /**
      * Bind all events
      */
     Bindings.init = () => {
         bindGenerateRandomFacesButton()
-        bindRandomFacesGridClick()
+        bindFacesGridClick()
         bindCurrentFaceRenderButton()
+        bindRenderSimilarFacesButton()
     }
 
     /**
@@ -19,11 +17,7 @@ const Bindings = (() => {
     function bindGenerateRandomFacesButton() {
         $("#GenerateRandomFacesButton").click(async function (e) {
             try {
-                const { status, img, encodings } = await API.getRandomFaces()
-                Views.loadImgFromBase64("RandomFacesImg", img)
-                RandomFacesGrid.saveEncodings(encodings,
-                    FACES_GRID_NUM_CELLS_ROWS,
-                    FACES_GRID_NUM_CELLS_COLS)
+                Flow.getRandomFacesAndLoadIntoGrid()
             } catch (er) {
                 console.error("bindGenerateRandomFacesButton", er)
             }
@@ -35,34 +29,55 @@ const Bindings = (() => {
      * location, get its encoding, and make a request to the server to render
      * that face, and finally load it into the current face.
      */
-    function bindRandomFacesGridClick() {
+    function bindFacesGridClick() {
         $("#RandomFacesImg").click(async function (e) {
             try {
                 // TODO. Let the server tell you how many cells there are instead of
                 // hardcoding it here
-                const cellWidth = $(this).width() / FACES_GRID_NUM_CELLS_COLS
-                const cellHeight = $(this).height() / FACES_GRID_NUM_CELLS_ROWS
+                const cellWidth = $(this).width() / Conf.FACES_GRID_NUM_CELLS_COLS
+                const cellHeight = $(this).height() / Conf.FACES_GRID_NUM_CELLS_ROWS
                 const rawX = e.pageX - $(this).offset().left
                 const rawY = e.pageY - $(this).offset().top
                 const j = parseInt(rawX / cellWidth)
                 const i = parseInt(rawY / cellHeight)
-                const encoding = RandomFacesGrid.getEncoding(i, j)
-                Loaders.loadEncodingIntoCurrentFace(encoding)
+                const encoding = FacesGrid.getEncoding(i, j)
+                Flow.getFaceByEncodingAndLoadIntoCurrentFace(encoding)
                 console.log("DEBUG. Clicking cell", i, j)
             } catch (er) {
-                console.error("bindRandomFacesGridClick", er)
+                console.error("bindFacesGridClick", er)
             }
         })
     }
 
+    /**
+     * When user clicks the RENDER button, we get the current encoding from the
+     * sliders and query the server for its image, and load it into the Current
+     * Face.
+     */
     function bindCurrentFaceRenderButton() {
         $("#RenderCurrentFaceButton").click(async function (e) {
             try {
                 const encoding = Views.getCurrentFaceEncodingFromSliders()
                 if (!encoding) return console.error("No encoding to render")
-                Loaders.loadEncodingIntoCurrentFace(encoding)
+                Flow.getFaceByEncodingAndLoadIntoCurrentFace(encoding)
             } catch (er) {
-                console.error("bindRandomFacesGridClick", er)
+                console.error("bindCurrentFaceRenderButton", er)
+            }
+        })
+    }
+
+    /**
+     * When user clicks SIMILAR FACES button, we query the server for faces
+     * similar to the current encoding, and load it into the Faces Grid.
+     */
+    function bindRenderSimilarFacesButton() {
+        $("#RenderSimilarFacesButton").click(async function (e) {
+            try {
+                const encoding = Views.getCurrentFaceEncodingFromSliders()
+                if (!encoding) return console.error("No encoding to render")
+                Flow.getSimilarFacesAndLoadIntoGrid(encoding)
+            } catch (er) {
+                console.error("bindRenderSimilarFacesButton", er)
             }
         })
     }

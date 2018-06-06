@@ -48,6 +48,10 @@ img#CurrentFace {
     padding: 10px;
 }
 
+#CurrentFaceRenderBox>Button {
+    margin: 5px;
+}
+
 .CurrentFaceSliderInput {
     width: 50px;
 }
