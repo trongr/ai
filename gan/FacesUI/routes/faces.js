@@ -7,7 +7,7 @@ const Time = require("../core/Time.js")
 const Validate = require("../core/Validate.js")
 const router = express.Router();
 
-router.get('/', getFaces)
+router.get('/', GetFaces)
 router.get('/similar', GetSimilarFaces)
 
 /**
@@ -20,7 +20,7 @@ router.get('/similar', GetSimilarFaces)
  * @param {*} res
  * @param {*} next
  */
-function getFaces(req, res, next) {
+function GetFaces(req, res, next) {
     let { encoding } = req.body
     if (encoding) {
         encoding = Validate.sanitizeEncoding(encoding)
@@ -36,33 +36,6 @@ function getFaces(req, res, next) {
     }
 }
 
-// poij replace this with actual method below once we make network server
-function getRandomFaces(done) {
-    // const tag = "Faces.getRandomFaces"
-    const nodeRootDir = "out/getRandomFaces-2018-06-01-06-15-21-145-iX3xw"
-    const imgFilename = "getRandomFaces.jpg"
-    const txtFilename = "getRandomFaces.txt"
-    const imgFilepath = nodeRootDir + "/" + imgFilename
-    const txtFilepath = nodeRootDir + "/" + txtFilename
-    let img, encodings
-    async.waterfall([
-        (done) => {
-            FS.readImgFileAsBase64(imgFilepath, done)
-        }, (nimg, done) => {
-            img = nimg
-            FS.readTxtFile(txtFilepath, done)
-        }, (txt, done) => {
-            encodings = convertTextToEncodings(txt)
-            done()
-        }
-    ], (er) => {
-        if (er) done(er)
-        else done(null, img, encodings)
-    })
-}
-
-
-// poij
 /**
  * TODO. Validate inputs, e.g. encoding
  * @param {*} req
@@ -94,43 +67,48 @@ function GetSimilarFaces(req, res, next) {
     ], (er) => {
         if (er) next({ tag, status: 500, error: "Cannot get similar faces", er })
         else res.send({ tag, status: 200, img, encodings })
-        // FS.rmdirf(nodeRootDir) // poij
+        FS.rmdirf(nodeRootDir)
     })
 }
 
-// poij remove
-// function GetSimilarFaces(req, res, next) {
-//     // const tag = "Faces.GetSimilarFaces"
-//     const nodeRootDir = "out/getRandomFaces-2018-06-01-06-15-21-145-iX3xw"
-//     const imgFilename = "getRandomFaces.jpg"
-//     const txtFilename = "getRandomFaces.txt"
-//     const imgFilepath = nodeRootDir + "/" + imgFilename
-//     const txtFilepath = nodeRootDir + "/" + txtFilename
-//     let img, encodings
-//     async.waterfall([
-//         (done) => {
-//             FS.readImgFileAsBase64(imgFilepath, done)
-//         }, (nimg, done) => {
-//             img = nimg
-//             FS.readTxtFile(txtFilepath, done)
-//         }, (txt, done) => {
-//             encodings = convertTextToEncodings(txt)
-//             done()
-//         }
-//     ], (er) => {
-//         if (er) next({ status: 500, error: "Cannot get similar faces", er })
-//         else res.send({ status: 200, img, encodings })
-//     })
-// }
-
 /**
- * poij
+ *
  * @param {*} done(er, img, encodings)
  */
+function getRandomFaces(done) {
+    const tag = "Faces.getRandomFaces"
+    const nodeRootDir = "out/getRandomFaces-" + Time.getTimeYYYYMMDDHHMMSSMS() // out/getRandomFaces-2018-05-21-01-49-44-862-xDhYP
+    const pythonRootDir = "FacesUI/" + nodeRootDir // python cwd is ai/gan/FacesUI/, one above node's root
+    const imgFilename = "getRandomFaces.jpg"
+    const txtFilename = "getRandomFaces.txt"
+    const imgFilepath = nodeRootDir + "/" + imgFilename
+    const txtFilepath = nodeRootDir + "/" + txtFilename
+    let img, encodings
+    async.waterfall([
+        (done) => {
+            Faces.makeRandomFaces(pythonRootDir, imgFilename, txtFilename, done)
+        }, (done) => {
+            FS.readImgFileAsBase64(imgFilepath, done)
+        }, (nimg, done) => {
+            img = nimg
+            FS.readTxtFile(txtFilepath, done)
+        }, (txt, done) => {
+            encodings = convertTextToEncodings(txt)
+            done()
+        }
+    ], (er) => {
+        if (er) done({ tag, status: 500, error: "Cannot get random faces", er })
+        else done(null, img, encodings)
+        FS.rmdirf(nodeRootDir)
+    })
+}
+
+/**
+ * NOTE. Use this if you want fast random faces for testing.
+ */
 // function getRandomFaces(done) {
-//     // const tag = "Faces.getRandomFaces"
-//     const nodeRootDir = "out/getRandomFaces-" + Time.getTimeYYYYMMDDHHMMSSMS() // out/getRandomFaces-2018-05-21-01-49-44-862-xDhYP
-//     const pythonRootDir = "FacesUI/" + nodeRootDir // python cwd is ai/gan/FacesUI/, one above node's root
+//     const tag = "Faces.getRandomFaces"
+//     const nodeRootDir = "out/getRandomFacesMock"
 //     const imgFilename = "getRandomFaces.jpg"
 //     const txtFilename = "getRandomFaces.txt"
 //     const imgFilepath = nodeRootDir + "/" + imgFilename
@@ -138,8 +116,6 @@ function GetSimilarFaces(req, res, next) {
 //     let img, encodings
 //     async.waterfall([
 //         (done) => {
-//             Faces.makeRandomFaces(pythonRootDir, imgFilename, txtFilename, done)
-//         }, (done) => {
 //             FS.readImgFileAsBase64(imgFilepath, done)
 //         }, (nimg, done) => {
 //             img = nimg
@@ -149,9 +125,8 @@ function GetSimilarFaces(req, res, next) {
 //             done()
 //         }
 //     ], (er) => {
-//         if (er) done(er)
+//         if (er) done({ tag, status: 500, error: "Cannot get random faces", er })
 //         else done(null, img, encodings)
-//         FS.rmdirf(nodeRootDir)
 //     })
 // }
 
@@ -191,23 +166,8 @@ function getFaceByEncoding(encoding, done) {
     ], (er, img) => {
         if (er) done(er)
         else done(null, img)
-        // FS.rmdirf(nodeRootDir) // poij
+        FS.rmdirf(nodeRootDir)
     })
-    // poij remove
-    // // const tag = "Faces.getRandomFaces"
-    // const nodeRootDir = "out/getRandomFaces-2018-06-01-06-15-21-145-iX3xw"
-    // const imgFilename = "getRandomFaces.jpg"
-    // const imgFilepath = nodeRootDir + "/" + imgFilename
-    // async.waterfall([
-    //     (done) => {
-    //         FS.readImgFileAsBase64(imgFilepath, done)
-    //     }, (img, done) => {
-    //         done(null, img)
-    //     }
-    // ], (er, img) => {
-    //     if (er) done(er)
-    //     else done(null, img)
-    // })
 }
 
 module.exports = router;
