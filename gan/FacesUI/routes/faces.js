@@ -61,17 +61,21 @@ function getRandomFaces(done) {
     })
 }
 
-// poij replace this with actual method below once we make network server
+// poij
 function getSimilarFaces(req, res, next) {
-    // const tag = "Faces.getSimilarFaces"
-    const nodeRootDir = "out/getRandomFaces-2018-06-01-06-15-21-145-iX3xw"
-    const imgFilename = "getRandomFaces.jpg"
-    const txtFilename = "getRandomFaces.txt"
+    const tag = "Faces.getSimilarFaces"
+    const nodeRootDir = "out/getSimilarFaces-" + Time.getTimeYYYYMMDDHHMMSSMS() // out/getSimilarFaces-2018-05-21-01-49-44-862-xDhYP
+    const pythonRootDir = "FacesUI/" + nodeRootDir // python cwd is ai/gan/FacesUI/, one above node's root
+    const imgFilename = "getSimilarFaces.jpg"
+    const txtFilename = "getSimilarFaces.txt"
     const imgFilepath = nodeRootDir + "/" + imgFilename
     const txtFilepath = nodeRootDir + "/" + txtFilename
     let img, encodings
     async.waterfall([
         (done) => {
+            // poij
+            Faces.makeSimilarFaces(pythonRootDir, imgFilename, txtFilename, done)
+        }, (done) => {
             FS.readImgFileAsBase64(imgFilepath, done)
         }, (nimg, done) => {
             img = nimg
@@ -81,13 +85,39 @@ function getSimilarFaces(req, res, next) {
             done()
         }
     ], (er) => {
-        if (er) next({ status: 500, error: "Cannot get similar faces", er })
-        else res.send({ status: 200, img, encodings })
+        if (er) next({ tag, status: 500, error: "Cannot get similar faces", er })
+        else res.send({ tag, status: 200, img, encodings })
+        // FS.rmdirf(nodeRootDir) // poij
     })
 }
 
+// poij remove
+// function getSimilarFaces(req, res, next) {
+//     // const tag = "Faces.getSimilarFaces"
+//     const nodeRootDir = "out/getRandomFaces-2018-06-01-06-15-21-145-iX3xw"
+//     const imgFilename = "getRandomFaces.jpg"
+//     const txtFilename = "getRandomFaces.txt"
+//     const imgFilepath = nodeRootDir + "/" + imgFilename
+//     const txtFilepath = nodeRootDir + "/" + txtFilename
+//     let img, encodings
+//     async.waterfall([
+//         (done) => {
+//             FS.readImgFileAsBase64(imgFilepath, done)
+//         }, (nimg, done) => {
+//             img = nimg
+//             FS.readTxtFile(txtFilepath, done)
+//         }, (txt, done) => {
+//             encodings = convertTextToEncodings(txt)
+//             done()
+//         }
+//     ], (er) => {
+//         if (er) next({ status: 500, error: "Cannot get similar faces", er })
+//         else res.send({ status: 200, img, encodings })
+//     })
+// }
+
 /**
- *
+ * poij
  * @param {*} done(er, img, encodings)
  */
 // function getRandomFaces(done) {

@@ -1,6 +1,7 @@
 import numpy as np
 import tensorflow as tf
 import DeconvGConvDVanillaGAN as GAN
+import utils
 import MathLib
 
 
@@ -52,6 +53,14 @@ def MakeFaceByEncoding(encoding, outputDir, imgFilename, txtFilename):
     """Make a single face from encoding and put it in the outputDir, etc.
     - encoding: a list of floats."""
     GAN.TestGANSingleImgOutput([encoding], outputDir, imgFilename, txtFilename)
+
+
+def MakeSimilarFaces(encoding, outputDir, imgFilename, txtFilename):
+    """Make a grid of similar faces from encoding and put it in the outputDir, etc.
+    - encoding: a list of floats."""
+    batch_size = 100
+    noise_input = utils.GenerateSimilarEncodings(encoding, batch_size)
+    GAN.TestGANSingleImgOutput(noise_input, outputDir, imgFilename, txtFilename)
 
 # def main():
 #     # TestRangeEachDimension()

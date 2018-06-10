@@ -101,3 +101,18 @@ def saveEncoding(outputDir, encoding, output):
     filename = outputDir + trailingSlash + output + extension
     print("Saving encoding: " + filename)
     np.savetxt(filename, encoding)
+
+
+def GenerateSimilarEncodings(encoding, count):
+    """
+    Encoding is a list of floats between -1 and 1. Return a list of similar
+    encodings to encoding of length count. The first element in this list is
+    encoding. Similar here means we take a few elements of encoding at random,
+    and add a small random noise to it, also ensuring that the new values are
+    between -1 and 1.
+    """
+    noise = np.random.normal(0, 0.1, size=[count, len(encoding)])
+    encodings = np.array([encoding, ] * count)  # Duplicate encoding along height
+    encodings = np.clip(encodings + noise, -1, 1)
+    encodings[0] = encoding
+    return encodings
