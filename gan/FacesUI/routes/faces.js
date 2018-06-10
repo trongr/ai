@@ -11,7 +11,7 @@ router.get('/', GetFaces)
 router.get('/similar', GetSimilarFaces)
 
 /**
- * TODO. Make getFaceByEncoding a POST, otw people can snoop the encoding in
+ * TODO. Make GetFaceByEncoding a POST, otw people can snoop the encoding in
  * transit (not secure).
  *
  * Get random faces or a single face by encoding depending on whether client
@@ -24,7 +24,7 @@ function GetFaces(req, res, next) {
     let { encoding } = req.body
     if (encoding) {
         encoding = Validate.sanitizeEncoding(encoding)
-        getFaceByEncoding(encoding, (er, img) => {
+        GetFaceByEncoding(encoding, (er, img) => {
             if (er) next({ status: 500, error: "Cannot get face by encoding", er })
             else res.send({ status: 200, img })
         })
@@ -148,12 +148,12 @@ function convertTextToEncodings(txt) {
  * @param {*} encoding
  * @param {*} done(er, img)
  */
-function getFaceByEncoding(encoding, done) {
-    // const tag = "Faces.getFaceByEncoding"
-    const nodeRootDir = "out/getFaceByEncoding-" + Time.getTimeYYYYMMDDHHMMSSMS() // out/getFaceByEncoding-2018-05-21-01-49-44-862-xDhYP
+function GetFaceByEncoding(encoding, done) {
+    // const tag = "Faces.GetFaceByEncoding"
+    const nodeRootDir = "out/GetFaceByEncoding-" + Time.getTimeYYYYMMDDHHMMSSMS() // out/GetFaceByEncoding-2018-05-21-01-49-44-862-xDhYP
     const pythonRootDir = "FacesUI/" + nodeRootDir // python cwd is ai/gan/FacesUI/, one above node's root
-    const imgFilename = "getFaceByEncoding.jpg"
-    const txtFilename = "getFaceByEncoding.txt"
+    const imgFilename = "GetFaceByEncoding.jpg"
+    const txtFilename = "GetFaceByEncoding.txt"
     const imgFilepath = nodeRootDir + "/" + imgFilename
     async.waterfall([
         (done) => {
