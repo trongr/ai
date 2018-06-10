@@ -111,7 +111,7 @@ def GenerateSimilarEncodings(encoding, count):
     and add a small random noise to it, also ensuring that the new values are
     between -1 and 1.
     """
-    noise = np.random.normal(0, 0.1, size=[count, len(encoding)])
+    noise = np.random.normal(0, 0.2, size=[count, len(encoding)])
     encodings = np.array([encoding, ] * count)  # Duplicate encoding along height
     encodings = np.clip(encodings + noise, -1, 1)
     encodings[0] = encoding

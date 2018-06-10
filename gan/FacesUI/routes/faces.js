@@ -8,7 +8,7 @@ const Validate = require("../core/Validate.js")
 const router = express.Router();
 
 router.get('/', getFaces)
-router.get('/similar', getSimilarFaces)
+router.get('/similar', GetSimilarFaces)
 
 /**
  * TODO. Make getFaceByEncoding a POST, otw people can snoop the encoding in
@@ -61,20 +61,27 @@ function getRandomFaces(done) {
     })
 }
 
+
 // poij
-function getSimilarFaces(req, res, next) {
-    const tag = "Faces.getSimilarFaces"
-    const nodeRootDir = "out/getSimilarFaces-" + Time.getTimeYYYYMMDDHHMMSSMS() // out/getSimilarFaces-2018-05-21-01-49-44-862-xDhYP
+/**
+ * TODO. Validate inputs, e.g. encoding
+ * @param {*} req
+ * @param {*} res
+ * @param {*} next
+ */
+function GetSimilarFaces(req, res, next) {
+    const tag = "Faces.GetSimilarFaces"
+    const nodeRootDir = "out/GetSimilarFaces-" + Time.getTimeYYYYMMDDHHMMSSMS() // out/GetSimilarFaces-2018-05-21-01-49-44-862-xDhYP
     const pythonRootDir = "FacesUI/" + nodeRootDir // python cwd is ai/gan/FacesUI/, one above node's root
-    const imgFilename = "getSimilarFaces.jpg"
-    const txtFilename = "getSimilarFaces.txt"
+    const imgFilename = "GetSimilarFaces.jpg"
+    const txtFilename = "GetSimilarFaces.txt"
     const imgFilepath = nodeRootDir + "/" + imgFilename
     const txtFilepath = nodeRootDir + "/" + txtFilename
+    const encoding = Validate.sanitizeEncoding(req.body.encoding)
     let img, encodings
     async.waterfall([
         (done) => {
-            // poij
-            Faces.makeSimilarFaces(pythonRootDir, imgFilename, txtFilename, done)
+            Faces.makeSimilarFaces(encoding, pythonRootDir, imgFilename, txtFilename, done)
         }, (done) => {
             FS.readImgFileAsBase64(imgFilepath, done)
         }, (nimg, done) => {
@@ -92,8 +99,8 @@ function getSimilarFaces(req, res, next) {
 }
 
 // poij remove
-// function getSimilarFaces(req, res, next) {
-//     // const tag = "Faces.getSimilarFaces"
+// function GetSimilarFaces(req, res, next) {
+//     // const tag = "Faces.GetSimilarFaces"
 //     const nodeRootDir = "out/getRandomFaces-2018-06-01-06-15-21-145-iX3xw"
 //     const imgFilename = "getRandomFaces.jpg"
 //     const txtFilename = "getRandomFaces.txt"
