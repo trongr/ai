@@ -5,6 +5,7 @@ import utils
 
 class TestUtils(unittest.TestCase):
 
+    # NOTE. Test methods have to start with test_
     def test_GenerateSimilarEncodings(self):
         encoding = [
             -0.35367707888908284,
