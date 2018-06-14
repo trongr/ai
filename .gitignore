@@ -36,3 +36,7 @@ gan/dcganimgs01/
 gan/out/
 gan/data/
 node_modules
+
+# Python test coverage reports
+htmlcov
+.coverage
