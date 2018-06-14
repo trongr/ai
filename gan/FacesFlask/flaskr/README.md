@@ -6,7 +6,7 @@ directory). E.g. flask run, flask init-db,....
 # Starting flask server
 
 ```
-FLASK_APP=flaskr.py FLASK_ENV=development flask run
+FLASK_APP=flaskr FLASK_ENV=development flask run
 ```
 
 # Init SQLite DB
