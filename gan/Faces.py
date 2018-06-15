@@ -41,7 +41,7 @@ def TestRangeTwoDimensions():
             GAN.TestGAN(noise_input_copy, "TestRangeTwoDimensions-" + str(axis1) + "-" + str(axis2))
 
 
-def TestRandomFaces(outputDir, imgFilename, txtFilename):
+def MakeRandomFaces(outputDir, imgFilename, txtFilename):
     """Generate random faces"""
     batch_size = 100
     noise_dim = 64

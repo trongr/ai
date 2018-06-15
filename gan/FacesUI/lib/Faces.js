@@ -9,8 +9,10 @@ const Faces = module.exports = {}
  * @param {*} txtFilename name of the text encoding file, including .txt extension
  * @param {*} done
  */
+// poij call flask server instead of running standalone tensorflow model
 Faces.makeRandomFaces = (dir, imgFilename, txtFilename, done) => {
     const tag = "Faces.makeRandomFaces"
+    // poij Copy this to NOTES.
     // By default the cwd is the directory you ran node from i.e.
     // ai/gan/FacesUI/, so cwd:.. sets cwd to parent dir ai/gan/.
     const child = spawn('bash',

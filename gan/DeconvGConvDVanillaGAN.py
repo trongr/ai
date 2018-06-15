@@ -121,34 +121,34 @@ tf.summary.scalar("G_loss", G_loss)
 summary_op = tf.summary.merge_all()
 writer = tf.summary.FileWriter(logs_path, graph=tf.get_default_graph())
 
+sess = TensorFlowLib.get_session()
+sess.run(tf.global_variables_initializer())
+Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1)
+if glob.glob(save_dir + "/*"):
+    Saver.restore(sess, tf.train.latest_checkpoint(save_dir))
+
 
 def train(G_train_step, G_loss, D_train_step, D_loss, D_extra_step, G_extra_step, save_img_every=250, print_every=50, max_iter=1000000):
-    with TensorFlowLib.get_session() as sess:
-        sess.run(tf.global_variables_initializer())
-        Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1)
-        if glob.glob(save_dir + "/*"):
-            Saver.restore(sess, tf.train.latest_checkpoint(save_dir))
-
-        batches = utils.load_images(batch_size, x_dim, img_dir, total=FLAGS.train_size)
-        t = time.time()
-        for it in range(max_iter):
-            xmb = next(batches)
-            z_noise = MathLib.sample_z(batch_size, noise_dim)
-            _, D_loss_curr, summary, _ = sess.run([D_train_step, D_loss, summary_op, D_extra_step], feed_dict={x: xmb, z: z_noise, keep_prob: 0.3, training: True})
-            _, G_loss_curr, _ = sess.run([G_train_step, G_loss, G_extra_step], feed_dict={x: xmb, z: z_noise, keep_prob: 0.3, training: True})
-            if it % save_img_every == 0:
-                samples = sess.run(G_sample, feed_dict={x: xmb, z: z_noise, keep_prob: 0.3, training: True})  # TODO. Should this be False?
-                utils.saveImages(out_dir, samples[:100], img_w, img_h, img_c, it)
-            if math.isnan(D_loss_curr) or math.isnan(G_loss_curr):
-                print("D or G loss is nan", D_loss_curr, G_loss_curr)
-                exit()
-            if it % print_every == 0:
-                print('Iter: {}, D: {:.4}, G: {:.4}, Elapsed: {:.4}'.format(it, D_loss_curr, G_loss_curr, time.time() - t))
-                t = time.time()
-            if it % 10 == 0:
-                writer.add_summary(summary, global_step=it)
-            if it % 100 == 0:
-                Saver.save(sess, save_dir_prefix, global_step=it)
+    batches = utils.load_images(batch_size, x_dim, img_dir, total=FLAGS.train_size)
+    t = time.time()
+    for it in range(max_iter):
+        xmb = next(batches)
+        z_noise = MathLib.sample_z(batch_size, noise_dim)
+        _, D_loss_curr, summary, _ = sess.run([D_train_step, D_loss, summary_op, D_extra_step], feed_dict={x: xmb, z: z_noise, keep_prob: 0.3, training: True})
+        _, G_loss_curr, _ = sess.run([G_train_step, G_loss, G_extra_step], feed_dict={x: xmb, z: z_noise, keep_prob: 0.3, training: True})
+        if it % save_img_every == 0:
+            samples = sess.run(G_sample, feed_dict={x: xmb, z: z_noise, keep_prob: 0.3, training: True})  # TODO. Should this be False?
+            utils.saveImages(out_dir, samples[:100], img_w, img_h, img_c, it)
+        if math.isnan(D_loss_curr) or math.isnan(G_loss_curr):
+            print("D or G loss is nan", D_loss_curr, G_loss_curr)
+            exit()
+        if it % print_every == 0:
+            print('Iter: {}, D: {:.4}, G: {:.4}, Elapsed: {:.4}'.format(it, D_loss_curr, G_loss_curr, time.time() - t))
+            t = time.time()
+        if it % 10 == 0:
+            writer.add_summary(summary, global_step=it)
+        if it % 100 == 0:
+            Saver.save(sess, save_dir_prefix, global_step=it)
 
 
 def TestGAN(noise_input, output):
@@ -156,20 +156,14 @@ def TestGAN(noise_input, output):
     - noise_input: Two dimensional numpy array. If None, generate a single random image.
     - output: String filename of output image, e.g. 'output'.
     """
-    with TensorFlowLib.get_session() as sess:
-        sess.run(tf.global_variables_initializer())
-        Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1)
-        if glob.glob(save_dir + "/*"):
-            Saver.restore(sess, tf.train.latest_checkpoint(save_dir))
-
-        if noise_input is None:
-            batch_size = 1
-            z_noise = MathLib.sample_z(batch_size, noise_dim)
-        else:
-            z_noise = np.array(noise_input)
-        samples = sess.run(G_sample, feed_dict={z: z_noise, keep_prob: 1.0, training: False})
-        utils.saveImages(out_dir, samples, img_w, img_h, img_c, output)
-        utils.saveEncoding(out_dir, z_noise, output)
+    if noise_input is None:
+        batch_size = 1
+        z_noise = MathLib.sample_z(batch_size, noise_dim)
+    else:
+        z_noise = np.array(noise_input)
+    samples = sess.run(G_sample, feed_dict={z: z_noise, keep_prob: 1.0, training: False})
+    utils.saveImages(out_dir, samples, img_w, img_h, img_c, output)
+    utils.saveEncoding(out_dir, z_noise, output)
 
 
 def TestGANSingleImgOutput(noise_input, outputDir, imgFilename, txtFilename):
@@ -180,19 +174,14 @@ def TestGANSingleImgOutput(noise_input, outputDir, imgFilename, txtFilename):
     - txtFilename: output txt encoding filename, includes .txt
     """
     utils.mkdir_p(outputDir)
-    with TensorFlowLib.get_session() as sess:
-        sess.run(tf.global_variables_initializer())
-        Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1)
-        if glob.glob(save_dir + "/*"):
-            Saver.restore(sess, tf.train.latest_checkpoint(save_dir))
-        if noise_input is None:
-            batch_size = 1
-            z_noise = MathLib.sample_z(batch_size, noise_dim)
-        else:
-            z_noise = np.array(noise_input)
-        samples = sess.run(G_sample, feed_dict={z: z_noise, keep_prob: 1.0, training: False})
-        utils.saveImages(outputDir, samples, img_w, img_h, img_c, imgFilename)
-        utils.saveEncoding(outputDir, z_noise, txtFilename)
+    if noise_input is None:
+        batch_size = 1
+        z_noise = MathLib.sample_z(batch_size, noise_dim)
+    else:
+        z_noise = np.array(noise_input)
+    samples = sess.run(G_sample, feed_dict={z: z_noise, keep_prob: 1.0, training: False})
+    utils.saveImages(outputDir, samples, img_w, img_h, img_c, imgFilename)
+    utils.saveEncoding(outputDir, z_noise, txtFilename)
 
 
 def backpropOnInputFromImage():
