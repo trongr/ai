@@ -73,7 +73,8 @@ def mkdir_p(dir):
 
 def saveImages(outputDir, images, img_w, img_h, img_c, it):
     fig = plt.figure(figsize=(10.0 * img_w / img_h, 10))
-    gs = gridspec.GridSpec(1, 1) if len(images) is 1 else gridspec.GridSpec(10, 10)  # In test mode we just have one image
+    # gs = gridspec.GridSpec(1, 1) if len(images) is 1 else gridspec.GridSpec(10, 10)  # In test mode we just have one image
+    gs = gridspec.GridSpec(1, 1) if len(images) is 1 else gridspec.GridSpec(6, 6)  # In test mode we just have one image
     gs.update(left=0, right=1, top=1, bottom=0, wspace=0, hspace=0)
 
     for i, img in enumerate(images):

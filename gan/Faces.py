@@ -43,7 +43,7 @@ def TestRangeTwoDimensions():
 
 def MakeRandomFaces(outputDir, imgFilename, txtFilename):
     """Generate random faces"""
-    batch_size = 100
+    batch_size = 36
     noise_dim = 64
     noise_input = MathLib.sample_z(batch_size, noise_dim)
     GAN.TestGANSingleImgOutput(noise_input, outputDir, imgFilename, txtFilename)
@@ -58,7 +58,7 @@ def MakeFaceByEncoding(encoding, outputDir, imgFilename, txtFilename):
 def MakeSimilarFaces(encoding, outputDir, imgFilename, txtFilename):
     """Make a grid of similar faces from encoding and put it in the outputDir, etc.
     - encoding: a list of floats."""
-    batch_size = 100
+    batch_size = 36
     noise_input = utils.GenerateSimilarEncodings(encoding, batch_size)
     GAN.TestGANSingleImgOutput(noise_input, outputDir, imgFilename, txtFilename)
 
