@@ -29,7 +29,7 @@ function GetFaces(req, res, next) {
             else res.send({ status: 200, img })
         })
     } else {
-        getRandomFaces((er, img, encodings) => {
+        GetRandomFaces((er, img, encodings) => {
             if (er) next({ status: 500, error: "Cannot get random faces", er })
             else res.send({ status: 200, img, encodings })
         })
@@ -37,56 +37,22 @@ function GetFaces(req, res, next) {
 }
 
 /**
- * TODO. Validate inputs, e.g. encoding
- * @param {*} req
- * @param {*} res
- * @param {*} next
- */
-function GetSimilarFaces(req, res, next) {
-    const tag = "Faces.GetSimilarFaces"
-    const nodeRootDir = "out/GetSimilarFaces-" + Time.getTimeYYYYMMDDHHMMSSMS() // out/GetSimilarFaces-2018-05-21-01-49-44-862-xDhYP
-    const pythonRootDir = "FacesUI/" + nodeRootDir // python cwd is ai/gan/FacesUI/, one above node's root
-    const imgFilename = "GetSimilarFaces.jpg"
-    const txtFilename = "GetSimilarFaces.txt"
-    const imgFilepath = nodeRootDir + "/" + imgFilename
-    const txtFilepath = nodeRootDir + "/" + txtFilename
-    const encoding = Validate.sanitizeEncoding(req.body.encoding)
-    let img, encodings
-    async.waterfall([
-        (done) => {
-            Faces.makeSimilarFaces(encoding, pythonRootDir, imgFilename, txtFilename, done)
-        }, (done) => {
-            FS.readImgFileAsBase64(imgFilepath, done)
-        }, (nimg, done) => {
-            img = nimg
-            FS.readTxtFile(txtFilepath, done)
-        }, (txt, done) => {
-            encodings = convertTextToEncodings(txt)
-            done()
-        }
-    ], (er) => {
-        if (er) next({ tag, status: 500, error: "Cannot get similar faces", er })
-        else res.send({ tag, status: 200, img, encodings })
-        FS.rmdirf(nodeRootDir)
-    })
-}
-
-/**
  *
  * @param {*} done(er, img, encodings)
  */
-function getRandomFaces(done) {
-    const tag = "Faces.getRandomFaces"
-    const nodeRootDir = "out/getRandomFaces-" + Time.getTimeYYYYMMDDHHMMSSMS() // out/getRandomFaces-2018-05-21-01-49-44-862-xDhYP
-    const pythonRootDir = "FacesUI/" + nodeRootDir // python cwd is ai/gan/FacesUI/, one above node's root
-    const imgFilename = "getRandomFaces.jpg"
-    const txtFilename = "getRandomFaces.txt"
+function GetRandomFaces(done) {
+    const tag = "Faces.GetRandomFaces"
+    /** The images are in ../FacesFlask/out/GetRandomFaces-TIME/ */
+    const pythonRootDir = "out/GetRandomFaces-" + Time.getTimeYYYYMMDDHHMMSSMS() // out/GetRandomFaces-2018-05-21-01-49-44-862-xDhYP
+    const nodeRootDir = "../FacesFlask/" + pythonRootDir
+    const imgFilename = "GetRandomFaces.jpg"
+    const txtFilename = "GetRandomFaces.txt"
     const imgFilepath = nodeRootDir + "/" + imgFilename
     const txtFilepath = nodeRootDir + "/" + txtFilename
     let img, encodings
     async.waterfall([
         (done) => {
-            Faces.makeRandomFaces(pythonRootDir, imgFilename, txtFilename, done)
+            Faces.GetRandomFaces(pythonRootDir, imgFilename, txtFilename, done)
         }, (done) => {
             FS.readImgFileAsBase64(imgFilepath, done)
         }, (nimg, done) => {
@@ -106,11 +72,11 @@ function getRandomFaces(done) {
 /**
  * NOTE. Use this if you want fast random faces for testing.
  */
-// function getRandomFaces(done) {
-//     const tag = "Faces.getRandomFaces"
-//     const nodeRootDir = "out/getRandomFacesMock"
-//     const imgFilename = "getRandomFaces.jpg"
-//     const txtFilename = "getRandomFaces.txt"
+// function GetRandomFaces(done) {
+//     const tag = "Faces.GetRandomFaces"
+//     const nodeRootDir = "out/GetRandomFacesMock"
+//     const imgFilename = "GetRandomFaces.jpg"
+//     const txtFilename = "GetRandomFaces.txt"
 //     const imgFilepath = nodeRootDir + "/" + imgFilename
 //     const txtFilepath = nodeRootDir + "/" + txtFilename
 //     let img, encodings
@@ -142,22 +108,23 @@ function convertTextToEncodings(txt) {
     return encodings
 }
 
-// qwer. Check that entries in the encoding are floats and in the right range [-1, 1].
 /**
  * Get a face by its encoding.
  * @param {*} encoding
  * @param {*} done(er, img)
  */
 function GetFaceByEncoding(encoding, done) {
-    // const tag = "Faces.GetFaceByEncoding"
-    const nodeRootDir = "out/GetFaceByEncoding-" + Time.getTimeYYYYMMDDHHMMSSMS() // out/GetFaceByEncoding-2018-05-21-01-49-44-862-xDhYP
-    const pythonRootDir = "FacesUI/" + nodeRootDir // python cwd is ai/gan/FacesUI/, one above node's root
+    // qwer. Check that entries in the encoding are floats and in the right
+    // range [-1, 1].
+    /** The images are in ../FacesFlask/out/GetFaceByEncoding-TIME/ */
+    const pythonRootDir = "out/GetFaceByEncoding-" + Time.getTimeYYYYMMDDHHMMSSMS() // out/GetFaceByEncoding-2018-05-21-01-49-44-862-xDhYP
+    const nodeRootDir = "../FacesFlask/" + pythonRootDir
     const imgFilename = "GetFaceByEncoding.jpg"
     const txtFilename = "GetFaceByEncoding.txt"
     const imgFilepath = nodeRootDir + "/" + imgFilename
     async.waterfall([
         (done) => {
-            Faces.makeFaceByEncoding(encoding, pythonRootDir, imgFilename, txtFilename, done)
+            Faces.GetFaceByEncoding(encoding, pythonRootDir, imgFilename, txtFilename, done)
         }, (done) => {
             FS.readImgFileAsBase64(imgFilepath, done)
         }, (img, done) => {
@@ -166,6 +133,42 @@ function GetFaceByEncoding(encoding, done) {
     ], (er, img) => {
         if (er) done(er)
         else done(null, img)
+        FS.rmdirf(nodeRootDir)
+    })
+}
+
+/**
+ * TODO. Validate inputs, e.g. encoding
+ * @param {*} req
+ * @param {*} res
+ * @param {*} next
+ */
+function GetSimilarFaces(req, res, next) {
+    const tag = "Faces.GetSimilarFaces"
+    /** The images are in ../FacesFlask/out/GetSimilarFaces-TIME/ */
+    const pythonRootDir = "out/GetSimilarFaces-" + Time.getTimeYYYYMMDDHHMMSSMS() // out/GetSimilarFaces-2018-05-21-01-49-44-862-xDhYP
+    const nodeRootDir = "../FacesFlask/" + pythonRootDir
+    const imgFilename = "GetSimilarFaces.jpg"
+    const txtFilename = "GetSimilarFaces.txt"
+    const imgFilepath = nodeRootDir + "/" + imgFilename
+    const txtFilepath = nodeRootDir + "/" + txtFilename
+    const encoding = Validate.sanitizeEncoding(req.body.encoding)
+    let img, encodings
+    async.waterfall([
+        (done) => {
+            Faces.GetSimilarFaces(encoding, pythonRootDir, imgFilename, txtFilename, done)
+        }, (done) => {
+            FS.readImgFileAsBase64(imgFilepath, done)
+        }, (nimg, done) => {
+            img = nimg
+            FS.readTxtFile(txtFilepath, done)
+        }, (txt, done) => {
+            encodings = convertTextToEncodings(txt)
+            done()
+        }
+    ], (er) => {
+        if (er) next({ tag, status: 500, error: "Cannot get similar faces", er })
+        else res.send({ tag, status: 200, img, encodings })
         FS.rmdirf(nodeRootDir)
     })
 }

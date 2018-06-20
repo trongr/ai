@@ -28,8 +28,8 @@ def create_app(test_config=None):
     def hello():
         return 'Hello, World!'
 
-    from . import blog
-    app.register_blueprint(blog.bp)
+    from . import FacesServer
+    app.register_blueprint(FacesServer.bp)
     app.add_url_rule('/', endpoint='index')
 
     return app
