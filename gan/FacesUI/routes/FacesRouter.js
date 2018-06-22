@@ -1,7 +1,7 @@
 const assert = require('assert');
 const express = require('express');
 const async = require('async');
-const Faces = require("../lib/Faces.js")
+const FacesLib = require("../lib/FacesLib.js")
 const FS = require("../core/FS.js")
 const Time = require("../core/Time.js")
 const Validate = require("../core/Validate.js")
@@ -41,7 +41,7 @@ function GetFaces(req, res, next) {
  * @param {*} done(er, img, encodings)
  */
 function GetRandomFaces(done) {
-    const tag = "Faces.GetRandomFaces"
+    const tag = "FacesRouter.GetRandomFaces"
     /** The images are in ../FacesFlask/out/GetRandomFaces-TIME/ */
     const pythonRootDir = "out/GetRandomFaces-" + Time.getTimeYYYYMMDDHHMMSSMS() // out/GetRandomFaces-2018-05-21-01-49-44-862-xDhYP
     const nodeRootDir = "../FacesFlask/" + pythonRootDir
@@ -52,7 +52,7 @@ function GetRandomFaces(done) {
     let img, encodings
     async.waterfall([
         (done) => {
-            Faces.GetRandomFaces(pythonRootDir, imgFilename, txtFilename, done)
+            FacesLib.GetRandomFaces(pythonRootDir, imgFilename, txtFilename, done)
         }, (done) => {
             FS.readImgFileAsBase64(imgFilepath, done)
         }, (nimg, done) => {
@@ -73,7 +73,7 @@ function GetRandomFaces(done) {
  * NOTE. Use this if you want fast random faces for testing.
  */
 // function GetRandomFaces(done) {
-//     const tag = "Faces.GetRandomFaces"
+//     const tag = "FacesRouter.GetRandomFaces"
 //     const nodeRootDir = "out/GetRandomFacesMock"
 //     const imgFilename = "GetRandomFaces.jpg"
 //     const txtFilename = "GetRandomFaces.txt"
@@ -124,7 +124,7 @@ function GetFaceByEncoding(encoding, done) {
     const imgFilepath = nodeRootDir + "/" + imgFilename
     async.waterfall([
         (done) => {
-            Faces.GetFaceByEncoding(encoding, pythonRootDir, imgFilename, txtFilename, done)
+            FacesLib.GetFaceByEncoding(encoding, pythonRootDir, imgFilename, txtFilename, done)
         }, (done) => {
             FS.readImgFileAsBase64(imgFilepath, done)
         }, (img, done) => {
@@ -144,7 +144,7 @@ function GetFaceByEncoding(encoding, done) {
  * @param {*} next
  */
 function GetSimilarFaces(req, res, next) {
-    const tag = "Faces.GetSimilarFaces"
+    const tag = "FacesRouter.GetSimilarFaces"
     /** The images are in ../FacesFlask/out/GetSimilarFaces-TIME/ */
     const pythonRootDir = "out/GetSimilarFaces-" + Time.getTimeYYYYMMDDHHMMSSMS() // out/GetSimilarFaces-2018-05-21-01-49-44-862-xDhYP
     const nodeRootDir = "../FacesFlask/" + pythonRootDir
@@ -156,7 +156,7 @@ function GetSimilarFaces(req, res, next) {
     let img, encodings
     async.waterfall([
         (done) => {
-            Faces.GetSimilarFaces(encoding, pythonRootDir, imgFilename, txtFilename, done)
+            FacesLib.GetSimilarFaces(encoding, pythonRootDir, imgFilename, txtFilename, done)
         }, (done) => {
             FS.readImgFileAsBase64(imgFilepath, done)
         }, (nimg, done) => {

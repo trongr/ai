@@ -22,8 +22,8 @@ app.use("*", (req, res, next) => {
 })
 
 app.get('/', (req, res) => res.sendFile(path.join(__dirname + '/public/index.html')));
-app.use('/users', require('./routes/users'));
-app.use('/faces', require('./routes/faces'));
+app.use('/users', require('./routes/UsersRouter.js'));
+app.use('/faces', require('./routes/FacesRouter.js'));
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

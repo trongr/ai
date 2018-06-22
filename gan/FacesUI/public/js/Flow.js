@@ -10,7 +10,7 @@ const Flow = (() => {
     Flow.getRandomFacesAndLoadIntoGrid = async () => {
         const tag = "Flow.getRandomFacesAndLoadIntoGrid"
         const { status, img, encodings } = await API.getRandomFaces()
-        FacesGrid.saveEncodings(encodings,
+        FacesGridModel.saveEncodings(encodings,
             Conf.FACES_GRID_NUM_CELLS_ROWS,
             Conf.FACES_GRID_NUM_CELLS_COLS)
         Views.loadImgFromBase64("RandomFacesImg", img)
@@ -25,9 +25,9 @@ const Flow = (() => {
         const tag = "Flow.getFaceByEncodingAndLoadIntoCurrentFace"
         console.log(tag, encoding)
         const { status, img } = await API.getFaceByEncoding(encoding)
-        CurrentFace.saveEncoding(encoding)
+        CurrentFaceModel.saveEncoding(encoding)
         Views.loadImgFromBase64("CurrentFace", img)
-        Views.loadEncodingIntoCurrentFaceSliders(encoding)
+        CurrentFaceView.loadEncodingIntoCurrentFaceSliders(encoding)
         Views.scrollTo("CurrentFace")
     }
 
@@ -39,7 +39,7 @@ const Flow = (() => {
         const tag = "Flow.getSimilarFacesAndLoadIntoGrid"
         console.log(tag, encoding)
         const { status, img, encodings } = await API.getSimilarFaces(encoding)
-        FacesGrid.saveEncodings(encodings,
+        FacesGridModel.saveEncodings(encodings,
             Conf.FACES_GRID_NUM_CELLS_ROWS,
             Conf.FACES_GRID_NUM_CELLS_COLS)
         Views.loadImgFromBase64("RandomFacesImg", img)

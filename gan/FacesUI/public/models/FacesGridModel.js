@@ -1,7 +1,7 @@
-const FacesGrid = (() => {
-    const FacesGrid = {}
+const FacesGridModel = (() => {
+    const FacesGridModel = {}
 
-    FacesGrid.encodings = [] // encodings for random faces
+    FacesGridModel.encodings = [] // encodings for random faces
 
     /**
      * Save new encoding when user loads a new set of random faces into the
@@ -11,7 +11,7 @@ const FacesGrid = (() => {
      * @param {*} NUM_CELLS_ROWS How many cells per row
      * @param {*} NUM_CELLS_COLS How many cells per column
      */
-    FacesGrid.saveEncodings = (nencodings,
+    FacesGridModel.saveEncodings = (nencodings,
         NUM_CELLS_ROWS = 10, NUM_CELLS_COLS = 10) => {
         console.assert(nencodings.length == NUM_CELLS_ROWS * NUM_CELLS_COLS,
             "Random faces encoding length doesn't match expected number of rows and columns")
@@ -22,7 +22,7 @@ const FacesGrid = (() => {
             if (j == 0) encodings.push([]) // Create a new row
             encodings[i][j] = e
         })
-        FacesGrid.encodings = encodings
+        FacesGridModel.encodings = encodings
     }
 
     /**
@@ -31,9 +31,9 @@ const FacesGrid = (() => {
      * @param {*} i cell row
      * @param {*} j cell column
      */
-    FacesGrid.getEncoding = (i, j) => {
-        return FacesGrid.encodings[i][j]
+    FacesGridModel.getEncoding = (i, j) => {
+        return FacesGridModel.encodings[i][j]
     }
 
-    return FacesGrid
+    return FacesGridModel
 })();

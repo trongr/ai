@@ -40,7 +40,7 @@ const Bindings = (() => {
                 const rawY = e.pageY - $(this).offset().top
                 const j = parseInt(rawX / cellWidth)
                 const i = parseInt(rawY / cellHeight)
-                const encoding = FacesGrid.getEncoding(i, j)
+                const encoding = FacesGridModel.getEncoding(i, j)
                 Flow.getFaceByEncodingAndLoadIntoCurrentFace(encoding)
                 console.log("DEBUG. Clicking cell", i, j)
             } catch (er) {
@@ -57,7 +57,7 @@ const Bindings = (() => {
     function bindCurrentFaceRenderButton() {
         $("#RenderCurrentFaceButton").click(async function (e) {
             try {
-                const encoding = Views.getCurrentFaceEncodingFromSliders()
+                const encoding = CurrentFaceView.getCurrentFaceEncodingFromSliders()
                 if (!encoding) return console.error("No encoding to render")
                 Flow.getFaceByEncodingAndLoadIntoCurrentFace(encoding)
             } catch (er) {
@@ -73,7 +73,7 @@ const Bindings = (() => {
     function bindRenderSimilarFacesButton() {
         $("#RenderSimilarFacesButton").click(async function (e) {
             try {
-                const encoding = Views.getCurrentFaceEncodingFromSliders()
+                const encoding = CurrentFaceView.getCurrentFaceEncodingFromSliders()
                 if (!encoding) return console.error("No encoding to render")
                 Flow.getSimilarFacesAndLoadIntoGrid(encoding)
             } catch (er) {

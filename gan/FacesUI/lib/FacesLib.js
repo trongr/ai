@@ -1,6 +1,6 @@
 const request = require("request")
 
-const Faces = module.exports = {}
+const FacesLib = module.exports = {}
 
 /**
  * Run the neural network and generate random faces
@@ -9,8 +9,8 @@ const Faces = module.exports = {}
  * @param {*} txtFilename name of the text encoding file, including .txt extension
  * @param {*} done
  */
-Faces.GetRandomFaces = (outputDir, imgFilename, txtFilename, done) => {
-    const tag = "Faces.GetRandomFaces"
+FacesLib.GetRandomFaces = (outputDir, imgFilename, txtFilename, done) => {
+    const tag = "FacesLib.GetRandomFaces"
     request({
         method: "GET",
         url: "http://localhost:5000/GetRandomFaces",
@@ -32,8 +32,8 @@ Faces.GetRandomFaces = (outputDir, imgFilename, txtFilename, done) => {
  * @param {*} txtFilename
  * @param {*} done
  */
-Faces.GetSimilarFaces = (encoding, outputDir, imgFilename, txtFilename, done) => {
-    const tag = "Faces.GetSimilarFaces"
+FacesLib.GetSimilarFaces = (encoding, outputDir, imgFilename, txtFilename, done) => {
+    const tag = "FacesLib.GetSimilarFaces"
     request({
         method: "GET",
         url: "http://localhost:5000/GetSimilarFaces",
@@ -54,8 +54,8 @@ Faces.GetSimilarFaces = (encoding, outputDir, imgFilename, txtFilename, done) =>
  * @param {*} txtFilename name of the text encoding file, including .txt extension
  * @param {*} done
  */
-Faces.GetFaceByEncoding = (encoding, outputDir, imgFilename, txtFilename, done) => {
-    const tag = "Faces.GetFaceByEncoding"
+FacesLib.GetFaceByEncoding = (encoding, outputDir, imgFilename, txtFilename, done) => {
+    const tag = "FacesLib.GetFaceByEncoding"
     request({
         method: "GET",
         url: "http://localhost:5000/GetFaceByEncoding",
