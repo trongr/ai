@@ -8,16 +8,19 @@
 <link rel='stylesheet' href='/css/index.css' />
 <script src="/js/jquery-3.3.1.js"></script>
 <script src="/js/Conf.js"></script>
+<script src="/js/API.js"></script>
 <script src="/models/FacesGridModel.js"></script>
 <script src="/models/CurrentFaceModel.js"></script>
 <script src="/models/HistoryModel.js"></script>
 <script src="/views/HistoryView.js"></script>
 <script src="/views/CurrentFaceView.js"></script>
+<script src="/views/FacesGridView.js"></script>
+<script src="/views/ViewsUtils.js"></script>
+<script src="/views/Views.js"></script>
 <script src="/bindings/HistoryBinding.js"></script>
-<script src="/js/API.js"></script>
-<script src="/js/Views.js"></script>
-<script src="/js/Flow.js"></script>
-<script src="/js/Bindings.js"></script>
+<script src="/bindings/FacesGridBinding.js"></script>
+<script src="/bindings/CurrentFaceBinding.js"></script>
+<script src="/bindings/Bindings.js"></script>
 <script src="/js/index.js"></script>
 </head>
 <body>
@@ -33,7 +36,7 @@
         </div>
 
         <div class="Help">[ 2. Click on any face to customize it. ]</div><br>
-        <div><img id="RandomFacesImg"/></div><br>
+        <div><img id="FacesGridImg"/></div><br>
 
         <!-- <div id="CellPosition" class="Debug"></div> -->
         <div class="Help">[ 3. Use the sliders to customize and click RENDER.

@@ -43,5 +43,20 @@ const CurrentFaceView = (() => {
         return encoding
     }
 
+    /**
+     * Load the encoding into the current face, e.g. when user clicks on the
+     * grid, or the RENDER button to re-render a slider config.
+     * @param {*} encoding
+     */
+    CurrentFaceView.getFaceByEncodingAndLoadIntoCurrentFace = async (encoding) => {
+        const tag = "CurrentFaceView.getFaceByEncodingAndLoadIntoCurrentFace"
+        console.log(tag, encoding)
+        const { status, img } = await API.getFaceByEncoding(encoding)
+        CurrentFaceModel.saveEncoding(encoding)
+        CurrentFaceView.loadEncodingIntoCurrentFaceSliders(encoding)
+        ViewsUtils.loadImgFromBase64("CurrentFace", img)
+        ViewsUtils.scrollTo("CurrentFace")
+    }
+
     return CurrentFaceView
 })();

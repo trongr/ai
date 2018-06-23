@@ -1,16 +1,12 @@
-const Views = (() => {
-    const Views = {}
-
-    Views.init = () => {
-        CurrentFaceView.init()
-    }
+const ViewsUtils = (() => {
+    const ViewsUtils = {}
 
     /**
      * Load the random faces img into the random faces grid.
      * @param {*} id The id of the image element, doesn't contain #.
      * @param {*} img The base64 content of the image.
      */
-    Views.loadImgFromBase64 = (id, img) => {
+    ViewsUtils.loadImgFromBase64 = (id, img) => {
         document.getElementById(id).src = img
     }
 
@@ -18,11 +14,11 @@ const Views = (() => {
      * Smooth scrolling to element
      * @param {*} elementID
      */
-    Views.scrollTo = (elementID) => {
+    ViewsUtils.scrollTo = (elementID) => {
         $('html,body').animate({
             scrollTop: $("#" + elementID).offset().top
         })
     }
 
-    return Views
+    return ViewsUtils
 })();
