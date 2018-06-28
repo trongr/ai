@@ -54,6 +54,7 @@ const CurrentFaceView = (() => {
         const { status, img } = await API.getFaceByEncoding(encoding)
         CurrentFaceModel.saveEncoding(encoding)
         CurrentFaceView.loadEncodingIntoCurrentFaceSliders(encoding)
+        HistoryView.saveEncodingImg(encoding, img)
         ViewsUtils.loadImgFromBase64("CurrentFace", img)
         ViewsUtils.scrollTo("CurrentFace")
     }

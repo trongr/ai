@@ -8,5 +8,13 @@ const HistoryModel = (() => {
         encodings.push(encoding)
     }
 
+    /**
+     * Each encoding in encodings corresponds by index to the img in HistoryBox,
+     * so e.g. can use this count to get the index and set it as the img ID.
+     */
+    HistoryModel.count = () => {
+        return encodings.length
+    }
+
     return HistoryModel
 })();

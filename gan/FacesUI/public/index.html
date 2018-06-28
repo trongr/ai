@@ -26,10 +26,16 @@
 <body>
 <div class="Center">
     <h1 class="Huge">MakeFace</h1>
+    <p>
+        This app allows you to create photorealistic imaginary faces. Follow the
+        numbered instructions for an overview of the process.
+    </p>
     <div id="App">
         <div>
-            <div class="Help">[ 1. Click this button to generate random faces below. ]</div><br>
-            <button id="GenerateRandomFacesButton" class="btn btn-primary btn-lg" type="button">
+            <div class="Help">[ 1. Click this button to generate random faces
+            below. ]</div><br>
+            <button id="GenerateRandomFacesButton"
+                class="btn btn-primary btn-lg" type="button">
                 Generate random faces
             </button>
             <br><br>
@@ -39,18 +45,21 @@
         <div><img id="FacesGridImg"/></div><br>
 
         <!-- <div id="CellPosition" class="Debug"></div> -->
-        <div class="Help">[ 3. Use the sliders to customize and click RENDER.
-            Alternatively, click the Similar Faces button to generate similar
-            faces to the current face. ]</div><br>
+        <div class="Help">[ 3. Click the SIMILAR FACES button to generate
+        similar faces to the current face. Alternatively, use the sliders to
+        customize and click RENDER. ]</div><br>
+
         <div id="CurrentFaceBox">
             <div id="CurrentFaceSlidersBox">
                 <div id="CurrentFaceSlidersList"></div>
                 <div id="CurrentFaceRenderBox">
-                    <button id="RenderCurrentFaceButton" class="btn btn-primary btn-lg" type="button">
+                    <button id="RenderCurrentFaceButton"
+                        class="btn btn-primary btn-lg" type="button">
                         RENDER
                     </button>
-                    <button id="RenderSimilarFacesButton" class="btn btn-primary btn-lg" type="button">
-                        Similar faces
+                    <button id="RenderSimilarFacesButton"
+                        class="btn btn-primary btn-lg" type="button">
+                        SIMILAR FACES
                     </button>
                 </div>
             </div>
@@ -58,6 +67,12 @@
                 <img id="CurrentFace">
             </div>
         </div>
+
+        <br>
+
+        <div class="Help">[ 4. This is your History: these are all the faces
+        you've rendered, latest first. You can click on any one to re-render
+        them. ]</div><br>
         <div id="HistoryBox"></div>
     </div>
 </div>

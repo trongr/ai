@@ -55,3 +55,13 @@ img#CurrentFace {
 .CurrentFaceSliderInput {
     width: 50px;
 }
+
+#HistoryBox {
+    height: 200px;
+}
+
+#HistoryBox .HistoryImg {
+    display: inline-block;
+    height: 100%;
+    margin: 5px;
+}
