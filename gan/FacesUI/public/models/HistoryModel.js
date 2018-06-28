@@ -9,6 +9,14 @@ const HistoryModel = (() => {
     }
 
     /**
+     * Return the encoding at index idx
+     * @param {*} idx
+     */
+    HistoryModel.getEncoding = (idx) => {
+        return encodings[idx]
+    }
+
+    /**
      * Each encoding in encodings corresponds by index to the img in HistoryBox,
      * so e.g. can use this count to get the index and set it as the img ID.
      */
