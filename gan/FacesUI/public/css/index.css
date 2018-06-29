@@ -43,12 +43,12 @@ img#CurrentFace {
     width: 100%;
 }
 
-#CurrentFaceRenderBox {
+#CopyPasteCurrentFaceEncodingBox, #CurrentFaceRenderBox {
     text-align: right;
     padding: 10px;
 }
 
-#CurrentFaceRenderBox>Button {
+#CopyPasteCurrentFaceEncodingBox>button, #CopyPasteCurrentFaceEncodingBox>input, #CurrentFaceRenderBox>button {
     margin: 5px;
 }
 
@@ -57,7 +57,7 @@ img#CurrentFace {
 }
 
 #HistoryBox {
-    height: 200px;
+    height: 300px;
 }
 
 #HistoryBox .HistoryImg {

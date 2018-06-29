@@ -7,6 +7,7 @@ const Time = require("../core/Time.js")
 const Validate = require("../core/Validate.js")
 const router = express.Router();
 
+// poij these guys should validate their inputs
 router.get('/', GetFaces)
 router.get('/similar', GetSimilarFaces)
 

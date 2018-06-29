@@ -6,6 +6,7 @@ const CurrentFaceBinding = (() => {
     CurrentFaceBinding.init = () => {
         CurrentFaceBinding.bindCurrentFaceRenderButton()
         CurrentFaceBinding.bindRenderSimilarFacesButton()
+        CurrentFaceBinding.bindPasteEncodingButton()
     }
 
     /**
@@ -37,6 +38,23 @@ const CurrentFaceBinding = (() => {
                 const encoding = CurrentFaceView.getCurrentFaceEncodingFromSliders()
                 if (!encoding) return console.error(tag, "No encoding to render")
                 FacesGridView.getSimilarFacesAndLoadIntoGrid(encoding)
+            } catch (er) {
+                console.error(tag, er)
+            }
+        })
+    }
+
+    /**
+     * When user clicks PasteEncodingButton, we take the list of floats in
+     * PasteEncodingInput (if any) and loads it into the sliders.
+     */
+    CurrentFaceBinding.bindPasteEncodingButton = () => {
+        const tag = "CurrentFaceBinding.bindPasteEncodingButton"
+        $("#PasteEncodingButton").click(async function (e) {
+            try {
+                const encoding = CurrentFaceView.getEncodingFromPasteEncodingInput()
+                if (!encoding) return // This is a user error.
+                CurrentFaceView.getFaceByEncodingAndLoadIntoCurrentFace(encoding)
             } catch (er) {
                 console.error(tag, er)
             }

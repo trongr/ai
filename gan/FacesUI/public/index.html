@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 <link rel='stylesheet' href='/css/index.css' />
 <script src="/js/jquery-3.3.1.js"></script>
+<script src="/js/assert.js"></script>
 <script src="/js/Conf.js"></script>
 <script src="/js/API.js"></script>
 <script src="/models/FacesGridModel.js"></script>
@@ -28,7 +29,7 @@
     <h1 class="Huge">MakeFace</h1>
     <p>
         This app allows you to create photorealistic imaginary faces. Follow the
-        numbered instructions for an overview of the process.
+        numbered instructions below for an overview of the process.
     </p>
     <div id="App">
         <div>
@@ -52,6 +53,13 @@
         <div id="CurrentFaceBox">
             <div id="CurrentFaceSlidersBox">
                 <div id="CurrentFaceSlidersList"></div>
+                <div id="CopyPasteCurrentFaceEncodingBox">
+                    <input id="PasteEncodingInput" type="text" class="form-control" placeholder="-0.1, 0.2, 0.9,...">
+                    <button id="PasteEncodingButton"
+                        class="btn btn-warning btn-lg" type="button">
+                        Load Encoding
+                    </button>
+                </div>
                 <div id="CurrentFaceRenderBox">
                     <button id="RenderCurrentFaceButton"
                         class="btn btn-primary btn-lg" type="button">
@@ -71,8 +79,8 @@
         <br>
 
         <div class="Help">[ 4. This is your History: these are all the faces
-        you've rendered, latest first. You can click on any one to re-render
-        them. ]</div><br>
+        you've rendered so far, latest first. You can click on any one to
+        re-render them. ]</div><br>
         <div id="HistoryBox"></div>
     </div>
 </div>

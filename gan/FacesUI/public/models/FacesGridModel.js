@@ -11,10 +11,10 @@ const FacesGridModel = (() => {
      * @param {*} NUM_CELLS_ROWS How many cells per row
      * @param {*} NUM_CELLS_COLS How many cells per column
      */
-    FacesGridModel.saveEncodings = (nencodings,
-        NUM_CELLS_ROWS = 10, NUM_CELLS_COLS = 10) => {
-        console.assert(nencodings.length == NUM_CELLS_ROWS * NUM_CELLS_COLS,
-            "Random faces encoding length doesn't match expected number of rows and columns")
+    FacesGridModel.saveEncodings = (nencodings, NUM_CELLS_ROWS = 10, NUM_CELLS_COLS = 10) => {
+        const tag = "FacesGridModel.saveEncodings"
+        assert(nencodings.length == NUM_CELLS_ROWS * NUM_CELLS_COLS,
+            `${tag}: Random faces encoding length ${nencodings.length} doesn't match expected number of rows ${NUM_CELLS_ROWS} and columns ${NUM_CELLS_COLS}`)
         let encodings = []
         nencodings.map((e, idx) => {
             const i = parseInt(idx / NUM_CELLS_ROWS) // However many multiples is the row number i
