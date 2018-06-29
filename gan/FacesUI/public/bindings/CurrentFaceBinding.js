@@ -4,27 +4,8 @@ const CurrentFaceBinding = (() => {
     const CurrentFaceBinding = {}
 
     CurrentFaceBinding.init = () => {
-        CurrentFaceBinding.bindCurrentFaceRenderButton()
         CurrentFaceBinding.bindRenderSimilarFacesButton()
-        CurrentFaceBinding.bindPasteEncodingButton()
-    }
-
-    /**
-     * When user clicks the RENDER button, we get the current encoding from the
-     * sliders and query the server for its image, and load it into the Current
-     * Face.
-     */
-    CurrentFaceBinding.bindCurrentFaceRenderButton = () => {
-        const tag = "CurrentFaceBinding.bindCurrentFaceRenderButton"
-        $("#RenderCurrentFaceButton").click(async function (e) {
-            try {
-                const encoding = CurrentFaceView.getCurrentFaceEncodingFromSliders()
-                if (!encoding) return console.error(tag, "No encoding to render")
-                CurrentFaceView.getFaceByEncodingAndLoadIntoCurrentFace(encoding)
-            } catch (er) {
-                console.error(tag, er)
-            }
-        })
+        CurrentFaceBinding.bindRenderEncodingButton()
     }
 
     /**
@@ -45,12 +26,12 @@ const CurrentFaceBinding = (() => {
     }
 
     /**
-     * When user clicks PasteEncodingButton, we take the list of floats in
+     * When user clicks RenderEncodingButton, we take the list of floats in
      * PasteEncodingInput (if any) and loads it into the sliders.
      */
-    CurrentFaceBinding.bindPasteEncodingButton = () => {
-        const tag = "CurrentFaceBinding.bindPasteEncodingButton"
-        $("#PasteEncodingButton").click(async function (e) {
+    CurrentFaceBinding.bindRenderEncodingButton = () => {
+        const tag = "CurrentFaceBinding.bindRenderEncodingButton"
+        $("#RenderEncodingButton").click(async function (e) {
             try {
                 const encoding = CurrentFaceView.getEncodingFromPasteEncodingInput()
                 if (!encoding) return // This is a user error.

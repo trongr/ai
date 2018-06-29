@@ -37,7 +37,7 @@
             below. ]</div><br>
             <button id="GenerateRandomFacesButton"
                 class="btn btn-primary btn-lg" type="button">
-                Generate random faces
+                GENERATE RANDOM FACES
             </button>
             <br><br>
         </div>
@@ -53,20 +53,20 @@
         <div id="CurrentFaceBox">
             <div id="CurrentFaceSlidersBox">
                 <div id="CurrentFaceSlidersList"></div>
+                <br>
+                <div class="Help">[ This is the encoding for your current face.
+                You can copy and save it, or paste a previously saved encoding
+                and click Load Encoding to render it. ]</div>
                 <div id="CopyPasteCurrentFaceEncodingBox">
                     <input id="PasteEncodingInput" type="text" class="form-control" placeholder="-0.1, 0.2, 0.9,...">
-                    <button id="PasteEncodingButton"
-                        class="btn btn-warning btn-lg" type="button">
-                        Load Encoding
+                    <button id="RenderEncodingButton"
+                        class="btn btn-success btn-lg" type="button">
+                        RENDER
                     </button>
                 </div>
                 <div id="CurrentFaceRenderBox">
-                    <button id="RenderCurrentFaceButton"
-                        class="btn btn-primary btn-lg" type="button">
-                        RENDER
-                    </button>
                     <button id="RenderSimilarFacesButton"
-                        class="btn btn-primary btn-lg" type="button">
+                        class="btn btn-warning btn-lg" type="button">
                         SIMILAR FACES
                     </button>
                 </div>
