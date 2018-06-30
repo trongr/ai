@@ -12,13 +12,21 @@ const CurrentFaceView = (() => {
      */
     CurrentFaceView.initCurrentFaceSliders = () => {
         for (let i = 0; i < Conf.NUM_SLIDERS; i++) {
-            const paddedIndex = (i < 10 ? "0" + i : i) // So it aligns a little better.
-            $("#CurrentFaceSlidersList").append(paddedIndex + ". \
-                <input \
-                    id='" + CURRENT_FACE_SLIDER_ID_PREFIX + i + "' \
-                    class='CurrentFaceSliderInput' \
-                    type='range' min='-1' max='1' step='0.01'> ")
+            $("#CurrentFaceSlidersList").append(MakeFaceSlider(i))
         }
+    }
+
+    /**
+     * Make a face slider.
+     * @param {*} idx
+     */
+    function MakeFaceSlider(idx) {
+        // poij rather than storing the encoding value in data-encodingvalue,
+        // store it in the model, and use Model.getEncoding instead of
+        // CurrentFaceView.getCurrentFaceEncodingFromSliders. Also need to put
+        // binding in place to get and set the encoding value on slider clicked.
+        return `<div id="${CURRENT_FACE_SLIDER_ID_PREFIX}${idx}" \
+                    class="CurrentFaceSlider"></div>`
     }
 
     /**
@@ -27,7 +35,9 @@ const CurrentFaceView = (() => {
      */
     CurrentFaceView.loadEncodingIntoCurrentFaceSliders = (encoding) => {
         for (let i = 0; i < Conf.NUM_SLIDERS; i++) {
-            $("#" + CURRENT_FACE_SLIDER_ID_PREFIX + i).val(encoding[i])
+            const percent = (encoding[i] + 1) / 2 * 100
+            const color = Perc2Color(percent)
+            $("#" + CURRENT_FACE_SLIDER_ID_PREFIX + i).css("background", color)
         }
     }
 

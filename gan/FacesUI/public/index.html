@@ -10,6 +10,7 @@
 <script src="/js/assert.js"></script>
 <script src="/js/Conf.js"></script>
 <script src="/js/API.js"></script>
+<script src="/lib/Perc2Color.js"></script>
 <script src="/models/FacesGridModel.js"></script>
 <script src="/models/CurrentFaceModel.js"></script>
 <script src="/models/HistoryModel.js"></script>
@@ -42,21 +43,23 @@
             <br><br>
         </div>
 
-        <div class="Help">[ 2. Click on any face to customize it. ]</div><br>
+        <div class="Help">[ 2. These are random starter faces. Click on any face
+        to customize it. ]</div><br>
         <div><img id="FacesGridImg"/></div><br>
 
-        <!-- <div id="CellPosition" class="Debug"></div> -->
-        <div class="Help">[ 3. Click the SIMILAR FACES button to generate
-        similar faces to the current face. Alternatively, use the sliders to
-        customize and click RENDER. ]</div><br>
+        <div class="Help">[ 3. The face you selected is displayed below. Its
+        encoding is displayed to the left. You can click on each square to
+        change the encoding, then click RENDER to see the result. Alternatively
+        click on the SIMILAR FACES button to render faces similar to the current
+        face. ]</div><br>
 
         <div id="CurrentFaceBox">
             <div id="CurrentFaceSlidersBox">
                 <div id="CurrentFaceSlidersList"></div>
                 <br>
-                <div class="Help">[ This is the encoding for your current face.
-                You can copy and save it, or paste a previously saved encoding
-                and click Load Encoding to render it. ]</div>
+                <div class="Help">[ This is the same encoding as above, in
+                numerals. You can copy and save it, or paste a previously saved
+                encoding and click RENDER to render it. ]</div>
                 <div id="CopyPasteCurrentFaceEncodingBox">
                     <input id="PasteEncodingInput" type="text" class="form-control" placeholder="-0.1, 0.2, 0.9,...">
                     <button id="RenderEncodingButton"
