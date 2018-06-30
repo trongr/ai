@@ -1,7 +1,9 @@
 const CurrentFaceModel = (() => {
     const CurrentFaceModel = {}
 
-    CurrentFaceModel.encodings = null // encoding for current face
+    CurrentFaceModel.encoding = null // encoding for current face
+
+    // poij set default encoding on load.
 
     /**
      * Save the current face's encoding on face load.
@@ -12,8 +14,7 @@ const CurrentFaceModel = (() => {
     }
 
     /**
-     * Get current encoding. Not used yet because typically we want to get the
-     * slider values directly, instead of from this model.
+     * Get current encoding.
      */
     CurrentFaceModel.getEncoding = () => {
         return CurrentFaceModel.encoding

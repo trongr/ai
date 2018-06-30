@@ -26,18 +26,6 @@ const CurrentFaceView = (() => {
     }
 
     /**
-     * Load encoding into the current face sliders.
-     * @param {*} encoding
-     */
-    CurrentFaceView.loadEncodingIntoCurrentFaceSliders = (encoding) => {
-        for (let i = 0; i < Conf.NUM_SLIDERS; i++) {
-            const percent = (encoding[i] + 1) / 2 * 100
-            const color = Perc2Color(percent)
-            $("#" + CURRENT_FACE_SLIDER_ID_PREFIX + i).css("background", color)
-        }
-    }
-
-    /**
      * Load the encoding into the current face, e.g. when user clicks on the
      * grid, or the RENDER button to re-render a slider config; i.e. saves the
      * encoding into the CurrentFaceModel, gets the face render from the server,
@@ -49,8 +37,7 @@ const CurrentFaceView = (() => {
         console.log(tag, encoding)
         const { status, img } = await API.getFaceByEncoding(encoding)
         CurrentFaceModel.saveEncoding(encoding)
-        CurrentFaceView.loadEncodingIntoCurrentFaceSliders(encoding)
-        CurrentFaceView.loadEncodingIntoPasteEncodingInput(encoding)
+        CurrentFaceView.loadEncodingIntoCurrentFaceSlidersAndPasteEncodingInput(encoding)
         HistoryView.saveEncodingImg(encoding, img)
         ViewsUtils.loadImgFromBase64("CurrentFace", img)
         ViewsUtils.scrollTo("CurrentFace")
@@ -67,7 +54,8 @@ const CurrentFaceView = (() => {
             const encoding = $("#PasteEncodingInput").val().split(",")
 
             encoding.map(e => {
-                assert(!isNaN(parseFloat(e)), `${tag}: Expected encoding value ${e} to be a float`)
+                e = parseFloat(e)
+                assert(e >= -1 && e <= 1, `${tag}: Expected encoding value ${e} to be a float between -1 and 1`)
             })
 
             assert(encoding.length == Conf.NUM_SLIDERS,
@@ -84,13 +72,38 @@ const CurrentFaceView = (() => {
     }
 
     /**
+     * Load encoding into the current face sliders. This method should be called
+     * with loadEncodingIntoPasteEncodingInput.
+     *
+     * @param {*} encoding
+     */
+    CurrentFaceView.loadEncodingIntoCurrentFaceSliders = (encoding) => {
+        for (let i = 0; i < Conf.NUM_SLIDERS; i++) {
+            const percent = (encoding[i] + 1) / 2 * 100
+            const color = Perc2Color(percent)
+            $("#" + CURRENT_FACE_SLIDER_ID_PREFIX + i).css("background", color)
+        }
+    }
+
+    /**
      * Loads encoding into PasteEncodingInput so user can copy and save it for
-     * later.
+     * later. This method should be called with
+     * loadEncodingIntoCurrentFaceSliders.
      * @param {*} encoding
      */
     CurrentFaceView.loadEncodingIntoPasteEncodingInput = (encoding) => {
         encoding = encoding.map(e => e.toFixed(4))
         $("#PasteEncodingInput").val(encoding.toString())
+    }
+
+    /**
+     * Helper method to load encoding into CurrentFaceSliders and
+     * PasteEncodingInput.
+     * @param {*} encoding
+     */
+    CurrentFaceView.loadEncodingIntoCurrentFaceSlidersAndPasteEncodingInput = (encoding) => {
+        CurrentFaceView.loadEncodingIntoCurrentFaceSliders(encoding)
+        CurrentFaceView.loadEncodingIntoPasteEncodingInput(encoding)
     }
 
     return CurrentFaceView

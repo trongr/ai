@@ -6,6 +6,7 @@ const CurrentFaceBinding = (() => {
     CurrentFaceBinding.init = () => {
         CurrentFaceBinding.bindRenderSimilarFacesButton()
         CurrentFaceBinding.bindRenderEncodingButton()
+        CurrentFaceBinding.bindPasteEncodingInput()
     }
 
     /**
@@ -17,8 +18,6 @@ const CurrentFaceBinding = (() => {
         $("#RenderSimilarFacesButton").click(async function (e) {
             try {
                 const encoding = CurrentFaceModel.getEncoding()
-                // poij set default encoding on load
-                if (!encoding) return console.error(tag, "No encoding to render")
                 FacesGridView.getSimilarFacesAndLoadIntoGrid(encoding)
             } catch (er) {
                 console.error(tag, er)
@@ -26,19 +25,28 @@ const CurrentFaceBinding = (() => {
         })
     }
 
-    // poij add binding for pasteencodinginput change, and update encoding
-    // model.
+    CurrentFaceBinding.bindPasteEncodingInput = () => {
+        const tag = "CurrentFaceBinding.bindPasteEncodingInput"
+        $("#PasteEncodingInput").on("input", function (e) {
+            const encoding = CurrentFaceView.getEncodingFromPasteEncodingInput()
+            if (encoding) {
+                console.log(tag, "Updating:", encoding)
+                CurrentFaceModel.saveEncoding(encoding)
+                CurrentFaceView.loadEncodingIntoCurrentFaceSlidersAndPasteEncodingInput(encoding)
+            } else console.error(tag, "Invalid encoding")
+        })
+    }
+
     /**
-     * When user clicks RenderEncodingButton, we take the list of floats in
-     * PasteEncodingInput (if any) and loads it into the sliders.
+     * When user clicks RenderEncodingButton, we take the encoding in the
+     * CurrentFaceModel, request it from the server, and load it into the
+     * current face.
      */
     CurrentFaceBinding.bindRenderEncodingButton = () => {
         const tag = "CurrentFaceBinding.bindRenderEncodingButton"
         $("#RenderEncodingButton").click(async function (e) {
             try {
                 const encoding = CurrentFaceModel.getEncoding()
-                // poij set default encoding on load
-                if (!encoding) return console.error(tag, "No encoding to render")
                 CurrentFaceView.getFaceByEncodingAndLoadIntoCurrentFace(encoding)
             } catch (er) {
                 console.error(tag, er)
