@@ -16,7 +16,8 @@ const CurrentFaceBinding = (() => {
         const tag = "CurrentFaceBinding.bindRenderSimilarFacesButton"
         $("#RenderSimilarFacesButton").click(async function (e) {
             try {
-                const encoding = CurrentFaceView.getCurrentFaceEncodingFromSliders()
+                const encoding = CurrentFaceModel.getEncoding()
+                // poij set default encoding on load
                 if (!encoding) return console.error(tag, "No encoding to render")
                 FacesGridView.getSimilarFacesAndLoadIntoGrid(encoding)
             } catch (er) {
@@ -25,6 +26,8 @@ const CurrentFaceBinding = (() => {
         })
     }
 
+    // poij add binding for pasteencodinginput change, and update encoding
+    // model.
     /**
      * When user clicks RenderEncodingButton, we take the list of floats in
      * PasteEncodingInput (if any) and loads it into the sliders.
@@ -33,8 +36,9 @@ const CurrentFaceBinding = (() => {
         const tag = "CurrentFaceBinding.bindRenderEncodingButton"
         $("#RenderEncodingButton").click(async function (e) {
             try {
-                const encoding = CurrentFaceView.getEncodingFromPasteEncodingInput()
-                if (!encoding) return // This is a user error.
+                const encoding = CurrentFaceModel.getEncoding()
+                // poij set default encoding on load
+                if (!encoding) return console.error(tag, "No encoding to render")
                 CurrentFaceView.getFaceByEncodingAndLoadIntoCurrentFace(encoding)
             } catch (er) {
                 console.error(tag, er)

@@ -21,10 +21,6 @@ const CurrentFaceView = (() => {
      * @param {*} idx
      */
     function MakeFaceSlider(idx) {
-        // poij rather than storing the encoding value in data-encodingvalue,
-        // store it in the model, and use Model.getEncoding instead of
-        // CurrentFaceView.getCurrentFaceEncodingFromSliders. Also need to put
-        // binding in place to get and set the encoding value on slider clicked.
         return `<div id="${CURRENT_FACE_SLIDER_ID_PREFIX}${idx}" \
                     class="CurrentFaceSlider"></div>`
     }
@@ -39,17 +35,6 @@ const CurrentFaceView = (() => {
             const color = Perc2Color(percent)
             $("#" + CURRENT_FACE_SLIDER_ID_PREFIX + i).css("background", color)
         }
-    }
-
-    /**
-     * Get the encoding from the current face sliders
-     */
-    CurrentFaceView.getCurrentFaceEncodingFromSliders = () => {
-        let encoding = []
-        for (let i = 0; i < Conf.NUM_SLIDERS; i++) {
-            encoding[i] = parseFloat($("#" + CURRENT_FACE_SLIDER_ID_PREFIX + i).val())
-        }
-        return encoding
     }
 
     /**
