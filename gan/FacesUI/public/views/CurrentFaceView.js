@@ -37,7 +37,8 @@ const CurrentFaceView = (() => {
         console.log(tag, encoding)
         const { status, img } = await API.getFaceByEncoding(encoding)
         CurrentFaceModel.saveEncoding(encoding)
-        CurrentFaceView.loadEncodingIntoCurrentFaceSlidersAndPasteEncodingInput(encoding)
+        CurrentFaceView.loadEncodingIntoCurrentFaceSliders(encoding)
+        CurrentFaceView.loadEncodingIntoPasteEncodingInput(encoding)
         HistoryView.saveEncodingImg(encoding, img)
         ViewsUtils.loadImgFromBase64("CurrentFace", img)
         ViewsUtils.scrollTo("CurrentFace")
@@ -72,12 +73,12 @@ const CurrentFaceView = (() => {
     }
 
     /**
-     * Load encoding into the current face sliders. This method should be called
-     * with loadEncodingIntoPasteEncodingInput.
-     *
+     * Load encoding into the current face sliders.
      * @param {*} encoding
      */
     CurrentFaceView.loadEncodingIntoCurrentFaceSliders = (encoding) => {
+        const tag = "CurrentFaceView.loadEncodingIntoCurrentFaceSliders"
+        assert(encoding instanceof Array, `${tag}. Expected encoding to be an Array`)
         for (let i = 0; i < Conf.NUM_SLIDERS; i++) {
             const percent = (encoding[i] + 1) / 2 * 100
             const color = Perc2Color(percent)
@@ -87,23 +88,12 @@ const CurrentFaceView = (() => {
 
     /**
      * Loads encoding into PasteEncodingInput so user can copy and save it for
-     * later. This method should be called with
-     * loadEncodingIntoCurrentFaceSliders.
+     * later.
      * @param {*} encoding
      */
     CurrentFaceView.loadEncodingIntoPasteEncodingInput = (encoding) => {
         encoding = encoding.map(e => e.toFixed(4))
         $("#PasteEncodingInput").val(encoding.toString())
-    }
-
-    /**
-     * Helper method to load encoding into CurrentFaceSliders and
-     * PasteEncodingInput.
-     * @param {*} encoding
-     */
-    CurrentFaceView.loadEncodingIntoCurrentFaceSlidersAndPasteEncodingInput = (encoding) => {
-        CurrentFaceView.loadEncodingIntoCurrentFaceSliders(encoding)
-        CurrentFaceView.loadEncodingIntoPasteEncodingInput(encoding)
     }
 
     return CurrentFaceView

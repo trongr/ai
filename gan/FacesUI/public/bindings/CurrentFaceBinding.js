@@ -32,7 +32,7 @@ const CurrentFaceBinding = (() => {
             if (encoding) {
                 console.log(tag, "Updating:", encoding)
                 CurrentFaceModel.saveEncoding(encoding)
-                CurrentFaceView.loadEncodingIntoCurrentFaceSlidersAndPasteEncodingInput(encoding)
+                CurrentFaceView.loadEncodingIntoCurrentFaceSliders(encoding)
             } else console.error(tag, "Invalid encoding")
         })
     }

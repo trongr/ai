@@ -1,10 +1,22 @@
 const CurrentFaceModel = (() => {
     const CurrentFaceModel = {}
 
-    CurrentFaceModel.encoding = null // encoding for current face
+    CurrentFaceModel.encoding = [] // encoding for current face
 
-    // poij set default encoding on load.
-
+    CurrentFaceModel.init = () => {
+        const encoding = CurrentFaceView.getEncodingFromPasteEncodingInput()
+        // Use existing values in PasteEncodingInput if any, OTW default to 0's.
+        if (encoding) {
+            CurrentFaceModel.saveEncoding(encoding)
+            CurrentFaceView.loadEncodingIntoCurrentFaceSliders(encoding)
+        } else {
+            const encoding = []
+            for (let i = 0; i < Conf.NUM_SLIDERS; i++) { encoding.push(0) }
+            CurrentFaceModel.saveEncoding(encoding)
+            CurrentFaceView.loadEncodingIntoCurrentFaceSliders(encoding)
+            CurrentFaceView.loadEncodingIntoPasteEncodingInput(encoding)
+        }
+    }
     /**
      * Save the current face's encoding on face load.
      * @param {*} encoding
