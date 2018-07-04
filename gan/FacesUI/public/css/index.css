@@ -60,14 +60,10 @@ img#CurrentFace {
     height: 40px;
 }
 
-#HistoryBox {
-    height: 300px;
-}
-
 #HistoryBox .HistoryImg {
     display: inline-block;
-    height: 100%;
-    margin: 5px;
+    vertical-align: top;
+    height: 300px;
 }
 
 .Help {

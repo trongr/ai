@@ -8,7 +8,7 @@ const CurrentFaceModel = (() => {
         // Use existing values in PasteEncodingInput if any, OTW default to 0's.
         if (encoding) {
             CurrentFaceModel.saveEncoding(encoding)
-            CurrentFaceView.loadEncodingIntoCurrentFaceSliders(encoding)
+            CurrentFaceSlidersView.loadEncodingIntoCurrentFaceSliders(encoding)
         } else {
             const encoding = []
             for (let i = 0; i < Conf.NUM_SLIDERS; i++) { encoding.push(0) }

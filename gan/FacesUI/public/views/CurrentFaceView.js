@@ -1,30 +1,6 @@
 const CurrentFaceView = (() => {
     const CurrentFaceView = {}
 
-    const CURRENT_FACE_SLIDER_ID_PREFIX = "CurrentFaceSlider"
-
-    CurrentFaceView.init = () => {
-        CurrentFaceView.initCurrentFaceSliders()
-    }
-
-    /**
-     * Init sliders for CurrentFace config
-     */
-    CurrentFaceView.initCurrentFaceSliders = () => {
-        for (let i = 0; i < Conf.NUM_SLIDERS; i++) {
-            $("#CurrentFaceSlidersList").append(MakeFaceSlider(i))
-        }
-    }
-
-    /**
-     * Make a face slider.
-     * @param {*} idx
-     */
-    function MakeFaceSlider(idx) {
-        return `<div id="${CURRENT_FACE_SLIDER_ID_PREFIX}${idx}" \
-                    class="CurrentFaceSlider"></div>`
-    }
-
     /**
      * Load the encoding into the current face, e.g. when user clicks on the
      * grid, or the RENDER button to re-render a slider config; i.e. saves the
@@ -37,7 +13,7 @@ const CurrentFaceView = (() => {
         console.log(tag, encoding)
         const { status, img } = await API.getFaceByEncoding(encoding)
         CurrentFaceModel.saveEncoding(encoding)
-        CurrentFaceView.loadEncodingIntoCurrentFaceSliders(encoding)
+        CurrentFaceSlidersView.loadEncodingIntoCurrentFaceSliders(encoding)
         CurrentFaceView.loadEncodingIntoPasteEncodingInput(encoding)
         HistoryView.saveEncodingImg(encoding, img)
         ViewsUtils.loadImgFromBase64("CurrentFace", img)
@@ -69,20 +45,6 @@ const CurrentFaceView = (() => {
             return encoding.map(e => parseFloat(e))
         } catch (e) {
             return null
-        }
-    }
-
-    /**
-     * Load encoding into the current face sliders.
-     * @param {*} encoding
-     */
-    CurrentFaceView.loadEncodingIntoCurrentFaceSliders = (encoding) => {
-        const tag = "CurrentFaceView.loadEncodingIntoCurrentFaceSliders"
-        assert(encoding instanceof Array, `${tag}. Expected encoding to be an Array`)
-        for (let i = 0; i < Conf.NUM_SLIDERS; i++) {
-            const percent = (encoding[i] + 1) / 2 * 100
-            const color = Perc2Color(percent)
-            $("#" + CURRENT_FACE_SLIDER_ID_PREFIX + i).css("background", color)
         }
     }
 
