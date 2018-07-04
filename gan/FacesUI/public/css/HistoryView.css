@@ -1,0 +1,13 @@
+#HistoryBox .HistoryBoxItem {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+}
+
+.HistoryBoxItem .HistoryEncodingBox {
+    width: 100%;
+}
+
+.HistoryBoxItem .HistoryImg {
+    width: 100%;
+}

@@ -19,12 +19,17 @@ const HistoryView = (() => {
      * @param {*} img
      */
     HistoryView.loadImgIntoHistoryBox = (idx, img) => {
-        const image = $(
-            `<img id="HistoryImg${idx}" \
-                class="HistoryImg" data-historyimgidx="${idx}">`
+        const HistoryImgBox = $(
+            `<div class="HistoryBoxItem">
+                <div class="HistoryEncodingBox">
+
+                </div>
+                <img id="HistoryImg${idx}"
+                    class="HistoryImg" data-historyimgidx="${idx}"
+                    src="${img}">
+             </div>`
         )
-        image.attr('src', img)
-        image.prependTo('#HistoryBox')
+        HistoryImgBox.prependTo("#HistoryBox")
     }
 
     return HistoryView

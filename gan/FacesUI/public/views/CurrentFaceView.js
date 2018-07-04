@@ -13,7 +13,7 @@ const CurrentFaceView = (() => {
         console.log(tag, encoding)
         const { status, img } = await API.getFaceByEncoding(encoding)
         CurrentFaceModel.saveEncoding(encoding)
-        CurrentFaceSlidersView.loadEncodingIntoCurrentFaceSliders(encoding)
+        FaceSlidersView.loadEncodingIntoCurrentFaceSliders(Conf.CurrentFaceSlidersList, encoding)
         CurrentFaceView.loadEncodingIntoPasteEncodingInput(encoding)
         HistoryView.saveEncodingImg(encoding, img)
         ViewsUtils.loadImgFromBase64("CurrentFace", img)

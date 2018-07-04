@@ -2,7 +2,7 @@ const Views = (() => {
     const Views = {}
 
     Views.init = () => {
-        CurrentFaceSlidersView.init()
+        FaceSlidersView.init()
     }
 
     return Views
