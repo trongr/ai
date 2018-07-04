@@ -16,12 +16,22 @@ const FaceSlidersView = (() => {
     }
 
     /**
+     *
+     * @param {*} ID
+     * @param {*} encoding
+     */
+    FaceSlidersView.createFaceSlidersWithEncoding = (ID, encoding) => {
+        FaceSlidersView.createFaceSliders(ID)
+        FaceSlidersView.loadEncodingIntoCurrentFaceSliders(ID, encoding)
+    }
+
+    /**
      * Make a face slider.
      * @param {*} ID of the parent box
-     * @param {*} idx
+     * @param {*} idx index of the slider in the encoding, e.g. 0-63.
      */
     function MakeFaceSlider(ID, idx) {
-        return `<div id="${ID}${idx}" class="CurrentFaceSlider"></div>`
+        return `<div id="${ID}${idx}" class="FaceSlider"></div>`
     }
 
     /**
@@ -31,18 +41,14 @@ const FaceSlidersView = (() => {
      */
     FaceSlidersView.loadEncodingIntoCurrentFaceSliders = (ID, encoding) => {
         const tag = "FaceSlidersView.loadEncodingIntoCurrentFaceSliders"
-        assert(encoding instanceof Array, `${tag}. Expected encoding to be an Array`)
-
-        for (let i = 0; i < Conf.NUM_SLIDERS; i++) {
-            const percent = (encoding[i] + 1) / 2 * 100
-            const color = Perc2Color(percent)
-            $("#" + ID + i).css("background", color)
-        }
-
-        // Resize the slider cells so they form a square.
+        assert(encoding instanceof Array,
+            `${tag}. Expected encoding ${encoding} to be an Array`)
         const parentWidth = $("#" + ID).width()
         const width = parseInt(parentWidth / Math.sqrt(Conf.NUM_SLIDERS))
-        $(".CurrentFaceSlider").width(width).height(width)
+        for (let i = 0; i < Conf.NUM_SLIDERS; i++) {
+            const color = Perc2Color((encoding[i] + 1) / 2 * 100)
+            $(`#${ID}${i}`).css("background", color).width(width).height(width)
+        }
     }
 
     return FaceSlidersView

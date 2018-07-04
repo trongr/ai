@@ -9,7 +9,7 @@ const HistoryView = (() => {
     HistoryView.saveEncodingImg = (encoding, img) => {
         const idx = HistoryModel.count()
         HistoryModel.push(encoding)
-        HistoryView.loadImgIntoHistoryBox(idx, img)
+        HistoryView.loadImgIntoHistoryBox(idx, img, encoding)
     }
 
     /**
@@ -18,18 +18,19 @@ const HistoryView = (() => {
      * as the img key in HistoryBox
      * @param {*} img
      */
-    HistoryView.loadImgIntoHistoryBox = (idx, img) => {
+    HistoryView.loadImgIntoHistoryBox = (idx, img, encoding) => {
+        const EncodingBoxID = `HistoryEncodingBox${idx}`
         const HistoryImgBox = $(
             `<div class="HistoryBoxItem">
-                <div class="HistoryEncodingBox">
-
-                </div>
                 <img id="HistoryImg${idx}"
                     class="HistoryImg" data-historyimgidx="${idx}"
                     src="${img}">
+                <div id="${EncodingBoxID}"
+                    class="HistoryEncodingBox"></div>
              </div>`
         )
         HistoryImgBox.prependTo("#HistoryBox")
+        FaceSlidersView.createFaceSlidersWithEncoding(EncodingBoxID, encoding)
     }
 
     return HistoryView

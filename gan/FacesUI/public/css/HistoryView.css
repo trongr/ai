@@ -1,6 +1,6 @@
 #HistoryBox .HistoryBoxItem {
     display: inline-block;
-    vertical-align: top;
+    margin: 5px;
     width: 200px;
 }
 
