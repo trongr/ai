@@ -32,11 +32,17 @@ const CurrentFaceSlidersView = (() => {
     CurrentFaceSlidersView.loadEncodingIntoCurrentFaceSliders = (encoding) => {
         const tag = "CurrentFaceSlidersView.loadEncodingIntoCurrentFaceSliders"
         assert(encoding instanceof Array, `${tag}. Expected encoding to be an Array`)
+
         for (let i = 0; i < Conf.NUM_SLIDERS; i++) {
             const percent = (encoding[i] + 1) / 2 * 100
             const color = Perc2Color(percent)
             $("#" + CURRENT_FACE_SLIDER_ID_PREFIX + i).css("background", color)
         }
+
+        // Resize the slider cells so they form a square.
+        const parentWidth = $("#CurrentFaceSlidersList").width()
+        const width = parseInt(parentWidth / Math.sqrt(Conf.NUM_SLIDERS))
+        $(".CurrentFaceSlider").width(width).height(width)
     }
 
     return CurrentFaceSlidersView
