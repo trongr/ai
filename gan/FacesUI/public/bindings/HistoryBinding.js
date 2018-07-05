@@ -6,7 +6,6 @@ const HistoryBinding = (() => {
     }
 
     function bindHistoryImgClick() {
-        const tag = "HistoryBinding.bindHistoryImgClick"
         $('body').on('click', "#HistoryBox .HistoryImg", function (e) {
             const idx = $(this).data("historyimgidx")
             const encoding = HistoryModel.getEncoding(idx)

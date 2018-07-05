@@ -28,10 +28,11 @@ const FaceSlidersView = (() => {
     /**
      * Make a face slider.
      * @param {*} ID of the parent box
-     * @param {*} idx index of the slider in the encoding, e.g. 0-63.
+     * @param {*} i index of the slider in the encoding, e.g. 0-63.
      */
-    function MakeFaceSlider(ID, idx) {
-        return `<div id="${ID}${idx}" class="FaceSlider"></div>`
+    function MakeFaceSlider(ID, i) {
+        return `<div id="${ID}${i}" class="FaceSlider"
+                    data-encodingparamidx="${i}"></div>`
     }
 
     /**
@@ -41,14 +42,25 @@ const FaceSlidersView = (() => {
      */
     FaceSlidersView.loadEncodingIntoCurrentFaceSliders = (ID, encoding) => {
         const tag = "FaceSlidersView.loadEncodingIntoCurrentFaceSliders"
-        assert(encoding instanceof Array,
-            `${tag}. Expected encoding ${encoding} to be an Array`)
+        assert(encoding instanceof Array, `${tag}. Expected encoding ${encoding} to be an Array`)
         const parentWidth = $("#" + ID).width()
         const width = parseInt(parentWidth / Math.sqrt(Conf.NUM_SLIDERS))
         for (let i = 0; i < Conf.NUM_SLIDERS; i++) {
-            const color = Perc2Color((encoding[i] + 1) / 2 * 100)
-            $(`#${ID}${i}`).css("background", color).width(width).height(width)
+            FaceSlidersView.setEncodingCellValue(i, ID, encoding[i], width)
         }
+    }
+
+    /**
+     * ID and i together identifies the Encoding Cell.
+     * @param {*} i
+     * @param {*} ID of the parent box containing the sliders
+     * @param {*} EncodingValue
+     * @param {*} width Optional cell width.
+     */
+    FaceSlidersView.setEncodingCellValue = (i, ID, EncodingValue, width) => {
+        const color = Perc2Color((EncodingValue + 1) / 2 * 100)
+        const elmt = $(`#${ID}${i}`).css("background", color)
+        if (width) elmt.width(width).height(width)
     }
 
     return FaceSlidersView

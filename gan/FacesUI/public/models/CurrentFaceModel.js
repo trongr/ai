@@ -33,5 +33,22 @@ const CurrentFaceModel = (() => {
         return CurrentFaceModel.encoding
     }
 
+    /**
+     * Get the encoding value at index
+     * @param {*} i
+     */
+    CurrentFaceModel.getEncodingParamAtIndex = (i) => {
+        return CurrentFaceModel.encoding[i]
+    }
+
+    /**
+     * Set
+     * @param {*} i
+     * @param {*} v
+     */
+    CurrentFaceModel.setEncodingParamAtIndex = (i, v) => {
+        CurrentFaceModel.encoding[i] = v
+    }
+
     return CurrentFaceModel
 })();
