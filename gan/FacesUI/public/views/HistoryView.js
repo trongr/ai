@@ -9,7 +9,6 @@ const HistoryView = (() => {
     HistoryView.saveEncodingImg = (encoding, img) => {
         const idx = HistoryModel.count()
         HistoryModel.push(encoding)
-        console.log("poij history", HistoryModel.getAllEncodings())
         HistoryView.loadImgIntoHistoryBox(idx, img, encoding)
     }
 
