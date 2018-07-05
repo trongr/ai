@@ -13,16 +13,15 @@ const FacesGridModel = (() => {
      */
     FacesGridModel.saveEncodings = (nencodings, NUM_CELLS_ROWS = 10, NUM_CELLS_COLS = 10) => {
         const tag = "FacesGridModel.saveEncodings"
-        assert(nencodings.length == NUM_CELLS_ROWS * NUM_CELLS_COLS,
-            `${tag}: Random faces encoding length ${nencodings.length} doesn't match expected number of rows ${NUM_CELLS_ROWS} and columns ${NUM_CELLS_COLS}`)
+        assert(nencodings.length == NUM_CELLS_ROWS * NUM_CELLS_COLS, `${tag}: Random faces encoding length ${nencodings.length} doesn't match expected number of rows ${NUM_CELLS_ROWS} and columns ${NUM_CELLS_COLS}`)
         let encodings = []
-        nencodings.map((e, idx) => {
+        nencodings.map((enc, idx) => {
             const i = parseInt(idx / NUM_CELLS_ROWS) // However many multiples is the row number i
             const j = idx - (i * NUM_CELLS_ROWS) // Whatever remains is the column number j
             if (j == 0) encodings.push([]) // Create a new row
-            encodings[i][j] = e
+            encodings[i][j] = enc
         })
-        FacesGridModel.encodings = encodings
+        FacesGridModel.encodings = _.cloneDeep(encodings)
     }
 
     /**
@@ -32,7 +31,7 @@ const FacesGridModel = (() => {
      * @param {*} j cell column
      */
     FacesGridModel.getEncoding = (i, j) => {
-        return FacesGridModel.encodings[i][j]
+        return _.cloneDeep(FacesGridModel.encodings[i][j])
     }
 
     return FacesGridModel

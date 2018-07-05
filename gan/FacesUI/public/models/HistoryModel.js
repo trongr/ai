@@ -5,7 +5,7 @@ const HistoryModel = (() => {
     const encodings = []
 
     HistoryModel.push = (encoding) => {
-        encodings.push(encoding)
+        encodings.push(_.cloneDeep(encoding))
     }
 
     /**
@@ -13,7 +13,11 @@ const HistoryModel = (() => {
      * @param {*} idx
      */
     HistoryModel.getEncoding = (idx) => {
-        return encodings[idx]
+        return _.cloneDeep(encodings[idx])
+    }
+
+    HistoryModel.getAllEncodings = () => {
+        return _.cloneDeep(encodings)
     }
 
     /**

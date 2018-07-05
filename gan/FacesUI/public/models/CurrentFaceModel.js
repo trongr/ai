@@ -19,18 +19,20 @@ const CurrentFaceModel = (() => {
     }
 
     /**
-     * Save the current face's encoding on face load.
+     * Save the current face's encoding on face load. Clone deep in case caller
+     * modifies it on the outside.
      * @param {*} encoding
      */
     CurrentFaceModel.saveEncoding = (encoding) => {
-        CurrentFaceModel.encoding = encoding
+        CurrentFaceModel.encoding = _.cloneDeep(encoding)
     }
 
     /**
-     * Get current encoding.
+     * Get current encoding. Clone deep in case caller modifies it on the
+     * outside.
      */
     CurrentFaceModel.getEncoding = () => {
-        return CurrentFaceModel.encoding
+        return _.cloneDeep(CurrentFaceModel.encoding)
     }
 
     /**
