@@ -17,7 +17,7 @@ const FaceSlidersBinding = (() => {
 
             let EncodingValue = CurrentFaceModel.getEncodingParamAtIndex(i)
             // Increase on click, decrease on ALT + click.
-            EncodingValue = EncodingValue + (e.altKey ? -.2 : .2)
+            EncodingValue = EncodingValue + (e.altKey ? .2 : -.2)
             EncodingValue = MathLib.WrapXAroundMinusOneAndOne(EncodingValue)
 
             CurrentFaceModel.setEncodingParamAtIndex(i, EncodingValue)
