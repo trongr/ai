@@ -6,8 +6,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 <link rel='stylesheet' href='/css/index.css' />
+<link rel='stylesheet' href='/css/FacesGridView.css' />
 <link rel='stylesheet' href='/css/HistoryView.css' />
 <link rel='stylesheet' href='/css/FaceSlidersView.css' />
+<link rel='stylesheet' href='/css/CurrentFaceView.css' />
 <script src="/js/lodash.min.js"></script>
 <script src="/js/jquery-3.3.1.js"></script>
 <script src="/js/assert.js"></script>
@@ -76,6 +78,17 @@
                     </button>
                 </div>
                 <div id="CurrentFaceRenderBox">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-warning">
+                            <input name="SimilarFacesStrengthInput" type="radio" value="Low">Low variation
+                        </label>
+                        <label class="btn btn-warning active">
+                            <input name="SimilarFacesStrengthInput" type="radio" value="Medium" checked>Medium
+                        </label>
+                        <label class="btn btn-warning">
+                            <input name="SimilarFacesStrengthInput" type="radio" value="High">High
+                        </label>
+                    </div>
                     <button id="RenderSimilarFacesButton"
                         class="btn btn-warning btn-lg" type="button">
                         SIMILAR FACES

@@ -1,0 +1,25 @@
+#CurrentFaceBox {
+  display: flex;
+}
+
+#CurrentFaceSlidersBox {
+  padding: 10px;
+  flex: 0 0 40%;
+}
+
+#CurrentFaceImgBox {
+  flex: 1;
+}
+
+img#CurrentFace {
+  width: 100%;
+}
+
+#CopyPasteCurrentFaceEncodingBox, #CurrentFaceRenderBox {
+  text-align: right;
+  padding: 10px;
+}
+
+#CopyPasteCurrentFaceEncodingBox>button, #CopyPasteCurrentFaceEncodingBox>input, #CurrentFaceRenderBox>button, #CurrentFaceRenderBox>div {
+  margin: 5px;
+}
