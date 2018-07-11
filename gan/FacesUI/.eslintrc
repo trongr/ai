@@ -1,5 +1,12 @@
 {
-  "extends": ["google"],
+  "extends": [
+    "google",
+    "airbnb",
+    "plugin:prettier/recommended",
+    "eslint:recommended",
+    "prettier",
+    "prettier/standard"
+  ],
   "parserOptions": {
     "ecmaVersion": 8
   },
@@ -8,17 +15,22 @@
     "mocha": true
   },
   "rules": {
-    "no-console": 0,
-    "no-empty": 0,
     "indent": ["error", 2],
     "quotes": ["error", "double"],
     "semi": ["error", "never"],
+    "consistent-return": "off",
+    "no-underscore-dangle": "off",
+    "func-names": "off",
+    "no-param-reassign": "off",
+    "no-console": "off",
+    "no-multi-assign": "off",
     "object-curly-spacing": [
       "error",
       "always",
       { "arraysInObjects": true, "objectsInObjects": true }
     ],
     "no-invalid-this": "off",
-    "new-cap": "off"
+    "new-cap": "off",
+    "no-shadow": "off"
   }
 }

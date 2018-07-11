@@ -21,12 +21,20 @@ import MathLib
 import TensorFlowLib
 
 # Train params
-tf.app.flags.DEFINE_boolean("train", False, "True for training, False for testing [False].")
-tf.app.flags.DEFINE_integer("train_size", None, "How many images to train on [None]. Omit to train on all images.")
+tf.app.flags.DEFINE_boolean("train", False,
+                            "True for training, False for testing [False].")
+tf.app.flags.DEFINE_integer(
+    "train_size", None,
+    "How many images to train on [None]. Omit to train on all images.")
 # Test params
-tf.app.flags.DEFINE_string("noise_input", None, "List of random inputs [None]. Omit to create random image.")
-tf.app.flags.DEFINE_string("output", "output", "Name of the output image [output].")
-tf.app.flags.DEFINE_boolean("find_encoding", False, "Whether to find encoding of a ground-truth image [False].")
+tf.app.flags.DEFINE_string(
+    "noise_input", None,
+    "List of random inputs [None]. Omit to create random image.")
+tf.app.flags.DEFINE_string("output", "output",
+                           "Name of the output image [output].")
+tf.app.flags.DEFINE_boolean(
+    "find_encoding", False,
+    "Whether to find encoding of a ground-truth image [False].")
 FLAGS = tf.app.flags.FLAGS
 
 noise_input = None
@@ -50,35 +58,105 @@ logs_path = "logs/" + prefix
 def discriminator(x):
     with tf.variable_scope("discriminator"):
         # Cluster 1
-        fc0 = tf.layers.dense(inputs=x, units=16 * 16, activation=MathLib.leaky_relu)
+        fc0 = tf.layers.dense(
+            inputs=x, units=16 * 16, activation=MathLib.leaky_relu)
         rs0 = tf.reshape(fc0, [-1, 16, 16, 1])
-        c1 = tf.layers.conv2d(inputs=rs0, filters=16, kernel_size=5, strides=1, padding='same', activation=MathLib.leaky_relu, use_bias=True)
-        c2 = tf.layers.conv2d(inputs=c1, filters=16, kernel_size=5, strides=1, padding='same', activation=MathLib.leaky_relu, use_bias=True)
+        c1 = tf.layers.conv2d(
+            inputs=rs0,
+            filters=16,
+            kernel_size=5,
+            strides=1,
+            padding='same',
+            activation=MathLib.leaky_relu,
+            use_bias=True)
+        c2 = tf.layers.conv2d(
+            inputs=c1,
+            filters=16,
+            kernel_size=5,
+            strides=1,
+            padding='same',
+            activation=MathLib.leaky_relu,
+            use_bias=True)
         rs3 = tf.reshape(c2, [-1, 16 * 16 * 16])
         # Cluster 2
-        fc4 = tf.layers.dense(inputs=rs3, units=16 * 16, activation=MathLib.leaky_relu)
+        fc4 = tf.layers.dense(
+            inputs=rs3, units=16 * 16, activation=MathLib.leaky_relu)
         rs4 = tf.reshape(fc4, [-1, 16, 16, 1])
-        c5 = tf.layers.conv2d(inputs=rs4, filters=16, kernel_size=5, strides=1, padding='same', activation=MathLib.leaky_relu, use_bias=True)
-        c6 = tf.layers.conv2d(inputs=c5, filters=16, kernel_size=5, strides=1, padding='same', activation=MathLib.leaky_relu, use_bias=True)
+        c5 = tf.layers.conv2d(
+            inputs=rs4,
+            filters=16,
+            kernel_size=5,
+            strides=1,
+            padding='same',
+            activation=MathLib.leaky_relu,
+            use_bias=True)
+        c6 = tf.layers.conv2d(
+            inputs=c5,
+            filters=16,
+            kernel_size=5,
+            strides=1,
+            padding='same',
+            activation=MathLib.leaky_relu,
+            use_bias=True)
         rs7 = tf.reshape(c6, [-1, 16 * 16 * 16])
         # Tail cluster 3
-        fc7 = tf.layers.dense(inputs=rs7, units=16 * 16, activation=MathLib.leaky_relu)
+        fc7 = tf.layers.dense(
+            inputs=rs7, units=16 * 16, activation=MathLib.leaky_relu)
         logits = tf.layers.dense(inputs=fc7, units=1)
         return logits
 
 
 def generator(z, keep_prob, training=False):
     with tf.variable_scope("generator"):
-        fc0 = tf.layers.dense(inputs=z, units=1024, activation=MathLib.leaky_relu)
-        bn0 = tf.layers.batch_normalization(fc0, axis=-1, momentum=0.99, epsilon=0.001, center=True, scale=True, training=training)
+        fc0 = tf.layers.dense(
+            inputs=z, units=1024, activation=MathLib.leaky_relu)
+        bn0 = tf.layers.batch_normalization(
+            fc0,
+            axis=-1,
+            momentum=0.99,
+            epsilon=0.001,
+            center=True,
+            scale=True,
+            training=training)
 
-        fc1 = tf.layers.dense(inputs=bn0, units=7 * 7 * 128, activation=MathLib.leaky_relu)
-        bn1 = tf.layers.batch_normalization(fc1, axis=-1, momentum=0.99, epsilon=0.001, center=True, scale=True, training=training)
+        fc1 = tf.layers.dense(
+            inputs=bn0, units=7 * 7 * 128, activation=MathLib.leaky_relu)
+        bn1 = tf.layers.batch_normalization(
+            fc1,
+            axis=-1,
+            momentum=0.99,
+            epsilon=0.001,
+            center=True,
+            scale=True,
+            training=training)
         rs1 = tf.reshape(bn1, [-1, 7, 7, 128])
 
-        ct2 = tf.layers.conv2d_transpose(rs1, filters=64, kernel_size=5, strides=2, padding='SAME', data_format='channels_last', activation=MathLib.leaky_relu, use_bias=True)  # (N, 14, 14, 64)
-        bn2 = tf.layers.batch_normalization(ct2, axis=-1, momentum=0.99, epsilon=0.001, center=True, scale=True, training=training)  # Same as previous
-        ct3 = tf.layers.conv2d_transpose(bn2, filters=1, kernel_size=5, strides=2, padding='SAME', data_format='channels_last', activation=MathLib.leaky_relu, use_bias=True)  # (N, 28, 28, 1)
+        ct2 = tf.layers.conv2d_transpose(
+            rs1,
+            filters=64,
+            kernel_size=5,
+            strides=2,
+            padding='SAME',
+            data_format='channels_last',
+            activation=MathLib.leaky_relu,
+            use_bias=True)  # (N, 14, 14, 64)
+        bn2 = tf.layers.batch_normalization(
+            ct2,
+            axis=-1,
+            momentum=0.99,
+            epsilon=0.001,
+            center=True,
+            scale=True,
+            training=training)  # Same as previous
+        ct3 = tf.layers.conv2d_transpose(
+            bn2,
+            filters=1,
+            kernel_size=5,
+            strides=2,
+            padding='SAME',
+            data_format='channels_last',
+            activation=MathLib.leaky_relu,
+            use_bias=True)  # (N, 28, 28, 1)
 
         rs4 = tf.reshape(ct3, [-1, 28 * 28])
         img = tf.layers.dense(inputs=rs4, units=x_dim, activation=tf.tanh)
@@ -128,22 +206,54 @@ if glob.glob(save_dir + "/*"):
     Saver.restore(sess, tf.train.latest_checkpoint(save_dir))
 
 
-def train(G_train_step, G_loss, D_train_step, D_loss, D_extra_step, G_extra_step, save_img_every=250, print_every=50, max_iter=1000000):
-    batches = utils.load_images(batch_size, x_dim, img_dir, total=FLAGS.train_size)
+def train(G_train_step,
+          G_loss,
+          D_train_step,
+          D_loss,
+          D_extra_step,
+          G_extra_step,
+          save_img_every=250,
+          print_every=50,
+          max_iter=1000000):
+    batches = utils.load_images(
+        batch_size, x_dim, img_dir, total=FLAGS.train_size)
     t = time.time()
     for it in range(max_iter):
         xmb = next(batches)
         z_noise = MathLib.sample_z(batch_size, noise_dim)
-        _, D_loss_curr, summary, _ = sess.run([D_train_step, D_loss, summary_op, D_extra_step], feed_dict={x: xmb, z: z_noise, keep_prob: 0.3, training: True})
-        _, G_loss_curr, _ = sess.run([G_train_step, G_loss, G_extra_step], feed_dict={x: xmb, z: z_noise, keep_prob: 0.3, training: True})
+        _, D_loss_curr, summary, _ = sess.run(
+            [D_train_step, D_loss, summary_op, D_extra_step],
+            feed_dict={
+                x: xmb,
+                z: z_noise,
+                keep_prob: 0.3,
+                training: True
+            })
+        _, G_loss_curr, _ = sess.run(
+            [G_train_step, G_loss, G_extra_step],
+            feed_dict={
+                x: xmb,
+                z: z_noise,
+                keep_prob: 0.3,
+                training: True
+            })
         if it % save_img_every == 0:
-            samples = sess.run(G_sample, feed_dict={x: xmb, z: z_noise, keep_prob: 0.3, training: True})  # TODO. Should this be False?
+            samples = sess.run(
+                G_sample,
+                feed_dict={
+                    x: xmb,
+                    z: z_noise,
+                    keep_prob: 0.3,
+                    training: True
+                })  # TODO. Should this be False?
             utils.saveImages(out_dir, samples[:100], img_w, img_h, img_c, it)
         if math.isnan(D_loss_curr) or math.isnan(G_loss_curr):
             print("D or G loss is nan", D_loss_curr, G_loss_curr)
             exit()
         if it % print_every == 0:
-            print('Iter: {}, D: {:.4}, G: {:.4}, Elapsed: {:.4}'.format(it, D_loss_curr, G_loss_curr, time.time() - t))
+            print('Iter: {}, D: {:.4}, G: {:.4}, Elapsed: {:.4}'.format(
+                it, D_loss_curr, G_loss_curr,
+                time.time() - t))
             t = time.time()
         if it % 10 == 0:
             writer.add_summary(summary, global_step=it)
@@ -161,7 +271,12 @@ def TestGAN(noise_input, output):
         z_noise = MathLib.sample_z(batch_size, noise_dim)
     else:
         z_noise = np.array(noise_input)
-    samples = sess.run(G_sample, feed_dict={z: z_noise, keep_prob: 1.0, training: False})
+    samples = sess.run(
+        G_sample, feed_dict={
+            z: z_noise,
+            keep_prob: 1.0,
+            training: False
+        })
     utils.saveImages(out_dir, samples, img_w, img_h, img_c, output)
     utils.saveEncoding(out_dir, z_noise, output)
 
@@ -179,7 +294,12 @@ def TestGANSingleImgOutput(noise_input, outputDir, imgFilename, txtFilename):
         z_noise = MathLib.sample_z(batch_size, noise_dim)
     else:
         z_noise = np.array(noise_input)
-    samples = sess.run(G_sample, feed_dict={z: z_noise, keep_prob: 1.0, training: False})
+    samples = sess.run(
+        G_sample, feed_dict={
+            z: z_noise,
+            keep_prob: 1.0,
+            training: False
+        })
     utils.saveImages(outputDir, samples, img_w, img_h, img_c, imgFilename)
     utils.saveEncoding(outputDir, z_noise, txtFilename)
 
@@ -195,15 +315,28 @@ def backpropOnInputFromImage():
 
     with TensorFlowLib.get_session() as sess:
         sess.run(tf.global_variables_initializer())
-        TensorFlowLib.optimistic_restore(sess, tf.train.latest_checkpoint(save_dir))
+        TensorFlowLib.optimistic_restore(sess,
+                                         tf.train.latest_checkpoint(save_dir))
 
         alpha = 0.1
         batch_size = 1
         max_iter = 1000
         z_noise = MathLib.sample_z(batch_size, noise_dim)
         for it in range(max_iter):
-            LossValue = sess.run(Loss, feed_dict={x: image, z: z_noise, keep_prob: 0.3, training: True})
-            zGradValue = sess.run(zGrad, feed_dict={z: z_noise, keep_prob: 1.0, training: False})
+            LossValue = sess.run(
+                Loss,
+                feed_dict={
+                    x: image,
+                    z: z_noise,
+                    keep_prob: 0.3,
+                    training: True
+                })
+            zGradValue = sess.run(
+                zGrad, feed_dict={
+                    z: z_noise,
+                    keep_prob: 1.0,
+                    training: False
+                })
             z_noise -= alpha * zGradValue
             print('Iter: {}, Loss: {:.8}'.format(it, LossValue))
         print("Encoding:", ",".join(map(str, z_noise[0])))
@@ -214,7 +347,16 @@ def main():
     if FLAGS.find_encoding is True:
         backpropOnInputFromImage()
     elif FLAGS.train is True:
-        train(G_train_step, G_loss, D_train_step, D_loss, D_extra_step, G_extra_step, save_img_every=25, print_every=1, max_iter=1000000)
+        train(
+            G_train_step,
+            G_loss,
+            D_train_step,
+            D_loss,
+            D_extra_step,
+            G_extra_step,
+            save_img_every=25,
+            print_every=1,
+            max_iter=1000000)
     else:
         TestGAN(noise_input, FLAGS.output)
 

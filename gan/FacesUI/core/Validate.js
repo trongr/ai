@@ -1,4 +1,4 @@
-const Validate = module.exports = {}
+const Validate = (module.exports = {})
 
 /**
  * Converts list of strings containing floats into list of floats
@@ -6,7 +6,7 @@ const Validate = module.exports = {}
  * @returns new list of floats
  */
 Validate.sanitizeEncoding = (encoding) => {
-    return encoding.map(e => {
-        return parseFloat(e)
-    })
+  return encoding.map((e) => {
+    return parseFloat(e)
+  })
 }

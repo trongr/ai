@@ -9,15 +9,15 @@ const CurrentFaceView = (() => {
    * @param {*} encoding
    */
   CurrentFaceView.getFaceByEncodingAndLoadIntoCurrentFace = async (
-    encoding
+    encoding,
   ) => {
     const tag = "CurrentFaceView.getFaceByEncodingAndLoadIntoCurrentFace"
     console.log(tag, encoding)
-    const {img} = await API.getFaceByEncoding(encoding)
+    const { img } = await API.getFaceByEncoding(encoding)
     CurrentFaceModel.saveEncoding(encoding)
     FaceSlidersView.loadEncodingIntoCurrentFaceSliders(
       Conf.CurrentFaceSlidersList,
-      encoding
+      encoding,
     )
     CurrentFaceView.loadEncodingIntoPasteEncodingInput(encoding)
     HistoryView.saveEncodingImg(encoding, img)
@@ -42,7 +42,7 @@ const CurrentFaceView = (() => {
         e = parseFloat(e)
         assert(
           e >= -1 && e <= 1,
-          `${tag}: Expected encoding value ${e} to be a float between -1 and 1`
+          `${tag}: Expected encoding value ${e} to be a float between -1 and 1`,
         )
       })
 
@@ -50,7 +50,7 @@ const CurrentFaceView = (() => {
         encoding.length == Conf.NUM_SLIDERS,
         `${tag}: Expected encoding length ${encoding.length} to be ${
           Conf.NUM_SLIDERS
-        }`
+        }`,
       )
 
       // parseFloat here because we want to print out the original value

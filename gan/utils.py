@@ -104,7 +104,7 @@ def saveEncoding(outputDir, encoding, output):
     np.savetxt(filename, encoding)
 
 
-def GenerateSimilarEncodings(encoding, count):
+def GenerateSimilarEncodings(encoding, std, count):
     """
     Encoding is a list of floats between -1 and 1. Return a list of similar
     encodings to encoding of length count. The first element in this list is
@@ -112,8 +112,7 @@ def GenerateSimilarEncodings(encoding, count):
     and add a small random noise to it, also ensuring that the new values are
     between -1 and 1.
     """
-    # TODO. make this method accept the std, so you can narrow down on a face.
-    noise = np.random.normal(0, 0.2, size=[count, len(encoding)])
+    noise = np.random.normal(0, std, size=[count, len(encoding)])
     encodings = np.array([encoding, ] * count)  # Duplicate encoding along height
     encodings = np.clip(encodings + noise, -1, 1)
     encodings[0] = encoding

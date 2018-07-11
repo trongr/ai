@@ -37,7 +37,7 @@ const API = (() => {
       type: "GET",
       data: {
         encoding,
-        variation, // poij add this to API.
+        variation,
       },
     })
   }

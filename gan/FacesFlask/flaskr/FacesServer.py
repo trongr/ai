@@ -27,10 +27,11 @@ def GetRandomFaces():
 def GetSimilarFaces():
     args = request.get_json()
     encoding = args["encoding"]
+    std = args["std"]
     outputDir = args["outputDir"]
     imgFilename = args["imgFilename"]
     txtFilename = args["txtFilename"]
-    Faces.MakeSimilarFaces(encoding, outputDir, imgFilename, txtFilename)
+    Faces.MakeSimilarFaces(encoding, std, outputDir, imgFilename, txtFilename)
     return jsonify({"status": 200})
 
 
