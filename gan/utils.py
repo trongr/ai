@@ -56,7 +56,7 @@ def load_images(batch_size, x_dim, img_dir, total=None):
         images = np.reshape(np.asarray(images), [-1, x_dim])
         images = preprocess_img_rgb(images)
         assert not np.any(np.isnan(images)), "Images should not contain nan's"
-        yield(images)
+        yield (images)
         i = (i + batch_size) % total
 
 
@@ -74,7 +74,8 @@ def mkdir_p(dir):
 def saveImages(outputDir, images, img_w, img_h, img_c, it):
     fig = plt.figure(figsize=(10.0 * img_w / img_h, 10))
     # gs = gridspec.GridSpec(1, 1) if len(images) is 1 else gridspec.GridSpec(10, 10)  # In test mode we just have one image
-    gs = gridspec.GridSpec(1, 1) if len(images) is 1 else gridspec.GridSpec(5, 5)  # In test mode we just have one image
+    gs = gridspec.GridSpec(1, 1) if len(images) is 1 else gridspec.GridSpec(
+        5, 5)  # In test mode we just have one image
     gs.update(left=0, right=1, top=1, bottom=0, wspace=0, hspace=0)
 
     for i, img in enumerate(images):
@@ -104,16 +105,48 @@ def saveEncoding(outputDir, encoding, output):
     np.savetxt(filename, encoding)
 
 
-def GenerateSimilarEncodings(encoding, std, count):
+def GenerateChannelNoise(std, height, width, FreeChannels):
+    """
+    Return a 2D array of size (height, width) where each row is made of 0's,
+    except for a random set (of size FreeChannels) of entries that contains a
+    small amount of noise given by std.
+    """
+    mask = np.zeros((height, width))
+
+    # This makes all the noise channels the same for each row.
+    # idxs = np.random.choice(width, size=FreeChannels, replace=False)
+    # mask[:, idxs] = 1
+
+    # This makes the noise channels different for each row.
+    for i in range(height):
+        idxs = np.random.choice(width, size=FreeChannels, replace=False)
+        mask[i, idxs] = 1
+
+    noise = np.random.normal(0, std, size=[height, width])
+    noise = noise * mask
+    return noise
+
+
+def GenerateSimilarEncodings(encoding, std, FreeChannels, count):
     """
     Encoding is a list of floats between -1 and 1. Return a list of similar
     encodings to encoding of length count. The first element in this list is
     encoding. Similar here means we take a few elements of encoding at random,
     and add a small random noise to it, also ensuring that the new values are
     between -1 and 1.
+
+        @param {List} encoding
+        @param {Float} std - How much to randomly perturb each channel
+        @param {Int} FreeChannels - Number of channels to randomly perturb
+        @param {Int} count - How many new similar encodings to return
+        @return {List} of similar encodings
     """
-    noise = np.random.normal(0, std, size=[count, len(encoding)])
-    encodings = np.array([encoding, ] * count)  # Duplicate encoding along height
+    width = len(encoding)
+    height = count
+    noise = GenerateChannelNoise(std, height, width, FreeChannels)
+    encodings = np.array([
+        encoding,
+    ] * count)  # Duplicate encoding along height
     encodings = np.clip(encodings + noise, -1, 1)
     encodings[0] = encoding
     return encodings

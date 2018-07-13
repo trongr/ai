@@ -17,13 +17,18 @@ const FacesGridView = (() => {
   /**
    * Get similar faces to encoding from server and load into Faces Grid.
    * @param {[Float]} encoding
-   * @param {String} variation Low|Medium|High
+   * @param {String} variation Low|Medium|High|Full
    */
   FacesGridView.getSimilarFacesAndLoadIntoGrid = async (
     encoding,
     variation,
+    FreeChannels,
   ) => {
-    const { img, encodings } = await API.getSimilarFaces(encoding, variation)
+    const { img, encodings } = await API.getSimilarFaces(
+      encoding,
+      variation,
+      FreeChannels,
+    )
     FacesGridModel.saveEncodings(
       encodings,
       Conf.FACES_GRID_NUM_CELLS_ROWS,

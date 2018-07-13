@@ -175,8 +175,9 @@ function GetFaces(req, res, next) {
 function ValidateGetSimilarFaces(req, res, next) {
   const tag = "FacesRouter.ValidateGetSimilarFaces"
   try {
-    let { encoding } = req.body
+    let { encoding, FreeChannels } = req.body
     encoding = Validate.sanitizeEncoding(encoding)
+    FreeChannels = parseInt(FreeChannels)
     assert(
       encoding instanceof Array &&
         encoding.every((enc) => {
@@ -184,10 +185,15 @@ function ValidateGetSimilarFaces(req, res, next) {
         }),
     )
     assert(
-      ["Low", "Medium", "High"].indexOf(req.body.variation) > -1,
+      ["Low", "Medium", "High", "Full"].indexOf(req.body.variation) > -1,
       "Invalid variation",
     )
+    assert(
+      !isNaN(FreeChannels) && 0 < FreeChannels && FreeChannels <= 64,
+      "Invalid FreeChannels",
+    )
     req.body.encoding = encoding
+    req.body.FreeChannels = FreeChannels
     next()
   } catch (e) {
     next({ tag, status: 400, error: "Cannot validate get similar faces", e })
@@ -209,8 +215,8 @@ function GetSimilarFaces(req, res, next) {
   const txtFilename = "GetSimilarFaces.txt"
   const imgFilepath = `${nodeRootDir}/${imgFilename}`
   const txtFilepath = `${nodeRootDir}/${txtFilename}`
-  const { encoding, variation } = req.body
-  const std = { Low: 0.1, Medium: 0.2, High: 0.5 }[variation]
+  const { encoding, variation, FreeChannels } = req.body
+  const std = { Low: 0.1, Medium: 0.2, High: 0.5, Full: 1.0 }[variation]
   let img
   let encodings
   async.waterfall(
@@ -219,6 +225,7 @@ function GetSimilarFaces(req, res, next) {
         FacesLib.GetSimilarFaces(
           encoding,
           std,
+          FreeChannels,
           pythonRootDir,
           imgFilename,
           txtFilename,

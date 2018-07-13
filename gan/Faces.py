@@ -133,11 +133,17 @@ def MakeFaceByEncoding(encoding, outputDir, imgFilename, txtFilename):
     GAN.TestGANSingleImgOutput([encoding], outputDir, imgFilename, txtFilename)
 
 
-def MakeSimilarFaces(encoding, std, outputDir, imgFilename, txtFilename):
-    """Make a grid of similar faces from encoding and put it in the outputDir, etc.
-    - encoding: a list of floats."""
+def MakeSimilarFaces(encoding, std, FreeChannels, outputDir, imgFilename,
+                     txtFilename):
+    """
+    Make a grid of similar faces from encoding and put it in the outputDir, etc.
+    - encoding: a list of floats.
+    - std: std to randomly perturb each channel.
+    - FreeChannels: number of random channels to perturb.
+    """
     batch_size = 25
-    noise_input = utils.GenerateSimilarEncodings(encoding, std, batch_size)
+    noise_input = utils.GenerateSimilarEncodings(encoding, std, FreeChannels,
+                                                 batch_size)
     GAN.TestGANSingleImgOutput(noise_input, outputDir, imgFilename,
                                txtFilename)
 

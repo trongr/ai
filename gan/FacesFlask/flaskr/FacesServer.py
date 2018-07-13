@@ -29,10 +29,12 @@ def GetSimilarFaces():
     args = request.get_json()
     encoding = args["encoding"]
     std = args["std"]
+    FreeChannels = args["FreeChannels"]
     outputDir = args["outputDir"]
     imgFilename = args["imgFilename"]
     txtFilename = args["txtFilename"]
-    Faces.MakeSimilarFaces(encoding, std, outputDir, imgFilename, txtFilename)
+    Faces.MakeSimilarFaces(encoding, std, FreeChannels, outputDir, imgFilename,
+                           txtFilename)
     return jsonify({"status": 200})
 
 

@@ -44,6 +44,7 @@ FacesLib.GetRandomFaces = (outputDir, imgFilename, txtFilename, done) => {
 FacesLib.GetSimilarFaces = (
   encoding,
   std,
+  FreeChannels,
   outputDir,
   imgFilename,
   txtFilename,
@@ -54,7 +55,14 @@ FacesLib.GetSimilarFaces = (
     {
       method: "GET",
       url: "http://localhost:5000/GetSimilarFaces",
-      body: { encoding, std, outputDir, imgFilename, txtFilename },
+      body: {
+        encoding,
+        std,
+        FreeChannels,
+        outputDir,
+        imgFilename,
+        txtFilename,
+      },
       json: true,
     },
     function(er, res, body) {

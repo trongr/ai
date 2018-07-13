@@ -15,11 +15,18 @@ const CurrentFaceBinding = (() => {
     const tag = "CurrentFaceBinding.bindRenderSimilarFacesButton"
     $("#RenderSimilarFacesButton").click(async function(e) {
       try {
+        const encoding = CurrentFaceModel.getEncoding()
         const variation = $(
           "input[name=SimilarFacesStrengthInput]:checked",
         ).val()
-        const encoding = CurrentFaceModel.getEncoding()
-        FacesGridView.getSimilarFacesAndLoadIntoGrid(encoding, variation)
+        const FreeChannels = $(
+          "input[name=SimilarFacesFreeChannelsInput]:checked",
+        ).val()
+        FacesGridView.getSimilarFacesAndLoadIntoGrid(
+          encoding,
+          variation,
+          FreeChannels,
+        )
       } catch (er) {
         console.error(tag, er)
       }

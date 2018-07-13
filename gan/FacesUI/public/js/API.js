@@ -29,15 +29,17 @@ const API = (() => {
    * Get similar faces to encoding. Also returns their encodings
    * @param {*} encoding
    * @param {String} variation Low|Medium|High
+   * @param {Number} FreeChannels [1-64] Number of channels we want to vary randomly
    * @return {*} { status, img, encodings }
    */
-  API.getSimilarFaces = (encoding, variation) => {
+  API.getSimilarFaces = (encoding, variation, FreeChannels) => {
     return $.ajax({
       url: "/faces/similar",
       type: "GET",
       data: {
         encoding,
         variation,
+        FreeChannels,
       },
     })
   }

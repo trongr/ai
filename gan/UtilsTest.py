@@ -33,13 +33,24 @@ class TestUtils(unittest.TestCase):
         ]
         count = 100
         std = 0.2
-        encodings = utils.GenerateSimilarEncodings(encoding, std, count)
+        FreeChannels = 64
+        encodings = utils.GenerateSimilarEncodings(encoding, std, FreeChannels,
+                                                   count)
         self.assertEqual(len(encoding), 64)
         self.assertTrue(len(encodings), count)
         self.assertTrue(len(encodings[99]), len(encoding))
         self.assertTrue(np.max(encodings) <= 1)
         self.assertTrue(np.min(encodings) >= -1)
         self.assertTrue(np.array_equal(encodings[0], encoding))
+
+    def test_GenerateChannelNoise(self):
+        height = 8
+        width = 8
+        std = 0.2
+        FreeChannels = 4
+        noise = utils.GenerateChannelNoise(std, height, width, FreeChannels)
+        self.assertEqual(noise.shape, (width, height))
+        self.assertEqual(np.count_nonzero(noise), 4 * height)
 
 
 if __name__ == '__main__':
