@@ -1,10 +1,11 @@
+from flask import (Blueprint, flash, g, redirect, render_template, request,
+                   url_for, jsonify)
+from werkzeug.exceptions import abort
 import sys
 sys.path.append('../')
 sys.path.append('../../')
 sys.path.append("../../utils/")
 import Faces
-from flask import Blueprint, flash, g, redirect, render_template, request, url_for, jsonify
-from werkzeug.exceptions import abort
 
 bp = Blueprint('FacesServer', __name__)
 
