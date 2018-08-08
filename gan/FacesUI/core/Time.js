@@ -1,5 +1,6 @@
 const randomstring = require("randomstring")
-const Time = module.exports = {}
+
+const Time = (module.exports = {})
 
 /**
  * Use this to uniquely identify file/folder names based on time and a random
@@ -9,5 +10,8 @@ const Time = module.exports = {}
  * XXXXX is a random string
  */
 Time.getTimeYYYYMMDDHHMMSSMS = (datetime = Date.now()) => {
-    return new Date(datetime).toISOString().replace(/\D/g, "-") + randomstring.generate(5)
+  return (
+    new Date(datetime).toISOString().replace(/\D/g, "-") +
+    randomstring.generate(5)
+  )
 }
