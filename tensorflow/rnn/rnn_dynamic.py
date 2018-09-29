@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 
 def gen_data(size=1000000):
-    X = np.array(np.random.choice(2, size=(size,)))
+    X = np.array(np.random.choice(2, size=(size, )))
     Y = []
     for i in range(size):
         threshold = 0.5
@@ -17,6 +17,7 @@ def gen_data(size=1000000):
         else:
             Y.append(1)
     return X, np.array(Y)
+
 
 # adapted from
 # https://github.com/tensorflow/tensorflow/blob/master/tensorflow/models/rnn/ptb/reader.py
@@ -32,10 +33,10 @@ def gen_batch(raw_data, batch_size, num_steps):
     data_x = np.zeros([batch_size, batch_partition_length], dtype=np.int32)
     data_y = np.zeros([batch_size, batch_partition_length], dtype=np.int32)
     for i in range(batch_size):
-        data_x[i] = raw_x[batch_partition_length *
-                          i:batch_partition_length * (i + 1)]
-        data_y[i] = raw_y[batch_partition_length *
-                          i:batch_partition_length * (i + 1)]
+        data_x[i] = raw_x[batch_partition_length * i:batch_partition_length * (
+            i + 1)]
+        data_y[i] = raw_y[batch_partition_length * i:batch_partition_length * (
+            i + 1)]
     # further divide batch partitions into num_steps for truncated backprop
     epoch_size = batch_partition_length // num_steps
 
@@ -55,22 +56,19 @@ batch_size = 200
 num_classes = 2
 state_size = 4
 learning_rate = 0.1
-
 """
 Placeholders
 """
 
 x = tf.placeholder(tf.int32, [batch_size, num_steps], name='input_placeholder')
-y = tf.placeholder(tf.int32, [batch_size, num_steps],
-                   name='labels_placeholder')
+y = tf.placeholder(
+    tf.int32, [batch_size, num_steps], name='labels_placeholder')
 init_state = tf.zeros([batch_size, state_size])
-
 """
 Inputs
 """
 
 rnn_inputs = tf.one_hot(x, num_classes)
-
 """
 RNN
 """
@@ -78,15 +76,14 @@ RNN
 cell = tf.contrib.rnn.BasicRNNCell(state_size)
 rnn_outputs, final_state = tf.nn.dynamic_rnn(
     cell, rnn_inputs, initial_state=init_state)
-
 """
 Predictions, loss, training step
 """
 
 with tf.variable_scope('softmax'):
     W = tf.get_variable('W', [state_size, num_classes])
-    b = tf.get_variable('b', [num_classes],
-                        initializer=tf.constant_initializer(0.0))
+    b = tf.get_variable(
+        'b', [num_classes], initializer=tf.constant_initializer(0.0))
 logits = tf.reshape(
     tf.matmul(tf.reshape(rnn_outputs, [-1, state_size]), W) + b,
     [batch_size, num_steps, num_classes])
