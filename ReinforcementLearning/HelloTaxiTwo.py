@@ -1,24 +1,28 @@
 import numpy as np
 import gym
 import random
-from bokeh.plotting import figure, output_file, show
 
-env = gym.make("FrozenLake-v0")
+env = gym.make("Taxi-v2")
+env.render()
 
-stateSize = env.observation_space.n
-actionSize = env.action_space.n
+# The full state of the game at any point (the map, the drop off location, the
+# position of the taxi and the passenger) is encoded into one of the 500 states.
+ACTION_SIZE = env.action_space.n  # 6
+STATE_SIZE = env.observation_space.n  # 500
 
-qtable = np.zeros((stateSize, actionSize))
+qtable = np.zeros((STATE_SIZE, ACTION_SIZE))
 
-TOTAL_EPISODES = 15000  # Total episodes
-LEARNING_RATE = 0.8  # Learning rate
-MAX_STEPS = 99  # Max steps per episode
-GAMMA = 0.95  # Discounting rate
+TOTAL_EPISODES = 50000        # Total episodes
+TOTAL_TEST_EPISODES = 100     # Total test episodes
+MAX_STEPS = 99                # Max steps per episode
 
-epsilon = 1.0  # Exploration rate
-MAX_EPSILON = 1.0  # Maximum exploration probability
-MIN_EPSILON = 0.01  # Minimum exploration probability
-DECAY_RATE = 0.005  # Exponential decay rate for exploration prob
+LEARNING_RATE = 0.7           # Learning rate
+GAMMA = 0.618                 # Discounting rate
+
+epsilon = 1.0                 # Exploration rate
+MAX_EPSILON = 1.0             # Exploration probability at start
+MIN_EPSILON = 0.01            # Minimum exploration probability
+DECAY_RATE = 0.01             # Exponential decay rate for exploration prob
 
 RewardHistory = []
 
@@ -29,18 +33,12 @@ for episode in range(TOTAL_EPISODES):
     EpisodeReward = 0
 
     for step in range(MAX_STEPS):
-        # Epsilon-greedy algorithm: choose best action with probabiliy 1 -
-        # epsilon. Choose random action (i.e. explore) with probability epsilon.
-        # In the beginning, epsilon == 1, so we're in all exploration mode.
-        # Gradually we reduce epsilon and take more educated actions from the
-        # qtable.
         if random.uniform(0, 1) > epsilon:
             action = np.argmax(qtable[state, :])
         else:
             action = env.action_space.sample()
 
         nState, reward, done, info = env.step(action)
-
         qtable[state, action] = (1 - LEARNING_RATE) * qtable[state, action] + \
             LEARNING_RATE * (reward + GAMMA * np.max(qtable[nState, :]))
 
@@ -56,34 +54,29 @@ for episode in range(TOTAL_EPISODES):
             env.render()
             break
 
-    # Reduce epsilon (because we need less and less exploration)
+    # Reduce epsilon because we need less and less exploration
     epsilon = MIN_EPSILON + (MAX_EPSILON - MIN_EPSILON) * \
         np.exp(-DECAY_RATE * episode)
     RewardHistory.append(EpisodeReward)
 
 print(qtable)
 
-# p = figure(sizing_mode='stretch_both')
-# p.circle(range(len(RewardHistory)), RewardHistory,
-#          size=1, color="navy", alpha=0.5)
-# show(p)
-
-# Run the trained agent on a few games
-for episode in range(5):
+for episode in range(TOTAL_TEST_EPISODES):
     state = env.reset()
     step = 0
     done = False
 
-    print("****************************************************")
+    print("============================================================")
     print("Ep: {}".format(episode))
 
     for step in range(MAX_STEPS):
         action = np.argmax(qtable[state, :])
         nState, reward, done, info = env.step(action)
+        env.render()
 
         if done:
-            env.render()
-            print("Steps: {}".format(step))
+            print("Total steps taken: {}".format(step))
+            print("============================================================")
             break
 
         state = nState
