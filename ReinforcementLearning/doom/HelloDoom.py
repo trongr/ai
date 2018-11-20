@@ -206,6 +206,7 @@ def predict_action(agent, explore_start, explore_stop, decay_rate,
     (EXPLOIT).
     """
     # TODO@trong What are these explore_start/stop options?
+    # TODO@trong Remember explore_probability from previous session.
     explore_probability = explore_stop + \
         (explore_start - explore_stop) * np.exp(-decay_rate * decay_step)
 
@@ -256,11 +257,12 @@ MEMORY PARAMETERS
 """
 
 # Number of experiences stored in the Memory when initialized for the first time
-pretrain_length = batch_size
+PRETRAIN_LENGTH = batch_size
 memory_size = 1000000  # Number of experiences the Memory can keep
 memory = Memory(max_size=memory_size)
 
-for i in range(pretrain_length):
+# TODO@trong What does pretrain do?
+for i in range(PRETRAIN_LENGTH):
     if i == 0:
         state = game.get_state().screen_buffer
         state, stacked_frames = stack_frames(stacked_frames, state, True)
@@ -299,6 +301,7 @@ if glob.glob(SAVE_DIR + "/*"):
     Saver.restore(sess, tf.train.latest_checkpoint(SAVE_DIR))
 
 """
+TODO@trong Watch this:
 Launch tensorboard with:
 tensorboard --logdir=./tmp/HelloDoomTensorBoard/
 """
@@ -313,8 +316,6 @@ TRAINING = True  # Set to False to test trained agent on games
 EPISODE_RENDER = False  # I think it always renders
 
 if TRAINING == True:  # TRAIN AGENT
-    game.init()
-
     for episode in range(total_episodes):
         step = 0
         episode_rewards = []
@@ -401,7 +402,6 @@ if TRAINING == True:  # TRAIN AGENT
 
 else:  # TEST AGENT
     game, PossibleActions = createGameEnv()
-    game.init()
     totalScore = 0
 
     for i in range(1):
