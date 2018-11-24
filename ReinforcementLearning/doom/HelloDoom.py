@@ -183,7 +183,7 @@ def StackFrames(StackedFrames, state, isNewEpisode):
     frame = PreprocessFrame(state)
 
     if isNewEpisode:
-        StackedFrames = InitDeque(STACK_SIZE)  # Clear StackedFrames
+        StackedFrames = InitDeque(NUM_FRAMES)  # Clear StackedFrames
 
         # Because we're in a new episode, copy the same frame 4x
         StackedFrames.append(frame)
@@ -253,19 +253,20 @@ MODEL PARAMETERS
 
 FRAME_WIDTH = 84
 FRAME_HEIGHT = 84
-STACK_SIZE = 4  # Stack 4 frames together
-STATE_SIZE = [FRAME_WIDTH, FRAME_HEIGHT, STACK_SIZE]
+NUM_FRAMES = 4  # Stack 4 frames together
+STATE_SIZE = [FRAME_WIDTH, FRAME_HEIGHT, NUM_FRAMES]
 ACTION_SIZE = game.get_available_buttons_size()  # 3 actions: left, right, shoot
 LEARNING_RATE = 0.0002  # alpha
 GAMMA = 0.95  # Discounting rate
 
-StackedFrames = InitDeque(STACK_SIZE)
+StackedFrames = InitDeque(NUM_FRAMES)
 
 """
 TRAINING HYPERPARAMETERS
 """
 
-TOTAL_EPISODES = 500  # Total episodes for training
+NUM_TRAIN_EPISODES = 500
+NUM_TEST_EPISODES = 100
 MAX_STEPS = 100  # Max possible steps in an episode
 BATCH_SIZE = 64
 
@@ -278,29 +279,6 @@ MEMORY PARAMETERS
 
 MEMORY_SIZE = 1000000  # Number of experiences the memory buffer can keep
 memory = Memory(MEMORY_SIZE=MEMORY_SIZE)
-
-# Before training, we want to fill the replay buffer / memory with experiences,
-# so that later we can sample from it in the training loop below.
-for i in range(BATCH_SIZE):
-    if i == 0:
-        state = game.get_state().screen_buffer
-        state, StackedFrames = StackFrames(StackedFrames, state, True)
-
-    action = random.choice(PossibleActions)
-    reward = game.make_action(action)
-    done = game.is_episode_finished()
-
-    if done:
-        nstate = np.zeros(state.shape)
-        memory.add((state, action, reward, nstate, done))
-        game.new_episode()
-        state = game.get_state().screen_buffer
-        state, StackedFrames = StackFrames(StackedFrames, state, True)
-    else:
-        nstate = game.get_state().screen_buffer
-        nstate, StackedFrames = StackFrames(StackedFrames, nstate, False)
-        memory.add((state, action, reward, nstate, done))
-        state = nstate
 
 tf.reset_default_graph()
 sess = GetTFSession()
@@ -325,12 +303,41 @@ tf.summary.scalar("Loss", agent.loss)
 writeOp = tf.summary.merge_all()
 
 """
-SCRIPT PARAMETERS
+Training / testing
 """
-TRAINING = True  # Set to False to test trained agent on games
+
+TRAINING = False  # Set to False to test trained agent on games
 
 if TRAINING == True:  # TRAIN AGENT
-    for episode in range(TOTAL_EPISODES):
+    """
+    Pretraining. Before training, we want to fill the replay buffer / memory
+    with experiences, so that later we can sample from it in the training loop
+    below.
+    """
+    for i in range(BATCH_SIZE):
+        if i == 0:
+            state = game.get_state().screen_buffer
+            state, StackedFrames = StackFrames(StackedFrames, state, True)
+
+        action = random.choice(PossibleActions)
+        reward = game.make_action(action)
+        done = game.is_episode_finished()
+
+        # Episode is done when you kill the monster, or when time runs out at
+        # 300 steps.
+        if done:
+            nstate = np.zeros(state.shape)
+            memory.add((state, action, reward, nstate, done))
+            game.new_episode()
+            state = game.get_state().screen_buffer
+            state, StackedFrames = StackFrames(StackedFrames, state, True)
+        else:
+            nstate = game.get_state().screen_buffer
+            nstate, StackedFrames = StackFrames(StackedFrames, nstate, False)
+            memory.add((state, action, reward, nstate, done))
+            state = nstate
+
+    for episode in range(NUM_TRAIN_EPISODES):
         step = 0
         EpisodeRewards = []
 
@@ -362,9 +369,9 @@ if TRAINING == True:  # TRAIN AGENT
                 memory.add((state, action, reward, nstate, done))
 
                 print("Episode: {}. ".format(episode) +
-                      "Total reward: {}. ".format(TotalRewards) +
+                      "TotalReward: {}. ".format(TotalRewards) +
                       "Loss: {:.4f}. ".format(loss) +
-                      "Explore Prob: {:.4f}".format(ExploreProbability))
+                      "ExploreProbability: {:.4f}".format(ExploreProbability))
             else:
                 nstate = game.get_state().screen_buffer
                 nstate, StackedFrames = StackFrames(
@@ -423,13 +430,16 @@ if TRAINING == True:  # TRAIN AGENT
 else:  # TEST AGENT
     game, PossibleActions = CreateGameEnv()
 
-    for i in range(1):
-        done = False
+    for episode in range(NUM_TEST_EPISODES):
         game.new_episode()
         state = game.get_state().screen_buffer
         state, StackedFrames = StackFrames(StackedFrames, state, True)
 
-        while not game.is_episode_finished():
+        step = 0
+        done = False
+        while not done:
+            step += 1
+
             Qs = sess.run(agent.output, feed_dict={
                           agent.inputs: state.reshape(
                               (1, FRAME_WIDTH, FRAME_HEIGHT, NUM_FRAMES))})
@@ -442,13 +452,12 @@ else:  # TEST AGENT
             if done:
                 break
             else:
-                print("And the game continues . . .")
                 nstate = game.get_state().screen_buffer
                 nstate, StackedFrames = StackFrames(
                     StackedFrames, nstate, False)
                 state = nstate
 
         score = game.get_total_reward()
-        print("Score: {}".format(score))
+        print("Episode: {}. Steps taken: {}. Score: {}".format(episode, step, score))
 
     game.close()
