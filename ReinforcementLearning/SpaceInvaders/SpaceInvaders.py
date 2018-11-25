@@ -1,4 +1,6 @@
 """
+NOTE. Training takes a long time.
+
 REQUIRES
 ================================================================================
     - python 3.7 for OpenAI retro. Run `conda activate py37`
@@ -39,12 +41,12 @@ class Memory():
         return [self.buffer[i] for i in index]
 
 
-class DQNetwork:
+class Agent:
     """
     The agent
     """
 
-    def __init__(self, sess, STATE_SIZE, ACTION_SIZE, LEARNING_RATE, name='DQNetwork'):
+    def __init__(self, sess, STATE_SIZE, ACTION_SIZE, LEARNING_RATE, name='Agent'):
         self.sess = sess
         self.STATE_SIZE = STATE_SIZE
         self.ACTION_SIZE = ACTION_SIZE
@@ -62,8 +64,6 @@ class DQNetwork:
             First convnet: CNN > BatchNormalization > ELU
             """
 
-            # TODO@trong Figure out the layer dimensions.
-
             # Input shape [BATCH_SIZE, 110, 84, 4]
             conv1 = tf.layers.conv2d(
                 inputs=inputs,
@@ -71,12 +71,10 @@ class DQNetwork:
                 strides=[2, 2], padding="SAME",
                 kernel_initializer=tf.contrib.layers.xavier_initializer_conv2d(),
                 name="conv1")
-            # batchnorm1 = tf.layers.batch_normalization(
-            #     conv1, training=True, epsilon=1e-5, name='batchnorm1')
-            # elu1 = tf.nn.elu(batchnorm1, name="elu1")
-            """Get rid of batchnorm to reduce compute"""
-            elu1 = tf.nn.elu(conv1, name="elu1")
-            # output shape ??
+            batchnorm1 = tf.layers.batch_normalization(
+                conv1, training=True, epsilon=1e-5, name='batchnorm1')
+            elu1 = tf.nn.elu(batchnorm1, name="elu1")
+            # (?, 55, 42, 32)
 
             """
             Second convnet: CNN > BatchNormalization > ELU
@@ -87,12 +85,10 @@ class DQNetwork:
                 kernel_size=[4, 4], strides=[2, 2], padding="SAME",
                 kernel_initializer=tf.contrib.layers.xavier_initializer_conv2d(),
                 name="conv2")
-            # output shape ??
-            # batchnorm2 = tf.layers.batch_normalization(
-            #     conv2, training=True, epsilon=1e-5, name='batchnorm2')
-            # elu2 = tf.nn.elu(batchnorm2, name="elu2")
-            elu2 = tf.nn.elu(conv2, name="elu2")
-            # output shape ??
+            batchnorm2 = tf.layers.batch_normalization(
+                conv2, training=True, epsilon=1e-5, name='batchnorm2')
+            elu2 = tf.nn.elu(batchnorm2, name="elu2")
+            # (?, 28, 21, 64)
 
             """
             Third convnet: CNN > BatchNormalization > ELU
@@ -103,11 +99,10 @@ class DQNetwork:
                 strides=[2, 2], padding="SAME",
                 kernel_initializer=tf.contrib.layers.xavier_initializer_conv2d(),
                 name="conv3")
-            # batchnorm3 = tf.layers.batch_normalization(
-            #     conv3, training=True, epsilon=1e-5, name='batchnorm3')
-            # elu3 = tf.nn.elu(batchnorm3, name="elu3")
-            elu3 = tf.nn.elu(conv3, name="elu3")
-            # output shape ??
+            batchnorm3 = tf.layers.batch_normalization(
+                conv3, training=True, epsilon=1e-5, name='batchnorm3')
+            elu3 = tf.nn.elu(batchnorm3, name="elu3")
+            # (?, 14, 11, 128)
 
             """
             Final FC layers
@@ -116,20 +111,20 @@ class DQNetwork:
             # Might need this one for diff tensorflow versions.
             # flatten4 = tf.layers.flatten(elu3)
             flatten4 = tf.contrib.layers.flatten(elu3)
-            # output shape ??
+            # (?, 19712 = 14 * 11 * 128)
 
             fc5 = tf.layers.dense(
                 inputs=flatten4,
                 units=512,
                 activation=tf.nn.elu,
                 kernel_initializer=tf.contrib.layers.xavier_initializer(),
-                name="fc1")  # output shape [BATCH_SIZE, 512]
+                name="fc1")  # (?, 512)
 
             self.output = output = tf.layers.dense(
                 inputs=fc5,
                 kernel_initializer=tf.contrib.layers.xavier_initializer(),
                 units=ACTION_SIZE,
-                activation=None)  # output shape [BATCH_SIZE, 3]
+                activation=None)  # (?, 3)
 
             """
             Training
@@ -236,20 +231,20 @@ PossibleActions = np.array(np.identity(env.action_space.n, dtype=int).tolist())
 
 tf.reset_default_graph()
 sess = GetTFSession()
-agent = DQNetwork(sess, STATE_SIZE, ACTION_SIZE, LEARNING_RATE)
+agent = Agent(sess, STATE_SIZE, ACTION_SIZE, LEARNING_RATE)
 sess.run(tf.global_variables_initializer())
 
 # NOTE. Make sure this folder exists
-SAVE_DIR = "./models/SpaceInvaders"
+SAVE_DIR = "./models/"
 Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1)
 if glob.glob(SAVE_DIR + "/*"):
     Saver.restore(sess, tf.train.latest_checkpoint(SAVE_DIR))
 
 """
 Launch tensorboard with:
-tensorboard --logdir=./tensorboard/
+tensorboard --logdir=./logs/
 """
-writer = tf.summary.FileWriter("./tensorboard/")
+writer = tf.summary.FileWriter("./logs/")
 tf.summary.scalar("Loss", agent.loss)
 writeOp = tf.summary.merge_all()
 
