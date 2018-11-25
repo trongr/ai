@@ -1,10 +1,16 @@
+"""
+REQUIRES
+================================================================================
+    - python 3.7 for OpenAI retro. Run `conda activate py37`
+"""
 
 import tensorflow as tf
 import numpy as np
-from vizdoom import *
-import random
+import retro
 from skimage import transform
+from skimage.color import rgb2gray
 from collections import deque
+import random
 import glob
 
 
@@ -13,188 +19,6 @@ def GetTFSession():
     config.gpu_options.allow_growth = True
     sess = tf.Session(config=config)
     return sess
-
-
-class DQNetwork:
-    """
-    The agent
-    """
-
-    def __init__(self, sess, STATE_SIZE, ACTION_SIZE, LEARNING_RATE,
-                 name='DQNetwork'):
-        self.sess = sess
-        self.STATE_SIZE = STATE_SIZE
-        self.ACTION_SIZE = ACTION_SIZE
-        self.LEARNING_RATE = LEARNING_RATE
-
-        with tf.variable_scope(name):
-            FRAME_WIDTH, FRAME_HEIGHT, NUM_FRAMES = STATE_SIZE
-            self.inputs = inputs = tf.placeholder(
-                tf.float32, [None, FRAME_WIDTH, FRAME_HEIGHT, NUM_FRAMES], name="inputs")
-            self.actions = actions = tf.placeholder(
-                tf.float32, [None, self.ACTION_SIZE], name="actions")
-            self.targetQ = targetQ = tf.placeholder(
-                tf.float32, [None], name="target")
-
-            """
-            First convnet: CNN > BatchNormalization > ELU
-            """
-
-            # Input shape [BATCH_SIZE, 84, 84, 4]
-            conv1 = tf.layers.conv2d(
-                inputs=inputs,
-                filters=32, kernel_size=[8, 8],
-                strides=[4, 4], padding="VALID",
-                kernel_initializer=tf.contrib.layers.xavier_initializer_conv2d(),
-                name="conv1")
-            # output shape [BATCH_SIZE, 20, 20, 32]
-
-            batchnorm1 = tf.layers.batch_normalization(
-                conv1, training=True, epsilon=1e-5, name='batchnorm1')
-            # output shape [BATCH_SIZE, 20, 20, 32]
-
-            elu1 = tf.nn.elu(batchnorm1, name="elu1")
-            # output shape [BATCH_SIZE, 20, 20, 32]
-
-            """
-            Second convnet: CNN > BatchNormalization > ELU
-            """
-
-            conv2 = tf.layers.conv2d(
-                inputs=elu1, filters=64,
-                kernel_size=[4, 4], strides=[2, 2], padding="VALID",
-                kernel_initializer=tf.contrib.layers.xavier_initializer_conv2d(),
-                name="conv2")
-            # output shape [BATCH_SIZE, 9, 9, 64]. TODO@trong If you use SAME
-            # padding as opposed to VALID, output should have the same width and
-            # height as input, e.g. this one would be (BATCH_SIZE, 20, 20, 64).
-            # Double check. You'll need to down sample if I recall.
-
-            batchnorm2 = tf.layers.batch_normalization(
-                conv2, training=True, epsilon=1e-5, name='batchnorm2')
-            # output shape [BATCH_SIZE, 9, 9, 64]
-
-            elu2 = tf.nn.elu(batchnorm2, name="elu2")
-            # output shape [BATCH_SIZE, 9, 9, 64]
-
-            """
-            Third convnet: CNN > BatchNormalization > ELU
-            """
-
-            conv3 = tf.layers.conv2d(
-                inputs=elu2, filters=128, kernel_size=[4, 4],
-                strides=[2, 2], padding="VALID",
-                kernel_initializer=tf.contrib.layers.xavier_initializer_conv2d(),
-                name="conv3")
-            # output shape [BATCH_SIZE, 3, 3, 128]
-
-            batchnorm3 = tf.layers.batch_normalization(
-                conv3, training=True, epsilon=1e-5, name='batchnorm3')
-            # output shape [BATCH_SIZE, 3, 3, 128]
-
-            elu3 = tf.nn.elu(batchnorm3, name="elu3")
-            # output shape [BATCH_SIZE, 3, 3, 128]
-
-            """
-            Final FC layers
-            """
-
-            # Might need this one for diff tensorflow versions.
-            # flatten4 = tf.layers.flatten(elu3)
-            flatten4 = tf.contrib.layers.flatten(elu3)
-            # output shape [BATCH_SIZE, 1152]
-
-            fc5 = tf.layers.dense(
-                inputs=flatten4,
-                units=512,
-                activation=tf.nn.elu,
-                kernel_initializer=tf.contrib.layers.xavier_initializer(),
-                name="fc1")  # output shape [BATCH_SIZE, 512]
-
-            self.output = output = tf.layers.dense(
-                inputs=fc5,
-                kernel_initializer=tf.contrib.layers.xavier_initializer(),
-                units=3,
-                activation=None)  # output shape [BATCH_SIZE, 3]
-
-            """
-            Training
-            """
-
-            predictedQ = tf.reduce_sum(output * actions, axis=1)
-            self.loss = loss = tf.reduce_mean(tf.square(targetQ - predictedQ))
-            self.optimizer = tf.train.RMSPropOptimizer(
-                LEARNING_RATE).minimize(loss)
-
-    def save(self, SAVE_DIR_WITH_PREFIX, episode):
-        savepath = Saver.save(
-            self.sess, SAVE_DIR_WITH_PREFIX, global_step=episode)
-        print("Save path: {}".format(savepath))
-
-
-def CreateGameEnv():
-    game = DoomGame()
-    game.load_config("DoomBasicConfig.cfg")
-    game.set_doom_scenario_path("DoomBasicData.wad")
-    game.init()
-    game.new_episode()
-
-    left = [1, 0, 0]
-    right = [0, 1, 0]
-    shoot = [0, 0, 1]
-    PossibleActions = [left, right, shoot]
-
-    return game, PossibleActions
-
-
-def PreprocessFrame(frame):
-    """
-    Take a frame, crop the roof because it contains no useful information.
-    Resize, normalize, and return preprocessedFrame. We don't grayscale the
-    frame because it's already done in the vizdoom config.
-    """
-    croppedFrame = frame[30:-10, 30:-30]
-    normalizedFrame = croppedFrame / 255.0
-    preprocessedFrame = transform.resize(normalizedFrame, [84, 84])
-    return preprocessedFrame
-
-
-def InitDeque(length):
-    """
-    Initialize deque with zero-images, one array for each image
-    """
-    return deque([np.zeros((84, 84), dtype=np.int)
-                  for i in range(length)], maxlen=length)
-
-
-def StackFrames(StackedFrames, state, isNewEpisode):
-    """
-    Stack frames together to give network a sense of time. If this is a new
-    episode, duplicate the frame over the StackedState. OTW add this new frame
-    to the existing queue.
-
-    @param {*} state: A single frame from the game.
-
-    @return {*} StackedState, StackedFrames
-    """
-    frame = PreprocessFrame(state)
-
-    if isNewEpisode:
-        StackedFrames = InitDeque(NUM_FRAMES)  # Clear StackedFrames
-
-        # Because we're in a new episode, copy the same frame 4x
-        StackedFrames.append(frame)
-        StackedFrames.append(frame)
-        StackedFrames.append(frame)
-        StackedFrames.append(frame)
-
-        StackedState = np.stack(StackedFrames, axis=2)
-    else:
-        # Append frame to deque, automatically removes the oldest frame
-        StackedFrames.append(frame)
-        StackedState = np.stack(StackedFrames, axis=2)
-
-    return StackedState, StackedFrames
 
 
 class Memory():
@@ -215,48 +39,187 @@ class Memory():
         return [self.buffer[i] for i in index]
 
 
-def PredictAction(agent, DecayStep, state, PossibleActions):
+class DQNetwork:
     """
-    Choose action using epsilon greedy: choose random action with
-    ExploreProbability (EXPLORE), OTW choose best action from network (EXPLOIT).
+    The agent
     """
-    # ExploreProbability starts at 1, and decays exponentially with rate
-    # DECAY_RATE and approaches EXPLORE_STOP.
-    EXPLORE_START = 1.0  # Exploration probability at start
-    EXPLORE_STOP = 0.01  # Minimum exploration probability
-    DECAY_RATE = 0.0001  # Exponential decay rate for exploration prob
 
-    ExploreProbability = EXPLORE_STOP + \
-        (EXPLORE_START - EXPLORE_STOP) * np.exp(-DECAY_RATE * DecayStep)
+    def __init__(self, sess, STATE_SIZE, ACTION_SIZE, LEARNING_RATE, name='DQNetwork'):
+        self.sess = sess
+        self.STATE_SIZE = STATE_SIZE
+        self.ACTION_SIZE = ACTION_SIZE
+        self.LEARNING_RATE = LEARNING_RATE
 
-    if (ExploreProbability > np.random.rand()):  # EXPLORE
-        action = random.choice(PossibleActions)
-    else:  # EXPLOIT
-        FRAME_WIDTH, FRAME_HEIGHT, NUM_FRAMES = state.shape
-        Qs = sess.run(agent.output, feed_dict={agent.inputs: state.reshape(
-            (1, FRAME_WIDTH, FRAME_HEIGHT, NUM_FRAMES))})
+        with tf.variable_scope(name):
+            self.inputs = inputs = tf.placeholder(
+                tf.float32, [None, *STATE_SIZE], name="inputs")
+            self.actions = actions = tf.placeholder(
+                tf.float32, [None, ACTION_SIZE], name="actions")
+            self.targetQ = targetQ = tf.placeholder(
+                tf.float32, [None], name="target")
 
-        choice = np.argmax(Qs)
-        action = PossibleActions[int(choice)]
+            """
+            First convnet: CNN > BatchNormalization > ELU
+            """
 
-    return action, ExploreProbability
+            # TODO@trong Figure out the layer dimensions.
+
+            # Input shape [BATCH_SIZE, 110, 84, 4]
+            conv1 = tf.layers.conv2d(
+                inputs=inputs,
+                filters=32, kernel_size=[4, 4],
+                strides=[2, 2], padding="SAME",
+                kernel_initializer=tf.contrib.layers.xavier_initializer_conv2d(),
+                name="conv1")
+            # batchnorm1 = tf.layers.batch_normalization(
+            #     conv1, training=True, epsilon=1e-5, name='batchnorm1')
+            # elu1 = tf.nn.elu(batchnorm1, name="elu1")
+            """Get rid of batchnorm to reduce compute"""
+            elu1 = tf.nn.elu(conv1, name="elu1")
+            # output shape ??
+
+            """
+            Second convnet: CNN > BatchNormalization > ELU
+            """
+
+            conv2 = tf.layers.conv2d(
+                inputs=elu1, filters=64,
+                kernel_size=[4, 4], strides=[2, 2], padding="SAME",
+                kernel_initializer=tf.contrib.layers.xavier_initializer_conv2d(),
+                name="conv2")
+            # output shape ??
+            # batchnorm2 = tf.layers.batch_normalization(
+            #     conv2, training=True, epsilon=1e-5, name='batchnorm2')
+            # elu2 = tf.nn.elu(batchnorm2, name="elu2")
+            elu2 = tf.nn.elu(conv2, name="elu2")
+            # output shape ??
+
+            """
+            Third convnet: CNN > BatchNormalization > ELU
+            """
+
+            conv3 = tf.layers.conv2d(
+                inputs=elu2, filters=128, kernel_size=[4, 4],
+                strides=[2, 2], padding="SAME",
+                kernel_initializer=tf.contrib.layers.xavier_initializer_conv2d(),
+                name="conv3")
+            # batchnorm3 = tf.layers.batch_normalization(
+            #     conv3, training=True, epsilon=1e-5, name='batchnorm3')
+            # elu3 = tf.nn.elu(batchnorm3, name="elu3")
+            elu3 = tf.nn.elu(conv3, name="elu3")
+            # output shape ??
+
+            """
+            Final FC layers
+            """
+
+            # Might need this one for diff tensorflow versions.
+            # flatten4 = tf.layers.flatten(elu3)
+            flatten4 = tf.contrib.layers.flatten(elu3)
+            # output shape ??
+
+            fc5 = tf.layers.dense(
+                inputs=flatten4,
+                units=512,
+                activation=tf.nn.elu,
+                kernel_initializer=tf.contrib.layers.xavier_initializer(),
+                name="fc1")  # output shape [BATCH_SIZE, 512]
+
+            self.output = output = tf.layers.dense(
+                inputs=fc5,
+                kernel_initializer=tf.contrib.layers.xavier_initializer(),
+                units=ACTION_SIZE,
+                activation=None)  # output shape [BATCH_SIZE, 3]
+
+            """
+            Training
+            """
+
+            predictedQ = tf.reduce_sum(output * actions, axis=1)
+            self.loss = loss = tf.reduce_mean(tf.square(targetQ - predictedQ))
+            self.optimizer = tf.train.RMSPropOptimizer(
+                LEARNING_RATE).minimize(loss)
+
+    def PredictAction(self, DecayStep, state, PossibleActions):
+        """
+        Choose action using epsilon greedy: choose random action with
+        ExploreProbability (EXPLORE), OTW choose best action from network (EXPLOIT).
+        """
+        # ExploreProbability starts at 1, and decays exponentially with rate
+        # DECAY_RATE and approaches EXPLORE_STOP.
+        EXPLORE_START = 1.0  # Exploration probability at start
+        EXPLORE_STOP = 0.01  # Minimum exploration probability
+        DECAY_RATE = 0.0001  # Exponential decay rate for exploration prob
+
+        ExploreProbability = EXPLORE_STOP + \
+            (EXPLORE_START - EXPLORE_STOP) * np.exp(-DECAY_RATE * DecayStep)
+
+        if (ExploreProbability > np.random.rand()):  # EXPLORE
+            action = random.choice(PossibleActions)
+        else:  # EXPLOIT
+            Qs = sess.run(self.output, feed_dict={self.inputs: state.reshape(
+                (1, *state.shape))})
+            choice = np.argmax(Qs)
+            action = PossibleActions[int(choice)]
+
+        return action, ExploreProbability
 
 
-game, PossibleActions = CreateGameEnv()
+def PreprocessFrame(frame):
+    """
+    PreprocessFrame: Grayscale, resize, normalize. Return preprocessed_frame
+    """
+    gray = rgb2gray(frame)
+    croppedFrame = gray[8:-12, 4:-12]  # Remove the part below the player
+    normalizedFrame = croppedFrame / 255.0
+    preprocessedFrame = transform.resize(normalizedFrame, [110, 84])
+    return preprocessedFrame  # 110x84x1 frame
+
+
+def InitDeque(length):
+    """
+    Initialize deque with zero-images, one array for each image
+    """
+    return deque([np.zeros((110, 84), dtype=np.int)
+                  for i in range(length)], maxlen=length)
+
+
+def StackFrames(StackedFrames, state, is_new_episode):
+    frame = PreprocessFrame(state)
+
+    if is_new_episode:
+        StackedFrames = InitDeque(NUM_FRAMES)
+
+        # Because we're in a new episode, copy the same frame 4x
+        StackedFrames.append(frame)
+        StackedFrames.append(frame)
+        StackedFrames.append(frame)
+        StackedFrames.append(frame)
+
+        # Stack the frames
+        StackedState = np.stack(StackedFrames, axis=2)
+    else:
+        # Append frame to deque, automatically removes the oldest frame
+        StackedFrames.append(frame)
+        # Build the stacked state (first dimension specifies different frames)
+        StackedState = np.stack(StackedFrames, axis=2)
+
+    return StackedState, StackedFrames
+
+
+env = retro.make(game='SpaceInvaders-Atari2600')
 
 """
 MODEL PARAMETERS
 """
 
-FRAME_WIDTH = 84
+FRAME_WIDTH = 110
 FRAME_HEIGHT = 84
 NUM_FRAMES = 4  # Stack 4 frames together
 STATE_SIZE = [FRAME_WIDTH, FRAME_HEIGHT, NUM_FRAMES]
-ACTION_SIZE = game.get_available_buttons_size()  # 3 actions: left, right, shoot
-LEARNING_RATE = 0.0002  # alpha
-GAMMA = 0.95  # Discounting rate
-
-StackedFrames = InitDeque(NUM_FRAMES)
+ACTION_SIZE = env.action_space.n  # 8 possible actions
+LEARNING_RATE = 0.0002
+GAMMA = 0.9
 
 """
 TRAINING HYPERPARAMETERS
@@ -264,31 +227,29 @@ TRAINING HYPERPARAMETERS
 
 NUM_TRAIN_EPISODES = 500
 NUM_TEST_EPISODES = 100
-MAX_STEPS = 100  # Max possible steps in an episode
+MAX_STEPS = 50000
 BATCH_SIZE = 64
 
-# Exploration parameters for epsilon greedy strategy
 DecayStep = 0
+StackedFrames = InitDeque(NUM_FRAMES)
+PossibleActions = np.array(np.identity(env.action_space.n, dtype=int).tolist())
 
 tf.reset_default_graph()
 sess = GetTFSession()
-
-# The network isn't quite the agent. The agent consists of the network plus
-# epsilon greedy. But that's OK; no need to make such minute distinctions.
 agent = DQNetwork(sess, STATE_SIZE, ACTION_SIZE, LEARNING_RATE)
 sess.run(tf.global_variables_initializer())
 
 # NOTE. Make sure this folder exists
-SAVE_DIR = "./models/HelloDoom"
+SAVE_DIR = "./models/SpaceInvaders"
 Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1)
 if glob.glob(SAVE_DIR + "/*"):
     Saver.restore(sess, tf.train.latest_checkpoint(SAVE_DIR))
 
 """
 Launch tensorboard with:
-tensorboard --logdir=./tmp/HelloDoomTensorBoard/
+tensorboard --logdir=./tensorboard/
 """
-writer = tf.summary.FileWriter("./tmp/HelloDoomTensorBoard/")
+writer = tf.summary.FileWriter("./tensorboard/")
 tf.summary.scalar("Loss", agent.loss)
 writeOp = tf.summary.merge_all()
 
@@ -296,7 +257,8 @@ writeOp = tf.summary.merge_all()
 Training / testing
 """
 
-TRAINING = False  # Set to False to test trained agent on games
+TRAINING = True
+RENDER_ENV = True
 
 if TRAINING == True:  # TRAIN AGENT
     memory = Memory(MEMORY_SIZE=1000000)
@@ -309,33 +271,29 @@ if TRAINING == True:  # TRAIN AGENT
 
     for i in range(BATCH_SIZE):
         if i == 0:
-            state = game.get_state().screen_buffer
+            state = env.reset()
             state, StackedFrames = StackFrames(StackedFrames, state, True)
 
         action = random.choice(PossibleActions)
-        reward = game.make_action(action)
-        done = game.is_episode_finished()
+        nstate, reward, done, _ = env.step(action)
 
-        # Episode is done when you kill the monster, or when time runs out at
-        # 300 steps.
-        if done:
+        if RENDER_ENV:
+            env.render()
+
+        if done:  # Episode is done when you die 3 times
             nstate = np.zeros(state.shape)
             memory.add((state, action, reward, nstate, done))
-            game.new_episode()
-            state = game.get_state().screen_buffer
+            state = env.reset()
             state, StackedFrames = StackFrames(StackedFrames, state, True)
         else:
-            nstate = game.get_state().screen_buffer
             nstate, StackedFrames = StackFrames(StackedFrames, nstate, False)
             memory.add((state, action, reward, nstate, done))
             state = nstate
 
     for episode in range(NUM_TRAIN_EPISODES):
         step = 0
-        EpisodeRewards = []
-
-        game.new_episode()
-        state = game.get_state().screen_buffer
+        EpisodeReward = 0
+        state = env.reset()
         state, StackedFrames = StackFrames(StackedFrames, state, True)
         done = False
 
@@ -347,26 +305,24 @@ if TRAINING == True:  # TRAIN AGENT
             Gathering experience into the replay buffer.
             """
 
-            action, ExploreProbability = PredictAction(
-                agent, DecayStep, state, PossibleActions)
+            action, ExploreProbability = agent.PredictAction(
+                DecayStep, state, PossibleActions)
+            nstate, reward, done, _ = env.step(action)
+            EpisodeReward += reward
 
-            reward = game.make_action(action)
-            done = game.is_episode_finished()
-            EpisodeRewards.append(reward)
+            if RENDER_ENV:
+                env.render()
 
             if done:
-                nstate = np.zeros((84, 84), dtype=np.int)
+                nstate = np.zeros((FRAME_WIDTH, FRAME_HEIGHT), dtype=np.int)
                 nstate, StackedFrames = StackFrames(
                     StackedFrames, nstate, False)
-                TotalRewards = np.sum(EpisodeRewards)
                 memory.add((state, action, reward, nstate, done))
-
                 print("Episode: {}. ".format(episode) +
-                      "TotalReward: {}. ".format(TotalRewards) +
+                      "EpisodeReward: {}. ".format(EpisodeReward) +
                       "Loss: {:.4f}. ".format(loss) +
                       "ExploreProbability: {:.4f}".format(ExploreProbability))
             else:
-                nstate = game.get_state().screen_buffer
                 nstate, StackedFrames = StackFrames(
                     StackedFrames, nstate, False)
                 memory.add((state, action, reward, nstate, done))
@@ -384,13 +340,9 @@ if TRAINING == True:  # TRAIN AGENT
             nStatesMemBuf = np.array([each[3] for each in batch], ndmin=3)
             doneMemBuf = np.array([each[4] for each in batch])
 
+            Qs = sess.run(agent.output, feed_dict={agent.inputs: nStatesMemBuf})
+
             targetQsBatch = []
-
-            Qs = sess.run(agent.output, feed_dict={
-                agent.inputs: nStatesMemBuf})
-
-            # Set Q_target = r if the episode ends at s+1, otherwise set
-            # Q_target = r + GAMMA * max_{a'} Q(s', a').
             for i in range(0, len(batch)):
                 isDone = doneMemBuf[i]
                 if isDone:
@@ -419,38 +371,33 @@ if TRAINING == True:  # TRAIN AGENT
 
         if episode % 10 == 0:
             agent.save(SAVE_DIR + "/save", episode)
-
 else:  # TEST AGENT
-    game, PossibleActions = CreateGameEnv()
-
     for episode in range(NUM_TEST_EPISODES):
-        game.new_episode()
-        state = game.get_state().screen_buffer
+        EpisodeReward = 0
+        state = env.reset()
         state, StackedFrames = StackFrames(StackedFrames, state, True)
-
         step = 0
         done = False
         while not done:
             step += 1
-
             Qs = sess.run(agent.output, feed_dict={
-                          agent.inputs: state.reshape(
-                              (1, FRAME_WIDTH, FRAME_HEIGHT, NUM_FRAMES))})
-
+                          agent.inputs: state.reshape((1, *STATE_SIZE))})
             choice = np.argmax(Qs)
             action = PossibleActions[int(choice)]
-            game.make_action(action)
-            done = game.is_episode_finished()
+            nstate, reward, done, _ = env.step(action)
+            EpisodeReward += reward
+
+            if RENDER_ENV:
+                env.render()
 
             if done:
                 break
             else:
-                nstate = game.get_state().screen_buffer
                 nstate, StackedFrames = StackFrames(
                     StackedFrames, nstate, False)
                 state = nstate
 
-        score = game.get_total_reward()
-        print("Episode: {}. Steps taken: {}. Score: {}".format(episode, step, score))
+        print("Episode: {}. Steps taken: {}. EpisodeReward: {}".format(
+            episode, step, EpisodeReward))
 
-    game.close()
+env.close()

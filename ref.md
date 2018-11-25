@@ -3,5 +3,9 @@
 # Installing dependencies
 
 ```
-conda install -c anaconda scipy matplotlib pillow 
+conda install -c anaconda tensorflow scipy matplotlib pillow
+```
+
+```
+pip install scikit-image
 ```
