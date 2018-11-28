@@ -23,16 +23,12 @@ class DQNetwork:
     def __init__(self, sess, STATE_SIZE, ACTION_SIZE, LEARNING_RATE,
                  name='DQNetwork'):
         self.sess = sess
-        self.STATE_SIZE = STATE_SIZE
-        self.ACTION_SIZE = ACTION_SIZE
-        self.LEARNING_RATE = LEARNING_RATE
-
         with tf.variable_scope(name):
             FRAME_WIDTH, FRAME_HEIGHT, NUM_FRAMES = STATE_SIZE
             self.inputs = inputs = tf.placeholder(
                 tf.float32, [None, FRAME_WIDTH, FRAME_HEIGHT, NUM_FRAMES], name="inputs")
             self.actions = actions = tf.placeholder(
-                tf.float32, [None, self.ACTION_SIZE], name="actions")
+                tf.float32, [None, ACTION_SIZE], name="actions")
             self.targetQ = targetQ = tf.placeholder(
                 tf.float32, [None], name="target")
 

@@ -45,13 +45,10 @@ class Agent:
     """
     The agent
     """
+    LEARNING_RATE = 0.0002
 
-    def __init__(self, sess, STATE_SIZE, ACTION_SIZE, LEARNING_RATE, name='Agent'):
+    def __init__(self, sess, STATE_SIZE, ACTION_SIZE, name='Agent'):
         self.sess = sess
-        self.STATE_SIZE = STATE_SIZE
-        self.ACTION_SIZE = ACTION_SIZE
-        self.LEARNING_RATE = LEARNING_RATE
-
         with tf.variable_scope(name):
             self.inputs = inputs = tf.placeholder(
                 tf.float32, [None, *STATE_SIZE], name="inputs")
@@ -159,6 +156,11 @@ class Agent:
 
         return action, ExploreProbability
 
+    def save(self, SAVE_DIR_WITH_PREFIX, episode):
+        savepath = Saver.save(
+            self.sess, SAVE_DIR_WITH_PREFIX, global_step=episode)
+        print("Save path: {}".format(savepath))
+
 
 def PreprocessFrame(frame):
     """
@@ -213,7 +215,6 @@ FRAME_HEIGHT = 84
 NUM_FRAMES = 4  # Stack 4 frames together
 STATE_SIZE = [FRAME_WIDTH, FRAME_HEIGHT, NUM_FRAMES]
 ACTION_SIZE = env.action_space.n  # 8 possible actions
-LEARNING_RATE = 0.0002
 GAMMA = 0.9
 
 """
@@ -231,7 +232,7 @@ PossibleActions = np.array(np.identity(env.action_space.n, dtype=int).tolist())
 
 tf.reset_default_graph()
 sess = GetTFSession()
-agent = Agent(sess, STATE_SIZE, ACTION_SIZE, LEARNING_RATE)
+agent = Agent(sess, STATE_SIZE, ACTION_SIZE)
 sess.run(tf.global_variables_initializer())
 
 # NOTE. Make sure this folder exists
