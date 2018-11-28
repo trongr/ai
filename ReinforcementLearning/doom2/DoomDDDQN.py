@@ -260,8 +260,8 @@ class DDDQNet:
     def __init__(self, sess, STATE_SIZE, ACTION_SIZE, LEARNING_RATE, name):
         self.sess = sess
         # We use tf.variable_scope here to know which network we're using (agent
-        # or TargetNetwork). It will be useful when we update our w parameters
-        # (by copying the DQN parameters)
+        # or TargetNetwork), e.g. when we update our w parameters (by copying
+        # the DQN parameters)
         with tf.variable_scope(name):
             self.inputs = tf.placeholder(tf.float32, [None, *STATE_SIZE], name="inputs")
             self.ISWeights = tf.placeholder(
@@ -274,77 +274,82 @@ class DDDQNet:
             First convnet: CNN ELU
             """
             # Input is 100x120x4
-            conv1 = tf.layers.conv2d(inputs=self.inputs,
-                                     filters=32,
-                                     kernel_size=[8, 8],
-                                     strides=[4, 4],
-                                     padding="VALID",
-                                     kernel_initializer=tf.contrib.layers.xavier_initializer_conv2d(),
-                                     name="conv1")
-
+            conv1 = tf.layers.conv2d(
+                inputs=self.inputs,
+                filters=32,
+                kernel_size=[8, 8],
+                strides=[4, 4],
+                padding="VALID",
+                kernel_initializer=tf.contrib.layers.xavier_initializer_conv2d(),
+                name="conv1")
             conv1_out = tf.nn.elu(conv1, name="conv1_out")
 
             """
             Second convnet: CNN ELU
             """
 
-            conv2 = tf.layers.conv2d(inputs=conv1_out,
-                                     filters=64,
-                                     kernel_size=[4, 4],
-                                     strides=[2, 2],
-                                     padding="VALID",
-                                     kernel_initializer=tf.contrib.layers.xavier_initializer_conv2d(),
-                                     name="conv2")
-
+            conv2 = tf.layers.conv2d(
+                inputs=conv1_out,
+                filters=64,
+                kernel_size=[4, 4],
+                strides=[2, 2],
+                padding="VALID",
+                kernel_initializer=tf.contrib.layers.xavier_initializer_conv2d(),
+                name="conv2")
             conv2_out = tf.nn.elu(conv2, name="conv2_out")
 
             """
             Third convnet: CNN ELU
             """
 
-            conv3 = tf.layers.conv2d(inputs=conv2_out,
-                                     filters=128,
-                                     kernel_size=[4, 4],
-                                     strides=[2, 2],
-                                     padding="VALID",
-                                     kernel_initializer=tf.contrib.layers.xavier_initializer_conv2d(),
-                                     name="conv3")
-
+            conv3 = tf.layers.conv2d(
+                inputs=conv2_out,
+                filters=128,
+                kernel_size=[4, 4],
+                strides=[2, 2],
+                padding="VALID",
+                kernel_initializer=tf.contrib.layers.xavier_initializer_conv2d(),
+                name="conv3")
             conv3_out = tf.nn.elu(conv3, name="conv3_out")
 
             flatten = tf.layers.flatten(conv3_out)
 
-            # Here we separate into two streams
-            # V(s)
-            value_fc = tf.layers.dense(inputs=flatten,
-                                       units=512,
-                                       activation=tf.nn.elu,
-                                       kernel_initializer=tf.contrib.layers.xavier_initializer(),
-                                       name="value_fc")
+            """
+            Dueling DQN
+            """
 
-            value = tf.layers.dense(inputs=value_fc,
-                                    units=1,
-                                    activation=None,
-                                    kernel_initializer=tf.contrib.layers.xavier_initializer(),
-                                    name="value")
+            # Here we separate into two streams: state value V(s)
+            value_fc = tf.layers.dense(
+                inputs=flatten,
+                units=512,
+                activation=tf.nn.elu,
+                kernel_initializer=tf.contrib.layers.xavier_initializer(),
+                name="value_fc")
+            value = tf.layers.dense(
+                inputs=value_fc,
+                units=1,
+                activation=None,
+                kernel_initializer=tf.contrib.layers.xavier_initializer(),
+                name="value")
 
-            # A(s,a)
-            advantage_fc = tf.layers.dense(inputs=flatten,
-                                           units=512,
-                                           activation=tf.nn.elu,
-                                           kernel_initializer=tf.contrib.layers.xavier_initializer(),
-                                           name="advantage_fc")
+            # Action value A(s, a)
+            advantage_fc = tf.layers.dense(
+                inputs=flatten,
+                units=512,
+                activation=tf.nn.elu,
+                kernel_initializer=tf.contrib.layers.xavier_initializer(),
+                name="advantage_fc")
+            advantage = tf.layers.dense(
+                inputs=advantage_fc,
+                units=ACTION_SIZE,
+                activation=None,
+                kernel_initializer=tf.contrib.layers.xavier_initializer(),
+                name="advantages")
 
-            advantage = tf.layers.dense(inputs=advantage_fc,
-                                        units=ACTION_SIZE,
-                                        activation=None,
-                                        kernel_initializer=tf.contrib.layers.xavier_initializer(),
-                                        name="advantages")
-
-            # Agregating layer: Q(s,a) = V(s) + (A(s,a) - 1/|A| * sum A(s,a'))
-            self.output = value + \
-                tf.subtract(advantage, tf.reduce_mean(
-                    advantage, axis=1, keepdims=True))
+            # Aggregating layer merges the two streams back: Q(s,a) = V(s) +
+            # A(s, a) - 1/|A| * sum A(s, a'). Why subtract the mean advantage?
+            self.output = value + advantage - tf.reduce_mean(
+                advantage, axis=1, keepdims=True)
 
             Q = tf.reduce_sum(tf.multiply(
                 self.output, self.actions), axis=1)
@@ -361,7 +366,7 @@ class DDDQNet:
             self.sess, SAVE_DIR_WITH_PREFIX, global_step=episode)
         print("Save path: {}".format(savepath))
 
-    def PredictAction(self, DecayStep, state, PossibleActions):
+    def PredictAction(self, DecayStep, state, ACTIONS):
         """
         Choose action using epsilon greedy: choose random action with
         ExploreProb (EXPLORE), OTW choose best action from network (EXPLOIT).
@@ -376,12 +381,12 @@ class DDDQNet:
             (EXPLORE_START - EXPLORE_STOP) * np.exp(-DECAY_RATE * DecayStep)
 
         if (ExploreProb > np.random.rand()):  # EXPLORE
-            action = random.choice(PossibleActions)
+            action = random.choice(ACTIONS)
         else:  # EXPLOIT
             Qs = sess.run(self.output, feed_dict={
                 self.inputs: state.reshape((1, *state.shape))})
             choice = np.argmax(Qs)
-            action = PossibleActions[int(choice)]
+            action = ACTIONS[int(choice)]
 
         return action, ExploreProb
 
@@ -413,8 +418,8 @@ def CreateGameEnv():
     game.set_doom_scenario_path("deadly_corridor.wad")
     game.init()
     game.new_episode()
-    PossibleActions = np.identity(7, dtype=int).tolist()
-    return game, PossibleActions
+    ACTIONS = np.identity(7, dtype=int).tolist()
+    return game, ACTIONS
 
 
 def PreprocessFrame(frame):
@@ -463,7 +468,7 @@ def StackFrames(frames, state, isNewEpisode):
     return StackedState, frames
 
 
-game, PossibleActions = CreateGameEnv()
+game, ACTIONS = CreateGameEnv()
 
 """
 MODEL PARAMETERS
@@ -473,7 +478,7 @@ FRAME_WIDTH = 100
 FRAME_HEIGHT = 120
 NUM_FRAMES = 4  # Stack 4 frames together
 STATE_SIZE = [FRAME_WIDTH, FRAME_HEIGHT, NUM_FRAMES]
-ACTION_SIZE = game.get_available_buttons_size()  # 3 actions: left, right, shoot
+ACTION_SIZE = game.get_available_buttons_size()
 LEARNING_RATE = 0.0002  # alpha
 GAMMA = 0.95  # Discounting rate
 UPDATE_TARGET_Q_EVERY = 10000
@@ -532,7 +537,7 @@ if TRAINING == True:
             state = game.get_state().screen_buffer
             state, frames = StackFrames(frames, state, True)
 
-        action = random.choice(PossibleActions)
+        action = random.choice(ACTIONS)
         reward = game.make_action(action)
         done = game.is_episode_finished()
 
@@ -574,8 +579,7 @@ if TRAINING == True:
             step += 1
             updateTargetQEvery += 1
             DecayStep += 1
-            action, ExploreProb = agent.PredictAction(
-                DecayStep, state, PossibleActions)
+            action, ExploreProb = agent.PredictAction(DecayStep, state, ACTIONS)
 
             reward = game.make_action(action)
             done = game.is_episode_finished()
@@ -609,20 +613,23 @@ if TRAINING == True:
             nstatesMB = np.array([each[0][3] for each in batch], ndmin=3)
             doneMB = np.array([each[0][4] for each in batch])
 
-            targetQsBatch = []
+            """
+            Double DQN. Instead of calculating the target Q values like we did
+            before, we get the target from the TargetNetwork, which is a
+            periodic clone of the agent and thus fixes its target longer for
+            more stable training.
+            """
 
-            """
-            Double DQN
-            """
+            targetQsBatch = []
 
             Qs = sess.run(agent.output, feed_dict={agent.inputs: nstatesMB})
             QTargetNstate = sess.run(targetNetwork.output, feed_dict={
                 targetNetwork.inputs: nstatesMB})
 
             for i in range(0, len(batch)):
-                terminal = doneMB[i]
+                isdone = doneMB[i]
                 action = np.argmax(Qs[i])
-                if terminal:
+                if isdone:
                     targetQsBatch.append(rewardsMB[i])
                 else:
                     target = rewardsMB[i] + GAMMA * QTargetNstate[i][action]
@@ -668,12 +675,12 @@ else:
         while not game.is_episode_finished():
             ExploreProb = 0.01
             if (ExploreProb > np.random.rand()):
-                action = random.choice(PossibleActions)
+                action = random.choice(ACTIONS)
             else:
                 Qs = sess.run(agent.output, feed_dict={
                     agent.inputs: state.reshape((1, *state.shape))})
                 choice = np.argmax(Qs)
-                action = PossibleActions[int(choice)]
+                action = ACTIONS[int(choice)]
 
             game.make_action(action)
             done = game.is_episode_finished()
