@@ -22,9 +22,6 @@ class Agent:
             self.discountedRewards = discountedRewards = tf.placeholder(
                 tf.float32, [None, ], name="discountedRewards")
 
-            # Placeholder so we can look at this in tensorboard
-            self.MeanReward = tf.placeholder(tf.float32, name="MeanReward")
-
             fc1 = tf.contrib.layers.fully_connected(
                 inputs=inputs,
                 num_outputs=10,
@@ -42,14 +39,6 @@ class Agent:
                 weights_initializer=tf.contrib.layers.xavier_initializer())
             self.actionDistr = tf.nn.softmax(fc3)
 
-            """
-            tf.nn.softmax_cross_entropy_with_logits computes the cross entropy
-            of the result after applying the softmax function. If you have
-            single-class labels, where an object can only belong to one class,
-            you might now consider using
-            tf.nn.sparse_softmax_cross_entropy_with_logits so that you don't
-            have to convert your labels to a dense one-hot array.
-            """
             negLogProb = tf.nn.softmax_cross_entropy_with_logits_v2(
                 logits=fc3, labels=actions)
             self.loss = loss = tf.reduce_mean(negLogProb * discountedRewards)
@@ -62,7 +51,7 @@ class Agent:
         print("Save path: {}".format(savepath))
 
     @staticmethod
-    def makeActionOneHot(action, ACTION_SIZE):
+    def onehotAction(action, ACTION_SIZE):
         """
         PARAMS
         - action: index of the action.
@@ -75,9 +64,12 @@ class Agent:
         return onehot
 
     @staticmethod
-    def discountRewards(EpisodeRewards):
+    def discountNormalizeRewards(EpisodeRewards):
         """
-        Discount and normalize rewards
+        PARAMS
+        - EpisodeRewards: list of rewards for current episode
+
+        Returns iscount and normalize rewards
         """
         discountedRewards = np.zeros_like(EpisodeRewards)
         cumulative = 0.0
@@ -87,18 +79,19 @@ class Agent:
 
         mean = np.mean(discountedRewards)
         std = np.std(discountedRewards)
-        discountedRewards = (discountedRewards - mean) / (std)
+        discountedRewards = (discountedRewards - mean) / std
 
         return discountedRewards
 
 
 env = gym.make('CartPole-v0')
 env = env.unwrapped
+env.reset()
 env.seed(1)
 
 STATE_SIZE = 4
 ACTION_SIZE = env.action_space.n
-MAX_EPISODES = 10000
+MAX_EPISODES = 100000
 LEARNING_RATE = 0.01
 GAMMA = 0.95
 
@@ -107,11 +100,7 @@ sess = GetTFSession()
 agent = Agent(sess, STATE_SIZE, ACTION_SIZE)
 sess.run(tf.global_variables_initializer())
 
-# NOTE. Make sure this folder exists
-SAVE_DIR = "./models/"
-Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1)
-if glob.glob(SAVE_DIR + "/*"):
-    Saver.restore(sess, tf.train.latest_checkpoint(SAVE_DIR))
+# TODO@trong Save model and train vs test mode.
 
 """
 Launch tensorboard with:
@@ -119,21 +108,17 @@ tensorboard --logdir=./logs/
 """
 writer = tf.summary.FileWriter("./logs/")
 tf.summary.scalar("Loss", agent.loss)
-tf.summary.scalar("MeanReward", agent.MeanReward)
 writeOp = tf.summary.merge_all()
 
-AllRewards = []
-TotalReward = 0
-MaxReward = 0
 episode = 0
 
 for episode in range(MAX_EPISODES):
     EpisodeStates, EpisodeActions, EpisodeRewards = [], [], []
-    EpisodeRewardsSum = 0
     state = env.reset()
-    # env.render()
+    TotalReward = 0
+    done = False
 
-    while True:
+    while not done:
         actionDistr = sess.run(agent.actionDistr, feed_dict={
             agent.inputs: state.reshape([1, 4])})
         action = np.random.choice(range(actionDistr.shape[1]),
@@ -141,41 +126,34 @@ for episode in range(MAX_EPISODES):
 
         nstate, reward, done, info = env.step(action)
 
+        env.render()
+
         EpisodeStates.append(state)
-        action = Agent.makeActionOneHot(action, ACTION_SIZE)
+        action = Agent.onehotAction(action, ACTION_SIZE)
         EpisodeActions.append(action)
         EpisodeRewards.append(reward)
+        TotalReward += reward
 
         if done:
-            EpisodeRewardsSum = np.sum(EpisodeRewards)
-            AllRewards.append(EpisodeRewardsSum)
-            TotalReward = np.sum(AllRewards)
-            MeanReward = np.divide(TotalReward, episode + 1)
-            MaxReward = np.amax(AllRewards)
+            discountedRewards = Agent.discountNormalizeRewards(EpisodeRewards)
 
-            print("==========================================")
-            print("Episode: ", episode)
-            print("Reward: ", EpisodeRewardsSum)
-            print("Mean Reward", MeanReward)
-            print("Max Reward: ", MaxReward)
-
-            discountedRewards = Agent.discountRewards(EpisodeRewards)
-
-            loss_, _ = sess.run([agent.loss, agent.minimize], feed_dict={
+            loss, _ = sess.run([agent.loss, agent.minimize], feed_dict={
                 agent.inputs: np.vstack(np.array(EpisodeStates)),
                 agent.actions: np.vstack(np.array(EpisodeActions)),
                 agent.discountedRewards: discountedRewards})
 
+            print("==========================================")
+            print("Episode:", episode)
+            print("Reward:", TotalReward)
+            print("Loss:", loss)
+
             summary = sess.run(writeOp, feed_dict={
                 agent.inputs: np.vstack(np.array(EpisodeStates)),
                 agent.actions: np.vstack(np.array(EpisodeActions)),
-                agent.discountedRewards: discountedRewards,
-                agent.MeanReward: MeanReward})
+                agent.discountedRewards: discountedRewards})
             writer.add_summary(summary, episode)
             writer.flush()
 
-            EpisodeStates, EpisodeActions, EpisodeRewards = [], [], []
-
-            break
-
         state = nstate
+
+env.close()
