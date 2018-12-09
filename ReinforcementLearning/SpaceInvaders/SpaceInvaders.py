@@ -235,7 +235,6 @@ sess = GetTFSession()
 agent = Agent(sess, STATE_SIZE, ACTION_SIZE)
 sess.run(tf.global_variables_initializer())
 
-# NOTE. Make sure this folder exists
 SAVE_DIR = "./models/"
 Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1)
 if glob.glob(SAVE_DIR + "/*"):

@@ -45,7 +45,10 @@ class Agent:
             optimizer = tf.train.AdamOptimizer(LEARNING_RATE)
             self.minimize = optimizer.minimize(loss)
 
-    def save(self, SAVE_DIR_WITH_PREFIX, episode):
+    def save(self, Saver, SAVE_DIR_WITH_PREFIX, episode):
+        """
+        Save model.
+        """
         savepath = Saver.save(
             self.sess, SAVE_DIR_WITH_PREFIX, global_step=episode)
         print("Save path: {}".format(savepath))
@@ -69,7 +72,7 @@ class Agent:
         PARAMS
         - EpisodeRewards: list of rewards for current episode
 
-        Returns iscount and normalize rewards
+        Returns discounted and normalized rewards
         """
         discountedRewards = np.zeros_like(EpisodeRewards)
         cumulative = 0.0
@@ -100,7 +103,10 @@ sess = GetTFSession()
 agent = Agent(sess, STATE_SIZE, ACTION_SIZE)
 sess.run(tf.global_variables_initializer())
 
-# TODO@trong Save model and train vs test mode.
+SAVE_DIR = "./models/"
+Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1)
+if glob.glob(SAVE_DIR + "/*"):
+    Saver.restore(sess, tf.train.latest_checkpoint(SAVE_DIR))
 
 """
 Launch tensorboard with:
@@ -155,5 +161,8 @@ for episode in range(MAX_EPISODES):
             writer.flush()
 
         state = nstate
+
+    if episode % 50 == 0:
+        agent.save(Saver, SAVE_DIR + "/save", episode)
 
 env.close()
