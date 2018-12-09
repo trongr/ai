@@ -29,7 +29,7 @@ class Agent:
                 weights_initializer=tf.contrib.layers.xavier_initializer())
             fc2 = tf.contrib.layers.fully_connected(
                 inputs=fc1,
-                num_outputs=ACTION_SIZE,
+                num_outputs=10,
                 activation_fn=tf.nn.relu,
                 weights_initializer=tf.contrib.layers.xavier_initializer())
             fc3 = tf.contrib.layers.fully_connected(
@@ -103,7 +103,7 @@ sess = GetTFSession()
 agent = Agent(sess, STATE_SIZE, ACTION_SIZE)
 sess.run(tf.global_variables_initializer())
 
-SAVE_DIR = "./models/"
+SAVE_DIR = "./save/"
 Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1)
 if glob.glob(SAVE_DIR + "/*"):
     Saver.restore(sess, tf.train.latest_checkpoint(SAVE_DIR))
@@ -143,20 +143,18 @@ for episode in range(MAX_EPISODES):
         if done:
             discountedRewards = Agent.discountNormalizeRewards(EpisodeRewards)
 
-            loss, _ = sess.run([agent.loss, agent.minimize], feed_dict={
+            summary, loss, _ = sess.run([writeOp, agent.loss, agent.minimize], feed_dict={
                 agent.inputs: np.vstack(np.array(EpisodeStates)),
                 agent.actions: np.vstack(np.array(EpisodeActions)),
                 agent.discountedRewards: discountedRewards})
 
+            # TotalReward is also the number of steps in the episode. Each extra
+            # step gives 1 point reward.
             print("==========================================")
             print("Episode:", episode)
             print("Reward:", TotalReward)
             print("Loss:", loss)
 
-            summary = sess.run(writeOp, feed_dict={
-                agent.inputs: np.vstack(np.array(EpisodeStates)),
-                agent.actions: np.vstack(np.array(EpisodeActions)),
-                agent.discountedRewards: discountedRewards})
             writer.add_summary(summary, episode)
             writer.flush()
 
