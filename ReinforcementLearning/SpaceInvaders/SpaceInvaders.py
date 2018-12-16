@@ -329,38 +329,38 @@ if TRAINING == True:  # TRAIN AGENT
             """
 
             batch = memory.sample(BATCH_SIZE)
-            statesMemBuf = np.array([each[0] for each in batch], ndmin=3)
-            actionsMemBuf = np.array([each[1] for each in batch])
-            rewardsMemBuf = np.array([each[2] for each in batch])
-            nStatesMemBuf = np.array([each[3] for each in batch], ndmin=3)
-            doneMemBuf = np.array([each[4] for each in batch])
+            statesMB = np.array([each[0] for each in batch], ndmin=3)
+            actionsMB = np.array([each[1] for each in batch])
+            rewardsMB = np.array([each[2] for each in batch])
+            nStatesMB = np.array([each[3] for each in batch], ndmin=3)
+            doneMB = np.array([each[4] for each in batch])
 
-            Qs = sess.run(agent.output, feed_dict={agent.inputs: nStatesMemBuf})
+            Qs = sess.run(agent.output, feed_dict={agent.inputs: nStatesMB})
 
             targetQsBatch = []
             for i in range(0, len(batch)):
-                isDone = doneMemBuf[i]
+                isDone = doneMB[i]
                 if isDone:
-                    targetQsBatch.append(rewardsMemBuf[i])
+                    targetQsBatch.append(rewardsMB[i])
                 else:
-                    target = rewardsMemBuf[i] + GAMMA * np.max(Qs[i])
+                    target = rewardsMB[i] + GAMMA * np.max(Qs[i])
                     targetQsBatch.append(target)
 
-            targetsMemBuf = np.array([each for each in targetQsBatch])
+            targetsMB = np.array([each for each in targetQsBatch])
 
             loss, _ = sess.run([agent.loss, agent.optimizer], feed_dict={
-                               agent.inputs: statesMemBuf,
-                               agent.targetQ: targetsMemBuf,
-                               agent.actions: actionsMemBuf})
+                               agent.inputs: statesMB,
+                               agent.targetQ: targetsMB,
+                               agent.actions: actionsMB})
 
             """
             Saving training statistics
             """
 
             summary = sess.run(writeOp, feed_dict={
-                               agent.inputs: statesMemBuf,
-                               agent.targetQ: targetsMemBuf,
-                               agent.actions: actionsMemBuf})
+                               agent.inputs: statesMB,
+                               agent.targetQ: targetsMB,
+                               agent.actions: actionsMB})
             writer.add_summary(summary, episode)
             writer.flush()
 

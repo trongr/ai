@@ -42,6 +42,7 @@ class Agent:
             negLogProb = tf.nn.softmax_cross_entropy_with_logits_v2(
                 logits=fc3, labels=actions)
             self.loss = loss = tf.reduce_mean(negLogProb * discountedRewards)
+
             optimizer = tf.train.AdamOptimizer(LEARNING_RATE)
             self.minimize = optimizer.minimize(loss)
 
@@ -114,7 +115,7 @@ tensorboard --logdir=./logs/
 """
 writer = tf.summary.FileWriter("./logs/")
 tf.summary.scalar("Loss", agent.loss)
-writeOp = tf.summary.merge_all()
+SummaryOp = tf.summary.merge_all()
 
 episode = 0
 
@@ -143,7 +144,8 @@ for episode in range(MAX_EPISODES):
         if done:
             discountedRewards = Agent.discountNormalizeRewards(EpisodeRewards)
 
-            summary, loss, _ = sess.run([writeOp, agent.loss, agent.minimize], feed_dict={
+            summary, loss, _ = sess.run([
+                SummaryOp, agent.loss, agent.minimize], feed_dict={
                 agent.inputs: np.vstack(np.array(EpisodeStates)),
                 agent.actions: np.vstack(np.array(EpisodeActions)),
                 agent.discountedRewards: discountedRewards})
