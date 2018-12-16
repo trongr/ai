@@ -212,7 +212,7 @@ ACTION_SIZE = game.get_available_buttons_size()
 LEARNING_RATE = 0.002  # ALPHA
 GAMMA = 0.95  # Discounting rate
 MAX_EPOCHS = 500
-BATCH_SIZE = 1000
+BATCH_SIZE = 3000
 
 frames = InitDeque(NUM_FRAMES)  # The stacked frames
 
@@ -240,7 +240,7 @@ TRAINING / TESTING
 
 TRAINING = True  # Set to False to test trained agent on games
 if TRAINING:
-    epoch = 1
+    epoch = 0
     while epoch < MAX_EPOCHS:
         states = []
         actions = []
@@ -252,7 +252,8 @@ if TRAINING:
         state = game.get_state().screen_buffer
         state, frames = StackFrames(frames, state, True)
 
-        ep = 1
+        ep = 0
+        step = 0  # Step in an episode
 
         while True:
             actionDistr = sess.run(agent.actionDistr, feed_dict={
@@ -263,6 +264,7 @@ if TRAINING:
 
             reward = game.make_action(action)
             done = game.is_episode_finished()
+            step += 1
 
             states.append(state)
             actions.append(action)
@@ -275,6 +277,9 @@ if TRAINING:
                 batchRewards.append(epRewards)
                 discountedRewards.append(
                     Agent.discountNormalizeRewards(epRewards))
+
+                print("Steps: {}".format(step))
+                step = 0
 
                 # If the number of batchRewards > BATCH_SIZE stop the minibatch
                 # creation (Because we have sufficient number of episode mb).
