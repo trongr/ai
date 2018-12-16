@@ -117,8 +117,6 @@ writer = tf.summary.FileWriter("./logs/")
 tf.summary.scalar("Loss", agent.loss)
 SummaryOp = tf.summary.merge_all()
 
-episode = 0
-
 for episode in range(MAX_EPISODES):
     EpisodeStates, EpisodeActions, EpisodeRewards = [], [], []
     state = env.reset()
