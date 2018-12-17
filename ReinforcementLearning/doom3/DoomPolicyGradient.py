@@ -87,8 +87,15 @@ class Agent:
                 kernel_initializer=tf.contrib.layers.xavier_initializer(),
                 name="fc4")
 
-            logits = tf.layers.dense(
+            fc5 = tf.layers.dense(
                 inputs=fc4,
+                units=256,
+                activation=tf.nn.elu,
+                kernel_initializer=tf.contrib.layers.xavier_initializer(),
+                name="fc5")
+
+            self.logits = logits = tf.layers.dense(
+                inputs=fc5,
                 kernel_initializer=tf.contrib.layers.xavier_initializer(),
                 units=ACTION_SIZE,
                 activation=None)
@@ -99,26 +106,13 @@ class Agent:
                 logits=logits, labels=actions)
             self.loss = tf.reduce_mean(xentropy * self.discountedRewards)
 
-            optimizer = tf.train.RMSPropOptimizer(LEARNING_RATE)
+            optimizer = tf.train.AdamOptimizer(LEARNING_RATE)
             self.minimize = optimizer.minimize(self.loss)
 
     def save(self, Saver, SAVE_PATH_PREFIX, ep):
         """ Save model. """
         savepath = Saver.save(self.sess, SAVE_PATH_PREFIX, global_step=ep)
         print("Save path: {}".format(savepath))
-
-    @staticmethod
-    def onehotAction(action, ACTION_SIZE):
-        """
-        PARAMS
-        - action: index of the action.
-        - ACTION_SIZE: number of possible actions
-
-        Returns action as one-hot vector.
-        """
-        onehot = np.zeros(ACTION_SIZE)
-        onehot[action] = 1
-        return onehot
 
     @staticmethod
     def discountNormalizeRewards(EpisodeRewards):
@@ -229,7 +223,8 @@ for ep in range(MAX_EPS):
 
     while not done:
         step += 1
-        actionDistr = sess.run(agent.actionDistr, feed_dict={
+        actionDistr, logits = sess.run([
+            agent.actionDistr, agent.logits], feed_dict={
             agent.inputs: state.reshape(1, *STATE_SIZE)})
         action = np.random.choice(range(actionDistr.shape[1]),
                                   p=actionDistr.ravel())
