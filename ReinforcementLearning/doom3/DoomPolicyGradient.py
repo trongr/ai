@@ -28,8 +28,17 @@ class Memory():
         self.buffer.append(experience)
 
     def sample(self, BATCH_SIZE):
+        bufsize = len(self.buffer)
+
+        if BATCH_SIZE > bufsize:
+            replace = True
+            print("BATCH_SIZE {} is larger than bufsize {}".format(
+                BATCH_SIZE, bufsize))
+        else:
+            replace = False
+
         index = np.random.choice(
-            np.arange(len(self.buffer)), size=BATCH_SIZE, replace=False)
+            np.arange(len(self.buffer)), size=BATCH_SIZE, replace=replace)
         return [self.buffer[i] for i in index]
 
 
@@ -163,25 +172,27 @@ class Agent:
         implements epsilon greedy algorithm: if random > epsilon, we choose the
         "best" action from the network, otw we choose an action randomly.
         """
-        # poij Turn this on after implementing memory
         # In the beginning, epsilon == 1.0, so this is all exploration. As
         # training goes on, we reduce epsilon every episode.
-        # if random.uniform(0, 1) > self.ExploreExploitProb:  # EXPLOIT
-        #     actionDistr, logits = sess.run([
-        #         self.actionDistr, self.logits], feed_dict={
-        #         self.inputs: state.reshape(1, *STATE_SIZE)})
-        #     action = np.random.choice(range(ACTION_SIZE), p=actionDistr.ravel())
-        # else:  # EXPLORE RANDOMLY
-        #     action = np.random.choice(range(ACTION_SIZE))
-
-        # Just do random things during pretraining
         if pretrain:
             action = np.random.choice(range(ACTION_SIZE))
-        else:
+        elif random.uniform(0, 1) > self.ExploreExploitProb:  # EXPLOIT
             actionDistr, logits = sess.run([
                 self.actionDistr, self.logits], feed_dict={
                 self.inputs: state.reshape(1, *STATE_SIZE)})
             action = np.random.choice(range(ACTION_SIZE), p=actionDistr.ravel())
+        else:  # EXPLORE RANDOMLY
+            action = np.random.choice(range(ACTION_SIZE))
+
+        # # Just do random things during pretraining
+        # if pretrain:
+        #     action = np.random.choice(range(ACTION_SIZE))
+        # else:
+        #     actionDistr, logits = sess.run([
+        #         self.actionDistr, self.logits], feed_dict={
+        #         self.inputs: state.reshape(1, *STATE_SIZE)})
+        #     action = np.random.choice(range(ACTION_SIZE), p=actionDistr.ravel())
+
         return ACTIONS[action]
 
     def updateExploreExploitEpsilon(self, episode):
@@ -284,18 +295,14 @@ LEARNING_RATE = 0.002  # ALPHA
 GAMMA = 0.95  # Discounting rate
 MAX_EPS = 10000
 
-"""
-BATCH_SIZE should be a lot smaller than PRETRAIN_EPS, because PRETRAIN_EPS is
-the size of the Memory. Every iteration we will sample BATCH_SIZE from Memory
-and feed it to the network.
-"""
-PRETRAIN_EPS = 200
-BATCH_SIZE = 64
+MEMORY_SIZE = 10000
+PRETRAIN_EPS = 50
+BATCH_SIZE = 2000
 
 tf.reset_default_graph()
 sess = GetTFSession()
 agent = Agent(sess, STATE_SIZE, ACTION_SIZE)
-memory = Memory(PRETRAIN_EPS)
+memory = Memory(MEMORY_SIZE)
 sess.run(tf.global_variables_initializer())
 
 SAVE_DIR = "./save/"
@@ -314,14 +321,14 @@ for ep in range(MAX_EPS):
     frames = None
     step = 0
     done = False
+    ispretrain = True if ep < PRETRAIN_EPS else False
 
     while not done:
         step += 1
 
         frame = game.get_state().screen_buffer
         state, frames = StackFrames(frames, frame)
-        pretrain = True if ep < PRETRAIN_EPS else False
-        action = agent.chooseAction(state, pretrain)
+        action = agent.chooseAction(state, ispretrain)
 
         reward = game.make_action(action)
         done = game.is_episode_finished()
@@ -338,7 +345,7 @@ for ep in range(MAX_EPS):
             for i in range(len(states)):
                 memory.add((states[i], actions[i], discountedRewards[i]))
 
-        if done and ep > PRETRAIN_EPS:
+        if done and not ispretrain:
             batch = memory.sample(BATCH_SIZE)
             inputsMB = np.array([each[0] for each in batch])
             actionsMB = np.array([each[1] for each in batch])
@@ -354,7 +361,15 @@ for ep in range(MAX_EPS):
             print("Ep: {} / {}".format(ep, MAX_EPS))
             print("Loss: {}".format(loss))
             print("Steps: {}".format(step))
-            print("poij xentropy", xentropy)
+
+            """
+            NOTE Turn this on to check if your network is overfitting. Larger
+            BATCH_SIZE should prevent that from happening. If it's overfitting,
+            all the cross entropy values will be 0, meaning the action
+            predictions are exactly like the actions, and the agent will be
+            doing the same thing over and over each episode.
+            """
+            print("Cross Entropy:", xentropy[:10])
 
             writer.add_summary(summary, ep)
             writer.flush()
