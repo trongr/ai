@@ -238,7 +238,6 @@ saver = tf.train.Saver()
 savepath = "./save/model.ckpt"
 saver.restore(sess, savepath)
 
-# TODO@trong. Implement memory, and e-greedy.
 if training:
     while epoch < num_epochs + 1:
         states_mb, actions_mb, rewards_of_batch, discounted_rewards_mb, nb_episodes_mb = make_batch(

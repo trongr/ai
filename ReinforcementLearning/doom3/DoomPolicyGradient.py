@@ -17,8 +17,12 @@ def GetTFSession():
 
 
 class Agent:
+
     def __init__(self, sess, STATE_SIZE, ACTION_SIZE, name='Agent'):
         self.sess = sess
+        # self.epsilon = 1.0 # poij
+        self.epsilon = 0.5
+
         with tf.variable_scope(name):
             self.inputs = inputs = tf.placeholder(
                 tf.float32, [None, *STATE_SIZE], name="inputs")
@@ -31,7 +35,7 @@ class Agent:
 
             # Input is 84x84x4
             conv1 = tf.layers.conv2d(
-                inputs=self.inputs,
+                inputs=inputs,
                 filters=32,
                 kernel_size=[4, 4],
                 strides=[2, 2],
@@ -102,12 +106,41 @@ class Agent:
 
             self.actionDistr = tf.nn.softmax(logits)
 
-            xentropy = tf.nn.softmax_cross_entropy_with_logits_v2(
+            self.xentropy = xentropy = tf.nn.softmax_cross_entropy_with_logits_v2(
                 logits=logits, labels=actions)
-            self.loss = tf.reduce_mean(xentropy * self.discountedRewards)
+            self.loss = tf.reduce_mean(xentropy * discountedRewards)
 
             optimizer = tf.train.AdamOptimizer(LEARNING_RATE)
             self.minimize = optimizer.minimize(self.loss)
+
+    def chooseAction(self, state):
+        """
+        Run the state on the agent's self.actionDistr and return an action. Also
+        implements epsilon greedy algorithm: if random > epsilon, we choose the
+        "best" action from the network, otw we choose an action randomly.
+        """
+        # In the beginning, epsilon == 1.0, so this is all exploration. As
+        # training goes on, we reduce epsilon every episode.
+        if random.uniform(0, 1) > self.epsilon:  # EXPLOIT
+            actionDistr, logits = sess.run([
+                self.actionDistr, self.logits], feed_dict={
+                self.inputs: state.reshape(1, *STATE_SIZE)})
+            action = np.random.choice(range(ACTION_SIZE), p=actionDistr.ravel())
+        else:  # EXPLORE RANDOMLY
+            action = np.random.choice(range(ACTION_SIZE))
+        return ACTIONS[action]
+
+    def updateExploreExploitEpsilon(self, episode):
+        """
+        This method should be called every episode to reduce epsilon and change
+        the explore/exploit ratio.
+        """
+        MIN_EPSILON = 0.01
+        MAX_EPSILON = 1.0
+        DECAY_RATE = 0.005
+        self.epsilon = (MIN_EPSILON + (MAX_EPSILON - MIN_EPSILON) *
+                        np.exp(-DECAY_RATE * episode))
+        print("Explore exploit prob: {}".format(self.epsilon))
 
     def save(self, Saver, SAVE_PATH_PREFIX, ep):
         """ Save model. """
@@ -195,9 +228,7 @@ STATE_SIZE = [FRAME_WIDTH, FRAME_HEIGHT, NUM_FRAMES]
 ACTION_SIZE = game.get_available_buttons_size()
 LEARNING_RATE = 0.002  # ALPHA
 GAMMA = 0.95  # Discounting rate
-MAX_EPS = 500
-
-frames = InitDeque(NUM_FRAMES)  # The stacked frames
+MAX_EPS = 10000
 
 tf.reset_default_graph()
 sess = GetTFSession()
@@ -217,18 +248,16 @@ SummaryOp = tf.summary.merge_all()
 for ep in range(MAX_EPS):
     states, actions, rewards = [], [], []
     game.new_episode()
-    state, frames = StackFrames(None, game.get_state().screen_buffer)
+    frames = None
     step = 0  # Step in an episode
     done = False
 
     while not done:
         step += 1
-        actionDistr, logits = sess.run([
-            agent.actionDistr, agent.logits], feed_dict={
-            agent.inputs: state.reshape(1, *STATE_SIZE)})
-        action = np.random.choice(range(actionDistr.shape[1]),
-                                  p=actionDistr.ravel())
-        action = ACTIONS[action]
+
+        frame = game.get_state().screen_buffer
+        state, frames = StackFrames(frames, frame)
+        action = agent.chooseAction(state)
 
         reward = game.make_action(action)
         done = game.is_episode_finished()
@@ -238,9 +267,10 @@ for ep in range(MAX_EPS):
         rewards.append(reward)
 
         if done:
+            agent.updateExploreExploitEpsilon(ep)
             discountedRewards = Agent.discountNormalizeRewards(rewards)
-            summary, loss, _ = sess.run([
-                SummaryOp, agent.loss, agent.minimize], feed_dict={
+            summary, loss, _, xentropy = sess.run([
+                SummaryOp, agent.loss, agent.minimize, agent.xentropy], feed_dict={
                 agent.inputs: np.array(states),
                 agent.actions: np.array(actions),
                 agent.discountedRewards: discountedRewards})
@@ -249,11 +279,10 @@ for ep in range(MAX_EPS):
             print("Ep: {} / {}".format(ep, MAX_EPS))
             print("Loss: {}".format(loss))
             print("Steps: {}".format(step))
+            print("poij xentropy", xentropy)
 
             writer.add_summary(summary, ep)
             writer.flush()
-        else:
-            state, frames = StackFrames(frames, game.get_state().screen_buffer)
 
     if ep % 10 == 0:
         agent.save(Saver, SAVE_DIR + "/save", ep)
