@@ -16,6 +16,23 @@ def GetTFSession():
     return sess
 
 
+class Memory():
+    """
+    Experience / replay buffer
+    """
+
+    def __init__(self, MEMORY_SIZE=100000):
+        self.buffer = deque(maxlen=MEMORY_SIZE)
+
+    def add(self, experience):
+        self.buffer.append(experience)
+
+    def sample(self, BATCH_SIZE):
+        index = np.random.choice(
+            np.arange(len(self.buffer)), size=BATCH_SIZE, replace=False)
+        return [self.buffer[i] for i in index]
+
+
 class Agent:
 
     def __init__(self, sess, STATE_SIZE, ACTION_SIZE, name='Agent'):
@@ -140,7 +157,7 @@ class Agent:
             optimizer = tf.train.AdamOptimizer(LEARNING_RATE)
             self.minimize = optimizer.minimize(self.loss)
 
-    def chooseAction(self, state):
+    def chooseAction(self, state, pretrain=False):
         """
         Run the state on the agent's self.actionDistr and return an action. Also
         implements epsilon greedy algorithm: if random > epsilon, we choose the
@@ -156,10 +173,15 @@ class Agent:
         #     action = np.random.choice(range(ACTION_SIZE), p=actionDistr.ravel())
         # else:  # EXPLORE RANDOMLY
         #     action = np.random.choice(range(ACTION_SIZE))
-        actionDistr, logits = sess.run([
-            self.actionDistr, self.logits], feed_dict={
-            self.inputs: state.reshape(1, *STATE_SIZE)})
-        action = np.random.choice(range(ACTION_SIZE), p=actionDistr.ravel())
+
+        # Just do random things during pretraining
+        if pretrain:
+            action = np.random.choice(range(ACTION_SIZE))
+        else:
+            actionDistr, logits = sess.run([
+                self.actionDistr, self.logits], feed_dict={
+                self.inputs: state.reshape(1, *STATE_SIZE)})
+            action = np.random.choice(range(ACTION_SIZE), p=actionDistr.ravel())
         return ACTIONS[action]
 
     def updateExploreExploitEpsilon(self, episode):
@@ -262,9 +284,18 @@ LEARNING_RATE = 0.002  # ALPHA
 GAMMA = 0.95  # Discounting rate
 MAX_EPS = 10000
 
+"""
+BATCH_SIZE should be a lot smaller than PRETRAIN_EPS, because PRETRAIN_EPS is
+the size of the Memory. Every iteration we will sample BATCH_SIZE from Memory
+and feed it to the network.
+"""
+PRETRAIN_EPS = 200
+BATCH_SIZE = 64
+
 tf.reset_default_graph()
 sess = GetTFSession()
 agent = Agent(sess, STATE_SIZE, ACTION_SIZE)
+memory = Memory(PRETRAIN_EPS)
 sess.run(tf.global_variables_initializer())
 
 SAVE_DIR = "./save/"
@@ -281,7 +312,7 @@ for ep in range(MAX_EPS):
     states, actions, rewards = [], [], []
     game.new_episode()
     frames = None
-    step = 0  # Step in an episode
+    step = 0
     done = False
 
     while not done:
@@ -289,7 +320,8 @@ for ep in range(MAX_EPS):
 
         frame = game.get_state().screen_buffer
         state, frames = StackFrames(frames, frame)
-        action = agent.chooseAction(state)
+        pretrain = True if ep < PRETRAIN_EPS else False
+        action = agent.chooseAction(state, pretrain)
 
         reward = game.make_action(action)
         done = game.is_episode_finished()
@@ -301,11 +333,22 @@ for ep in range(MAX_EPS):
         if done:
             agent.updateExploreExploitEpsilon(ep)
             discountedRewards = Agent.discountNormalizeRewards(rewards)
+            # Store each step separately into Memory. See if not caring about
+            # the order of the steps matter for training.
+            for i in range(len(states)):
+                memory.add((states[i], actions[i], discountedRewards[i]))
+
+        if done and ep > PRETRAIN_EPS:
+            batch = memory.sample(BATCH_SIZE)
+            inputsMB = np.array([each[0] for each in batch])
+            actionsMB = np.array([each[1] for each in batch])
+            rewardsMB = np.array([each[2] for each in batch])
+
             summary, loss, _, xentropy = sess.run([
-                SummaryOp, agent.loss, agent.minimize, agent.xentropy], feed_dict={
-                agent.inputs: np.array(states),
-                agent.actions: np.array(actions),
-                agent.discountedRewards: discountedRewards})
+                SummaryOp, agent.loss, agent.minimize, agent.xentropy],
+                feed_dict={agent.inputs: inputsMB,
+                           agent.actions: actionsMB,
+                           agent.discountedRewards: rewardsMB})
 
             print("========================================")
             print("Ep: {} / {}".format(ep, MAX_EPS))
