@@ -20,9 +20,7 @@ class Agent:
 
     def __init__(self, sess, STATE_SIZE, ACTION_SIZE, name='Agent'):
         self.sess = sess
-        # self.epsilon = 1.0 # poij
-        self.epsilon = 0.5
-
+        self.ExploreExploitProb = 1.0
         with tf.variable_scope(name):
             self.inputs = inputs = tf.placeholder(
                 tf.float32, [None, *STATE_SIZE], name="inputs")
@@ -88,27 +86,41 @@ class Agent:
                 inputs=flat4,
                 units=512,
                 activation=tf.nn.elu,
+                use_bias=True,
                 kernel_initializer=tf.contrib.layers.xavier_initializer(),
+                bias_initializer=tf.zeros_initializer(),
+                kernel_regularizer=tf.contrib.layers.l2_regularizer(scale=0.1),
+                bias_regularizer=tf.contrib.layers.l2_regularizer(scale=0.1),
                 name="fc4")
 
             fc5 = tf.layers.dense(
                 inputs=fc4,
                 units=256,
                 activation=tf.nn.elu,
+                use_bias=True,
                 kernel_initializer=tf.contrib.layers.xavier_initializer(),
+                bias_initializer=tf.zeros_initializer(),
+                kernel_regularizer=tf.contrib.layers.l2_regularizer(scale=0.1),
+                bias_regularizer=tf.contrib.layers.l2_regularizer(scale=0.1),
                 name="fc5")
 
             self.logits = logits = tf.layers.dense(
                 inputs=fc5,
-                kernel_initializer=tf.contrib.layers.xavier_initializer(),
                 units=ACTION_SIZE,
-                activation=None)
+                activation=None,
+                use_bias=True,
+                kernel_initializer=tf.contrib.layers.xavier_initializer(),
+                bias_initializer=tf.zeros_initializer(),
+                kernel_regularizer=tf.contrib.layers.l2_regularizer(scale=0.1),
+                bias_regularizer=tf.contrib.layers.l2_regularizer(scale=0.1),
+                name="logits")
 
             self.actionDistr = tf.nn.softmax(logits)
 
-            self.xentropy = xentropy = tf.nn.softmax_cross_entropy_with_logits_v2(
+            self.xentropy = tf.nn.softmax_cross_entropy_with_logits_v2(
                 logits=logits, labels=actions)
-            self.loss = tf.reduce_mean(xentropy * discountedRewards)
+            self.loss = tf.reduce_mean(self.xentropy * discountedRewards) + \
+                tf.losses.get_regularization_loss()
 
             optimizer = tf.train.AdamOptimizer(LEARNING_RATE)
             self.minimize = optimizer.minimize(self.loss)
@@ -119,15 +131,20 @@ class Agent:
         implements epsilon greedy algorithm: if random > epsilon, we choose the
         "best" action from the network, otw we choose an action randomly.
         """
+        # poij Turn this on after implementing memory
         # In the beginning, epsilon == 1.0, so this is all exploration. As
         # training goes on, we reduce epsilon every episode.
-        if random.uniform(0, 1) > self.epsilon:  # EXPLOIT
-            actionDistr, logits = sess.run([
-                self.actionDistr, self.logits], feed_dict={
-                self.inputs: state.reshape(1, *STATE_SIZE)})
-            action = np.random.choice(range(ACTION_SIZE), p=actionDistr.ravel())
-        else:  # EXPLORE RANDOMLY
-            action = np.random.choice(range(ACTION_SIZE))
+        # if random.uniform(0, 1) > self.ExploreExploitProb:  # EXPLOIT
+        #     actionDistr, logits = sess.run([
+        #         self.actionDistr, self.logits], feed_dict={
+        #         self.inputs: state.reshape(1, *STATE_SIZE)})
+        #     action = np.random.choice(range(ACTION_SIZE), p=actionDistr.ravel())
+        # else:  # EXPLORE RANDOMLY
+        #     action = np.random.choice(range(ACTION_SIZE))
+        actionDistr, logits = sess.run([
+            self.actionDistr, self.logits], feed_dict={
+            self.inputs: state.reshape(1, *STATE_SIZE)})
+        action = np.random.choice(range(ACTION_SIZE), p=actionDistr.ravel())
         return ACTIONS[action]
 
     def updateExploreExploitEpsilon(self, episode):
@@ -138,9 +155,9 @@ class Agent:
         MIN_EPSILON = 0.01
         MAX_EPSILON = 1.0
         DECAY_RATE = 0.005
-        self.epsilon = (MIN_EPSILON + (MAX_EPSILON - MIN_EPSILON) *
-                        np.exp(-DECAY_RATE * episode))
-        print("Explore exploit prob: {}".format(self.epsilon))
+        self.ExploreExploitProb = (MIN_EPSILON + (MAX_EPSILON - MIN_EPSILON) *
+                                   np.exp(-DECAY_RATE * episode))
+        print("Explore exploit prob: {}".format(self.ExploreExploitProb))
 
     def save(self, Saver, SAVE_PATH_PREFIX, ep):
         """ Save model. """
@@ -279,7 +296,7 @@ for ep in range(MAX_EPS):
             print("Ep: {} / {}".format(ep, MAX_EPS))
             print("Loss: {}".format(loss))
             print("Steps: {}".format(step))
-            print("poij xentropy", xentropy)
+            # print("poij xentropy", xentropy)
 
             writer.add_summary(summary, ep)
             writer.flush()
