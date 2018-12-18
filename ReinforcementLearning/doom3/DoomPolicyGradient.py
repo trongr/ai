@@ -38,7 +38,11 @@ class Agent:
                 kernel_size=[4, 4],
                 strides=[2, 2],
                 padding="SAME",
+                use_bias=True,
                 kernel_initializer=tf.contrib.layers.xavier_initializer_conv2d(),
+                bias_initializer=tf.zeros_initializer(),
+                kernel_regularizer=tf.contrib.layers.l2_regularizer(scale=0.1),
+                bias_regularizer=tf.contrib.layers.l2_regularizer(scale=0.1),
                 name="conv1")
 
             bn1 = tf.layers.batch_normalization(
@@ -54,7 +58,11 @@ class Agent:
                 kernel_size=[4, 4],
                 strides=[2, 2],
                 padding="SAME",
+                use_bias=True,
                 kernel_initializer=tf.contrib.layers.xavier_initializer_conv2d(),
+                bias_initializer=tf.zeros_initializer(),
+                kernel_regularizer=tf.contrib.layers.l2_regularizer(scale=0.1),
+                bias_regularizer=tf.contrib.layers.l2_regularizer(scale=0.1),
                 name="conv2")
 
             bn2 = tf.layers.batch_normalization(
@@ -62,25 +70,32 @@ class Agent:
 
             elu2 = tf.nn.elu(bn2, name="elu2")
 
-            """ Third convnet: CNN BatchNormalization ELU """
+            # """ Third convnet: CNN BatchNormalization ELU """
 
-            conv3 = tf.layers.conv2d(
-                inputs=elu2,
-                filters=128,
-                kernel_size=[4, 4],
-                strides=[2, 2],
-                padding="SAME",
-                kernel_initializer=tf.contrib.layers.xavier_initializer_conv2d(),
-                name="conv3")
+            # conv3 = tf.layers.conv2d(
+            #     inputs=elu2,
+            #     filters=128,
+            #     kernel_size=[4, 4],
+            #     strides=[2, 2],
+            #     padding="SAME",
+            #     use_bias=True,
+            #     kernel_initializer=tf.contrib.layers.xavier_initializer_conv2d(),
+            #     bias_initializer=tf.zeros_initializer(),
+            #     kernel_regularizer=tf.contrib.layers.l2_regularizer(scale=0.1),
+            #     bias_regularizer=tf.contrib.layers.l2_regularizer(scale=0.1),
+            #     name="conv3")
 
-            bn3 = tf.layers.batch_normalization(
-                conv3, training=True, epsilon=1e-5, name='bn3')
+            # bn3 = tf.layers.batch_normalization(
+            #     conv3, training=True, epsilon=1e-5, name='bn3')
 
-            elu3 = tf.nn.elu(bn3, name="elu3")
+            # elu3 = tf.nn.elu(bn3, name="elu3")
 
             """ Final FC layers and softmax """
 
-            flat4 = tf.layers.flatten(elu3)
+            # TODO. Remember to turn this on if you turn conv3 layers back on:
+            # flat4 = tf.layers.flatten(elu3)
+
+            flat4 = tf.layers.flatten(elu2)
 
             fc4 = tf.layers.dense(
                 inputs=flat4,
@@ -296,7 +311,7 @@ for ep in range(MAX_EPS):
             print("Ep: {} / {}".format(ep, MAX_EPS))
             print("Loss: {}".format(loss))
             print("Steps: {}".format(step))
-            # print("poij xentropy", xentropy)
+            print("poij xentropy", xentropy)
 
             writer.add_summary(summary, ep)
             writer.flush()
