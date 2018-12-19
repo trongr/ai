@@ -136,6 +136,15 @@ class Agent:
         std = np.std(discountedRewards)
         discountedRewards = (discountedRewards - mean) / std
 
+        L = len(discountedRewards)
+        for i in range(L):
+            flippity = (i + 1.0) / L
+            if random.uniform(0, 1) > flippity:
+                discountedRewards[i] *= -1.0
+
+        print("Discounted rewards {}".format(np.concatenate(
+            (discountedRewards[:20], discountedRewards[-20:]))))
+
         return discountedRewards
 
 
@@ -198,7 +207,7 @@ NUM_FRAMES = 4  # Stack 4 frames together
 STATE_SIZE = [FRAME_WIDTH, FRAME_HEIGHT, NUM_FRAMES]
 ACTION_SIZE = game.get_available_buttons_size()
 LEARNING_RATE = 0.002  # ALPHA
-GAMMA = 0.95  # Discounting rate
+GAMMA = 0.8  # Discounting rate
 MAX_EPS = 500
 
 frames = InitDeque(NUM_FRAMES)  # The stacked frames
@@ -250,7 +259,8 @@ for ep in range(MAX_EPS):
             print("Ep: {} / {}".format(ep, MAX_EPS))
             print("Loss: {}".format(loss))
             print("Steps: {}".format(step))
-            print("Cross Entropy: {}".format(xentropy[:10] + xentropy[-10:]))
+            print("Cross Entropy: {}".format(
+                np.concatenate((xentropy[:10], xentropy[-10:]))))
 
             writer.add_summary(summary, ep)
             writer.flush()
