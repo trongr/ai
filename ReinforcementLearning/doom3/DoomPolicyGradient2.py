@@ -1,3 +1,7 @@
+"""
+Thomas Simonini wrote this I think.
+"""
+
 import tensorflow as tf
 import numpy as np
 from vizdoom import *

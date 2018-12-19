@@ -16,37 +16,9 @@ def GetTFSession():
     return sess
 
 
-class Memory():
-    """
-    Experience / replay buffer
-    """
-
-    def __init__(self, MEMORY_SIZE=100000):
-        self.buffer = deque(maxlen=MEMORY_SIZE)
-
-    def add(self, experience):
-        self.buffer.append(experience)
-
-    def sample(self, BATCH_SIZE):
-        bufsize = len(self.buffer)
-
-        if BATCH_SIZE > bufsize:
-            replace = True
-            print("BATCH_SIZE {} is larger than bufsize {}".format(
-                BATCH_SIZE, bufsize))
-        else:
-            replace = False
-
-        index = np.random.choice(
-            np.arange(len(self.buffer)), size=BATCH_SIZE, replace=replace)
-        return [self.buffer[i] for i in index]
-
-
 class Agent:
-
     def __init__(self, sess, STATE_SIZE, ACTION_SIZE, name='Agent'):
         self.sess = sess
-        self.ExploreExploitProb = 1.0
         with tf.variable_scope(name):
             self.inputs = inputs = tf.placeholder(
                 tf.float32, [None, *STATE_SIZE], name="inputs")
@@ -59,16 +31,12 @@ class Agent:
 
             # Input is 84x84x4
             conv1 = tf.layers.conv2d(
-                inputs=inputs,
+                inputs=self.inputs,
                 filters=32,
                 kernel_size=[4, 4],
                 strides=[2, 2],
                 padding="SAME",
-                use_bias=True,
                 kernel_initializer=tf.contrib.layers.xavier_initializer_conv2d(),
-                bias_initializer=tf.zeros_initializer(),
-                kernel_regularizer=tf.contrib.layers.l2_regularizer(scale=0.1),
-                bias_regularizer=tf.contrib.layers.l2_regularizer(scale=0.1),
                 name="conv1")
 
             bn1 = tf.layers.batch_normalization(
@@ -84,11 +52,7 @@ class Agent:
                 kernel_size=[4, 4],
                 strides=[2, 2],
                 padding="SAME",
-                use_bias=True,
                 kernel_initializer=tf.contrib.layers.xavier_initializer_conv2d(),
-                bias_initializer=tf.zeros_initializer(),
-                kernel_regularizer=tf.contrib.layers.l2_regularizer(scale=0.1),
-                bias_regularizer=tf.contrib.layers.l2_regularizer(scale=0.1),
                 name="conv2")
 
             bn2 = tf.layers.batch_normalization(
@@ -96,112 +60,63 @@ class Agent:
 
             elu2 = tf.nn.elu(bn2, name="elu2")
 
-            # """ Third convnet: CNN BatchNormalization ELU """
+            """ Third convnet: CNN BatchNormalization ELU """
 
-            # conv3 = tf.layers.conv2d(
-            #     inputs=elu2,
-            #     filters=128,
-            #     kernel_size=[4, 4],
-            #     strides=[2, 2],
-            #     padding="SAME",
-            #     use_bias=True,
-            #     kernel_initializer=tf.contrib.layers.xavier_initializer_conv2d(),
-            #     bias_initializer=tf.zeros_initializer(),
-            #     kernel_regularizer=tf.contrib.layers.l2_regularizer(scale=0.1),
-            #     bias_regularizer=tf.contrib.layers.l2_regularizer(scale=0.1),
-            #     name="conv3")
+            conv3 = tf.layers.conv2d(
+                inputs=elu2,
+                filters=128,
+                kernel_size=[4, 4],
+                strides=[2, 2],
+                padding="SAME",
+                kernel_initializer=tf.contrib.layers.xavier_initializer_conv2d(),
+                name="conv3")
 
-            # bn3 = tf.layers.batch_normalization(
-            #     conv3, training=True, epsilon=1e-5, name='bn3')
+            bn3 = tf.layers.batch_normalization(
+                conv3, training=True, epsilon=1e-5, name='bn3')
 
-            # elu3 = tf.nn.elu(bn3, name="elu3")
+            elu3 = tf.nn.elu(bn3, name="elu3")
 
             """ Final FC layers and softmax """
 
-            # TODO. Remember to turn this on if you turn conv3 layers back on:
-            # flat4 = tf.layers.flatten(elu3)
-
-            flat4 = tf.layers.flatten(elu2)
+            flat4 = tf.layers.flatten(elu3)
 
             fc4 = tf.layers.dense(
                 inputs=flat4,
                 units=512,
                 activation=tf.nn.elu,
-                use_bias=True,
                 kernel_initializer=tf.contrib.layers.xavier_initializer(),
-                bias_initializer=tf.zeros_initializer(),
-                kernel_regularizer=tf.contrib.layers.l2_regularizer(scale=0.1),
-                bias_regularizer=tf.contrib.layers.l2_regularizer(scale=0.1),
                 name="fc4")
 
-            fc5 = tf.layers.dense(
+            logits = tf.layers.dense(
                 inputs=fc4,
-                units=256,
-                activation=tf.nn.elu,
-                use_bias=True,
                 kernel_initializer=tf.contrib.layers.xavier_initializer(),
-                bias_initializer=tf.zeros_initializer(),
-                kernel_regularizer=tf.contrib.layers.l2_regularizer(scale=0.1),
-                bias_regularizer=tf.contrib.layers.l2_regularizer(scale=0.1),
-                name="fc5")
-
-            self.logits = logits = tf.layers.dense(
-                inputs=fc5,
                 units=ACTION_SIZE,
-                activation=None,
-                use_bias=True,
-                kernel_initializer=tf.contrib.layers.xavier_initializer(),
-                bias_initializer=tf.zeros_initializer(),
-                kernel_regularizer=tf.contrib.layers.l2_regularizer(scale=0.1),
-                bias_regularizer=tf.contrib.layers.l2_regularizer(scale=0.1),
-                name="logits")
+                activation=None)
 
             self.actionDistr = tf.nn.softmax(logits)
 
-            self.xentropy = tf.nn.softmax_cross_entropy_with_logits_v2(
+            self.xentropy = xentropy = tf.nn.softmax_cross_entropy_with_logits_v2(
                 logits=logits, labels=actions)
-            self.loss = tf.reduce_mean(self.xentropy * discountedRewards) + \
-                tf.losses.get_regularization_loss()
+            self.loss = tf.reduce_mean(xentropy * self.discountedRewards)
 
-            optimizer = tf.train.AdamOptimizer(LEARNING_RATE)
+            optimizer = tf.train.RMSPropOptimizer(LEARNING_RATE)
             self.minimize = optimizer.minimize(self.loss)
-
-    def chooseAction(self, state, pretrain=False):
-        """
-        Run the state on the agent's self.actionDistr and return an action. Also
-        implements epsilon greedy algorithm: if random > epsilon, we choose the
-        "best" action from the network, otw we choose an action randomly.
-        """
-        if pretrain:
-            action = np.random.choice(range(ACTION_SIZE))
-        elif random.uniform(0, 1) > self.ExploreExploitProb:  # EXPLOIT
-            # In the beginning, epsilon == 1.0, so this is all exploration. As
-            # training goes on, we reduce epsilon every episode.
-            actionDistr, logits = sess.run([
-                self.actionDistr, self.logits], feed_dict={
-                self.inputs: state.reshape(1, *STATE_SIZE)})
-            action = np.random.choice(range(ACTION_SIZE), p=actionDistr.ravel())
-        else:  # EXPLORE RANDOMLY
-            action = np.random.choice(range(ACTION_SIZE))
-
-        return ACTIONS[action]
-
-    def updateExploreExploitEpsilon(self, episode):
-        """
-        This method should be called every episode to reduce epsilon and change
-        the explore/exploit ratio.
-        """
-        MIN_EPSILON = 0.01
-        MAX_EPSILON = 1.0
-        DECAY_RATE = 0.005
-        self.ExploreExploitProb = (MIN_EPSILON + (MAX_EPSILON - MIN_EPSILON) *
-                                   np.exp(-DECAY_RATE * episode))
-        print("Explore exploit prob: {}".format(self.ExploreExploitProb))
 
     def save(self, Saver, SAVE_PATH_PREFIX, ep):
         """ Save model. """
         savepath = Saver.save(self.sess, SAVE_PATH_PREFIX, global_step=ep)
         print("Save path: {}".format(savepath))
+
+    def chooseAction(self, state):
+        """
+        Run the state on the agent's self.actionDistr and return an action. Also
+        implements epsilon greedy algorithm: if random > epsilon, we choose the
+        "best" action from the network, otw we choose an action randomly.
+        """
+        actionDistr = sess.run(self.actionDistr, feed_dict={
+            self.inputs: state.reshape(1, *STATE_SIZE)})
+        action = np.random.choice(range(ACTION_SIZE), p=actionDistr.ravel())
+        return ACTIONS[action]
 
     @staticmethod
     def discountNormalizeRewards(EpisodeRewards):
@@ -284,16 +199,13 @@ STATE_SIZE = [FRAME_WIDTH, FRAME_HEIGHT, NUM_FRAMES]
 ACTION_SIZE = game.get_available_buttons_size()
 LEARNING_RATE = 0.002  # ALPHA
 GAMMA = 0.95  # Discounting rate
-MAX_EPS = 10000
+MAX_EPS = 500
 
-MEMORY_SIZE = 10000
-PRETRAIN_EPS = 10
-BATCH_SIZE = 100
+frames = InitDeque(NUM_FRAMES)  # The stacked frames
 
 tf.reset_default_graph()
 sess = GetTFSession()
 agent = Agent(sess, STATE_SIZE, ACTION_SIZE)
-memory = Memory(MEMORY_SIZE)
 sess.run(tf.global_variables_initializer())
 
 SAVE_DIR = "./save/"
@@ -312,14 +224,13 @@ for ep in range(MAX_EPS):
     frames = None
     step = 0
     done = False
-    ispretrain = True if ep < PRETRAIN_EPS else False
 
     while not done:
         step += 1
 
         frame = game.get_state().screen_buffer
         state, frames = StackFrames(frames, frame)
-        action = agent.chooseAction(state, ispretrain)
+        action = agent.chooseAction(state)
         reward = game.make_action(action)
         done = game.is_episode_finished()
 
@@ -328,38 +239,18 @@ for ep in range(MAX_EPS):
         rewards.append(reward)
 
         if done:
-            agent.updateExploreExploitEpsilon(ep)
             discountedRewards = Agent.discountNormalizeRewards(rewards)
-            # Store each step separately into Memory. See if not caring about
-            # the order of the steps matter for training.
-            for i in range(len(states)):
-                memory.add((states[i], actions[i], discountedRewards[i]))
-
-        if done and not ispretrain:
-            batch = memory.sample(BATCH_SIZE)
-            inputsMB = np.array([each[0] for each in batch])
-            actionsMB = np.array([each[1] for each in batch])
-            rewardsMB = np.array([each[2] for each in batch])
-
-            summary, loss, _, xentropy = sess.run([
-                SummaryOp, agent.loss, agent.minimize, agent.xentropy],
-                feed_dict={agent.inputs: inputsMB,
-                           agent.actions: actionsMB,
-                           agent.discountedRewards: rewardsMB})
+            xentropy, loss, _, summary = sess.run([
+                agent.xentropy, agent.loss, agent.minimize, SummaryOp],
+                feed_dict={agent.inputs: np.array(states),
+                           agent.actions: np.array(actions),
+                           agent.discountedRewards: discountedRewards})
 
             print("========================================")
             print("Ep: {} / {}".format(ep, MAX_EPS))
             print("Loss: {}".format(loss))
             print("Steps: {}".format(step))
-
-            """
-            NOTE Turn this on to check if your network is overfitting. Larger
-            BATCH_SIZE should prevent that from happening. If it's overfitting,
-            all the cross entropy values will be 0, meaning the action
-            predictions are exactly like the actions, and the agent will be
-            doing the same thing over and over each episode.
-            """
-            print("Cross Entropy:", xentropy[:10])
+            print("Cross Entropy: {}".format(xentropy[:10] + xentropy[-10:]))
 
             writer.add_summary(summary, ep)
             writer.flush()
