@@ -61,10 +61,7 @@ class DQNetwork:
                 kernel_size=[4, 4], strides=[2, 2], padding="VALID",
                 kernel_initializer=tf.contrib.layers.xavier_initializer_conv2d(),
                 name="conv2")
-            # output shape [BATCH_SIZE, 9, 9, 64]. TODO@trong If you use SAME
-            # padding as opposed to VALID, output should have the same width and
-            # height as input, e.g. this one would be (BATCH_SIZE, 20, 20, 64).
-            # Double check. You'll need to down sample if I recall.
+            # output shape [BATCH_SIZE, 9, 9, 64]
 
             batchnorm2 = tf.layers.batch_normalization(
                 conv2, training=True, epsilon=1e-5, name='batchnorm2')

@@ -236,7 +236,7 @@ epoch = 1
 average_reward = []
 saver = tf.train.Saver()
 savepath = "./save/model.ckpt"
-saver.restore(sess, savepath)
+# saver.restore(sess, savepath)
 
 if training:
     while epoch < num_epochs + 1:

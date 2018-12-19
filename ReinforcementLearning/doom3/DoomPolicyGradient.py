@@ -172,26 +172,17 @@ class Agent:
         implements epsilon greedy algorithm: if random > epsilon, we choose the
         "best" action from the network, otw we choose an action randomly.
         """
-        # In the beginning, epsilon == 1.0, so this is all exploration. As
-        # training goes on, we reduce epsilon every episode.
         if pretrain:
             action = np.random.choice(range(ACTION_SIZE))
         elif random.uniform(0, 1) > self.ExploreExploitProb:  # EXPLOIT
+            # In the beginning, epsilon == 1.0, so this is all exploration. As
+            # training goes on, we reduce epsilon every episode.
             actionDistr, logits = sess.run([
                 self.actionDistr, self.logits], feed_dict={
                 self.inputs: state.reshape(1, *STATE_SIZE)})
             action = np.random.choice(range(ACTION_SIZE), p=actionDistr.ravel())
         else:  # EXPLORE RANDOMLY
             action = np.random.choice(range(ACTION_SIZE))
-
-        # # Just do random things during pretraining
-        # if pretrain:
-        #     action = np.random.choice(range(ACTION_SIZE))
-        # else:
-        #     actionDistr, logits = sess.run([
-        #         self.actionDistr, self.logits], feed_dict={
-        #         self.inputs: state.reshape(1, *STATE_SIZE)})
-        #     action = np.random.choice(range(ACTION_SIZE), p=actionDistr.ravel())
 
         return ACTIONS[action]
 
@@ -296,8 +287,8 @@ GAMMA = 0.95  # Discounting rate
 MAX_EPS = 10000
 
 MEMORY_SIZE = 10000
-PRETRAIN_EPS = 50
-BATCH_SIZE = 2000
+PRETRAIN_EPS = 10
+BATCH_SIZE = 100
 
 tf.reset_default_graph()
 sess = GetTFSession()
