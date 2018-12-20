@@ -20,75 +20,24 @@ class Agent:
     def __init__(self, sess, STATE_SIZE, ACTION_SIZE, name='Agent'):
         self.sess = sess
         with tf.variable_scope(name):
-            self.inputs = inputs = tf.placeholder(
+            self.inputs = tf.placeholder(
                 tf.float32, [None, *STATE_SIZE], name="inputs")
-            self.actions = actions = tf.placeholder(
+            self.actions = tf.placeholder(
                 tf.int32, [None, ACTION_SIZE], name="actions")
-            self.discountedRewards = discountedRewards = tf.placeholder(
+            self.discountedRewards = tf.placeholder(
                 tf.float32, [None, ], name="discountedRewards")
 
-            """ First convnet: CNN BatchNormalization ELU """
+            flat1 = tf.layers.flatten(self.inputs)
 
-            # Input is 84x84x4
-            conv1 = tf.layers.conv2d(
-                inputs=self.inputs,
-                filters=32,
-                kernel_size=[4, 4],
-                strides=[2, 2],
-                padding="SAME",
-                kernel_initializer=tf.contrib.layers.xavier_initializer_conv2d(),
-                name="conv1")
-
-            bn1 = tf.layers.batch_normalization(
-                conv1, training=True, epsilon=1e-5, name='bn1')
-
-            elu1 = tf.nn.elu(bn1, name="conv1_out")
-
-            """ Second convnet: CNN BatchNormalization ELU """
-
-            conv2 = tf.layers.conv2d(
-                inputs=elu1,
-                filters=64,
-                kernel_size=[4, 4],
-                strides=[2, 2],
-                padding="SAME",
-                kernel_initializer=tf.contrib.layers.xavier_initializer_conv2d(),
-                name="conv2")
-
-            bn2 = tf.layers.batch_normalization(
-                conv2, training=True, epsilon=1e-5, name='bn2')
-
-            elu2 = tf.nn.elu(bn2, name="elu2")
-
-            """ Third convnet: CNN BatchNormalization ELU """
-
-            conv3 = tf.layers.conv2d(
-                inputs=elu2,
-                filters=128,
-                kernel_size=[4, 4],
-                strides=[2, 2],
-                padding="SAME",
-                kernel_initializer=tf.contrib.layers.xavier_initializer_conv2d(),
-                name="conv3")
-
-            bn3 = tf.layers.batch_normalization(
-                conv3, training=True, epsilon=1e-5, name='bn3')
-
-            elu3 = tf.nn.elu(bn3, name="elu3")
-
-            """ Final FC layers and softmax """
-
-            flat4 = tf.layers.flatten(elu3)
-
-            fc4 = tf.layers.dense(
-                inputs=flat4,
+            fc1 = tf.layers.dense(
+                inputs=flat1,
                 units=512,
                 activation=tf.nn.elu,
                 kernel_initializer=tf.contrib.layers.xavier_initializer(),
-                name="fc4")
+                name="fc1")
 
             logits = tf.layers.dense(
-                inputs=fc4,
+                inputs=fc1,
                 kernel_initializer=tf.contrib.layers.xavier_initializer(),
                 units=ACTION_SIZE,
                 activation=None)
@@ -96,7 +45,7 @@ class Agent:
             self.actionDistr = tf.nn.softmax(logits)
 
             self.xentropy = xentropy = tf.nn.softmax_cross_entropy_with_logits_v2(
-                logits=logits, labels=actions)
+                logits=logits, labels=self.actions)
             self.loss = tf.reduce_mean(xentropy * self.discountedRewards)
 
             optimizer = tf.train.RMSPropOptimizer(LEARNING_RATE)
@@ -118,6 +67,8 @@ class Agent:
         action = np.random.choice(range(ACTION_SIZE), p=actionDistr.ravel())
         return ACTIONS[action]
 
+    # Remove the conv layers. It might be too powerful causing the network to
+    # overfit
     @staticmethod
     def discountNormalizeRewards(EpisodeRewards):
         """
@@ -173,44 +124,15 @@ def InitDeque(length):
                   for i in range(length)], maxlen=length)
 
 
-def StackFrames(frames, frame):
-    """
-    Stack frames together to give network a sense of time. If this is a new
-    episode, duplicate the frame over the stacked frames. OTW add this new frame
-    to the existing queue.
-
-    @param {*} frame: A single frame from the game.
-
-    @return {*} state, frames. state is the stacked frames.
-    """
-    frame = PreprocFrame(frame)
-    if frames is None:
-        # We're in a new episode: initialize queue store consecutive frames
-        frames = InitDeque(NUM_FRAMES)
-        frames.append(frame)
-        frames.append(frame)
-        frames.append(frame)
-        frames.append(frame)
-        state = np.stack(frames, axis=2)
-    else:
-        # Append frame to deque, automatically removes the oldest frame
-        frames.append(frame)
-        state = np.stack(frames, axis=2)
-    return state, frames
-
-
 game, ACTIONS = makeEnv()
 
 FRAME_WIDTH = 84
 FRAME_HEIGHT = 84
-NUM_FRAMES = 4  # Stack 4 frames together
-STATE_SIZE = [FRAME_WIDTH, FRAME_HEIGHT, NUM_FRAMES]
+STATE_SIZE = [FRAME_WIDTH, FRAME_HEIGHT]
 ACTION_SIZE = game.get_available_buttons_size()
 LEARNING_RATE = 0.002  # ALPHA
 GAMMA = 0.8  # Discounting rate
 MAX_EPS = 500
-
-frames = InitDeque(NUM_FRAMES)  # The stacked frames
 
 tf.reset_default_graph()
 sess = GetTFSession()
@@ -230,20 +152,18 @@ SummaryOp = tf.summary.merge_all()
 for ep in range(MAX_EPS):
     states, actions, rewards = [], [], []
     game.new_episode()
-    frames = None
     step = 0
     done = False
 
     while not done:
         step += 1
 
-        frame = game.get_state().screen_buffer
-        state, frames = StackFrames(frames, frame)
-        action = agent.chooseAction(state)
+        frame = PreprocFrame(game.get_state().screen_buffer)
+        action = agent.chooseAction(frame)
         reward = game.make_action(action)
         done = game.is_episode_finished()
 
-        states.append(state)
+        states.append(frame)
         actions.append(action)
         rewards.append(reward)
 
