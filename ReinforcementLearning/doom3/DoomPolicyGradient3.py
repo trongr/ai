@@ -87,11 +87,14 @@ class Agent:
         std = np.std(discountedRewards)
         discountedRewards = (discountedRewards - mean) / std
 
-        L = len(discountedRewards)
-        for i in range(L):
-            flippity = (i + 1.0) / L
-            if random.uniform(0, 1) > flippity:
-                discountedRewards[i] *= -1.0
+        maxReward = np.max(discountedRewards)
+        discountedRewards = discountedRewards - maxReward
+
+        # L = len(discountedRewards)
+        # for i in range(L):
+        #     flippity = (i + 1.0) / L
+        #     if random.uniform(0, 1) > flippity:
+        #         discountedRewards[i] *= -1.0
 
         print("Discounted rewards {}".format(np.concatenate(
             (discountedRewards[:20], discountedRewards[-20:]))))
@@ -149,6 +152,12 @@ writer = tf.summary.FileWriter("./logs/")
 tf.summary.scalar("Loss", agent.loss)
 SummaryOp = tf.summary.merge_all()
 
+"""
+Minibatch data. Episode states, actions, and rewards data get concatenated into
+these guys, which are fed into the network every say 10 episodes.
+"""
+statesMB, actionsMB, discountedRewardsMB = [], [], []
+
 for ep in range(MAX_EPS):
     states, actions, rewards = [], [], []
     game.new_episode()
@@ -168,12 +177,17 @@ for ep in range(MAX_EPS):
         rewards.append(reward)
 
         if done:
-            discountedRewards = Agent.discountNormalizeRewards(rewards)
+            statesMB = statesMB + states
+            actionsMB = actionsMB + actions
+            nrewards = Agent.discountNormalizeRewards(rewards)
+            discountedRewardsMB = discountedRewardsMB + nrewards.tolist()
+
+        if done and ep % 10 == 0:
             xentropy, loss, _, summary = sess.run([
                 agent.xentropy, agent.loss, agent.minimize, SummaryOp],
-                feed_dict={agent.inputs: np.array(states),
-                           agent.actions: np.array(actions),
-                           agent.discountedRewards: discountedRewards})
+                feed_dict={agent.inputs: np.array(statesMB),
+                           agent.actions: np.array(actionsMB),
+                           agent.discountedRewards: discountedRewardsMB})
 
             print("========================================")
             print("Ep: {} / {}".format(ep, MAX_EPS))
