@@ -1,12 +1,13 @@
-import tensorflow as tf
-import numpy as np
-from vizdoom import *
-import random
-import time
-from skimage import transform
-from collections import deque
-import matplotlib.pyplot as plt
+"""
+Doom Gathering Health with Policy Gradient.
+"""
+
 import glob
+from collections import deque
+import vizdoom
+import numpy as np
+from skimage import transform
+import tensorflow as tf
 
 
 def GetTFSession():
@@ -17,15 +18,14 @@ def GetTFSession():
 
 
 class Agent:
-    def __init__(self, sess, STATE_SIZE, ACTION_SIZE, name='Agent'):
+    def __init__(self, sess, STATE_SIZE, ACTION_SIZE, name="Agent"):
         self.sess = sess
         with tf.variable_scope(name):
-            self.inputs = tf.placeholder(
-                tf.float32, [None, *STATE_SIZE], name="inputs")
-            self.actions = tf.placeholder(
-                tf.int32, [None, ACTION_SIZE], name="actions")
+            self.inputs = tf.placeholder(tf.float32, [None, *STATE_SIZE], name="inputs")
+            self.actions = tf.placeholder(tf.int32, [None, ACTION_SIZE], name="actions")
             self.discountedRewards = tf.placeholder(
-                tf.float32, [None, ], name="discountedRewards")
+                tf.float32, [None], name="discountedRewards"
+            )
 
             flat1 = tf.layers.flatten(self.inputs)
 
@@ -34,18 +34,21 @@ class Agent:
                 units=512,
                 activation=tf.nn.elu,
                 kernel_initializer=tf.contrib.layers.xavier_initializer(),
-                name="fc1")
+                name="fc1",
+            )
 
             logits = tf.layers.dense(
                 inputs=fc1,
                 kernel_initializer=tf.contrib.layers.xavier_initializer(),
                 units=ACTION_SIZE,
-                activation=None)
+                activation=None,
+            )
 
             self.actionDistr = tf.nn.softmax(logits)
 
             self.xentropy = xentropy = tf.nn.softmax_cross_entropy_with_logits_v2(
-                logits=logits, labels=self.actions)
+                logits=logits, labels=self.actions
+            )
             self.loss = tf.reduce_mean(xentropy * self.discountedRewards)
 
             optimizer = tf.train.RMSPropOptimizer(LEARNING_RATE)
@@ -62,8 +65,9 @@ class Agent:
         implements epsilon greedy algorithm: if random > epsilon, we choose the
         "best" action from the network, otw we choose an action randomly.
         """
-        actionDistr = sess.run(self.actionDistr, feed_dict={
-            self.inputs: state.reshape(1, *STATE_SIZE)})
+        actionDistr = sess.run(
+            self.actionDistr, feed_dict={self.inputs: state.reshape(1, *STATE_SIZE)}
+        )
         action = np.random.choice(range(ACTION_SIZE), p=actionDistr.ravel())
         return ACTIONS[action]
 
@@ -96,15 +100,18 @@ class Agent:
         #     if random.uniform(0, 1) > flippity:
         #         discountedRewards[i] *= -1.0
 
-        print("Discounted rewards {}".format(np.concatenate(
-            (discountedRewards[:20], discountedRewards[-20:]))))
+        print(
+            "Discounted rewards {}".format(
+                np.concatenate((discountedRewards[:20], discountedRewards[-20:]))
+            )
+        )
 
         return discountedRewards
 
 
 def makeEnv():
     """ Create the environment """
-    game = DoomGame()
+    game = vizdoom.DoomGame()
     game.load_config("health_gathering.cfg")
     game.set_doom_scenario_path("health_gathering.wad")
     game.init()
@@ -123,8 +130,10 @@ def PreprocFrame(frame):
 
 def InitDeque(length):
     """ Initialize deque with zero-images, one array for each image """
-    return deque([np.zeros((FRAME_WIDTH, FRAME_HEIGHT), dtype=np.int)
-                  for i in range(length)], maxlen=length)
+    return deque(
+        [np.zeros((FRAME_WIDTH, FRAME_HEIGHT), dtype=np.int) for i in range(length)],
+        maxlen=length,
+    )
 
 
 game, ACTIONS = makeEnv()
@@ -147,7 +156,9 @@ Saver = tf.train.Saver(max_to_keep=5, keep_checkpoint_every_n_hours=1)
 if glob.glob(SAVE_DIR + "/*"):
     Saver.restore(sess, tf.train.latest_checkpoint(SAVE_DIR))
 
-""" Launch tensorboard with: tensorboard --logdir=./logs/ """
+"""
+Launch tensorboard with: tensorboard --logdir=./logs/
+"""
 writer = tf.summary.FileWriter("./logs/")
 tf.summary.scalar("Loss", agent.loss)
 SummaryOp = tf.summary.merge_all()
@@ -183,18 +194,24 @@ for ep in range(MAX_EPS):
             discountedRewardsMB = discountedRewardsMB + nrewards.tolist()
 
         if done and ep % 10 == 0:
-            xentropy, loss, _, summary = sess.run([
-                agent.xentropy, agent.loss, agent.minimize, SummaryOp],
-                feed_dict={agent.inputs: np.array(statesMB),
-                           agent.actions: np.array(actionsMB),
-                           agent.discountedRewards: discountedRewardsMB})
+            xentropy, loss, _, summary = sess.run(
+                [agent.xentropy, agent.loss, agent.minimize, SummaryOp],
+                feed_dict={
+                    agent.inputs: np.array(statesMB),
+                    agent.actions: np.array(actionsMB),
+                    agent.discountedRewards: discountedRewardsMB,
+                },
+            )
 
             print("========================================")
             print("Ep: {} / {}".format(ep, MAX_EPS))
             print("Loss: {}".format(loss))
             print("Steps: {}".format(step))
-            print("Cross Entropy: {}".format(
-                np.concatenate((xentropy[:10], xentropy[-10:]))))
+            print(
+                "Cross Entropy: {}".format(
+                    np.concatenate((xentropy[:10], xentropy[-10:]))
+                )
+            )
 
             writer.add_summary(summary, ep)
             writer.flush()
